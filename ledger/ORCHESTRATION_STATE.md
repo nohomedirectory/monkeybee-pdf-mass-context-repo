@@ -12,8 +12,8 @@ evidence-status: provisional-pending-substrate
 
 ## Global state
 
-- Active subgoal: `G3`, with G1/G2/G4/G5 awaiting fresh reviews, G6 triggered by R19, and G7 integrating the first filed round
-- Current phase: `G0 DONE; owner wave active; G2, G4, and G5 SUBMIT-FOR-REVIEW`
+- Active subgoal: `G3` gauntlet, with the flagship submitted; G1/G2/G4/G5 await fresh reviews, G6 is drafting bounded successors, and G7 is serializing R20
+- Current phase: `G0 DONE; G1/G2/G3/G4/G5 SUBMIT-FOR-REVIEW; G6/G7 DRAFT; R20 active`
 - Priority rule: preserve G0, ledger, G3, G3 gauntlet, G1, and `MORNING_REPORT.md`; shed work only from the bottom of the governing ladder.
 - Canonical-input mutation allowance: none.
 - Bead/code allowance: none.
@@ -31,11 +31,11 @@ Each owner must persist a checkpoint below and in its partial output at every tr
 | G0 owner | orientation, inventory, Grade-A verification | `INDEX.md`, `reports/INGEST_REPORT.md`, `ledger/owners/G0_STATE.md`, permitted AGENTS extension | DONE | All five fresh-review findings resolved; closure suite and root verification passed | None; terminate owner process |
 | G1 owner | Constitution v8, shell corpus, fix map | `constitution/**`, `shell/**`, `reports/FIX_APPLICATION.md`, `ledger/owners/G1_STATE.md` | SUBMIT-FOR-REVIEW | 554 headings preserved, 17 OPEN-C0 rows mapped, 40 pending slots, root structural gate passed | Fresh R13-R18 packets, then REVISE |
 | G2 owner | resolve-now and deferred decisions | `decisions/**`, `ledger/owners/G2_STATE.md` | SUBMIT-FOR-REVIEW | Nine artifacts and owner self-check persisted at 16:56; root integrity gate passed | Fresh R27/R28 packets, then REVISE |
-| G3 owner | Cycle 1 delta plan | `plans/CYCLE_1_DELTA_PLAN.md`, `ledger/owners/G3_STATE.md` | DRAFT | Authority sections ingested; provenance-bearing partial plan exists | Plan reaches 2,500–4,000 substantive lines with all contract families, then SELF-CHECK |
+| G3 owner | Cycle 1 delta plan | `plans/CYCLE_1_DELTA_PLAN.md`, `ledger/owners/G3_STATE.md` | SUBMIT-FOR-REVIEW | 3,091 lines; root reproduced 118/118 catalog/spec/card parity, 42/42 scope evidence, policy guards, and stable SHA-256 `e019fe8c…4daf` | Fresh R01 packet, then REVISE before R02 |
 | G4 owner | traceability matrix and C2-C7 briefs | `reports/TRACEABILITY_MATRIX.md`, `plans/cycle_briefs/**`, `ledger/owners/G4_STATE.md` | SUBMIT-FOR-REVIEW | Fifty requirements accounted bidirectionally; six briefs and root integrity check passed | Fresh R23-R26 packets, then REVISE |
 | G5 owner | human-action packages | `human_actions/**`, `ledger/owners/G5_STATE.md` | SUBMIT-FOR-REVIEW | P1-P8, tracker, and index persisted; no-action/source checks passed | Fresh human-package evidence-boundary packet, then REVISE |
-| G6 owner | conditional charter successors | qualifying `*_v1.1.md` files and `ledger/owners/G6_STATE.md` only | INGEST | R19 filed seven Grade-A Charter-set defects; Sol/ultra owner spawned at 17:22 | Persist trigger/authority checkpoint, draft only affected successors, remain DRAFT through R20-R22 |
-| G7 owner | gauntlet records and convergence | `gauntlet/**`, `ledger/owners/G7_STATE.md` | DRAFT | R01-R30 baseline and R31-R32 supplements initialized before any result; zero rounds filed | Admit R01 only after G3 submission hash is bound |
+| G6 owner | conditional charter successors | qualifying `*_v1.1.md` files and `ledger/owners/G6_STATE.md` only | DRAFT | R19 triage admitted three successors; initial bounded drafts and exact 83-row §35 schedule are on disk | Incorporate R20-R22, then SELF-CHECK |
+| G7 owner | gauntlet records and convergence | `gauntlet/**`, `ledger/owners/G7_STATE.md` | DRAFT | R19 filed/routed; R20 bound to immutable Charter hash and reviewer active; G3 hash now eligible for R01 after log release | Terminate/integrate R20, then assign R01 against `e019fe8c…4daf` |
 | G8 owner | integrity gate and morning handoff | `MORNING_REPORT.md`, final `INDEX.md`, ledger seal | INGEST | Terminal criteria imported from goal | G0-G7 dispositions are available |
 
 ## Reviewer finite-state machine
