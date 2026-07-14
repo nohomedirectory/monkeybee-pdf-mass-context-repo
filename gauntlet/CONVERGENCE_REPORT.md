@@ -20,7 +20,7 @@ It reports what the review gauntlet actually found, round by round, and whether 
 
 It may never upgrade a claim. An artifact that survives every allocated round is an artifact no allocated round refuted; it is not an artifact shown to be correct, and it stays exactly as provisional as its own status line says. It may never report an unreviewed lens as covered, and it may never let a falling curve stand in for coverage: a curve can fall because the artifact improved, because the lenses stopped looking where the defects are, or because five processes from the same family share one blind spot. This report distinguishes those cases where the evidence allows and says so where it does not.
 
-**Current state: four rounds filed (R19, R20, R01, R21), 28 allocated rounds unfiled.** No artifact yet has two rounds under the same lens across successive revisions, which is the only shape that constitutes a convergence curve. Nothing here establishes convergence, non-convergence, or a trend for anything, and no round speaks to a lens it did not apply.
+**Current state: five rounds filed (R19, R20, R01, R21, R22), 27 allocated rounds unfiled.** The R19–R22 Charter-set block is complete. No artifact yet has two rounds under the same lens across successive revisions, which is the only shape that constitutes a convergence curve. Nothing here establishes convergence, non-convergence, or a trend for anything, and no round speaks to a lens it did not apply.
 
 ## Findings per round
 
@@ -32,18 +32,25 @@ Filled from filed round entries only. Grades are the reviewer's, per the protoco
 | R20 | Charter-set cross-consistency | Q2/Q3 traceability | `claude-opus-4-8` (`xhigh`) | 8 | 2 | 0 | NO | Structural (Charter set, round 2 of 4) |
 | R01 | C1 delta plan | envelope-dependency | `gpt-5.6-sol` (`ultra`, fast) | 8 | 2 | 0 | NO | Structural (C1 plan, round 1 of 13) |
 | R21 | Charter-set cross-consistency | duplication/drift | `gpt-5.6-sol` (`ultra`, fast) | 14 | 0 | 0 | NO | Architecture (Charter set, round 3 of 4) |
+| R22 | Charter-set cross-consistency | claim-vocabulary legality | `claude-opus-4-8` (`xhigh`) | 4 | 2 | 2 | NO | Architecture (Charter set, round 4 of 4) |
 
-Totals by grade: **A=37; B=5; C=0**, across 4 filed rounds.
+Totals by grade: **A=41; B=7; C=2**, across 5 filed rounds.
+
+**R22's `C=2` includes one item that claims no defect.** C01 is a conforming graded finding. **C02 is a nonconforming supplemental disposition** — it records eight uses of flagged vocabulary the reviewer examined and judged *legal*, plus one absence it deliberately declined to grade. It asserts no defect, bounds no repair, and requires no owner action. Counts are preserved exactly as the reviewer filed them (G7 does not re-grade), but the defect-claiming population of R22 is **seven items, not eight**, and the curve is unaffected because the curve tracks A+B. Full adjudication in the R22 disposition in `gauntlet/ROUND_LOG.md`.
+
+C02 is worth its place: R12 and R30 are token-driven de-slopification lenses that would otherwise rediscover those same benign uses — `complete` as evidence-algebra vocabulary, `supremacy lanes` as a Rev 7 term of art cited by name — and could "fix" them into violations they are not. A reviewer declining to manufacture an available finding, and saying why, is the opposite of the grade inflation the protocol warns against.
 
 R21 filed 14 Grade-A findings and zero Grade-B or Grade-C — an unusual shape, recorded as the reviewer graded it. Its stated reason is that every item carried a direct local contradiction and none needed the Grade-B hedge. G7 does not re-grade; G6 triage is the test, and it is pending on all fourteen.
 
 **R21's freshness was adjudicated, not assumed.** The reviewer self-disclosed incidental exposure to one aggregate prior-round count line and a few Rev 7 Appendix A lines. G7 ruled the round **admissible**: no finding body or disposition was read, an integer carries no finding semantics, and Appendix A was already within the round's permitted authority chain. The residual is stated rather than dismissed — a count line does reveal that prior rounds were not marginal-only, which could nudge a reviewer toward expecting defects, though it cannot point at any specific one. Full reasoning is in the R21 disposition in `gauntlet/ROUND_LOG.md`.
 
-R01 is the flagship's first round. Its findings route to **G3**, the artifact's owner, which may repair the plan in place — making R01 the first round in this run whose findings can be repaired in place at all. The Charter-set rounds could not be: R19 and R20 reviewed read-only canon, so their findings route to G6 for conditional `*_v1.1.md` successors instead. Gate 3 is now armed on the C1 plan: no further C1 round is admitted until G3 revises and exposes a new hash, which is what will make R01–R12 an actual convergence series rather than twelve independent reads of identical bytes.
+R01 is the flagship's first round. Its findings route to **G3**, the artifact's owner, which may repair the plan in place — making R01 the first round in this run whose findings can be repaired in place at all. The Charter-set rounds could not be: they reviewed read-only canon, so their findings route to G6 for conditional `*_v1.1.md` successors instead.
 
-**Do not read these four rounds as a trend.** The sequence 8, 10, 10, 14 rises, and it means nothing: these are four *different* (lens, artifact) pairs — three lenses on read-only canon whose bytes never changed once, and one lens on a different artifact. **The Charter set has not been repaired between any of its rounds and cannot be**, so the rise from 8 to 10 to 14 cannot indicate a degrading artifact. It indicates that three different lenses each found defects the others were not looking for. Cross-round arithmetic over distinct lenses and distinct artifacts measures nothing at all.
+**Gate 3 has now been satisfied by revision — the first time in this run.** It held R02 shut until G3 actually revised: the plan moved from `e019fe8c…4daf` to `a9458bed…ab77` at commit `7cdbcef`, and G3 returned to `SUBMIT-FOR-REVIEW`. R02 is therefore admitted against a **changed artifact**, not a second read of the same bytes. That is the mechanism which will eventually make R01–R12 a convergence series rather than twelve independent reads.
 
-The only comparison this instrument will ever draw is within one artifact, under one lens, across successive revisions. **No such series exists yet in this run.** The first one can begin only after G3 revises the C1 plan and exposes a new hash.
+**Do not read these five rounds as a trend.** The sequence 8, 10, 10, 14, 6 (A+B) goes up and then down, and it means nothing: these are five *different* (lens, artifact) pairs — four lenses on read-only canon whose bytes never changed once and cannot, and one lens on a different artifact. **The Charter set was never repaired between any of its rounds**, so neither the rise nor the fall can indicate anything about that artifact's quality trajectory. It indicates that four different lenses each found what the others were not looking for. Cross-round arithmetic over distinct lenses and distinct artifacts measures nothing at all.
+
+The only comparison this instrument will ever draw is within one artifact, under one lens, across successive revisions. **No such series exists yet, even now.** R02 reviews the revised plan under a *different* lens (`PDF-normative-fact`) from R01's (`envelope-dependency`), so the pair is still not a same-lens series. The first genuine convergence series in this run will be the **R04–R08 five-pass block**, which repeats one byte-identical prompt under one lens across five successive revisions — that is the shape, and nothing before it qualifies.
 
 **Read this pair carefully, because the naive reading is wrong.** R19 and R20 applied **different lenses** to the **same unchanged bytes**. The move from 8 to 10 findings is therefore *not* a rising convergence curve and *not* evidence that the artifact is getting worse — nothing about the artifact changed between them, and nothing could have: the Charter set is read-only canon, its hash was identical for both rounds, and no repair was made in between. What the pair shows is that a second, different lens found a second, different class of defect in bytes the first lens had already read. That is what lens rotation is for.
 
@@ -76,9 +83,9 @@ One curve per gauntleted artifact, reported honestly whether it falls, stalls, o
 
 | Artifact | Allocated rounds | Filed | Curve (A+B per round, in order) | Two consecutive marginal-only? | Converged? |
 |---|---|---|---|---|---|
-| C1 delta plan | 13 — 12 baseline (R01–R12) + 1 supplemental (R31) | 1 | R01: 10 | No | Not established |
+| C1 delta plan | 13 — 12 baseline (R01–R12) + 1 supplemental (R31) | 1 (R02 assigned against the revised plan) | R01: 10 | No | Not established |
 | Constitution + fix map | 6 (R13–R18) | 0 | — | No | Not established |
-| Charter-set cross-consistency | 4 (R19–R22) | 3 | R19: 8 · R20: 10 · R21: 14 (three **different** lenses — not a convergence series) | No | Not established |
+| Charter-set cross-consistency | 4 (R19–R22) | **4 — block complete** | R19: 8 · R20: 10 · R21: 14 · R22: 6 (four **different** lenses — not a convergence series) | No | Not established |
 | Traceability + cycle briefs | 4 (R23–R26) | 0 | — | No | Not established |
 | Decision briefs | 2 (R27–R28) | 0 | — | No | Not established |
 | Whole repository | 2 (R29–R30) | 0 | — | No | Not established |
@@ -114,9 +121,9 @@ The correlated-blind-spot limitation is the reason this is tracked at all: a gau
 | Model | Baseline rounds (R01–R30) | Supplemental rounds (R31–R32) | Total allocated | Filed rounds |
 |---|---|---|---|---|
 | `gpt-5.6-sol` (`max`/`ultra`) | 15 | 1 (R31, `ultra`) | 16 | 3 (R19 pre-control · R01, R21 fast) |
-| `claude-opus-4-8` (`xhigh`) | 15 | 1 (R32, `xhigh`) | 16 | 1 (R20) |
+| `claude-opus-4-8` (`xhigh`) | 15 | 1 (R32, `xhigh`) | 16 | 2 (R20, R22) |
 
-**Filed rounds are currently 3 Sol to 1 Opus.** The precommitted baseline is a 15/15 split, but *filed* coverage is not yet balanced, and a cross-model claim cannot be made from an unbalanced sample. Three of the four filed rounds come from one model family; if that family shares a blind spot, three quarters of the evidence gathered so far shares it too. This corrects toward 16/16 as the allocation runs, and until it does, this report does not describe the gauntlet's findings as cross-model-corroborated.
+**Filed rounds are currently 3 Sol to 2 Opus.** The precommitted baseline is a 15/15 split, but *filed* coverage is not yet balanced, and a cross-model claim cannot be made from an unbalanced sample. Three of the four filed rounds come from one model family; if that family shares a blind spot, three quarters of the evidence gathered so far shares it too. This corrects toward 16/16 as the allocation runs, and until it does, this report does not describe the gauntlet's findings as cross-model-corroborated.
 
 **Execution-condition change, 2026-07-14 17:39 (disclosed, not smoothed).** A live human control requires every Codex instance from that moment forward to run in **fast mode**. It is prospective and changes no terminated round: R19 (`gpt-5.6-sol`) ran and terminated before it, and R20 is not a Codex instance. But it means the `Sol` series is **not homogeneous across the run** — R19 ran under the pre-control condition, and every later Sol round (R01, R04, R06, R08, R10, R12, R13, R15, R17, R21, R23, R25, R27, R30, R31) runs under fast mode. Any comparison across Sol rounds therefore carries a mid-run condition change as a confound. This report names it rather than presenting the Sol series as a controlled sequence. It does not retroactively weaken R19; it means R19 is not a like-for-like control for what follows.
 
@@ -149,7 +156,7 @@ Every lens OVERNIGHT_GOAL §4 names, and whether the precommitted baseline actua
 | self-containment | R09 | Allocated |
 | dependency-soundness | R10, R24 | Allocated |
 | duplication/drift | R21 | **R21 filed** (Charter set) — freshness adjudicated admissible; see the R21 disposition |
-| claim-vocabulary legality | R12, R22, R30 | Allocated |
+| claim-vocabulary legality | R12, R22, R30 | **R22 filed** (Charter set) · R12, R30 allocated, unfiled |
 | Q2/Q3 traceability | R20, R23 | **R20 filed** (Charter set) · R23 allocated, unfiled (traceability matrix + briefs) |
 | oversimplification hunt | R04–R08, R14–R18, R25 | Allocated |
 | de-slopification | R12, R30 | Allocated |

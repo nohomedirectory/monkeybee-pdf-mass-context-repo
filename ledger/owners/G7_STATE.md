@@ -385,3 +385,47 @@ Note also that R22 improves the filed cross-model balance to 3 Sol / 2 Opus. Sti
 **What I did not do:** I did not review, predict, grade, or integrate anything; I touched no filed reviewer bytes (R19, R20, R01, R21 — 42 findings intact); I set only R22 to `ASSIGNED`; I did not transition the owner FSM.
 
 Owner FSM: unchanged at `DRAFT`. **`gauntlet/ROUND_LOG.md` is closed to G7** until root reports R22 reviewer termination.
+
+### 18:51:26 — R22 FILED, VALIDATED, ROUTED TO G6; Charter-set block complete
+
+Clock read at `2026-07-14T18:51:26+02:00`. **A=4, B=2, C=2; marginal-only NO.**
+
+**Byte integrity proven on three bounds**, all recomputed by me: prefix `[0,162935]` → `2dc39766…8d98`; suffix `[162936,190303]` (27,368 B, 96 lines) → `d7d84936…ee22`; whole log (190,304 B) → `cac9cde8…c748`. All reproduce root's values. The 42 prior findings are byte-intact.
+
+**Schema: PASS for seven of eight items.** My recount: A=4, B=2, C=2, matching the declared counts; the five required fields appear exactly 7 times each, independently confirming A01–A04, B01–B02, and C01 conform and **C02 carries none of the five labels**.
+
+**The containment I recommended at R22 assignment worked — and the reviewer improved on it.** It attests it never opened, read, or searched the round log before appending. It verified the declared preimage by `wc`/`sha256sum` alone, and that hash check licensed an **anchored blind append**. On the one lens where prior findings would have been most contaminating — R19–R21 quote Rev 7's claim vocabulary extensively and in context — this round's freshness rests on a cryptographic fact rather than on trust in the reviewer's restraint. R21's disclosed exposure produced the upgrade; the upgrade held on first use. The architecture worked.
+
+**C02 adjudication: ADMISSIBLE as a nonconforming supplemental disposition, not a graded finding. Routes to G6 as context only. No owner action.**
+
+The decisive fact is not its formatting — it is that **C02 asserts no defect.** It records eight uses of flagged vocabulary the reviewer examined and judged legal, plus one absence it deliberately declined to grade. It names no violated requirement and bounds no repair. The finding schema exists to structure *defect claims*; judging a non-claim against it is a category error, and reshaping it would not make it a finding.
+
+Consequences, stated precisely: counts stay exactly as filed (`A=4; B=2; C=2` — I do not re-grade a reviewer's own grade); the **defect-claiming population of R22 is seven items, not eight**, which I stated rather than leaving to be inferred; the curve is unaffected (it tracks A+B); and **G6 must not act on C02** — treating it as an obligation would invent one the reviewer never asserted.
+
+It earns its place: R12 and R30 are token-driven de-slopification lenses that would otherwise rediscover the same benign uses — `complete` as evidence-algebra vocabulary, `supremacy lanes` as a Rev 7 term of art cited by name — and could "fix" them into violations they are not. C02 also **declines to grade an absence**, reasoning that the Charter restating §10.3's expiry law would itself be duplication drift. I neither endorse nor refute that reasoning; it is the reviewer's judgment, unadjudicated, and G6 may reach its own view. What I record is that a reviewer declined to manufacture an available finding and said why — the opposite of the inflation the grade law warns against, and worth noting in a log that otherwise only counts defects found.
+
+**Routing:** A01–A04 → G6 (conditional); B01–B02 → G6, premise-first, **not promoted**; C01 → G6 as judgment (a Grade C establishes no violated requirement); C02 → G6 as **context only, no action**.
+
+Telemetry (root-reported): Opus 539 input, 46.5k output, 1.6m cache read, 144.1k cache write, $3.42; Haiku 4.5 UI overhead 1.6k/18 at $0.0017. Zero blocked commands, zero file conflicts.
+
+**The R19–R22 Charter-set block is complete:** four rounds, four distinct lenses, A+B of 8 · 10 · 14 · 6. The v1.0 Charter set remains byte-identical to its 15:55 baseline and was never edited.
+
+### 18:52:23 — R02 ASSIGNED against the revised flagship; log closed to G7
+
+Clock read at `2026-07-14T18:52:23+02:00`. Assigned only after the R22 log release, as root conditioned.
+
+- Artifact: `plans/CYCLE_1_DELTA_PLAN.md` **as revised by G3 after R01**. Bound hash `a9458bed0b16227d4e4cea4fd30373d3dfdd0c3ef7bd4d4eeb672359b48bab77` at commit `7cdbcef`, recomputed from disk.
+- Sole lens: `PDF-normative-fact`. Model: `claude-opus-4-8`, `xhigh` (fast-mode control does not reach Claude instances).
+- Reviewer: `monkeybee-pdf-mass-context-repo--r02` pane 1, PID 3249656. Measured: `/proc` shows `--model claude-opus-4-8 --effort xhigh`; `PPid` 3249388 equals the pane's `pane_pid`.
+
+**Gate 3 satisfied by revision — the first time in this run.** R01 bound `e019fe8c…4daf`; the artifact is now `a9458bed…ab77`, a different identity, at commit `7cdbcef` ("integrate R01 and resubmit C1 plan"), with G3 back at `SUBMIT-FOR-REVIEW`. The gate held R02 shut until the owner actually revised. That is what makes this round evidence about a *changed* plan rather than a second read of the same bytes.
+
+Recorded as fact, not judgment: the plan went from 3,091 to **3,382 lines**. I do not review the repair and take no position on whether R01's findings were correctly resolved — later rounds test that. I note the delta only because a repair that *shrank* the plan would be the signature of the feature loss the goal warns about, and this one did not.
+
+**Why the clean-room constraint governs this round more than any other.** `PDF-normative-fact` is the one lens whose subject matter is precisely what the clean-room law forbids the reviewer to possess. A reviewer that "corrects" a plan statement using remembered ISO 32000 semantics has committed clean-room contamination *in the act of reviewing for it* — and the contamination would be invisible, because it would look exactly like expertise. So the assignment states it in operational terms: model recollection is not evidence; a finding must cite local text; a legitimate finding is a contradiction against Rev 7's own text, against another part of the plan, or a missing SpecCard slot citation the plan's own rules require. If the reviewer cannot ground a concern locally, it records an unresolved premise or files nothing — it does not fill the gap from memory. Anything unverifiable is `[UNVERIFIED]`.
+
+**Freshness:** carried forward from R22's demonstrated method — no reading of R01/R19/R20/R21/R22 finding bodies or dispositions, and no G6 successor. I did not read or modify any G6 successor.
+
+**What I did not do:** did not review, predict, grade, or integrate anything for R02; touched no filed reviewer bytes (50 items intact); set only R02 to `ASSIGNED`; did not transition the owner FSM. **No task has been sent** — root verifies and sends.
+
+Owner FSM: `DRAFT`. **`gauntlet/ROUND_LOG.md` is closed to G7** until root reports R02 reviewer termination.
