@@ -95,7 +95,7 @@ Hash, status, counts, and disposition are slots. They are filled only from filed
 | R11 | C1 delta plan | security/DoS | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R12 | C1 delta plan | claim vocabulary and de-slopification | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R13 | Constitution + fix map | identity-law consistency | Sol (fast) | — | `9e81eaaa03c1368335b8aaff260af0ff918d7a6a76ca45bed85a00d4313743ec` | FILED · VALIDATED · TERMINATED | 3 | 2 | 0 | NO | ROUTED → G1 (independent premise-first triage; grades preserved and unpromoted). Freshness and start-time corrections recorded below. |
-| R14 | Constitution + fix map | oversimplification-and-feature-loss | Opus | 5-pass B (1/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
+| R14 | Constitution + fix map | oversimplification-and-feature-loss | claude-opus-4-8 (xhigh) | 5-pass B (1/5) | `dd86aaf319ecc87d0526d90b56b1993e8023925eeec4467ffd7807f89f92efb4` | ASSIGNED | — | — | — | — | — |
 | R15 | Constitution + fix map | oversimplification-and-feature-loss | Sol | 5-pass B (2/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R16 | Constitution + fix map | oversimplification-and-feature-loss | Opus | 5-pass B (3/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R17 | Constitution + fix map | oversimplification-and-feature-loss | Sol | 5-pass B (4/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
@@ -1812,3 +1812,56 @@ TERMINATED
 **Scope correction, route, and convergence disposition.** The verdict's phrase “confirmed losses” is reviewer wording, not campaign validation. All 17 items remain allegations: R04-A01–A11, R04-B01–B05, and R04-C01 route only through root to G3 for premise-first triage, with every filed grade and loss guard preserved and unpromoted. Mechanical addition to the eight previously filed allocation rows yields nine filed rounds at A=58/B=17/C=5. Under the report's precommitted A+B convention, the C1 sequence is R01=10, R02=4, R03=2, R04=16; R04 is only pass 1/5 of the same-lens block, so it establishes neither a multi-point curve nor convergence.
 
 Owner FSM remains `DRAFT`. **Log released** for root verification. **R05 remains unassigned and blocked until G3 revises, returns to `SUBMIT-FOR-REVIEW`, and exposes a new hash.**
+
+## R14 assignment/control — `2026-07-14T21:18:00+02:00`
+
+**Binding.** At the measured local clock `2026-07-14T21:18:00+02:00`, G7 bound R14 only: Constitution repeated blunder/oversimplification block 5-pass B, pass 1/5, under the sole lens `oversimplification-and-feature-loss`. The exact artifact is these four files and no others:
+
+- `constitution/MONKEYBEE_CONSTITUTION_v8.md` — 1,948 lines / 177,270 bytes / SHA-256 `6c68a7881be552a74d0105c8e9e46b87c57b64c64a69e69eda7e215f628fcff6`.
+- `constitution/SPECCARD_PIPELINE.md` — 168 lines / 15,123 bytes / SHA-256 `ceac345d4d580efc6edee81fb7052fc0ffd3ebc97df97b3c24e271ddf8a6a8b3`.
+- `shell/MONKEYBEE_SHELL_CORPUS_v8.md` — 6,426 lines / 445,207 bytes / SHA-256 `2ddcfb8d6267c3f2e4b3cff62423aa3eb440f719bca428151cb130a34420d245`.
+- `reports/FIX_APPLICATION.md` — 187 lines / 23,283 bytes / SHA-256 `70dc3710e607897f1d86841d469bf57c97302a298f3c5acfaa67894db317be1d`.
+
+The manifest method is SHA-256 over the bytewise (`LC_ALL=C`) sorted ordinary `sha256sum` lines, including the final newline. The independently reproduced sorted manifest is:
+
+```text
+2ddcfb8d6267c3f2e4b3cff62423aa3eb440f719bca428151cb130a34420d245  shell/MONKEYBEE_SHELL_CORPUS_v8.md
+6c68a7881be552a74d0105c8e9e46b87c57b64c64a69e69eda7e215f628fcff6  constitution/MONKEYBEE_CONSTITUTION_v8.md
+70dc3710e607897f1d86841d469bf57c97302a298f3c5acfaa67894db317be1d  reports/FIX_APPLICATION.md
+ceac345d4d580efc6edee81fb7052fc0ffd3ebc97df97b3c24e271ddf8a6a8b3  constitution/SPECCARD_PIPELINE.md
+```
+
+Bound manifest SHA-256: `dd86aaf319ecc87d0526d90b56b1993e8023925eeec4467ffd7807f89f92efb4`.
+
+**Admission gates.**
+
+1. `ledger/owners/G1_STATE.md` hashes to `4861043c70c7de0462739a2d8a9ce83806bf66f0c62b98066044c94d33b0435b` and declares phase `SUBMIT-FOR-REVIEW`.
+2. All four component identities and the sorted-manifest identity were independently reproduced from disk.
+3. R13 reviewed manifest `9e81eaaa03c1368335b8aaff260af0ff918d7a6a76ca45bed85a00d4313743ec`; G1 independently premise-tested and dispositioned it, revised the artifact, and resubmitted the new manifest bound here. Root reports commit `744450d` pushed; its commit object resolves locally. Root's closed R04 integration commit `bd8ada7` is local `HEAD`.
+4. The reserved reviewer is `claude-opus-4-8` at effort `xhigh`, attested by process arguments and the live TUI.
+5. Exactly one lens is assigned: `oversimplification-and-feature-loss`.
+6. This is immutable-prompt five-pass B, pass 1/5.
+7. The reserved process is idle and fresh for this artifact; no reviewer task or artifact/review context has been sent.
+
+**Reviewer control plane.** Session `monkeybee-pdf-mass-context-repo--r14`, window 1, pane 1, pane ID `%96`, pane shell PID `3372254`, `pane_dead=0`, current command `claude`; child PID `3372503`. The child command is `/home/joseph/.local/bin/claude --dangerously-skip-permissions --model claude-opus-4-8 --effort xhigh`. The live idle TUI shows `Opus 4.8 with xhigh effort` and an untouched default prompt.
+
+**Exact permitted authority chain for root delivery, in read order.**
+
+1. `AGENTS.md` — full.
+2. `OVERNIGHT_GOAL.md` — §1, §3/G1, and §4.
+3. `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` — full.
+4. `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` — §§0–1, §5/C0–C1, and §6.
+5. `CYCLE_0_WORK_ORDER.md` — §§0–3.
+6. `AUDIT_FINDINGS_LEDGER.md` — R1-1, R1-4, R2-N4, and R2-N5 only.
+7. The four bound artifact files above, in full, at the recorded component and manifest identities.
+8. This R14 assignment/control entry, its supplied EOF anchor, and the exact immutable prompt below.
+
+**Exact immutable five-pass prompt.**
+
+```text
+Find every concrete place this artifact oversimplifies, loses a required feature, collapses an envelope without preserving dependencies, or makes an implementation-relevant assertion without its required evidence interface. DO NOT LOSE FEATURES. I am positive you missed at least 80 elements. Report only evidence-backed findings under this lens; do not rewrite the artifact.
+```
+
+**Freshness, write law, and future route.** Root must deliver only the permitted chain, the R14 control entry/EOF anchor, and the one prompt above. The reviewer must not receive or open any prior finding body, reviewer packet, owner disposition, convergence result, owner checkpoint, G6 successor, other Round Log bytes, competitor material, external source, or unlisted repository input. Root supplies the control entry and EOF anchor inline so the reviewer can make only its protocol-governed blind structured append without reading prior log bytes. R14 has no authority to edit the artifact or any other file. Any eventual findings route through root to G1 only after filing and G7 mechanical integration; no routing occurs at assignment.
+
+**Write law now in force.** `gauntlet/ROUND_LOG.md` is closed to G7 until root reports R14 reviewer termination. G7 does not review, predict, or pre-empt findings. The R01–R32 allocation and all reviewer-authored bytes are preserved except the authorized R14 allocation-row slots above. **R15 remains unassigned and blocked until R14 is filed, G1 performs premise-first triage and revision, returns to `SUBMIT-FOR-REVIEW`, and exposes a new manifest hash. No task has been sent; root verifies and sends.**

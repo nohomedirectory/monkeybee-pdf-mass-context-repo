@@ -684,3 +684,13 @@ I did not revalidate, re-grade, confirm, refute, promote, demote, or rewrite any
 - R04-A01–A11/B01–B05/C01 route only through root to G3 for independent premise-first triage, with grades and loss guards preserved and unpromoted. Allocation recount is nine filed rounds at A=58/B=17/C=5; the precommitted A+B C1 sequence is 10/4/2/16, with R04 only pass 1/5 and no convergence claim.
 - Post-integration Round Log is 1,814 lines / 325,448 bytes / SHA-256 `97826946c06c9eec8d856f61932936b3f1996e80e0cbf8250790893705cce3aa`; Convergence Report is 262 lines / 40,304 bytes / SHA-256 `1040edd3c17d5e7c69f2ac3c4e014463af8fd2c24e20a1a2ab47012778f48d83`.
 - Owner FSM remains `DRAFT`. **Log released** for root verification. **R05 is unassigned and blocked until G3 revises, returns to `SUBMIT-FOR-REVIEW`, and exposes a new hash.**
+
+### R14 binding checkpoint — `DRAFT`
+
+- Clock read immediately before this checkpoint: `2026-07-14T21:18:37+02:00`. Checkpoint preimage SHA-256 was `9622fe78e630c020eceb389850aa89567a3fc908086f9145f66288add797fcae`.
+- The exact four-file artifact independently reproduces component hashes `6c68a788…fcff6`, `ceac345d…a8b3`, `2ddcfb8d…245`, and `70dc3710…be1d`; its bytewise-sorted four-line manifest hashes to `dd86aaf319ecc87d0526d90b56b1993e8023925eeec4467ffd7807f89f92efb4`.
+- `ledger/owners/G1_STATE.md` hashes to `4861043c70c7de0462739a2d8a9ce83806bf66f0c62b98066044c94d33b0435b` and declares `SUBMIT-FOR-REVIEW`. R14 alone is `ASSIGNED` as five-pass B 1/5 under the sole `oversimplification-and-feature-loss` lens.
+- Idle reviewer identity remains session `monkeybee-pdf-mass-context-repo--r14`, pane `%96`, pane PID `3372254`, child PID `3372503`; `claude-opus-4-8`, effort `xhigh`, with matching live TUI. No task or artifact/review context was sent.
+- The permitted authority chain, freshness exclusion, blind-append write law, and byte-identical immutable prompt are sealed in the Round Log. Exact prompt-line copies increased from three to four. Scoped diff shows only the R14 row replacement and assignment append; the known R04 reviewer suffix remains byte-identical at SHA-256 `df313c958971724d0c59eae7302cc4d89475cd0f66d1e5f22e044e92dd435145`.
+- Post-bind Round Log is 1,867 lines / 330,800 bytes / SHA-256 `cda336de74c86206b181ef2b6b02dc79db9acd95e8c30624667267383524dbaa`. Convergence Report remains 262 lines / 40,304 bytes / SHA-256 `1040edd3c17d5e7c69f2ac3c4e014463af8fd2c24e20a1a2ab47012778f48d83`.
+- Owner FSM remains `DRAFT`. **Round Log closed** until root reports R14 reviewer termination. **R15 remains unassigned and blocked until R14 is filed, G1 performs premise-first triage and revision, returns to `SUBMIT-FOR-REVIEW`, and exposes a new manifest hash.**
