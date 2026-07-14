@@ -350,3 +350,29 @@ For Traceability + cycle briefs specifically, eight immutable IDs now exist: bas
 The preceding `dependency-soundness | R10, R24 | Allocated` summary and later corrections must now be read with this supersession: R10 remains allocated and unfiled; R24, R34, and R35 are terminal `NOT-RUN` with zero coverage; R36 is the Opus replacement and remains `BOUND-UNSENT` with zero coverage. The `dependency soundness` lens has filed zero times across these allocations. Allocated, bound, failed, and filed are not interchangeable states.
 
 The exact R36 control keeps the Round Log closed, withholds every prior finding/convergence/disposition body and all recovery context, permits at most one later structured packet at the then-current true EOF without reading prior log bytes, forbids scratch/temp/todo/task paths, shell redirection, and `tee`, and requires exactly one structured `apply_patch` append followed by exact standalone token `TERMINATED` and process exit. This report records the control; it does not dispatch R36 or strengthen any claim.
+
+## R36 failure and R37 replacement control correction — `2026-07-15T01:05:28+02:00`
+
+This append-only correction supersedes the preceding R35/R36 control correction only where that section describes R36 as bound-unsent or gives allocation counts before R37. It changes no reviewer grade, filed count, curve point, owner disposition, or convergence conclusion. Its source Round Log is 3,258 lines / 616,689 bytes / SHA-256 `4ed96fe70769cfc04542fe142dd590ac1f6a79d552a86ffe5fd1b507cac8f67a`.
+
+### Filed evidence remains unchanged
+
+- Filed rounds: exactly 13.
+- Aggregate grades: A=93, B=56, C=18.
+- Filed model-family split: 7 Sol / 6 Opus.
+- R36 is immutable `NOT-RUN · METHOD-VIOLATION · TERMINATED`: root-enforced authority/freshness boundary, no G4 artifact or Round Log read, lens analysis, repository write, packet, finding, count, `dependency soundness` coverage, or dependency-soundness conclusion.
+- R37 is `BOUND-UNSENT`: no task has been sent, no packet has filed, and it adds no count, coverage, or curve point.
+
+The Traceability + cycle briefs curve therefore remains the single valid R33 point at A+B=6. It is still a first-look point under its own Q2/Q3 lens, not a convergence series. Neither failed R36 nor bound-unsent R37 says anything about the artifact under `dependency soundness`.
+
+### Allocation and model accounting correction
+
+The immutable allocation-row ledger now has 37 rows: 30 baseline + 2 supplemental + replacements R33, R34, R35, R36, and R37. Counting every immutable row, including failed IDs, yields 17 Sol / 20 Opus. Excluding failed R23, R24, R34, R35, and R36 while retaining their same-family replacements yields 32 active planned slots at 16 Sol / 16 Opus. Replacement IDs preserve planned coverage; they do not enlarge it.
+
+For Traceability + cycle briefs specifically, nine immutable IDs now exist: baseline R23–R26 plus replacements R33–R37. R23, R24, R34, R35, and R36 are failed terminal records; active planned slots remain four—R33 replaces R23, R37 carries the original R24 slot, and R25/R26 remain baseline slots. One active slot, R33, has filed.
+
+### Lens-coverage and blind-write control
+
+The preceding `dependency-soundness | R10, R24 | Allocated` summary and later corrections must now be read with this supersession: R10 remains allocated and unfiled; R24, R34, R35, and R36 are terminal `NOT-RUN` with zero coverage; R37 is the Opus replacement and remains `BOUND-UNSENT` with zero coverage. The `dependency soundness` lens has filed zero times across these allocations. Allocated, bound, failed, and filed are not interchangeable states.
+
+The exact R37 control requires full AGENTS and reviewer-protocol reads first, then literal task-inline bounded authority excerpts whose ordered 783-line identity is `ac75a392496c7c4580451d3dc6df61a69da1198e8fbcc6e1c577d35b09f06514`; those four source files must not be opened, and the seven G4 artifacts are the only later file reads. It keeps the Round Log closed, withholds every prior finding/convergence/disposition body and all recovery context, permits exactly one later structured packet at the then-current true EOF without reading prior log bytes, forbids scratch/temp/todo/task paths, shell redirection, and `tee`, and requires exactly one structured `apply_patch` append followed by exact standalone token `TERMINATED` and process exit. This report records the control; it does not dispatch R37 or strengthen any claim.
