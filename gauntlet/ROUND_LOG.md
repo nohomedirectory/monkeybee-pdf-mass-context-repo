@@ -105,7 +105,7 @@ Hash, status, counts, and disposition are slots. They are filled only from filed
 | R21 | Charter-set cross-consistency | duplication/drift | Sol (fast) | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 14 | 0 | 0 | NO | ROUTED → G6 (conditional); G6 triage pending. No v1.0 in-place edit. Freshness admissible (see disposition). |
 | R22 | Charter-set cross-consistency | claim-vocabulary legality | Opus | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 4 | 2 | 2 | NO | ROUTED → G6 (conditional). C02 admitted as a **nonconforming supplemental disposition**, not a graded finding — no owner action. See disposition. |
 | R23 | Traceability + cycle briefs | Q2/Q3 zero-orphan audit | gpt-5.6-sol (ultra, fast) | — | `b77359ccc716a2186d3053034132b7f68b41988e2366e64efe4451e10d5089b3` | NOT-RUN · CORRUPT-DISPATCH · TERMINATED | — | — | — | — | ROOT-FAULT; no authority/artifact read, no filesystem write, no findings or counts. Immutable R23 closed and replaced by R33; R24 remains blocked. |
-| R24 | Traceability + cycle briefs | dependency soundness | `claude-opus-4-8`, effort `xhigh` | — | `22749762089e2a68b9897a09031b19fbdff6aa1108e2fd8071b7743d0df602c6` | ASSIGNED | — | — | — | — | — |
+| R24 | Traceability + cycle briefs | dependency soundness | `claude-opus-4-8`, effort `xhigh` | — | `22749762089e2a68b9897a09031b19fbdff6aa1108e2fd8071b7743d0df602c6` | NOT-RUN · METHOD-VIOLATION · TERMINATED | — | — | — | — | ROOT-FAULT; prohibited read-only redirection occurred before substantive authority/artifact analysis, Round Log access, or any write. No packet, findings, counts, lens coverage, or dependency-soundness conclusion. Child, shell, monitor, and session are absent; the immutable ID is not reused. |
 | R25 | Traceability + cycle briefs | oversimplification hunt | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R26 | Traceability + cycle briefs | clean-room contamination | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R27 | Decision briefs | reversibility and dependency blast radius | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
@@ -149,6 +149,14 @@ R33 replaces immutable failed round R23 under the standing law that a failed rou
 | Round | Artifact | Declared lens (exactly one) | Model | Precondition to admit | Artifact hash | Status | A | B | C | Marginal-only | Owner disposition |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | R33 | Traceability + cycle briefs (R23 replacement) | Q2/Q3 zero-orphan audit | `gpt-5.6-sol`, effort `ultra`, live `fast` | R23 closed `NOT-RUN · CORRUPT-DISPATCH · TERMINATED`; unchanged seven-file manifest; R24 remains blocked | `b77359ccc716a2186d3053034132b7f68b41988e2366e64efe4451e10d5089b3` | FILED · VALIDATED · TERMINATED | 4 | 2 | 0 | NO | ROUTED → G4 through root (premise-first; all six grades and loss guards preserved and unpromoted). R23 contributes no filed evidence; R24 remains blocked pending G4 revision and a new manifest. |
+
+### Failed-round replacement allocation R34
+
+R34 replaces immutable failed round R24 under the standing new-ID law. It preserves R24's artifact, sole `dependency soundness` lens, Opus family, and G4 owner route against the unchanged submitted seven-file manifest. `ALLOCATED · UNSENT` reserves those control identities only: no reviewer task, authority chain, artifact, finding body, or Round Log write anchor has been delivered.
+
+| Round | Artifact | Declared lens (exactly one) | Model | Precondition to admit | Artifact hash | Status | A | B | C | Marginal-only | Owner disposition |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| R34 | Traceability + cycle briefs (R24 replacement) | dependency soundness | `claude-opus-4-8`, effort `xhigh` | R24 closed `NOT-RUN · METHOD-VIOLATION · TERMINATED`; unchanged seven-file manifest; G4 checkpoint declares `SUBMIT-FOR-REVIEW` | `22749762089e2a68b9897a09031b19fbdff6aa1108e2fd8071b7743d0df602c6` | BOUND-UNSENT | — | — | — | — | Control bound at true EOF; no task, authority chain, artifact, CASS/recovery context, launch prompt, or write anchor sent. Zero findings, counts, or coverage. |
 
 ### R31 — notes on admission and reading
 
@@ -3018,3 +3026,52 @@ TERMINATED
 Owner FSM remains `DRAFT`. This correction supplies the true EOF control anchor; it does not cure or hide the earlier placement variance.
 
 **Corrective EOF write law now in force.** `gauntlet/ROUND_LOG.md` is closed to G7 until root verifies the R24 bind and this placement correction, commits and pushes them, dispatches R24, and reports reviewer termination. G7 does not review, predict, or pre-empt findings. **No task has been sent; root verifies, commits, pushes, and dispatches R24.**
+
+## R24 failure closure — `2026-07-14T23:56:19+02:00`
+
+**Immutable terminal status.** R24 is mechanically closed as `NOT-RUN · METHOD-VIOLATION · TERMINATED`. Its original allocation identity, sole `dependency soundness` lens, Opus family assignment, and bound seven-file manifest SHA-256 `22749762089e2a68b9897a09031b19fbdff6aa1108e2fd8071b7743d0df602c6` remain recorded; R24 is not renumbered, reopened, or reused.
+
+**Root fault and process boundary.** Root reports that the reviewer used prohibited read-only shell redirection before any substantive authority analysis, artifact analysis, Round Log access, or filesystem write. The process was terminated at that first method violation. Direct recovery checks find reviewer child PID `3402188`, pane-shell PID `3401952`, NTM monitor PID `3402044`, and session `monkeybee-pdf-mass-context-repo--r24` absent.
+
+**Zero evidentiary contribution.** R24 filed no reviewer packet and no finding. It contributes A=0, B=0, C=0 to no aggregate because it is not a filed round; it supplies zero `dependency soundness` lens coverage and no dependency-soundness conclusion. Its failure does not change the thirteen filed-round aggregate A=93, B=56, C=18 or the filed-family split 7 Sol / 6 Opus.
+
+**Replacement law and release.** A replacement must use a new allocation ID and the same sole lens against the unchanged submitted G4 artifact. R34 is the authorized next ID; no R34 task is sent by this closure. Owner FSM remains `DRAFT`, and control returns only for the serialized R34 allocation and bind.
+
+## R34 replacement assignment/control — `2026-07-14T23:57:56+02:00`
+
+**Binding preimage and terminal control state.** The exact pre-bind Round Log was 3,038 lines / 579,612 bytes / SHA-256 `8d49b405e5f57eb2f355b69fee717a6dbc15e6bb32cbb54f610c141d2da2108e`. G7 bound R34 only: Traceability + cycle briefs under the sole `dependency soundness` lens, assigned to exact model `claude-opus-4-8` at effort `xhigh`. R34 is `BOUND-UNSENT`, not dispatched or filed.
+
+**Replacement basis.** Immutable R24 is closed `NOT-RUN · METHOD-VIOLATION · TERMINATED`, filed no packet, and provides zero findings, counts, lens coverage, or dependency-soundness conclusion. R34 uses a new ID and preserves the failed allocation's artifact, one lens, Opus family, and G4 route without adding a planned-coverage slot.
+
+**Exact unchanged seven-file artifact.** The bytewise-sorted ordinary `sha256sum`-line manifest, final newline included, independently reproduces SHA-256 `22749762089e2a68b9897a09031b19fbdff6aa1108e2fd8071b7743d0df602c6` from committed repository files:
+
+- `reports/TRACEABILITY_MATRIX.md` — 403 lines / 71,345 bytes / `390998bdb308d76e9bce92fbd921c6282a2827844a640d82611e159671b185aa`.
+- `plans/cycle_briefs/C2.md` — 109 / 11,216 / `eb406a51c0c489d6fe0380c293f96bd84e045affb97c481ea8e07798af212c52`.
+- `plans/cycle_briefs/C3.md` — 107 / 10,688 / `20c48dd5f0128dc0407084e1a97dbe0d62af3a41c4be1ab7d5e942b904be6434`.
+- `plans/cycle_briefs/C4.md` — 137 / 12,896 / `d8e9241f3cdcc61a2a2999aca51a631c28f7eca1b09e0b54eab04d878ec7b388`.
+- `plans/cycle_briefs/C5.md` — 109 / 10,365 / `d97aaf8689d08bc9b2e6f5a907e27eab1cf9c936e182f673a1fca8af9d9ba161`.
+- `plans/cycle_briefs/C6.md` — 111 / 11,220 / `35d06257c6100f236e38d7b893f46da5a388e1cf99b16c79d62f4c0707e49b90`.
+- `plans/cycle_briefs/C7.md` — 113 / 13,377 / `224b848ba6470cf2304842c4cb9cdee98f9d79496d0fd3bf74f3bd51cc1926c0`.
+
+**Readiness checkpoint, excluded from reviewer delivery.** Committed `ledger/owners/G4_STATE.md` is 198 lines / 30,505 bytes / SHA-256 `992b63dfeb24051a36eba8ebff5518a2a69e0c612ea9d046f9c44d4bf53ada23` and declares `SUBMIT-FOR-REVIEW`. Its body is control-plane state and must not be delivered to R34.
+
+**Untouched reviewer control.** Root-attested generated metadata timestamp is exactly `2026-07-14T21:42:18.250761511Z`. Direct live checks bind session `monkeybee-pdf-mass-context-repo--r34`, pane `%123`, pane-shell PID `187885`, reviewer child PID `188155`, and NTM monitor PID `188014`. Child arguments and the untouched live welcome screen independently attest exact `claude-opus-4-8` / `xhigh`; every cwd resolves to `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`. The reviewer has received no user prompt, reviewer task, artifact, authority chain, CASS or recovery context, worktree, launch prompt, prior finding, or Round Log write anchor.
+
+**Exact bounded authority chain reserved for later root delivery, in read order.** This reservation is not a dispatch:
+
+1. `AGENTS.md` — full.
+2. `OVERNIGHT_GOAL.md` — §1, §3/G4, and §4.
+3. `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` — full.
+4. `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` — §§0–2 and §§4–7.
+5. `CYCLE_0_WORK_ORDER.md` — §0 only.
+6. `MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md` — §§0.2, 3, 24.12–24.16, 33.1–33.18, and 35.
+7. The seven bound artifacts above, in full, at the recorded component and manifest identities.
+8. Only this R34 control record and its exact final EOF anchor, supplied inline by root; no other Round Log byte.
+
+**Exact one-lens task reserved but unsent.** Apply only the `dependency soundness` lens. Using only the permitted local authority chain, test every declared prerequisite, ordering edge, gate input/output, cross-cycle handoff, artifact producer/consumer relation, and reverse dependency in the matrix and C2–C7 briefs for missing, contradictory, cyclic, premature, or unowned dependencies. File only locally evidenced findings under this lens; do not reapply an adjacent lens and do not rewrite an artifact. No measurement, comparison, benchmark, web/search, prohibited-source contact, or external action is authorized.
+
+**Freshness boundary.** R34 must receive no G4 checkpoint body, prior finding body, reviewer packet, owner disposition, convergence context, decision file, G6 successor, unrelated artifact, external source, competitor material, prohibited processor source/documentation, CASS result, or recovery context. Any accidental exposure must be disclosed and affected evidence excluded.
+
+**Blind-write and termination control.** `gauntlet/ROUND_LOG.md` is closed. Only after a later authorized dispatch may R34 append exactly one structured reviewer packet at the new true EOF, using the root-supplied full EOF anchor without reading prior log bytes. It may create no scratch or temporary file anywhere; use no shell redirection or `tee`; edit no artifact, checkpoint, report, or other path; and perform exactly one structured `apply_patch`-equivalent Round Log append. After that append is flushed, its final standalone response token must be exactly `TERMINATED`, with no punctuation, styling, prefix, or suffix; the reviewer and idle shell must then exit.
+
+**BOUND-UNSENT EOF write law.** Owner FSM remains `DRAFT`. G7 stops idle with R34 `BOUND-UNSENT`; the Round Log remains closed, R25 remains blocked, and no other round is bound. **No task has been sent to R34.**

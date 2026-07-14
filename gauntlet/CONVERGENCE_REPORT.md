@@ -272,3 +272,29 @@ Repair would rewrite existing bytes, which is outside this recovery's scope and 
 ### How this instrument should be read
 
 Its recorded defects all have one shape: **a plausible statement asserted without checking a source that was sitting right there** — an inferred timestamp, an inferred contract conflict, an absolute about one's own tool use, a claimed append that never happened. Every one was caught by mechanical verification — a clock read, a disk read, a hash — and **not one** by prose discipline or a rule written against it. Weight this report's clock-read and hash-verified facts accordingly, and treat its unbacked authored assertions as its weakest class of statement. That is the honest instruction for reading it, and it is the same lesson the campaign's cautionary case study already teaches: the danger is not the claim you know you cannot support, it is the one that looks supported and never was.
+
+## R24 failure and R34 replacement control correction — `2026-07-14T23:59:26+02:00`
+
+This append-only correction supersedes the earlier allocation/coverage summaries only where they describe R24 or the Traceability + cycle briefs replacement count. It changes no reviewer grade, filed count, curve point, owner disposition, or convergence result. Its source Round Log is 3,077 lines / 585,166 bytes / SHA-256 `92f3def3a3c3a1dffd53ebf9868126f1683bd3aa177252af1d543401a68cd2f1`.
+
+### Filed evidence remains unchanged
+
+- Filed rounds: exactly 13.
+- Aggregate grades: A=93, B=56, C=18.
+- Filed model-family split: 7 Sol / 6 Opus.
+- R24 is immutable `NOT-RUN · METHOD-VIOLATION · TERMINATED`: no packet, finding, count, `dependency soundness` coverage, or dependency-soundness conclusion.
+- R34 is `BOUND-UNSENT`: no task has been sent, no packet has filed, and it adds no count, coverage, or curve point.
+
+The Traceability + cycle briefs curve therefore remains the single valid R33 point at A+B=6. It is still a first-look point under its own Q2/Q3 lens, not a convergence series. Neither failed R24 nor bound-unsent R34 says anything about the artifact under `dependency soundness`.
+
+### Allocation and model accounting correction
+
+The immutable allocation-row ledger now has 34 rows: 30 baseline + 2 supplemental + replacement R33 + replacement R34. Counting every immutable row, including failed IDs, yields 17 Sol / 17 Opus. Excluding failed R23 and R24 while retaining their same-family replacements yields 32 active planned slots at 16 Sol / 16 Opus. Replacement IDs preserve planned coverage; they do not enlarge it.
+
+For Traceability + cycle briefs specifically, six immutable IDs now exist: baseline R23–R26 plus replacements R33 and R34. R23 and R24 are failed terminal records; active planned slots remain four—R33 replaces R23, R34 replaces R24, and R25/R26 remain baseline slots. One active slot, R33, has filed.
+
+### Lens-coverage correction
+
+The earlier `dependency-soundness | R10, R24 | Allocated` row must now be read with this supersession: R10 remains allocated and unfiled; R24 is terminal `NOT-RUN` with zero coverage; R34 is the Opus replacement and remains `BOUND-UNSENT` with zero coverage. The `dependency soundness` lens has therefore filed zero times across these allocations. Allocated, bound, failed, and filed are not interchangeable states.
+
+The exact R34 control keeps the Round Log closed, withholds all prior finding/convergence/disposition context, permits at most one later structured packet at the then-current true EOF, forbids scratch/temp files, redirection, and `tee`, and requires exact final standalone token `TERMINATED`. This report records the control; it does not dispatch the reviewer or strengthen any claim.
