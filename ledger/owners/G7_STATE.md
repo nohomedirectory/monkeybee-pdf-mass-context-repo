@@ -622,3 +622,19 @@ I did not revalidate, re-grade, confirm, refute, promote, demote, or rewrite any
 - Post-write hashes for all three files are reported to root in this turn's summary; a file cannot carry a verified hash of itself.
 
 **Stopping for root verification.**
+
+### Continuing G7 owner takeover — `DRAFT` (timestamp not recorded)
+
+- Root-verified launch identity supplied for this assignment: `gpt-5.6-sol`, effort `ultra`, service tier `priority`, live footer `fast`.
+- Pre-append measurements: `gauntlet/ROUND_LOG.md` = 1,356 lines / 248,204 bytes / SHA-256 `68e07cd10f3ab810584d0041816a8836422648f5a6df99b8ff62c6df0fa868ec`; `gauntlet/CONVERGENCE_REPORT.md` = 251 lines / 37,069 bytes / SHA-256 `6d56577c01cfecc3d6c6dd7bf0cc04227c5ecac528ef3fbe9978181f4ae71ef7`; this checkpoint file = 624 lines / 92,103 bytes / SHA-256 `7949dc96924a459ed6b910b6ffc2104448e50bc9589b323a97cbd2bda6587ede`.
+- Disk control facts: `ledger/ORCHESTRATION_STATE.md` records G3 as `REVISE`; the R03 allocation row records artifact hash `PENDING` and status `PRECOMMITTED`; the current round-log tail records the log as released.
+- No G3-owned file was opened or changed. R03 remains unassigned and may bind only after root exposes G3's new checked `SUBMIT-FOR-REVIEW` hash.
+- Owner FSM remains **`DRAFT`**. **Log released.** Ready for root follow-up.
+
+### R03 binding checkpoint — `DRAFT`
+
+- Clock read immediately before the binding write: `2026-07-14T19:49:22+02:00`.
+- Measured bind: local `main` at `589b9ea60a3fddc96dfc97cbf38972de7cd7def8`; G3 `SUBMIT-FOR-REVIEW`; plan 3,447 lines at SHA-256 `fc0a2cdc97590310982d13d1fb1cb4c5db10b30b58a7de2267ffe8ee15fd2234`; R03 lens `clean-room contamination`.
+- Idle reviewer identity: session `monkeybee-pdf-mass-context-repo--r03`, pane ID `%85`, pane PID `3251961`; Claude PID `3252202`, `claude-opus-4-8`, effort `xhigh`; pane and `/proc` attestations agree.
+- R03 is `ASSIGNED`; no reviewer task was sent. Owner FSM remains **`DRAFT`** and the round log is **closed** pending root-reported reviewer termination.
+- This turn changed only the R03 allocation-row hash/status slots and appended the R03 control record plus this checkpoint, all via `apply_patch`; no prior finding body was opened.

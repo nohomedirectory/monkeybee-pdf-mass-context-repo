@@ -84,7 +84,7 @@ Hash, status, counts, and disposition are slots. They are filled only from filed
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | R01 | C1 delta plan | envelope-dependency | Sol (fast) | — | `e019fe8c4bef82e8544147920529980c7d04fef1393e12591a36563eecc94daf` | FILED · VALIDATED · TERMINATED | 8 | 2 | 0 | NO | ROUTED → G3 (artifact owner; in-place revision permitted); G3 triage pending. Gate 3 now armed: no further C1 round until G3 revises and exposes a new hash. |
 | R02 | C1 delta plan | PDF-normative-fact | Opus | — | `a9458bed0b16227d4e4cea4fd30373d3dfdd0c3ef7bd4d4eeb672359b48bab77` | FILED · VALIDATED · TERMINATED | 2 | 2 | 1 | NO | ROUTED → G3. **Method violation recorded** (shell EOF append instead of `apply_patch`); findings evidentially admissible — see disposition. Gate 3 re-armed. |
-| R03 | C1 delta plan | clean-room contamination | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
+| R03 | C1 delta plan | clean-room contamination | Opus | — | `fc0a2cdc97590310982d13d1fb1cb4c5db10b30b58a7de2267ffe8ee15fd2234` | ASSIGNED | — | — | — | — | — |
 | R04 | C1 delta plan | oversimplification-and-feature-loss | Sol | 5-pass A (1/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R05 | C1 delta plan | oversimplification-and-feature-loss | Opus | 5-pass A (2/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R06 | C1 delta plan | oversimplification-and-feature-loss | Sol | 5-pass A (3/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
@@ -1354,3 +1354,34 @@ The note's own quarantine reasoning applies to the note itself: clean bytes do n
 **Gate 3 is armed, and the artifact has already moved.** `plans/CYCLE_1_DELTA_PLAN.md` now hashes to `c376071573d086e741f2ce9ddc9ca11bdc880df962388df6f80b3ce972597cbb` and no longer matches the R02-bound `a9458bed…ab77`, because G3 is independently triaging R02 mid-revision. The note above says the artifact "did not shift" — **true when written at `19:26:17`, stale now**; staleness, not fabrication. No C1 round is admissible against the superseded hash, and none is admissible against a mid-revision working-tree hash, which is not a bindable identity. **R03 binds only to the new hash G3 exposes at its next `SUBMIT-FOR-REVIEW`.**
 
 Owner FSM: **`DRAFT`**. Stopping for root verification.
+
+## R03 — ASSIGNED 2026-07-14T19:49:22+02:00
+
+Clock read immediately before this `apply_patch` write: `2026-07-14T19:49:22+02:00`.
+
+- Artifact: `plans/CYCLE_1_DELTA_PLAN.md` at local `main` commit `589b9ea60a3fddc96dfc97cbf38972de7cd7def8`.
+- Bound artifact identity: 3,447 lines; SHA-256 `fc0a2cdc97590310982d13d1fb1cb4c5db10b30b58a7de2267ffe8ee15fd2234`, independently recomputed from disk.
+- Declared lens: `clean-room contamination`. Exactly one; it matches the precommitted R03 allocation.
+- Assigned model: `claude-opus-4-8`, effort `xhigh`.
+- Reviewer control plane: session `monkeybee-pdf-mass-context-repo--r03`, window 1, pane 1, pane ID `%85`, pane PID `3251961`, `current_command=claude`, `dead=0`.
+- Reviewer process: PID `3252202`; `/proc/3252202/cmdline` is `/home/joseph/.local/bin/claude --dangerously-skip-permissions --model claude-opus-4-8 --effort xhigh`; `/proc/3252202/status` reports `Name: claude`, `State: S (sleeping)`, and `PPid: 3251961`, binding it to the pane. The live pane displays Claude Code `v2.1.209`, `Opus 4.8 with xhigh effort`, and an idle welcome prompt.
+
+**Admission gates.** Gate 1 satisfied: `ledger/owners/G3_STATE.md` records `owner-fsm: SUBMIT-FOR-REVIEW`. Gate 2 satisfied: the bound SHA-256 was recomputed. Gate 3 satisfied by revision: R02 bound `a9458bed…ab77`; R03 binds the new `fc0a2cdc…fd2234` identity at commit `589b9ea`. Gate 4 satisfied by the pane and `/proc` attestations. Gate 5 satisfied by the single declared lens. Gate 6 is not engaged. Gate 7 satisfied at binding: a separate idle process shows no authoring context and no task has been sent.
+
+**Exact local authority chain for the eventual fresh-context task, in read order:**
+
+1. `AGENTS.md` — full.
+2. `OVERNIGHT_GOAL.md` — §1, §3/G3, and §4.
+3. `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` — full.
+4. `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` — §§0–1, §3 items 5 and 8, §5/C0–C1, and §6.
+5. `CYCLE_0_WORK_ORDER.md` — §§0–1, §5 items 5 and 9, and §§7–8.
+6. `MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md` — §4 only.
+7. `constitution/MONKEYBEE_CONSTITUTION_v8.md` — provenance header and §4 only; this is a proposed extraction and cannot silently supersede Rev 7.
+8. `constitution/SPECCARD_PIPELINE.md` — provenance header and §§1–3 only; registry and pending slots, never semantic authority.
+9. `plans/CYCLE_1_DELTA_PLAN.md` — only the artifact at the bound SHA-256.
+
+**Lens and freshness containment.** Apply only the clean-room-contamination lens. Findings require local evidence; model recollection is not evidence. Do not contact prohibited processor source or documentation, reconstruct a SpecCard semantic body, supply remembered standards semantics, perform competitor measurement or comparison, or take external action. Root must deliver this assignment and the EOF anchor inline. The reviewer must not open, read, or search `gauntlet/ROUND_LOG.md`, `gauntlet/CONVERGENCE_REPORT.md`, prior reviewer packets or dispositions, any G6 successor, or either owner checkpoint; any accidental exposure must be disclosed in the filed no-action statement.
+
+**Routing after filing:** R03 findings route to G3 through root; G7 validates and records but does not review or repair.
+
+**Write law now in force.** `gauntlet/ROUND_LOG.md` is closed to G7 until root reports R03 reviewer termination. G7 does not review, predict, or pre-empt findings. All prior bytes and the R01–R32 allocation are preserved except the R03 allocation-row slot update above. **No task has been sent; root verifies and sends.**
