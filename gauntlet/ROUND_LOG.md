@@ -94,7 +94,7 @@ Hash, status, counts, and disposition are slots. They are filled only from filed
 | R10 | C1 delta plan | dependency soundness | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R11 | C1 delta plan | security/DoS | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R12 | C1 delta plan | claim vocabulary and de-slopification | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
-| R13 | Constitution + fix map | identity-law consistency | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
+| R13 | Constitution + fix map | identity-law consistency | Sol | — | `9e81eaaa03c1368335b8aaff260af0ff918d7a6a76ca45bed85a00d4313743ec` | ASSIGNED | — | — | — | — | — |
 | R14 | Constitution + fix map | oversimplification-and-feature-loss | Opus | 5-pass B (1/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R15 | Constitution + fix map | oversimplification-and-feature-loss | Sol | 5-pass B (2/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R16 | Constitution + fix map | oversimplification-and-feature-loss | Opus | 5-pass B (3/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
@@ -1451,3 +1451,45 @@ Clock read immediately before this `apply_patch` write.
 **Convergence boundary:** R03 files A+B=2 under a third, different lens against a second revised plan identity. It is not marginal-only and does not form a same-lens convergence series with R01 or R02.
 
 Owner FSM remains `DRAFT`. **Log released** — open for the next root-routed control action.
+
+## R13 — ASSIGNED 2026-07-14T20:12:46+02:00
+
+Clock read immediately before this `apply_patch` write.
+
+- Artifact: exactly `constitution/MONKEYBEE_CONSTITUTION_v8.md`, `constitution/SPECCARD_PIPELINE.md`, `shell/MONKEYBEE_SHELL_CORPUS_v8.md`, and `reports/FIX_APPLICATION.md`.
+- Manifest method: SHA-256 of the bytewise (`LC_ALL=C`) sorted `sha256sum` lines for those four files, including the final newline.
+- Sorted manifest:
+
+```text
+281fbd34c1a777a6f5158a6b6dfaeab56306cb75131013d3a1701f5b6f3468e7  shell/MONKEYBEE_SHELL_CORPUS_v8.md
+845d8f5645cb7810596d287ea2598e8fd1a90f07b4483c1e22f06964413ef695  reports/FIX_APPLICATION.md
+aed9cd3863460715ad8bfcf39fe7bd846e6ce8618d22572715eebf7b28a04179  constitution/MONKEYBEE_CONSTITUTION_v8.md
+ceac345d4d580efc6edee81fb7052fc0ffd3ebc97df97b3c24e271ddf8a6a8b3  constitution/SPECCARD_PIPELINE.md
+```
+
+- Bound manifest SHA-256: `9e81eaaa03c1368335b8aaff260af0ff918d7a6a76ca45bed85a00d4313743ec`, independently reproduced from disk.
+- Declared lens: `identity-law consistency`. Exactly one; it matches the precommitted R13 allocation.
+- Assigned model: `gpt-5.6-sol`, effort `ultra`, service tier `priority`, live `fast` mode.
+- Reviewer control plane: session `monkeybee-pdf-mass-context-repo--r13`, window 1, pane 1, pane ID `%95`, pane PID `3367002`, `current_command=codex`, `dead=0`.
+- Reviewer process: child PID `3367236`; `/proc/3367236/cmdline` is `codex --dangerously-bypass-approvals-and-sandbox -m gpt-5.6-sol -c model_reasoning_effort=ultra -c model_reasoning_summary_format=experimental --search`; `/proc/3367236/status` reports `Name: codex`, `State: S (sleeping)`, and `PPid: 3367002`. The live pane shows `gpt-5.6-sol ultra fast` and `Service tier set to priority`.
+
+**Admission gates.** Gate 1 satisfied: `ledger/owners/G1_STATE.md` records phase `SUBMIT-FOR-REVIEW`. Gate 2 satisfied: all four hashes and the manifest hash were independently recomputed. Gate 3 is not engaged: R13 is the first round on this exact four-file artifact. Gate 4 satisfied by process, pane, fast-footer, and priority-service attestations. Gate 5 satisfied by the single declared lens. Gate 6 is not engaged. Gate 7 satisfied at binding: a separate idle process has no authoring context and no task has been sent.
+
+**Exact local authority chain for the eventual fresh-context task, in read order:**
+
+1. `AGENTS.md` — full.
+2. `OVERNIGHT_GOAL.md` — §1, §3/G1, and §4.
+3. `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` — full.
+4. `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` — §§0–1, §5/C0–C1, and §6.
+5. `CYCLE_0_WORK_ORDER.md` — §§0–3.
+6. `AUDIT_FINDINGS_LEDGER.md` — R1-1, R1-4, R2-N4, and R2-N5 only.
+7. `MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md` — §§6, 9–11, §22.4, §§33–34, and Appendix B only.
+8. `decisions/D1_CONTENT_HASH.md`, `decisions/D2_CANONICAL_SERIALIZATION.md`, and `decisions/D3_DECODED_STREAM_IDENTITY.md` — each as a proposed decision, never human ratification.
+9. `DISPUTES.md` — D-004 only.
+10. The four bound artifact files above, at the manifest hashes recorded here.
+
+**Lens and freshness containment.** Apply only identity-law consistency: identity grammar, binding, domain separation, canonicalization dependency, report identity carriage, and fix-map traceability for those laws. Findings require local evidence; adjacent architecture, PDF-domain, style, and claim-vocabulary observations remain out of scope. Root must deliver this assignment and the EOF anchor inline. The reviewer must not open, read, or search `gauntlet/ROUND_LOG.md`, `gauntlet/CONVERGENCE_REPORT.md`, prior reviewer packets or dispositions, G6 successors, or owner checkpoints; accidental exposure must be disclosed in the filed no-action statement.
+
+**Routing after filing:** R13 findings route to G1 through root; G7 validates and records but does not review or repair.
+
+**Write law now in force.** `gauntlet/ROUND_LOG.md` is closed to G7 until root reports R13 reviewer termination. G7 does not review, predict, or pre-empt findings. All prior bytes and the R01–R32 allocation are preserved except the R13 allocation-row hash/status slots above. **No task has been sent; root verifies and sends.**

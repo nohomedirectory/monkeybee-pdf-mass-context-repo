@@ -647,3 +647,12 @@ I did not revalidate, re-grade, confirm, refute, promote, demote, or rewrite any
 - Process correction: the no-action statement's no-shell-file-writing absolute is false because transcript-visible `tee` wrote under `/data/tmp/claude-1000`; root verified no repository path was written by `tee` and structured `Edit` remained the sole repository write. Reviewer bytes and grades are preserved. The disclosed overlong packet is retained.
 - R03-A01/B01/C01 route to G3 through root for premise-first triage with grades unpromoted. Root reports reviewer process, shell, tmux session, and monitor absent.
 - Owner FSM remains **`DRAFT`**. **Log released.**
+
+### R13 binding checkpoint — `DRAFT`
+
+- Clock read immediately before binding: `2026-07-14T20:12:46+02:00`.
+- G1 phase `SUBMIT-FOR-REVIEW` and R13's sole `identity-law consistency` lens were confirmed from disk.
+- The exact four-file manifest independently reproduces SHA-256 `9e81eaaa03c1368335b8aaff260af0ff918d7a6a76ca45bed85a00d4313743ec`; every per-file hash is recorded in the R13 assignment.
+- Idle reviewer identity: session `monkeybee-pdf-mass-context-repo--r13`, pane `%95`, pane PID `3367002`, child PID `3367236`; `gpt-5.6-sol`, effort `ultra`, priority service, live `fast` footer.
+- R13 is `ASSIGNED`; no reviewer task was sent. Owner FSM remains **`DRAFT`** and the round log is **closed** pending root-reported reviewer termination.
+- This bind changed only the R13 allocation-row hash/status slots and appended the R13 control record plus this checkpoint, all via `apply_patch`.
