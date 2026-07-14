@@ -161,3 +161,54 @@ Admission gates checked against the binding. Gate 3 (same-artifact re-round agai
 **What I did not do:** I did not review, predict, grade, or integrate anything; I did not touch R19's entry, its validation record, or its routing disposition; I did not transition the owner FSM.
 
 Owner FSM: unchanged at `DRAFT`, deliberately. **`gauntlet/ROUND_LOG.md` is closed to G7** until root reports R20 reviewer termination. On termination I validate the entry against the schema, route it to G6 through root, append the disposition, and persist here.
+
+### 17:42 — R20 FILED, VALIDATED, ROUTED TO G6; fast-mode control recorded; log released
+
+Root reported R20 reviewer termination and verified session absence. **A=8, B=2, C=0; marginal-only NO.**
+
+**Append-only integrity: PROVEN.** I recomputed the pre-append prefix of `gauntlet/ROUND_LOG.md` — first 47,210 bytes — and it hashes to `36f9bab683592cbdabb37ff75115dbc3e1ac039d3449433df9548c0b9d354376`, identical to the value in the reviewer's no-action statement and to root's independent value. No byte before R20's entry was altered, so R19's entry, findings, validation record, and routing disposition are byte-intact by cryptographic evidence rather than anyone's assurance. This is the strongest form the "preserve reviewer bytes" rule can take, and it is worth the two seconds it costs.
+
+**Schema validation: PASS**, recounted by me rather than taken from the packet. Declared `A=8; B=2; C=0` matches my recount of the headings (A01–A08, B01–B02, no C). All five required fields present ten times each across ten findings. Hash in the entry equals the bound hash; I re-attested the four-file manifest from the working tree and it still reproduces `718928bb…570c4a`, with per-file digests matching the 15:55 canonical baseline. One lens, FSM complete through `TERMINATED`, verdict present, no repair written into artifact or log. Root's recount agrees with mine on every number — two independent counts, not one count trusted twice.
+
+**Two deviations recorded transparently; neither rewritten, neither a mismatch.**
+
+1. **Reviewer could not recover its TUI startup model string** from retained scrollback. It attested from process evidence instead (`/proc/3096698/cmdline` showing `--model claude-opus-4-8 --effort xhigh`, with `PPid` 3096404 equal to the assigned pane's `pane_pid`, binding process to pane) and *recorded the gap as a limitation rather than claiming an attestation it did not have* — which is exactly right under the model identity law. Root's pre-assignment TUI capture independently showed Opus 4.8 at `xhigh`, and process and pane binding agree. Two-attestation requirement satisfied (reviewer process evidence + root TUI capture); nothing contradicts the process attestation; no `MODEL-MISMATCH`, no `STALE-ASSIGNMENT`. Disclosed because an attestation is only as strong as the evidence behind it.
+2. **One local typo in the round verdict** — "A=8 and B=0" — which the same sentence immediately corrects with the rule and the true counts "(A=8, B=2)". Declared counts and filed headings reconcile at 8/2/0, and `marginal-only: NO` is identical under either reading. Recorded, not repaired: I do not rewrite reviewer bytes to tidy a slip that changes nothing.
+
+**Routing: all ten findings → G6 (conditional).** No v1.0 in-place edit authorized or performed. The eight Grade-A findings route under the read-only-canon exception; R20-B01 and R20-B02 route premise-first, each carrying one unresolved premise the reviewer deliberately declined to resolve from memory (whether Work Order §4 exhaustively partitions Rev 7 §35; what Flagships G/H denote — §31 was outside its declared chain and it said so instead of reconstructing it). **A Grade B is not a confirmed defect and I have not recorded it as one.** Several repair boundaries span more than one Charter-set document; that is the reviewer's stated boundary, not my instruction — G6 decides what qualifies. Each finding's `loss guard` binds any G6 repair, and I carried those forward verbatim rather than paraphrasing them away, because several explicitly forbid deleting the baseline and ablation evidence they re-home.
+
+**Live human control, 17:39 — fast mode for Codex instances — recorded prospectively.** Root updated the reviewer protocol and orchestration ledger; I recorded it in the round log's model identity law. It changes **no terminated round**, and I did not reopen, restate, or re-grade one: R19 (`gpt-5.6-sol`) terminated at 17:19, before the control existed, and R20 is not a Codex instance, so the control does not reach it despite its 17:40 filing time. Every future `Sol` round — R01, R04, R06, R08, R10, R12, R13, R15, R17, R21, R23, R25, R27, R30, R31 — must run in fast mode and attest it; a Sol round assigned after 17:39 that cannot attest it is a recorded control deviation, not a silent admission.
+
+The consequence I recorded now rather than letting someone discover it later: this changes an execution condition **mid-run, within one model family**. The Sol series is no longer homogeneous — R19 ran pre-control, everything Sol after it runs in fast mode — so any cross-Sol comparison carries that confound. `CONVERGENCE_REPORT.md` names it. It does not retroactively weaken R19; it means R19 is not a like-for-like control for what follows.
+
+**The convergence point I want on the record.** R19 and R20 applied *different lenses* to the *same unchanged bytes* — the Charter set is read-only, the hash was identical for both, and no repair happened in between. So 8 findings then 10 findings is **not** a rising curve and **not** evidence the artifact is degrading; nothing about it changed, and nothing could have. It is a second lens finding a second class of defect in bytes the first lens already read, which is what lens rotation exists to do. A real convergence curve needs the *same* lens across *successive revisions* — the shape the five-pass blocks produce — and no such series exists yet. I flagged this in the report because "18 findings in two rounds" is exactly the number someone would later misread as a trend.
+
+Fifteen filed Grade-A findings across both rounds are fifteen *claimed* defects. No G6 triage has returned. If G6 returns `NOT-TRIGGERED` on any, the report keeps the filed grade and records the outcome beside it — the count is never lowered retroactively.
+
+Owner FSM: back to `DRAFT`. **Log released** — `gauntlet/ROUND_LOG.md` is open for the next root-routed reviewer. **R01 is not assigned**; root issues that separately, and I did not pull it forward.
+
+### 17:47 — R01 ASSIGNED against the flagship (control-plane write only); log closed to G7
+
+Root routed an assignment-only instruction. No reviewer exists yet. Control-plane write and nothing else.
+
+- Artifact: `plans/CYCLE_1_DELTA_PLAN.md` — the flagship, and OVERNIGHT_GOAL §0.1's single non-negotiable deliverable.
+- Sole lens: `envelope-dependency` — matches the precommitted R01 lens.
+- Model: `gpt-5.6-sol`, effort `ultra`, **fast mode, service tier priority** — matches the precommitted `Sol` label and the 17:39 live human control.
+- Bound hash: `e019fe8c4bef82e8544147920529980c7d04fef1393e12591a36563eecc94daf`.
+- Status: `ASSIGNED`, not `FILED`.
+
+**Hash and owner state recomputed from disk at 17:47, before assignment.** `sha256sum` reproduces the bound value exactly. `ledger/owners/G3_STATE.md` shows `owner-fsm: SUBMIT-FOR-REVIEW`, transitioned 17:37:01 after G3's own self-check. The plan is 3,091 lines, inside the goal's 2,500–4,000 band. I verified both rather than accepting either from the assignment.
+
+**Admission gate 1 is satisfied for the first time this run.** Every prior C1 refusal I recorded rested on exactly this: the plan was `DRAFT`, so no stable artifact existed to bind a hash to. G3 reached `SUBMIT-FOR-REVIEW` and the gate opened. The rule did not bend — the artifact became reviewable. That is the gate working, and it is worth noting that it held for hours against the run's highest-priority artifact rather than being waived for convenience.
+
+Gate 3 is **not engaged**: first round on this artifact, no prior revision to gate against. Gate 6 not engaged (not a five-pass block round). Gates 2, 4, 5 satisfied; gate 7 is root's at spawn.
+
+**A third attestation is required for this round.** R01 is the **first Sol round under the 17:39 fast-mode control**. Beyond the standing two model-identity attestations, the TUI footer must attest `ultra fast` before the review task is sent. A Sol round that cannot attest fast mode is a recorded control deviation, not a silent admission. This also makes live the confound I recorded at R20 integration: R19 is the only Sol round that ran pre-control, so the Sol series is not homogeneous, and the convergence report says so instead of presenting it as a clean sequence.
+
+**Same lens as R19, different artifact — and I recorded why that is not a repeat.** `envelope-dependency` was applied to the Charter set at R19; R19 said nothing whatsoever about the C1 plan. Coverage is per artifact. R01 is this lens's first application to this artifact, so it is a structural-phase round under the per-artifact phase model, and its findings carry no inference from R19's in either direction — a quiet R01 would not be corroborated by R19's eight findings, and a heavy R01 would not be predicted by them. Someone reading the two rows side by side later would be tempted to draw exactly that inference, so I foreclosed it at assignment.
+
+**Routing differs from the Charter-set rounds, and this is the first time it will.** R01's findings go to **G3**, which owns the artifact and may revise it in place — unlike R19/R20, whose findings route to G6 precisely because their artifact is read-only canon. G3 triages and repairs; it may enter `REVISE` only after a fresh packet is persisted and routed, and it does not self-review. Every subsequent C1 round then needs a new artifact hash under gate 3.
+
+**What I did not do:** I did not review, predict, grade, or integrate anything; I touched no reviewer bytes; I preserved the full R01–R32 allocation; I did not transition the owner FSM.
+
+Owner FSM: unchanged at `DRAFT`, deliberately. **`gauntlet/ROUND_LOG.md` is closed to G7** until root reports R01 reviewer termination.

@@ -27,6 +27,7 @@ Persist only the assigned round entry in `gauntlet/ROUND_LOG.md`. Do not edit th
 4. Confirm the assigned lens is exactly one lens. Treat adjacent observations as out of scope unless they are necessary evidence for that lens.
 5. Record the artifact SHA-256 before analysis. If it differs from the round assignment, stop analysis and append a `STALE-ASSIGNMENT` entry.
 6. Record the exact model from process arguments and the live TUI. If either does not match the assigned model, append `MODEL-MISMATCH`; do not review.
+7. For every Codex process spawned after the human's 2026-07-14 17:39 fast-mode instruction, enable `/fast` before sending the review assignment and verify both `Service tier set to priority` and `fast` in the live TUI footer. Record that evidence in the model-identity field. A Codex process without this evidence is ineligible to review; append `MODE-MISMATCH` and stop. This requirement does not apply retroactively to already terminated rounds or to Claude processes.
 
 ## Absolute boundaries
 

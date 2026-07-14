@@ -48,7 +48,7 @@ It may write only its assigned finding packet. The G7 owner serially integrates 
 
 ## Precommitted baseline gauntlet allocation
 
-Model labels below are exact launch targets: `Sol` means `gpt-5.6-sol` at `max` or `ultra`; `Opus` means `claude-opus-4-8` at `xhigh`. A round may not silently fall back to another model.
+Model labels below are exact launch targets: `Sol` means `gpt-5.6-sol` at `max` or `ultra`; for every Codex process spawned after the human's 17:39 instruction it additionally requires `/fast`, service tier `priority`, verified in the live TUI before assignment. `Opus` means `claude-opus-4-8` at `xhigh`. A round may not silently fall back to another model or mode.
 
 | Rounds | Artifact | Declared lens | Model sequence |
 |---|---|---|---|
