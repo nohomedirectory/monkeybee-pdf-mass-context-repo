@@ -298,3 +298,29 @@ For Traceability + cycle briefs specifically, six immutable IDs now exist: basel
 The earlier `dependency-soundness | R10, R24 | Allocated` row must now be read with this supersession: R10 remains allocated and unfiled; R24 is terminal `NOT-RUN` with zero coverage; R34 is the Opus replacement and remains `BOUND-UNSENT` with zero coverage. The `dependency soundness` lens has therefore filed zero times across these allocations. Allocated, bound, failed, and filed are not interchangeable states.
 
 The exact R34 control keeps the Round Log closed, withholds all prior finding/convergence/disposition context, permits at most one later structured packet at the then-current true EOF, forbids scratch/temp files, redirection, and `tee`, and requires exact final standalone token `TERMINATED`. This report records the control; it does not dispatch the reviewer or strengthen any claim.
+
+## R34 failure and R35 replacement control correction — `2026-07-15T00:28:59+02:00`
+
+This append-only correction supersedes the preceding R24/R34 control correction only where that section describes R34 as bound-unsent or gives allocation counts before R35. It changes no reviewer grade, filed count, curve point, owner disposition, or convergence result. Its source Round Log is 3,140 lines / 595,350 bytes / SHA-256 `5d4abb3cb1476c3d31b5161bd57cb113121bb5c01beb77468f6ac67074d99c2f`.
+
+### Filed evidence remains unchanged
+
+- Filed rounds: exactly 13.
+- Aggregate grades: A=93, B=56, C=18.
+- Filed model-family split: 7 Sol / 6 Opus.
+- R34 is immutable `NOT-RUN · METHOD-VIOLATION · TERMINATED`: no packet, finding, count, `dependency soundness` coverage, or dependency-soundness conclusion.
+- R35 is `BOUND-UNSENT`: no task has been sent, no packet has filed, and it adds no count, coverage, or curve point.
+
+The Traceability + cycle briefs curve therefore remains the single valid R33 point at A+B=6. It is still a first-look point under its own Q2/Q3 lens, not a convergence series. Neither failed R34 nor bound-unsent R35 says anything about the artifact under `dependency soundness`.
+
+### Allocation and model accounting correction
+
+The immutable allocation-row ledger now has 35 rows: 30 baseline + 2 supplemental + replacements R33, R34, and R35. Counting every immutable row, including failed IDs, yields 17 Sol / 18 Opus. Excluding failed R23, R24, and R34 while retaining their same-family replacements yields 32 active planned slots at 16 Sol / 16 Opus. Replacement IDs preserve planned coverage; they do not enlarge it.
+
+For Traceability + cycle briefs specifically, seven immutable IDs now exist: baseline R23–R26 plus replacements R33–R35. R23, R24, and R34 are failed terminal records; active planned slots remain four—R33 replaces R23, R35 carries the original R24 slot, and R25/R26 remain baseline slots. One active slot, R33, has filed.
+
+### Lens-coverage and blind-write control
+
+The preceding `dependency-soundness | R10, R24 | Allocated` summary and R24/R34 correction must now be read with this supersession: R10 remains allocated and unfiled; R24 and R34 are terminal `NOT-RUN` with zero coverage; R35 is the Opus replacement and remains `BOUND-UNSENT` with zero coverage. The `dependency soundness` lens has filed zero times across these allocations. Allocated, bound, failed, and filed are not interchangeable states.
+
+The exact R35 control keeps the Round Log closed, withholds every prior finding/convergence/disposition body and all recovery context, permits at most one later structured packet at the then-current true EOF without reading prior log bytes, forbids scratch/temp/todo/task files, shell redirection, and `tee`, and requires exact final standalone token `TERMINATED`. The excluded wrong-path preflight is a control-plane launch failure, not a round. This report records the control; it does not dispatch R35 or strengthen any claim.
