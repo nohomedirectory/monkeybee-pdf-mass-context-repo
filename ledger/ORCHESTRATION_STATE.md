@@ -6,7 +6,7 @@ inputs:
   - OVERNIGHT_GOAL.md
 status: DRAFT
 evidence-status: provisional-pending-substrate
-updated-at: 2026-07-14T21:19:30+02:00
+updated-at: 2026-07-14T21:21:59+02:00
 timestamp-correction: the initially written literal 2026-07-14T19:26:00+02:00 was a future, unmeasured value and is preserved here as invalid; the exact update second is not inferred
 ---
 
@@ -14,8 +14,8 @@ timestamp-correction: the initially written literal 2026-07-14T19:26:00+02:00 wa
 
 ## Global state
 
-- Active subgoal: `G3` gauntlet. G3 entered measured R04-driven `REVISE` at `2026-07-14T21:16:13+02:00`, with all 17 allegations, loss guards, and the locator-admissibility caveat persisted before any plan edit. In parallel, R14 is bound only to G1 manifest `dd86aaf3…efb4` as Opus 4.8/xhigh five-pass B 1/5; no reviewer task or artifact context has yet been sent.
-- Current phase: `G0/G6 DONE; G1/G2/G4/G5 SUBMIT-FOR-REVIEW; G3 REVISE on R04; continuing G7 DRAFT/log closed after R14 assignment; R14 ASSIGNED but unreleased; 9/32 rounds filed at A=58/B=17/C=5; G8 INGEST with a live exact-model owner and disk checkpoint`
+- Active subgoal: `G3` gauntlet. G3 is editing only its owned plan/state under the persisted R04 `REVISE` checkpoint. In parallel, R14 received only its sealed Constitution assignment at `2026-07-14T21:21:38+02:00`, measured actual start `21:21:44`, and is applying the sole oversimplification-and-feature-loss lens as Opus 4.8/xhigh.
+- Current phase: `G0/G6 DONE; G1/G2/G4/G5 SUBMIT-FOR-REVIEW; G3 REVISE on R04; continuing G7 DRAFT/log closed; R14 active five-pass B 1/5; 9/32 rounds filed at A=58/B=17/C=5; G8 INGEST with a live exact-model owner and disk checkpoint`
 - Priority rule: preserve G0, ledger, G3, G3 gauntlet, G1, and `MORNING_REPORT.md`; shed work only from the bottom of the governing ladder.
 - Canonical-input mutation allowance: none.
 - Bead/code allowance: none.
