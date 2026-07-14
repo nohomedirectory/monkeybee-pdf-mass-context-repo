@@ -324,3 +324,38 @@ All seven admission gates checked. Gate 3 is satisfied twice over: R21 declares 
 **What I did not do:** I did not review, predict, grade, or integrate anything; I touched no filed reviewer bytes (R19, R20, R01 all intact); I set only R21 to `ASSIGNED`; I did not transition the owner FSM.
 
 Owner FSM: unchanged at `DRAFT`. **`gauntlet/ROUND_LOG.md` is closed to G7** until root reports R21 reviewer termination.
+
+### 18:30:16 — R21 FILED, VALIDATED, ROUTED TO G6; freshness adjudicated; log released
+
+Clock read at `2026-07-14T18:30:16+02:00` immediately before writing. **A=14, B=0, C=0; marginal-only NO.**
+
+**Byte integrity proven on both sides of the append**, recomputed by me independently of root: the committed prefix (131,379 bytes, 709 lines) hashes to `490a9e85…2c1b`, and the R21 suffix `[131379, 149665)` (18,286 bytes) hashes to `8327eddd…dcbe`. Both reproduce root's values exactly. Nothing before the entry moved, and the suffix hash pins *the reviewer's own bytes*, so this disposition is bound to a specific entry rather than a mutable file region.
+
+**Schema validation: PASS**, recounted by me: 14 A-headings, zero B, zero C, matching the declared counts; all five required fields present 14 times each. Three-way model attestation satisfied (`/proc` args, `ultra fast` footer, `Service tier set to priority`). Root's recount agrees on every number.
+
+**Deviation 1 — the `started` field is the assignment timestamp.** The entry records `started: 18:17:08`, but that is R21's *assignment* time, and the assignment record states plainly that no review prompt had been sent then. The reviewer carried the assignment's time into its own field. Corrected bound: the review began **after `18:17:08` and before `18:18:35`** (root's clock read). The exact second was never measured and **I did not manufacture one.** This is the same failure class I committed twice earlier today — a plausible timestamp taken from context instead of measured — and I disclosed it on identical terms rather than treating a reviewer's version of my own mistake more harshly than my own.
+
+**Deviation 2 — incidental exposure; I ruled the round ADMISSIBLE, with reasoning on the record.** The reviewer self-disclosed that an R21 locator surfaced one aggregate prior-round count line, and a section-boundary probe exposed a few Rev 7 Appendix A lines.
+
+My reasoning, since root asked for it explicitly:
+
+1. **What the freshness rule protects** is the *provenance of conclusions* — that agreement between rounds is corroboration rather than correlation. It is not a rule about incidental bytes.
+2. **An integer carries no finding semantics.** A count line has no location, no claim, no evidence, no repair boundary. No duplication/drift finding can be derived from it. All fourteen findings carry their own local evidence, requirement, consequence, repair boundary, and loss guard — I verified all 14 instances of all 5 fields.
+3. **The Appendix A lines were never prohibited.** Appendix A is Rev 7 domain canon and the R21 authority chain expressly permits Rev 7 stable sections on demand. This was permitted reading reached by an untidy route; the deviation is in probe discipline, not in the material.
+4. **No finding body or disposition was read.** That is the actual prohibition, and it held.
+
+**The residual, stated rather than dismissed:** the count line does convey one bit — that prior rounds on this artifact were not marginal-only. That could nudge a reviewer toward expecting defects; it cannot point at any specific one, because no specific content crossed. Bounded, non-zero, recorded. "No effect" would be a stronger claim than the evidence supports, and I declined to make it.
+
+**The disclosure is a credit, not a fault.** Nothing compelled the reviewer to report an exposure no one would have detected. It reported it, bounded it, and asked that it be retained rather than erased. A gauntlet whose reviewers conceal their boundary slips is worth far less than one whose reviewers disclose them, and the record says so.
+
+**Routing: all fourteen Grade-A findings → G6 (conditional).** No v1.0 in-place edit. No Grade-B or Grade-C exists in this round, so nothing is premise-bounded and nothing is promoted. Each `loss guard` binds G6's repair — several require preserving retries, human interventions, drift and probe outcomes, discarded paths, and the full distribution rather than the selected run.
+
+**Grade distribution recorded without editorializing:** 14 A and zero B/C is an unusual shape. The reviewer's stated reason is that each item carried a direct local contradiction needing no hedge. That is its call; I do not re-grade. G6 triage is the test, pending on all fourteen.
+
+**Convergence, honestly.** Charter-set rounds now read 8, 10, 14 — a rising sequence that means nothing, and the report says so: three *different* lenses against bytes that never changed and cannot change. It cannot indicate a degrading artifact. I also recorded a sharper limitation: **filed rounds are 3 Sol to 1 Opus.** The baseline is a 15/15 split, but the *filed* sample is not balanced, so three quarters of the evidence gathered so far comes from one model family and would share any blind spot that family has. Until the allocation corrects that, this gauntlet's findings are not described as cross-model-corroborated.
+
+Round telemetry (root-reported, not independently reproducible by me): total 198,881 tokens; input 161,082 plus 2,854,400 cached; output 37,799; reasoning 27,171. Codex exited normally; shell exited; tmux session absent.
+
+Thirty-seven filed Grade-A findings now stand across four rounds. Fifteen carry G6 `QUALIFY` dispositions; fourteen (R21) await G6 triage; eight (R01) await G3. **Zero are human-ratified or externally adjudicated.**
+
+Owner FSM: back to `DRAFT`. **Log released.** **R22 is not assigned** and will not be until root separately authorizes it.

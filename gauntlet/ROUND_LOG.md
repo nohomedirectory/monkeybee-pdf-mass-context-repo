@@ -102,7 +102,7 @@ Hash, status, counts, and disposition are slots. They are filled only from filed
 | R18 | Constitution + fix map | oversimplification-and-feature-loss | Opus | 5-pass B (5/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R19 | Charter-set cross-consistency | envelope-dependency | Sol | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 7 | 1 | 0 | NO | ROUTED → G6. **G6 triage returned: A01–A07 all QUALIFY** (bounded repairs, named targets). B01 premise-bounded, both branches preserved, unpromoted. No v1.0 in-place edit. G6 `DRAFT`; successors `PROPOSED — awaiting human ratification`. |
 | R20 | Charter-set cross-consistency | Q2/Q3 traceability | Opus | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 8 | 2 | 0 | NO | ROUTED → G6. **G6 triage returned: A01–A08 all QUALIFY.** B01, B02 unpromoted. No v1.0 in-place edit. G6 `DRAFT`; successors `PROPOSED — awaiting human ratification`. |
-| R21 | Charter-set cross-consistency | duplication/drift | Sol (fast) | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | ASSIGNED | — | — | — | — | — |
+| R21 | Charter-set cross-consistency | duplication/drift | Sol (fast) | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 14 | 0 | 0 | NO | ROUTED → G6 (conditional); G6 triage pending. No v1.0 in-place edit. Freshness admissible (see disposition). |
 | R22 | Charter-set cross-consistency | claim-vocabulary legality | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R23 | Traceability + cycle briefs | Q2/Q3 zero-orphan audit | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R24 | Traceability + cycle briefs | dependency soundness | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
@@ -707,3 +707,185 @@ Assignment timestamp read from the system clock immediately before this record w
 **Where R21's findings will go.** To **G6** (conditional), under the read-only-canon exception. Not to an in-place fix.
 
 **Write law now in force.** `gauntlet/ROUND_LOG.md` is closed to G7 until root reports R21 reviewer termination. The reviewer appends its own entry under the controlled append-only exception. G7 does not review, does not predict or pre-empt findings, and does not write into the space reserved for that entry. All filed reviewer bytes (R19, R20, R01) and the full R01–R32 allocation are preserved.
+
+## R21 — Charter-set cross-consistency — duplication/drift
+
+- reviewer process: session `monkeybee-pdf-mass-context-repo--r21`, pane 1, identity `PearlDuck`, PID 3231216
+- model identity: `gpt-5.6-sol`, effort `ultra`; `/proc/3231216/cmdline` showed `-m gpt-5.6-sol -c model_reasoning_effort=ultra`; live TUI showed `Service tier set to priority` and the `gpt-5.6-sol ultra fast` footer
+- started / filed: 2026-07-14T18:17:08+02:00 / 2026-07-14T18:26:36+02:00
+- artifact hash: `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a`
+- authority chain read: `AGENTS.md` in full; `OVERNIGHT_GOAL.md` §§1, 3 G6, 4; `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` in full; R21 allocation row, immutable manifest definition, and R21 assignment in `gauntlet/ROUND_LOG.md`; `MONKEYBEE_CAMPAIGN_CHARTER_v1.md`, `CYCLE_0_WORK_ORDER.md`, `AUDIT_FINDINGS_LEDGER.md`, and `CAMPAIGN_CHARTER_REASONING.md` in full; `MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md` only assigned §§3, 10.3, 24.12–24.16, 33.1–33.18, 34.4–34.5, 35–35.1; `ledger/CANONICAL_HASHES.md` in full
+- reviewer FSM: SPAWNED -> INGEST-DECLARED-CHAIN -> APPLY-ONE-LENS -> FILE-GRADED-FINDINGS -> TERMINATED
+- counts: A=14; B=0; C=0
+- marginal-only: NO
+- no-action statement: No web or prohibited processor source/documentation was contacted; no measurement or comparison was performed; no SpecCard semantic body or G6 successor was read or generated; no artifact, owner state, allocation row, prior byte, commit, or remote state was changed. The only write is this EOF append. No R19/R20 finding body or disposition was read or used. An R21 locator inadvertently surfaced one aggregate prior-round count line, and a section-boundary probe exposed a few Appendix A lines; neither supplied finding semantics or informed this review, and the boundary deviation is disclosed here.
+
+### R21-A01 — The R0 signature fix drifted back to R2
+
+- evidence: `CYCLE_0_WORK_ORDER.md` §2 and `AUDIT_FINDINGS_LEDGER.md` R2-N1 require structural signature/ByteRange discovery in R0 and impact classification in R2. The Charter's C1/R0 scope and the Work Order's §7 C1 requirements omit discovery, while Charter §5 C4 assigns both discovery and impact classification to R2 (`MONKEYBEE_CAMPAIGN_CHARTER_v1.md`, C1 and C4).
+- requirement: `CYCLE_0_WORK_ORDER.md` §2 R2-N1; Rev 7 §34.4 architectural coherence forbids a release envelope from depending on a capability it excludes.
+- consequence: R0 can ship without the signature inventory its governing fix requires, and the intended R0-discovery/R2-classification/R3-trust lifecycle collapses back into the defect the Work Order says C0 must remove.
+- repair boundary: Align the C1 delta requirements and cycle map with the already-selected three-stage ownership; do not broaden cryptographic trust work into R0 or R2.
+- loss guard: Preserve R0 structural-only discovery, R2 structural impact classification for incremental writing, and C5/R3 cryptographic trust validation as distinct capabilities.
+
+### R21-A02 — Ledger entry 1 has two incompatible identities
+
+- evidence: Charter §10 says the committed Charter hash is the campaign's first ledger entry, and `AUDIT_FINDINGS_LEDGER.md` C-9 repeats `Charter hash = ledger entry #1`. Work Order §6 instead requires one batch containing the Charter, Work Order, discovery protocols, and held-out seal manifests, then makes the batch hash ledger entry 1; Work Order §5.1 separately calls the Charter hash one of several first entries.
+- requirement: Rev 7 §§33.1 and 33.4 require exact, append-only, time-committed artifact/protocol identities; Charter §§10–11 require amendments to preserve that lineage.
+- consequence: An implementer cannot determine whether entry 1 authenticates the Charter alone or a multi-artifact batch, so later amendment and reveal checks can follow different roots while each claims the same ordinal identity.
+- repair boundary: Select one canonical entry-1 object and define the relation of the Charter digest and the batch root without changing the committed-artifact set.
+- loss guard: Preserve independent/witnessed commitment, exact Charter addressability, the multi-artifact commitment batch, amendment lineage, and the rule that git history alone is insufficient.
+
+### R21-A03 — G1's zero-dependency promise conflicts with its blocking C1 gate
+
+- evidence: Charter §§0 and 2 say the C1 G1 wedge is gated on zero §33 machinery and depends on zero stewards; Reasoning §8 says C4 and C7 are the only §33-gated elements. Yet the Charter's C1 gate requires a held-out probe and sealed trial record, Charter §6 makes that close gate blocking, and Work Order §3 selects the probe from a steward-sealed pool and defines the trial record as §33 foundry-distribution evidence.
+- requirement: Charter §2 graceful-degradation law: no G1 deliverable may be gated on G2/G3 machinery, and evidence apparatus may not sit on the wedge's critical path.
+- consequence: With no corpus steward or §33 ledger machinery, the stated unconditional C1 deliverable cannot pass its own mandatory gate.
+- repair boundary: Separate product-release necessities from optional claim-evidence admission, or narrow the zero-dependency promise to the exact machinery that may detach.
+- loss guard: Preserve clean-room/SpecCard gates, hostile-input safety gates, honest claim downgrade, stewarded held-out evidence when available, and the prohibition on silently awarding §33 credit.
+
+### R21-A04 — The C1 sellable wedge is not customer-installable until C4
+
+- evidence: Charter §§0, 2, and C1 call the end-of-C1 R0 artifact a sellable wedge. Charter C4 says release engineering only begins there—packaging, documentation, reproducible builds, and supply-chain lanes—so the wedge becomes installable by customers; Reasoning §2 states that an un-installable wedge is not a wedge.
+- requirement: Charter's G1 survival-wedge timing and Reasoning §2's stated cycle-boundary rationale must describe the same deliverable lifecycle.
+- consequence: The campaign claims the commercial survival milestone roughly three cycles before the work its own rationale says makes that milestone real.
+- repair boundary: Reconcile the minimum C1 commercial-release surface with the later C4 release-engineering program, or narrow the C1 milestone's status.
+- loss guard: Preserve the C1 inspection/CLI value, the larger C4 reproducibility and packaging program, and the claim boundary between an internal artifact and a customer-installable release.
+
+### R21-A05 — Campaign termination both answers the questions and precedes their answers
+
+- evidence: Charter §0 says the campaign ends with Q2 and Q3 answered by independent adjudication. Charter §§4, 5 C7, and 9 instead say the campaign ends at package submission and verdicts arrive later on external calendars; Reasoning §§7 and 9 reinforce `submission ≠ verdict`.
+- requirement: Charter §§0, 4, 5, and 9 and Reasoning §7 must use one endpoint identity while preserving the ban on self-award.
+- consequence: “Campaign end” alternates between an internally controlled submission event and an externally controlled adjudication event, changing whether the campaign can meet its own terminal condition.
+- repair boundary: Give submission and adjudicated answer distinct named milestones and bind campaign termination to only one.
+- loss guard: Preserve day-9/day-15 submission targets, external adjudicator control, unbounded verdict latency, and the prohibition on treating submission as a verdict.
+
+### R21-A06 — The cycle-trial population alternates between six and seven
+
+- evidence: Charter §5 C7 compiles records `#1–#6`; C4's cycle-map row omits record #4 while C5 resumes at #5. Charter §6 nevertheless applies the sealed-record loop to every cycle C1–C7, Charter §7 says each cycle is a trial, and Reasoning §4 calls the evidence population “Seven instrumented cycles” while Reasoning §2 defines C7 as measurement-only with nothing new built.
+- requirement: Work Order §3 §34.9 requires a sealed record for each capability cycle; Rev 7 §33.8 requires a determinate attempt population for distributional reporting.
+- consequence: The foundry denominator and C4/C7 close-gate obligations depend on which restatement is followed, permitting either an omitted C4 record or an invented C7 production trial.
+- repair boundary: Define the exact record-bearing cycle set and restore the missing ordinal/gate reference without turning C7 measurement into candidate construction.
+- loss guard: Preserve C1–C6 production history, the C4 checkpoint, C7 evaluator separation, and visible failed/abandoned attempts.
+
+### R21-A07 — Trial-record restatements drop mandatory distribution fields
+
+- evidence: Work Order §3 calls its sealed record the campaign's foundry-distribution evidence but lists attempts, failures, retries, cost, human interventions, median, and selected extremum. Charter §6 reduces this to attempts, failures, cost, and outcomes; Reasoning §4 uses a third list. Rev 7 §33.8 additionally requires success rate, percentiles, restart behavior, time, defect distribution, representative failures, discarded branches, evaluator-guided repairs, and provider-routing disclosure.
+- requirement: Rev 7 §§33.1 and 33.8; Work Order §3's statement that the record is the evidence interface for the foundry distribution.
+- consequence: A record satisfying the new §34.9 text can still be insufficient for the §33 distribution claim it is said to support, and generators following the shorter Charter echo lose more fields.
+- repair boundary: Establish one versioned trial-record schema or normative reference and make all cycle summaries point to it rather than redefining its fields.
+- loss guard: Preserve retries, human interventions, drift/probe outcomes, privacy/redaction limits, discarded paths, routing uncertainty, and distribution—not only the selected run.
+
+### R21-A08 — Most §35 decisions have no disposition owner, and the resolve list itself drifts
+
+- evidence: Rev 7 §35 contains 83 decision rows. Work Order §4 classifies seven as resolve-now and five as deferred with owners, leaving the remainder without the owner-cycle Charter C0 says must be explicit. Charter C0 names only five resolve-now items, omitting the Work Order's persistent-ledger and Rust-toolchain decisions. Work Order §0.3 nevertheless requires every deferred decision to have an owner-cycle.
+- requirement: Charter §5 C0; `CYCLE_0_WORK_ORDER.md` §§0.3 and 4; Rev 7 §35's decision registry.
+- consequence: Load-bearing C1/kernel questions can be treated as silently accepted defaults, indefinitely open items, or deferred work depending on which list is used.
+- repair boundary: Make the C0 classification exhaustive or define an explicit default disposition/owner rule, and reconcile the five-item and seven-item resolve-now identities.
+- loss guard: Preserve all 83 decision records, their evidence-needed columns, the existing seven resolve-now choices, the five named deferrals, and every genuinely open state.
+
+### R21-A09 — The three-stage comparison lifecycle is collapsed before measurement
+
+- evidence: Charter §3 and Work Order §5.3 schedule only a day-zero discovery-protocol commitment and open the challenge window. Charter C7 then freezes the field, runs the matrix/lanes, assembles the bundle, and only afterward says challenge windows close; no Charter-set step schedules a post-window `CompetitorDiscoveryReportId` followed by a distinct `EvaluationProtocolCommitment` before measurement.
+- requirement: Rev 7 §24.16's irreversible order—pre-search commitment, discovery plus challenge and report freeze, then pre-measurement evaluation commitment—and Rev 7 §33.4's ban on one late omnibus commitment.
+- consequence: C7 can measure against a field before nominations are closed and without an evaluation protocol bound to the frozen discovery report, capping any result below the intended field-claim scope.
+- repair boundary: Represent all three commitment objects and their ordering in the cycle/day-zero map before any comparison run is admitted.
+- loss guard: Preserve the day-zero search commitment, long challenge duration, strongest-configuration fairness, independent timestamping, fresh IDs after material amendment, and honest named-set downgrade.
+
+### R21-A10 — The held-out lifecycle forbids its governing replacement path
+
+- evidence: Charter §3 says that after any code exists, nothing new can become held out; Reasoning §3 repeats that sealing must precede implementation or nothing is held out. Rev 7 §10.3 rule 37 says an adaptively consumed hidden set becomes development data and only a fresh independently stewarded replacement restores the stronger claim; Rev 7 §§24.16 and 33.4 likewise require replacement rules.
+- requirement: Rev 7 §10.3 rule 37 and §§24.16/33.4; Charter's own aim to preserve held-out evidence across successive cycles.
+- consequence: Once the original pool's query budget is consumed, the Charter's absolute rule makes the required fresh reserve impossible and strands later confirmatory evaluation.
+- repair boundary: Distinguish construction-era sealing from a later prospectively sealed, independently stewarded replacement relative to a frozen candidate/evaluation.
+- loss guard: Preserve the day-zero main split, query budgets, the rule that exposed/tuned data cannot be relabeled held out, and independent custody of every replacement.
+
+### R21-A11 — Findings ownership is split between two incompatible ledgers
+
+- evidence: `AUDIT_FINDINGS_LEDGER.md` says it is the single home for every finding and ends by directing the next audit round to append there. The live reviewer protocol instead permits only an append to `gauntlet/ROUND_LOG.md` and forbids editing any other file; `OVERNIGHT_GOAL.md` §4 also assigns round findings to the Round Log. The canonical Audit Ledger contains no supersession or routing note.
+- requirement: `AGENTS.md` rules 11, 15, and 18; `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` FSM/write law; the Audit Ledger's own single-home purpose.
+- consequence: Owners have two plausible authoritative finding stores with different mutability, so severity, disposition, and successor coverage can diverge silently.
+- repair boundary: Define a versioned handoff or mapping from immutable historical ledger IDs to live Round Log IDs without editing the v1 canonical bytes.
+- loss guard: Preserve the v1 audit history, current append-only round evidence, canonical read-only status, monotonic IDs, and every unresolved finding.
+
+### R21-A12 — Grade B has two incompatible meanings
+
+- evidence: `AUDIT_FINDINGS_LEDGER.md` defines Grade B as “confirmed by close reading.” The governing reviewer protocol defines B as a probable defect with one unresolved premise; its A grade is the confirmed-defect class.
+- requirement: `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` Grade law; Rev 7 §34.4 requirement that terminology remain stable.
+- consequence: A reader combining historical and gauntlet counts cannot know whether B is confirmed or provisional, and may silently promote or demote the historical findings.
+- repair boundary: Version/name the historical grading scheme and provide an explicit non-destructive mapping to the gauntlet scheme.
+- loss guard: Preserve original grades and reviewer provenance; do not retroactively regrade rows without a versioned successor and changelog.
+
+### R21-A13 — “Two Grade-A defects” contradicts the ledger's own rows
+
+- evidence: Audit Ledger standing observation 3 and Reasoning §1 say the two Grade-A defects found across three rounds were R1-1 and R2-N7. The ledger tables themselves mark numerous other rows A (including R1-3 through R1-7 and R2-N1 through R2-N4). Charter risk 4 uses the narrower and internally consistent phrase “Two Grade-A drifts.”
+- requirement: Rev 7 §34.4 terminology/steady-state checks; `AUDIT_FINDINGS_LEDGER.md` purpose as the severity/count source.
+- consequence: The prose undercounts confirmed defects and misstates convergence, while the likely intended fact—two Grade-A duplication-drift examples—is already expressed differently in the Charter.
+- repair boundary: Scope the count to the duplication-drift category rather than changing any finding row or total.
+- loss guard: Preserve every Grade-A row and preserve R1-1/R2-N7 as the two cited drift examples.
+
+### R21-A14 — R1-10 is marked resolved by work that the set still schedules as future
+
+- evidence: Audit Ledger R1-10 uses `RESOLVED via v8 split`, a status absent from the ledger's declared status-code vocabulary. Work Order §§0–2 still make the v8 extraction and one-normative-home conversion pending C0 work, and the ledger's own standing observation calls the split a countermeasure whose effectiveness begins at the C1 close gate.
+- requirement: `AUDIT_FINDINGS_LEDGER.md` status-code law; Work Order §§0–2 extraction lifecycle; `AGENTS.md` rule 15 that generated/operational state cannot silently supersede canon.
+- consequence: A future mitigation is recorded as an accomplished resolution, allowing R1-10 to disappear from C0 verification before its owning transformation exists in this immutable set.
+- repair boundary: Use a declared status that distinguishes selected remedy from verified application, with the transition evidenced only after the versioned extraction lands.
+- loss guard: Preserve R1-10, the chosen one-normative-home design, the read-only v1 ledger, and the requirement to verify rather than infer the transition.
+
+### Round verdict
+
+G6 owner revision is required through versioned successors; the immutable v1.0 set must not be edited in place. Fourteen confirmed duplication/drift defects remain, spanning release ownership, commitment identity, gate dependencies, lifecycle/cardinality, evidence schema, decision ownership, and audit vocabulary. This lens is not marginal-only. No Grade-B or Grade-C item was needed because each filed item has a direct local contradiction, omission, or violated local rule. The disclosed locator/boundary deviation supplied no finding content, but root should retain it in the round-admission record rather than silently erase it. Reviewer state: TERMINATED.
+
+### R21 — G7 validation and routing disposition (2026-07-14T18:30:16+02:00)
+
+Timestamp read from the system clock immediately before writing. Written after root reported reviewer termination and verified session absence. **G7 does not review, re-grade, confirm, refute, or repair a finding.** Nothing below asserts that any R21 finding is correct.
+
+**Byte integrity: PROVEN on both sides of the append.** G7 recomputed both bounds independently of root:
+
+| Region | Bytes | SHA-256 | Result |
+|---|---|---|---|
+| Committed prefix | 131,379 (709 lines) | `490a9e8574bc5f1d06c190a1c0ba448ec8694d91c9b664cec6b78b5227ed2c1b` | Reproduces root's value. No pre-existing byte altered |
+| R21 suffix `[131379, 149665)` | 18,286 | `8327eddd67895fc6c0f44229efb6f5e341ded766eb70c5ed87152227b1e0dcbe` | Reproduces root's value. The entry is exactly what root read |
+
+R19's, R20's, and R01's entries, findings, and dispositions are byte-intact by cryptographic evidence. The suffix hash additionally pins *the reviewer's own bytes*, so this disposition is bound to a specific entry rather than to a mutable region of a file.
+
+**Schema validation: PASS**, recomputed by G7 rather than taken from the packet. Declared `A=14; B=0; C=0` matches G7's recount (A01–A14; no B, no C headings). All five required fields present **14 times each** across 14 findings. One lens (`duplication/drift`), artifact hash equals the bound manifest, FSM complete through `TERMINATED`, verdict present, no repair written. Model identity attested three ways as the fast-mode control requires: `/proc/3231216/cmdline` showing `-m gpt-5.6-sol -c model_reasoning_effort=ultra`, the live `gpt-5.6-sol ultra fast` footer, and `Service tier set to priority`. Root's independent recount agrees on every number.
+
+**Grade distribution, recorded without editorializing.** R21 filed 14 Grade-A and zero Grade-B or Grade-C findings — an unusual shape. The reviewer's stated reason is that each item carries a direct local contradiction, omission, or violated local rule, so no item needed the Grade-B hedge. That is the reviewer's grading call and G7 does not disturb it. G6 triage is the test that matters, and it is pending on all fourteen.
+
+#### Deviation 1 — the `started` timestamp is the assignment timestamp, not the review start
+
+The entry records `started / filed: 2026-07-14T18:17:08+02:00 / 2026-07-14T18:26:36+02:00`. But `18:17:08` is the **R21 assignment timestamp**, and the assignment record states plainly that **no review prompt had yet been sent** at that moment. The reviewer therefore could not have started analysis then; it carried the assignment's time into its own `started` field.
+
+**Corrected bound, not an invented second:** R21's review began **after `18:17:08`** and **before `18:18:35`** (root's clock read). The exact start second was not measured by anyone and **is not manufactured here.** The filed timestamp `18:26:36` and the terminal state are unaffected.
+
+Recorded rather than repaired: reviewer bytes are preserved, and the defect is a mislabeled start field, not a defect in the review. G7 notes without irony that this is the same failure class G7 itself committed twice earlier today — a plausible timestamp taken from context instead of measured. It is disclosed on the same terms.
+
+#### Deviation 2 — incidental exposure to prior-round material; **freshness admissibility: PRESERVED**
+
+The reviewer self-disclosed that an R21 locator inadvertently surfaced **one aggregate prior-round count line**, and a section-boundary probe exposed **a few Appendix A lines**. It states that no R19/R20 finding body or disposition was read or used, and that the disclosed material supplied no finding semantics.
+
+The R21 assignment imposed the freshness constraint explicitly, and this lens is the one most vulnerable to it, so the question is answered on the record rather than waved through.
+
+**Ruling: the round is admissible. Its findings stand as an independent round.** Reasoning, in the order that decides it:
+
+1. **What the constraint protects.** The prohibition on ingesting prior findings exists to prevent a reviewer's output from being *derived from or anchored to* earlier findings — so that agreement between rounds is corroboration, not correlation. It is not a rule about incidental bytes; it is a rule about the provenance of conclusions.
+2. **An aggregate count carries no finding semantics.** A count line conveys how many findings prior rounds filed. It contains no location, no claim, no evidence, no requirement, no repair boundary. **No duplication/drift finding can be derived from an integer.** All fourteen findings must and do carry their own local evidence, requirement, consequence, repair boundary, and loss guard — the schema enforces exactly this, and G7 verified all 14 instances of all 5 fields.
+3. **The Appendix A lines were never prohibited.** Appendix A is Rev 7 domain canon, and the R21 authority chain expressly permits Rev 7 stable sections on demand as the lens requires. This was permitted reading reached by an untidy route. The deviation is in the probe's boundary discipline, not in the material.
+4. **No finding body or disposition was read.** That is the actual prohibition, and it held.
+
+**The residual, stated rather than dismissed.** The count line does convey one bit the reviewer would not otherwise have had: *prior rounds on this artifact were not marginal-only.* That could raise a reviewer's prior that defects exist and bias it toward finding **something** — it cannot bias it toward any **specific** finding, because no specific content crossed. The effect is bounded and non-zero, and it is recorded here rather than being declared harmless, because "no effect" is a stronger claim than the evidence supports. It does not reach the threshold that would void the round, and G7 does not pretend to quantify it.
+
+**The disclosure itself is evidence of reviewer integrity.** Nothing compelled the reviewer to report an incidental exposure that no one would have detected. It reported it anyway, bounded it, and asked that it be retained in the admission record rather than erased. A gauntlet whose reviewers hide their boundary slips is worth substantially less than one whose reviewers disclose them — this is the behavior the instrument depends on, and it is recorded as a credit, not filed as a fault.
+
+**Routing disposition — all fourteen findings route to G6 (conditional). No v1.0 in-place edit is authorized or performed.**
+
+| Findings | Grade | Routed to | Basis |
+|---|---|---|---|
+| R21-A01 – R21-A14 | A | **G6 (conditional Charter-set successors)** | Read-only-canon exception, precommitted at initialization. `AGENTS.md` rule 11 and `DISPUTES.md` D-003 forbid editing a v1.0 Charter-set document. A qualifying defect may only produce a `*_v1.1.md` successor with a changelog citing the finding; restyling and preference findings never qualify. |
+
+No Grade-B or Grade-C findings exist in this round, so nothing is premise-bounded and nothing is promoted. Each finding's `loss guard` binds any repair G6 makes — several explicitly require preserving retries, human interventions, drift and probe outcomes, discarded paths, and the full distribution rather than the selected run.
+
+**Round telemetry** (reported by root; recorded, not independently reproducible by G7): total 198,881 tokens — input 161,082 plus 2,854,400 cached, output 37,799, reasoning 27,171. Codex exited normally; the idle shell exited; the tmux session is absent.
+
+**Log released.** G7 returns to `DRAFT`. **R22 is not assigned** and will not be until root separately authorizes it.
