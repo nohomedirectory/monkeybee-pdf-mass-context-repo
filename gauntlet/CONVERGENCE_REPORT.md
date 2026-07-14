@@ -20,7 +20,7 @@ It reports what the review gauntlet actually found, round by round, and whether 
 
 It may never upgrade a claim. An artifact that survives every allocated round is an artifact no allocated round refuted; it is not an artifact shown to be correct, and it stays exactly as provisional as its own status line says. It may never report an unreviewed lens as covered, and it may never let a falling curve stand in for coverage: a curve can fall because the artifact improved, because the lenses stopped looking where the defects are, or because five processes from the same family share one blind spot. This report distinguishes those cases where the evidence allows and says so where it does not.
 
-**Current state: nine rounds filed (R19, R20, R01, R21, R22, R02, R03, R13, R04), 23 allocated rounds unfiled.** The R19–R22 Charter-set block is complete; the C1 plan has had four rounds under four lenses against four plan identities, with R04 supplying only the first point of its precommitted same-lens five-pass block; the Constitution-plus-fix-map artifact has one round. No artifact yet has two rounds under the same lens across successive revisions, which is the only shape that constitutes a convergence curve. Nothing here establishes convergence, non-convergence, or a trend for anything, and no round speaks to a lens it did not apply.
+**Current state: ten rounds filed (R19, R20, R01, R21, R22, R02, R03, R13, R04, R14), 22 allocated rounds unfiled.** The R19–R22 Charter-set block is complete; the C1 plan has four rounds, with R04 supplying only the first point of its precommitted five-pass A block; the Constitution-plus-fix-map artifact has two rounds under different lenses and manifest identities, with R14 supplying only the first point of five-pass B. No artifact yet has two rounds under the same lens across successive revisions, which is the only shape that constitutes a convergence curve. Nothing here establishes convergence, non-convergence, or a trend for anything, and no round speaks to a lens it did not apply.
 
 ## Findings per round
 
@@ -37,8 +37,11 @@ Filled from filed round entries only. Grades are the reviewer's, per the protoco
 | R03 | C1 delta plan (**revised**, `fc0a2cdc…`) | clean-room contamination | `claude-opus-4-8` (`xhigh`) | 1 | 1 | 1 | NO | Structural (C1 plan, round 3 of 13) |
 | R13 | Constitution + fix map | identity-law consistency | `gpt-5.6-sol` (`ultra`, fast) | 3 | 2 | 0 | NO | Structural (Constitution + fix map, round 1 of 6) |
 | R04 | C1 delta plan (**revised**, `41a89dd9…`) | oversimplification-and-feature-loss | `gpt-5.6-sol` (`ultra`, fast, priority tier) | 11 | 5 | 1 | NO | Architecture (C1 plan, round 4 of 13; five-pass A, pass 1/5) |
+| R14 | Constitution + fix map (**revised**, `dd86aaf3…`) | oversimplification-and-feature-loss | `claude-opus-4-8` (`xhigh`) | 5 | 10 | 4 | NO | Structural (Constitution + fix map, round 2 of 6; five-pass B, pass 1/5; process-method quarantined) |
 
-Totals by grade: **A=58; B=17; C=5**, across 9 filed rounds.
+Totals by grade: **A=63; B=27; C=9**, across 10 filed rounds.
+
+**R14 is mechanically admitted for routing with its process method quarantined.** The reviewer disclosed an outside-repository scratch-manifest write even though the sealed assignment authorized no file edit except the blind structured Round Log append; its later “only file touched” absolute is therefore false and corrected to “only repository file touched.” Its final `TERMINATED.` line also carries punctuation beyond the protocol's exact token. Neither deviation is excused or rewritten. The pre-review prefix and single reviewer suffix reproduce their sealed hashes, the scratch contained only authorized manifest lines, the Round Log was the sole repository write, and no prior finding, convergence result, competitor material, or external source was exposed. Those facts make the 19 items mechanically admissible for G1 premise-first routing, not substantively validated: every grade and loss guard remains unpromoted, and the round must not be cited as protocol-perfect.
 
 **R04 is admitted with a bounded authority-slice deviation and two wording corrections.** The reviewer disclosed Rev 7 locators outside the assigned slices and a whole-file Charter keyword search after compaction, while stating that none supplied finding evidence; no prior review packet or finding was exposed. The residual priming risk is non-zero, the out-of-chain locators are not admissible support, and all 17 grades and loss guards remain unpromoted pending G3 premise-first triage. The packet's “human's later instruction” was root's reminder under the standing human guard, not a live human message; its “confirmed losses” verdict is reviewer wording, not campaign validation. Identity/schema admission does not validate any substantive allegation. R04 is the first point of the five-pass A block, not a convergence curve.
 
@@ -100,7 +103,7 @@ One curve per gauntleted artifact, reported honestly whether it falls, stalls, o
 | Artifact | Allocated rounds | Filed | Curve (A+B per round, in order) | Two consecutive marginal-only? | Converged? |
 |---|---|---|---|---|---|
 | C1 delta plan | 13 — 12 baseline (R01–R12) + 1 supplemental (R31) | 4 | R01: 10 · R02: 4 · R03: 2 (**different lenses and plan identities — not a series**) · R04: 16 (**five-pass A point 1/5; one point is not a curve**) | No | Not established |
-| Constitution + fix map | 6 (R13–R18) | 1 | R13: 5 (**first lens and first artifact round — not a curve**) | No | Not established |
+| Constitution + fix map | 6 (R13–R18) | 2 | R13: 5 (**identity-law lens, prior manifest**) · R14: 15 (**five-pass B point 1/5, different lens and revised manifest; not a curve**) | No | Not established |
 | Charter-set cross-consistency | 4 (R19–R22) | **4 — block complete** | R19: 8 · R20: 10 · R21: 14 · R22: 6 (four **different** lenses — not a convergence series) | No | Not established |
 | Traceability + cycle briefs | 4 (R23–R26) | 0 | — | No | Not established |
 | Decision briefs | 2 (R27–R28) | 0 | — | No | Not established |
@@ -137,9 +140,9 @@ The correlated-blind-spot limitation is the reason this is tracked at all: a gau
 | Model | Baseline rounds (R01–R30) | Supplemental rounds (R31–R32) | Total allocated | Filed rounds |
 |---|---|---|---|---|
 | `gpt-5.6-sol` (`max`/`ultra`) | 15 | 1 (R31, `ultra`) | 16 | 5 (R19 pre-control · R01, R21, R13, R04 fast) |
-| `claude-opus-4-8` (`xhigh`) | 15 | 1 (R32, `xhigh`) | 16 | 4 (R20, R22, R02, R03) |
+| `claude-opus-4-8` (`xhigh`) | 15 | 1 (R32, `xhigh`) | 16 | 5 (R20, R22, R02, R03, R14 process-method quarantined) |
 
-**Filed rounds are currently 5 Sol to 4 Opus.** The precommitted baseline is a 15/15 split and the total allocation remains 16/16 with supplemental rounds. The filed family counts remain small, and the rounds differ by lens and artifact identity; this does not support describing findings as cross-model-corroborated.
+**Filed rounds are currently 5 Sol to 5 Opus.** The precommitted baseline is a 15/15 split and the total allocation remains 16/16 with supplemental rounds. The filed family counts remain small, and the rounds differ by lens and artifact identity; this does not support describing findings as cross-model-corroborated.
 
 **Execution-condition change, 2026-07-14 17:39 (disclosed, not smoothed).** A live human control requires every Codex instance from that moment forward to run in **fast mode**. It is prospective and changes no terminated round: R19 (`gpt-5.6-sol`) ran and terminated before it, and R20 is not a Codex instance. But it means the `Sol` series is **not homogeneous across the run** — R19 ran under the pre-control condition, and every later Sol round (R01, R04, R06, R08, R10, R12, R13, R15, R17, R21, R23, R25, R27, R30, R31) runs under fast mode. Any comparison across Sol rounds therefore carries a mid-run condition change as a confound. This report names it rather than presenting the Sol series as a controlled sequence. It does not retroactively weaken R19; it means R19 is not a like-for-like control for what follows.
 
@@ -154,9 +157,9 @@ Two blocks are designated, each repeating one byte-for-byte-identical prompt acr
 | Block | Artifact | Rounds | Models in order | Filed | Per-pass A+B yield |
 |---|---|---|---|---|---|
 | 5-pass A | C1 delta plan | R04–R08 | Sol, Opus, Sol, Opus, Sol | 1 | R04: 16 |
-| 5-pass B | Constitution + fix map | R14–R18 | Opus, Sol, Opus, Sol, Opus | 0 | — |
+| 5-pass B | Constitution + fix map | R14–R18 | Opus, Sol, Opus, Sol, Opus | 1 | R14: 15 |
 
-R04's A+B yield of 16 is the block's first point. With no second pass and no revised successor yet bound, it supplies no direction, decay, or convergence evidence.
+R04's A+B yield of 16 and R14's A+B yield of 15 are each the first point of a different block. Neither has a second pass or revised successor bound, so neither supplies direction, decay, or convergence evidence. R14's process-method quarantine remains attached to its point.
 
 The model rotates within each block while the prompt is held fixed. That is a deliberate confound and is named here so no one later reads a decaying yield as pure repetition effect: within a block, a drop between passes may be repetition exhausting the artifact's defects, or it may be one family's blind spot landing on that pass. The blocks cannot separate these, and this report does not pretend they can.
 
@@ -176,7 +179,7 @@ Every lens OVERNIGHT_GOAL §4 names, and whether the precommitted baseline actua
 | duplication/drift | R21 | **R21 filed** (Charter set) — freshness adjudicated admissible; see the R21 disposition |
 | claim-vocabulary legality | R12, R22, R30 | **R22 filed** (Charter set) · R12, R30 allocated, unfiled |
 | Q2/Q3 traceability | R20, R23 | **R20 filed** (Charter set) · R23 allocated, unfiled (traceability matrix + briefs) |
-| oversimplification hunt | R04–R08, R14–R18, R25 | **R04 filed** (C1 five-pass A, pass 1/5) · R05–R08, R14–R18, and R25 allocated, unfiled |
+| oversimplification hunt | R04–R08, R14–R18, R25 | **R04 filed** (C1 five-pass A, pass 1/5) · **R14 filed, process-method quarantined** (Constitution five-pass B, pass 1/5) · R05–R08, R15–R18, and R25 allocated, unfiled |
 | de-slopification | R12, R30 | Allocated |
 | **kernel-touch audit** | **R31 (supplemental)** | **Allocated — was UNREVIEWED at initialization; closed by root authorization at 17:04, before any round filed** |
 
