@@ -750,3 +750,25 @@ I did not revalidate, re-grade, confirm, refute, promote, demote, or rewrite any
 - After the R05 row shift, the intact R33 reviewer suffix is `[408466,419371)`, 10,905 bytes / 68 lines, SHA-256 `f932428fcf0f4b114e3574ed9119b29f4491f82e23d76b31416d023cdd5d858a`. Allocation scope remains 33 rows; filed totals remain eleven rounds at A=67/B=29/C=9.
 - Post-bind Round Log is 2,326 lines / 428,657 bytes / SHA-256 `97ee9a28078a838d4ff6fcd3484182e5e39758f7e6b354381225f0f63bcf1aa2`; Convergence Report remains 268 lines / 43,706 bytes / SHA-256 `eb9bb1fe1aeccb264efb14393b8350ccf5758c710070974574fca0eee012ed59`.
 - Owner FSM remains `DRAFT`. **Round Log closed** until root verifies, commits, pushes, dispatches R05, and reports reviewer termination. R06 and R24 remain blocked on their respective owner revision gates.
+
+### R05 integration checkpoint — `DRAFT`
+
+- Clock read immediately before this checkpoint: `2026-07-14T22:55:32+02:00`.
+- Pre-integration Round Log reproduced at 2,683 lines / 522,449 bytes / SHA-256 `97aaa9daf794ea05b23c95c6e7dbf876ce64d81c3d67976bf456d84ae0887a9e`; sealed prefix `[0,428657)` and suffix `[428657,522449)` reproduced their hashes. After the row update, the intact reviewer suffix is `[428886,522678)`, 93,792 bytes / 357 lines, SHA-256 `602f25a0f8750f93a8dfcc23c7f32a960c4e50bcaad6d19f0b4cbabf3f5fbbe9`.
+- A first shifted-suffix diagnostic incorrectly started at byte `428891`, one byte before the heading but five bytes after the true separator-prefixed suffix start, and returned SHA-256 `85699e0a2a18ee177c24b7040300fc706cd8987a0119c6e8734dd87e17b169bc`; the corrected boundary above governs. No reviewer byte was altered.
+- Mechanical validation records A=12/B=20/C=9, 41 conforming field sets, marginal-only NO, and the preserved Markdown `**TERMINATED**` entry-marker variance. Transcript-grounded delivery and Edit times replace the impossible authored start/filed readings only by append-only bounds. No substantive premise was reviewed or promoted.
+- Root-reported process/tool audit and local absence checks are recorded in the Round Log, including the actual read-only Bash command set and exact cost/usage telemetry. All 41 grades and loss guards route through root to G3 unpromoted.
+- Allocation/report recount is twelve filed rounds at A=79/B=49/C=18 and 6 Sol/6 Opus. Five-pass A is 16→32 by A+B; both points are non-marginal, the second rose, and no convergence is established.
+- Action-1 postimage / R15 bind preimage candidate: Round Log 2,699 lines / 526,846 bytes / SHA-256 `09c259cd067cb1b362511410ae96d03eef0c7816deaf81921517d553825cb781`; Convergence Report 271 lines / 44,972 bytes / SHA-256 `080ce24542c0ad11b8d623f8c290a570bfdfd3f50f18cec3957fbe7b74010345`.
+- Owner FSM remains `DRAFT`; the log remains under G7 control only for the authorized serialized R15 admission check and bind.
+
+### R15 binding checkpoint — `DRAFT`
+
+- Clock read immediately before this checkpoint: `2026-07-14T22:58:04+02:00`.
+- The durable bind preimage reproduced at 2,699 lines / 526,846 bytes / SHA-256 `09c259cd067cb1b362511410ae96d03eef0c7816deaf81921517d553825cb781`.
+- The four component hashes reproduce as Constitution `b5b5d673b64732ebd9efa85d3183a6e17c7ce167226eed1b15755aaf3e9cd0a9`, SpecCard pipeline `6d3a9ddb68f2f9c3f8e3a169a9b44cd9513a91a60ad3e848e0b0d3357a88c877`, shell `09cf724620fb8173640ed542a1ed18277e09eafb8be62b0302c93a9ec8f47739`, and fix report `62e72bae29fe1e258f6b97a3719dbad7123307d1ef92e893749cece8c5005d77`; the sorted manifest is `dd5266aa80bd0ecdef7780fa670689427e70faee63d279efa1561e0c4e24d8e9`.
+- G1 checkpoint SHA-256 `c2ce61fb9a54f6a0543bbfb773222412d1e4def5e8e66ded9f7bd5f2cb36a5d7` declares `SUBMIT-FOR-REVIEW`. Pushed-baseline containment is explicit: `0e48a65daf85f9a0e7231d5bf027e45da0554a00` is the direct parent of current `origin/main` tip `a5c9c29bfd6d923b742d8547fc40ba41c8921f4d`, and `git merge-base --is-ancestor` returned 0; tip equality was not required.
+- R15 alone is `ASSIGNED` as five-pass B 2/5 under the sole immutable `oversimplification-and-feature-loss` prompt. Idle identity remains session `monkeybee-pdf-mass-context-repo--r15`, pane `%97`, shell `3374349`, child `3374596`, monitor `3374473`, `gpt-5.6-sol` / `ultra` / explicit priority / live `fast`, with untouched default prompt. No reviewer or owner task was sent.
+- After the R15 row shift, the intact R05 reviewer suffix is `[428998,522790)`, 93,792 bytes / 357 lines, SHA-256 `602f25a0f8750f93a8dfcc23c7f32a960c4e50bcaad6d19f0b4cbabf3f5fbbe9`. The exact immutable prompt now has seven line copies in the Round Log; all 33 allocation rows remain.
+- Post-bind Round Log is 2,748 lines / 533,311 bytes / SHA-256 `2d9cabc01eb384760be704450dce34e7efdb2a01261cfeb1b8cfe3b1729440a7`; Convergence Report remains 271 lines / 44,972 bytes / SHA-256 `080ce24542c0ad11b8d623f8c290a570bfdfd3f50f18cec3957fbe7b74010345`.
+- Owner FSM remains `DRAFT`. **Round Log closed** until root verifies, commits, pushes, dispatches R15, and reports reviewer termination. R16, R06, and R24 remain blocked on their respective owner revision gates.
