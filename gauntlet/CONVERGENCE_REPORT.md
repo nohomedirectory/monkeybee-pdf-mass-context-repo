@@ -20,7 +20,7 @@ It reports what the review gauntlet actually found, round by round, and whether 
 
 It may never upgrade a claim. An artifact that survives every allocated round is an artifact no allocated round refuted; it is not an artifact shown to be correct, and it stays exactly as provisional as its own status line says. It may never report an unreviewed lens as covered, and it may never let a falling curve stand in for coverage: a curve can fall because the artifact improved, because the lenses stopped looking where the defects are, or because five processes from the same family share one blind spot. This report distinguishes those cases where the evidence allows and says so where it does not.
 
-**Current state: twelve rounds filed (R19, R20, R01, R21, R22, R02, R03, R13, R04, R14, R33, R05), 20 active allocation rows unfiled, and R23 closed `NOT-RUN`.** The R19–R22 Charter-set block is complete; the C1 plan has five filed rounds, with R04/R05 supplying the first two points of its precommitted five-pass A block; the Constitution-plus-fix-map artifact has two rounds under different lenses and manifest identities, with R14 supplying only the first point of five-pass B; and Traceability + cycle briefs has one valid filed point through replacement R33. The C1 block now has the first multi-point same-lens sequence, 16→32 by A+B, but both points are non-marginal and the second yield rose; two points establish neither convergence nor a causal trend. No round speaks to a lens it did not apply.
+**Current state: thirteen rounds filed (R19, R20, R01, R21, R22, R02, R03, R13, R04, R14, R33, R05, R15), 19 active allocation rows unfiled, and R23 closed `NOT-RUN`.** The R19–R22 Charter-set block is complete; the C1 plan has five filed rounds, with R04/R05 supplying the first two points of five-pass A; the Constitution-plus-fix-map artifact has three filed rounds, with R14/R15 supplying the first two points of five-pass B; and Traceability + cycle briefs has one valid filed point through replacement R33. Both repeated-prompt blocks now have two-point rising sequences—16→32 and 15→21—with non-marginal points and planned family rotation. Neither sequence establishes convergence or a causal trend. No round speaks to a lens it did not apply.
 
 ## Findings per round
 
@@ -40,8 +40,11 @@ Filled from filed round entries only. Grades are the reviewer's, per the protoco
 | R14 | Constitution + fix map (**revised**, `dd86aaf3…`) | oversimplification-and-feature-loss | `claude-opus-4-8` (`xhigh`) | 5 | 10 | 4 | NO | Structural (Constitution + fix map, round 2 of 6; five-pass B, pass 1/5; process-method quarantined) |
 | R33 | Traceability + cycle briefs (replacement for closed R23) | Q2/Q3 zero-orphan audit | `gpt-5.6-sol` (`ultra`, fast, priority tier) | 4 | 2 | 0 | NO | Structural (Traceability, first valid filed point) |
 | R05 | C1 delta plan (**revised**, `dffc35aa…`) | oversimplification-and-feature-loss | `claude-opus-4-8` (`xhigh`) | 12 | 20 | 9 | NO | Architecture (C1 plan, round 5 of 13; five-pass A, pass 2/5; entry-marker variance) |
+| R15 | Constitution + fix map (**revised**, `dd5266aa…`) | oversimplification-and-feature-loss | `gpt-5.6-sol` (`ultra`, fast, priority tier) | 14 | 7 | 0 | NO | Structural (Constitution + fix map, round 3 of 6; five-pass B, pass 2/5; chain-qualified) |
 
-Totals by grade: **A=79; B=49; C=18**, across 12 filed rounds.
+Totals by grade: **A=93; B=56; C=18**, across 13 filed rounds.
+
+**R15 is retained as `CHAIN-QUALIFIED`, not pristine.** Its sealed prefix, sole 29,060-byte suffix, four-file manifest, one-lens declaration, 21 monotone IDs, all required-field counts, verdict, and exact terminal response reproduce. The disclosed out-of-slice goal lines concerned G1 paths/priority, while the mistakenly whole-ledger-named search returned no ledger content; neither supplied finding evidence or exposed prior findings, dispositions, convergence results, or competing artifacts. Residual priming risk remains non-zero and attached. The authored start was process launch; transcript-grounded delivery bounds actual start no earlier than `23:01:46.805+02:00`, and the structured append is bounded by its invocation, measured mtime, and completion timestamps. All 21 grades and loss guards remain unpromoted pending G1 premise-first triage.
 
 **R05 is mechanically admitted with timestamp and entry-marker corrections.** Its sealed prefix, sole 93,792-byte suffix, bound plan identity, one-lens declaration, 41 monotone IDs, all required-field counts, verdict, and terminal state reproduce. The entry uses Markdown `**TERMINATED**` rather than an unstyled marker; root separately observed the exact final assistant response `TERMINATED`. The authored start predates actual task delivery and the authored filed time predates the structured Edit, so the append-only correction bounds start no earlier than `22:24:47.951+02:00` and filing to the measured write interval `22:47:16.510+02:00` through `22:47:16.597836184+02:00`. The verdict's “confirmed defects” phrase remains reviewer Grade-A wording only. All 41 grades and loss guards remain unpromoted pending G3 premise-first triage; transcript facts are local control-plane evidence, not campaign evidence.
 
@@ -109,7 +112,7 @@ One curve per gauntleted artifact, reported honestly whether it falls, stalls, o
 | Artifact | Allocated rounds | Filed | Curve (A+B per round, in order) | Two consecutive marginal-only? | Converged? |
 |---|---|---|---|---|---|
 | C1 delta plan | 13 — 12 baseline (R01–R12) + 1 supplemental (R31) | 5 | R01: 10 · R02: 4 · R03: 2 (**different lenses and plan identities — not a series**) · five-pass A: R04: 16 → R05: 32 (**same lens/prompt, successive revisions; both non-marginal, second yield rose**) | No | Not established |
-| Constitution + fix map | 6 (R13–R18) | 2 | R13: 5 (**identity-law lens, prior manifest**) · R14: 15 (**five-pass B point 1/5, different lens and revised manifest; not a curve**) | No | Not established |
+| Constitution + fix map | 6 (R13–R18) | 3 | R13: 5 (**identity-law lens, prior manifest; not part of repeated series**) · five-pass B: R14: 15 → R15: 21 (**same prompt/lens, successive revisions; both non-marginal, family rotated Opus→Sol, second yield rose**) | No | Not established |
 | Charter-set cross-consistency | 4 (R19–R22) | **4 — block complete** | R19: 8 · R20: 10 · R21: 14 · R22: 6 (four **different** lenses — not a convergence series) | No | Not established |
 | Traceability + cycle briefs | 5 allocation IDs — 4 baseline (R23–R26) + replacement R33; R23 closed `NOT-RUN` | 1 | R33: 6 (**first valid point under this lens; not a curve**) | No | Not established |
 | Decision briefs | 2 (R27–R28) | 0 | — | No | Not established |
@@ -145,10 +148,10 @@ The correlated-blind-spot limitation is the reason this is tracked at all: a gau
 
 | Model | Baseline rounds (R01–R30) | Added round IDs | Allocation IDs / active slots | Filed rounds |
 |---|---|---|---|---|
-| `gpt-5.6-sol` (`max`/`ultra`) | 15 (includes closed R23) | 2 (R31 supplemental; R33 replacement) | 17 IDs / 16 active slots | 6 (R19 pre-control · R01, R21, R13, R04, R33 fast) |
+| `gpt-5.6-sol` (`max`/`ultra`) | 15 (includes closed R23) | 2 (R31 supplemental; R33 replacement) | 17 IDs / 16 active slots | 7 (R19 pre-control · R01, R21, R13, R04, R33, R15 fast) |
 | `claude-opus-4-8` (`xhigh`) | 15 | 1 (R32 supplemental) | 16 IDs / 16 active slots | 6 (R20, R22, R02, R03, R14 process-method quarantined, R05) |
 
-**Filed rounds are currently 6 Sol to 6 Opus.** The precommitted baseline is 15/15 and supplemental R31/R32 brings active capacity to 16/16. R33 adds one immutable Sol replacement ID for closed Sol round R23 without increasing active capacity, so allocation IDs are 17 Sol/16 Opus while active slots remain 16/16. The filed family counts remain small, and most rounds differ by lens or artifact identity; this does not support describing findings as cross-model-corroborated.
+**Filed rounds are currently 7 Sol to 6 Opus.** The precommitted baseline is 15/15 and supplemental R31/R32 brings active capacity to 16/16. R33 adds one immutable Sol replacement ID for closed Sol round R23 without increasing active capacity, so allocation IDs are 17 Sol/16 Opus while active slots remain 16/16. The filed family counts remain small, and most rounds differ by lens or artifact identity; this does not support describing findings as cross-model-corroborated.
 
 **Execution-condition change, 2026-07-14 17:39 (disclosed, not smoothed).** A live human control requires every Codex instance from that moment forward to run in **fast mode**. It is prospective and changes no terminated round: R19 (`gpt-5.6-sol`) ran and terminated before it, and R20 is not a Codex instance. But it means the `Sol` series is **not homogeneous across the run** — R19 ran under the pre-control condition, and every later Sol round (R01, R04, R06, R08, R10, R12, R13, R15, R17, R21, R23, R25, R27, R30, R31, and replacement R33) runs under fast mode. Any comparison across Sol rounds therefore carries a mid-run condition change as a confound. This report names it rather than presenting the Sol series as a controlled sequence. It does not retroactively weaken R19; it means R19 is not a like-for-like control for what follows.
 
@@ -163,9 +166,9 @@ Two blocks are designated, each repeating one byte-for-byte-identical prompt acr
 | Block | Artifact | Rounds | Models in order | Filed | Per-pass A+B yield |
 |---|---|---|---|---|---|
 | 5-pass A | C1 delta plan | R04–R08 | Sol, Opus, Sol, Opus, Sol | 2 | R04: 16 → R05: 32 |
-| 5-pass B | Constitution + fix map | R14–R18 | Opus, Sol, Opus, Sol, Opus | 1 | R14: 15 |
+| 5-pass B | Constitution + fix map | R14–R18 | Opus, Sol, Opus, Sol, Opus | 2 | R14: 15 → R15: 21 |
 
-Five-pass A now has R04 A+B=16 and R05 A+B=32. The second yield rose; two non-marginal points do not establish convergence, and the planned Sol→Opus rotation prevents a causal reading of the change. Five-pass B still has only R14 A+B=15 as its first point, with R14's process-method quarantine attached.
+Five-pass A has R04 A+B=16 and R05 A+B=32; five-pass B has R14 A+B=15 and R15 A+B=21. Both second yields rose, all four points are non-marginal, and each pair follows the planned family rotation (Sol→Opus; Opus→Sol). Neither two-point sequence establishes convergence or a causal explanation. R14's process-method quarantine and R15's chain qualification remain attached to their points.
 
 The model rotates within each block while the prompt is held fixed. That is a deliberate confound and is named here so no one later reads a decaying yield as pure repetition effect: within a block, a drop between passes may be repetition exhausting the artifact's defects, or it may be one family's blind spot landing on that pass. The blocks cannot separate these, and this report does not pretend they can.
 
@@ -185,7 +188,7 @@ Every lens OVERNIGHT_GOAL §4 names, and whether the precommitted baseline actua
 | duplication/drift | R21 | **R21 filed** (Charter set) — freshness adjudicated admissible; see the R21 disposition |
 | claim-vocabulary legality | R12, R22, R30 | **R22 filed** (Charter set) · R12, R30 allocated, unfiled |
 | Q2/Q3 traceability | R20, R23, R33 | **R20 filed** (Charter set) · R23 closed `NOT-RUN` with no coverage · **R33 filed** (traceability matrix + briefs, replacement first point) |
-| oversimplification hunt | R04–R08, R14–R18, R25 | **R04 and R05 filed** (C1 five-pass A, passes 1/5 and 2/5; 16→32, both non-marginal) · **R14 filed, process-method quarantined** (Constitution five-pass B, pass 1/5) · R06–R08, R15–R18, and R25 allocated, unfiled |
+| oversimplification hunt | R04–R08, R14–R18, R25 | **R04 and R05 filed** (C1 five-pass A, passes 1/5 and 2/5; 16→32, both non-marginal) · **R14 and R15 filed** (Constitution five-pass B, passes 1/5 and 2/5; 15→21, both non-marginal; R14 method-quarantined, R15 chain-qualified) · R06–R08, R16–R18, and R25 allocated, unfiled |
 | de-slopification | R12, R30 | Allocated |
 | **kernel-touch audit** | **R31 (supplemental)** | **Allocated — was UNREVIEWED at initialization; closed by root authorization at 17:04, before any round filed** |
 

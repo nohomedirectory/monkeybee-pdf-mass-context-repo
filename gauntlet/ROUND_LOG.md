@@ -96,7 +96,7 @@ Hash, status, counts, and disposition are slots. They are filled only from filed
 | R12 | C1 delta plan | claim vocabulary and de-slopification | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R13 | Constitution + fix map | identity-law consistency | Sol (fast) | — | `9e81eaaa03c1368335b8aaff260af0ff918d7a6a76ca45bed85a00d4313743ec` | FILED · VALIDATED · TERMINATED | 3 | 2 | 0 | NO | ROUTED → G1 (independent premise-first triage; grades preserved and unpromoted). Freshness and start-time corrections recorded below. |
 | R14 | Constitution + fix map | oversimplification-and-feature-loss | claude-opus-4-8 (xhigh) | 5-pass B (1/5) | `dd86aaf319ecc87d0526d90b56b1993e8023925eeec4467ffd7807f89f92efb4` | FILED · VALIDATED · TERMINATED | 5 | 10 | 4 | NO | METHOD-NONCOMPLIANT / PROCESS-QUARANTINED; mechanically admissible for routing → G1 through root; all grades and loss guards unpromoted. R15 blocked pending a new G1 `SUBMIT-FOR-REVIEW` manifest. |
-| R15 | Constitution + fix map | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | 5-pass B (2/5) | `dd5266aa80bd0ecdef7780fa670689427e70faee63d279efa1561e0c4e24d8e9` | ASSIGNED | — | — | — | — | — |
+| R15 | Constitution + fix map | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | 5-pass B (2/5) | `dd5266aa80bd0ecdef7780fa670689427e70faee63d279efa1561e0c4e24d8e9` | FILED · CHAIN-QUALIFIED · TERMINATED | 14 | 7 | 0 | NO | ROUTED → G1 through root (premise-first; all 21 grades and loss guards preserved and unpromoted). Bounded chain exposure and start-time correction recorded below; R16 blocked pending G1 revision and a new manifest. |
 | R16 | Constitution + fix map | oversimplification-and-feature-loss | Opus | 5-pass B (3/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R17 | Constitution + fix map | oversimplification-and-feature-loss | Sol | 5-pass B (4/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R18 | Constitution + fix map | oversimplification-and-feature-loss | Opus | 5-pass B (5/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
@@ -105,7 +105,7 @@ Hash, status, counts, and disposition are slots. They are filled only from filed
 | R21 | Charter-set cross-consistency | duplication/drift | Sol (fast) | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 14 | 0 | 0 | NO | ROUTED → G6 (conditional); G6 triage pending. No v1.0 in-place edit. Freshness admissible (see disposition). |
 | R22 | Charter-set cross-consistency | claim-vocabulary legality | Opus | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 4 | 2 | 2 | NO | ROUTED → G6 (conditional). C02 admitted as a **nonconforming supplemental disposition**, not a graded finding — no owner action. See disposition. |
 | R23 | Traceability + cycle briefs | Q2/Q3 zero-orphan audit | gpt-5.6-sol (ultra, fast) | — | `b77359ccc716a2186d3053034132b7f68b41988e2366e64efe4451e10d5089b3` | NOT-RUN · CORRUPT-DISPATCH · TERMINATED | — | — | — | — | ROOT-FAULT; no authority/artifact read, no filesystem write, no findings or counts. Immutable R23 closed and replaced by R33; R24 remains blocked. |
-| R24 | Traceability + cycle briefs | dependency soundness | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
+| R24 | Traceability + cycle briefs | dependency soundness | `claude-opus-4-8`, effort `xhigh` | — | `22749762089e2a68b9897a09031b19fbdff6aa1108e2fd8071b7743d0df602c6` | ASSIGNED | — | — | — | — | — |
 | R25 | Traceability + cycle briefs | oversimplification hunt | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R26 | Traceability + cycle briefs | clean-room contamination | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R27 | Decision briefs | reversibility and dependency blast radius | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
@@ -482,6 +482,75 @@ This lens is **not** marginal-only: A=8 and B=0 is not the shape of a converged 
 All evidence in this entry is `provisional-pending-substrate`. Nothing here upgrades any claim; a clean round under this lens would not have either.
 
 TERMINATED
+
+## R15 mechanical validation and disposition — `2026-07-14T23:32:13+02:00`
+
+**Byte and artifact identity.** The sealed pre-review prefix `[0,533311)` reproduces 533,311 bytes / 2,748 lines / SHA-256 `2d9cabc01eb384760be704450dce34e7efdb2a01261cfeb1b8cfe3b1729440a7`. The sole reviewer suffix `[533311,562371)` reproduces 29,060 bytes / 191 lines / SHA-256 `610bc2ec58c899cad9b14da7097ebacca457c0987f237edfd5d45737f2d84595`; the whole pre-integration log reproduces 562,371 bytes / 2,939 lines / SHA-256 `62453d49d41b71ebe7659492848bc81e2f51012855bd43bbd39b6cc70b5222da`. The four components and their sorted manifest independently remain SHA-256 `dd5266aa80bd0ecdef7780fa670689427e70faee63d279efa1561e0c4e24d8e9`. Reviewer-authored bytes are preserved exactly.
+
+**Mechanical schema validation only.** The packet declares the sole `oversimplification-and-feature-loss` lens, five-pass B 2/5, A=14/B=7/C=0, marginal-only NO, monotone IDs R15-A01–A14 and R15-B01–B07, exactly 21 each of evidence, requirement, consequence, repair boundary, and loss guard, one verdict, an FSM ending in `TERMINATED`, and an exact standalone `TERMINATED` entry marker. Root reports the final assistant response was exactly `TERMINATED`. No premise or substantive conclusion was tested, confirmed, refuted, promoted, or re-graded.
+
+**Append-only timestamp correction.** The reviewer-authored `2026-07-14T18:54:19+02:00` start is process launch, not task start. Transcript-grounded delivery was `2026-07-14T21:01:46.805Z`, equal to `2026-07-14T23:01:46.805+02:00`; review could not begin before delivery, and the exact start instant is unavailable. The structured append began `2026-07-14T21:26:01.045Z`; the measured Round Log mtime was `2026-07-14T23:26:01.120569774+02:00`; the patch completed `2026-07-14T21:26:01.140Z`; and the exact final response occurred `2026-07-14T21:26:03.239Z`. The authored filed value `2026-07-14T21:26:01.107Z` lies inside the observed append interval but is not treated as post-write completion. Original fields remain intact and no time is invented.
+
+**Chain qualification and residual risk.** Root disposition is `FILED · CHAIN-QUALIFIED · TERMINATED`, not pristine. The reviewer disclosed that a targeted goal search exposed only `OVERNIGHT_GOAL.md` lines 42, 43, 45, and 92 outside the named slices, concerning G1 paths and G1 priority; a later search mistakenly named all of `AUDIT_FINDINGS_LEDGER.md` but returned no ledger content. The reviewer states neither exposure supported a finding, and neither exposed a prior finding, reviewer packet, owner disposition, convergence result, or competing artifact. This bounded deviation is retained with non-zero residual priming risk; it is not erased, normalized, or used as substantive evidence.
+
+**Process, termination, and telemetry.** Root's rollout audit reports only local read-only exec commands and the one structured append: no web, scratch/temp file, redirection, `tee`, git/fetch, artifact edit, external action, Beads state, comparison or measurement run, prohibited processor material, or SpecCard body. The exact reviewer was `gpt-5.6-sol` / `ultra` / priority / live `fast`, session `monkeybee-pdf-mass-context-repo--r15`, pane `%97`. Local checks find model PID `3374596`, shell PID `3374349`, monitor PID `3374473`, and the session absent; the repo map is 26 panes with dead=0, and the process table has zombies=0. Exit telemetry: 355,864 noncached input; 5,483,264 cached input; 52,735 output including 37,468 reasoning; noncached-plus-output total 408,599.
+
+**Bounded route and convergence disposition.** All 21 allegations route only through root to G1 for independent premise-first triage, with every grade and loss guard intact and unpromoted. Mechanical addition yields thirteen filed rounds at A=93/B=56/C=18 and 7 Sol/6 Opus. Five-pass B now has R14 A+B=15 and R15 A+B=21; both are non-marginal, the yield rose, and the planned family rotation was Opus→Sol. Two points establish neither convergence nor a causal trend. R16 remains blocked until G1 triages R15, revises, returns to `SUBMIT-FOR-REVIEW`, and exposes a new manifest.
+
+Owner FSM remains `DRAFT`. The R15 integration is sealed; the log remains under G7 control only for the separately authorized serialized R24 binding action.
+
+## R24 assignment/control — `2026-07-14T23:34:44+02:00`
+
+**Binding and durable preimage.** At the measured local clock `2026-07-14T23:34:44+02:00`, G7 bound R24 only: `Traceability + cycle briefs` under the sole `dependency soundness` lens, assigned to `claude-opus-4-8` at effort `xhigh`. The post-R15-integration preimage used for this bind was exactly 2,955 lines / 566,893 bytes / SHA-256 `b01a752274f6308fc2defa1806448b7f2776caaa73fe8ad55276e369b19f4776`.
+
+**Exact seven-file artifact and manifest.**
+
+- `reports/TRACEABILITY_MATRIX.md` — 403 lines / 71,345 bytes / SHA-256 `390998bdb308d76e9bce92fbd921c6282a2827844a640d82611e159671b185aa`.
+- `plans/cycle_briefs/C2.md` — 109 lines / 11,216 bytes / SHA-256 `eb406a51c0c489d6fe0380c293f96bd84e045affb97c481ea8e07798af212c52`.
+- `plans/cycle_briefs/C3.md` — 107 lines / 10,688 bytes / SHA-256 `20c48dd5f0128dc0407084e1a97dbe0d62af3a41c4be1ab7d5e942b904be6434`.
+- `plans/cycle_briefs/C4.md` — 137 lines / 12,896 bytes / SHA-256 `d8e9241f3cdcc61a2a2999aca51a631c28f7eca1b09e0b54eab04d878ec7b388`.
+- `plans/cycle_briefs/C5.md` — 109 lines / 10,365 bytes / SHA-256 `d97aaf8689d08bc9b2e6f5a907e27eab1cf9c936e182f673a1fca8af9d9ba161`.
+- `plans/cycle_briefs/C6.md` — 111 lines / 11,220 bytes / SHA-256 `35d06257c6100f236e38d7b893f46da5a388e1cf99b16c79d62f4c0707e49b90`.
+- `plans/cycle_briefs/C7.md` — 113 lines / 13,377 bytes / SHA-256 `224b848ba6470cf2304842c4cb9cdee98f9d79496d0fd3bf74f3bd51cc1926c0`.
+
+The manifest method is SHA-256 over the bytewise (`LC_ALL=C`) sorted ordinary `sha256sum` lines, including the final newline:
+
+```text
+20c48dd5f0128dc0407084e1a97dbe0d62af3a41c4be1ab7d5e942b904be6434  plans/cycle_briefs/C3.md
+224b848ba6470cf2304842c4cb9cdee98f9d79496d0fd3bf74f3bd51cc1926c0  plans/cycle_briefs/C7.md
+35d06257c6100f236e38d7b893f46da5a388e1cf99b16c79d62f4c0707e49b90  plans/cycle_briefs/C6.md
+390998bdb308d76e9bce92fbd921c6282a2827844a640d82611e159671b185aa  reports/TRACEABILITY_MATRIX.md
+d8e9241f3cdcc61a2a2999aca51a631c28f7eca1b09e0b54eab04d878ec7b388  plans/cycle_briefs/C4.md
+d97aaf8689d08bc9b2e6f5a907e27eab1cf9c936e182f673a1fca8af9d9ba161  plans/cycle_briefs/C5.md
+eb406a51c0c489d6fe0380c293f96bd84e045affb97c481ea8e07798af212c52  plans/cycle_briefs/C2.md
+```
+
+Bound manifest SHA-256: `22749762089e2a68b9897a09031b19fbdff6aa1108e2fd8071b7743d0df602c6`.
+
+**Admission gates.** Gate 1: excluded `ledger/owners/G4_STATE.md` independently hashes to `992b63dfeb24051a36eba8ebff5518a2a69e0c612ea9d046f9c44d4bf53ada23` and declares `SUBMIT-FOR-REVIEW`. Gate 2: all seven component and sorted-manifest identities reproduce. Gate 3: R33 reviewed prior manifest `b77359ccc716a2186d3053034132b7f68b41988e2366e64efe4451e10d5089b3`; G4 premise-tested and dispositioned R33, revised, and resubmitted the new manifest above. Gate 4: G4 artifact commit `a5c9c29bfd6d923b742d8547fc40ba41c8921f4d` is contained in current `origin/main` descendant `8d703e6d72f8e8d57b5b32a276b97d381fe42f7e` (`git merge-base --is-ancestor` status 0). Gate 5: process arguments and the untouched live TUI attest exact `claude-opus-4-8` / `xhigh`. Gate 6: exactly one lens is assigned. Gate 7: R24 is not a repeated-prompt block. Gate 8: the reserved process is idle and fresh; no task, artifact, or review context has been sent.
+
+**Reviewer control plane.** Session `monkeybee-pdf-mass-context-repo--r24`, window 1, pane 1, pane ID `%102`, shell PID `3401952`, reviewer child PID `3402188`, monitor PID `3402044`, `pane_dead=0`, current command `claude`; all cwd links resolve exactly to `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`. Child arguments identify `/home/joseph/.local/bin/claude --dangerously-skip-permissions --model claude-opus-4-8 --effort xhigh`. The live welcome screen shows `Opus 4.8 with xhigh effort` and the untouched default prompt `Try "fix lint errors"`.
+
+**Exact bounded authority chain for later root delivery, in read order.**
+
+1. `AGENTS.md` — full.
+2. `OVERNIGHT_GOAL.md` — §1, §3/G4, and §4.
+3. `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` — full.
+4. `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` — §§0–2 and §§4–7.
+5. `CYCLE_0_WORK_ORDER.md` — §0 only.
+6. `MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md` — §§0.2, 3, 24.12–24.16, 33.1–33.18, and 35.
+7. All seven bound artifacts above, in full, at the recorded component and manifest identities.
+8. Only this R24 assignment/control entry and its EOF anchor, supplied inline by root.
+
+**Exact one-lens task.** Apply only the `dependency soundness` lens. Using only the permitted local authority chain, test every declared prerequisite, ordering edge, gate input/output, cross-cycle handoff, artifact producer/consumer relation, and reverse dependency in the matrix and C2–C7 briefs for missing, contradictory, cyclic, premature, or unowned dependencies. File only locally evidenced findings under this lens; do not reapply an adjacent lens and do not rewrite the artifacts. No measurement, comparison, benchmark, web/search, or external action is authorized.
+
+**Freshness boundary.** The reviewer must not receive or open the G4 checkpoint body, any prior finding body or reviewer packet, owner disposition, convergence result, decision file, G6 successor, other Round Log byte, unrelated artifact, external source, competitor material, or prohibited processor source/documentation. Root supplies only the bounded chain, this control entry, and its EOF anchor inline. Any accidental exposure must be disclosed and affected evidence excluded.
+
+**Tightened write and termination law.** The reviewer may create no scratch or temporary file anywhere and may use no shell redirection or `tee`. Its only filesystem write is exactly one blind structured `apply_patch`-equivalent append to `gauntlet/ROUND_LOG.md`, using the root-supplied EOF anchor without reading other log bytes. It may edit no artifact, checkpoint, report, or other path. After the append is flushed, the final standalone response token must be exactly `TERMINATED`, with no punctuation, styling, prefix, or suffix; then the reviewer and idle shell must exit.
+
+**Future routes and blocks.** Any eventual R24 allegations route only through root to G4 after filing and G7 mechanical integration, with grades and loss guards unpromoted. R25 remains blocked until G4 premise-tests R24, revises, returns to `SUBMIT-FOR-REVIEW`, and exposes a new seven-file manifest. Root reports G3 remains `REVISE`, so R06 stays blocked; G1 must disposition R15 before R16. No reviewer or owner task is sent at assignment.
+
+**Write law now in force.** `gauntlet/ROUND_LOG.md` is closed to G7 until root verifies this bind, commits and pushes it, dispatches R24, and reports reviewer termination. G7 does not review, predict, or pre-empt findings. All reviewer-authored bytes and allocation rows are preserved except the authorized R24 allocation slots. **No task has been sent; root verifies, commits, pushes, and dispatches R24.**
 
 ### R20 — G7 validation and routing disposition (2026-07-14 17:42)
 
@@ -2746,3 +2815,206 @@ Find every concrete place this artifact oversimplifies, loses a required feature
 **Future blocks.** R16 remains blocked until R15 files, G1 performs premise-first triage and revision, returns to `SUBMIT-FOR-REVIEW`, and exposes a new manifest. R06 and R24 remain blocked on their respective owner revision gates. No reviewer or owner task is sent at assignment.
 
 **Write law now in force.** `gauntlet/ROUND_LOG.md` is closed to G7 until root verifies this bind, commits and pushes it, dispatches R15, and reports reviewer termination. G7 does not review, predict, or pre-empt findings. All reviewer-authored bytes and allocation rows are preserved except the authorized R15 allocation slots. **No task has been sent; root verifies, commits, pushes, and dispatches R15.**
+
+## R15 — four-file G1 artifact bind — oversimplification-and-feature-loss
+
+- reviewer process: session monkeybee-pdf-mass-context-repo--r15; pane %97
+- model identity: gpt-5.6-sol, effort ultra; process arguments observed as codex --dangerously-bypass-approvals-and-sandbox -m gpt-5.6-sol -c model_reasoning_effort=ultra -c model_reasoning_summary_format=experimental --search; live TUI showed gpt-5.6-sol ultra fast and Service tier set to priority
+- started / filed: 2026-07-14T18:54:19+02:00 / 2026-07-14T21:26:01.107Z
+- assignment block: five-pass B, pass 2/5
+- artifact hash: sorted-manifest SHA-256 dd5266aa80bd0ecdef7780fa670689427e70faee63d279efa1561e0c4e24d8e9; constitution/MONKEYBEE_CONSTITUTION_v8.md b5b5d673b64732ebd9efa85d3183a6e17c7ce167226eed1b15755aaf3e9cd0a9 (1,976 lines / 181,225 bytes); constitution/SPECCARD_PIPELINE.md 6d3a9ddb68f2f9c3f8e3a169a9b44cd9513a91a60ad3e848e0b0d3357a88c877 (179 / 16,312); shell/MONKEYBEE_SHELL_CORPUS_v8.md 09cf724620fb8173640ed542a1ed18277e09eafb8be62b0302c93a9ec8f47739 (6,488 / 447,747); reports/FIX_APPLICATION.md 62e72bae29fe1e258f6b97a3719dbad7123307d1ef92e893749cece8c5005d77 (345 / 52,977)
+- sealed target bind: assignment-supplied pre-review Round Log seal was 2,748 lines / 533,311 bytes / SHA-256 2d9cabc01eb384760be704450dce34e7efdb2a01261cfeb1b8cfe3b1729440a7; the target was not read, and the root-supplied EOF anchor above was used blind
+- authority chain read: AGENTS.md in full first and again after compaction and the human's explicit reread instruction; OVERNIGHT_GOAL.md §§1, 3/G1, and 4; ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md in full; MONKEYBEE_CAMPAIGN_CHARTER_v1.md §§0–1, §5/C0–C1, and §6; CYCLE_0_WORK_ORDER.md §§0–3; AUDIT_FINDINGS_LEDGER.md rows R1-1, R1-4, R2-N4, and R2-N5; all four bound artifact files in full
+- chain-hygiene qualification: an early targeted G1 search displayed OVERNIGHT_GOAL.md lines 42, 43, 45, and 92 outside the declared section slices, and a later staffing-term search mistakenly named all of AUDIT_FINDINGS_LEDGER.md, although it returned no ledger match or ledger content. Neither exposure supplies evidence for any allegation below. This round therefore does not assert an unqualified nothing-else-read chain; root must disposition process eligibility separately from the substantive findings.
+- reviewer FSM: SPAWNED -> INGEST-DECLARED-CHAIN -> APPLY-ONE-LENS -> FILE-GRADED-FINDINGS -> TERMINATED
+- counts: A=14; B=7; C=0
+- marginal-only: NO
+- no-action statement: Read-only local command classes actually used were sed, rg, sha256sum, wc, sort, ps, pstree, tmux display-message, tmux capture-pane, and date. The only filesystem mutation was this one blind apply_patch append. No git command, shell redirection, tee, scratch or temporary file, artifact edit, source code, scaffold, Bead or pseudo-Bead inventory, benchmark, measurement, comparison run, web tool, fetch, external action, or prohibited processor source/documentation contact was performed. No SpecCard semantic body was generated; registry/slot inspection remained PENDING-LICENSED-SOURCE.
+
+All items below are reviewer allegations pending owner disposition. Grades describe only the strength of the cited local evidence under the assigned lens.
+
+### R15-A01 — The R0 release envelope drops the positive credentialed-decryption capability
+
+- evidence: Charter §5/C1 explicitly places standard-handler read decryption with caller-supplied credentials in C1 and says it is R0 scope. SpecCard Pipeline §3 also has a distinct caller-credential read-decryption coverage row. Shell §3.0's R0 required-consequence cell lists only encryption inventory; its exclusion says encrypted content is partial or refused without credentials, but never positively requires the with-credentials path.
+- requirement: The higher-authority Charter C1 scope must survive in the staged R0 envelope and its generated capability/release contracts.
+- consequence: An implementation could satisfy the written R0 row with inventory plus no-credential refusal while omitting the C1 decryption feature, yet still appear to ship the declared wedge.
+- repair boundary: Align the R0 consequence/contract surface with the Charter's conditional credentialed read capability and its typed outcomes.
+- loss guard: Preserve inventory-only operation, refusal when credentials or key capability are absent, the public-key-handler exclusion, and the no-writer boundary.
+
+### R15-A02 — OpenReport collapses decryption execution into one encryption-state scalar
+
+- evidence: Constitution §10.6 gives OpenReport only “encryption state”; shell Appendix B.1 serializes that as encryption_state: inventoried. Neither location records whether the C1 credentialed-read capability was requested, admitted, attempted, completed, partially covered, or refused, nor binds its evidence. Constitution §10.8 separately requires canonical outcome, coverage, diagnostics, evidence, and applicable security profile identity.
+- requirement: Charter §5/C1's credentialed read feature and Constitution §10.8's semantic-report contract require an auditable operation outcome, not an inventory label that can stand for several materially different states.
+- consequence: The C1 gate cannot distinguish “handler inventoried” from “caller-authorized content was actually available for inspection,” so downstream security and coverage statements can inherit a false envelope.
+- repair boundary: Add the minimum typed OpenReport fields or linked subreport needed to bind decryption request/admission, scoped outcome, coverage, security-profile identity, and evidence.
+- loss guard: Do not expose passwords, keys, or credential-derived secrets; retain inventory-only and refused outcomes as first-class states.
+
+### R15-A03 — R0 header and per-revision dialect facts disappear at the report boundary
+
+- evidence: Shell §§12.3–12.3.1 require the header candidate, offset, binary marker, declared version, catalog override, pre-header bytes, and a per-selected-revision EffectiveDialect history. Constitution §10.6 OpenReport and shell B.1 contain no header or effective-dialect field. FIX_APPLICATION §13.2 nevertheless says B.1 carried “header evidence.”
+- requirement: Recorded parser facts that determine interpretation must remain in the R0 evidence interface, and FIX_APPLICATION's preservation assertion must match the generated schema.
+- consequence: A consumer cannot audit which version signals authorized parsing, distinguish historical dialect changes, or falsify the report's claimed header preservation.
+- repair boundary: Bind the existing header record and per-revision dialect records into OpenReport or an exact typed backlink, then make the preservation register and example validator check that interface.
+- loss guard: Preserve pre-header bytes, conflicts, recovery assumptions, and revision-local history; do not replace them with a timeless document-wide version scalar.
+
+### R15-A04 — RenderReport loses the source root and conditional integrity evidence required by Workflow A
+
+- evidence: Shell §5.1 says the safe-render report includes exact SourceRootId, RevisionGraphId, DocumentViewId, DerivationId, source-integrity class, and a whole-source hash only when coverage and authentication permit it. Constitution §10.6 RenderReport and shell B.2 begin at DocumentViewId/RevisionGraphId/DerivationId and omit SourceRootId, integrity class, coverage predicate, and conditional source hash.
+- requirement: Workflow A's explicit report contract and Constitution §10.8's proper-domain identity rule govern the render evidence surface.
+- consequence: A detached RenderReport cannot directly establish which immutable source root its graph/view derives from or whether an advertised source digest had whole-source support.
+- repair boundary: Carry the exact source-root binding and conditional source-integrity facts in the family schema and generated example.
+- loss guard: Never emit a whole-source content claim from partial availability; preserve graph/view/derivation identities and telemetry separation.
+
+### R15-A05 — TransformReceipt omits the safety facts that make an agent-mediated apply non-replayable and authorized
+
+- evidence: Shell §5.16 and §25.9 require apply-time expected-state and authority rechecks, atomic-batch outcome, durable tenant/caller/schema-scoped idempotency state, crash-indeterminate reconciliation, expiry/visibility law, and exact lineage. Shell's Transform-root glossary says authority, ExpectedStateId, idempotency, and publication generations live in proposal/admission/TransformReceipt identity rather than the root. Constitution §10.6 TransformReceipt and shell B.3 carry input ExpectedStateIds and deltas but no recheck result, authority decision, atomic-batch result, durable idempotency record, crash state, or publication visibility.
+- requirement: Workflow P's report contract must preserve the controls that distinguish a safe apply from a stale, unauthorized, or replayed mutation.
+- consequence: The candidate receipt can look valid while omitting whether its state was revalidated, its authority was current, or a retry duplicated an effect.
+- repair boundary: Declare the exact receipt family that owns these facts and bind it from TransformReceipt; add the missing fields there rather than relying on prose or mutable ambient state.
+- loss guard: Keep transient authority/idempotency/publication facts out of TransformRoot identity, and preserve the private-candidate versus independent-admission separation.
+
+### R15-A06 — ValidationReport does not bind the checker implementation that scopes its verdict
+
+- evidence: Shell §24.1 says a validation verdict is scoped to executed rules, unsupported rules, profile version, and checker build; profiles also carry rule-implementation versions. Constitution §10.6 ValidationReport records profile/version and rule set but no rule-implementation manifest, checker build, or DerivationId. Constitution §10.8 requires the proper derivation identities needed to interpret a report.
+- requirement: A result whose meaning changes with checker implementation must bind that implementation or the derivation identity that commits it.
+- consequence: Two materially different checker builds can serialize under the same apparent report identity and profile, allowing stale or incompatible validation evidence to alias.
+- repair boundary: Add an exact checker-build/rule-implementation commitment or a validated DerivationId to the ValidationReport schema and example obligations.
+- loss guard: Preserve per-rule outcome, separate severity and coverage, unsupported-rule inventory, and independent external observations without treating them as the normative oracle.
+
+### R15-A07 — Generated report examples omit mandatory common semantic-body fields
+
+- evidence: Constitution §10.8 requires every semantic body to contain canonical outcome, coverage, deterministic diagnostics, evidence, and no-claim fields; §10.10 says the generator emits every mandatory common field and the validator rejects omissions. In shell Appendix B, B.2 has no explicit deterministic-diagnostics, evidence, or no-claims field; B.3 has no deterministic-diagnostics or evidence field; B.4 has no canonical outcome, coverage, deterministic-diagnostics, evidence, or no-claims field; and B.5 has no evidence field.
+- requirement: Constitution §§10.8 and 10.10 and Work Order §2/R1-1 make these common fields schema-derived, not optional example decoration.
+- consequence: The examples and claimed validator teach implementations to mint semantic report placeholders that the governing grammar says must refuse identity.
+- repair boundary: Regenerate B.1–B.5 from the family schemas plus one common-body schema and make the validator prove presence and type for every common field.
+- loss guard: Preserve each family-specific field, the one-way run-observation backlink, telemetry exclusion from semantic identity, and pending D1/D2 markers.
+
+### R15-A08 — B.1 simultaneously records an unexplained range and no unexplained bytes
+
+- evidence: Shell B.1 sets exact_preservation_interval_facets.unexplained_subranges to [1839000, 1839021] while setting unexplained_bytes to an empty list. Constitution §10.6 exposes both the independent interval facets and unexplained bytes as report facts.
+- requirement: One semantic body must not make incompatible canonical statements about the same unexplained source region, or it must type the distinct meanings and reconciliation law.
+- consequence: Consumers cannot know whether the 21-byte range is unknown, merely separately classified, or safe to ignore; carry/drop and security coverage can choose opposite interpretations.
+- repair boundary: Define and validate the relation between the two fields, then make the example internally consistent under that relation.
+- loss guard: Retain the independent overlapping interval facets; do not “fix” the contradiction by deleting the more detailed range ledger.
+
+### R15-A09 — B.5 drops the checker isolation and seeded-trial lineage that CheckReport is required to expose
+
+- evidence: Constitution §10.6.1 makes authorship/source/code isolation, measured seeded-defect detection, and lineage/correlation explicit axes. Shell Appendix A.13 says CheckReport includes applicable isolation/trial lineage. Shell B.5 records checker protocol/capability, availability, coverage, truncation, diagnostics, and no-claims, but no isolation, authorship/source lineage, trial identity, detection status, or known correlation.
+- requirement: The checker report must carry the evidence that permits an independence claim to be admitted or degraded.
+- consequence: B.5 can appear to be an independent check solely from a checker-capability label even when the proposed isolation binding is unavailable or a seeded trial missed.
+- repair boundary: Add typed, explicitly unavailable-capable isolation/trial/lineage fields to the CheckReport family and generated example.
+- loss guard: Preserve PROPOSED and unavailable states; never infer independence from architecture, different names, or a successful package parse.
+
+### R15-A10 — The SpecCard template collapses mandatory independent rights flags into generic provenance
+
+- evidence: Constitution §4.2.1 requires separate flags for human use, non-generative parsing, model input, training/fine-tuning, test/corpus use, quotation, redistribution, black-box use, encumbrance review, and jurisdiction/deployment constraints. Pipeline §4 step 1 names only a subset plus “other relevant restrictions,” and Pipeline §5 provides one generic rights-provenance slot rather than independent deny/allow/unknown fields.
+- requirement: Constitution §4.2.1's independent rights gate is critical and must be executable by the registry/extraction interface.
+- consequence: A card can move through the template without proving a decision for training, corpus, experimental, encumbrance, or jurisdiction axes; one permission can be mistaken for clearance on another.
+- repair boundary: Add independent empty rights-decision slots and make any unknown required axis block the relevant transition.
+- loss guard: Keep every semantic value PENDING-LICENSED-SOURCE, preserve separate technical and rights review, and add no source meaning or licensed prose.
+
+### R15-A11 — The required contract-generated claim registry has no defined artifact or linkage interface
+
+- evidence: Charter §5/C1 requires a claim registry generated from consequence contracts and contract-truth checks that verify claim-registry linkage. Constitution §10.10 defines ConsequenceContractId and generators for manifests, Appendix E, documentation, and assurance obligations. A bounded search of the four manifest components for claim registry, claim-registry, claim_registry, and ClaimRegistry found only Constitution §34.9's demand for “claim-registry consistency”; no registry schema, record identity, generation rule, or claim-to-contract linkage is defined.
+- requirement: The C1 immune system and §34.9 close gate require a reproducible registry whose consistency can actually be checked.
+- consequence: The close gate names a test with no declared input or truth relation, so friendly claim names can remain orphaned from their consequence contracts without a machine-detectable failure.
+- repair boundary: Define the smallest machine-readable claim-registry record, its generation source, stable identity, contract linkage, and consistency failure law.
+- loss guard: Preserve one ConsequenceContractId per atomic operation/profile/subclaim, typed composition, lifecycle/no-claim boundaries, and the rule that generated prose cannot strengthen claims.
+
+### R15-A12 — Appendix E is not the consequence-contract-derived matrix §27.4 requires
+
+- evidence: Shell §27.4 requires each release row to carry ConsequenceContractId, exact input/view identity and authority/precondition contract, tier results, coverage/falsifiers, outcome algebra, determinism/replay, performance, privacy/availability, and no-claim/expiry/withdrawal state. Appendix E's ordinary template has only Capability, Profile/version, Evidence tiers, Independent oracle, Determinism, Performance lane, and No-claim boundary; it omits the contract ID, input/authority/precondition, outcome algebra, privacy/availability, expiry, and withdrawal interfaces.
+- requirement: Constitution §10.10 and shell §27.4 say Appendix E rows are generated from the canonical consequence contracts and reject disagreement.
+- consequence: A release row can be filled without proving which atomic contract it implements, which inputs and authority it admits, or whether the claim has lapsed or been withdrawn.
+- repair boundary: Regenerate the ordinary release-row schema from §27.4's contract fields and bind each row to exact contract IDs.
+- loss guard: Preserve per-profile staging, explicit exclusions, typed refusal/indeterminate outcomes, and the separately scoped comparison rows without widening any release claim.
+
+### R15-A13 — FIX_APPLICATION weakens a mandatory second forensic path to optional
+
+- evidence: Shell §31.4 requires both one independently authored forensic tool and “a second independently sourced forensic path,” with lineage disclosure and correlation handling. FIX_APPLICATION §13.1 describes the carried second-path requirement as “explicitly optional second independent lineage when available,” while its own summary row R1-3 says two paths were defined.
+- requirement: Work Order §2/R1-3 and shell §31.4 require two differently sourced attack paths; the fix-accounting report must not weaken the feature it claims to preserve.
+- consequence: A future auditor can accept one path as conforming by following the exception ledger, silently reducing the negative-evidence falsifier set.
+- repair boundary: Make the exception-accounting statement match the mandatory two-path law and its degradation/refusal behavior.
+- loss guard: Preserve lineage disclosure, correlation accounting, and the rule that two shared-lineage paths are not counted as two independent falsifiers.
+
+### R15-A14 — An unverified standards paragraph asserts external confirmation it says was never obtained
+
+- evidence: Constitution §4.4 places an UNVERIFIED notice stating that no licensed or public standards source was contacted in the no-fetch run immediately before a paragraph calling the baseline “confirmed current by ISO in 2026.” The paragraph supplies no evidence identity or source-rights record for that confirmation.
+- requirement: AGENTS.md Rules 16 and 20 and Constitution §§4.2.1/4.4 prohibit reconstructing unavailable input or strengthening a claim through generated prose.
+- consequence: The standards registry can treat an unverified planning identifier as externally confirmed, contaminating later card/version decisions and their claimed provenance.
+- repair boundary: Keep the assertion explicitly unverified until an authorized, rights-recorded source check supplies a reproducible evidence reference; align the status language throughout the paragraph.
+- loss guard: Preserve the identifier-only planning baseline, edition/profile distinctions, no-fetch disclosure, and all PENDING-LICENSED-SOURCE gates.
+
+### R15-B01 — C1 invokes all of Workflow B while excluding features that Workflow B itself requires
+
+- evidence: Charter §5/C1 limits scope to L0–L2 and explicitly excludes rendering and fonts, but its gate says “Workflow B end-to-end.” Shell §5.2's Workflow B output includes visible, clipped, invisible, and off-page content plus text and glyph mappings, which depend on later semantic/render/text layers. The gate's parenthetical mentions an OpenReport with recovery alternatives and security inventory but does not formally define that as a projection replacing the rest of Workflow B.
+- requirement: A cycle gate must preserve dependency staging and name an executable subset when the long-horizon workflow crosses excluded layers.
+- consequence: Implementers may either pull later-layer features into C1 or certify an “end-to-end” workflow while silently omitting named outputs.
+- repair boundary: Define a stable R0 Workflow-B projection and map each retained output to C1 layers/contracts.
+- loss guard: Do not move rendering/fonts into C1, and do not delete the later full Workflow B outputs from the long-term envelope.
+
+### R15-B02 — The R0 SpecCard coverage denominator is circular for recovery and OpenReport
+
+- evidence: Pipeline §3 says its map does not assert that listed slots are sufficient. Its recovery row requires “all syntax/structure slots implicated by a hypothesis,” and its OpenReport row requires every resolved slot “actually applied by the operation.” Charter C1 nevertheless gates on SpecCard coverage for the R0 surface. Both rows discover their denominator from the implementation/hypothesis after the fact rather than from a committed dependency interface.
+- requirement: The C1 coverage gate needs a reproducible denominator and dependency rule that can reveal omitted obligations.
+- consequence: An implementation can avoid citing a missing card by never declaring that it was “implicated” or “actually applied,” while the coverage check still appears green.
+- repair boundary: Add a prospective slot-to-operation/dependency manifest and a rule for newly discovered licensed-source obligations before declaring coverage.
+- loss guard: Preserve the explicit insufficiency caveat, allow licensed extraction to split/add slots, and keep every semantic body PENDING-LICENSED-SOURCE.
+
+### R15-B03 — A rights change creates a successor card but does not explicitly disable the old card
+
+- evidence: Pipeline §4 step 10 says a rights change creates a new card version plus compatibility and claim-impact review and never mutates prior meaning. It does not state whether the previously approved version becomes blocked, withdrawn, or prohibited in model-visible contexts. Constitution §4.2.1 defaults model access to deny absent current permission.
+- requirement: Rights revocation must affect current admissibility without erasing historical provenance.
+- consequence: Tooling can continue to admit an old card whose technical meaning is unchanged but whose model-input or redistribution permission has lapsed.
+- repair boundary: Define a separate current rights-admissibility lifecycle and downstream invalidation/claim-impact transition for superseded cards.
+- loss guard: Preserve immutable historical versions, review evidence, and technical meaning; do not silently rewrite an old card or infer new rights.
+
+### R15-B04 — Workflow Q has no declared report-family home for its external-recognition evidence
+
+- evidence: Shell §5.17 requires request/response artifact identity and availability, tool/service observation, confidence semantics, conflicts, transmitted scope, and replay/recomputation no-claims. Constitution §10.6 TextReport records span mappings, evidence classes, order, structure, and omissions but none of those request/response/disclosure facts, and no external-recognition report family is named.
+- requirement: External-recognition output must retain its hostile-input, disclosure, availability, and replay boundaries at the report interface.
+- consequence: Recognition-derived text can be merged into an ordinary TextReport without a durable record of what left the system, which remote result was used, or whether it can be reproduced.
+- repair boundary: Route these facts into a typed TextReport extension or a separately identified external-recognition report with an exact backlink.
+- loss guard: Preserve native and recognized alternatives/conflicts, hostile-data treatment, least disclosure, confidence no-laundering, and non-determinism/no-recomputation boundaries.
+
+### R15-B05 — The human staffing plan is asserted but neither identified nor made checkable
+
+- evidence: Shell §35.1 says “The staffing plan records” role separation, conflicts, expected human time/cost, and unavailable roles; FIX_APPLICATION marks R1-5 APPLIED. Across the full four-component bind, no staffing-plan artifact identity, schema, owner checkpoint, cost field set, or gate linkage is supplied.
+- requirement: Work Order §2/R1-5 requires the day-zero human independence ecology, cost, and downgrade path to be operational rather than fictionalized as agent capacity.
+- consequence: The plan can claim independence-dependent gates while no reviewer can determine whether roles, conflicts, availability, or cost were ever recorded.
+- repair boundary: Bind §35.1 to one stable staffing-plan interface with role/conflict/time/cost/unavailability fields and claim-degradation links.
+- loss guard: Preserve the survival-wedge downgrade path, human/agent distinction, conflict disclosure, and refusal to infer independence from nominal roles.
+
+### R15-B06 — The C1 “G0–G3-subset” gate has no enumerated subset
+
+- evidence: Charter §5/C1 requires “G0–G3-subset lanes green.” A bounded search of the declared authority and four components found that token only in the Charter; shell §27 defines the full tier taxonomy, while Appendix E's strict-open row instead names G0–G6. No selected lanes, falsifiers, or mapping explain which parts of G0–G3 constitute the C1 subset.
+- requirement: A blocking cycle gate must state the exact assurance obligations that turn it green.
+- consequence: Different owners can select different easy portions of G0–G3 and still report the same gate result, while Appendix E points to a different tier envelope.
+- repair boundary: Enumerate the C1 subset by stable tier/falsifier IDs and reconcile it with the strict-open release row.
+- loss guard: Preserve the full G0–G7/G6.1 taxonomy for later cycles and do not imply that C1 has passed later release tiers.
+
+### R15-B07 — Exact unique-line membership is labeled feature-preservation evidence without preserving context or multiplicity
+
+- evidence: FIX_APPLICATION §13 compares the first occurrence of each distinct nonblank source line for byte-identical membership; §15 labels the result “Extraction and feature preservation.” The method intentionally discards repeated occurrences and does not establish section ownership, adjacency, normative force, dependency edges, or whether a retained line now qualifies a different feature. The report itself cautions that a passing check establishes only its named relation, but the named relation is broader than the measured relation.
+- requirement: Work Order §1 requires domain content and architectural detail to survive the Constitution/shell split without oversimplification.
+- consequence: A duplicated obligation can lose one required home, or a sentence can move under a weakening qualifier, while the unique-line and heading checks still pass.
+- repair boundary: Narrow the check's asserted relation or add stable occurrence/context and obligation/dependency preservation evidence.
+- loss guard: Preserve the canonical hash bind, 142-exception partition, stable-section coordinates, exact-line evidence, and the rule that automated preservation checks do not strengthen claims.
+
+### Round verdict
+
+Owner revision is required under this lens: fourteen Grade-A allegations identify direct local omissions or contradictions in the R0 capability/report boundary, generated schemas, rights gate, contract/claim spine, fix accounting, and provenance status. Seven Grade-B allegations have strong local evidence but retain one premise about intended projection, lifecycle ownership, or an artifact that might exist outside the bind. No Grade-C issue was filed, the result is not marginal-only, and no finding count was manufactured toward the rhetorical target. The two disclosed chain-hygiene departures do not support any finding but prevent this process from claiming pristine authority-chain execution; root must disposition that procedural eligibility independently from the substantive revision verdict.
+
+TERMINATED
+
+## G7 EOF placement correction and R24 control continuation — `2026-07-14T23:36:34+02:00`
+
+**Failed final diagnostic and preserved placement variance.** After the R24 bind write, the required EOF check found the Round Log still ended at R15's reviewer-authored `TERMINATED`, rather than at the intended R24 write-law anchor. The R15 mechanical disposition had been inserted at byte `95235` after an earlier non-unique `TERMINATED` match, and the R24 assignment/control had then been inserted at byte `99520` after that misplaced disposition's matching owner-state anchor; R15's reviewer entry began later at byte `544858`. Both G7 records are preserved in place. No existing byte was removed, rewritten, or normalized, but their non-EOF placement is method/placement noncompliance and is not represented as a clean append.
+
+**Reviewer-byte integrity after both insertions.** A deterministic relocation scan reproduced every historically sealed suffix without a failed locator result: R03 `[266018,283912)` SHA-256 `d42c1989b354ca100dbdbd876b83cde0f7f0f13f12c35356209d5004d166af7a`; R13 `[291207,300796)` `18eb5b573f833f92cdc7aaafab37bbc2688a9c9f83aa33c80da91b0a3ccc4f5c`; R04 `[308547,334641)` `df313c958971724d0c59eae7302cc4d89475cd0f66d1e5f22e044e92dd435145`; R14 `[344336,400440)` `4567275fbaba4e3e04d433ec4757897ed6ae4aee183ada2c552a28785794a122`; R33 `[420353,431258)` `f932428fcf0f4b114e3574ed9119b29f4491f82e23d76b31416d023cdd5d858a`; R05 `[440544,534336)` `602f25a0f8750f93a8dfcc23c7f32a960c4e50bcaad6d19f0b4cbabf3f5fbbe9`; and R15 `[544857,573917)` `610bc2ec58c899cad9b14da7097ebacca457c0987f237edfd5d45737f2d84595`. The control placement defect therefore did not alter reviewer-authored bytes.
+
+**Control continuation.** The earlier R15 mechanical disposition and R24 assignment/control remain the governing records, including R15's `CHAIN-QUALIFIED` status, the R24 manifest `22749762089e2a68b9897a09031b19fbdff6aa1108e2fd8071b7743d0df602c6`, exact `dependency soundness` one-lens task, bounded authority/freshness chain, reviewer identity, and no-scratch/no-redirection blind-write law. R24 remains `ASSIGNED`; no reviewer or owner task was sent. R25 remains blocked on R24 filing, G4 premise-first disposition/revision, and a new submitted manifest. R06 and R16 remain blocked on their respective owner gates.
+
+Owner FSM remains `DRAFT`. This correction supplies the true EOF control anchor; it does not cure or hide the earlier placement variance.
+
+**Corrective EOF write law now in force.** `gauntlet/ROUND_LOG.md` is closed to G7 until root verifies the R24 bind and this placement correction, commits and pushes them, dispatches R24, and reports reviewer termination. G7 does not review, predict, or pre-empt findings. **No task has been sent; root verifies, commits, pushes, and dispatches R24.**
