@@ -104,7 +104,7 @@ Hash, status, counts, and disposition are slots. They are filled only from filed
 | R20 | Charter-set cross-consistency | Q2/Q3 traceability | Opus | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 8 | 2 | 0 | NO | ROUTED → G6. **G6 triage returned: A01–A08 all QUALIFY.** B01, B02 unpromoted. No v1.0 in-place edit. G6 `DRAFT`; successors `PROPOSED — awaiting human ratification`. |
 | R21 | Charter-set cross-consistency | duplication/drift | Sol (fast) | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 14 | 0 | 0 | NO | ROUTED → G6 (conditional); G6 triage pending. No v1.0 in-place edit. Freshness admissible (see disposition). |
 | R22 | Charter-set cross-consistency | claim-vocabulary legality | Opus | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 4 | 2 | 2 | NO | ROUTED → G6 (conditional). C02 admitted as a **nonconforming supplemental disposition**, not a graded finding — no owner action. See disposition. |
-| R23 | Traceability + cycle briefs | Q2/Q3 zero-orphan audit | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
+| R23 | Traceability + cycle briefs | Q2/Q3 zero-orphan audit | gpt-5.6-sol (ultra, fast) | — | `b77359ccc716a2186d3053034132b7f68b41988e2366e64efe4451e10d5089b3` | ASSIGNED | — | — | — | — | — |
 | R24 | Traceability + cycle briefs | dependency soundness | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R25 | Traceability + cycle briefs | oversimplification hunt | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R26 | Traceability + cycle briefs | clean-room contamination | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
@@ -2079,3 +2079,64 @@ TERMINATED.
 **Convergence disposition.** Mechanical addition to the nine previously filed allocation rows yields ten filed rounds at A=63/B=27/C=9. Under the precommitted A+B convention, R14 contributes 15 as five-pass B point 1/5. R13 and R14 used different lenses and different manifest identities; neither their 5→15 sequence nor R14 alone is a convergence curve.
 
 Owner FSM remains `DRAFT`. **Log released** for root verification and routing. **R15 remains unassigned and blocked until G1 independently triages R14, revises, returns to `SUBMIT-FOR-REVIEW`, and exposes a new four-file manifest hash.**
+
+## R23 assignment/control — `2026-07-14T21:51:04+02:00`
+
+**Binding.** At the measured local clock `2026-07-14T21:51:04+02:00`, G7 bound R23 only: artifact `Traceability + cycle briefs`, sole lens `Q2/Q3 zero-orphan audit`, assigned to `gpt-5.6-sol` at effort `ultra` with live `fast` footer and priority service. Root reports pushed baseline commit `353d72e0d52b831415af7035d593b85991560760`; local `HEAD` and the commit object reproduce that identity.
+
+**Exact seven-file artifact.**
+
+- `reports/TRACEABILITY_MATRIX.md` — 374 lines / 63,125 bytes / SHA-256 `f98ba02f1740726ebe6dfe47bd6b1b50add3e8d8c7aa563ac56e184deb44c6d3`.
+- `plans/cycle_briefs/C2.md` — 107 lines / 10,944 bytes / SHA-256 `fd0fbcf7cf3e9af630078022e8046b39d4ab041e158e6a234a25d3e3aa4bcd20`.
+- `plans/cycle_briefs/C3.md` — 107 lines / 10,688 bytes / SHA-256 `20c48dd5f0128dc0407084e1a97dbe0d62af3a41c4be1ab7d5e942b904be6434`.
+- `plans/cycle_briefs/C4.md` — 132 lines / 12,278 bytes / SHA-256 `a1441406f1780243da87e3fbb54ad8df808cfe82c02d5c9b6204ce6fe01f9510`.
+- `plans/cycle_briefs/C5.md` — 106 lines / 10,102 bytes / SHA-256 `b1da84efc76eacf218c27e65ceb590b38f2d886acef38604e7706775a295d308`.
+- `plans/cycle_briefs/C6.md` — 107 lines / 10,536 bytes / SHA-256 `e7cf81c8f0fdb53e9f9055181e3fea8c9c5b0bfcf6409b5255040c90c14befa7`.
+- `plans/cycle_briefs/C7.md` — 105 lines / 11,143 bytes / SHA-256 `e6053bb70ab992dd3d3f975beb50adb2217e6af992d1b1ce78337eda28619a5f`.
+
+The manifest method is SHA-256 over the bytewise (`LC_ALL=C`) sorted ordinary `sha256sum` lines, including the final newline. The independently reproduced sorted manifest is:
+
+```text
+20c48dd5f0128dc0407084e1a97dbe0d62af3a41c4be1ab7d5e942b904be6434  plans/cycle_briefs/C3.md
+a1441406f1780243da87e3fbb54ad8df808cfe82c02d5c9b6204ce6fe01f9510  plans/cycle_briefs/C4.md
+b1da84efc76eacf218c27e65ceb590b38f2d886acef38604e7706775a295d308  plans/cycle_briefs/C5.md
+e6053bb70ab992dd3d3f975beb50adb2217e6af992d1b1ce78337eda28619a5f  plans/cycle_briefs/C7.md
+e7cf81c8f0fdb53e9f9055181e3fea8c9c5b0bfcf6409b5255040c90c14befa7  plans/cycle_briefs/C6.md
+f98ba02f1740726ebe6dfe47bd6b1b50add3e8d8c7aa563ac56e184deb44c6d3  reports/TRACEABILITY_MATRIX.md
+fd0fbcf7cf3e9af630078022e8046b39d4ab041e158e6a234a25d3e3aa4bcd20  plans/cycle_briefs/C2.md
+```
+
+Bound manifest SHA-256: `b77359ccc716a2186d3053034132b7f68b41988e2366e64efe4451e10d5089b3`.
+
+**Admission gates.**
+
+1. `ledger/owners/G4_STATE.md` hashes to `b3ab1487715fd9cfb58a8515721532cb9ec79927377507138458ea6c9d4a8d9d` and declares phase `SUBMIT-FOR-REVIEW`; that checkpoint validates eligibility but is excluded from the reviewer packet.
+2. All seven component identities and the sorted-manifest identity were independently reproduced from disk.
+3. R23 is the first round on this exact seven-file artifact; no prior-round revision gate is engaged.
+4. Reviewer identity is attested by process arguments and live TUI: `gpt-5.6-sol`, effort `ultra`, footer `fast`, service tier `priority`.
+5. Exactly one lens is assigned: `Q2/Q3 zero-orphan audit`.
+6. R23 is not a repeated-prompt block.
+7. The reserved process is idle and fresh for this artifact; no reviewer task or artifact/review context has been sent.
+
+**Reviewer control plane.** Session `monkeybee-pdf-mass-context-repo--r23`, window 1, pane 1, pane ID `%101`, pane shell PID `3396196`, `pane_dead=0`, current command `codex`; child PID `3396433`. The child command identifies `gpt-5.6-sol` with `model_reasoning_effort=ultra`. The live idle TUI shows `gpt-5.6-sol ultra fast` and `Service tier set to priority`.
+
+**Exact bounded authority chain for later root delivery, in read order.**
+
+1. `AGENTS.md` — full.
+2. `OVERNIGHT_GOAL.md` — §1, §3/G4, and §4.
+3. `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` — full.
+4. `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` — §§0–2 and §§4–7.
+5. `CYCLE_0_WORK_ORDER.md` — §0 only.
+6. `MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md` — §§0.2, 3, 24.12–24.16, 33.1–33.18, and 35.
+7. All seven bound artifacts above, in full, at the recorded component and manifest identities.
+8. Only this R23 assignment/control entry and its EOF anchor, supplied inline by root.
+
+**Exact one-lens task.** Apply only the `Q2/Q3 zero-orphan audit` lens. Using only the permitted local authority chain, test whether every Q2/Q3 obligation, gate, evidence requirement, dependency, artifact, and owner handoff carried by the traceability matrix and C2–C7 briefs has an explicit closed traceability path with no orphan in either direction. File only locally evidenced findings under this lens; do not rewrite the artifacts or apply an adjacent lens. No measurement, comparison, benchmark, web/search, or external action is authorized.
+
+**Freshness boundary.** The reviewer must not receive or open the G4 checkpoint body, any prior finding body or reviewer packet, owner disposition, convergence result, decision file, G6 successor, other Round Log byte, external source, competitor material, or prohibited processor source/documentation. Root supplies this control entry and EOF anchor inline; any accidental exposure must be disclosed and the affected evidence excluded.
+
+**Tightened write and termination law.** The reviewer may create no scratch or temporary file anywhere and may use no shell redirection or `tee`. Its only filesystem write is exactly one blind structured `apply_patch`-equivalent append to `gauntlet/ROUND_LOG.md`, using the root-supplied EOF anchor without reading other log bytes. It may not edit any artifact, checkpoint, report, or other path. After the append is flushed, the final standalone token must be exactly `TERMINATED` with no punctuation, styling, prefix, or suffix; then the reviewer and idle shell must exit.
+
+**Future route and blocks.** Any eventual R23 findings route through root to G4 only after filing and G7 mechanical integration; no routing occurs at assignment. R24 remains unassigned and blocked until G4 performs premise-first R23 triage, revises, returns to `SUBMIT-FOR-REVIEW`, and exposes a new seven-file manifest. R05 remains unassigned and blocked pending G3 resubmission.
+
+**Write law now in force.** `gauntlet/ROUND_LOG.md` is closed to G7 until root verifies this bind, commits and pushes it, sends the reviewer task, and reports R23 reviewer termination. G7 does not review, predict, or pre-empt findings. The R01–R32 allocation and all prior reviewer-authored bytes are preserved except the authorized R23 allocation-row slots above. **No task has been sent; root verifies, commits, pushes, and sends.**

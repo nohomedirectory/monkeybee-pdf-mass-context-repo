@@ -705,3 +705,14 @@ I did not revalidate, re-grade, confirm, refute, promote, demote, or rewrite any
 - Allocation/report recount is ten filed rounds at A=63/B=27/C=9 and 5 Sol/5 Opus. R14 contributes A+B=15 as five-pass B point 1/5; it establishes no curve or convergence.
 - Post-integration Round Log is 2,081 lines / 391,879 bytes / SHA-256 `26b17afbdb47751d22f082d5f759b489de90c3b34c5e72966c3e6906e50680ab`; Convergence Report is 265 lines / 41,894 bytes / SHA-256 `637338094005402e2cf3e413b480fd5da3f6a32563cc5ed8eb27b9de289f90fb`.
 - Owner FSM remains `DRAFT`. **Log released** for root verification and routing. **R15 remains unassigned and blocked until G1 independently triages R14, revises, returns to `SUBMIT-FOR-REVIEW`, and exposes a new manifest hash.**
+
+### R23 binding checkpoint — `DRAFT`
+
+- Clock read immediately before this checkpoint: `2026-07-14T21:51:33+02:00`. Checkpoint preimage SHA-256 was `75669b536ae8f43fa5de7df45fc9ed9a42e4d186a974a18a7cabaa47edc0c20f`.
+- Root-reported pushed baseline and local `HEAD` are `353d72e0d52b831415af7035d593b85991560760`. The exact seven-file artifact independently reproduces manifest SHA-256 `b77359ccc716a2186d3053034132b7f68b41988e2366e64efe4451e10d5089b3`.
+- `ledger/owners/G4_STATE.md` hashes to `b3ab1487715fd9cfb58a8515721532cb9ec79927377507138458ea6c9d4a8d9d` and declares `SUBMIT-FOR-REVIEW`; its body is excluded from reviewer delivery. R23 alone is `ASSIGNED` under the sole `Q2/Q3 zero-orphan audit` lens.
+- Idle reviewer identity remains session `monkeybee-pdf-mass-context-repo--r23`, pane `%101`, shell PID `3396196`, child PID `3396433`; `gpt-5.6-sol` / `ultra` / priority / live-footer `fast`. No task or artifact/review context was sent.
+- The exact bounded authority chain, freshness exclusions, one-lens task, no-measurement/no-external-action boundary, no-scratch/no-temp/no-redirection/no-`tee` law, sole blind structured-append authority, and exact standalone `TERMINATED` token are sealed in the Round Log.
+- Scoped diff shows only the R23 allocation-row replacement and assignment append. All 32 rows remain; the known R14 reviewer suffix remains byte-identical at shifted range `[331089,387193)`, SHA-256 `4567275fbaba4e3e04d433ec4757897ed6ae4aee183ada2c552a28785794a122`.
+- Post-bind Round Log is 2,142 lines / 398,500 bytes / SHA-256 `cda92c3d944a0b3f1fd36c52e47519a81bf264be2e913e027c228b64b7ea4570`. Convergence Report remains 265 lines / 41,894 bytes / SHA-256 `637338094005402e2cf3e413b480fd5da3f6a32563cc5ed8eb27b9de289f90fb`.
+- Owner FSM remains `DRAFT`. **Round Log closed** until root verifies, commits, pushes, sends R23, and reports reviewer termination. **R24 remains unassigned and blocked until G4 premise-tests R23, revises, returns to `SUBMIT-FOR-REVIEW`, and exposes a new seven-file manifest; R05 remains blocked pending G3 resubmission.**
