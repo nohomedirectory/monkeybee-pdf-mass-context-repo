@@ -38,12 +38,12 @@ owner-fsm: SUBMIT-FOR-REVIEW
 
 ## Current checkpoint
 
-- Timestamp: `2026-07-14T18:38:08+02:00`
+- Timestamp: `2026-07-14T19:41:38+02:00`
 - Phase: `SUBMIT-FOR-REVIEW`
-- Active goal: stop with the independently triaged and repaired R01 artifact available for root to route to a fresh R02 reviewer.
+- Active goal: stop with the independently triaged, loss-preserving R02 revision available for root to bind and, only under a separate root assignment, route to a fresh reviewer.
 - Exclusive writable paths: `plans/CYCLE_1_DELTA_PLAN.md` and `ledger/owners/G3_STATE.md`.
-- Partial output: the revised `plans/CYCLE_1_DELTA_PLAN.md` is 3,382 lines at SHA-256 `a9458bed0b16227d4e4cea4fd30373d3dfdd0c3ef7bd4d4eeb672359b48bab77`; this is the exact R02 candidate root.
-- Branch observation: work is on `main`. Final status also exposes concurrent G6 modifications to `MONKEYBEE_CAMPAIGN_CHARTER_v1.1.md`, `CYCLE_0_WORK_ORDER_v1.1.md`, and `ledger/owners/G6_STATE.md`; G3 treats them as other-owner work and did not read them as authority or modify, stage, revert, or reconcile them.
+- Submitted output: `plans/CYCLE_1_DELTA_PLAN.md` is 3,447 lines and 134 contracts at SHA-256 `fc0a2cdc97590310982d13d1fb1cb4c5db10b30b58a7de2267ffe8ee15fd2234`. Against the reviewed 3,382-line/131-contract root, the submitted plan diff is exactly 114 inserted lines and 49 deleted lines, net +65 lines and +3 contracts. The green REVISE root showed 115/50 because its FSM marker also differed from the reviewed `SUBMIT-FOR-REVIEW` marker.
+- Branch observation: work is on `main`. Current status also exposes a concurrent modification to `ledger/owners/G7_STATE.md`; G3 treats it as other-owner work and did not open it for authority, modify it, stage it, revert it, or reconcile it.
 - External fetches: none.
 - Sub-agent activity: none; G3 remains the sole owner and will not route its own review.
 
@@ -110,7 +110,7 @@ Cross-owner artifacts read before SELF-CHECK:
 2. Every R0 SpecCard remains an empty `PENDING-LICENSED-SOURCE` slot. Normative implementation stays unavailable until licensed extraction and two-person meaning review.
 3. `ALIEN_ARTIFACT.md` and `PROJECT_OVERVIEW.md` remain `SOURCE-UNAVAILABLE`; their dependent audit rows cannot be reconstructed from related files.
 4. The human-established commitment substrate and independently stewarded held-out seal are absent. The ordinary R0 wedge can degrade gracefully, but campaign closure cannot pass without them.
-5. R01 is independently triaged and repaired, but G3 self-check does not replace fresh review. R02 remains unassigned by G3 and must be routed by root.
+5. R02 premise triage and bounded repairs are green under G3 self-check, but self-check does not replace a fresh reviewer. R03 remains unassigned and G3 will not route it.
 
 ## R01 routed packet bound at REVISE entry
 
@@ -191,9 +191,68 @@ All ten qualifying premises were repaired within the existing plan file. Filed G
 | File/operation scope | G3 edited only its two exclusive paths on `main`; the concurrent G6 state change was preserved. No Beads, pseudo-Bead inventory, code/config scaffold, external action, reviewer routing, commit, or push occurred. |
 | Submitted plan identity | SHA-256 `a9458bed0b16227d4e4cea4fd30373d3dfdd0c3ef7bd4d4eeb672359b48bab77` over the 3,382-line `SUBMIT-FOR-REVIEW` plan. |
 
+## R02 routed packet bound at REVISE entry
+
+- Filed source read: `gauntlet/ROUND_LOG.md`, from the `R02 — plans/CYCLE_1_DELTA_PLAN.md — PDF-normative-fact` heading through its standalone `TERMINATED` marker, followed by the G7 routing disposition, the appended G7 correction, and the replacement-owner quarantine/revalidation note. Those entries are operational routing evidence, not v1.0 campaign authority.
+- Reviewed artifact SHA-256: `a9458bed0b16227d4e4cea4fd30373d3dfdd0c3ef7bd4d4eeb672359b48bab77`; independently recomputed by G3 before transition and identical to the routed value. Reviewed size: 3,382 lines.
+- Packet state: `FILED · VALIDATED · TERMINATED`; declared lens `PDF-normative-fact`; declared counts A=2, B=2, C=1. The correction withdraws the original G7 process-contract diagnosis while preserving the reviewer findings and their routing. R03 is not assigned.
+- Triage law: every row below begins `PENDING-INDEPENDENT-TRIAGE`. Grade A is still premise-tested against local v1.0 authority; Grade B remains Grade B unless G3 independently proves otherwise; Grade C is judgment and may be declined. A qualifying repair must preserve the named guard and every preexisting feature. Proposed G6 v1.1 successors are excluded as authority.
+
+| ID | Filed grade | Filed finding | Bound loss guard | Entry disposition |
+|---|---:|---|---|---|
+| R02-A01 | A | Rev 7 §14.5's common header/EOF-placement recovery family is absent even though plan §9.5 says its family surface is exact. | Preserve `SYN.002` exact candidate, offset, leading-byte, and strict/recovered evidence; keep recovery behind `REC.001`/`REC.002` with registered assumptions, bound, and kill criterion; never rewrite `SourceRootId`, the base graph, or strict `OpenReport`; never invent or normalize header bytes. | `PENDING-INDEPENDENT-TRIAGE` |
+| R02-A02 | A | Plan §3.5 declares the `MB-SC-R0-038`, `MB-SC-R0-039`, and `MB-SC-R0-040` inventory surfaces, but no atomic contract in the closed C1 namespace owns them. | Do not remove those slots or silently discharge R1-7/R2-N6; generic `DOC.008` unknown/opaque carriers are not a substitute; do not populate semantic bodies; keep every affected slot exactly `PENDING-LICENSED-SOURCE`. | `PENDING-INDEPENDENT-TRIAGE` |
+| R02-B01 | B | `DOC.004`'s typed structural-accessor inventory does not name Rev 7 §13.5 destinations, while `DOC.006` might only implicitly subsume them. | Preserve typed claim/diagnostic returns and the rule that locating a carrier proves no behavior, rendering, or trust; do not widen `DOC.006` into semantic destination resolution. | `PENDING-INDEPENDENT-TRIAGE`; no grade promotion |
+| R02-B02 | B | Plan §2 has no explicit governing-domain row for `DOC.008`'s inert active-content/security-carrier inventory. | Bind only structural inventory: no sanitization, active execution, reachability verdict, semantic threat claim, or weakening of `DOC.008`'s recognized-carrier/whole-document absence boundary. | `PENDING-INDEPENDENT-TRIAGE`; no grade promotion |
+| R02-C01 | C | `REC.004` does not expressly name Rev 7 §12.8 following-object structure as malformed-length boundary evidence. | Any clarification must remain within `REC.004` exclusion intervals so payload lookalikes cannot become objects, and must not reopen the excluded external-observation path. | `PENDING-INDEPENDENT-TRIAGE`; judgment only |
+
+## R02 independent triage against the v1.0 authority chain
+
+G3 tested the reviewed bytes against `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` §§3, 5, and 6; `CYCLE_0_WORK_ORDER.md` §§2 and 7; `AUDIT_FINDINGS_LEDGER.md` R1-7 and R2-N6; and the locally cited Rev 7 §§12.3, 12.8, 13.5, 14.5, and 16.8–16.10. Proposed G6 v1.1 successors were not used. The plan remains 3,382 lines in `REVISE`; after the FSM-only transition its partial SHA-256 is `c376071573d086e741f2ce9ddc9ca11bdc880df962388df6f80b3ce972597cbb`.
+
+| ID | Independent disposition | Premise test against authority and reviewed bytes | Bounded repair decision |
+|---|---|---|---|
+| R02-A01 | `QUALIFIES` | Plan §2 makes Rev 7 §14 controlling and §9.5 claims an exact §14.5 family set, but omits that section's final common header/EOF-placement family. Rev 7 §12.3 and existing `SYN.002` establish exact offset/leading-byte evidence and prohibit silent conformance normalization. `REC.003` names `SYN.002` as a consumer yet neither depends on it nor owns the family. | Extend `REC.003` atomically to the header/EOF-placement family, consume `SYN.002`, preserve exact evidence and strict truth, and name the family in §9.5, fuzz coverage, and product-gate row 2. |
+| R02-A02 | `QUALIFIES` | Work Order §2 expressly orders the R1-7/R2-N6 inventory additions and the ledger leaves them `OPEN-C0`. Plan §3.5 declares `MB-SC-R0-038`/`039`/`040` in the C1 crosswalk while the closed catalog and all 131 specifications contain no atomic owner, report field, or gate row. `DOC.008`'s generic unknown/opaque carrier outcome cannot discharge a named inventory. | Mint three separate structural inventory contracts `DOC.012`–`DOC.014`, link each directly to its still-pending `MB-SC` slot, and connect strict orchestration, reports, diagnostics, fuzz coverage, card-drift coverage, and the product gate. No card body or semantic interpretation is added. |
+| R02-B01 | `QUALIFIES-AS-EXPLICITNESS-DEFECT`; filed Grade B retained | Rev 7 §13.5 lists destinations separately from names/number trees and plan §2 binds that section. `DOC.004` omits the carrier; `DOC.006` guarantees only structural tree traversal and never says it owns destination carriers. The text proves a missing explicit interface, but does not prove that a separate semantic capability or class is required. | Add destination carriers to `DOC.004`'s typed structural output and coverage slot, state that tree traversal delegates only to `DOC.006`, and expressly forbid semantic destination resolution, behavior, rendering, and trust inference. |
+| R02-B02 | `QUALIFIES-AS-EXPLICITNESS-DEFECT`; filed Grade B retained | Plan §0 says authority is inherited and §2 is its binding map. Work Order §2 R1-7 explicitly points the encrypted-wrapper inventory toward Rev 7 §16.8/§23.12, while `DOC.008` has no matching authority row. This proves a mapping omission, not permission to import the later reachability, execution, sanitization, or XML-safety consequence. | Add a narrowly worded §2 row for inert security-carrier inventory using Rev 7 §§13.5 and 16.8–16.10 only as inventory/boundary sources; expressly exclude effect/reachability graphs or verdicts, execution, sanitization, XML processing/safety verdicts, and semantic threat claims. |
+| R02-C01 | `DOES-NOT-ESTABLISH-DEFECT · DECLINED` | Rev 7 §12.8 says malformed-length recovery *may* consider following-object structure; it does not require every optional signal. `REC.004` already owns bad object boundaries, boundary/object candidates, bounded probes, and the payload-exclusion law. The reviewer also records that no requirement violation was established. | No plan change. This avoids falsely upgrading one optional evidence source into mandatory semantics. Existing exclusion intervals remain binding, and external compatibility observations stay excluded. |
+
+Every accepted repair is limited to the independently established premise. Neither Grade-B finding is promoted, C01 is not treated as a defect, and all five loss guards remain binding during editing and verification.
+
+## R02 repair and verification ledger
+
+The reviewed plan moved from 3,382 to 3,447 lines: final `git diff --numstat` records exactly 114 insertions and 49 deletions in the submitted plan, net +65; the immediately preceding REVISE root was 115/50 solely because of its different FSM marker. The closed namespace moved from 131 to 134 contracts through three atomic owners; all other contract IDs and all pre-R02 capabilities remain. No `MB-SC-R0-038`/`039`/`040` link, pending state, recovery alternative, strict/recovery boundary, or earlier R01 staging feature was removed.
+
+| ID | Final disposition | Repair or conscious non-repair | Preserved loss guard and targeted check | Count delta |
+|---|---|---|---|---:|
+| R02-A01 | `QUALIFIES · REPAIRED` | `REC.003` now owns common header/EOF-placement deviations, consumes `SYN.002`, retains exact offsets/leading bytes, and is named in §9.5, FUZ.008, and product-gate row 2. | REC.001/REC.002 remain strict-first; assumptions, bound, falsifier, and kill criterion remain registered; no invented/normalized bytes; no `SourceRootId`, strict graph, or strict-report rewrite. The A01 regression passes. | +0 contracts |
+| R02-A02 | `QUALIFIES · REPAIRED` | Added atomic `DOC.012`, `DOC.013`, and `DOC.014` ownership for the wrapper/payload, UTF-8-string, and `NeedsRendering` structural inventories; linked strict orchestration, RPT.001/RPT.003/RPT.007, REC.010, IMM.009, FUZ.008, and product-gate row 3. | Each owner directly links its unchanged `MB-SC-R0-038`/`039`/`040` slot at `PENDING-LICENSED-SOURCE`; pending authority blocks classification; `DOC.008` opacity is not substituted; no card body, rendering, decoded-text meaning, reachability, execution, sanitization, or safety verdict was added. The A02 regression passes. | +3 contracts; 131 → 134 |
+| R02-B01 | `QUALIFIES-AS-EXPLICITNESS-DEFECT · REPAIRED`; filed Grade B retained | `DOC.004` now exposes destination carriers as structural claims and delegates only tree traversal to `DOC.006`; both no-claim boundaries are explicit. | Typed claims/diagnostics remain evidence-bearing; neither contract performs semantic destination resolution, behavior, rendering, reachability, trust, or external-resource inference. The B01 regression passes without grade promotion. | +0 contracts |
+| R02-B02 | `QUALIFIES-AS-EXPLICITNESS-DEFECT · REPAIRED`; filed Grade B retained | Added one §2 authority-map row binding inert security-carrier inventory to Rev 7 §§13.5 and 16.8–16.10 only as structural inventory/boundary sources. | The row expressly excludes effect/reachability graphs and verdicts, active execution, sanitization, XML processing/safety verdicts, and semantic threat claims; `DOC.008`'s scanned-recognized-carrier no-claim remains. The B02 regression passes without grade promotion. | +0 contracts; +1 authority row |
+| R02-C01 | `DOES-NOT-ESTABLISH-DEFECT · DECLINED` | No plan content change: Rev 7 §12.8 makes following-object structure optional, while `REC.004` already owns bounded boundary/object candidates. | Existing payload exclusion intervals remain; external observations remain excluded unless a separately committed protocol later admits them. The C01 regression confirms the conscious non-repair. | +0 lines; +0 contracts |
+
+## R02 revised SELF-CHECK evidence
+
+| Check | Reproducible result |
+|---|---|
+| Size and exact parity | 3,447 plan lines; 134 catalog entries, 134 unique catalog IDs, 134 specification blocks, and zero catalog-only, spec-only, or duplicate IDs. |
+| Mandatory grammar/card parity | Every 134-block specification has exactly one of all 17 mandatory fields. All 134 `Card slots` fields contain `PENDING-LICENSED-SOURCE`; the three new direct `MB-SC` links retain that exact state and no semantic body is present. |
+| Reference closure | 270 full `C1.CC.*@1` references and 1,486 literal contract-token references cover all 134 IDs with no unresolved target. |
+| UTF-8-aware dependency graph | Literal U+2013 range expansion over declared `depends on` and `additionally consumes` clauses produces 1,349 unique edges; topological sort visits all 134 nodes with zero unknown references, self-edges, or cycle nodes. Fuzz `targets` are separately checked coverage links, not prerequisite edges. |
+| Goal scope | The 42-item C1 matrix passes 42/42, including context-before-source, byte/syntax/COS/revision/object-stream/filter surfaces, strict-first recovery plus header/EOF placement, credentialed security, all three new R0 inventory owners, identity/evidence/checker/immune system, CLI, fuzz/panic, card firewall, close gate, and explicit exclusions. |
+| R01 regression suite | R01-A01 through A08 and R01-B01/B02 pass 10/10; source admission, bootstrap, recovery, revision, strict-report, manifest/audit, ledger, assurance, card-authority, and checker-lifecycle staging remain present. |
+| R02 regression suite | R02-A01/A02/B01/B02 and the conscious C01 non-repair pass 5/5 with every filed loss guard represented. |
+| Clean-room/pending-source guard | Neither G3 file names a prohibited processor; every contract card line remains pending; no card semantic body, restricted-source contact, external fetch, measurement, comparison result, or provider selection was introduced. |
+| Claim/provider/identity guard | The plan contains only the two scoped formal `Complete` variants and the required formal `best_outcomes` field occurrences; no other forbidden supremacy token occurs. Runtime and crypto crate providers remain symbolic and implementation-unavailable. `DecodedContainerId` remains the sole domain-canon identity and both `DecodedStreamId` occurrences remain higher-layer alias-drift labels only. |
+| Stop-line guard | No rendering, semantic destination resolution, text extraction/meaning, reachability verdict, active execution, sanitization, writer, public-key handler, signature trust, or repair writeback entered C1. Recovery cannot rewrite strict truth. |
+| Hash/commitment ordering | D1/D2 remain proposed and awaiting human ratification; the plan still requires ratification before the first external or tamper-evident commitment. Green REVISE SHA-256 was `be9ab57ccca504fbc5537cc8313faed9d8def7ce9d5480ed734cc433345c9c4b`; submitted SHA-256 is `fc0a2cdc97590310982d13d1fb1cb4c5db10b30b58a7de2267ffe8ee15fd2234`. |
+| Formatting | Four code fences are balanced; UTF-8 round-trip, final newline, no-tab, no-trailing-whitespace, and `git diff --check` pass. |
+| Exclusive path/operation scope | G3 used `apply_patch` only on its two exclusive paths. The concurrent G7 state modification is preserved. No code/config, Beads, pseudo-Beads, external action, reviewer routing, commit, push, branch, worktree, stash, deletion, or other-owner edit occurred. |
+
 ## Next transition condition
 
-Stop. Root may bind the exact submitted hash and route a fresh R02 reviewer. G3 does not route review, enter another phase, implement, convert to Beads, commit, or push without a new root instruction.
+Stop. R03 is not assigned. Root may bind the exact submitted hash and separately assign a fresh reviewer, but G3 does not route review, enter another phase, implement, convert to Beads, commit, or push.
 
 ## Transition history
 
@@ -205,3 +264,5 @@ Stop. Root may bind the exact submitted hash and route a fresh R02 reviewer. G3 
 | `2026-07-14T17:37:01+02:00` | `SELF-CHECK` | `SUBMIT-FOR-REVIEW` | Final 3,091-line plan persisted after 118/118 catalog/spec/card parity, exact 17-field coverage, closed references, UTF-8-aware acyclic dependency check, 42/42 scope checks, policy/claim/provider guards, and formatting/file-scope checks passed. |
 | `2026-07-14T18:11:52+02:00` | `SUBMIT-FOR-REVIEW` | `REVISE` | R01 reviewer entry and G7 disposition read in full; reviewed hash `e019fe8c…4daf` independently reproduced; all eight Grade-A and two Grade-B findings plus every loss guard persisted for premise-first G3 triage before any plan change. |
 | `2026-07-14T18:38:08+02:00` | `REVISE` | `SUBMIT-FOR-REVIEW` | All ten premises independently qualified against v1.0 and repaired without loss-guard removal; 131/131 parity, 17-field/card checks, reference closure, 131-node/1,316-edge acyclic sort, 42/42 scope, 10/10 R01 regressions, policy/format guards, and plan SHA-256 `a9458bed…b77` were persisted. |
+| `2026-07-14T19:29:40+02:00` | `SUBMIT-FOR-REVIEW` | `REVISE` | R02 reviewer entry, G7 routing disposition, appended correction, and revalidation note read; reviewed SHA-256 `a9458bed…b77` independently reproduced at 3,382 lines; all two Grade-A, two unpromoted Grade-B, and one Grade-C findings plus every filed loss guard persisted before any repair content changed. |
+| `2026-07-14T19:41:38+02:00` | `REVISE` | `SUBMIT-FOR-REVIEW` | A01/A02 and the two unpromoted Grade-B explicitness defects repaired; C01 consciously declined; all loss guards retained. Final checks: 3,447 lines; 134/134 catalog/spec/card parity; exact 17 fields; 270 full and 1,486 literal contract-token references closed; 134-node/1,349-edge UTF-8-aware acyclic dependency graph; 42/42 scope; 10/10 R01 and 5/5 R02 regressions; clean-room/claim/provider/identity/format/hash/path guards green; submitted SHA-256 `fc0a2cdc…fd2234`. |
