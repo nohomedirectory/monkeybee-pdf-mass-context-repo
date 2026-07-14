@@ -5860,16 +5860,18 @@ The standalone checker accepts raw hostile package bytes and owns its own packag
 
 ## Appendix B — Representative report schemas
 
-`generated-echo: constitution/MONKEYBEE_CONSTITUTION_v8.md §10.6; generation-mode: schema-derived`
+`generated-echo: constitution/MONKEYBEE_CONSTITUTION_v8.md §§10.6, 10.8, 10.10; generation-mode: schema-derived`
 
-These examples are generated views of the Constitution's report-field obligations. They are non-normative and cannot add, omit, or weaken a required field. The schema-example validator rejects an example when any §10.6-mandated identity or field for that family is absent.
+These examples are generated views of the Constitution's report-family and common identity-envelope obligations. They are non-normative and cannot add, omit, or weaken a required field. The schema-example validator rejects an example when any §10.6 family field or §10.8 common field is absent, when a run observation does not bind its semantic report one-way, or when run telemetry enters semantic identity. The `semantic-report:*` and `run-observation:*` values below are nonproduction placeholders; their protocol fields remain `PENDING-HUMAN-RATIFICATION-D1-D2` and do not mint identities before §9.2.1 ratification.
+
+Every B.1-B.5 example emits a `SemanticReportProtocolId` marker, `SemanticReportId` placeholder, capability-identity set, and separately versioned run-observation envelope containing its `RunObservationProtocolId` marker, `RunObservationId` placeholder, exact semantic-report backlink, observation coverage/telemetry, and telemetry-exclusion fact.
 
 | Example | Schema source | Identity fields the generator must emit |
 |---|---|---|
 | B.1 | Constitution §10.6 `OpenReport` | `SourceRootId`; every `RevisionGraphId`; selected `DocumentViewId` or explicit alternatives |
 | B.2 | Constitution §10.6 `RenderReport` | exact `DocumentViewId`; source-backed `RevisionGraphId`; render `DerivationId`; pixel artifact identity |
 | B.3 | Constitution §10.6 `TransformReceipt` | role-labeled root + `DocumentViewId` + `ExpectedStateId` for every document input; artifact/origin for every asset; candidate/output roots |
-| B.4 | Constitution §10.6 `DivergenceReport` | `SourceRootId`; `RevisionGraphId`; `DocumentViewId`; relevant `DerivationId`; external input/output artifact identities |
+| B.4 | Constitution §10.6 `DivergenceReport` | `SourceRootId`; `RevisionGraphId`; `DocumentViewId`; relevant `DerivationId`; external input identity; per-processor artifact, version, configuration, environment, and bound independent output identity; exact output-identity projection |
 | B.5 | Appendix A.13 checker boundary | package root; checker capability identity; availability and coverage accounting |
 
 ### B.1 Open report
@@ -5877,6 +5879,18 @@ These examples are generated views of the Constitution's report-field obligation
 ```json
 {
   "schema": "org.monkeybee.open-report.v8-example",
+  "semantic_report_protocol_id": "PENDING-HUMAN-RATIFICATION-D1-D2",
+  "semantic_report_id": "semantic-report:open-example-nonproduction",
+  "capability_identities": ["capability:open-example"],
+  "run_observation": {
+    "schema": "org.monkeybee.run-observation.v8-example",
+    "run_observation_protocol_id": "PENDING-HUMAN-RATIFICATION-D1-D2",
+    "run_observation_id": "run-observation:open-example-nonproduction",
+    "semantic_report_id": "semantic-report:open-example-nonproduction",
+    "observation_coverage": "no-operational-measurements-recorded",
+    "telemetry": {},
+    "excluded_from_semantic_identity": true
+  },
   "source": {
     "source_root_id": "source-root:example",
     "length": 1839021,
@@ -5938,6 +5952,9 @@ These examples are generated views of the Constitution's report-field obligation
 ```json
 {
   "schema": "org.monkeybee.render-report.v8-example",
+  "semantic_report_protocol_id": "PENDING-HUMAN-RATIFICATION-D1-D2",
+  "semantic_report_id": "semantic-report:render-example-nonproduction",
+  "capability_identities": ["capability:render-example"],
   "document_view_id": "document-view:example",
   "revision_graph_id": "revision-graph:strict-example",
   "derivation_id": "derivation:render-example",
@@ -5955,12 +5972,15 @@ These examples are generated views of the Constitution's report-field obligation
     "digest": "example-digest"
   },
   "cache_identity": "derivation-cache:example",
-  "semantic_report_identity": "semantic-report:example",
-  "run_observation_id": "run-observation:example",
   "determinism": "D2 Same-target pixels",
   "substitutions": [],
   "skipped_or_refused_operators": [],
   "run_observation": {
+    "schema": "org.monkeybee.run-observation.v8-example",
+    "run_observation_protocol_id": "PENDING-HUMAN-RATIFICATION-D1-D2",
+    "run_observation_id": "run-observation:render-example-nonproduction",
+    "semantic_report_id": "semantic-report:render-example-nonproduction",
+    "observation_coverage": "wall-time-and-peak-memory-only",
     "wall_ms": 22.1,
     "peak_bytes": 18432122,
     "excluded_from_semantic_identity": true
@@ -5973,6 +5993,18 @@ These examples are generated views of the Constitution's report-field obligation
 ```json
 {
   "schema": "org.monkeybee.transform-receipt.v8-example",
+  "semantic_report_protocol_id": "PENDING-HUMAN-RATIFICATION-D1-D2",
+  "semantic_report_id": "semantic-report:transform-example-nonproduction",
+  "capability_identities": ["capability:transform-example"],
+  "run_observation": {
+    "schema": "org.monkeybee.run-observation.v8-example",
+    "run_observation_protocol_id": "PENDING-HUMAN-RATIFICATION-D1-D2",
+    "run_observation_id": "run-observation:transform-example-nonproduction",
+    "semantic_report_id": "semantic-report:transform-example-nonproduction",
+    "observation_coverage": "no-operational-measurements-recorded",
+    "telemetry": {},
+    "excluded_from_semantic_identity": true
+  },
   "transform_id": "transform-operation:example",
   "outcome": "partial",
   "policy": "secure-redaction:example",
@@ -6029,6 +6061,18 @@ These examples are generated views of the Constitution's report-field obligation
 ```json
 {
   "schema": "org.monkeybee.divergence-report.v8-example",
+  "semantic_report_protocol_id": "PENDING-HUMAN-RATIFICATION-D1-D2",
+  "semantic_report_id": "semantic-report:divergence-example-nonproduction",
+  "capability_identities": ["capability:divergence-observation-example"],
+  "run_observation": {
+    "schema": "org.monkeybee.run-observation.v8-example",
+    "run_observation_protocol_id": "PENDING-HUMAN-RATIFICATION-D1-D2",
+    "run_observation_id": "run-observation:divergence-example-nonproduction",
+    "semantic_report_id": "semantic-report:divergence-example-nonproduction",
+    "observation_coverage": "no-operational-measurements-recorded",
+    "telemetry": {},
+    "excluded_from_semantic_identity": true
+  },
   "source_root_id": "source-root:example",
   "revision_graph_id": "revision-graph:strict-example",
   "document_view_id": "document-view:example",
@@ -6038,14 +6082,18 @@ These examples are generated views of the Constitution's report-field obligation
     {
       "id": "monkeybee:example",
       "executable_or_service_artifact_id": "artifact:monkeybee-example",
+      "version": "version:monkeybee-example",
       "configuration": "strict-display:example",
-      "environment": "environment:example"
+      "environment": "environment:example",
+      "output_artifact_id": "artifact:monkeybee-pixels-example"
     },
     {
       "id": "external-subject-a:example",
       "executable_or_service_artifact_id": "artifact:external-a-example",
+      "version": "version:external-a-example",
       "configuration": "declared-default:example",
-      "environment": "environment:external-a-example"
+      "environment": "environment:external-a-example",
+      "output_artifact_id": "artifact:external-a-pixels-example"
     }
   ],
   "external_output_artifact_ids": [
@@ -6071,6 +6119,18 @@ These examples are generated views of the Constitution's report-field obligation
 ```json
 {
   "schema": "org.monkeybee.evidence-check-report.v8-example",
+  "semantic_report_protocol_id": "PENDING-HUMAN-RATIFICATION-D1-D2",
+  "semantic_report_id": "semantic-report:evidence-check-example-nonproduction",
+  "capability_identities": ["checker-capability:example"],
+  "run_observation": {
+    "schema": "org.monkeybee.run-observation.v8-example",
+    "run_observation_protocol_id": "PENDING-HUMAN-RATIFICATION-D1-D2",
+    "run_observation_id": "run-observation:evidence-check-example-nonproduction",
+    "semantic_report_id": "semantic-report:evidence-check-example-nonproduction",
+    "observation_coverage": "no-operational-measurements-recorded",
+    "telemetry": {},
+    "excluded_from_semantic_identity": true
+  },
   "outcome": "partial",
   "package_root": "evidence-package-root:example",
   "checker": {

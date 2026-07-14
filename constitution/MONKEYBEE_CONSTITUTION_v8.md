@@ -474,6 +474,8 @@ pub enum SourceIdentity {
 }
 ```
 
+For `StableSnapshot`, `AuthorityId` identifies a versioned authority contract, not a service label. Subject to the §9.2.1 ratification gate, that contract fixes the authority scope and contract version, authentication method, canonical version-token input grammar, named digest algorithm and class domain separation, digest width, and the rule that one `(AuthorityId, version_digest)` tuple is never reused for different byte states within that scope. The `version_digest` is the contract-authenticated commitment to the authority's canonical snapshot version input; a mutable name, timestamp, or unverified version string is insufficient. If the authority cannot establish those guarantees, the source is `Ephemeral`. Observation of different bytes under one tuple invokes §9.2 collision quarantine in addition to revocation; no production `AuthorityId` or `version_digest` is minted while the governing identity package remains unratified.
+
 Persistent cross-run caches require `VerifiedContent` or a `StableSnapshot` whose authority contract guarantees immutability. `Ephemeral` identities may use only operation-local caches and may support only `ObservedBytes`, never durable whole-source `ByteExact` evidence. A range inside an authority-stable partial snapshot may be byte-exact for that range, but durable **whole-source** exactness additionally requires a committed final length, whole-source coverage, and successful authentication of every byte; `len: None` or a partial range set cannot be promoted by prose. Source change revokes the snapshot and every reusable claim about its present contents while preserving operation-local evidence of bytes already observed.
 
 A `DraftRoot` hashes its `DraftIntentCommitment`. A `TransformRoot` is minted only after candidate finalization and hashes exact role-labeled root/`DocumentViewId` or asset/origin input bindings, policy/schema semantics, the ordered frozen operation log, and the `RealityStateCommitment`. The associated proposal/admission/receipt binds `ExpectedStateId`, caller authority, capability leases, idempotency, and publication state, but those transient facts are excluded from the root hash. Neither root includes a later `TransformId`, lineage-map ID, root-scoped output ID, or incidental build identity. The `SemanticStateId` inside the reality commitment may be shared by another root whose admitted meaning is equal, but that sharing never authorizes cross-root source preservation, signature conclusions, origin explanation, edit authority, or evidence reuse requiring history.
@@ -503,6 +505,7 @@ The system uses stable, typed identities rather than bare integers or memory add
 | Identity | Meaning |
 |---|---|
 | `SourceRootId` | One immutable byte snapshot, availability/integrity contract, and exact byte reality; no parser-derived revision graph. |
+| `AuthorityId` | One versioned canonical authority contract for `StableSnapshot`: authority scope, authentication, snapshot-version input grammar, digest parameters/domain, and non-reuse/change law. |
 | `DraftRootId` | One frozen authoring-intent root identified by `DraftIntentCommitment`; it need not contain a realized semantic document. |
 | `DraftIntentProtocolId` | One versioned canonical grammar for frozen authoring intent. |
 | `DraftIntentCommitment` | The intent/assets/declared-data commitment used to identify a Draft root, distinct from a finalized result. |
@@ -536,6 +539,10 @@ The system uses stable, typed identities rather than bare integers or memory add
 | `GlyphInstanceId` | One painted glyph instance. |
 | `SemanticNodeId` | One extracted text, structure, annotation, or accessibility node. |
 | `ClaimId` | One evidence-bearing statement. |
+| `SemanticReportProtocolId` | One versioned canonical value grammar for semantic report bodies, including the report-family schema/version and every identity-bearing field. |
+| `SemanticReportId` | One content commitment to a semantic report body only; run observations and operational telemetry are outside its domain. |
+| `RunObservationProtocolId` | One independently versioned canonical value grammar for run observation envelopes and their linkage to semantic reports. |
+| `RunObservationId` | One content commitment to a run observation envelope that binds exactly one `SemanticReportId`. |
 | `TransformId` | One post-root operation/receipt identity; never an input to its root. |
 | `ArtifactId` | One content-addressed output artifact. |
 | `LineageMapId` | One versioned correspondence set between already-defined roots. |
@@ -1164,13 +1171,15 @@ A replay bundle is never emitted through ambient networking. Export is a caller-
 
 Records:
 
-- processors, exact executable/service artifacts, versions, configurations, and environments;
-- exact `SourceRootId`, `RevisionGraphId`, `DocumentViewId`, relevant `DerivationId`, external input/output artifact identities, and profiles;
+- an unordered processor-result set keyed by exact processor identity, each record binding that processor to its exact executable/service artifact, version, configuration, environment, and independently identified output `ArtifactId`;
+- exact `SourceRootId`, `RevisionGraphId`, `DocumentViewId`, relevant `DerivationId`, external input artifact identities, the exact set of bound output artifact identities, and profiles;
 - differing observable regions;
 - minimized causal object/program subgraph;
 - normative analysis;
 - compatibility classification;
 - and a reproducible witness bundle.
+
+Processor-to-output meaning comes only from the same processor-result record, never from shared array position. If a serialization also emits an `external_output_artifact_ids` summary, that field is an exact generated set projection of the independently identified outputs in the processor-result records; a missing, duplicate, extra, or conflicting binding is invalid. Canonical ordering is solely an encoding concern and confers no processor priority, baseline role, winner, or majority semantics.
 
 #### `EvidencePackage`
 
@@ -1225,7 +1234,13 @@ A report has two linked but differently versioned parts:
 - a **semantic report body** containing outcomes, coverage, profiles, exact proper-domain root/graph/view/state/derivation identities, deterministic diagnostics, capability identities, and claim evidence; and
 - a **run observation envelope** containing wall-clock timings, scheduler events, memory high-water marks, host timestamps, machine load, and other operational measurements.
 
-Only the semantic body participates in D0 structural identity unless a measurement claim explicitly makes selected observations part of a separate measurement artifact. Bet 27 replay bundles bind this semantic body and retain the run observation envelope as evidence, but they reproduce only the guarantee of the declared determinism class: D0/D1/D2 identity where admitted, D3 bounds, D4 seed replay, and no stronger claim for D5. The semantic hash binds its schema version, identity grammar, processing/render/security profile versions, capability identities, and canonical encoding. Wall time, timestamps, process IDs, randomized temporary names, and nondeterministic event order never silently poison semantic report hashes. Evidence packages can retain both bodies and bind them by IDs.
+Every report family instantiates one closed value-level semantic-body grammar. That body contains its `SemanticReportProtocolId`; exact report-family schema identity and version; every mandatory family field; exact proper-domain identities; processing, render, and security profile versions as applicable; capability identities; canonical outcome, coverage, deterministic diagnostics, evidence, and no-claim fields; and explicitly typed optional extensions admitted by that protocol version. `SemanticReportId` is the §9.2 content commitment over exactly that body. Unknown critical fields, ambiguous aliases, or missing mandatory fields refuse identity; absence and an explicitly present empty value are distinct where the family schema distinguishes them.
+
+Every retained run observation instantiates a separately versioned envelope grammar containing its `RunObservationProtocolId`; observation-schema identity and version; exactly one `semantic_report_id` backlink; observation/capture coverage; operational measurements; and disclosure, truncation, and no-claim facts applicable to those measurements. `RunObservationId` is the §9.2 content commitment over exactly that envelope. The link is intentionally one-way: a semantic body never contains a `RunObservationId`, so one semantic report may have zero or many independently identified observations without changing semantic identity or forming a commitment cycle.
+
+The two protocol identities and their concrete encoding/hash parameters remain governed by §§9.2-9.2.1. These paragraphs close the typed value and linkage domains but do not select an octet grammar, hash family, or digest width; no production `SemanticReportId` or `RunObservationId` is available until D1/D2 ratification. A material semantic-body or observation-envelope grammar change creates the corresponding new protocol version without silently changing the other.
+
+Only the semantic body participates in D0 structural identity unless a measurement claim explicitly makes selected observations part of a separate measurement artifact. Bet 27 replay bundles bind this semantic body and retain the run observation envelope as evidence, but they reproduce only the guarantee of the declared determinism class: D0/D1/D2 identity where admitted, D3 bounds, D4 seed replay, and no stronger claim for D5. The semantic commitment binds its report-family schema version, identity grammar, processing/render/security profile versions, capability identities, and canonical encoding once ratified. Wall time, timestamps, process IDs, randomized temporary names, and nondeterministic event order never silently poison semantic report identities. Evidence packages can retain both parts and bind each observation to its semantic body through the typed IDs above.
 
 ### 10.9 Provenance retention policy
 
@@ -1260,7 +1275,9 @@ The contract is a semantic spine, not another implementation layer or work ledge
 
 Repository checks derive the public capability manifest, Appendix-E rows, API/documentation assertions, and assurance obligations from these contracts and reject orphan claims, missing falsifiers, inconsistent identity domains, or a surface whose failure semantics differ from the canonical outcome algebra. This is a primary post-agent compression mechanism: one resolved judgment propagates through specification, implementation boundaries, verification, operation, and public claims instead of being independently regenerated by many agents.
 
-Report schemas are the sole field source for representative examples. An example generator consumes the versioned report-family schema and emits explicit placeholders for every mandatory field. A schema-example validator rejects any example that omits a required identity or field, uses a friendly alias where the schema requires a typed ID, or introduces a field that would strengthen the report's claim. Appendix B is a `generated-echo` of this rule and is never hand-authoritative.
+Report-family schemas together with the common §10.8 semantic-body/run-observation contract are the sole field sources for representative examples. An example generator consumes both inputs and emits explicit placeholders for every mandatory family field, `SemanticReportProtocolId`, `SemanticReportId`, capability-identity set, separately versioned run-observation schema and `RunObservationProtocolId`, `RunObservationId`, semantic-report backlink, observation coverage/telemetry, and telemetry-exclusion fact. While §9.2.1 remains pending, generated examples use explicit pending-ratification protocol markers and nonproduction identity placeholders rather than selecting an encoding.
+
+A schema-example validator rejects any example that omits a required family or common identity field, uses a friendly alias where the schema requires a typed ID, breaks the one-way semantic-report backlink, includes run telemetry in semantic identity, or introduces a field that would strengthen the report's claim. For `DivergenceReport`, it additionally requires each processor-result record's separate artifact, version, configuration, environment, and output identities and verifies that any external-output summary is the exact order-independent projection of those bindings. Appendix B is a non-normative `generated-echo` of §§10.6, 10.8, and 10.10 and is never hand-authoritative.
 
 ---
 
