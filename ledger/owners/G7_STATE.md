@@ -666,3 +666,10 @@ I did not revalidate, re-grade, confirm, refute, promote, demote, or rewrite any
 - Filed start time corrected to the measured bound after `20:12:46+02:00` and at or before `20:18:44+02:00`; exact second unavailable. Compaction and both required `AGENTS.md` rereads are recorded.
 - R13-A01/A02/A03/B01/B02 route to G1 through root for premise-first triage. Root and local checks report reviewer PID `3367236`, shell PID `3367002`, session `monkeybee-pdf-mass-context-repo--r13`, and monitor PID `3367118` absent.
 - Telemetry recorded without a cost estimate. Owner FSM remains **`DRAFT`**. **Log released** for root verification; no other round assigned.
+
+### R04 binding checkpoint — `DRAFT`
+
+- Measured local clock: `2026-07-14T20:37:30+02:00`.
+- Bound only R04 pass 1/5, sole lens `oversimplification-and-feature-loss`, to `plans/CYCLE_1_DELTA_PLAN.md` at 3,453 lines, 425,803 bytes, SHA-256 `41a89dd9d9ed788cb8657e69a2984d993cb244fa6e3d282a50060aab6557faae`; plan and G3 owner state both declare `SUBMIT-FOR-REVIEW`.
+- R04 is `ASSIGNED` to the attested `gpt-5.6-sol` / `ultra` / `priority` / `fast` idle process in session `monkeybee-pdf-mass-context-repo--r04`, pane `%86`, pane PID `3253703`, child PID `3253932`. No task or artifact context was sent.
+- The immutable five-pass prompt, exact authority chain, admission gates, freshness/write law, and route to G3 are sealed in the Round Log. `gauntlet/ROUND_LOG.md` is closed until root reports reviewer termination; `gauntlet/CONVERGENCE_REPORT.md` was not edited. Owner FSM remains `DRAFT`.

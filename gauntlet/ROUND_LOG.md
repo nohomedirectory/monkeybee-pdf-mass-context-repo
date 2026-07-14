@@ -85,7 +85,7 @@ Hash, status, counts, and disposition are slots. They are filled only from filed
 | R01 | C1 delta plan | envelope-dependency | Sol (fast) | — | `e019fe8c4bef82e8544147920529980c7d04fef1393e12591a36563eecc94daf` | FILED · VALIDATED · TERMINATED | 8 | 2 | 0 | NO | ROUTED → G3 (artifact owner; in-place revision permitted); G3 triage pending. Gate 3 now armed: no further C1 round until G3 revises and exposes a new hash. |
 | R02 | C1 delta plan | PDF-normative-fact | Opus | — | `a9458bed0b16227d4e4cea4fd30373d3dfdd0c3ef7bd4d4eeb672359b48bab77` | FILED · VALIDATED · TERMINATED | 2 | 2 | 1 | NO | ROUTED → G3. **Method violation recorded** (shell EOF append instead of `apply_patch`); findings evidentially admissible — see disposition. Gate 3 re-armed. |
 | R03 | C1 delta plan | clean-room contamination | Opus | — | `fc0a2cdc97590310982d13d1fb1cb4c5db10b30b58a7de2267ffe8ee15fd2234` | FILED · VALIDATED · TERMINATED | 1 | 1 | 1 | NO | ROUTED → G3 (premise-first; A01/B01/C01 grades preserved and unpromoted). Process-provenance correction and bounded admissibility recorded below. |
-| R04 | C1 delta plan | oversimplification-and-feature-loss | Sol | 5-pass A (1/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
+| R04 | C1 delta plan | oversimplification-and-feature-loss | Sol | 5-pass A (1/5) | `41a89dd9d9ed788cb8657e69a2984d993cb244fa6e3d282a50060aab6557faae` | ASSIGNED | — | — | — | — | — |
 | R05 | C1 delta plan | oversimplification-and-feature-loss | Opus | 5-pass A (2/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R06 | C1 delta plan | oversimplification-and-feature-loss | Sol | 5-pass A (3/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R07 | C1 delta plan | oversimplification-and-feature-loss | Opus | 5-pass A (4/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
@@ -1575,3 +1575,41 @@ Clock read immediately before this `apply_patch` write.
 **Convergence boundary:** R13 contributes A+B=5 as the first round on the Constitution-plus-fix-map artifact. One round is not a curve and establishes no convergence. Aggregate filed counts become A=47/B=12/C=4 over eight rounds by mechanical addition only.
 
 Owner FSM remains `DRAFT`. **Log released** for root verification. **R04 and every other unfiled round remain unassigned.**
+
+## R04 assignment/control — `2026-07-14T20:37:30+02:00`
+
+**Binding.** At the measured local clock `2026-07-14T20:37:30+02:00`, G7 bound R04 only: C1 delta-plan pass 1/5 under the sole lens `oversimplification-and-feature-loss`, assigned to Sol. The bound artifact is `plans/CYCLE_1_DELTA_PLAN.md`: 3,453 lines, 425,803 bytes, SHA-256 `41a89dd9d9ed788cb8657e69a2984d993cb244fa6e3d282a50060aab6557faae`. Its `owner-fsm` and `ledger/owners/G3_STATE.md` both say `SUBMIT-FOR-REVIEW`; the G3 checkpoint hashes to `059a42897292a375b003f7e5f2e80861135c183d85811bd465887e1ee650ef91`. Root reports the R03 revision committed and pushed at `441bd4a` and the R13 integration committed and pushed at `2ef18bb`; both commit objects resolve locally and local `HEAD` was `2ef18bb6f484f452b65c865dc33ecf4f710668c7` before this bind.
+
+**Admission gates.**
+
+1. G3 submitted: the plan and owner checkpoint each declare `SUBMIT-FOR-REVIEW`.
+2. Root reproduced the bound hash; G7 independently reproduced its hash, line count, and byte count.
+3. R03 reviewed SHA-256 `fc0a2cdc97590310982d13d1fb1cb4c5db10b30b58a7de2267ffe8ee15fd2234`; G3 premise-tested and dispositioned that round, then submitted the newly bound SHA-256 `41a89dd9d9ed788cb8657e69a2984d993cb244fa6e3d282a50060aab6557faae`.
+4. Reviewer identity attested: `gpt-5.6-sol`, reasoning effort `ultra`, service tier `priority`, live footer `gpt-5.6-sol ultra fast`.
+5. Exactly one lens is assigned: `oversimplification-and-feature-loss`.
+6. This is immutable-prompt pass 1/5.
+7. The reviewer process is idle and fresh for this artifact; no task or artifact context has been sent.
+
+**Exact local authority chain for root delivery.**
+
+1. `AGENTS.md` full.
+2. `OVERNIGHT_GOAL.md` sections 1, 3/G3, and 4.
+3. `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` full.
+4. `plans/CYCLE_1_DELTA_PLAN.md` full at the bound hash.
+5. `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` sections 1, 3-6, and 8-11.
+6. `CYCLE_0_WORK_ORDER.md` sections 0, 3, and 6-8.
+7. `AUDIT_FINDINGS_LEDGER.md` OPEN-C0 rows R1-1 through R1-9 and R2-N1 through R2-N8, plus C1 dependency rows C-1, C-3, C-4, C-7, and C-8.
+8. `CAMPAIGN_CHARTER_REASONING.md` sections 3-8.
+9. `MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md` sections 3-6, 10-16.6, 25-30.11, and 33-35.
+
+No prior gauntlet entry, convergence report, owner checkpoint, G6 successor, competitor material, or external source is in the reviewer chain.
+
+**Exact immutable five-pass prompt.**
+
+```text
+Find every concrete place this artifact oversimplifies, loses a required feature, collapses an envelope without preserving dependencies, or makes an implementation-relevant assertion without its required evidence interface. DO NOT LOSE FEATURES. I am positive you missed at least 80 elements. Report only evidence-backed findings under this lens; do not rewrite the artifact.
+```
+
+**Freshness, write law, and route.** The measured control plane is tmux session `monkeybee-pdf-mass-context-repo--r04`, pane `%86`, pane shell PID `3253703`, reviewer child PID `3253932`; `pane_dead=0` and pane current command `codex`. Process arguments identify `gpt-5.6-sol` with `model_reasoning_effort=ultra`; the live TUI identifies service tier `priority` and footer `gpt-5.6-sol ultra fast`. The visible idle pane had no artifact context. Upon root delivery, the reviewer may preserve existing log bytes and make only its protocol-governed blind structured append; it has no authority to edit the artifact, convergence report, owner state, or prior log bytes. Filed R04 findings route through root to G3 for independent premise-first triage; binding does not validate or promote them.
+
+**Write law now in force.** `gauntlet/ROUND_LOG.md` is closed to G7 until root reports R04 reviewer termination. G7 does not review, predict, or pre-empt findings. All prior bytes and the R01–R32 allocation are preserved except the R04 allocation-row hash/status slots above. **No task has been sent; root verifies and sends.**
