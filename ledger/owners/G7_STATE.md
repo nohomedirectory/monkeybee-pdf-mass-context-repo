@@ -729,3 +729,24 @@ I did not revalidate, re-grade, confirm, refute, promote, demote, or rewrite any
 - Filed convergence remains ten rounds at A=63/B=27/C=9 and 5 Sol/5 Opus; R23 and assigned R33 count as no filed evidence. Convergence Report remains unchanged at SHA-256 `637338094005402e2cf3e413b480fd5da3f6a32563cc5ed8eb27b9de289f90fb`.
 - Post-bind Round Log is 2,207 lines / 408,173 bytes / SHA-256 `f0841c1e0ff27c825da012572ee6482dcaf8f0151a354ef3bff92173890c94a9`.
 - Owner FSM remains `DRAFT`. **Round Log closed** until root verifies, commits, pushes, sends R33, and reports reviewer termination. **R24 remains blocked until valid R33 filing plus G4 premise-first triage/revision and a new manifest; R05 remains blocked pending G3 resubmission.**
+
+### R33 integration checkpoint — `DRAFT`
+
+- Clock read immediately before this checkpoint: `2026-07-14T22:17:31+02:00`.
+- Pre-integration Round Log reproduced at 2,275 lines / 419,078 bytes / SHA-256 `249ac132ff36921e7595ec6b7bf6735be91b6e3c45b19b0cb09e5477ebbe9a17`; prefix `[0,408173)` and suffix `[408173,419078)` reproduced their sealed hashes. After the row update, the intact 10,905-byte reviewer suffix is `[408382,419287)` at SHA-256 `f932428fcf0f4b114e3574ed9119b29f4491f82e23d76b31416d023cdd5d858a`.
+- A first shifted-suffix diagnostic incorrectly started at heading byte `408383`, omitted the preceding newline, and returned SHA-256 `1196fdacadf335f0bdc3a7cc433dbf54d41fa0cbaf5730d36f0ab1303a9439f6`; the exact corrected boundary above is the governing check. No reviewer byte was altered.
+- Mechanical schema/identity validation records R33 at A=4/B=2/C=0, marginal-only NO under the sole assigned lens. Exact start and filing seconds remain unavailable under the append-only correction; no substantive premise was reviewed.
+- R33's six grades and loss guards route through root to G4 unpromoted. Allocation/report recount is eleven filed rounds at A=67/B=29/C=9 and 6 Sol/5 Opus; R23 remains `NOT-RUN` and contributes nothing.
+- Action-1 postimage / R05 bind preimage candidate: Round Log 2,289 lines / 422,820 bytes / SHA-256 `cf965ec732e48fa5fad395938151dcb4ff5332e1db2ab9af89379e1d7155c48f`; Convergence Report 268 lines / 43,706 bytes / SHA-256 `eb9bb1fe1aeccb264efb14393b8350ccf5758c710070974574fca0eee012ed59`.
+- Owner FSM remains `DRAFT`; the log stays under G7 control only for the authorized serialized R05 binding.
+
+### R05 binding checkpoint — `DRAFT`
+
+- Clock read immediately before this checkpoint: `2026-07-14T22:19:16+02:00`.
+- The durable R05 bind preimage reproduced at 2,289 lines / 422,820 bytes / SHA-256 `cf965ec732e48fa5fad395938151dcb4ff5332e1db2ab9af89379e1d7155c48f`. `HEAD`, `main`, and `origin/main` each resolved to pushed commit `4aa7e83d84fd5b1b92925da49b9aa8c069ef7b10`.
+- The submitted plan reproduced at 3,460 lines / 440,925 bytes / SHA-256 `dffc35aad993d60476ee548ceab32701303cc2edb7fb4fd5d7c32f3d901be8ec`; G3 state reproduced SHA-256 `0e6dc765791df1b90732fbdac49ed83d464c3c6f790273c15e3e3e848fcbcb1a`. Both declare `SUBMIT-FOR-REVIEW`; the checkpoint body is excluded from reviewer delivery.
+- R05 alone is `ASSIGNED` as immutable five-pass A 2/5 under the sole `oversimplification-and-feature-loss` lens. The exact prompt now has six byte-identical line copies in the Round Log, including the new assignment copy.
+- Idle identity is session `monkeybee-pdf-mass-context-repo--r05`, pane `%87`, shell `3258418`, child `3258640`, monitor `3258511`, exact lowercase-repository cwd, `claude-opus-4-8` / `xhigh`; the welcome screen remains untouched. No reviewer or owner task was sent.
+- After the R05 row shift, the intact R33 reviewer suffix is `[408466,419371)`, 10,905 bytes / 68 lines, SHA-256 `f932428fcf0f4b114e3574ed9119b29f4491f82e23d76b31416d023cdd5d858a`. Allocation scope remains 33 rows; filed totals remain eleven rounds at A=67/B=29/C=9.
+- Post-bind Round Log is 2,326 lines / 428,657 bytes / SHA-256 `97ee9a28078a838d4ff6fcd3484182e5e39758f7e6b354381225f0f63bcf1aa2`; Convergence Report remains 268 lines / 43,706 bytes / SHA-256 `eb9bb1fe1aeccb264efb14393b8350ccf5758c710070974574fca0eee012ed59`.
+- Owner FSM remains `DRAFT`. **Round Log closed** until root verifies, commits, pushes, dispatches R05, and reports reviewer termination. R06 and R24 remain blocked on their respective owner revision gates.

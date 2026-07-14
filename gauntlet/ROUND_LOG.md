@@ -86,7 +86,7 @@ Hash, status, counts, and disposition are slots. They are filled only from filed
 | R02 | C1 delta plan | PDF-normative-fact | Opus | — | `a9458bed0b16227d4e4cea4fd30373d3dfdd0c3ef7bd4d4eeb672359b48bab77` | FILED · VALIDATED · TERMINATED | 2 | 2 | 1 | NO | ROUTED → G3. **Method violation recorded** (shell EOF append instead of `apply_patch`); findings evidentially admissible — see disposition. Gate 3 re-armed. |
 | R03 | C1 delta plan | clean-room contamination | Opus | — | `fc0a2cdc97590310982d13d1fb1cb4c5db10b30b58a7de2267ffe8ee15fd2234` | FILED · VALIDATED · TERMINATED | 1 | 1 | 1 | NO | ROUTED → G3 (premise-first; A01/B01/C01 grades preserved and unpromoted). Process-provenance correction and bounded admissibility recorded below. |
 | R04 | C1 delta plan | oversimplification-and-feature-loss | Sol (fast) | 5-pass A (1/5) | `41a89dd9d9ed788cb8657e69a2984d993cb244fa6e3d282a50060aab6557faae` | FILED · VALIDATED · TERMINATED | 11 | 5 | 1 | NO | ROUTED → G3 through root (premise-first; grades and loss guards unpromoted). R05 blocked pending a new G3 `SUBMIT-FOR-REVIEW` hash. |
-| R05 | C1 delta plan | oversimplification-and-feature-loss | Opus | 5-pass A (2/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
+| R05 | C1 delta plan | oversimplification-and-feature-loss | `claude-opus-4-8`, effort `xhigh` | 5-pass A (2/5) | `dffc35aad993d60476ee548ceab32701303cc2edb7fb4fd5d7c32f3d901be8ec` | ASSIGNED | — | — | — | — | — |
 | R06 | C1 delta plan | oversimplification-and-feature-loss | Sol | 5-pass A (3/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R07 | C1 delta plan | oversimplification-and-feature-loss | Opus | 5-pass A (4/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R08 | C1 delta plan | oversimplification-and-feature-loss | Sol | 5-pass A (5/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
@@ -148,7 +148,7 @@ R33 replaces immutable failed round R23 under the standing law that a failed rou
 
 | Round | Artifact | Declared lens (exactly one) | Model | Precondition to admit | Artifact hash | Status | A | B | C | Marginal-only | Owner disposition |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| R33 | Traceability + cycle briefs (R23 replacement) | Q2/Q3 zero-orphan audit | `gpt-5.6-sol`, effort `ultra`, live `fast` | R23 closed `NOT-RUN · CORRUPT-DISPATCH · TERMINATED`; unchanged seven-file manifest; R24 remains blocked | `b77359ccc716a2186d3053034132b7f68b41988e2366e64efe4451e10d5089b3` | ASSIGNED | — | — | — | — | — |
+| R33 | Traceability + cycle briefs (R23 replacement) | Q2/Q3 zero-orphan audit | `gpt-5.6-sol`, effort `ultra`, live `fast` | R23 closed `NOT-RUN · CORRUPT-DISPATCH · TERMINATED`; unchanged seven-file manifest; R24 remains blocked | `b77359ccc716a2186d3053034132b7f68b41988e2366e64efe4451e10d5089b3` | FILED · VALIDATED · TERMINATED | 4 | 2 | 0 | NO | ROUTED → G4 through root (premise-first; all six grades and loss guards preserved and unpromoted). R23 contributes no filed evidence; R24 remains blocked pending G4 revision and a new manifest. |
 
 ### R31 — notes on admission and reading
 
@@ -2205,3 +2205,122 @@ These are ordinary `sha256sum` lines bytewise sorted under `LC_ALL=C`, including
 **Future route and blocks.** Any eventual R33 findings route through root to G4 only after filing and G7 mechanical integration. R24 remains unassigned and blocked until G4 premise-tests a valid R33 result, revises, returns to `SUBMIT-FOR-REVIEW`, and exposes a new seven-file manifest. R05 remains blocked pending G3 resubmission. No task or route occurs at assignment.
 
 **Write law now in force.** `gauntlet/ROUND_LOG.md` is closed to G7 until root verifies this replacement bind, commits and pushes it, sends the R33 reviewer task, and reports R33 reviewer termination. G7 does not review, predict, or pre-empt findings. All prior reviewer-authored bytes and all existing allocation rows are preserved; R23 remains immutable, and only the new R33 replacement allocation/control is added. **No task has been sent; root verifies, commits, pushes, and sends.**
+
+## R33 — Traceability + cycle briefs — Q2/Q3 zero-orphan audit
+
+- reviewer process: session `monkeybee-pdf-mass-context-repo--r33`; window 1, pane 1, pane ID `%119`
+- model identity: `gpt-5.6-sol`, effort `ultra`; sealed control records child PID `4046578` process arguments, TUI messages `Service tier set to default` then `Service tier set to priority`, and footer `gpt-5.6-sol ultra fast`
+- sole lens: `Q2/Q3 zero-orphan audit`
+- started / filed: `2026-07-14T22:06:07+02:00` (first reviewer-local clock capture after ingest) / `2026-07-14T22:09:50+02:00`
+- artifact hash: seven-file manifest SHA-256 `b77359ccc716a2186d3053034132b7f68b41988e2366e64efe4451e10d5089b3`; every assigned component hash matched immediately before filing
+- authority chain read: `AGENTS.md` full; `OVERNIGHT_GOAL.md` §1, §3/G4, §4; `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` full; `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` §§0–2 and §§4–7; `CYCLE_0_WORK_ORDER.md` §0; `MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md` §§0.2, 3, 24.12–24.16, 33.1–33.18, 35; then C3, C4, C5, C7, C6, traceability matrix, and C2 in full at the assigned identities; then only the inline R33 control entry and EOF anchor
+- reviewer FSM: SPAWNED -> INGEST-DECLARED-CHAIN -> APPLY-ONE-LENS -> FILE-GRADED-FINDINGS -> TERMINATED
+- counts: A=4; B=2; C=0
+- marginal-only: NO
+- no-action statement: no artifact, checkpoint, report, decision, disposition, prior finding, convergence material, successor, code, Beads state, or SpecCard semantics was changed or generated; no web, external source, external competitor material, prohibited processor material, measurement, benchmark, comparison run, fetch, send, publication, purchase, or post occurred; no scratch or temporary file, shell redirection, or `tee` was used; this append is the sole filesystem write
+- scope disclosures: `gauntlet/ROUND_LOG.md` was not opened; the inline R33 control entry was the sole Round Log context. The only competitor-related prose read was the expressly delivered Rev 7 §§24.12–24.16. No excluded byte was exposed. `ALIEN_ARTIFACT.md` and `PROJECT_OVERVIEW.md` were not opened and the matrix marks them non-load-bearing. Existing grades and findings were treated as allegations and were not promoted. Every R33 conclusion below remains an allegation for G4 premise testing.
+
+### R33-A01 — The §33.10 grounding-surplus measurement is an unregistered forward obligation
+
+- evidence: Rev 7 §33.10 requires measurement of independent/analytic-oracle coverage, held-out failure, external disagreement, security findings from independent attack paths, oracle-lineage diversity, and claim demotion. `reports/TRACEABILITY_MATRIX.md` §1.3 records red-team activity, falsifier presence, seeded defects, held-out probes, and lifecycle states, but no artifact or gate that measures and reports the §33.10 set. A bounded search of all seven artifacts for `grounding-surplus`, `oracle coverage`, `external disagreement`, and `independent attack` found only Q3-GRD-1's statement that grounding loses an adversarial leg; C4's evidence emissions likewise carry red-team results but no grounding-surplus report.
+- requirement: Rev 7 §33.10; Charter §7's Q3 grounding row; the matrix's claim that every Q3 requirement has a producer/artifact/gate path
+- consequence: a Q3 evidence obligation is absent from the requirement register, so the stated forward-orphan accounting and the Q3 package path omit the instrument that turns raw grounding activities into measured grounding evidence.
+- repair boundary: add one explicit requirement path for the §33.10 metric set, with producer, emitted artifact, gate, prerequisites, and downgrade; do not treat raw activity as a reported metric without an explicit emission.
+- loss guard: preserve the existing red-team, falsifier, seeded-defect, held-out-probe, demotion, and oracle-lineage rows; preserve independence boundaries and the no-claim posture.
+
+### R33-A02 — C6 performance is both traced to Q3-SUB-1 and declared the sole reverse orphan
+
+- evidence: `plans/cycle_briefs/C6.md` §4 maps “Perf lanes meeting predeclared targets” to `Q3-SUB-1` and the S6 prerequisite, and §7 gates the performance targets plus preserved D2. `reports/TRACEABILITY_MATRIX.md` §§3–4 instead says the C6 performance-hardening slice supports no requirement and is the single reverse orphan.
+- requirement: the matrix's reverse-leg zero-orphan law and its requirement that an artifact/gate map back to a Q2/Q3 ID or an explicit G1 justification
+- consequence: the reverse-orphan count and F-2 premise are not reproducible from the bound artifacts: the package simultaneously supplies and denies a Q3 trace for the same C6 emission.
+- repair boundary: reconcile the C6 emission row with the reverse ledger. If `Q3-SUB-1` is valid, remove only the reverse-orphan classification; if it is not, remove that mapping and state the slice's authorized non-Q2/Q3 justification.
+- loss guard: preserve the distinct forward gap that no cycle executes S1/S6, the D2 and safety gates, and the prohibition on premature comparative measurement.
+
+### R33-A03 — Atomic supremacy lanes are collapsed into one orphan row and S5 drops out of the execution path
+
+- evidence: Rev 7 §24.12 rule 1 makes claims atomic and per-lane, and §24.15 defines S1–S6 with S5 as a family of separately searched atomic conjunctions. The matrix's Q2-CMP-4 row and orphan heading enumerate only S1/S3/S4/S6 under one ID; F-2's body separately admits that S5 also lacks a producer. `plans/cycle_briefs/C7.md` §3 repeats only S1/S3/S4/S6. No S5 producer, artifact, gate, dependency handoff, or reverse row exists.
+- requirement: Charter §0's Q2 “plus supremacy-lane results”; Rev 7 §§24.12 and 24.15; the matrix's every-requirement and both-directions accounting
+- consequence: several atomic lane obligations are counted as one forward orphan, and S5 can disappear from downstream scheduling even though the finding prose recognizes it. The stated fourteen-orphan total therefore does not represent atomic lane paths.
+- repair boundary: instantiate an explicit subpath or requirement ID for each claimed lane, including S5, with its producer, artifact, gate, per-lane discovery dependency, evidence, and lifecycle; retain GAP where no producer exists.
+- loss guard: preserve per-lane atomicity, S5's one-search/metric/evidence/expiry rule per conjunction, honest outcomes, and the ban on aggregate or metric laundering; perform no comparison now.
+
+### R33-A04 — Foundry- and Lineage-only artifacts are assigned Q3 IDs to close the reverse ledger
+
+- evidence: the matrix §0 says Foundry/Lineage evidence is not a Q3 Artifact-rung requirement and cannot reinforce that rung. It nevertheless registers the C7 Foundry distribution as `Q3-PRV-5` and the C4 Lineage Evolution Trial as `Q3-DIS-6`, then marks both reverse paths “Supported.” Matrix F-9 plus C4 §4/§6 and C7 §4 explicitly reaffirm that these objects do not support the claimed Artifact rung.
+- requirement: Rev 7 §§33.15 and 33.17–33.18; the matrix's Artifact-only Q3 scope and reverse-leg zero-orphan rule
+- consequence: object tags prevent rhetorical borrowing but do not create a Q3 requirement. Counting these Q3-prefixed rows as reverse support hides artifacts that fall outside the matrix's own Q2/Q3-or-G1 disposition rule.
+- repair boundary: classify these outputs in an explicit non-Q2/Q3 evidence category or give a locally governed bounded use that does not contradict the non-implication law; do not use a Q3 ID merely to close the reverse ledger.
+- loss guard: retain both artifacts, their Foundry/Lineage labels, publication of unfavorable results, the Evolution Trial's addendum rehearsal, and the prohibition on borrowing them into Artifact disproportion.
+
+### R33-B01 — The C7 §33.16 bundle has no guaranteed handoff for its independent-review input
+
+- evidence: Rev 7 §33.16 includes independent reviews in the evaluation bundle. Charter §5/C4 and `plans/cycle_briefs/C4.md` §3 submit Q3 at day 9 while the verdict remains on an external calendar. The matrix Q3-BND-1 nevertheless assigns the bundle, including independent reviews, to the fixed C7 gate, while Q3-IND-2 is `EXTERNAL`. C7 §1/§7 requires bundle assembly and campaign termination but names no pending-content state, later receipt, update owner, or post-review handoff.
+- requirement: Rev 7 §33.16; Charter §§2 and 5/C4–C7; explicit dependency and owner-handoff closure
+- consequence: unless external review happens to finish before C7, the gate can neither emit the stated bundle nor identify who incorporates the missing independent-review artifact later.
+- repair boundary: specify whether C7 emits a pending bundle or waits for review, and bind the external review receipt to a named post-review update/handoff without turning submission into self-awarded verdict.
+- loss guard: preserve submission-not-verdict, the external calendar, independent review, the campaign's graceful degradation, and the no-self-award law.
+
+### R33-B02 — Q2's independent-adjudication handoff is only implicit and has no reverse trace
+
+- evidence: Charter §0 says both questions end in independent adjudication, Charter §5/C7 says adjudication begins, and C7 §1/§7 repeats that verdicts arrive externally. The matrix has an explicit Q3-IND-2 path for the C4 Q3 package, but Q2 has only the generic Q2-CRD-1 “by reference”; the reverse row for C7 Q2 package submission maps only Q2-CMP-1 through Q2-CMP-6. It identifies no Q2 reviewer/adjudicator receipt, failure state if no adjudicator is obtained, or owner handoff after campaign termination.
+- requirement: Charter §§0 and 5/C7; the matrix's forward/reverse and owner-handoff law
+- consequence: the C7 submission can be marked supported without an explicit path from the Q2 evidence package to the independent actor who answers Q2, weakening the no-self-award boundary.
+- repair boundary: instantiate a Q2 adjudication/no-self-award row, or explicitly bind Q2-CRD-1 to the C7 package, external receipt, failure/downgrade, and post-submission owner.
+- loss guard: preserve campaign termination at submission, externally timed verdicts, no self-award, honest no-verdict behavior when independence does not materialize, and no external action during plan space.
+
+### Round verdict
+
+Owner revision is required before this bundle can support its own exhaustive zero-orphan accounting. The matrix discloses many campaign gaps candidly, but under the sole assigned lens it omits one §33.10 obligation, contradicts its C6 reverse mapping, collapses atomic lanes and loses S5, uses non-Q3 objects to close Q3 reverse paths, and leaves two independent-review handoffs unresolved. These are allegations for G4 premise testing; R33 promotes no artifact status or prior grade. This round is not marginal-only.
+
+- termination state: TERMINATED
+
+## R33 mechanical validation and disposition — `2026-07-14T22:15:56+02:00`
+
+**Byte and artifact identity.** The sealed pre-review prefix `[0,408173)` reproduces 408,173 bytes / 2,207 lines / SHA-256 `f0841c1e0ff27c825da012572ee6482dcaf8f0151a354ef3bff92173890c94a9`. The sole reviewer suffix `[408173,419078)` reproduces 10,905 bytes / 68 lines / SHA-256 `f932428fcf0f4b114e3574ed9119b29f4491f82e23d76b31416d023cdd5d858a`; the whole pre-integration log reproduces 419,078 bytes / 2,275 lines / SHA-256 `249ac132ff36921e7595ec6b7bf6735be91b6e3c45b19b0cb09e5477ebbe9a17`. Every seven-file component and the bytewise-sorted manifest independently reproduce the bound SHA-256 `b77359ccc716a2186d3053034132b7f68b41988e2366e64efe4451e10d5089b3`. Reviewer-authored bytes are preserved exactly.
+
+**Mechanical schema validation only.** The filed packet declares exactly one lens, `Q2/Q3 zero-orphan audit`; A=4/B=2/C=0; marginal-only NO; monotone headings R33-A01–A04 and R33-B01–B02; exactly six each of evidence, requirement, consequence, repair boundary, and loss guard; a verdict; and an FSM ending in `TERMINATED`. Root separately observed the final response token exactly `TERMINATED`. `VALIDATED` covers identity, bounds, schema, and process controls only; no finding premise or substantive conclusion was tested, confirmed, rejected, or re-graded.
+
+**Append-only timestamp correction.** The reviewer's `2026-07-14T22:06:07+02:00` value is its first local clock capture after ingest, not the exact task start. The task was active no later than that clock. Its `2026-07-14T22:09:50+02:00` value was captured immediately before the final rehash, not after the append. Filing therefore occurred after `22:09:50+02:00` and no later than the measured Round Log mtime `2026-07-14 22:10:45.935682883 +0200`. Exact task-start and filed seconds are unavailable and are not invented; the original reviewer fields remain intact.
+
+**Identity, method, termination, and telemetry.** Root's transcript and control-plane observations identify session `monkeybee-pdf-mass-context-repo--r33`, pane `%119`, shell PID `4046339`, child PID `4046578`, monitor PID `4046448`, and `gpt-5.6-sol` at effort `ultra` with live priority service and `fast` footer. The transcript shows only permitted local reads and pipes: no scratch or temporary file, redirection, `tee`, web or external action, artifact edit, or other write. Root normally exited the model and shell and sent TERM only to the orphan monitor; local checks find all three PIDs and the tmux session absent. Exit accounting is 163,228 total tokens: 137,900 input plus 2,249,984 cached input; 25,328 output including 18,435 reasoning. No cost was supplied and none is estimated.
+
+**Bounded route and convergence disposition.** R33-A01–A04 and R33-B01–B02 route only through root to G4 for independent premise-first triage, with every filed grade and loss guard preserved and unpromoted. Mechanical addition yields eleven filed rounds at A=67/B=29/C=9 and a filed-family split of 6 Sol/5 Opus. R33 is the first valid traceability-artifact point under this lens, not a convergence curve. R23 remains immutable `NOT-RUN · CORRUPT-DISPATCH · TERMINATED`, contributes no count or lens coverage, and is not reused. R24 remains blocked until G4 triages R33, revises, returns to `SUBMIT-FOR-REVIEW`, and exposes a new manifest.
+
+Owner FSM remains `DRAFT`. The R33 integration boundary is durable; the log remains under G7 control only for the separately authorized serialized R05 binding below.
+
+## R05 assignment/control — `2026-07-14T22:18:08+02:00`
+
+**Binding and durable preimage.** At the measured local clock `2026-07-14T22:18:08+02:00`, G7 bound R05 only: C1 delta-plan immutable blunder/oversimplification block pass 2/5 under the sole lens `oversimplification-and-feature-loss`, assigned to `claude-opus-4-8` at effort `xhigh`. The post-R33-integration preimage used for this bind was exactly 2,289 lines / 422,820 bytes / SHA-256 `cf965ec732e48fa5fad395938151dcb4ff5332e1db2ab9af89379e1d7155c48f`.
+
+**Artifact and owner identity.** `plans/CYCLE_1_DELTA_PLAN.md` independently reproduces 3,460 lines / 440,925 bytes / SHA-256 `dffc35aad993d60476ee548ceab32701303cc2edb7fb4fd5d7c32f3d901be8ec` and declares `owner-fsm: SUBMIT-FOR-REVIEW`. `ledger/owners/G3_STATE.md` independently hashes to `0e6dc765791df1b90732fbdac49ed83d464c3c6f790273c15e3e3e848fcbcb1a` and declares `owner-fsm: SUBMIT-FOR-REVIEW`; its body is excluded from reviewer delivery. Local `HEAD`, `main`, and `origin/main` each resolve to pushed baseline `4aa7e83d84fd5b1b92925da49b9aa8c069ef7b10`.
+
+**Admission gates.** Gate 1: the plan and G3 checkpoint both submit. Gate 2: the plan identity and dimensions were independently reproduced. Gate 3: R04 reviewed SHA-256 `41a89dd9d9ed788cb8657e69a2984d993cb244fa6e3d282a50060aab6557faae`; G3 premise-tested and dispositioned that packet, revised the artifact, and exposed the new bound identity above. Gate 4: process arguments and the untouched live TUI attest `claude-opus-4-8` / `xhigh`. Gate 5: exactly one lens is assigned. Gate 6: this is pass 2/5 and the immutable prompt below is byte-identical to the protocol. Gate 7: the reserved process is idle and fresh; no task, artifact, or review context has been sent.
+
+**Reviewer control plane.** Session `monkeybee-pdf-mass-context-repo--r05`, window 1, pane 1, pane ID `%87`, shell PID `3258418`, reviewer child PID `3258640`, monitor PID `3258511`, `pane_dead=0`, current command `claude`; all three cwd links resolve exactly to `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`. Child arguments are `/home/joseph/.local/bin/claude --dangerously-skip-permissions --model claude-opus-4-8 --effort xhigh`; the live welcome screen shows `Opus 4.8 with xhigh effort` and no prompt or artifact context.
+
+**Exact bounded authority chain for later root delivery, in read order.**
+
+1. `AGENTS.md` — full.
+2. `OVERNIGHT_GOAL.md` — sections 1, 3/G3, and 4.
+3. `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` — full.
+4. `plans/CYCLE_1_DELTA_PLAN.md` — full at the bound SHA-256 above.
+5. `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` — sections 1, 3–6, and 8–11.
+6. `CYCLE_0_WORK_ORDER.md` — sections 0, 3, and 6–8.
+7. `AUDIT_FINDINGS_LEDGER.md` — OPEN-C0 rows R1-1 through R1-9 and R2-N1 through R2-N8, plus C1 dependency rows C-1, C-3, C-4, C-7, and C-8.
+8. `CAMPAIGN_CHARTER_REASONING.md` — sections 3–8.
+9. `MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md` — sections 3–6, 10–16.6, 25–30.11, and 33–35.
+10. Only this R05 assignment/control entry and its EOF anchor, supplied inline by root.
+
+**Exact immutable five-pass prompt.**
+
+```text
+Find every concrete place this artifact oversimplifies, loses a required feature, collapses an envelope without preserving dependencies, or makes an implementation-relevant assertion without its required evidence interface. DO NOT LOSE FEATURES. I am positive you missed at least 80 elements. Report only evidence-backed findings under this lens; do not rewrite the artifact.
+```
+
+**One-lens, freshness, loss-guard, and no-action boundary.** Apply only `oversimplification-and-feature-loss` through the exact prompt above; do not add an adjacent lens or rewrite the plan. The reviewer must not receive or open the G3 checkpoint body, any prior finding body or reviewer packet, owner disposition, convergence result, decision file, G6 successor, other Round Log byte, external source, competitor material, or prohibited processor source/documentation. Every filed finding must retain the protocol's required evidence, requirement, consequence, repair boundary, and loss guard fields; no grade or allegation is promoted at filing. No measurement, comparison, benchmark, web/search, external action, artifact edit, owner task, or reviewer route is authorized.
+
+**Tightened write and termination law.** The reviewer may create no scratch or temporary file anywhere and may use no shell redirection or `tee`. Its only filesystem write is exactly one blind structured `apply_patch`-equivalent append to `gauntlet/ROUND_LOG.md`, using the root-supplied EOF anchor without reading other log bytes. It may not edit the artifact, convergence report, checkpoint, or any other path. After the append is flushed, the final standalone response token must be exactly `TERMINATED`, with no punctuation, styling, prefix, or suffix; then the reviewer and idle shell must exit.
+
+**Future route and blocks.** Any eventual R05 allegations route only through root to G3 after filing and G7 mechanical integration, for independent premise-first triage with grades and loss guards unpromoted. R06 stays blocked until that triage, a G3 revision, and a new submitted hash. R24 remains blocked on G4's R33 triage, revision, and new manifest. No reviewer or owner task is sent at assignment.
+
+**Write law now in force.** `gauntlet/ROUND_LOG.md` is closed to G7 until root verifies this bind, commits and pushes it, dispatches R05, and reports reviewer termination. G7 does not review, predict, or pre-empt findings. All reviewer-authored bytes and all allocation rows are preserved except the authorized R05 allocation slots. **No task has been sent; root verifies, commits, pushes, dispatches R05, and later reports reviewer termination.**
