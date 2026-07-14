@@ -12,8 +12,8 @@ evidence-status: provisional-pending-substrate
 
 ## Global state
 
-- Active subgoal: `G3`, with G1/G2/G4/G5 parallel owners staged behind the flagship start
-- Current phase: `G0 DONE; next owner wave authorized`
+- Active subgoal: `G3`, with G1/G4/G5 drafting, G2 awaiting its allocated reviews, and G7 initializing gauntlet control
+- Current phase: `G0 DONE; owner wave active; G2 SUBMIT-FOR-REVIEW`
 - Priority rule: preserve G0, ledger, G3, G3 gauntlet, G1, and `MORNING_REPORT.md`; shed work only from the bottom of the governing ladder.
 - Canonical-input mutation allowance: none.
 - Bead/code allowance: none.
@@ -30,12 +30,12 @@ Each owner must persist a checkpoint below and in its partial output at every tr
 |---|---|---|---|---|---|
 | G0 owner | orientation, inventory, Grade-A verification | `INDEX.md`, `reports/INGEST_REPORT.md`, `ledger/owners/G0_STATE.md`, permitted AGENTS extension | DONE | All five fresh-review findings resolved; closure suite and root verification passed | None; terminate owner process |
 | G1 owner | Constitution v8, shell corpus, fix map | `constitution/**`, `shell/**`, `reports/FIX_APPLICATION.md`, `ledger/owners/G1_STATE.md` | DRAFT | Authority sections ingested; provenance-bearing partial corpus exists | Draft corpus covers extraction envelope and OPEN-C0 map, then SELF-CHECK |
-| G2 owner | resolve-now and deferred decisions | `decisions/**`, `ledger/owners/G2_STATE.md` | DRAFT | Decision-bearing canon ingested; draft transition persisted | Seven briefs, decision index, and deferred register exist, then SELF-CHECK |
+| G2 owner | resolve-now and deferred decisions | `decisions/**`, `ledger/owners/G2_STATE.md` | SUBMIT-FOR-REVIEW | Nine artifacts and owner self-check persisted at 16:56; root integrity gate passed | Fresh R27/R28 packets, then REVISE |
 | G3 owner | Cycle 1 delta plan | `plans/CYCLE_1_DELTA_PLAN.md`, `ledger/owners/G3_STATE.md` | DRAFT | Authority sections ingested; provenance-bearing partial plan exists | Plan reaches 2,500–4,000 substantive lines with all contract families, then SELF-CHECK |
 | G4 owner | traceability matrix and C2-C7 briefs | `reports/TRACEABILITY_MATRIX.md`, `plans/cycle_briefs/**`, `ledger/owners/G4_STATE.md` | DRAFT | Q2/Q3 and cycle-boundary canon ingested; draft transition persisted | Bidirectional zero-orphan matrix and six bounded briefs exist, then SELF-CHECK |
-| G5 owner | human-action packages | `human_actions/**`, `ledger/owners/G5_STATE.md` | INGEST | Exact Opus 4.8/xhigh identity and initial checkpoint verified; active | Work Order day-zero actions ingested |
+| G5 owner | human-action packages | `human_actions/**`, `ledger/owners/G5_STATE.md` | DRAFT | Human-action canon and bounded official-fact policy ingested; draft transition persisted | All human-only packages exist with unsent status, then SELF-CHECK |
 | G6 owner | conditional charter successors | qualifying `*_v1.1.md` files only | INGEST | Dormant unless graded defect qualifies | A genuine charter-set defect survives triage |
-| G7 owner | gauntlet records and convergence | `gauntlet/**` | INGEST | Lens allocation imported from goal | Owner artifacts reach SUBMIT-FOR-REVIEW |
+| G7 owner | gauntlet records and convergence | `gauntlet/**`, `ledger/owners/G7_STATE.md` | INGEST | Opus 4.8/xhigh owner spawned and assigned at 16:56 | Persist checkpoint, initialize immutable R01-R30 table, then remain DRAFT for routed packets |
 | G8 owner | integrity gate and morning handoff | `MORNING_REPORT.md`, final `INDEX.md`, ledger seal | INGEST | Terminal criteria imported from goal | G0-G7 dispositions are available |
 
 ## Reviewer finite-state machine
