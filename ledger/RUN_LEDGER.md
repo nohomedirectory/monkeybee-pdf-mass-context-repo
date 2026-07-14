@@ -43,6 +43,8 @@ This ledger is provisional pending establishment of the campaign's tamper-eviden
 | 16:54 | G4 pre-self-check wording intervention delivered. | Live-tail inspection found one unscoped Rule 13 token in the C5 brief. The owner was instructed to preserve the requirement, rephrase the token, scan every G4-owned file, and record the scan before transition. |
 | 16:56 | G7 gauntlet owner spawned and assigned. | NTM process arguments and the live TUI both attest `claude-opus-4-8` at `xhigh`; exclusive paths are `gauntlet/**` and `ledger/owners/G7_STATE.md`. The owner must initialize from the precommitted R01–R30 allocation, then remain disk-first while root routes fresh single-lens reviewers. |
 | 16:56 | G2 reached `SUBMIT-FOR-REVIEW`. | Seven proposed decision briefs, a decision index, and deferred register total 1,265 lines. Root reproduced 9/9 canonical hashes, provenance, Markdown-only scope, formatting, and explicit human-ratification boundaries; all four Rule 13 hits are scoped canon quotations or a prohibition of best-effort encoding. R27/R28 remain required. |
+| 16:59 | G2 submission checkpoint committed, pushed, and process stopped. | Commit `33aceb9` landed only G2-owned documents plus root orchestration evidence on `main`; `origin/main` advanced. After verifying durable `SUBMIT-FOR-REVIEW`, root stopped the exact auto-restart monitor, exited Claude normally, exited its idle shell, and verified session absence. The owner will be relaunched for `REVISE` after R27/R28. |
+| 17:08 | G4 reached `SUBMIT-FOR-REVIEW`; root reproduced its matrix closure. | Six C2-C7 briefs and the 50-ID matrix are on disk. Independent extraction finds 50 definitions and 50 dispositions across the reverse ledger/orphan audit, with no unaccounted ID; provenance, canonical hashes, Markdown-only scope, formatting, and owner-recorded Rule 13 dispositions pass. Four Charter-level gaps remain proposed findings until R23-R26. |
 
 ## Fetch record
 
@@ -193,6 +195,7 @@ No rounds have run yet.
 | 16:55 | The first parallel preflight script interpolated a shell loop variable as JavaScript and stopped before launching any subprocess. | No repository read or write from that preflight occurred. | Corrected the quoting and reran all five read-only preflight checks; provenance and output-type checks passed, and wording findings were routed to active owners. |
 | 16:57 | Root's first G7 assignment named `gauntlet/CONVERGENCE.md`, conflicting with the authoritative marching-order path. | The owner had not yet created either file. | Immediately sent a correction to use only `gauntlet/CONVERGENCE_REPORT.md`; the erroneous path remains forbidden. |
 | 16:58 | Two NTM telemetry invocations used unsupported argument forms. | No provider-token data was returned and no repository state changed. | Used the supported session-metrics form; it reports that provider API token/cost telemetry is unavailable, so counts remain labeled unavailable rather than estimated. |
+| 16:59 | The first G2 shutdown guard used Bash's `mapfile` under the repository's default zsh. | The command stopped at its first shell builtin; no signal or key was sent. | Re-ran under explicit `/bin/bash`, verified exactly one monitor PID, and performed a normal model/shell shutdown. |
 
 ## Cost and token telemetry
 
