@@ -32,12 +32,17 @@ This ledger is provisional pending establishment of the campaign's tamper-eviden
 | 16:19 | G0 fresh-context review packet filed and routed to the owner. | The single `evidentiary-reproducibility` lens reproduced the canonical baseline and Grade-A register, then filed 1 Grade A, 1 Grade B, and 3 Grade C findings. The owner must disposition all five in `REVISE`. |
 | 16:25 | G0 reached `DONE`; root independently verified closure. | All five findings are `ACCEPTED — RESOLVED`; canonical hashes remain 9/9; stable non-`.ntm` manifest is 20/20; the 5,816-byte AGENTS seed is byte-identical; scope, provenance, clean-room, claim-vocabulary, and formatting checks pass. |
 | 16:27 | G0 owner process terminated after durable `DONE`. | Auto-restart monitor identity was verified and stopped; Codex exited cleanly; its idle shell exited; tmux session absence verified. No repository file was deleted. |
+| 16:28 | First durable checkpoint committed and pushed on `main`. | Commit `cc79768` records 772 inserted lines across the G0 substrate, owner/reviewer evidence, and orchestration records; `origin/main` advanced from `e157061` to `cc79768`. Canonical inputs remained byte-identical. |
+| 16:43 | G2 routed three cross-owner findings from decision ingest. | D-004 records `DecodedStreamId` / `DecodedContainerId` name drift; D-005 records unrouted C1 dependency decisions; hash ratification is now an explicit predecessor of the campaign's first external commitment. No canonical input was edited. |
 
 ## Fetch record
 
 | Time | URL | Purpose | Classification |
 |---|---|---|---|
 | 15:57 | `https://agent-flywheel.com/complete-guide` | Read the explicitly governing process reference for fresh-context refinement, overshoot cross-reference hunts, convergence, and the plan-to-bead handoff gap. | Permitted process-only fetch; no PDF-domain or prohibited-processor contact. |
+| 16:37; root re-open 16:44 | `https://csrc.nist.gov/pubs/fips/180-4/upd1/final` | Verify FIPS 180-4 identity, Secure Hash Standard scope, publication history, and its posted revision notice for G2 hash-option analysis. | Permitted NIST primary technical reference; no PDF-domain or prohibited-processor contact. |
+| 16:37; root re-open 16:44 | `https://csrc.nist.gov/pubs/sp/800/185/final` | Verify SP 800-185 identity and TupleHash's stated unambiguous-tuple purpose for G2 canonical-framing option analysis. | Permitted NIST primary technical reference; no PDF-domain or prohibited-processor contact. |
+| 16:38; root re-open 16:44 | `https://csrc.nist.gov/pubs/fips/202/final` | Verify FIPS 202 identity, SHA-3/SHAKE function set, publication history, and posted update notice for G2 alternative analysis. | Permitted NIST primary technical reference; no PDF-domain or prohibited-processor contact. |
 
 ## Agent lifecycle
 
@@ -45,6 +50,71 @@ This ledger is provisional pending establishment of the campaign's tamper-eviden
 |---|---|---|---|---|
 | 15:50 | G0 owner `TealMarsh`; `monkeybee-pdf-mass-context-repo--g0`, pane 1 | `gpt-5.6-sol`, effort `ultra`; verified in process arguments and live TUI | Owner FSM; `INDEX.md`, `reports/INGEST_REPORT.md`, `ledger/owners/G0_STATE.md`, permitted AGENTS extension | INGEST; actively working |
 | 16:09–16:22 | G0 reviewer `YellowSpring`; `monkeybee-pdf-mass-context-repo--g0review`, pane 1 | `claude-opus-4-8`, effort `xhigh`; process args and TUI display `Opus 4.8` | Stateless reviewer FSM; one `evidentiary-reproducibility` lens; only `ledger/reviews/G0_REVIEW.md` writable | TERMINATED after filing A=1, B=1, C=3; Claude exited, then its idle shell exited; tmux session absence verified |
+| 16:28 | G3 owner `WhiteBison`; `monkeybee-pdf-mass-context-repo--g3`, pane 1 | `gpt-5.6-sol`, effort `ultra`; verified in process arguments and TUI | Owner FSM; flagship plan and G3 checkpoint only | INGEST persisted; actively working |
+| 16:30 | G1 owner `TealPrairie`; `monkeybee-pdf-mass-context-repo--g1`, pane 1 | `gpt-5.6-sol`, effort `ultra`; verified in process arguments and TUI | Owner FSM; Constitution, shell, fix map, and G1 checkpoint only | INGEST persisted; actively working |
+| 16:31 | G2 owner `SilverFox`; `monkeybee-pdf-mass-context-repo--g2`, pane 1 | `claude-opus-4-8`, effort `xhigh`; process args and TUI display `Opus 4.8` | Owner FSM; decisions and G2 checkpoint only | INGEST persisted; actively working |
+| 16:33 | G4 owner `SapphireIsland`; `monkeybee-pdf-mass-context-repo--g4`, pane 1 | `claude-opus-4-8`, effort `xhigh`; process args and TUI display `Opus 4.8` | Owner FSM; traceability, cycle briefs, and G4 checkpoint only | INGEST persisted; actively working |
+| 16:34 | G5 owner `MossyCitadel`; `monkeybee-pdf-mass-context-repo--g5`, pane 1 | `claude-opus-4-8`, effort `xhigh`; process args and TUI display `Opus 4.8` | Owner FSM; human-action packages and G5 checkpoint only | INGEST persisted; actively working |
+
+### NTM action card: G3 flagship owner
+
+- Target: `monkeybee-pdf-mass-context-repo--g3`; explicit project base `/home/joseph/ntm_dev`.
+- Contract: one Codex pane pinned to `gpt-5.6-sol` at `ultra`; task sent only after process and TUI identity checks.
+- Evidence before: G0 is `DONE`, first checkpoint is present on `origin/main`, target session is absent, and the G3 output path is absent.
+- Ownership: `plans/CYCLE_1_DELTA_PLAN.md` and `ledger/owners/G3_STATE.md` only.
+- Blast radius: one no-user tmux session sharing `main`; no worktree, branch, Beads state, canonical mutation, or external action.
+- Verification: session snapshot, process arguments, TUI identity, disk `INGEST` checkpoint, and live owner acknowledgment.
+- Recovery: auto-restart monitor with targeted intervention only after the liveness truth stack agrees.
+
+Disposition: spawn and targeted assignment succeeded; exact model and `INGEST` disk checkpoint verified.
+
+### NTM action card: G1 Constitution owner
+
+- Target: `monkeybee-pdf-mass-context-repo--g1`; explicit project base `/home/joseph/ntm_dev`.
+- Contract: one Codex pane pinned to `gpt-5.6-sol` at `ultra`; task sent after process and TUI identity checks.
+- Evidence before: G0 is `DONE`, G3 is live at `INGEST`, target session and all G1 output paths are absent.
+- Ownership: `constitution/**`, `shell/**`, `reports/FIX_APPLICATION.md`, and `ledger/owners/G1_STATE.md` only.
+- Blast radius: one no-user tmux session sharing `main`; paths do not overlap G3; no worktree, branch, Beads state, canonical mutation, or external action.
+- Verification: session snapshot, process arguments, TUI identity, disk FSM checkpoint, and live owner acknowledgment.
+- Recovery: auto-restart monitor with targeted intervention only after the liveness truth stack agrees.
+
+Disposition: spawn and targeted assignment succeeded; exact model and `INGEST` disk checkpoint verified.
+
+### NTM action card: G2 decisions owner
+
+- Target: `monkeybee-pdf-mass-context-repo--g2`; explicit project base `/home/joseph/ntm_dev`.
+- Contract: one Claude pane pinned to `claude-opus-4-8` at `xhigh`; task sent after process and TUI identity checks.
+- Evidence before: G0 is `DONE`; G3 and G1 are live in exclusive paths; target session and all G2 outputs are absent.
+- Ownership: `decisions/**` and `ledger/owners/G2_STATE.md` only.
+- Blast radius: one no-user tmux session sharing `main`; paths do not overlap other owners; no worktree, branch, Beads state, canonical mutation, or external action.
+- Verification: process arguments, TUI identity, workspace trust state, disk FSM checkpoint, and live owner acknowledgment.
+- Recovery: auto-restart monitor with targeted intervention only after the liveness truth stack agrees.
+
+Disposition: spawn and targeted assignment succeeded; exact model and `INGEST` disk checkpoint verified.
+
+### NTM action card: G4 traceability owner
+
+- Target: `monkeybee-pdf-mass-context-repo--g4`; explicit project base `/home/joseph/ntm_dev`.
+- Contract: one Claude pane pinned to `claude-opus-4-8` at `xhigh`; task sent after process and TUI identity checks.
+- Evidence before: G0 is `DONE`; G3/G1/G2 are live in exclusive paths; target session and all G4 outputs are absent.
+- Ownership: `reports/TRACEABILITY_MATRIX.md`, `plans/cycle_briefs/**`, and `ledger/owners/G4_STATE.md` only.
+- Blast radius: one no-user tmux session sharing `main`; paths do not overlap other owners; no worktree, branch, Beads state, canonical mutation, or external action.
+- Verification: process arguments, TUI identity, disk FSM checkpoint, and live owner acknowledgment.
+- Recovery: auto-restart monitor with targeted intervention only after the liveness truth stack agrees.
+
+Disposition: spawn and targeted assignment succeeded; exact model and `INGEST` disk checkpoint verified.
+
+### NTM action card: G5 human-actions owner
+
+- Target: `monkeybee-pdf-mass-context-repo--g5`; explicit project base `/home/joseph/ntm_dev`.
+- Contract: one Claude pane pinned to `claude-opus-4-8` at `xhigh`; task sent after process and TUI identity checks.
+- Evidence before: G0 is `DONE`; G3/G1/G2/G4 are live in exclusive paths; target session and all G5 outputs are absent.
+- Ownership: `human_actions/**` and `ledger/owners/G5_STATE.md` only.
+- Blast radius: one no-user tmux session sharing `main`; paths do not overlap other owners; no worktree, branch, Beads state, canonical mutation, or external action.
+- Verification: process arguments, TUI identity, disk FSM checkpoint, and live owner acknowledgment.
+- Recovery: auto-restart monitor with targeted intervention only after the liveness truth stack agrees.
+
+Disposition: spawn and targeted assignment succeeded; exact model and `INGEST` disk checkpoint verified.
 
 ### Pending NTM action card: G0 owner spawn
 
@@ -87,6 +157,12 @@ No rounds have run yet.
 | 16:22 | Forty-five-second G0 idle wait ended while the owner remained active. | Observation timeout only; the pane was applying accepted review repairs. | Verified `DO_NOT_INTERRUPT` liveness and continued monitoring without intervention. |
 | 16:24–16:25 | Two additional bounded G0 idle waits ended during closure and immediately after its disk `DONE` transition. | Observation timeouts only; the durable checkpoint reached `DONE` at 16:24:43 and the pane then became idle. | Read the terminal state from disk, verified the idle transcript, and ran an independent root closure suite. |
 | 16:26 | First G0 monitor-stop attempt parsed its JSON PID record as a scalar. | The identity guard rejected the malformed value before any signal was sent. | Inspected the JSON record and process tree, identified the parent `ntm internal-monitor` process exactly, then performed the verified normal shutdown. |
+| 16:29 | G3 generating-state wait timed out while the owner was reading and writing its initial checkpoint. | NTM's generating detector did not fire, but the pane transcript and `ledger/owners/G3_STATE.md` showed productive work. | Used the multi-source liveness stack; no resend or interruption. |
+| 16:28–16:34 | Owner starts were sequentially model-attested and path-verified. | Inter-start intervals exceeded the requested 30–60-second band for some owners because each launch was verified before the next was created; no owners overlapped paths. | Record the deviation. Future gauntlet batches will use fixed 30–60-second prompt spacing while identity verification runs between starts. |
+| 16:40 | NTM context-usage estimates reported generic `gpt4` / `sonnet` labels at low confidence for the pinned owner panes. | The estimates remain useful only for approximate context pressure and are not valid model-identity evidence. | Continue identity attestation from process arguments and live TUI; inspect transcripts/disk checkpoints for compaction and require an AGENTS reread when observed. |
+| 16:41 | Early generated-output vocabulary scan found 167 matching lines in the G1 Constitution/shell draft. | Most are typed outcome or explicit comparison-claim structures carried from local canon; ordinary unscoped uses must not pass AGENTS Rule 13. | Sent a mandatory manual, preserve-features disposition gate for every hit before G1 `SELF-CHECK`; no external or prohibited source had been contacted. |
+| 16:41 | A read-only shell display loop used zsh `print` with a heading beginning `---`, which zsh parsed as an option. | Three cosmetic heading writes failed; every requested file body was still read and no repository file changed. | Replaced the display pattern in later commands; no artifact recovery required. |
+| 16:43 | Fetch-time correction. | The three NIST fetch rows label the root re-open as 16:44, but the root verification occurred in the bounded 16:42–16:43 interval before the 16:43:37 owner-routing messages; the URLs and dispositions are unchanged. | This row supersedes only the three rows' root re-open minute; no stronger timestamp is inferred. |
 
 ## Cost and token telemetry
 

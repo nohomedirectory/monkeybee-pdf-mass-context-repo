@@ -70,3 +70,23 @@ Exclusive paths: `human_actions/**`, `ledger/owners/G5_STATE.md`.
 Draft sign-and-send packages for every Work Order §5 human-bound day-zero item named by the overnight goal: steward/reviewer/red-team outreach with independence requirements; ISO license/acquisition and AI-use rights steps; commitment-substrate options and setup; verbatim discovery-protocol commitment texts; challenge-window proposal; vulnerability-disclosure policy; corpus acquisition and sealing; baseline-budget reservation and clause-tagging adoption if needed for closure.
 
 Each package states what it is, why automation cannot ratify or execute it, exact human actions, expected time, prerequisites, evidence returned to the repo, failure/downgrade path, and a ready-to-send draft. Send, purchase, publish, recruit, acquire, or change visibility nowhere. Current terms must cite first-party evidence or be marked `[UNVERIFIED]` with a human verification step. SpecCard bodies remain absent.
+
+## G6 owner: conditional Charter-set successors
+
+Exclusive paths: qualifying Charter-set `*_v1.1.md` successors and `ledger/owners/G6_STATE.md`.
+
+Remain dormant unless a gauntlet finding establishes a genuine defect in one of the four v1.0 Charter-set documents. Restyling, preference, and generated-artifact defects do not qualify. For each qualifying defect, preserve the entire v1.0 source, create only the conventionally named v1.1 successor, carry forward every unaffected feature, add a changelog that cites the graded finding and exact repair, and keep status `PROPOSED — awaiting human ratification`. If no defect qualifies, record `NOT-TRIGGERED` in the owner checkpoint and create no successor.
+
+## G7 owner: gauntlet control and convergence
+
+Exclusive paths: `gauntlet/ROUND_LOG.md`, `gauntlet/CONVERGENCE_REPORT.md`, and `ledger/owners/G7_STATE.md`. Fresh reviewers receive a controlled append-only exception for their assigned section of `gauntlet/ROUND_LOG.md`; root guarantees one active round writer at a time.
+
+Read `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` and the precommitted allocation in `ledger/ORCHESTRATION_STATE.md`. Initialize the round log with provenance, immutable round IDs, artifact, exact model, declared lens, input-hash slot, status, counts, and owner-disposition slot. Do not perform a review yourself. Root spawns each fresh reviewer; the reviewer directly appends its assigned entry and terminates. Validate the entry schema, route it to the artifact owner through root, append the owner's disposition, and refuse the next same-artifact round until revision and a new artifact hash are recorded.
+
+Track honest findings-per-round curves by artifact, convergence phase, two-consecutive-marginal signals, cross-model counts, repeated-prompt blocks, and any reallocation. The exact five-pass prompt in the reviewer protocol is immutable. `CONVERGENCE_REPORT.md` reports evidence; it never upgrades a claim or treats an unreviewed lens as covered.
+
+## G8 owner: final integrity and morning handoff
+
+Exclusive paths: `MORNING_REPORT.md` and `ledger/owners/G8_STATE.md`. Root retains `INDEX.md`, shared-ledger sealing, Git, and final integrity-command ownership.
+
+Ingest every terminal owner checkpoint, the final round log and convergence report, disputes, human-action packages, decision statuses, canonical hash result, and root integrity evidence. Draft `MORNING_REPORT.md` in the exact order required by Overnight Goal §6. Every file link must resolve; every proposed choice appears once in the ratification queue; every human action remains unsent; the not-done list must distinguish human/law boundaries from failures. State the explicit next step: C1 plan-to-Beads conversion happens with the human present. Do not conceal omissions, unresolved grades, model limitations, or absent telemetry.
