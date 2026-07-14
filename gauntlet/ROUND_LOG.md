@@ -82,7 +82,7 @@ Hash, status, counts, and disposition are slots. They are filled only from filed
 
 | Round | Artifact | Declared lens (exactly one) | Model | Block | Artifact hash | Status | A | B | C | Marginal-only | Owner disposition |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| R01 | C1 delta plan | envelope-dependency | Sol (fast) | — | `e019fe8c4bef82e8544147920529980c7d04fef1393e12591a36563eecc94daf` | ASSIGNED | — | — | — | — | — |
+| R01 | C1 delta plan | envelope-dependency | Sol (fast) | — | `e019fe8c4bef82e8544147920529980c7d04fef1393e12591a36563eecc94daf` | FILED · VALIDATED · TERMINATED | 8 | 2 | 0 | NO | ROUTED → G3 (artifact owner; in-place revision permitted); G3 triage pending. Gate 3 now armed: no further C1 round until G3 revises and exposes a new hash. |
 | R02 | C1 delta plan | PDF-normative-fact | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R03 | C1 delta plan | clean-room contamination | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R04 | C1 delta plan | oversimplification-and-feature-loss | Sol | 5-pass A (1/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
@@ -100,8 +100,8 @@ Hash, status, counts, and disposition are slots. They are filled only from filed
 | R16 | Constitution + fix map | oversimplification-and-feature-loss | Opus | 5-pass B (3/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R17 | Constitution + fix map | oversimplification-and-feature-loss | Sol | 5-pass B (4/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R18 | Constitution + fix map | oversimplification-and-feature-loss | Opus | 5-pass B (5/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
-| R19 | Charter-set cross-consistency | envelope-dependency | Sol | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 7 | 1 | 0 | NO | ROUTED → G6 (conditional); G6 triage pending. No v1.0 in-place edit. |
-| R20 | Charter-set cross-consistency | Q2/Q3 traceability | Opus | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 8 | 2 | 0 | NO | ROUTED → G6 (conditional); G6 triage pending. No v1.0 in-place edit. |
+| R19 | Charter-set cross-consistency | envelope-dependency | Sol | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 7 | 1 | 0 | NO | ROUTED → G6. **G6 triage returned: A01–A07 all QUALIFY** (bounded repairs, named targets). B01 premise-bounded, both branches preserved, unpromoted. No v1.0 in-place edit. G6 `DRAFT`; successors `PROPOSED — awaiting human ratification`. |
+| R20 | Charter-set cross-consistency | Q2/Q3 traceability | Opus | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 8 | 2 | 0 | NO | ROUTED → G6. **G6 triage returned: A01–A08 all QUALIFY.** B01, B02 unpromoted. No v1.0 in-place edit. G6 `DRAFT`; successors `PROPOSED — awaiting human ratification`. |
 | R21 | Charter-set cross-consistency | duplication/drift | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R22 | Charter-set cross-consistency | claim-vocabulary legality | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R23 | Traceability + cycle briefs | Q2/Q3 zero-orphan audit | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
@@ -541,3 +541,144 @@ This also makes live the confound already recorded in the model identity law abo
 **Where R01's findings will go.** To **G3**, the artifact's owner, which may revise in place — unlike the Charter-set rounds, whose findings route to G6 because their artifact is read-only canon. G3 triages and repairs; it does not self-review, and it may enter `REVISE` only after a fresh finding packet is persisted and routed. Every subsequent C1 round then requires a new artifact hash, per admission gate 3.
 
 **Write law now in force.** `gauntlet/ROUND_LOG.md` is closed to G7 until root reports R01 reviewer termination. The reviewer appends its own entry under the controlled append-only exception. G7 does not review, does not predict or pre-empt findings, and does not write into the space reserved for that entry. The R01–R32 allocation and all filed reviewer bytes are preserved.
+
+## R01 — plans/CYCLE_1_DELTA_PLAN.md — envelope-dependency
+
+- reviewer process: `monkeybee-pdf-mass-context-repo--r01` pane 1; PID 3169762
+- model identity: `gpt-5.6-sol`, `model_reasoning_effort=ultra`; PID 3169762 process arguments show `-m gpt-5.6-sol -c model_reasoning_effort=ultra`; live TUI footer shows `gpt-5.6-sol ultra fast`; scrollback shows `Service tier set to priority`
+- started / filed: 2026-07-14T17:49:17+02:00 / 2026-07-14T18:04:25+02:00
+- artifact hash: `e019fe8c4bef82e8544147920529980c7d04fef1393e12591a36563eecc94daf`; `ledger/owners/G3_STATE.md` says `owner-fsm: SUBMIT-FOR-REVIEW`
+- authority chain read: `AGENTS.md` in full; `OVERNIGHT_GOAL.md` §§1, 3/G3, 4; `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` in full; `gauntlet/ROUND_LOG.md` lines 524–543 only; `plans/CYCLE_1_DELTA_PLAN.md` in full; `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` §§1, 3–6, 8–11; `CYCLE_0_WORK_ORDER.md` §§0, 3, 6–8 (the document has no §9); `AUDIT_FINDINGS_LEDGER.md` OPEN-C0 rows R1-1–R1-9 and R2-N1–R2-N8 plus C1 dependency rows C-1, C-3, C-4, C-7, C-8; `CAMPAIGN_CHARTER_REASONING.md` §§3–8; `MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md` §§3–6, 10–16.6, 25–30.11, 33–35
+- reviewer FSM: SPAWNED -> INGEST-DECLARED-CHAIN -> APPLY-ONE-LENS -> FILE-GRADED-FINDINGS -> TERMINATED
+- counts: A=8; B=2; C=0
+- marginal-only: NO
+- no-action statement: Reviewed plan documents only. No processor source or documentation was contacted; no browsing, measurement, comparison, external action, code, scaffold, Beads state, pseudo-bead inventory, SpecCard semantic body, memory-supplied normative fact, or claim strengthening occurred. No plan, owner checkpoint, ledger, canon, or other file was changed; no commit or push occurred. This append is the sole write, and all evidence remains `provisional-pending-substrate`.
+
+### R01-A01 — Source admission is ordered before its required work context
+
+- evidence: `plans/CYCLE_1_DELTA_PLAN.md` §9.1 step 1 admits a source through BYT.001–BYT.003, then step 2 creates the FDN.004–FDN.008 context. BYT.001 explicitly depends on FDN.001–FDN.013 and performs budgeted, cancellation-aware reads; BYT.003 explicitly depends on FDN.004–FDN.013.
+- requirement: Rev 7 §§11.1 and P6 require budgets to precede work; Rev 7 §34.4 requires every public promise to have an acyclic prerequisite path; this plan §0 says contract links are semantic prerequisites.
+- consequence: The common envelope has no valid first operation: source snapshotting/spooling either runs before its required admission, budget, cancellation, authority, and disclosure context, or consumes a context the workflow has not produced.
+- repair boundary: G3 should either place operation/context admission before metered source admission or split a narrowly defined host-supplied source descriptor/capability from the later context-bound snapshot operation, then reconcile §9.1 and BYT.001–BYT.003 edges.
+- loss guard: Preserve immutable snapshot identity, explicit partial ranges, scoped-borrow promotion, no ambient I/O, non-resettable accounting, cancellation, and sensitivity inheritance.
+
+### R01-A02 — Strict document-view construction has a resolver/dialect/security bootstrap cycle
+
+- evidence: DOC.001 requires an exact `DocumentViewId` and effective mapping. DOC.002 is the producer of that view/mapping but explicitly depends on DOC.001 and DOC.003. DOC.003 itself takes a selected graph/view/revision, depends on DOC.001, and is consumed by DOC.002. The cycle is reinforced by DOC.001 -> REV.006 -> SEC.008, while SEC.008 requires an exact selected document view.
+- requirement: Work Order §3.4 requires an acyclic dependency graph; Rev 7 §34.4 forbids circular semantic ownership; Charter §§5/C1 requires a functioning strict R0 view and object history.
+- consequence: No contract can mint the first strict `DocumentViewId`, so object resolution, effective dialect, encrypted object-stream indexing, DOC.009 strict open, and every downstream report/gate lack a constructible prerequisite envelope.
+- repair boundary: G3 should introduce explicit pre-view bootstrap records/contracts for chain selection, raw effective mapping, limited resolution, dialect signals, and pre-view security context, then make the finalized view consume those records without any bootstrap producer requiring `DocumentViewId`.
+- loss guard: Preserve view-scoped identities, graph/view non-aliasing, exact duplicate/history evidence, capability-sensitive cache partitioning, and one-time object-stream decryption.
+
+### R01-A03 — Recovery hypothesis and candidate view require each other first
+
+- evidence: DOC.002 consumes a selected recovery hypothesis to emit a candidate `DocumentViewId`. REC.001 consumes a candidate view/value, explicitly depends on DOC.002, and emits the `RecoveryHypothesisId` required by REC.003–REC.009. No pre-view hypothesis identity or finalization edge is defined.
+- requirement: Rev 7 §§14.3–14.7 requires source-bound hypotheses and retained alternatives; Rev 7 §34.4 and Work Order §3.4 require acyclic ownership and dependency structure.
+- consequence: The first recovery candidate cannot be named without its view, and the view cannot be named without the candidate hypothesis. Implementers must invent an uncontracted provisional identity or collapse the two artifacts, undermining replay, cache, report, and alternative-retention roots.
+- repair boundary: G3 should define a two-phase edge: a hypothesis-basis identity derived from source/graph/registered assumptions first, a candidate view bound to that basis second, and a consequence/ordering receipt finalized afterward.
+- loss guard: Preserve strict-first admission, immutable source facts, explicit assumptions, nondominated alternatives, task-local selection, and the no-writeback boundary.
+
+### R01-A04 — Revision graph, preservation ledger, and signature ranges form a closed producer loop
+
+- evidence: BYT.005 is defined as an interval ledger over a revision graph and takes revision status plus signature coverage. REV.004 consumes BYT.005 and signature ranges to produce the immutable revision graph. REV.008 then consumes REV.004 and BYT.005 to produce structural signature ranges. REV.005 also consumes BYT.005 and an unnamed graph candidate while REV.004 consumes REV.005.
+- requirement: Charter §§5/C1 and ledger row R2-N1 require structural signature evidence inside R0; Rev 7 §§12.6, §12.11, and §34.4 require immutable graph identity, independent interval facets, and no circular ownership.
+- consequence: There is no first reproducible graph, ledger, or signature artifact. Any implementation must omit required inputs, mutate an allegedly immutable artifact, or invent an unowned graph-candidate/facet staging protocol, so the revision-autopsy and structural-signature gates cannot bind one defensible envelope.
+- repair boundary: G3 should separate pre-graph source intervals and occurrence facts, base graph finalization, post-graph signature analysis, and a versioned graph/ledger overlay or superseding derivation with explicit identities and consumers.
+- loss guard: Preserve exact raw spans, overlapping interval facets, unexplained ranges, immutable historical graph versions, structural-only signature scope, and later supersession without rewriting old evidence.
+
+### R01-A05 — The strict OpenReport edge is downstream of recovery that requires the strict result
+
+- evidence: DOC.009's strict result is consumed by REC.002, RPT.001, and RPT.003. RPT.001 nevertheless has an unqualified dependency on REC.001–REC.009 outputs, while RPT.003 depends on REC.007/REC.008. DOC.009 also says it outputs a strict `OpenReport`, although RPT.001 is the owning report-body contract.
+- requirement: Rev 7 §14.1 and P4 require a separately recorded strict result before recovery; plan §9.2 promises strict inspection without recovery; Charter §§5/C1 requires Workflow B to retain strict/recovery separation.
+- consequence: A strict-only request cannot close its formal OpenReport/security-report envelope without post-strict recovery artifacts, but recovery admission needs that strict artifact first. Report ownership is also duplicated between DOC.009 and RPT.001.
+- repair boundary: G3 should define one immutable strict result and base OpenReport producer with no REC prerequisite, then attach an optional, separately rooted recovery/security-across-hypotheses report or enrichment receipt after REC.002–REC.009 run.
+- loss guard: Preserve the original strict defect, optional recovery, all live alternatives, security conclusions across hypotheses when recovery is requested, and the prohibition on hidden repair.
+
+### R01-A06 — The capability manifest must contain the audit that audits that same manifest
+
+- evidence: RPT.006 produces the candidate manifest consumed by IMM.008, IMM.010, and IMM.012. RPT.006 says the candidate is not gate-admissible until those truth checks and the blocking audit pass for its exact root, yet its provenance also binds the drift-audit result. IMM.012 consumes that manifest and is in turn consumed by RPT.006.
+- requirement: Charter §§5/C1 and §6 require a blocking drift audit over the exact candidate; Rev 7 §§10.10, §27.4, and §34.4 require generated truth to be acyclic and artifact-bound.
+- consequence: One immutable manifest root cannot both be the audit input and include the later audit result. Regenerating it with that result changes the root and makes the audit stale; omitting the result violates RPT.006's own evidence envelope. Product-gate rows 8–9 therefore cannot bind the same candidate as written.
+- repair boundary: G3 should keep the candidate manifest immutable, make IMM.012 emit a separate audit/admission receipt over that root, and let discovery/release surfaces expose the pair or an outer admission envelope without changing the candidate root.
+- loss guard: Preserve exact build/toolchain/dependency binding, decision/card/provider blocks, lifecycle states, pre-work discovery, and the rule that a manifest never self-awards gate passage.
+
+### R01-A07 — Prospective C1 ledger evidence has no producer before C1 candidate work
+
+- evidence: Charter §3 requires the production ledger to open before any implementation agent runs. IMM.017 is itself a C1 capability whose precondition says that ledger is already open before candidate generation, but IMM.017 depends on FDN.001–FDN.016, RPT.004–RPT.006, and IMM.012–IMM.016—artifacts produced only after substantial C1 work. Plan §11.5 then requires an IMM.017 trial record for campaign closure.
+- requirement: Charter §§3 and §6 plus Work Order §3 require prospective attempt/failure capture and a sealed trial record; Rev 7 §§33.1 forbids reconstructed history from supporting prospective foundry evidence.
+- consequence: Implementing IMM.017 inside the cycle it must observe leaves the earlier interval without its producer. Those entries can only be retrospective under IMM.017's own law, so the C1 sealed-trial envelope either has a permanent evidence gap or cannot close.
+- repair boundary: G3 should name a pre-C1 bootstrap ledger implementation/interface and record schema, its human/D1/D2/D6 admission, and an append-only handoff or verification path into IMM.017; otherwise candidate generation must remain blocked until that producer exists.
+- loss guard: Preserve every failed/discarded attempt, explicit retrospective status, writer isolation, correction links, secret/restricted-text exclusion, and the distinction between a local chain and the human-held commitment substrate.
+
+### R01-A08 — Required assurance lanes and the fuzz baseline have no gate-bearing result producer
+
+- evidence: Charter §§4 says C1 emits a fuzz baseline and Charter §§5/C1 requires G0–G3-subset lane results. Plan §10.2 calls the fuzz baseline a versioned evidence artifact and §11.4 requires G0/G1/G2/G3-subset/G5/G6 evidence, but the closed contract catalog provides target families and FUZ.011's reachable-panic aggregate only. IMM.009 expressly says its edge coverage is inventory evidence, not proof that a fixture or capability works. No contract produces the G0–G3 run/result envelope or the §10.2 baseline consumed by IMM.017 and the close gate.
+- requirement: Work Order §7 requires fuzz targets, falsifiers, and the zero-reachable-panics gate as first-class C1 evidence; plan §5 requires every gate-bearing capability to have a stable consequence contract; Charter §6 requires a reproducible blocking close gate.
+- consequence: The close gate can prove metadata linkage and panic status but cannot bind the exact executions, outcomes, coverage, rights/card roots, cancellations, failures, and candidate build for the other required assurance lanes or the promised baseline.
+- repair boundary: G3 should assign stable producer contracts for assurance-run manifests, lane-result aggregation, and the fuzz-baseline artifact (or explicitly widen an existing contract to own them), then link their exact roots into FUZ.011, IMM.017, and product/campaign gates.
+- loss guard: Preserve failed/cancelled runs, exact build/toolchain/corpus/card/rights scope, independent-oracle lineage, the unavailable G3-subset branch, no premature comparison, and no universal inference from corpus survival.
+
+### R01-B01 — Card-registry bootstrap state is not separated from its generated runtime projection
+
+- evidence: Plan §3.4 requires applicable cards before implementation admission. IMM.001 depends on FDN.001–FDN.016 while stating that every normative C1 contract consumes IMM.001. The existing G1 registry is described only as an empty draft input; the plan does not state whether its later human-reviewed form is the pre-FDN authority artifact or whether the FDN-rooted IMM.001 output is required.
+- requirement: Charter §3 requires the SpecCard pipeline and reviewed coverage before the C1 swarm; Rev 7 §§4.3 and §34.4 require an authoritative reviewed source path with no circular semantic ownership.
+- consequence: Strong local evidence indicates an activation cycle: FDN contracts need card admission, while the formal registry depends on those same FDN contracts. A separately governed human registry could break the cycle, but that producer/handoff is not explicit.
+- repair boundary: G3 should distinguish the pre-implementation human-reviewed authority registry from its later canonical/generated runtime projection and state which identity/status gates FDN implementation and how the projection verifies without superseding it.
+- loss guard: Preserve `PENDING-LICENSED-SOURCE`, rights flags, two-person meaning review, no model-memory semantics, immutable review provenance, and exact SC.C1-to-MB-SC linkage.
+
+### R01-B02 — Checker isolation lacks pre-run and post-trial lifecycle states
+
+- evidence: IMM.013 explicitly depends on IMM.014. IMM.014 takes seeded-defect trial records as inputs, emits detections/misses in `OracleLineage`, and says incomplete lineage blocks the stronger checker row; those trial records must be produced by exercising the checker. Plan §11.5 requires the resulting D4 roots in the cycle record.
+- requirement: Charter §3 and Reasoning §§4 require different-model-family checking and measured seeded-defect detection; Rev 7 §§10.2.1 and §27.1 require explicit oracle lineage and scoped independent falsifiers.
+- consequence: The plan does not identify which IMM.014 state permits the first IMM.013 trial. It therefore appears to require post-trial evidence before the checker run that produces it, unless an unstated preliminary lineage record is intended.
+- repair boundary: G3 should separate a pre-run isolation plan/lineage admission from seeded-defect trial results and the final supportable checker-claim record, with explicit identities and gate consumers for each stage.
+- loss guard: Preserve different-model-family authorship, specification isolation, prohibition on shared parser/encoder/root construction and producer fixtures, known correlations, and Grade-A treatment of seeded misses under the ratified profile.
+
+### Round verdict
+
+G3 revision is required after reviewer termination. Eight confirmed envelope defects block first-producer construction or exact gate closure; two probable defects require explicit bootstrap/lifecycle staging. This lens is not marginal-only. Repairs are bounded above and route to G3; none was applied by R01. All findings and the verdict remain `provisional-pending-substrate`.
+
+### R01 — G7 validation and routing disposition (2026-07-14 17:52 — ⚠ TIME LABEL SUPERSEDED, see correction below)
+
+> **The `17:52` label in this heading is impossible and is superseded.** R01's reviewer entry is filed at `2026-07-14T18:04:25+02:00`; this disposition necessarily followed it. The label is preserved unedited as audit history. Corrected bound: this integration occurred **after `18:04:25`** and **at or before `18:11:10`** (clock-verified). The exact second was not recorded at the time and is **not** invented here. Every hash, count, attestation, routing decision, and gate statement in this disposition was verified against disk and stands unchanged; only the time label was defective. Full correction trail: `ledger/owners/G7_STATE.md`, entry `18:11 — CORRECTION ENTRY`.
+
+Written by the G7 owner after root reported reviewer termination and verified session absence. G7 validates structure and identity. **G7 does not review, re-grade, confirm, refute, promote, or repair a finding.** Nothing below asserts that any R01 finding is correct; that judgment is G3's.
+
+**Append-only integrity: PROVEN.** The pre-entry prefix — first 103,283 bytes, 543 lines — hashes to `1d73757aa203bbba823df07b27ed8d4dbe39b2666ad408ba7f935a30554843e2`, recomputed by G7 and identical to root's committed value. No byte preceding R01's entry was altered: R19's and R20's reviewer entries, findings, and dispositions are byte-intact by cryptographic evidence. Reviewer bytes are preserved; G7 appends below them and rewrites nothing.
+
+**Artifact stability: PROVEN.** `plans/CYCLE_1_DELTA_PLAN.md` still hashes to `e019fe8c…4daf`, identical to the value bound at assignment and to the value the reviewer recorded before analysis. The plan did not change under the reviewer. No `STALE-ASSIGNMENT`.
+
+**Schema validation: PASS**, recomputed by G7 from the entry rather than taken from the packet:
+
+| Check | Result |
+|---|---|
+| Exactly one declared lens (`envelope-dependency`) | Pass — matches the R01 assignment |
+| Artifact hash recorded before analysis | Pass — equals the bound hash; owner state `SUBMIT-FOR-REVIEW` independently noted by the reviewer |
+| Counts match filed findings | Pass — declared `A=8; B=2; C=0`; G7 recount: 8 A (A01–A08), 2 B (B01–B02), 0 C |
+| Every finding carries evidence, requirement, consequence, repair boundary, loss guard | Pass — G7 recount: 10 of each across 10 findings |
+| Monotonic IDs; empty grade subsection omitted while `C=0` declared | Pass |
+| `marginal-only: NO` | Pass — consistent with the precommitted definition |
+| No repair written into artifact or log | Pass — repair boundaries are named and bounded; none applied |
+| Round verdict present | Pass |
+| Lens purity | Pass on inspection — all ten findings argue envelope dependency and producer/gate ordering |
+
+**Model identity: three attestations, all satisfied.** Process arguments (PID 3169762) show `-m gpt-5.6-sol -c model_reasoning_effort=ultra`; the live TUI footer shows `gpt-5.6-sol ultra fast`; scrollback shows `Service tier set to priority`. R01 is the **first Sol round to run under the 17:39 live human fast-mode control**, and it attested it: the required `ultra fast` footer was verified before the review task was sent. No `MODEL-MISMATCH`, no control deviation.
+
+**Presentation deviation recorded, not repaired.** No standalone `TERMINATED` line follows the round verdict; termination is carried in the required reviewer-FSM field (`SPAWNED -> INGEST-DECLARED-CHAIN -> APPLY-ONE-LENS -> FILE-GRADED-FINDINGS -> TERMINATED`). **Disposition: the protocol's requirement is met.** It requires the reviewer to "state `TERMINATED` in the entry," and the entry states it in the schema field built to carry it. The standalone trailing line used by R19 and R20 is a convention those reviewers adopted, not a schema field the protocol defines. Recorded for transparency because root asked; G7 does not rewrite reviewer bytes to normalize presentation, and this deviation costs no evidence.
+
+**Post-filing compaction, recorded.** The reviewer compacted **after** filing, then on root's exact reminder reread `AGENTS.md` in full and made **no change** before normal termination. Two things follow, and both matter for how much this entry can be trusted. First, the compaction cannot have influenced the findings — they were already on disk when it happened. Second, because no post-compaction edit was made, the filed bytes are the pre-compaction bytes: the entry validated here is the entry the reviewer wrote while it still held its full reading context. Compaction after filing is the harmless ordering; the harmful one would be compaction *during* analysis, and that is not what occurred.
+
+**Routing disposition — all ten findings route to G3. This is the first round whose findings may be repaired in place.**
+
+| Findings | Grade | Routed to | Basis |
+|---|---|---|---|
+| R01-A01 – R01-A08 | A | **G3 (artifact owner)** | `plans/CYCLE_1_DELTA_PLAN.md` is a generated campaign artifact under an active owner, not read-only canon. G3 triages and repairs in place — unlike R19/R20, whose findings route to G6 precisely because the Charter set cannot be edited. |
+| R01-B01, R01-B02 | B | **G3, premise-first** | Each is a probable defect requiring explicit bootstrap/lifecycle staging, with one unresolved premise. G3 resolves the premise before deciding whether a defect exists. **A Grade B is not a confirmed defect, is not promoted here, and is not to be treated as one.** |
+
+Each finding's `loss guard` binds any repair G3 makes. The governing constraint on this artifact is OVERNIGHT_GOAL §4's standing instruction — **DO NOT LOSE FEATURES** — and a repair that resolves an envelope defect by deleting the capability it depends on is a worse artifact, not a fixed one. G3 does not self-review and may enter `REVISE` only after this packet is persisted and routed.
+
+**Gate 3 is now armed on this artifact.** No further C1 round may be admitted until G3 enters `REVISE`, dispositions and repairs R01, returns to `SUBMIT-FOR-REVIEW`, and exposes a **new** artifact hash. R02 is not assigned and will not be admitted against `e019fe8c…4daf`. This is the rule that makes the R01–R12 sequence a convergence series rather than twelve independent reads of the same bytes.
+
+**What this round establishes, and what it does not.** One fresh `gpt-5.6-sol` process, reading the 3,091-line C1 delta plan under one lens, filed eight Grade-A and two Grade-B findings. It does **not** establish that those findings are correct — G3 triage decides that — and it says nothing about any lens R01 did not apply. The flagship has now been reviewed once, under one of its twelve allocated lenses.
+
+**Log released.** G7 returns to `DRAFT`. R02 is **not** assigned; root issues it after G3's revision and a new hash.
