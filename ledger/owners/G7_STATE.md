@@ -304,3 +304,23 @@ What I take from it, and what I have written into the report so a later reader i
 `git diff --check`: **PASS.** Reviewer bytes and filed grades untouched — R19 8/1/0 findings, R20 10, R01 10; declared counts unchanged. Allocation intact at 32 rows. **R02 remains `PRECOMMITTED`** and unassigned.
 
 Owner FSM: `DRAFT`. **Log released.**
+
+### 18:17:08 — R21 ASSIGNED (control-plane write only); log closed to G7
+
+Clock read at `2026-07-14T18:17:08+02:00` immediately before writing. No inferred second appears in this entry or in the R21 assignment record.
+
+Root's first R21-preparation message arrived shell-mangled, with the manifest hash, lens, model, effort, footer, and session name all empty. Root then sent an authoritative correction supplying them. **Before that correction arrived, I had already measured the values rather than guessing them** — I read `/proc/3231216/cmdline` and the tmux pane table instead of inferring `ultra` vs `max` from precedent. Root's corrected values and my independent measurements agree on every field. Given that I fabricated a plausible-looking value twice within the previous hour, guessing an unstated effort — and the footer string that depends on it — was exactly the failure this record now exists to prevent. Measurement, not inference, and it cost one command.
+
+- Artifact: the four v1.0 Charter-set documents, read-only canon. Bound hash `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a`, recomputed at assignment; per-file digests still match `ledger/CANONICAL_HASHES.md`.
+- Sole lens: `duplication/drift` — matches the precommitted R21 lens.
+- Model: `gpt-5.6-sol`, effort `ultra`, fast mode, service tier priority.
+- Reviewer: session `monkeybee-pdf-mass-context-repo--r21` pane 1, `PearlDuck`, PID 3231216. `PPid` 3230983 equals the pane's `pane_pid`, binding process to pane. Root attested the same args, `Service tier set to priority`, and a live `ultra fast` footer.
+- Status: `ASSIGNED`, not `FILED`. **No review prompt has been sent.**
+
+All seven admission gates checked. Gate 3 is satisfied twice over: R21 declares a different lens from both R19 and R20, and the read-only-canon exception independently admits consecutive rounds against unchanged bytes.
+
+**One constraint I made explicit in the assignment because this lens is unusually vulnerable to it:** the reviewer must **not** ingest R19's or R20's filed findings. A `duplication/drift` reviewer primed with fifteen existing Grade-A findings is not a fresh-context reviewer, and its agreement with them would demonstrate correlation, not corroboration. It may read the manifest definition and the R21 assignment record; it may not read prior results. R20's reviewer observed the same discipline and said so in its entry.
+
+**What I did not do:** I did not review, predict, grade, or integrate anything; I touched no filed reviewer bytes (R19, R20, R01 all intact); I set only R21 to `ASSIGNED`; I did not transition the owner FSM.
+
+Owner FSM: unchanged at `DRAFT`. **`gauntlet/ROUND_LOG.md` is closed to G7** until root reports R21 reviewer termination.
