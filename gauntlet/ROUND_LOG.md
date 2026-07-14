@@ -102,7 +102,7 @@ Hash, status, counts, and disposition are slots. They are filled only from filed
 | R18 | Constitution + fix map | oversimplification-and-feature-loss | Opus | 5-pass B (5/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R19 | Charter-set cross-consistency | envelope-dependency | Sol | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 7 | 1 | 0 | NO | ROUTED → G6. **G6 triage returned: A01–A07 all QUALIFY** (bounded repairs, named targets). B01 premise-bounded, both branches preserved, unpromoted. No v1.0 in-place edit. G6 `DRAFT`; successors `PROPOSED — awaiting human ratification`. |
 | R20 | Charter-set cross-consistency | Q2/Q3 traceability | Opus | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 8 | 2 | 0 | NO | ROUTED → G6. **G6 triage returned: A01–A08 all QUALIFY.** B01, B02 unpromoted. No v1.0 in-place edit. G6 `DRAFT`; successors `PROPOSED — awaiting human ratification`. |
-| R21 | Charter-set cross-consistency | duplication/drift | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
+| R21 | Charter-set cross-consistency | duplication/drift | Sol (fast) | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | ASSIGNED | — | — | — | — | — |
 | R22 | Charter-set cross-consistency | claim-vocabulary legality | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R23 | Traceability + cycle briefs | Q2/Q3 zero-orphan audit | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R24 | Traceability + cycle briefs | dependency soundness | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
@@ -682,3 +682,28 @@ Each finding's `loss guard` binds any repair G3 makes. The governing constraint 
 **What this round establishes, and what it does not.** One fresh `gpt-5.6-sol` process, reading the 3,091-line C1 delta plan under one lens, filed eight Grade-A and two Grade-B findings. It does **not** establish that those findings are correct — G3 triage decides that — and it says nothing about any lens R01 did not apply. The flagship has now been reviewed once, under one of its twelve allocated lenses.
 
 **Log released.** G7 returns to `DRAFT`. R02 is **not** assigned; root issues it after G3's revision and a new hash.
+
+## R21 — ASSIGNED 2026-07-14T18:17:08+02:00
+
+Assignment timestamp read from the system clock immediately before this record was written. No inferred second appears in this entry.
+
+- Artifact: Charter-set cross-consistency — the same four v1.0 Charter-set documents fixed by the R19 manifest, read-only canon.
+- Declared lens: `duplication/drift`. Exactly one. Matches the precommitted R21 lens.
+- Assigned model: `gpt-5.6-sol`, effort `ultra`, **fast mode, service tier priority**. Matches the precommitted `Sol` label and the 17:39 live human fast-mode control.
+- Bound artifact hash: `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` — the same immutable manifest bound for R19 and R20.
+- Reviewer session: `monkeybee-pdf-mass-context-repo--r21` pane 1, identity `PearlDuck`, PID 3231216.
+- **No review prompt has been sent.** The reviewer process exists and is idle at assignment time.
+
+**Manifest recomputed and attested at assignment, independently of R19 and R20.** The manifest hash reproduces `718928bb…570c4a` exactly, and the four per-file digests remain byte-identical to `ledger/CANONICAL_HASHES.md`. The Charter set has not drifted since the run opened. Re-attesting at every binding is the rule; an inherited hash attests only that a previous round happened.
+
+**Reviewer identity: measured, not accepted.** G7 read the live process rather than transcribing the assignment. `/proc/3231216/cmdline` = `codex --dangerously-bypass-approvals-and-sandbox -m gpt-5.6-sol -c model_reasoning_effort=ultra -c model_reasoning_summary_format=experimental --search`. `/proc/3231216/status` `PPid` = 3230983, which equals the `pane_pid` of `monkeybee-pdf-mass-context-repo--r21` pane 1 — binding the attested model process to the assigned pane. Root independently attested the same process arguments, `Service tier set to priority`, and a live `ultra fast` footer. Two independent observations agree; neither was derived from the other.
+
+**Admission gates, checked against this binding.** Gate 1 (artifact ready): satisfied — read-only canon under no owner FSM. Gate 2 (bound hash): satisfied and recomputed. Gate 3 (same-artifact re-round): satisfied on two independent grounds — R21 declares a **different** lens from R19 (`envelope-dependency`) and R20 (`Q2/Q3 traceability`), which the general rule permits against an unchanged artifact; and the read-only-canon exception for R19–R22 independently admits consecutive rounds because no revision is possible. Gate 4 (model): satisfied, including the fast-mode control. Gate 5 (exactly one lens): satisfied. Gate 6 (five-pass prompt): not engaged; R21 is not a block round. Gate 7 (fresh reviewer): a new process with no authoring context; root guarantees it at spawn.
+
+**Freshness constraint on the authority chain — load-bearing for this lens.** The reviewer must **not** ingest R19's or R20's filed findings. It may read the manifest definition and this assignment record; it may not read the prior rounds' results. A `duplication/drift` reviewer primed with fifteen existing Grade-A findings is no longer a fresh-context reviewer, and its agreement with them would prove correlation, not corroboration. R20's reviewer observed the same discipline and recorded it. This is what makes an independent round independent.
+
+**R21 binds to the v1.0 bytes; G6's pending successors do not change that.** G6 has returned `QUALIFY` triage on the fifteen Charter-set Grade-A findings and may produce `*_v1.1.md` successors. A successor is a **new artifact with a new identity** — the v1.0 Charter set is read-only and its bytes cannot change. R21 reviews the v1.0 documents at this hash, exactly as R19 and R20 did.
+
+**Where R21's findings will go.** To **G6** (conditional), under the read-only-canon exception. Not to an in-place fix.
+
+**Write law now in force.** `gauntlet/ROUND_LOG.md` is closed to G7 until root reports R21 reviewer termination. The reviewer appends its own entry under the controlled append-only exception. G7 does not review, does not predict or pre-empt findings, and does not write into the space reserved for that entry. All filed reviewer bytes (R19, R20, R01) and the full R01–R32 allocation are preserved.
