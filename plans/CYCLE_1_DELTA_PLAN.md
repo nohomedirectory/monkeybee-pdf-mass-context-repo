@@ -126,6 +126,8 @@ Generated prose, passing tests, and model confidence cannot cleanse a contaminat
 
 Every consequence contract carries one or more project slot IDs. A slot contains only identity, ownership, expected review state, and linkage metadata. It contains no paraphrased semantic body during this plan-space run. Every slot is written as `PENDING-LICENSED-SOURCE`.
 
+`PENDING-LICENSED-SOURCE` remains the uniform plan-space marker on every contract-local and actual registry slot throughout this document. It records the live no-body boundary, not a later linkage decision. Neither the pre-C1 resolution manifest nor a runtime projection changes that marker in this plan or makes a slot active.
+
 The sequence is two-stage. Before any C1 implementation admission, the authorized human/source pipeline must produce an immutable `ReviewedCardAuthoritySnapshotId`/`CardAuthoritySnapshotId` after rights checks, project paraphrase, and two-person meaning review. C1 IMM.001 may then create a runtime coverage projection of that snapshot. The projection is not authority, cannot activate a pending slot, and cannot repair a missing upstream review.
 
 Implementation admission consumes the pre-C1 authority snapshot and may additionally use IMM.001’s projection for runtime discovery. If a needed card is absent, disputed, unavailable, or lacks model-use rights, the capability remains unavailable or returns a narrower outcome. An agent must not fill the gap from memory. The preimplementation gate refuses candidate work unless the reviewed authority snapshot and the IMM.018 prospective-ledger bootstrap both predate it.
@@ -146,6 +148,10 @@ G1's draft `constitution/SPECCARD_PIPELINE.md` now provides the actual empty R0 
 | Recovery | Every syntax or structure slot implicated by a hypothesis; recovery ordering itself remains project policy | `PENDING-LICENSED-SOURCE` |
 
 This crosswalk is intentionally only a coverage relation. It does not assert sufficiency, quote a requirement, resolve an ambiguity, or populate a semantic body. Licensed extraction may split slots or add new empty IDs without allowing a local contract label to substitute for them.
+
+Before implementation admission, the authorized pre-C1 human/source pipeline is the sole authoring owner of an immutable `CardLinkResolutionManifestId`. It binds the exact plan root, contract-registry root, `ReviewedCardAuthoritySnapshotId`/`CardAuthoritySnapshotId`, and all 149 `SC.C1.*` IDs. Each local ID has exactly one resolution record selecting either (a) one or more applicable `MB-SC-R0-*` entries proven active by the reviewed authority snapshot or (b) an explicit human-reviewed project-law disposition. A project-law record binds a stable project-law authority ID, authorized reviewer identities, a review record, and a rationale limited to why no external normative card is required; it contains no semantic body.
+
+No agent inference, empty mapping, ambiguous branch, or default “no card needed” decision is admissible. Every applicable actual R0 card has at least one local consumer; an extraction-time split or added empty ID blocks admission until a successor manifest records its consumers. The manifest is linkage evidence only: it is not a second normative home, does not assert sufficiency, cannot activate any slot, and leaves every slot in this plan exactly `PENDING-LICENSED-SOURCE`. IMM.001 owns only its runtime projection, and IMM.009 owns only the bidirectional zero-orphan check.
 
 ## 4. Decision dependencies
 
@@ -2165,21 +2171,21 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.IMM.001@1` — SpecCard/clause-tagging runtime projection and coverage registry
 
 - Identity, lifecycle, layer: active C1 L7 runtime-metadata projection contract; it projects a pre-C1 human/source-pipeline authority snapshot and never creates, approves, or supersedes card authority.
-- Inputs and identity domain: immutable pre-C1 `ReviewedCardAuthoritySnapshotId`/`CardAuthoritySnapshotId`, stable slot ID, owning capability/contracts, source class, edition/clause/table/algorithm tag fields, rights status, reviewer roles, lifecycle, and coverage links. Every unreviewed source-location field remains `PENDING-LICENSED-SOURCE`; no tag is guessed.
-- Preconditions: the authority snapshot predates implementation admission and records licensed access, AI-use rights, project paraphrase, and two-person meaning review for every active card; absent or pending authority stays blocked. G3 supplies slots only and supplies no semantic body.
+- Inputs and identity domain: immutable pre-C1 `ReviewedCardAuthoritySnapshotId`/`CardAuthoritySnapshotId`, immutable `CardLinkResolutionManifestId`, all 149 stable local link IDs, owning capability/contracts, source class, edition/clause/table/algorithm tag fields, rights status, reviewer roles, lifecycle, and coverage links. Every unreviewed source-location field remains `PENDING-LICENSED-SOURCE`; no tag is guessed.
+- Preconditions: the authority snapshot and resolution manifest predate implementation admission; the snapshot records licensed access, AI-use rights, project paraphrase, and two-person meaning review for every active card, while the manifest binds every local link to one reviewed-card branch or explicit human-reviewed project-law disposition. Absent, pending, ambiguous, or unreviewed authority stays blocked. G3 supplies slots only and supplies no semantic body.
 - Card slots: `SC.C1.IMM.CARD-REGISTRY.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: slots, links, review records, rights fields, coverage checks, diagnostics, and generated outputs are bounded.
 - Cancellation: registry update is transactional; partial extraction/review cannot mark a slot active.
-- Authority and secrets: only authorized standards/rights reviewers may create the pre-C1 snapshot; this projection can reject or narrow it but cannot populate/approve bodies. Implementation agents receive only the approved projection, never restricted raw text.
-- Outputs and outcomes: runtime `CardRegistryProjectionId`, clause-tagging coverage map, R0 coverage map, pending/blocked/active state copied from authority, exact gaps, reviewer provenance, and rights flags.
-- Diagnostics: missing source/rights/reviewer, model-use denied, duplicate ID, body present without authorization, stale edition, and orphan link.
-- Evidence and provenance: every projected entry binds the pre-C1 authority-snapshot root, source-rights record, author/reviewers, dates, source reference—not copied prose—and linked contracts/tests.
+- Authority and secrets: only authorized standards/rights reviewers may create the pre-C1 snapshot, and only the authorized pre-C1 human/source pipeline may author the resolution manifest and its project-law dispositions; this projection can reject or narrow either input but cannot mutate them or populate/approve bodies. Implementation agents receive only the approved projection, never restricted raw text.
+- Outputs and outcomes: runtime `CardRegistryProjectionId`, linkage projection of `CardLinkResolutionManifestId`, clause-tagging coverage map, R0 coverage map, pending/blocked/active state copied from upstream authority, exact gaps, reviewer provenance, and rights flags.
+- Diagnostics: missing source/rights/reviewer, model-use denied, duplicate ID, body present without authorization, stale edition, unmapped or multiply mapped local link, unauthorized project-law disposition, missing applicable-card consumer, and orphan link.
+- Evidence and provenance: every projected entry binds the pre-C1 authority-snapshot root, resolution-manifest root, source-rights record, author/reviewers, dates, source reference—not copied prose—and linked contracts/tests.
 - Determinism and replay: D0 projection root under exact authority snapshot and canonical metadata; review decisions remain upstream attestations with explicit authority.
-- Falsifiers and Gauntlet: semantic-body scan in pending slots, raw-source excerpt detection, one-person approval, orphan/missing links, stale status, and model-context leak.
+- Falsifiers and Gauntlet: semantic-body scan in pending slots, raw-source excerpt detection, one-person approval, missing/default/ambiguous resolution branch, unauthorized project-law disposition, actual-card reverse orphan, stale status, and model-context leak.
 - Surfaces: contract registry, capability manifest, validation admission, generated docs/tests, drift auditor, and close gate.
-- Dependencies and consumers: depends on the pre-C1 human/source pipeline’s immutable authority snapshot plus FDN.001–FDN.016 for runtime projection; IMM.002–IMM.005/IMM.009/IMM.011 and RPT.006 consume the projection. Normative implementation admission consumes the pre-C1 authority snapshot, not authority minted by IMM.001.
+- Dependencies and consumers: depends on the pre-C1 human/source pipeline’s immutable authority snapshot and `CardLinkResolutionManifestId` plus FDN.001–FDN.016 for runtime projection; IMM.002–IMM.005/IMM.009/IMM.011 and RPT.006 consume the projection. Normative implementation admission consumes the two pre-C1 artifacts, not authority minted by IMM.001.
 - Migration and withdrawal: source/card revision versions the entry and triggers coverage/claim-impact review; old reviewed card remains historical.
-- No-claim boundary: a projection, slot ID, empty clause tag, or agent-authored text is not normative evidence; `PENDING-LICENSED-SOURCE` admits no implementation semantics, citation accuracy, or coverage sufficiency.
+- No-claim boundary: a resolution record, projection, slot ID, empty clause tag, or agent-authored text is not normative evidence and cannot activate a slot; `PENDING-LICENSED-SOURCE` admits no implementation semantics, citation accuracy, or coverage sufficiency.
 - Rationale: explicit upstream authority prevents a runtime registry from bootstrapping its own normative inputs while preserving the clean-room firewall.
 
 #### `C1.CC.IMM.002@1` — Consequence-contract registry
@@ -2325,19 +2331,19 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.IMM.009@1` — Schema/card/fixture coverage truth check
 
 - Identity, lifecycle, layer: active C1 L7 repository-gate contract; it checks bidirectional coverage among contracts, cards, schemas, fixtures, fuzz targets, and gate rows.
-- Inputs and identity domain: contract/card/report/diagnostic registries, fixture and fuzz manifests, capability surface, and cycle-gate matrix.
-- Preconditions: every manifest uses stable IDs and lifecycle states; pending cards cannot count as active coverage.
+- Inputs and identity domain: contract/card/report/diagnostic registries, exact `CardLinkResolutionManifestId`, fixture and fuzz manifests, capability surface, and cycle-gate matrix.
+- Preconditions: every manifest uses stable IDs and lifecycle states; every `SC.C1.*` ID has exactly one authorized resolution record, every applicable actual R0 card has a local consumer, and pending cards cannot count as active coverage.
 - Card slots: `SC.C1.IMM.COVERAGE-TRUTH-CHECK.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: registry nodes/edges, graph traversal, cycles/orphans, diagnostics, and output records are bounded.
 - Cancellation: cancelled traversal cannot assert zero orphans; exact visited scope is reported.
 - Authority and secrets: read-only metadata; held-out fixture content is unavailable, and only steward commitments/manifests are visible.
-- Outputs and outcomes: missing/orphan/duplicate/stale links, pending-card blocks, uncovered surface/outcome/falsifier, and bidirectional coverage summary.
-- Diagnostics: source and target IDs, missing edge type, lifecycle mismatch, held-out leakage, and generated/manual conflict.
-- Evidence and provenance: report binds all registry roots, graph/checker version, held-out manifest identities, and traversal coverage.
+- Outputs and outcomes: missing/orphan/duplicate/stale links, invalid resolution branches, unauthorized project-law dispositions, pending-card blocks, uncovered surface/outcome/falsifier, and bidirectional coverage summary.
+- Diagnostics: source and target IDs, resolution branch/reviewer record, missing edge type, lifecycle mismatch, held-out leakage, and generated/manual conflict.
+- Evidence and provenance: report binds all registry roots, resolution-manifest root, graph/checker version, held-out manifest identities, and traversal coverage.
 - Determinism and replay: D0 under exact roots/protocol.
-- Falsifiers and Gauntlet: remove each edge class, orphan fixture, card without contract, contract without refusal test, hidden surface, pending-as-active, and held-out content leak.
+- Falsifiers and Gauntlet: remove each edge class, omit or multiply map a local link, default to no-card-needed, forge a project-law disposition, orphan an applicable actual card, orphan a fixture, remove a refusal test, hide a surface, count pending as active, and leak held-out content.
 - Surfaces: repository gate, capability manifest, drift audit, card gate, fuzz gate, and cycle close.
-- Dependencies and consumers: depends on IMM.001–IMM.005 and versioned target/fixture declarations; later fuzz and gate manifests consume its coverage result, while IMM.012 and the close gate consume its audit output.
+- Dependencies and consumers: depends on IMM.001–IMM.005, the exact pre-C1 `CardLinkResolutionManifestId`, and versioned target/fixture declarations; later fuzz and gate manifests consume its coverage result, while IMM.012 and the close gate consume its audit output.
 - Migration and withdrawal: registry changes regenerate coverage; historical results remain bound to old roots.
 - No-claim boundary: edge coverage is inventory evidence, not proof that a fixture is correct or a capability works.
 - Rationale: zero-orphan checking prevents impressive counts from hiding missing semantic consumers or untested refusal paths.
@@ -3305,7 +3311,7 @@ C1 implementation may begin only when all applicable prerequisites are evidenced
 | Production ledger | Human-ratified D6 backend/schema plus D1/D2 and a verified IMM.018 `ProductionLedgerBootstrapId` that predates candidate work; proposed per-writer hash-chained JSONL remains unadopted until ratified | Durable prospective event append unavailable; local notes or a late bootstrap cannot be upgraded. |
 | Rust toolchains and safe-source gate | Human-ratified D7 role split with exact stable and exact dated-nightly identities; Rust 2024 edition, committed lockfile, deny-unsafe policy, and FDN.016 inventory/capsule evidence; proposed pins remain unadopted until ratified | Reproducible candidate, unsafe admission, and assurance lanes remain unavailable as applicable. |
 | Runtime dependencies/crypto providers | D-005 routing and human ratification of exact symbolic providers/versions/provenance | Dependent Flate/password/RC4/AES contracts remain unavailable. |
-| SpecCards | A pre-C1 immutable `ReviewedCardAuthoritySnapshotId`/`CardAuthoritySnapshotId` proves every applicable `MB-SC-R0-*` rights record, project-authored body, and two-person meaning review, and every `SC.C1.*` coverage link resolves to it; IMM.001 is only a runtime projection | Affected capability is absent/refused; no runtime self-authorization or memory-derived fill. |
+| SpecCards | A pre-C1 immutable `ReviewedCardAuthoritySnapshotId`/`CardAuthoritySnapshotId` proves every applicable `MB-SC-R0-*` rights record, project-authored body, and two-person meaning review; a pre-C1 immutable `CardLinkResolutionManifestId` maps every `SC.C1.*` ID through exactly one record to one or more applicable reviewed `MB-SC-R0-*` entries or an explicit human-reviewed project-law disposition; IMM.001 only projects those artifacts and IMM.009 proves bidirectional zero-orphan linkage. Every slot in this plan retains the exact `PENDING-LICENSED-SOURCE` marker and no linkage record activates it | A required actual card still pending, a missing/default/ambiguous link, an unauthorized project-law disposition, or an applicable-card reverse orphan leaves the affected capability absent/refused; no runtime self-authorization or memory-derived fill. |
 | Held-out seal | Exact steward/protocol commitment if campaign probe is to run | Product work may proceed; campaign close cannot pass. |
 
 ### 11.3 R0 product gate

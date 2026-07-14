@@ -38,12 +38,12 @@ owner-fsm: SUBMIT-FOR-REVIEW
 
 ## Current checkpoint
 
-- Timestamp: `2026-07-14T19:41:38+02:00`
+- Timestamp: `2026-07-14T20:25:45+02:00`
 - Phase: `SUBMIT-FOR-REVIEW`
-- Active goal: stop with the independently triaged, loss-preserving R02 revision available for root to bind and, only under a separate root assignment, route to a fresh reviewer.
+- Active goal: stop with the independently triaged, loss-preserving R03 revision available for root to bind and, only under a separate root assignment, route to a fresh reviewer.
 - Exclusive writable paths: `plans/CYCLE_1_DELTA_PLAN.md` and `ledger/owners/G3_STATE.md`.
-- Submitted output: `plans/CYCLE_1_DELTA_PLAN.md` is 3,447 lines and 134 contracts at SHA-256 `fc0a2cdc97590310982d13d1fb1cb4c5db10b30b58a7de2267ffe8ee15fd2234`. Against the reviewed 3,382-line/131-contract root, the submitted plan diff is exactly 114 inserted lines and 49 deleted lines, net +65 lines and +3 contracts. The green REVISE root showed 115/50 because its FSM marker also differed from the reviewed `SUBMIT-FOR-REVIEW` marker.
-- Branch observation: work is on `main`. Current status also exposes a concurrent modification to `ledger/owners/G7_STATE.md`; G3 treats it as other-owner work and did not open it for authority, modify it, stage it, revert it, or reconcile it.
+- Submitted output: `plans/CYCLE_1_DELTA_PLAN.md` is 3,453 lines and 134 contracts at SHA-256 `41a89dd9d9ed788cb8657e69a2984d993cb244fa6e3d282a50060aab6557faae`. Against the reviewed 3,447-line artifact, the submitted plan diff is 23 inserted lines and 17 deleted lines, net +6 lines and +0 contracts.
+- Branch observation: the routed R03 baseline was `e20ec70` on `main`; shared `main` advanced concurrently to observed HEAD `5c072564a990` during G3 validation. G3 did not create that commit or use it as authority. Current status also exposes a concurrent modification to `ledger/ORCHESTRATION_STATE.md`; G3 treats it as other-owner work and did not open it for authority, modify it, stage it, revert it, or reconcile it.
 - External fetches: none.
 - Sub-agent activity: none; G3 remains the sole owner and will not route its own review.
 
@@ -96,7 +96,7 @@ Cross-owner artifacts read before SELF-CHECK:
 - Recovery alternatives, partial outcomes, signature-structure discovery, attacker-keyed hashing, canonicalization budgets, credential secrecy, cancellation, and no-claim boundaries are first-class.
 - G2 recommendations, if available, remain proposed defaults awaiting human ratification.
 - The proposed G6 v1.1 Charter-set successors are not authority for this revision; triage uses the v1.0 authority chain named by the human.
-- Stop condition after repair is a fresh `SUBMIT-FOR-REVIEW` checkpoint with a new plan hash; G3 will not self-route R02.
+- Stop condition after repair is a fresh `SUBMIT-FOR-REVIEW` checkpoint with a new plan hash; G3 will not self-route R04.
 
 ## Unavailable or not-yet-ingested inputs
 
@@ -110,7 +110,7 @@ Cross-owner artifacts read before SELF-CHECK:
 2. Every R0 SpecCard remains an empty `PENDING-LICENSED-SOURCE` slot. Normative implementation stays unavailable until licensed extraction and two-person meaning review.
 3. `ALIEN_ARTIFACT.md` and `PROJECT_OVERVIEW.md` remain `SOURCE-UNAVAILABLE`; their dependent audit rows cannot be reconstructed from related files.
 4. The human-established commitment substrate and independently stewarded held-out seal are absent. The ordinary R0 wedge can degrade gracefully, but campaign closure cannot pass without them.
-5. R02 premise triage and bounded repairs are green under G3 self-check, but self-check does not replace a fresh reviewer. R03 remains unassigned and G3 will not route it.
+5. R03 premise triage and the bounded repair are green under G3's stable self-check, but self-check does not replace fresh review. R04 is unassigned and G3 will not route it.
 
 ## R01 routed packet bound at REVISE entry
 
@@ -250,9 +250,74 @@ The reviewed plan moved from 3,382 to 3,447 lines: final `git diff --numstat` re
 | Formatting | Four code fences are balanced; UTF-8 round-trip, final newline, no-tab, no-trailing-whitespace, and `git diff --check` pass. |
 | Exclusive path/operation scope | G3 used `apply_patch` only on its two exclusive paths. The concurrent G7 state modification is preserved. No code/config, Beads, pseudo-Beads, external action, reviewer routing, commit, push, branch, worktree, stash, deletion, or other-owner edit occurred. |
 
+## R03 routed packet bound at REVISE entry
+
+- Read boundary: only the `R03 — plans/CYCLE_1_DELTA_PLAN.md — clean-room contamination` reviewer entry through its standalone `TERMINATED` marker and the immediately following `R03 — G7 validation and routing disposition` were read from `gauntlet/ROUND_LOG.md`. No convergence summary or proposed G6 successor was used as authority.
+- Reviewed artifact: 3,447 lines at SHA-256 `fc0a2cdc97590310982d13d1fb1cb4c5db10b30b58a7de2267ffe8ee15fd2234`; G3 independently reproduced the hash and matching disk checkpoint on `main` at `e20ec70` before transition.
+- Packet state: `FILED · SCHEMA-VALIDATED · TERMINATED`; declared lens `clean-room contamination`; filed counts A=1, B=1, C=1. G7 validates packet identity and structure only. Its separate correction of the reviewer's false absolute about shell file-writing neither confirms nor refutes any finding and changes no grade.
+- Triage law: all rows start `PENDING-INDEPENDENT-TRIAGE`. A01 must be tested against the live human's exact-marker/no-body rule before accepting the reviewer's proposed status split. B01 remains Grade B and unpromoted. C01 is judgment only and is declined unless local authority proves a necessary repair. Every pre-R03 feature and filed loss guard remains binding.
+
+| ID | Filed grade | Filed premise | Bound loss guards | Entry disposition |
+|---|---:|---|---|---|
+| R03-A01 | A | Applying `PENDING-LICENSED-SOURCE` to project-law contract-local slots allegedly deadlocks admission and dilutes the clean-room barrier; reviewer proposes an alternate status token plus gate split. | Delete or renumber no slot; relax no standards-dependent `SYN`/`REV`/`FLT`/`SEC`/`DOC` or `MB-SC-R0-*` dependency; retain explicit human-reviewed project-law disposition rather than agent inference/default; preserve DOC.012–DOC.014 direct links and product-gate row 3; preserve the four project-law/no-standards-semantics disclaimers; permit no semantic body for any slot. The live human additionally requires every slot/registry marker to remain exactly `PENDING-LICENSED-SOURCE`, so no alternate marker or status split is admissible if it conflicts. | `PENDING-INDEPENDENT-TRIAGE`; reviewer repair is not presumed valid |
+| R03-B01 | B | The gate requires each `SC.C1.*` link to resolve to `MB-SC-R0-*` or an explicitly reviewed project-law disposition, but no per-slot resolution artifact is named. | Keep the crosswalk a coverage relation, not a normative home or sufficiency claim; keep §3.5's non-sufficiency disclaimer and later split/additional-dependency caveat in force; linkage cannot activate a slot; unmapped linkage fails rather than defaulting to no-card-needed. | `PENDING-INDEPENDENT-TRIAGE`; no grade promotion |
+| R03-C01 | C | The plan's project-canon-only limit allegedly lacks first-use Rev 7 section citations for every format-derived label. | Delete/generalize no named identifier, parameter, or handler family; add no clause/table number, edition, erratum, semantic gloss, remembered PDF meaning, or source not already locally authorized; any permitted citation would be a bare stable Rev 7 section ID only. | `PENDING-INDEPENDENT-TRIAGE`; judgment only |
+
+## R03 independent premise triage
+
+- Triage timestamp: `2026-07-14T20:15:27+02:00`.
+- Controlling evidence: the live human order; `OVERNIGHT_GOAL.md` §1 rule 2; Charter v1.0 day-zero SpecCard pipeline and per-cycle clause-tagging/coverage gates; `CYCLE_0_WORK_ORDER.md` §§3, 5, and 7; Rev 7 §4 and locally cited §§12–16; and the reviewed plan itself. The R03 grade and G7 schema validation are packet metadata, not premise proof.
+- Measured baseline: 149 distinct `SC.C1.*` contract-local coverage-link IDs, three direct `MB-SC-R0-*` links (DOC.012–DOC.014), and no named `CardLinkResolutionManifestId`. All 149 local links and all actual `MB-SC-R0-*` slots remain registry/slot metadata marked exactly `PENDING-LICENSED-SOURCE`; none contains a semantic body.
+
+| ID | Independent disposition | Premise test | Bounded action |
+|---|---|---|---|
+| R03-A01 | `QUALIFIES-AS-GATE/CROSSWALK-EXPLICITNESS`; filed Grade A retained as the reviewer's grade, not treated as self-proving | The proposed alternate marker and slot-status split do **not** qualify: they conflict with the live human rule and `OVERNIGHT_GOAL.md` §1 rule 2, which require every slot to retain the exact `PENDING-LICENSED-SOURCE` marker and no semantic body. Plan §3.5 already distinguishes `SC.C1.*` linkage labels from actual SpecCards and allows an explicit reviewed project-law disposition. The qualifying defect is narrower: pre-implementation gate §11.2 says every link resolves only to the reviewed card snapshot, omitting §3.5's project-law branch and its evidence boundary. | Keep one exact marker and one no-body firewall. Name a linkage-only manifest whose records prove either reviewed applicable `MB-SC-R0-*` linkage or an explicit human-reviewed project-law disposition; make §11.2 consume both branches. The manifest cannot activate a slot, authorize semantics, or default to no-card-needed. |
+| R03-B01 | `QUALIFIES`; filed Grade B retained and explicitly unpromoted | The surface-level §3.5 table is intentionally non-sufficient, and IMM.009 names only generic graph inputs. With 149 distinct local link IDs, three direct MB links, and no per-link artifact, a fresh checker cannot reproduce whether every local link chose exactly one authorized branch or whether every applicable actual card has a consumer. | Add `CardLinkResolutionManifestId` as bounded metadata to existing IMM.001/IMM.009 and the §11.2 gate. Require all local IDs, explicit branch selection, human review for project-law dispositions, reverse applicable-card coverage, zero default inference, and blocking ambiguity/orphans. Add no contract and remove no surface. |
+| R03-C01 | `DECLINED-NO-REPAIR`; judgment remains Grade C | Plan §2 already maps byte/revision/COS behavior to Rev 7 §§12–13, filters to §§15.1–15.3, and encryption/signatures to §§16.1–16.5. Local Rev 7 text in those stable sections supports the named format-level families checked during triage. Neither live instructions nor v1.0 law requires a bare section citation at every token's first use, and the reviewer identified no contaminated semantic body. | No plan edit. Preserve every identifier, parameter, handler family, and existing stable section citation; add no clause/table/edition/erratum gloss and no remembered semantics. |
+
+Joint loss-preserving repair rule: retain all 134 contracts, all named surfaces, every R01/R02 repair, DOC.012–DOC.014 and `MB-SC-R0-038`–`MB-SC-R0-040`, the §3.5 non-sufficiency and later-split caveat, the four project-law/no-external-semantics disclaimers, strict/recovery separation, all pending markers, and the no-body firewall. The new manifest is linkage evidence only and cannot become a second normative home.
+
+## R03 read-only validator diagnostics
+
+Recorded at `2026-07-14T20:24:18+02:00`. Every item below was a diagnostic in an ephemeral read-only parser or probe. None changed plan wording, contract content, the dependency graph, or a loss guard; corrections were made only to the validator expression before the stable suite was rerun.
+
+| Diagnostic | Cause | Correction and artifact result |
+|---|---|---|
+| Structural parser stopped with `KeyError: 'FDN.001'` before evaluating the plan. | The ephemeral heading-index comprehension accidentally keyed by source line instead of contract ID. | Rebuilt the index as contract ID → line number and reran. The corrected core parser reported 134/134 parity, exact 17 fields, closed references, and the unchanged 1,349-edge acyclic graph. |
+| A shell inspection command emitted command-substitution/regular-expression errors. | Literal Markdown backticks in the diagnostic command were interpreted by the shell. | Replaced it with a read-only Python field extractor. It made no filesystem change and exposed the exact existing fields used by the stable checks. |
+| Scope probes 35 and 42 initially failed. | Probe 35 expected the invented shorthand “no repair/write authority” instead of REC.009's existing “recovery produces analysis artifacts only and exposes no output writer,” “no repaired bytes are emitted,” and no-claim sentence. Probe 42 expected a shortened exclusion substring that skipped words present in product-gate row 14. | Matched the exact existing REC.009 and gate-row text. No plan edit followed; the 42-item scope matrix then passed 42/42. |
+| Five R01 probes initially failed: A02, A05, A06, A07, and B02. | A02 tested the bootstrap edge in the wrong direction. A05/A06/A07 scanned consumer text after the semicolon as if it were a prerequisite. B02 expected a paraphrase instead of IMM.014/IMM.020's exact pre-run and post-trial field names. | Parsed only the `depends on` prerequisite clause, tested the correct direction, and matched the exact lifecycle fields. No plan edit followed; R01 then passed 10/10. |
+| R02-B01 initially failed. | The probe expected “semantic destination” in DOC.006, while the preserved no-claim sentence says “does not semantically resolve a destination.” | Matched the exact existing DOC.004/DOC.006 sentences. No plan edit followed; R02 then passed 5/5. |
+| The aggregate R03 loss-guard probe initially failed after A01, B01, and C01 already passed. | It expected the invented sentence “Recovery findings cannot overwrite strict truth.” The established guard is product-gate row 2: recovery “preserves SYN.002 offsets/leading bytes and strict truth” and emits its separate reports “without modifying strict reports, graphs, source identity, or source bytes.” | Bound the probe to that exact existing sentence. No plan edit followed; R03 then passed 4/4. |
+
+The diagnostic sequence is retained because a brittle validator must not become authority or induce wording churn. The stable checks test exact contract structure, prerequisite semantics, and existing loss-guard sentences; they do not require the plan to echo validator prose.
+
+## R03 repair and revised SELF-CHECK evidence
+
+The reviewed plan moved from 3,447 to 3,453 lines. Relative to the reviewed `SUBMIT-FOR-REVIEW` artifact, the submitted diff is 23 insertions and 17 deletions, net +6 lines; the closed namespace remains 134 contracts. No validator diagnostic caused a plan edit.
+
+| ID | Final disposition | Repair or conscious non-repair | Preserved loss guard |
+|---|---|---|---|
+| R03-A01 | `QUALIFIES-AS-GATE/CROSSWALK-EXPLICITNESS · REPAIRED`; filed Grade A retained as reviewer metadata | Rejected the proposed alternate marker/status split as contrary to the live goal. Clarified that exact `PENDING-LICENSED-SOURCE` is the uniform plan-time no-body marker, added the human-owned `CardLinkResolutionManifestId`, and made §11.2 consume both reviewed-card and explicit reviewed project-law branches. | Every local and actual slot keeps the exact marker; no body, activation, agent inference, slot deletion/renumbering, standards-dependency relaxation, or direct DOC.012–DOC.014 link loss. The four project-law disclaimers remain. |
+| R03-B01 | `QUALIFIES · REPAIRED`; filed Grade B retained and unpromoted | Named one pre-C1 manifest over all 149 local link IDs; the human/source pipeline owns it, IMM.001 only projects it, IMM.009 only checks it, and the gate consumes it. Records choose exactly one authorized branch and require reverse applicable-card coverage. | The §3.5 table remains coverage-only and non-sufficient; later splits/additions require a successor manifest; linkage cannot activate a slot or default to no-card-needed; unmapped, ambiguous, unauthorized, or reverse-orphan state blocks. |
+| R03-C01 | `DECLINED-NO-REPAIR`; judgment remains Grade C | No plan change. The stable subject map already binds byte/revision/COS to Rev 7 §§12–13, filters to §§15.1–15.3, and encryption/signatures to §§16.1–16.5; controlling law does not require a citation at every token's first use. | Every identifier, parameter, handler family, and existing stable citation remains; no clause/table/edition/erratum gloss, remembered semantics, or new source was introduced. |
+
+| Check | Stable rerun result |
+|---|---|
+| Size and exact parity | 3,453 plan lines; 134 catalog entries, 134 unique catalog IDs, 134 specification blocks, zero duplicates/orphans, and exactly one of all 17 mandatory fields per block. |
+| Card/link firewall | 134/134 `Card slots` fields retain exact `PENDING-LICENSED-SOURCE`; 149 distinct `SC.C1.*` IDs remain; the three direct DOC.012–DOC.014 links to `MB-SC-R0-038`–`040` remain; no semantic body or alternate slot marker exists. |
+| Reference closure | 270 full `C1.CC.*@1` references and 1,489 literal contract-token references resolve inside the 134-contract namespace with zero unknown target. |
+| UTF-8-aware dependency graph | U+2013 range expansion over prerequisite clauses yields 1,349 unique edges; topological sort visits all 134 nodes with zero unknown target, self-edge, or cycle node. |
+| Scope and round regressions | C1 scope passes 42/42; R01 passes 10/10; R02 passes 5/5; targeted R03 passes 4/4, including the exact established strict/recovery loss-guard sentence. |
+| R03 linkage regressions | `CardLinkResolutionManifestId` is pre-C1/human-owned, binds all 149 local IDs, permits only the two reviewed branches, requires reverse applicable-card coverage, defaults nothing, and cannot activate a slot. IMM.001 and IMM.009 retain projection/check-only authority. |
+| Clean-room/claim/provider/identity guards | No prohibited processor name or contact, source body, measurement, comparison result, or provider selection entered either G3 file. Runtime and crypto providers remain symbolic. The plan retains only two scoped formal `Complete` variants and two formal `best_outcomes` fields. `DecodedContainerId` is the sole domain-canon identity; both `DecodedStreamId` mentions remain higher-layer alias drift only. |
+| Stop lines and commitment order | Strict truth remains immutable through recovery. C1 still excludes rendering, text meaning/extraction, semantic destination resolution, writer, public-key handler, trust validation, active execution, reachability verdicts, sanitization, and repair writeback. D1/D2 ratification still precedes the first external or tamper-evident commitment. |
+| Formatting and exclusive scope | UTF-8 round-trip, final newline, no tabs/trailing whitespace, heading spacing, four balanced fences, and `git diff --check` pass. G3 edited only its two exclusive paths with `apply_patch`; concurrent `ledger/ORCHESTRATION_STATE.md` work is preserved. No code/config, Beads, pseudo-Beads, external action, reviewer routing, commit, or push occurred. |
+| Hashes | Green REVISE plan SHA-256: `2dad01a5bfb7440188a7b0275e8c105cb09079a01468a66a9cb68c4526b529fe`. Submitted plan SHA-256: `41a89dd9d9ed788cb8657e69a2984d993cb244fa6e3d282a50060aab6557faae`. |
+
 ## Next transition condition
 
-Stop. R03 is not assigned. Root may bind the exact submitted hash and separately assign a fresh reviewer, but G3 does not route review, enter another phase, implement, convert to Beads, commit, or push.
+Stop. Root may bind the exact submitted hash and separately assign a fresh reviewer. R04 remains unassigned; G3 does not route review, enter another phase, implement, convert to Beads, commit, or push.
 
 ## Transition history
 
@@ -266,3 +331,5 @@ Stop. R03 is not assigned. Root may bind the exact submitted hash and separately
 | `2026-07-14T18:38:08+02:00` | `REVISE` | `SUBMIT-FOR-REVIEW` | All ten premises independently qualified against v1.0 and repaired without loss-guard removal; 131/131 parity, 17-field/card checks, reference closure, 131-node/1,316-edge acyclic sort, 42/42 scope, 10/10 R01 regressions, policy/format guards, and plan SHA-256 `a9458bed…b77` were persisted. |
 | `2026-07-14T19:29:40+02:00` | `SUBMIT-FOR-REVIEW` | `REVISE` | R02 reviewer entry, G7 routing disposition, appended correction, and revalidation note read; reviewed SHA-256 `a9458bed…b77` independently reproduced at 3,382 lines; all two Grade-A, two unpromoted Grade-B, and one Grade-C findings plus every filed loss guard persisted before any repair content changed. |
 | `2026-07-14T19:41:38+02:00` | `REVISE` | `SUBMIT-FOR-REVIEW` | A01/A02 and the two unpromoted Grade-B explicitness defects repaired; C01 consciously declined; all loss guards retained. Final checks: 3,447 lines; 134/134 catalog/spec/card parity; exact 17 fields; 270 full and 1,486 literal contract-token references closed; 134-node/1,349-edge UTF-8-aware acyclic dependency graph; 42/42 scope; 10/10 R01 and 5/5 R02 regressions; clean-room/claim/provider/identity/format/hash/path guards green; submitted SHA-256 `fc0a2cdc…fd2234`. |
+| `2026-07-14T20:11:08+02:00` | `SUBMIT-FOR-REVIEW` | `REVISE` | Exact R03 reviewed hash `fc0a2cdc…fd2234` and 3,447-line checkpoint independently reproduced at `e20ec70`; only the R03 reviewer entry and immediately following G7 disposition read; A=1/B=1/C=1 premises and every loss guard bound before plan-content editing; process correction kept substantively neutral. |
+| `2026-07-14T20:25:45+02:00` | `REVISE` | `SUBMIT-FOR-REVIEW` | A01 repaired only as a narrower gate/crosswalk explicitness defect while its proposed marker split was rejected; unpromoted B01 repaired with a human-owned per-link manifest; C01 consciously declined. Stable checks: 3,453 lines; 134/134 catalog/spec/card parity; exact 17 fields; 270 full and 1,489 literal references closed; 134-node/1,349-edge UTF-8-aware acyclic graph; 42/42 scope; R01 10/10, R02 5/5, R03 4/4; policy/format/path guards green; submitted SHA-256 `41a89dd9…7faae`. |
