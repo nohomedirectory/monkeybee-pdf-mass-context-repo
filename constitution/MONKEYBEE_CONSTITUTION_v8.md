@@ -13,6 +13,7 @@ inputs:
   - decisions/D4_EVIDENCE_CHECKER_ISOLATION.md
   - decisions/DEFERRED_REGISTER.md
   - "gauntlet/ROUND_LOG.md (bounded R14 lines 1815-2081 only)"
+  - "gauntlet/ROUND_LOG.md at commit 3d866bd00d518414bc0fd04b6548c205c0197671 (R15 bytes [544857,573917) only)"
 status: PROPOSED
 evidence-status: provisional-pending-substrate
 constitution-version: 8.0-proposed
@@ -168,7 +169,13 @@ A standards update never silently changes behavior. It creates a registry revisi
 
 **[UNVERIFIED — inherited Revision 7 identifier and status assertions; no licensed or public standards source was contacted in this no-fetch run.]**
 
+For this plan dated 2026-07-14, the inherited identifier-only planning baseline names ISO 32000-2:2020 and the PDF Association’s June 2026 Errata Collection 3 bundle; neither current status nor source authority was verified in this no-fetch run. The registry distinguishes an ISO edition, amendment, or corrigendum from a PDF Association errata-collection publication and records the authority and status of every resolution instead of describing all corrections generically as “formal ISO errata.” ISO 32000-1 remains a historical/compatibility source. ISO/TS 32001, 32002, 32003, and 32004 are registered as separate PDF 2.0 technical-specification profiles rather than folded into “PDF 2.0 core.” ISO/TS 32005:2023 is registered separately with the PDF/UA-2/WTPDF-related accessibility family, not as a core encryption or hash-extension profile. Published amendments become new registry revisions only after their status and source rights are confirmed; drafts under development are tracked as non-authoritative horizon items. This paragraph records identifiers only; access, model visibility, quotation, and implementation use still pass the rights gate above.
+
+The following inherited source line is retained only as byte-exact extraction-membership evidence. It is quarantined from status, authority, claim, and implementation use and supplies no external confirmation:
+
+```text
 For this plan dated 2026-07-14, the public planning baseline is ISO 32000-2:2020 (confirmed current by ISO in 2026) plus the PDF Association’s June 2026 Errata Collection 3 bundle. The registry distinguishes an ISO edition, amendment, or corrigendum from a PDF Association errata-collection publication and records the authority and status of every resolution instead of describing all corrections generically as “formal ISO errata.” ISO 32000-1 remains a historical/compatibility source. ISO/TS 32001, 32002, 32003, and 32004 are registered as separate PDF 2.0 technical-specification profiles rather than folded into “PDF 2.0 core.” ISO/TS 32005:2023 is registered separately with the PDF/UA-2/WTPDF-related accessibility family, not as a core encryption or hash-extension profile. Published amendments become new registry revisions only after their status and source rights are confirmed; drafts under development are tracked as non-authoritative horizon items. This paragraph records identifiers only; access, model visibility, quotation, and implementation use still pass the rights gate above.
+```
 
 ### 4.5 Clean-room audit trail
 
@@ -545,6 +552,7 @@ The system uses stable, typed identities rather than bare integers or memory add
 | `GlyphInstanceId` | One painted glyph instance. |
 | `SemanticNodeId` | One extracted text, structure, annotation, or accessibility node. |
 | `ClaimId` | One evidence-bearing statement. |
+| `ClaimRegistryId` | One versioned generated snapshot of atomic claim-to-consequence-contract links, composition edges, lifecycle, evidence scope, and no-claim boundaries under §10.10. |
 | `SpecCardId` | One versioned project-authored clean-room requirement unit whose authority remains conditional on the §4 source and review record. |
 | `ConsequenceContractId` | One versioned machine contract for an atomic operation, profile-qualified capability, or atomic comparison subclaim under §10.10. |
 | `EvaluationProtocolId` | One immutable pre-unblinding evaluation-protocol commitment under §10.6. |
@@ -1019,6 +1027,9 @@ Records:
 - strict-parse result;
 - recovery status;
 - encryption state;
+- for caller-credential standard-handler read decryption, the requested operation/profile and scope, non-secret capability identity and admission result, canonical outcome (`NotRequested`, `InventoryOnly`, `Refused`, `Partial`, `Complete`, or `Indeterminate`), refusal or indeterminacy reason, exact revision/object/range coverage, produced `DocumentViewId` and `DerivationId` where applicable, deterministic diagnostics, and evidence; passwords, keys, and credential-derived secrets are never report fields;
+- every header candidate and its exact offset, binary-marker presence, declared version, pre-header bytes, conflicts, evidence, and recovery assumptions;
+- per-revision/effective-chain `EffectiveDialect` history with `declared`, `required_by_features`, `selected_for_interpretation`, and `target_for_write` facts, extension/profile inputs, unresolved conflicts, and evidence, rather than one timeless document-wide version scalar;
 - signatures found;
 - the exact-preservation interval ledger as independent, overlapping facets for parse/semantic ownership, raw-preservation requirement, explained/unexplained subranges, revision membership/supersession, cryptographic coverage, disclosure/sensitivity class, and transformation carry/drop intent;
 - metadata inventory and reconciliation across revisions;
@@ -1027,10 +1038,13 @@ Records:
 - resource-limit usage;
 - and overall no-claim boundaries.
 
+The `unexplained bytes` field is the exact normalized union projection of the ledger's `unexplained subranges` facet for the report's declared source coverage. Empty and absent remain distinct where the schema says so; a projection mismatch is invalid. The other interval facets remain independent and may overlap.
+
 #### `RenderReport`
 
 Records:
 
+- exact `SourceRootId`, source availability and integrity class, and a whole-source content identity only when final length, whole-source coverage, and authentication establish it; otherwise the content identity is absent with an explicit reason;
 - exact `DocumentViewId`, `RevisionGraphId` where source-backed, and render `DerivationId`;
 - selected revision or recovery hypothesis and its selection evidence;
 - effective dialect for that selected revision/view;
@@ -1062,15 +1076,29 @@ Records:
 - reading-order algorithm;
 - returned order type (logical, visual, tagged, or search-oriented) and ranked alternatives where order is ambiguous; an order label does not assert correctness;
 - structure linkage;
+- zero or more exact `SemanticReportId` links to `ExternalRecognitionReport` evidence, with native and recognized spans/alternatives kept separately classified;
 - and omitted regions.
+
+#### `ExternalRecognitionReport`
+
+Records:
+
+- exact `SourceRootId`, source-backed `RevisionGraphId`, `DocumentViewId`, recognition/merge `DerivationId`, and admitted page, region, or derivative-artifact scope;
+- exact request and response `ArtifactId`s with availability classes, external capability identity, endpoint/tool/model observation, and the host admission/authority result without treating a service label as stable behavior;
+- transmitted scope, sensitivity class, egress/retention policy, least-disclosure decision, and request/response truncation or refusal;
+- hostile-response schema/limit validation and every rejected, unavailable, or indeterminate part;
+- per-span native and recognized alternatives, conflicts, evidence class, confidence semantics, and merge decision without overwriting source truth or laundering confidence; and
+- replay/recomputation relation, mutable-service limitations, deterministic diagnostics, coverage, evidence, and no-claim boundaries.
 
 #### `ValidationReport`
 
 Records:
 
 - exact `DocumentViewId` and source-backed `RevisionGraphId` whose meaning/history was validated;
+- exact validation `DerivationId`, checker build identity, and checker protocol/schema version;
 - profile and profile version;
 - rule set;
+- per-rule implementation identity and version;
 - canonical per-rule outcome (`Pass`, `Fail`, `NotApplicable`, `NotEvaluated`, `Unsupported`, or `Indeterminate`) plus separate severity and coverage;
 - source, virtual-span, object, semantic, or global locations as applicable;
 - external-validator comparisons;
@@ -1099,7 +1127,10 @@ Records the immutable **private candidate** produced by the transformation core:
 - visual, text, structure, security, and signature deltas that the core itself can establish;
 - internal profile checks;
 - candidate-local falsifiers;
+- for a proposal-mediated apply, a distinct apply-admission subrecord binding the rechecked `ExpectedStateId`, authority/capability/policy snapshots, validation and apply outcomes, all-or-nothing batch result, durable idempotency request/outcome identity and retention state, crash-reconciliation status, and publication visibility/durability; a candidate not produced by that route marks the subrecord `NotApplicable`;
 - and unresolved claims.
+
+The apply-admission subrecord is receipt evidence, not an input to `TransformRoot`, and it neither grants authority nor replaces the later independent `AssuranceAdmissionReceipt`.
 
 The receipt does not self-award an independently checked release headline. A later `AssuranceAdmissionReceipt` binds the exact candidate receipt/root, admitted checker protocols and versions, independent outcomes and their oracle lineage, publication policy, final claim envelope, and host publication result. It appends evidence without mutating or replacing the candidate receipt. Failure to obtain the admission receipt leaves the candidate private or available only under a deliberately weaker profile.
 
@@ -1299,9 +1330,11 @@ The contract is a semantic spine, not another implementation layer or work ledge
 
 Repository checks derive the public capability manifest, Appendix-E rows, API/documentation assertions, and assurance obligations from these contracts and reject orphan claims, missing falsifiers, inconsistent identity domains, or a surface whose failure semantics differ from the canonical outcome algebra. This is a primary post-agent compression mechanism: one resolved judgment propagates through specification, implementation boundaries, verification, operation, and public claims instead of being independently regenerated by many agents.
 
-Report-family schemas together with the common §10.8 semantic-body/run-observation contract are the sole field sources for representative examples. An example generator consumes both inputs and emits explicit placeholders for every mandatory family field, `SemanticReportProtocolId`, `SemanticReportId`, capability-identity set, separately versioned run-observation schema and `RunObservationProtocolId`, `RunObservationId`, semantic-report backlink, observation coverage/telemetry, and telemetry-exclusion fact. While §9.2.1 remains pending, generated examples use explicit pending-ratification protocol markers and nonproduction identity placeholders rather than selecting an encoding.
+The claim registry is a versioned generated projection, not an independently authored claim source. Each atomic row binds exactly one `ClaimId` to exactly one `ConsequenceContractId`, its exact exposed surfaces, lifecycle and withdrawal/expiry state, admitted outcome/evidence/coverage, and no-claim boundary. A composite claim record references typed child `ClaimId`s and composition law without assigning one atomic claim to several contracts or strengthening any child. `ClaimRegistryId` commits the generated snapshot and its contract inputs; a missing, stale, orphaned, or contradictory link invalidates the affected registry row and release projection.
 
-A schema-example validator rejects any example that omits a required family or common identity field, uses a friendly alias where the schema requires a typed ID, breaks the one-way semantic-report backlink, includes run telemetry in semantic identity, or introduces a field that would strengthen the report's claim. For `DivergenceReport`, it additionally requires each processor-result record's separate artifact, version, configuration, environment, and output identities and verifies that `processor_output_artifact_ids` is the exact order-independent projection of those bindings. Appendix B is a non-normative `generated-echo` of §§10.6, 10.8, and 10.10 and is never hand-authoritative.
+Report-family schemas together with the common §10.8 semantic-body/run-observation contract are the sole field sources for representative examples. An example generator consumes both inputs and emits explicit placeholders for every mandatory family field, `SemanticReportProtocolId`, `SemanticReportId`, capability-identity set, canonical outcome, coverage, deterministic diagnostics, evidence, no-claim boundaries, separately versioned run-observation schema and `RunObservationProtocolId`, `RunObservationId`, semantic-report backlink, observation coverage/telemetry, and telemetry-exclusion fact. While §9.2.1 remains pending, generated examples use explicit pending-ratification protocol markers and nonproduction identity placeholders rather than selecting an encoding.
+
+A schema-example validator rejects any example that omits a required family, common identity field, canonical outcome, coverage, deterministic diagnostics, evidence, or no-claim boundary; uses a friendly alias where the schema requires a typed ID; breaks the one-way semantic-report backlink; includes run telemetry in semantic identity; or introduces a field that would strengthen the report's claim. For `DivergenceReport`, it additionally requires each processor-result record's separate artifact, version, configuration, environment, and output identities and verifies that `processor_output_artifact_ids` is the exact order-independent projection of those bindings. Appendix B is a non-normative `generated-echo` of §§10.6, 10.8, and 10.10 and is never hand-authoritative.
 
 ---
 

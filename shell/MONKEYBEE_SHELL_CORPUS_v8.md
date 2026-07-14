@@ -9,6 +9,7 @@ inputs:
   - constitution/MONKEYBEE_CONSTITUTION_v8.md
   - DISPUTES.md
   - "gauntlet/ROUND_LOG.md (bounded R14 lines 1815-2081 only)"
+  - "gauntlet/ROUND_LOG.md at commit 3d866bd00d518414bc0fd04b6548c205c0197671 (R15 bytes [544857,573917) only)"
 status: PROPOSED
 evidence-status: provisional-pending-substrate
 shell-version: 8.0-proposed
@@ -388,6 +389,8 @@ The long-term scope below is not one binary v1 promise. Every build publishes a 
 | **R3 — Transformation and Security** | Evidence-rich rewrite, sanitization, redaction, signature analysis, and optional secure standard-handler output | Canonical rewrite, carry/drop map, active-content reachability, clone-on-write resource surgery, scoped negative evidence, layered signature reports, and D1R re-encryption only when the secure writer profile is present | No absolute claim that semantic secrets hidden in arbitrary vector art can be detected automatically; no signature-creation claim |
 | **R4 — Advanced Profiles and Rare Features** | Broad PDF civilization coverage | JPX/JBIG2 default paths if gated, advanced ICC/print profiles, selected PDF/A and PDF/UA profiles, advanced forms/portfolios/media inventory | Unsupported standardized or proprietary extensions remain enumerated |
 
+**R0/C1 read-decryption clarification:** R0 includes caller-credential standard-handler read decryption for the RC4-, AESV2-, and AESV3-family profiles admitted by resolved SpecCards and the operation contract. Inventory remains available without credentials; absent or inadmissible credential/key capability yields a typed refusal or partial result. Public-key-handler processing and every encryption writer remain outside R0.
+
 A release may be extremely useful before R4. The project must never hold safe inspection, common rendering, or interoperable generation hostage to one rare codec or profile.
 
 The first commercial/product wedge is **secure document ingestion and evidence-rich transformation**: inspect hostile files, produce bounded previews and inventories, remove or rewrite dangerous content, and return machine-readable evidence. This wedge exercises MonkeyBee’s differentiating architecture earlier than a generic “replacement for every PDF engine” claim.
@@ -575,6 +578,8 @@ The plan is organized around end-to-end user outcomes rather than subsystems alo
 - metadata across revisions;
 - repair hypotheses;
 - and source, virtual-span, object, or derivation-provenance links for every finding; absence of a direct byte span is itself explicit.
+
+**C1 projection:** The Charter's C1 Workflow-B gate means only the L0–L2 R0 autopsy projection whose result is a complete `OpenReport` with recovery alternatives, security inventory, and the admitted caller-credential read-decryption outcome. Visible-content execution, rendering, fonts, text/glyph mapping, and every other later-layer Workflow-B output remain part of the full workflow and are not C1 pass conditions.
 
 ### 5.3 Workflow C — Text extraction with epistemic honesty
 
@@ -4212,6 +4217,17 @@ MonkeyBee is compared with named external tools over a versioned corpus.
 
 Disagreements are classified, minimized, and retained. Agreement is evidence, not proof.
 
+#### C1 assurance projection through the G3 subset
+
+This projection defines the Charter's C1 gate only; it records obligations and does not assert that any tier has passed.
+
+| Tier | C1-admitted obligation | Explicit boundary |
+|---|---|---|
+| G0 | R0 source/revision identities, bounded work, no-secret credential handling, exact outcome/refusal algebra, report canonicalization, and evidence non-laundering laws | No later-layer render, font, text, writer, or transformation invariant is imported. |
+| G1 | Rights-cleared atomic fixtures for every resolved R0 syntax, revision, admitted lossless-filter, standard-handler inventory/read-decryption, signature-inventory, recovery, and report-schema dependency | A pending SpecCard or prospective dependency keeps the affected fixture/gate unavailable. |
+| G2 | Independently grounded structural, filter-vector, cryptographic-vector, recovery-discriminator, and schema-check oracles for the declared R0 operation | The oracle may cover only its exact rule and cannot promote profile or whole-workflow coverage. |
+| G3 subset | Predeclared, versioned black-box structural-processor or validator observations limited to L0–L2 open/revision/encryption/read-decryption/report consequences; disagreements are classified and minimized | Rendering, fonts, text/glyph output, writing, and later workflows are excluded; an unavailable admitted subject remains unavailable rather than silently waived. |
+
 ### G4 — Metamorphic and round-trip properties
 
 Examples:
@@ -5451,6 +5467,8 @@ This revised initial plan assumes:
 - the project can obtain enough independent corpora and processor access to ground compatibility claims;
 - and the human independence ecology—source-rights owner, two-person SpecCard reviewers, corpus and commitment stewards, independent scouts, red team, reviewers, and adjudicators—can be recruited, scheduled, and funded without being fictionalized as agent capacity. The staffing plan records role separation, conflicts, expected human time/cost, and unavailable roles. If a required role does not materialize, the dependent claim degrades to its supported self-attested or narrower tier rather than blocking the survival wedge or silently claiming independence.
 
+The stable `HumanIndependenceStaffingPlan` interface records a version/revision identity; each required role and separation constraint; human versus agent status; named, available, unavailable, or unfilled state; authority and source/model/tool lineage; conflicts and recusals; expected human time, cost, and schedule window; prohibited substitutions; dependent claims/gates; and the exact downgrade, refusal, or survival-wedge consequence when a role is unavailable. A role label, nominal assignment, or agent count supplies no independence evidence. No staffing-plan instance or personnel assignment is asserted by this interface.
+
 Each assumption must be tested through review, legal analysis, bounded probes, or held-out evidence before it becomes load-bearing.
 
 # Appendices
@@ -5869,11 +5887,11 @@ Every B.1-B.5 example emits a `SemanticReportProtocolId` marker, `SemanticReport
 
 | Example | Schema source | Identity fields the generator must emit |
 |---|---|---|
-| B.1 | Constitution §10.6 `OpenReport` | `SourceRootId`; every `RevisionGraphId`; selected `DocumentViewId` or explicit alternatives; exact-preservation interval facets; metadata history; security reachability/effect inventory and coverage |
-| B.2 | Constitution §10.6 `RenderReport` | exact `DocumentViewId`; source-backed `RevisionGraphId`; render `DerivationId`; selected revision/hypothesis; effective dialect; resource/unsupported-feature accounting; pixel artifact identity |
-| B.3 | Constitution §10.6 `TransformReceipt` | role-labeled root + `DocumentViewId` + `ExpectedStateId` for every document input; artifact/origin for every asset; candidate/output roots |
+| B.1 | Constitution §10.6 `OpenReport` | `SourceRootId`; every `RevisionGraphId`; selected `DocumentViewId` or explicit alternatives; header and dialect history; caller-credential read-decryption outcome; exact-preservation interval facets; metadata history; security reachability/effect inventory and coverage |
+| B.2 | Constitution §10.6 `RenderReport` | exact conditional source identity; `DocumentViewId`; source-backed `RevisionGraphId`; render `DerivationId`; selected revision/hypothesis; effective dialect; resource/unsupported-feature accounting; pixel artifact identity |
+| B.3 | Constitution §10.6 `TransformReceipt` | role-labeled root + `DocumentViewId` + `ExpectedStateId` for every document input; artifact/origin for every asset; candidate/output roots; proposal-driven apply-admission evidence where applicable |
 | B.4 | Constitution §10.6 `DivergenceReport` | `SourceRootId`; `RevisionGraphId`; `DocumentViewId`; relevant `DerivationId`; external input identity; per-processor artifact, version, configuration, environment, and bound independent output identity; exact output-identity projection |
-| B.5 | Appendix A.13 checker boundary | package root; checker capability identity; availability and coverage accounting |
+| B.5 | Appendix A.13 and Constitution §10.6.1 checker boundary | package root; checker capability identity; availability and coverage accounting; proposed isolation axes; seeded-trial availability; lineage/correlation status |
 
 ### B.1 Open report
 
@@ -5883,6 +5901,15 @@ Every B.1-B.5 example emits a `SemanticReportProtocolId` marker, `SemanticReport
   "semantic_report_protocol_id": "PENDING-HUMAN-RATIFICATION-D1-D2",
   "semantic_report_id": "semantic-report:open-example-nonproduction",
   "capability_identities": ["capability:open-example"],
+  "outcome": "ambiguous",
+  "coverage": {
+    "source_ranges": [[0, 1839021]],
+    "revision_graph_ids": ["revision-graph:strict-example", "revision-graph:recovery-example"],
+    "document_view_ids": ["document-view:hypothesis-7", "document-view:hypothesis-9"],
+    "unavailable": ["document-view:hypothesis-9:resource-limit"]
+  },
+  "deterministic_diagnostics": ["MB-XREF-0042"],
+  "evidence": ["ByteExact", "RecoveryEvidence"],
   "run_observation": {
     "schema": "org.monkeybee.run-observation.v8-example",
     "run_observation_protocol_id": "PENDING-HUMAN-RATIFICATION-D1-D2",
@@ -5903,6 +5930,41 @@ Every B.1-B.5 example emits a `SemanticReportProtocolId` marker, `SemanticReport
     },
     "availability": "Embedded"
   },
+  "header_evidence": {
+    "candidates": [
+      {
+        "offset": 0,
+        "binary_marker_present": true,
+        "declared_version": "1.7",
+        "pre_header_bytes": [],
+        "evidence": ["ByteExact"],
+        "recovery_assumptions": []
+      }
+    ],
+    "conflicts": []
+  },
+  "effective_dialect_history": [
+    {
+      "revision_id": "revision:0",
+      "declared": "1.7",
+      "required_by_features": "unresolved",
+      "selected_for_interpretation": "strict:example",
+      "target_for_write": null,
+      "extension_profiles": [],
+      "conflicts": [],
+      "evidence": ["ByteExact"]
+    },
+    {
+      "revision_id": "revision:1",
+      "declared": "1.7",
+      "required_by_features": "unresolved",
+      "selected_for_interpretation": "recovery-alternatives:example",
+      "target_for_write": null,
+      "extension_profiles": [],
+      "conflicts": ["catalog-version-status-unresolved"],
+      "evidence": ["RecoveryEvidence"]
+    }
+  ],
   "revision_graphs": [
     {
       "revision_graph_id": "revision-graph:strict-example",
@@ -5941,6 +6003,23 @@ Every B.1-B.5 example emits a `SemanticReportProtocolId` marker, `SemanticReport
     "discriminators": ["external-observation-required"]
   },
   "encryption_state": "inventoried",
+  "caller_credential_read_decryption": {
+    "requested_operation": "inventory-only",
+    "profile": "standard-handler-read:r0",
+    "scope": "inventoried-encrypted-objects",
+    "credential_or_key_capability_id": null,
+    "admission": "not-requested",
+    "outcome": "InventoryOnly",
+    "refusal_or_indeterminacy_reason": null,
+    "coverage": {
+      "revision_ids": ["revision:0", "revision:1"],
+      "object_or_range_scope": "inventory-only"
+    },
+    "produced_document_view_id": null,
+    "derivation_id": null,
+    "deterministic_diagnostics": [],
+    "evidence": ["InventoryEvidence"]
+  },
   "signatures_found": ["signature:1"],
   "exact_preservation_interval_facets": {
     "parse_or_semantic_ownership": [
@@ -5988,7 +6067,7 @@ Every B.1-B.5 example emits a `SemanticReportProtocolId` marker, `SemanticReport
       }
     ]
   },
-  "unexplained_bytes": [],
+  "unexplained_bytes": [[1839000, 1839021]],
   "resource_usage": {"decoded_bytes": 920131, "objects": 834},
   "no_claims": ["cms_trust_not_evaluated"]
 }
@@ -6002,6 +6081,13 @@ Every B.1-B.5 example emits a `SemanticReportProtocolId` marker, `SemanticReport
   "semantic_report_protocol_id": "PENDING-HUMAN-RATIFICATION-D1-D2",
   "semantic_report_id": "semantic-report:render-example-nonproduction",
   "capability_identities": ["capability:render-example"],
+  "source": {
+    "source_root_id": "source-root:partial-example",
+    "availability": "PartialSnapshot",
+    "integrity_class": "StableSnapshot",
+    "whole_source_content_identity": null,
+    "whole_source_identity_unavailable_reason": "whole-source-coverage-not-established"
+  },
   "document_view_id": "document-view:example",
   "revision_graph_id": "revision-graph:strict-example",
   "derivation_id": "derivation:render-example",
@@ -6022,6 +6108,9 @@ Every B.1-B.5 example emits a `SemanticReportProtocolId` marker, `SemanticReport
   "color_pipeline": "color-pipeline:example",
   "outcome": "complete",
   "coverage": {"page_region": "full", "operators": "all-admitted"},
+  "deterministic_diagnostics": [],
+  "evidence": ["ProfileDefined", "DerivationEvidence"],
+  "no_claims": ["no-whole-source-content-identity-from-partial-snapshot"],
   "pixel_artifact": {
     "artifact_id": "artifact:pixels-example",
     "hash_algorithm": "PENDING-HUMAN-RATIFICATION-D1-D2",
@@ -6069,6 +6158,8 @@ Every B.1-B.5 example emits a `SemanticReportProtocolId` marker, `SemanticReport
   },
   "transform_id": "transform-operation:example",
   "outcome": "partial",
+  "deterministic_diagnostics": [],
+  "evidence": ["TransformEvidence", "CandidateLocalEvidence"],
   "policy": "secure-redaction:example",
   "document_input_bindings": [
     {
@@ -6093,6 +6184,26 @@ Every B.1-B.5 example emits a `SemanticReportProtocolId` marker, `SemanticReport
   ],
   "private_candidate_root": "transform-root:candidate-example",
   "serialized_output_source_root": "source-root:serialized-example",
+  "apply_admission": {
+    "applicability": "proposal-mediated-apply",
+    "expected_state_rechecks": [
+      {"expected_state_id": "expected-state:base-example", "outcome": "pass"},
+      {"expected_state_id": "expected-state:import-example", "outcome": "pass"}
+    ],
+    "authority_id": "authority:apply-example",
+    "capability_identity": "capability:agent-edit-example",
+    "policy_snapshot": "policy-snapshot:secure-redaction-example",
+    "validation_outcome": "pass",
+    "apply_outcome": "Complete",
+    "atomic_batch_outcome": "committed-all",
+    "idempotency": {
+      "request_identity": "idempotency-request:example",
+      "outcome_identity": "idempotency-outcome:example",
+      "retention_state": "retained-through-observability-window"
+    },
+    "crash_reconciliation": "not-required",
+    "publication": {"visibility": "visible", "durability": "durable"}
+  },
   "edit_intent": "edit-intent:example",
   "changed_bytes": ["byte-span:output-example"],
   "changed_objects": ["object-version:44-example"],
@@ -6126,6 +6237,15 @@ Every B.1-B.5 example emits a `SemanticReportProtocolId` marker, `SemanticReport
   "semantic_report_protocol_id": "PENDING-HUMAN-RATIFICATION-D1-D2",
   "semantic_report_id": "semantic-report:divergence-example-nonproduction",
   "capability_identities": ["capability:divergence-observation-example"],
+  "outcome": "partial",
+  "coverage": {
+    "processors": ["monkeybee:example", "external-subject-a:example"],
+    "observable_regions": ["page:2:[100,200,210,260]"],
+    "unavailable": ["all-unlisted-processors-and-profiles"]
+  },
+  "deterministic_diagnostics": [],
+  "evidence": ["ExternalObservation", "MinimizedWitness"],
+  "no_claims": ["no-majority-priority-conformance-or-field-inference"],
   "run_observation": {
     "schema": "org.monkeybee.run-observation.v8-example",
     "run_observation_protocol_id": "PENDING-HUMAN-RATIFICATION-D1-D2",
@@ -6194,10 +6314,32 @@ Every B.1-B.5 example emits a `SemanticReportProtocolId` marker, `SemanticReport
     "excluded_from_semantic_identity": true
   },
   "outcome": "partial",
+  "deterministic_diagnostics": ["MB-PKG-0017"],
+  "evidence": ["PackageIntegrityEvidence", "DeclaredClaimCheckEvidence"],
   "package_root": "evidence-package-root:example",
   "checker": {
     "checker_protocol_id": "checker-protocol:example",
     "checker_capability_identity": "checker-capability:example"
+  },
+  "isolation_binding": {
+    "binding_status": "PROPOSED — awaiting human ratification",
+    "code_isolation": "unavailable-not-demonstrated",
+    "authorship_isolation": "unavailable-not-demonstrated",
+    "specification_isolation": "unavailable-not-demonstrated"
+  },
+  "seeded_defect_trial": {
+    "status": "unavailable",
+    "attempts": 0,
+    "detections": 0,
+    "misses": 0,
+    "unavailable_classes": ["all-required-seed-classes"],
+    "checker_configuration": null
+  },
+  "lineage_and_correlation": {
+    "status": "unavailable",
+    "model_authorship_source_lineage": [],
+    "known_correlation": ["not-evaluated"],
+    "independence_claim": "unavailable"
   },
   "verified_claims": ["claim:1", "claim:2"],
   "unsupported_claim_kinds": ["historical-device-observation"],
@@ -6213,7 +6355,7 @@ Every B.1-B.5 example emits a `SemanticReportProtocolId` marker, `SemanticReport
   "truncation": {"diagnostics_truncated": false},
   "limits": {"bytes_read": 1048576, "claims_checked": 2},
   "diagnostics": ["MB-PKG-0017"],
-  "no_claims": ["signer-trust-not-evaluated"]
+  "no_claims": ["signer-trust-not-evaluated", "checker-independence-unavailable"]
 }
 ```
 
@@ -6307,6 +6449,21 @@ Every implementation context declares which source classes it may access.
 | Supremacy S4 — generation scorecard | `supremacy-s4@N`; exact `FieldDefinitionId` (separate pure-Rust and all-open generation fields) + claim scope + krilla anchor + every material eligible open generator/non-dominated comparator (including Stet/pdfpurr where eligible) for each atomic target/profile/feature intersection; separately classified opaque systems such as PDFluent where lawful | G0–G7 + §24.16 | strict reopen + Arlington + veraPDF + aligned multi-viewer corpus | D1/D1R by profile | atomic generation, file-size, refusal, and writer-extension scorecards | No scalar combines generation correctness with MonkeyBee-only secure encryption or receipts; no win over krilla alone establishes field lead. Signature analysis/editing are S5 conjunctions. **Open decision 8:** PDF/A-1 remains excluded unless §3.2 admits PDF 1.4. |
 | Supremacy S5 — atomic candidate conjunctions | one row per exact conjunction, claim scope, comparator search, date, metric, expiry, and workflow falsifier | G0–G7 | capability-specific independent falsifiers | capability-specific | workflow-specific | `uncontested` is field status after a dated search; it is not an outcome, global absence, aggregate superiority, or proof against closed systems. |
 | Supremacy S6 — performance escalation | `supremacy-s6@N`; exact `FieldDefinitionId` (separate all-open and pure-Rust performance fields) + claim scope + PDFium/MuPDF anchors + every material eligible native/open and pure-Rust artifact/non-dominated comparator, workload, machine, profile, cache/thread/isolation state | G0–G6 + correctness/coverage gate | reproducible benchmark lab + output equivalence checks + independent statistical reanalysis | workload-specific | per-axis non-inferiority, Pareto lead, or `incomparable` | **Open decision 9:** inactive while §26.3 retains competitive posture; no win over named anchors alone establishes field lead; no averaging away memory/correctness/safety/evidence regressions; contract-bypassing paths are disqualified. |
+
+The table above is a human-readable projection, not the full machine row. Every generated Appendix-E row also carries this contract-derived envelope:
+
+| Required field | Binding rule |
+|---|---|
+| `ClaimRegistryId`, atomic `ClaimId`, and `ConsequenceContractId` | Bind one registry snapshot and one atomic contract; composite rows reference typed child claims without widening them. |
+| profile/version and exact input/view identity domain | Bind the staged profile and every admitted root/graph/view/state domain; exclusions remain explicit. |
+| authority and precondition contract | Bind capability/lease, `ExpectedStateId` grammar where applicable, and external/runtime substrate. |
+| Gauntlet tiers and corpus coverage | Record passed, failed, unavailable, and not-evaluated coverage separately; a label alone is not a pass. |
+| external observations, falsifiers, and lineage | Bind exact evidence and correlation; missing or shared-lineage evidence cannot be counted as independent. |
+| outcome algebra and current outcome | Preserve `Partial`, `Ambiguous`, `Refused`, `Cancelled`, and `Indeterminate` where applicable alongside any admitted success state. |
+| determinism and replay relation | Record only the profile's declared class and supported replay relation. |
+| performance-evidence reference | Reference only separately admitted evidence; absence cannot be filled by prose. |
+| privacy, disclosure, and artifact availability | Bind sensitivity, retention/egress, and materialization class for every decision-critical artifact. |
+| no-claim boundary, lifecycle, expiry, and withdrawal | Keep proposed/active/lapsed/withdrawn state and the exact consequence of stale or withdrawn evidence. |
 
 Every supremacy row records exact `FieldDefinitionId`, claim scope, lifecycle, field status, and outcome separately; considered challengers and selection rationale; primary analysis unit and paired/cluster structure; denominator/exclusions; effect/precision target, stopping rule, multiplicity, uncertainty, and stochastic attempt selection; refusal/missing accounting; oracle lineage; expiry; and superseding report. Outcomes distinguish `leading`, `equivalent`, `non_inferior`, `trailing`, `incomparable`, `indeterminate`, and `disqualified`. Only uncertainty-aware `leading` under the exact declared field scope supports a supremacy headline. No release process may fill this table with “yes,” “best,” or “mogged” in place of evidence.
 

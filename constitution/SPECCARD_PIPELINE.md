@@ -8,6 +8,7 @@ inputs:
   - MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md §§4, 12–16
   - constitution/MONKEYBEE_CONSTITUTION_v8.md §4
   - "gauntlet/ROUND_LOG.md (bounded R14 lines 1815-2081 only)"
+  - "gauntlet/ROUND_LOG.md at commit 3d866bd00d518414bc0fd04b6548c205c0197671 (R15 bytes [544857,573917) only)"
 status: PROPOSED
 evidence-status: provisional-pending-substrate
 ---
@@ -93,11 +94,17 @@ This map says which pending slots must be resolved before the named planning sur
 | Recovery hypotheses | All syntax/structure slots implicated by a hypothesis; recovery ordering itself remains project policy | `PENDING-LICENSED-SOURCE` |
 | R0 `OpenReport` normative citations | Every resolved slot actually applied by the operation | `PENDING-LICENSED-SOURCE` |
 
+### 3.1 Prospective R0 dependency closure
+
+Post-hoc execution coverage does not define the SpecCard denominator that admitted the execution. Before any R0 operation/profile can satisfy a gate, the registry owner freezes a versioned prospective dependency manifest containing every current slot that the declared operation, recovery frontier, report schema, and consequence contract may rely on, plus an explicit unresolved-dependency frontier. The manifest is an operational set of empty identifiers, not standards meaning.
+
+A newly discovered dependency, licensed split, or missing subject invalidates the affected gate, adds or splits an empty `PENDING-LICENSED-SOURCE` slot with provenance, and produces a successor dependency manifest before reevaluation. Actual-use and hypothesis-discovery records may show coverage against the frozen denominator; they may not shrink or retroactively define it. The insufficiency caveat above remains in force.
+
 ## 4. Extraction protocol
 
 No step below is authorized to run until the human records the source-rights basis and assigns authorized reviewers.
 
-1. **Rights admission.** The source-rights owner records the exact source artifact, edition, acquisition basis, permitted human use, permitted non-generative processing, model-input permission, quotation permission, redistribution permission, and other relevant restrictions. Any unknown flag blocks extraction into model-visible tooling.
+1. **Rights admission.** The source-rights owner records the exact source artifact, edition, acquisition basis, and separate decisions for human reading/note-taking, non-generative machine processing, model prompt/retrieval input, model training/fine-tuning, test/corpus execution, quotation, redistribution, black-box experimental use, implementation/distribution encumbrances, and approved jurisdictions/deployment constraints. Any unknown model-input flag blocks extraction into model-visible tooling; one permission never implies another.
 2. **Slot reservation.** The registry owner selects one pending slot, freezes its `SpecCardId`, and records whether licensed review is expected to split or supersede it. The planning label is not treated as source meaning.
 3. **Isolated source review.** An authorized human reviewer reads the controlling source outside model-visible context. Only the minimum project-authored fields required by Constitution §4.3 are drafted. Unnecessary source prose is not copied.
 4. **Citation binding.** The reviewer records exact standard/edition/clause/table/algorithm and applicable errata identifiers in the restricted provenance record. No identifier is guessed.
@@ -107,6 +114,7 @@ No step below is authorized to run until the human records the source-rights bas
 8. **Registry transition.** Only after both reviews pass does the registry move from `PENDING-LICENSED-SOURCE` to a versioned approved state. The transition records source artifact identity, reviewers, review dates, card digest, superseded versions, and permitted contexts.
 9. **Fixture, contract, and profile linkage.** Rights-cleared atomic fixtures, implementation/consequence contracts, and affected external profiles cite the approved card, and the card records those impact links. A fixture, contract, or profile does not silently supply missing normative meaning.
 10. **Change handling.** A new edition, errata decision, corrected interpretation, or rights change creates a new card version plus compatibility and claim-impact review; it never mutates prior meaning silently.
+11. **Rights-admissibility lifecycle.** Technical card versions and their review evidence are immutable historical records. A separately versioned rights-admissibility record can mark an old card `blocked`, `withdrawn`, or context-limited for future use without rewriting its technical meaning. Every dependent context rechecks the current rights record; a successor card grants no inferred permission, and an inadmissible old version cannot keep authorizing new implementation, prompt, test, quotation, or distribution use.
 
 ## 5. Empty SpecCard template
 
@@ -131,6 +139,19 @@ Every semantic field deliberately remains empty in this draft.
 | linked external profile IDs | `PENDING-LICENSED-SOURCE` |
 | known ambiguities | `PENDING-LICENSED-SOURCE` |
 | rights provenance | `PENDING-LICENSED-SOURCE` |
+| human reading and note-taking decision | `PENDING-LICENSED-SOURCE` |
+| non-generative machine-processing decision | `PENDING-LICENSED-SOURCE` |
+| model prompt/retrieval decision | `PENDING-LICENSED-SOURCE` |
+| model training/fine-tuning decision | `PENDING-LICENSED-SOURCE` |
+| test/corpus execution decision | `PENDING-LICENSED-SOURCE` |
+| quotation decision | `PENDING-LICENSED-SOURCE` |
+| redistribution decision | `PENDING-LICENSED-SOURCE` |
+| black-box experimental-use decision | `PENDING-LICENSED-SOURCE` |
+| implementation/distribution encumbrance review | `PENDING-LICENSED-SOURCE` |
+| approved jurisdictions/deployment constraints | `PENDING-LICENSED-SOURCE` |
+| rights-admissibility record version | `PENDING-LICENSED-SOURCE` |
+| rights-admissibility lifecycle/status | `PENDING-LICENSED-SOURCE` |
+| permitted and blocked contexts | `PENDING-LICENSED-SOURCE` |
 | technical author | `PENDING-LICENSED-SOURCE` |
 | meaning reviewer | `PENDING-LICENSED-SOURCE` |
 | rights reviewer | `PENDING-LICENSED-SOURCE` |
@@ -146,6 +167,8 @@ Every semantic field deliberately remains empty in this draft.
 - author and authorization basis: `PENDING-LICENSED-SOURCE`
 - independent meaning reviewer and authorization basis: `PENDING-LICENSED-SOURCE`
 - rights reviewer: `PENDING-LICENSED-SOURCE`
+- rights-admissibility record version: `PENDING-LICENSED-SOURCE`
+- independent rights decisions and context scopes: `PENDING-LICENSED-SOURCE`
 - linked atomic fixture IDs: `PENDING-LICENSED-SOURCE`
 - linked implementation/consequence contract IDs: `PENDING-LICENSED-SOURCE`
 - linked external profile IDs: `PENDING-LICENSED-SOURCE`
@@ -162,6 +185,8 @@ Every semantic field deliberately remains empty in this draft.
 | Tests exercise positive, negative, boundary, and ambiguity cases | `PENDING-LICENSED-SOURCE` | `PENDING-LICENSED-SOURCE` |
 | Paraphrase contains no unnecessary copied prose | `PENDING-LICENSED-SOURCE` | `PENDING-LICENSED-SOURCE` |
 | Card visibility and redistribution match the rights record | `PENDING-LICENSED-SOURCE` | `PENDING-LICENSED-SOURCE` |
+| Each rights decision is independent and current for the declared context | `PENDING-LICENSED-SOURCE` | `PENDING-LICENSED-SOURCE` |
+| Superseded or rights-blocked versions cannot authorize new dependent use | `PENDING-LICENSED-SOURCE` | `PENDING-LICENSED-SOURCE` |
 
 ### Disposition
 
