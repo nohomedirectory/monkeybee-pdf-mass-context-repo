@@ -656,3 +656,13 @@ I did not revalidate, re-grade, confirm, refute, promote, demote, or rewrite any
 - Idle reviewer identity: session `monkeybee-pdf-mass-context-repo--r13`, pane `%95`, pane PID `3367002`, child PID `3367236`; `gpt-5.6-sol`, effort `ultra`, priority service, live `fast` footer.
 - R13 is `ASSIGNED`; no reviewer task was sent. Owner FSM remains **`DRAFT`** and the round log is **closed** pending root-reported reviewer termination.
 - This bind changed only the R13 allocation-row hash/status slots and appended the R13 control record plus this checkpoint, all via `apply_patch`.
+
+### R13 integration checkpoint — `DRAFT`
+
+- Clock read immediately before integration: `2026-07-14T20:30:41+02:00`.
+- Prefix SHA-256 `f8951f54fa77a4832702b1fbff60fcad074f35d08205e4e153da69b63c7d796a`, reviewer-suffix SHA-256 `18eb5b573f833f92cdc7aaafab37bbc2688a9c9f83aa33c80da91b0a3ccc4f5c`, pre-integration whole-log SHA-256 `c0f51903ecba4568c4b3d1a063b613ba49265552dd9c14c4052ec8bdf349fa02`, and manifest SHA-256 `9e81eaaa03c1368335b8aaff260af0ff918d7a6a76ca45bed85a00d4313743ec` reproduced at their recorded bounds.
+- Schema validation passed mechanically: sole identity-law lens, A=3/B=2/C=0, marginal-only NO, five findings with all five required fields, verdict, and standalone `TERMINATED`. No substantive claim was reviewed.
+- Bounded freshness deviation admitted: the over-broad local Audit Ledger search exposed R1-10 and one R1-1/R2-N7 summary line, but no prior gauntlet material; residual priming risk is recorded and grades remain unpromoted.
+- Filed start time corrected to the measured bound after `20:12:46+02:00` and at or before `20:18:44+02:00`; exact second unavailable. Compaction and both required `AGENTS.md` rereads are recorded.
+- R13-A01/A02/A03/B01/B02 route to G1 through root for premise-first triage. Root and local checks report reviewer PID `3367236`, shell PID `3367002`, session `monkeybee-pdf-mass-context-repo--r13`, and monitor PID `3367118` absent.
+- Telemetry recorded without a cost estimate. Owner FSM remains **`DRAFT`**. **Log released** for root verification; no other round assigned.

@@ -20,7 +20,7 @@ It reports what the review gauntlet actually found, round by round, and whether 
 
 It may never upgrade a claim. An artifact that survives every allocated round is an artifact no allocated round refuted; it is not an artifact shown to be correct, and it stays exactly as provisional as its own status line says. It may never report an unreviewed lens as covered, and it may never let a falling curve stand in for coverage: a curve can fall because the artifact improved, because the lenses stopped looking where the defects are, or because five processes from the same family share one blind spot. This report distinguishes those cases where the evidence allows and says so where it does not.
 
-**Current state: seven rounds filed (R19, R20, R01, R21, R22, R02, R03), 25 allocated rounds unfiled.** The R19–R22 Charter-set block is complete; the C1 plan has had three rounds under three different lenses across two successive owner revisions. No artifact yet has two rounds under the same lens across successive revisions, which is the only shape that constitutes a convergence curve. Nothing here establishes convergence, non-convergence, or a trend for anything, and no round speaks to a lens it did not apply.
+**Current state: eight rounds filed (R19, R20, R01, R21, R22, R02, R03, R13), 24 allocated rounds unfiled.** The R19–R22 Charter-set block is complete; the C1 plan has had three rounds under three different lenses across two successive owner revisions; the Constitution-plus-fix-map artifact has one round. No artifact yet has two rounds under the same lens across successive revisions, which is the only shape that constitutes a convergence curve. Nothing here establishes convergence, non-convergence, or a trend for anything, and no round speaks to a lens it did not apply.
 
 ## Findings per round
 
@@ -35,8 +35,11 @@ Filled from filed round entries only. Grades are the reviewer's, per the protoco
 | R22 | Charter-set cross-consistency | claim-vocabulary legality | `claude-opus-4-8` (`xhigh`) | 4 | 2 | 2 | NO | Architecture (Charter set, round 4 of 4) |
 | R02 | C1 delta plan (**revised**, `a9458bed…`) | PDF-normative-fact | `claude-opus-4-8` (`xhigh`) | 2 | 2 | 1 | NO | Structural (C1 plan, round 2 of 13) |
 | R03 | C1 delta plan (**revised**, `fc0a2cdc…`) | clean-room contamination | `claude-opus-4-8` (`xhigh`) | 1 | 1 | 1 | NO | Structural (C1 plan, round 3 of 13) |
+| R13 | Constitution + fix map | identity-law consistency | `gpt-5.6-sol` (`ultra`, fast) | 3 | 2 | 0 | NO | Structural (Constitution + fix map, round 1 of 6) |
 
-Totals by grade: **A=44; B=10; C=4**, across 7 filed rounds.
+Totals by grade: **A=47; B=12; C=4**, across 8 filed rounds.
+
+**R13 is admitted with bounded process corrections.** Its over-broad local Audit Ledger search exposed R1-10 and one summary line mentioning R1-1/R2-N7; no prior gauntlet material was exposed, and the reviewer states none of the incidental lines was used as evidence. The residual priming risk is non-zero and recorded without changing any grade. Its filed start time is process launch, not review start; the corrected review-start bound is after `2026-07-14T20:12:46+02:00` and at or before `2026-07-14T20:18:44+02:00`, with no invented second. R13 is one first-look round, not a Constitution convergence curve.
 
 **R03 is admitted with a process-provenance correction.** Its no-action statement falsely says no shell file-writing occurred; the visible transcript includes `tee` writing to a Claude harness temporary path under `/data/tmp/claude-1000`, outside the repository. Root verified that no repository path was written by `tee`, the pre-review prefix and single reviewer suffix reproduce their recorded hashes, and the blind structured `Edit` was the only repository write. The false absolute is corrected without rewriting the packet. The filed grades remain A=1/B=1/C=1 and unpromoted. The reviewer disclosed that the packet was longer than needed; it remains intact.
 
@@ -94,7 +97,7 @@ One curve per gauntleted artifact, reported honestly whether it falls, stalls, o
 | Artifact | Allocated rounds | Filed | Curve (A+B per round, in order) | Two consecutive marginal-only? | Converged? |
 |---|---|---|---|---|---|
 | C1 delta plan | 13 — 12 baseline (R01–R12) + 1 supplemental (R31) | 3 | R01: 10 · R02: 4 · R03: 2 (**three different lenses and three plan identities — not a curve**) | No | Not established |
-| Constitution + fix map | 6 (R13–R18) | 0 | — | No | Not established |
+| Constitution + fix map | 6 (R13–R18) | 1 | R13: 5 (**first lens and first artifact round — not a curve**) | No | Not established |
 | Charter-set cross-consistency | 4 (R19–R22) | **4 — block complete** | R19: 8 · R20: 10 · R21: 14 · R22: 6 (four **different** lenses — not a convergence series) | No | Not established |
 | Traceability + cycle briefs | 4 (R23–R26) | 0 | — | No | Not established |
 | Decision briefs | 2 (R27–R28) | 0 | — | No | Not established |
@@ -130,10 +133,10 @@ The correlated-blind-spot limitation is the reason this is tracked at all: a gau
 
 | Model | Baseline rounds (R01–R30) | Supplemental rounds (R31–R32) | Total allocated | Filed rounds |
 |---|---|---|---|---|
-| `gpt-5.6-sol` (`max`/`ultra`) | 15 | 1 (R31, `ultra`) | 16 | 3 (R19 pre-control · R01, R21 fast) |
+| `gpt-5.6-sol` (`max`/`ultra`) | 15 | 1 (R31, `ultra`) | 16 | 4 (R19 pre-control · R01, R21, R13 fast) |
 | `claude-opus-4-8` (`xhigh`) | 15 | 1 (R32, `xhigh`) | 16 | 4 (R20, R22, R02, R03) |
 
-**Filed rounds are currently 3 Sol to 4 Opus.** The precommitted baseline is a 15/15 split and the total allocation remains 16/16 with supplemental rounds. The filed sample is small and slightly Opus-heavy; it does not support describing findings as cross-model-corroborated, especially because the rounds also differ by lens and artifact identity.
+**Filed rounds are currently 4 Sol to 4 Opus.** The precommitted baseline is a 15/15 split and the total allocation remains 16/16 with supplemental rounds. The filed family count is even but small, and the rounds differ by lens and artifact identity; this does not support describing findings as cross-model-corroborated.
 
 **Execution-condition change, 2026-07-14 17:39 (disclosed, not smoothed).** A live human control requires every Codex instance from that moment forward to run in **fast mode**. It is prospective and changes no terminated round: R19 (`gpt-5.6-sol`) ran and terminated before it, and R20 is not a Codex instance. But it means the `Sol` series is **not homogeneous across the run** — R19 ran under the pre-control condition, and every later Sol round (R01, R04, R06, R08, R10, R12, R13, R15, R17, R21, R23, R25, R27, R30, R31) runs under fast mode. Any comparison across Sol rounds therefore carries a mid-run condition change as a confound. This report names it rather than presenting the Sol series as a controlled sequence. It does not retroactively weaken R19; it means R19 is not a like-for-like control for what follows.
 
@@ -159,7 +162,7 @@ Every lens OVERNIGHT_GOAL §4 names, and whether the precommitted baseline actua
 | Lens (OVERNIGHT_GOAL §4 rotation) | Allocated rounds | Coverage |
 |---|---|---|
 | envelope-dependency | R01, R19 | **Both filed** — R19 (Charter set) · R01 (C1 plan). Each covers its own artifact only |
-| identity-law consistency | R13 | Allocated |
+| identity-law consistency | R13 | **R13 filed** (Constitution + fix map) |
 | PDF-normative-fact check | R02 | **R02 filed** (C1 plan) |
 | security/DoS | R11, R28 | Allocated |
 | clean-room contamination scan | R03, R26, R29 | **R03 filed** (C1 plan) · R26 and R29 allocated, unfiled |

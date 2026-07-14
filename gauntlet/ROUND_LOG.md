@@ -94,7 +94,7 @@ Hash, status, counts, and disposition are slots. They are filled only from filed
 | R10 | C1 delta plan | dependency soundness | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R11 | C1 delta plan | security/DoS | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R12 | C1 delta plan | claim vocabulary and de-slopification | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
-| R13 | Constitution + fix map | identity-law consistency | Sol | — | `9e81eaaa03c1368335b8aaff260af0ff918d7a6a76ca45bed85a00d4313743ec` | ASSIGNED | — | — | — | — | — |
+| R13 | Constitution + fix map | identity-law consistency | Sol (fast) | — | `9e81eaaa03c1368335b8aaff260af0ff918d7a6a76ca45bed85a00d4313743ec` | FILED · VALIDATED · TERMINATED | 3 | 2 | 0 | NO | ROUTED → G1 (independent premise-first triage; grades preserved and unpromoted). Freshness and start-time corrections recorded below. |
 | R14 | Constitution + fix map | oversimplification-and-feature-loss | Opus | 5-pass B (1/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R15 | Constitution + fix map | oversimplification-and-feature-loss | Sol | 5-pass B (2/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R16 | Constitution + fix map | oversimplification-and-feature-loss | Opus | 5-pass B (3/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
@@ -1493,3 +1493,85 @@ ceac345d4d580efc6edee81fb7052fc0ffd3ebc97df97b3c24e271ddf8a6a8b3  constitution/S
 **Routing after filing:** R13 findings route to G1 through root; G7 validates and records but does not review or repair.
 
 **Write law now in force.** `gauntlet/ROUND_LOG.md` is closed to G7 until root reports R13 reviewer termination. G7 does not review, predict, or pre-empt findings. All prior bytes and the R01–R32 allocation are preserved except the R13 allocation-row hash/status slots above. **No task has been sent; root verifies and sends.**
+
+## R13 — Constitution + fix map — identity-law consistency
+
+- reviewer process: tmux session `monkeybee-pdf-mass-context-repo--r13`, pane `%95`; bound child PID `3367236` (pane PID `3367002`)
+- model identity: `gpt-5.6-sol`, reasoning effort `ultra`; process arguments showed `-m gpt-5.6-sol -c model_reasoning_effort=ultra`; live TUI showed `Service tier set to priority` and footer `gpt-5.6-sol ultra fast`
+- started / filed: `2026-07-14T18:52:44+02:00` / `2026-07-14T20:26:06+02:00`
+- artifact hash: manifest SHA-256 `9e81eaaa03c1368335b8aaff260af0ff918d7a6a76ca45bed85a00d4313743ec` by the assigned LC_ALL=C bytewise-sorted `sha256sum`-line method including the final newline; members reproduced as `aed9cd3863460715ad8bfcf39fe7bd846e6ce8618d22572715eebf7b28a04179`, `ceac345d4d580efc6edee81fb7052fc0ffd3ebc97df97b3c24e271ddf8a6a8b3`, `281fbd34c1a777a6f5158a6b6dfaeab56306cb75131013d3a1701f5b6f3468e7`, and `845d8f5645cb7810596d287ea2598e8fd1a90f07b4483c1e22f06964413ef695` in the assigned file order
+- authority chain read: `AGENTS.md` full (and reread after compaction and on the human's explicit instruction); `OVERNIGHT_GOAL.md` §§1, 3/G1, 4; `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` full; Charter §§0–1, 5/C0–C1, 6; Work Order §§0–3; Audit Ledger rows R1-1, R1-4, R2-N4, R2-N5; Revision 7 §§6, 9–11, 22.4, 33–34, Appendix B; D1–D3 as proposed decisions only; `DISPUTES.md` D-004; and the four bound manifest files
+- reviewer FSM: SPAWNED -> INGEST-DECLARED-CHAIN -> APPLY-ONE-LENS -> FILE-GRADED-FINDINGS -> TERMINATED
+- counts: A=3; B=2; C=0
+- marginal-only: NO
+- no-action statement: No web/search, prohibited processor source or documentation, comparison or measurement, code/scaffolding/Beads, SpecCard semantic body, external action, artifact edit, commit, push, or inspection of `gauntlet/ROUND_LOG.md` occurred; this blind append is the sole repository write. An over-broad local Audit Ledger search accidentally exposed the R1-10 row and one later summary line mentioning R1-1/R2-N7; neither was used as evidence. No forbidden gauntlet material was exposed.
+
+### R13-A01 — Semantic-report and observation identities lack a closed typed grammar
+
+- evidence: Constitution §9.2 requires stable typed identities and class/version domain separation; §10.8 instead refers to a “semantic hash” and says semantic bodies and run envelopes can be bound “by IDs” without declaring the ID types, domains, linkage direction, or separate versioned envelope schemas. A bounded manifest search for `SemanticReportId|RunObservationId|semantic report identity|run observation|semantic hash` finds no `SemanticReportId` or `RunObservationId` definition; the only concrete spellings are untyped example strings in shell Appendix B.2.
+- requirement: Work Order §1 requires the complete §9 identity grammar and §10 report identity-binding laws in the frozen kernel, with one mechanically usable normative home; Constitution §§9.2 and 9.2.1 require typed, versioned, domain-separated, canonically encoded identity construction.
+- consequence: Independent producers/checkers cannot determine whether report bodies and observation envelopes use distinct classes, what bytes each ID commits, or how the two are linked, so aliasing and incompatible canonicalizations can both satisfy the prose.
+- repair boundary: Confine owner revision to the normative report-identity classes/commitments and their linkage/versioning dependency, plus directly derived schema projections; do not redesign report contents.
+- loss guard: Preserve the semantic-body/run-observation separation, telemetry exclusion from D0 identity, determinism-class limits, and the D1/D2 ratification gate.
+
+### R13-A02 — Appendix B and its validator drop the common §10.8 report envelope
+
+- evidence: Constitution §10.8 says a report has a semantic body and a differently versioned run-observation envelope, and that the semantic body carries capability identities and exact proper-domain identities. Shell Appendix B declares that generated examples cannot omit a required field, but its generator table and validator are scoped only to §10.6 family lists: B.1, B.3, B.4, and B.5 carry no semantic-report/run-observation identity at all, while B.2 has one top-level schema, no capability-identity set, and no separately versioned observation schema. `reports/FIX_APPLICATION.md` §§2, 3/R1-1, and 10 trace and assert only §10.6/Appendix-A.13 field-presence checks.
+- requirement: Work Order §1 requires Appendix B to be regenerated from the current schemas and the complete §10 report identity-binding law; shell Appendix B itself prohibits generated examples from omitting required fields.
+- consequence: The stated validator can pass report schemas that cannot carry or canonically link the two identities required by the kernel, and the fix map overstates closure of the report-schema identity defect.
+- repair boundary: Limit revision to the common report-schema generation/validation contract and the corresponding fix-map evidence; retain each family-specific schema.
+- loss guard: Preserve every B.1–B.5 family field, B.2's explicit telemetry exclusion, the examples' non-normative status, and all pending-ratification markers.
+
+### R13-A03 — DivergenceReport omits a mandatory processor-version identity component
+
+- evidence: Constitution §10.6 `DivergenceReport` mandates processors' exact executable/service artifacts, versions, configurations, and environments. Shell Appendix B.4 provides `id`, `executable_or_service_artifact_id`, `configuration`, and `environment` for each processor but no version field. `reports/FIX_APPLICATION.md` §10 nevertheless states that automated assertions pass every §10.6 obligation represented by B.1–B.4.
+- requirement: Work Order §2/R1-1 and shell Appendix B's validator law require every §10.6-mandated field in the generated example; report identity carriage must distinguish the exact observed processor state.
+- consequence: A mutable service or artifact label can be reported without the separately mandated version, preventing exact replay attribution while the fix map records a passing check.
+- repair boundary: Bound revision to B.4's processor identity carriage, its validator assertion, and the R1-1/self-check trace.
+- loss guard: Preserve executable/service artifact IDs, configuration, environment, profiles, input/view/derivation identities, and witness evidence as separate facts.
+
+### R13-B01 — Divergence outputs are present but not bound to processors
+
+- evidence: In shell Appendix B.4, `processors` and `external_output_artifact_ids` are separate arrays; no result record carries both a processor identity and its output artifact, and no manifest law declares same-index pairing. Constitution §10.6 requires processors plus exact external input/output artifact identities in one reproducible divergence report, while §10.8 requires exact identity carriage.
+- requirement: Constitution §§9.2 and 10.6 require typed domain/role interpretation sufficient to reproduce what each named processor produced; FIX_APPLICATION §3/R1-1 says the regenerated examples bind the mandated identities.
+- consequence: Permuting output IDs can reverse attribution without violating any stated schema assertion. The unresolved premise is whether an unstated positional-pairing convention was intended.
+- repair boundary: Restrict revision to declaring and validating the canonical processor-to-result association in the DivergenceReport schema and fix map.
+- loss guard: Preserve comparison symmetry, all per-processor artifact/configuration/environment facts, and independent output artifact identities.
+
+### R13-B02 — StableSnapshot leaves its authority-version identity contract implicit
+
+- evidence: Constitution §9.1.1 gives `VerifiedContent` an algorithm, digest, and length, but `StableSnapshot` only an `AuthorityId`, unqualified `version_digest`, and optional length; persistent reuse requires merely that the authority contract “guarantees immutability.” A bounded manifest search for `StableSnapshot|version_digest|authority contract` finds no local requirement for version-token non-reuse, collision handling, digest algorithm/domain, or canonical protocol binding.
+- requirement: Constitution §§9.1.1, 9.2, and 9.6 require durable identities and reuse inputs to remain stable, versioned, domain-separated, and independently authenticable rather than label-based.
+- consequence: If an authority reuses a token or changes its digest convention under the same `AuthorityId`, distinct snapshots can alias and authorize stale cross-run reuse. The unresolved premise is whether every `AuthorityId` contract is intended to carry those omitted guarantees out of band.
+- repair boundary: Confine clarification to the authority/version identity contract and its canonical binding; do not remove authority-stable partial snapshots.
+- loss guard: Preserve all three source-identity classes, `len: None` partial-snapshot semantics, range-scoped exact evidence, and source-change revocation.
+
+### Round verdict
+
+Owner revision is required: three Grade-A defects leave the normative report identity grammar incomplete, allow generated schemas to omit the common report envelope, and falsely pass a DivergenceReport missing a mandated version. Two Grade-B binding risks require explicit disposition of their single premises. This lens is not marginal-only because the defects affect cross-implementation identity construction, report replay attribution, and the R1-1 fix-map closure claim.
+
+TERMINATED
+
+### R13 — G7 validation, correction, and routing disposition (2026-07-14T20:30:41+02:00)
+
+Clock read immediately before this `apply_patch` write.
+
+**Identity and byte validation: PASS.** The pre-review prefix `[0, 277231)` is 277,231 bytes / 1,495 lines and reproduces SHA-256 `f8951f54fa77a4832702b1fbff60fcad074f35d08205e4e153da69b63c7d796a`. The single reviewer suffix `[277231, 286820)` is 9,589 bytes / 58 lines and reproduces SHA-256 `18eb5b573f833f92cdc7aaafab37bbc2688a9c9f83aa33c80da91b0a3ccc4f5c`. The 286,820-byte / 1,553-line whole pre-integration log reproduces SHA-256 `c0f51903ecba4568c4b3d1a063b613ba49265552dd9c14c4052ec8bdf349fa02`. The bound four-file manifest independently reproduces SHA-256 `9e81eaaa03c1368335b8aaff260af0ff918d7a6a76ca45bed85a00d4313743ec`. Reviewer bytes are preserved verbatim.
+
+**Schema validation: PASS.** The entry declares one `identity-law consistency` lens, the full reviewer FSM through `TERMINATED`, `A=3; B=2; C=0`, `marginal-only: NO`, the bound manifest, a verdict, and standalone `TERMINATED`. Mechanical recount found exactly five finding headings and five instances of each required field: evidence, requirement, consequence, repair boundary, and loss guard. This validates structure, not substantive claims.
+
+**Freshness deviation; bounded admissibility: ADMISSIBLE.** An over-broad local Audit Ledger search exposed R1-10 and one summary line mentioning R1-1/R2-N7. R1-1 was already in the assigned chain; R1-10 and R2-N7 were outside it. No prior gauntlet finding or disposition was exposed, and the reviewer states the incidental lines were not used as evidence. The exposure carries a bounded, non-zero priming risk, but it supplied no prior-round semantics and does not destroy the packet's fresh-context provenance. The deviation remains recorded; no finding is validated, confirmed, refuted, promoted, demoted, or re-graded.
+
+**Started-time correction.** The filed `2026-07-14T18:52:44+02:00` value is the idle Codex process launch time, not the review start. The R13 binding record at `2026-07-14T20:12:46+02:00` explicitly says no task had been sent. Root delivered the assignment only after commit `5c07256` was pushed, and a root clock reading at `2026-07-14T20:18:44+02:00` observed the review active. Correct bound: review began **after `2026-07-14T20:12:46+02:00` and at or before `2026-07-14T20:18:44+02:00`**. The exact start second was not captured and is not invented. Reviewer bytes remain unchanged.
+
+**Compaction handling.** The reviewer compacted once, immediately reread `AGENTS.md`, and then obeyed root's exact additional reminder `Reread AGENTS.md`. This is recorded as process provenance; it neither changes nor validates a finding.
+
+**Routing:** R13-A01, R13-A02, R13-A03, R13-B01, and R13-B02 route to G1 through root for independent premise-first triage. All filed grades remain the reviewer's grades; both Grade-B findings remain unpromoted. G7 does not inspect, review, or repair G1 artifacts.
+
+**Termination:** root reports reviewer PID `3367236`, pane-shell PID `3367002`, tmux session `monkeybee-pdf-mass-context-repo--r13`, and monitor PID `3367118` absent after filing. Local checks independently found all four identities absent.
+
+**Telemetry (root-reported):** total tokens `371814`; input `344543` plus `8110848` cached; output `27271`, including `16455` reasoning. Provider cost is unavailable and is not estimated.
+
+**Convergence boundary:** R13 contributes A+B=5 as the first round on the Constitution-plus-fix-map artifact. One round is not a curve and establishes no convergence. Aggregate filed counts become A=47/B=12/C=4 over eight rounds by mechanical addition only.
+
+Owner FSM remains `DRAFT`. **Log released** for root verification. **R04 and every other unfiled round remain unassigned.**
