@@ -149,7 +149,7 @@ G1's draft `constitution/SPECCARD_PIPELINE.md` now provides the actual empty R0 
 
 This crosswalk is intentionally only a coverage relation. It does not assert sufficiency, quote a requirement, resolve an ambiguity, or populate a semantic body. Licensed extraction may split slots or add new empty IDs without allowing a local contract label to substitute for them.
 
-Before implementation admission, the authorized pre-C1 human/source pipeline is the sole authoring owner of an immutable `CardLinkResolutionManifestId`. It binds the exact plan root, contract-registry root, `ReviewedCardAuthoritySnapshotId`/`CardAuthoritySnapshotId`, and all 149 `SC.C1.*` IDs. Each local ID has exactly one resolution record selecting either (a) one or more applicable `MB-SC-R0-*` entries proven active by the reviewed authority snapshot or (b) an explicit human-reviewed project-law disposition. A project-law record binds a stable project-law authority ID, authorized reviewer identities, a review record, and a rationale limited to why no external normative card is required; it contains no semantic body.
+Before implementation admission, the authorized pre-C1 human/source pipeline is the sole authoring owner of an immutable `CardLinkResolutionManifestId`. It binds the exact plan root, contract-registry root, `ReviewedCardAuthoritySnapshotId`/`CardAuthoritySnapshotId`, and all 150 `SC.C1.*` IDs. Each local ID has exactly one resolution record selecting either (a) one or more applicable `MB-SC-R0-*` entries proven active by the reviewed authority snapshot or (b) an explicit human-reviewed project-law disposition. A project-law record binds a stable project-law authority ID, authorized reviewer identities, a review record, and a rationale limited to why no external normative card is required; it contains no semantic body.
 
 No agent inference, empty mapping, ambiguous branch, or default “no card needed” decision is admissible. Every applicable actual R0 card has at least one local consumer; an extraction-time split or added empty ID blocks admission until a successor manifest records its consumers. The manifest is linkage evidence only: it is not a second normative home, does not assert sufficiency, cannot activate any slot, and leaves every slot in this plan exactly `PENDING-LICENSED-SOURCE`. IMM.001 owns only its runtime projection, and IMM.009 owns only the bidirectional zero-orphan check.
 
@@ -205,6 +205,8 @@ Every contract block below is normative for this delta only after higher authori
 - a precise no-claim boundary.
 
 Surfaces may narrow a contract but may not widen authority, coverage, outcome language, evidence, determinism, or disclosure. Friendly names that differ semantically receive different IDs.
+
+Dependency clauses use a closed grammar. A prerequisite segment is introduced by the exact phrase “depends on,” optionally after an explicit scope label such as “strict mode,” and ends at the first semicolon. Every catalog-token expression in that segment creates graph edges. A single FAMILY.NNN token denotes one catalog ID; an inclusive FAMILY.NNN–FAMILY.NNN range expands in numeric order within one family; slash-separated tokens or ranges are a union. Every expansion is resolved against the closed §6 catalog and IMM.002 stores the exact sorted expanded edge list in the candidate root. Named non-contract decisions or inputs and descriptive qualifiers in the segment create no graph edge; bare family names or prose used in place of catalog IDs are invalid. Conditional alternate-mode `consumes` clauses, downstream-consumer descriptions, workflow labels, and prose after the semicolon create no prerequisite edge and are separately indexed as consumer relations where they name contracts. This grammar is about semantic contract dependencies only; it does not create implementation tasks.
 
 ## 6. Contract catalog
 
@@ -553,17 +555,17 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.FDN.010@1` — Claim outcomes and evidence composition
 
 - Identity, lifecycle, layer: active C1 kernel contract in L0; validated constructors own outcome and evidence authority.
-- Inputs and identity domain: requested claim scope, candidate values or alternatives, coverage partitions, evidence facets, provenance, diagnostics, and issuer capability.
+- Inputs and identity domain: requested claim scope, candidate values or alternatives, coverage partitions, evidence facets, provenance, optional `OracleLineageId` for every corroborating observation, diagnostics, and issuer capability.
 - Preconditions: the issuer may mint each facet; coverage is disjoint and exhaustive relative to the requested scope; unsupported compositions fail closed.
 - Card slots: `SC.C1.FDN.CLAIM-ALGEBRA.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: alternative count, coverage regions, evidence records, provenance depth, diagnostics, and composition work are bounded.
 - Cancellation: cancellation is an operation terminal state outside epistemic evidence; it never manufactures a partial value.
 - Authority and secrets: ordinary callers cannot mint normative, external-check, empirical, cryptographic, or proof facets from strings; caller attestations remain role- and policy-scoped.
-- Outputs and outcomes: canonical algebra is singular scoped success, partial coverage, retained alternatives, or value-less refusal; terminal cancellation/indeterminacy stay separate.
+- Outputs and outcomes: canonical algebra is singular scoped success, partial coverage, retained alternatives, or value-less refusal; terminal cancellation/indeterminacy stay separate. `OracleLineageId` records producer, implementation family, shared dependencies/data where known, protocol author, environment, adjudication relationship, and explicit unknowns without assigning a numeric independence score.
 - Diagnostics: identify invalid coverage, incompatible evidence, unlicensed facet issuance, unknown composition, and unavailable decision-critical material.
 - Evidence and provenance: weakness, recovery assumptions, heuristic status, and artifact availability propagate through registered claim algebras.
 - Determinism and replay: deterministic computation cannot upgrade normative meaning; D0 identity covers the structured outcome under the same proper-domain inputs.
-- Falsifiers and Gauntlet: contradictory coverage, fabricated facets, incompatible bounds, alternative collapse, partial-as-singular serialization, and evidence-laundering properties.
+- Falsifiers and Gauntlet: contradictory coverage, fabricated facets, incompatible bounds, alternative collapse, partial-as-singular serialization, missing/forged lineage, correlated-wrapper multiplication, and evidence-laundering properties.
 - Surfaces: every Rust result wrapper, report, CLI status, contract registry, claim registry, and standalone checker.
 - Dependencies and consumers: depends on FDN.001–FDN.009 and FDN.011; all semantic contracts consume it.
 - Migration and withdrawal: outcome or facet meaning change versions schemas/contracts and lapses affected claims; prose cannot redefine an existing ID.
@@ -1059,8 +1061,8 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.REV.006@1` — Object-stream indexing
 
 - Identity, lifecycle, layer: active C1 L1 contract; members are virtual occurrences within one decoded container and revision security context.
-- Inputs and identity domain: containing raw occurrence, `BaseRevisionGraphId`, `DocumentViewBasisId`, strict stream boundary, decryption/filter context, decoded container, object-count/offset header, and cards.
-- Preconditions: container is decrypted at most once, decoded transaction committed, and containing revision/security identity is exact.
+- Inputs and identity domain: containing raw occurrence, `BaseRevisionGraphId`, `DocumentViewBasisId`, strict stream boundary, explicit `SecurityContextId`, decryption/filter context when applicable, decoded container, object-count/offset header, and cards.
+- Preconditions: the containing revision/security identity is exact; an unencrypted/Identity context needs no credential or plaintext transaction, while a declared encrypted context requires at-most-once container decryption and a committed decoded transaction.
 - Card slots: `SC.C1.REV.OBJECT-STREAM.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: decoded bytes/ratio, member count, header pairs, offsets, parsed members, virtual spans, cache bytes, and diagnostics are bounded.
 - Cancellation: indexing/parsing checkpoints between pairs/members; no partial index becomes cache-visible as a finished container index.
@@ -1071,7 +1073,7 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 - Determinism and replay: D0 under exact container, security/filter context, cards, and semantic limits.
 - Falsifiers and Gauntlet: double-decryption traps, huge counts, duplicate/nonmonotone offsets, truncated data, nested stream, credential crossing, and cache isolation.
 - Surfaces: object occurrence/resolver, open report, CLI objects, recovery, and fuzz target.
-- Dependencies and consumers: depends on REV.004/REV.005, DOC.010, SYN.004–SYN.007, FLT.001–FLT.010, and SEC.004–SEC.009; REV.009, DOC.001, and later recovery/report contracts consume it.
+- Dependencies and consumers: depends on REV.004/REV.005, DOC.010, SYN.004–SYN.007, FLT.001–FLT.010, SEC.001/SEC.008, and conditionally SEC.004–SEC.009 for declared encrypted contexts; REV.009, DOC.001, and later recovery/report contracts consume it.
 - Migration and withdrawal: changed decode/security/parser protocol yields a new container/index identity; plaintext caches under old context are invalidated.
 - No-claim boundary: indexed membership does not make the member independently source-spanned, independently encrypted, or contextually valid.
 - Rationale: one-time container decryption plus virtual provenance closes double-decryption and invented-offset failures.
@@ -1119,17 +1121,17 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.REV.009@1` — Finalized revision graph and history-anchor overlay
 
 - Identity, lifecycle, layer: active C1 L1 finalization contract; `RevisionGraphId` is minted once from an immutable base graph and exact post-base overlays, never by mutating `BaseRevisionGraphId`.
-- Inputs and identity domain: `BaseRevisionGraphId`, `ObjectStreamOccurrenceSetId` or explicit unavailability, `StructuralSignatureSetId`, `PreservationOverlayId`, source coverage, finalization protocol, cards, and semantic limits.
-- Preconditions: every supplied overlay is source/base-graph consistent and immutable; missing decision-critical overlay state yields partial/refused finalization rather than an invented empty set.
+- Inputs and identity domain: `BaseRevisionGraphId`, a bounded canonical collection of `ObjectStreamOccurrenceSetId` entries keyed by containing occurrence, base graph, view basis, and `SecurityContextId` with per-entry availability, `StructuralSignatureSetId`, `PreservationOverlayId`, source coverage, finalization protocol, cards, and semantic limits.
+- Preconditions: every supplied overlay is source/base-graph consistent and immutable; collection order cannot change its canonical root; a missing decision-critical set or collection frontier yields partial/refused finalization rather than an invented empty set.
 - Card slots: `SC.C1.REV.FINAL-GRAPH.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: overlay nodes/edges, member occurrences, signature relations, interval links, canonicalization/symmetry work, diagnostics, and output bytes are bounded.
 - Cancellation: finalization is transactional; a cancelled canonicalization publishes neither a `RevisionGraphId` nor a misleading current-graph alias.
 - Authority and secrets: finalization is read-only; protected object/member/signature locations retain source and plaintext disclosure policy.
 - Outputs and outcomes: emits immutable full `RevisionGraphId`, exact base/overlay roots, coverage, graph alternatives, history anchors, supersession links, and typed partial/refused/cancelled states.
-- Diagnostics: overlay/base mismatch, stale member/security context, missing signature state, uncovered fact, noncanonical symmetry, source change, and finalization limit remain distinct.
+- Diagnostics: overlay/base mismatch, duplicate/missing container key, stale member/security context, incomplete collection frontier, missing signature state, uncovered fact, noncanonical symmetry, source change, and finalization limit remain distinct.
 - Evidence and provenance: the final graph binds source root, base graph, every overlay/availability class, parser/security/filter/card protocols, limits, and superseded graph IDs.
 - Determinism and replay: D0 for identical base/overlays/protocol/cards/semantic limits; concurrency and overlay arrival order cannot affect the final root.
-- Falsifiers and Gauntlet: stale or cross-base overlays, reordered members/signatures, omitted unexplained interval, partial availability, source change, cancellation, and old-graph stability.
+- Falsifiers and Gauntlet: stale or cross-base overlays, two or more container sets, duplicate container keys, reordered members/sets/signatures, omitted unexplained interval, partial availability, source change, cancellation, and old-graph stability.
 - Surfaces: final document views, ordinary resolver, recovery, Open/Recovery reports, CLI revisions/objects, caches, evidence package, and C1 gates.
 - Dependencies and consumers: depends on REV.004, REV.006, REV.008, and BYT.005; DOC.001/DOC.002, REC, RPT, CLI, and final-graph consumers use it.
 - Migration and withdrawal: changed base or overlay protocol creates a new `RevisionGraphId`; older base/final graphs and overlays remain immutable, linked, and independently inspectable.
@@ -1141,17 +1143,17 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.FLT.001@1` — Declared filter-chain planning
 
 - Identity, lifecycle, layer: active C1 L1 contract; the planner owns exact declared-order stage semantics while decoder implementations own only their injected stage protocol.
-- Inputs and identity domain: raw stream dictionary, `/Filter` and `/DecodeParms` shapes, external-file fields as inert data, object/security context, requested decoded scope, and cards.
+- Inputs and identity domain: raw stream dictionary; distinct duplicate-preserving occurrences and admitted shapes for `/Filter`, `/DecodeParms`, `/F`, `/FFilter`, and `/FDecodeParms`; raw `/DL`; object/security context; requested decoded scope; and cards.
 - Preconditions: dictionary occurrences are preserved; strict versus recovered shape interpretation is explicit; every requested stage has an active contract and reviewed card slot.
 - Card slots: `SC.C1.FLT.CHAIN-SHAPE.001`, `SC.C1.FLT.DECODE-PARAMS.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: stages, parameters, input/output bytes, cumulative/per-stage expansion ratio, nesting, diagnostics, and planner work are bounded.
 - Cancellation: planner and each stage checkpoint; cancellation aborts the private chain transaction and reports the last reconciled stage.
 - Authority and secrets: no external file is fetched; optional resolution requires a separate explicit source capability not admitted by default in C1.
-- Outputs and outcomes: emits normalized stage plan, exact declared order, aligned parameters, stage applicability, transaction policy, or strict/recovered refusal.
-- Diagnostics: filter/decode-parameter shape mismatch, unknown/unsupported stage, invalid parameters, forbidden reordering, external source unavailable, and policy block.
+- Outputs and outcomes: emits normalized internal and inert external-chain records with exact declared order, aligned parameters, stage applicability, raw `/DL` advisory/plausibility evidence, transaction policy, or strict/recovered refusal. No external chain is executed without a separate admitted source capability.
+- Diagnostics: internal/external filter/decode-parameter shape mismatch, unknown/unsupported stage, invalid parameters, forbidden reordering, invalid `/DL` hint, external source unavailable, and policy block.
 - Evidence and provenance: plan receipt binds stream object/version, source/view/security context, every raw entry occurrence, cards, stage contracts, and limits.
 - Determinism and replay: D0 under the same stream occurrence, context, cards, stage versions, and semantic limits.
-- Falsifiers and Gauntlet: name/array/null parameter shapes, duplicate dictionary keys, odd declared chains, external-file entries, stage-order permutations, and unsupported stages.
+- Falsifiers and Gauntlet: internal and external name/array/null parameter shapes, duplicate dictionary keys, odd declared chains, `/DL` smaller/larger/malformed hints, external-file entries, stage-order permutations, and unsupported stages.
 - Surfaces: stream resolver, xref/object stream decode, CLI object inspection, reports, and fuzz target.
 - Dependencies and consumers: depends on SYN.006/SYN.007 and FDN.001–FDN.014; FLT.002–FLT.010 consume its plan. A raw Crypt occurrence remains an inert stage descriptor until FLT.009 injects ratified SEC.008 context.
 - Migration and withdrawal: new stage or shape behavior versions the planner/card set; no decoder presence silently widens the capability manifest.
@@ -1321,19 +1323,19 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.FLT.010@1` — Decoded-container identity and virtual spans
 
 - Identity, lifecycle, layer: active C1 L1 contract; one decoded container is qualified by source object/version, security/filter chain, algorithms, parameters, and availability.
-- Inputs and identity domain: planned or committed chain derivation, containing object occurrence, source span, security context, stage receipts, decoder versions, and the ratified D3 policy.
-- Preconditions: D3 and its D1/D2 dependencies are ratified; recipe inputs are immutable; materialization is visible only after the chain transaction commits. **PROPOSED default — awaiting ratification (D3):** one pre-decode recipe `DecodedContainerId` plus a distinct post-commit `DecodedArtifactDigest`.
+- Inputs and identity domain: one immutable `PlannedRecipe` containing the source/object/version/span, explicit `SecurityContextId`, normalized chain and parameter identities, decoder versions, semantic limits, and ratified D3 policy; plus, only after execution, a separately linked `MaterializationRecord` containing transaction commit state, ordered stage receipts, availability, and outcome-required `DecodedArtifactDigest`.
+- Preconditions: D3 and its D1/D2 dependencies are ratified; only `PlannedRecipe` fields mint the sole pre-decode `DecodedContainerId`; materialization fields are forbidden before execution and never change that ID. A durable/cached/evidence-referenced Materialized outcome requires commit plus digest, an operation-local transient Materialized outcome requires commit and explicitly forbids durable reuse, and Refused carries no materialized bytes. **PROPOSED default — awaiting ratification (D3):** one pre-decode recipe `DecodedContainerId` plus a distinct post-commit `DecodedArtifactDigest`.
 - Card slots: `SC.C1.FLT.DECODED-CONTAINER.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: identity computation, retained output, virtual spans, cache insertion, recomputation, and provenance metadata are bounded.
 - Cancellation: cancelled identity/materialization cannot publish a durable container; committed bytes may remain private with explicit availability.
 - Authority and secrets: container and cache keys include non-secret credential/security/tenant context and sensitivity partition without exposing credential material.
 - Outputs and outcomes: produces exactly one typed state: `Planned` with recipe identity and no content claim; `Materialized` with verified `DecodedArtifactDigest`; transient `Materialized` with digest not computed and therefore operation-local only; or `Refused` with cause. Successful committed materialization may additionally expose bounded virtual spans and stage provenance.
-- Diagnostics: unratified policy, unavailable bytes, identity budget, security-context mismatch, stage inconsistency, cache denial, and collision quarantine.
+- Diagnostics: unratified policy, planned/materialized grammar violation, receipt-before-commit, required/forbidden digest mismatch, unavailable bytes, identity budget, security-context mismatch, stage inconsistency, cache denial, and collision quarantine.
 - Evidence and provenance: every virtual span links decoded offset/length to container, chain receipts, enclosing source object/span, and limits.
 - Determinism and replay: recipe identity targets D0 under exact proper-domain inputs, chain versions, security context, and semantic limits. A retained, cached, or evidence-referenced artifact computes its digest incrementally during decode and verifies it on reuse; a transient no-digest artifact cannot support durable reuse or byte-exactness.
 - Falsifiers and Gauntlet: same bytes/different context, different bytes/same injected digest, deferred identity, virtual-span bounds, eviction/recompute, and credential crossing.
 - Surfaces: object-stream members, decoded stream inspection, reports, caches, checker, and fuzz witness serialization.
-- Dependencies and consumers: depends on FLT.001–FLT.009, FDN.001–FDN.014, and SEC.009; REV.002/REV.006/DOC.001/RPT consume it.
+- Dependencies and consumers: depends on FLT.001–FLT.009, FDN.001–FDN.014, SEC.001/SEC.008, and conditionally SEC.009 for decrypted material; REV.002/REV.006/DOC.001/RPT consume it.
 - Migration and withdrawal: D3 remains a proposal until human ratification. A later decoded-identity cost/grammar change versions the container protocol and invalidates incompatible cache reuse.
 - No-claim boundary: container identity does not claim unique inverse source-byte attribution, semantic validity, or public availability of plaintext.
 - Rationale: metadata-only recipe naming preserves laziness and bounds reference cost, while the post-commit digest tests the bytes before durable reuse. `DecodedContainerId` is the sole class; the alternative spelling is only the D-004 higher-layer drift label.
@@ -1343,17 +1345,17 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.SEC.001@1` — Encryption dictionary and scope inventory
 
 - Identity, lifecycle, layer: active C1 L1/L2 contract; inventory records declared security structure before any credential or decryption attempt.
-- Inputs and identity domain: `BaseRevisionGraphId`, `DocumentViewBasisId`, DOC.011 bootstrap resolution set, trailer/catalog reference locators, raw encryption dictionaries, crypt-filter dictionaries, metadata/embedded-file indicators, and cards.
+- Inputs and identity domain: `BaseRevisionGraphId`, `DocumentViewBasisId`, DOC.011 bootstrap resolution set, trailer/catalog reference locators, raw encryption dictionaries including distinct `/P` and `/Perms` occurrences, crypt-filter dictionaries, metadata/embedded-file indicators, and cards.
 - Preconditions: raw values and pre-view object occurrences are available; final `DocumentViewId` is not required; no dictionary field is filled from memory when a card is absent.
 - Card slots: `SC.C1.SEC.ENCRYPTION-INVENTORY.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: dictionaries, entries, reference depth, crypt-filter records, revision contexts, diagnostics, and alternatives are bounded.
 - Cancellation: inventory returns exact observed scope and cannot claim unencrypted absence outside it.
 - Authority and secrets: no credential is required; inventory has read-only access and emits no keys/password-derived values.
-- Outputs and outcomes: records declared handler, `/V`/`/R`/length and related entries as raw/validated fields, crypt-filter defaults, metadata/file scope, unsupported profiles, and ambiguity.
+- Outputs and outcomes: emits one non-secret `SecurityContextId` with unencrypted/Identity, declared-handler, unsupported, ambiguous, or unavailable state; records declared handler, `/V`/`/R`/length, raw `/P`, raw `/Perms`, and related entries as raw/validated fields; and preserves crypt-filter defaults, metadata/file scope, unsupported profiles, and ambiguity. Credential-free states contain no handler key or credential claim.
 - Diagnostics: missing/invalid/conflicting entries, unsupported matrix row, unresolved reference, revision inconsistency, and partial source.
 - Evidence and provenance: every field links exact dictionary occurrence, base graph/view basis, cards, strict/recovered-basis status, and coverage.
 - Determinism and replay: D0 under the same source/base graph/view basis, cards, and limits.
-- Falsifiers and Gauntlet: duplicate keys, conflicting revisions, missing entries, unknown filters, malformed values, partial source, and inventory-without-credential tests.
+- Falsifiers and Gauntlet: absent encryption dictionary, Identity routing, duplicate keys, conflicting revisions, missing entries, distinct `/P`/`/Perms` mutations, unknown filters, malformed values, partial source, and inventory-without-credential tests.
 - Surfaces: OpenReport, security report, CLI inspect/objects, decryption admission, capability manifest, and fuzz target.
 - Dependencies and consumers: depends on SYN.004–SYN.006, REV.004/REV.005, DOC.010, and DOC.011 bootstrap records; SEC.002–SEC.009, REV.006, DOC.002/DOC.001, and RPT consume it.
 - Migration and withdrawal: new handler/profile cards version inventory interpretation; raw evidence remains source-bound.
@@ -1403,17 +1405,17 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.SEC.004@1` — Standard-handler matrix and key derivation
 
 - Identity, lifecycle, layer: active C1 L1 atomic security contract; it selects only a later card-admitted `/V` and `/R` matrix row and derives opaque read keys.
-- Inputs and identity domain: SEC.001 inventory, SEC.003 validated role/context, exact trailer ID/revision facts where applicable, object/version context, crypt-filter selection, and cards.
+- Inputs and identity domain: SEC.001 inventory, SEC.003 validated role/context, exact trailer ID/revision facts where applicable, object/version context, crypt-filter selection, raw `/Perms` occurrence where applicable, and cards.
 - Preconditions: matrix row, required entries, key lengths, algorithms, and deprecated-read policy are later rights-reviewed; no output-writing policy is admitted.
 - Card slots: `SC.C1.SEC.STANDARD-HANDLER-MATRIX.001`, `SC.C1.SEC.KEY-DERIVATION.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: derivation operations, object-key derivations, key bytes/lifetime, attempts, diagnostics, and per-operation object count are bounded.
 - Cancellation: key derivation checks cancellation at bounded units; cancelled/intermediate keys are not cached or returned.
 - Authority and secrets: keys remain opaque secret handles scoped to source/view/revision/object/security context and credential lease.
-- Outputs and outcomes: emits admitted handler context plus opaque file/object read-key capability, or unsupported/malformed/wrong-credential/policy outcome.
+- Outputs and outcomes: emits admitted handler context plus opaque file/object read-key capability and a separate typed `/Perms` validation outcome of valid, invalid, not-applicable, unsupported, or unavailable; or emits unsupported/malformed/wrong-credential/policy outcome. `/P` interpretation remains a distinct non-authorization observation.
 - Diagnostics: distinguish unsupported matrix internally while keeping external credential rejection policy; no key material or password-dependent bytes appear.
 - Evidence and provenance: non-secret receipt binds cards, raw dictionary occurrences, source/view/revision, role class, primitive versions, and scope.
 - Determinism and replay: deterministic under exact secret and context; receipt alone cannot reproduce plaintext.
-- Falsifiers and Gauntlet: approved vectors, wrong trailer ID/context, object-generation boundaries, duplicate dictionaries, unsupported rows, key-lifetime, and cross-revision tests.
+- Falsifiers and Gauntlet: approved vectors, wrong trailer ID/context, object-generation boundaries, duplicate dictionaries, valid/invalid/unavailable `/Perms` distinct from `/P`, unsupported rows, key-lifetime, and cross-revision tests.
 - Surfaces: RC4/AES read decoders, Crypt routing, object/string/stream resolution, OpenReport, and fuzz target.
 - Dependencies and consumers: depends on SEC.001–SEC.003, REV.004/REV.005 object context, and FDN.001–FDN.015; SEC.005–SEC.009 consume it.
 - Migration and withdrawal: a changed matrix/card/primitive versions handler context; deprecated read support can be withdrawn by profile without enabling writer emission.
@@ -1483,19 +1485,19 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.SEC.008@1` — Crypt-filter and object/string/stream scope
 
 - Identity, lifecycle, layer: active C1 L1 orchestration contract; it computes one explicit encryption/decryption scope per selected base-revision/view-basis and object occurrence, before final view construction.
-- Inputs and identity domain: SEC.001 inventory, admitted handler context, `/StmF`/`/StrF`/`/EFF` and per-stream Crypt/Identity declarations, metadata policy, object category, xref/object-stream rules, and cards.
-- Preconditions: raw dictionary occurrences, `BaseRevisionGraphId`, and `DocumentViewBasisId` are exact; final `DocumentViewId` is not an input; all scope rules are later card-reviewed.
+- Inputs and identity domain: SEC.001 `SecurityContextId`, optional admitted handler context, `/StmF`/`/StrF`/`/EFF` and per-stream Crypt/Identity declarations, metadata policy, object category, xref/object-stream rules, and cards.
+- Preconditions: raw dictionary occurrences, `BaseRevisionGraphId`, and `DocumentViewBasisId` are exact; final `DocumentViewId` is not an input; all scope rules are later card-reviewed. An unencrypted/Identity context requires no SEC.002–SEC.004 credential/key result.
 - Card slots: `SC.C1.SEC.CRYPT-FILTER-SCOPE.001`, `SC.C1.SEC.ENCRYPTED-OBJECT-SCOPE.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: lookup/selection work, filter records, object occurrences, revision contexts, diagnostics, and dependency manifest are bounded.
 - Cancellation: scope planning checkpoints before key acquisition; no partially selected context is cached.
 - Authority and secrets: planner receives opaque handler/credential identities and returns narrow per-object handles; no key export or host discovery.
-- Outputs and outcomes: exact Identity/RC4/AESV2/AESV3/unsupported scope record for each admitted value, with one-time object-stream container rule and metadata/file scope.
+- Outputs and outcomes: exact unencrypted/Identity/RC4/AESV2/AESV3/unsupported scope record for each admitted value, with one-time object-stream container rule and metadata/file scope.
 - Diagnostics: missing/default conflict, unknown filter, category mismatch, forbidden xref encryption, double-decrypt attempt, unsupported extension, and ambiguity.
 - Evidence and provenance: scope record links raw declarations, object/version/base-revision/view-basis, cards, handler contract, selection witnesses, and alternatives; final views bind the scope ID later.
 - Determinism and replay: D0 under the same view basis, declarations, cards, capability context, and semantic limits.
 - Falsifiers and Gauntlet: default/per-stream conflicts, Identity routing, metadata and embedded-file cases, xref exclusions, object-stream double-decrypt traps, and revision changes.
 - Surfaces: filter planner, scalar/object resolution, decoded containers, OpenReport, CLI objects, and fuzz target.
-- Dependencies and consumers: depends on SEC.001–SEC.004, REV.004/REV.005, and exact DOC.010/DOC.011 pre-view context; SEC.005–SEC.007/SEC.009, FLT.009, REV.006, and DOC.002 consume it.
+- Dependencies and consumers: depends on SEC.001 and conditionally SEC.002–SEC.004 for declared handlers, REV.004/REV.005, and exact DOC.010/DOC.011 pre-view context; SEC.005–SEC.007/SEC.009, FLT.009, REV.006, and DOC.002 consume it.
 - Migration and withdrawal: scope/card changes create new view/derivation identities and invalidate affected plaintext cache entries.
 - No-claim boundary: calculated scope reflects admitted declarations and cards; it does not prove ciphertext strength, all-file confidentiality, or host authorization.
 - Rationale: central scope selection prevents accidental double decryption and inconsistent treatment of strings, streams, metadata, and embedded files.
@@ -1545,7 +1547,7 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.DOC.002@1` — Effective object mapping and document views
 
 - Identity, lifecycle, layer: active C1 L2 contract; `DocumentViewId` binds one admitted interpretation over an exact root/graph/selection, never just source bytes.
-- Inputs and identity domain: source root, final `RevisionGraphId`, `DocumentViewBasisId`, selected strict chain or `RecoveryHypothesisBasisId`, DOC.003 dialect record, SEC.001/SEC.008 security records, outcome-sensitive limits, coverage, capability identities, and semantic scope.
+- Inputs and identity domain: source root, final `RevisionGraphId`, `DocumentViewBasisId`, selected strict chain or `RecoveryHypothesisBasisId`, DOC.003 dialect record, SEC.001 `SecurityContextId`, SEC.008 scope record when declared-handler or explicit Crypt/Identity routing applies, outcome-sensitive limits, coverage, capability identities, and semantic scope.
 - Preconditions: graph is immutable; selection is singular or the operation returns alternatives; semantic-scope manifest is explicit and card-covered.
 - Card slots: `SC.C1.DOC.EFFECTIVE-VIEW.001`, `SC.C1.DOC.SEMANTIC-SCOPE-R0.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: effective mappings, versions, duplicate resolution, semantic commitment, canonicalization/symmetry work, and diagnostics are bounded.
@@ -1557,7 +1559,7 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 - Determinism and replay: D0 under the same full input manifest; two views may share scoped semantics without sharing history, authority, signatures, or provenance.
 - Falsifiers and Gauntlet: same source/different graph, strict/recovered alternatives, profile changes, capability changes, partial ranges, symmetry, and semantic-scope omission.
 - Surfaces: resolver, open/recovery reports, CLI inspect/revisions/objects, caches, and all R0 workflows.
-- Dependencies and consumers: depends on REV.009, DOC.010, DOC.003, SEC.001/SEC.008, and FDN.001–FDN.015; DOC.001, DOC.004–DOC.009, DOC.012–DOC.014, recovery finalization, and report contracts consume it. Ordinary resolution and DOC.007 findings are downstream and cannot define bootstrap identity.
+- Dependencies and consumers: depends on REV.009, DOC.010, DOC.003, SEC.001 and conditionally SEC.008, and FDN.001–FDN.015; DOC.001, DOC.004–DOC.009, DOC.012–DOC.014, recovery finalization, and report contracts consume it. Ordinary resolution and DOC.007 findings are downstream and cannot define bootstrap identity.
 - Migration and withdrawal: any meaning-changing input or scope change creates a new view/state protocol; old receipts stay bound to old IDs.
 - No-claim boundary: semantic equality cannot upgrade common history, signature coverage, source preservation, authorization, or provenance.
 - Rationale: source bytes can support several histories and recovery interpretations; binding the exact selected graph/view prevents cache and report aliasing.
@@ -1597,7 +1599,7 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 - Determinism and replay: D0 under the exact view, cards, resolver/profile, capabilities, and limits.
 - Falsifiers and Gauntlet: missing/multiple catalogs, wrong types, cycles, duplicates, encrypted entries, stale cache, and partial-source cases.
 - Surfaces: Rust document facade, CLI inspect/objects, structural inventories, OpenReport, and recovery.
-- Dependencies and consumers: depends on DOC.001–DOC.003, SYN.006, and FDN; DOC.005–DOC.009/DOC.012–DOC.014/REC.005/RPT consume it.
+- Dependencies and consumers: depends on DOC.001–DOC.003, SYN.006, and FDN.001–FDN.015; DOC.005–DOC.009/DOC.012–DOC.014/REC.005/RPT consume it.
 - Migration and withdrawal: accessor/card semantic changes version result types/contracts; raw carriers remain available where safe.
 - No-claim boundary: locating a structural carrier does not claim semantic destination resolution, behavior execution, rendering, accessibility, signature trust, reachability, or external-resource safety.
 - Rationale: typed but evidence-bearing access gives R0 useful structure without smuggling L3–L6 behavior into L2.
@@ -1605,21 +1607,21 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.DOC.005@1` — Page-tree structure and inheritance inventory
 
 - Identity, lifecycle, layer: active C1 L2 contract; C1 inventories page-tree topology and later-layer inputs without executing page content.
-- Inputs and identity domain: document view, pages root, resolver, dialect, raw page/tree dictionaries, inheritance cards, and limits.
+- Inputs and identity domain: document view, pages root, resolver, dialect, raw page/tree dictionaries including distinct `/Tabs` occurrences, inheritance cards, optional caller `PageGeometryRequestId` naming requested box and fallback rule, and limits.
 - Preconditions: catalog accessor yields a candidate pages root; strict/recovery status is retained.
-- Card slots: `SC.C1.DOC.PAGE-TREE.001`, `SC.C1.DOC.PAGE-INHERITANCE.001` — `PENDING-LICENSED-SOURCE`.
+- Card slots: `SC.C1.DOC.PAGE-TREE.001`, `SC.C1.DOC.PAGE-INHERITANCE.001`, `SC.C1.DOC.PAGE-TABS.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: nodes, edges, depth, reference resolutions, page leaves, duplicate reachability, inherited-value walks, and diagnostics are bounded.
 - Cancellation: iterative walk returns exact coverage/frontier; it cannot claim all pages or global absence after early stop.
 - Authority and secrets: read-only; content streams and resources are references/inventory only and cannot execute or render.
-- Outputs and outcomes: page/tree nodes, order alternatives, parent/cycle/count findings, raw/effective structural attributes, and recovered-order evidence.
-- Diagnostics: wrong node type, missing/bad parent, cycle, count mismatch, duplicate reachability, invalid inherited carrier, and depth/coverage limit.
-- Evidence and provenance: every page/node/attribute links object version/path, view/graph, raw occurrence, selection policy, and cards.
+- Outputs and outcomes: page/tree nodes, order alternatives, parent/cycle/count findings, raw `/Tabs` carrier occurrence/status without accessibility meaning, and a `PageAttributeInventoryId` that preserves raw arrays plus separately records inherited/local/defaulted `Resources`, `MediaBox`, `CropBox`, `BleedBox`, `TrimBox`, `ArtBox`, `Rotate`, and `UserUnit`; a supplied `PageGeometryRequestId` remains an inspection identity and produces only strict/refused or named-recovery geometry evidence, never rendering.
+- Diagnostics: wrong node type, missing/bad parent, cycle, count mismatch, duplicate reachability, invalid inherited/local carrier, missing/duplicate/unclassified `/Tabs`, non-finite coordinate, inadmissible scale, degenerate/reversed rectangle, requested-box/fallback mismatch, silent-normalization attempt, and depth/coverage limit.
+- Evidence and provenance: every page/node/attribute and requested-box result links object version/path, view/graph, each raw occurrence/array, inheritance/default witness, selection or named-recovery policy, request identity, and cards.
 - Determinism and replay: D0 under exact view, cards, resolver, and semantic limits.
-- Falsifiers and Gauntlet: deep/cyclic trees, wrong counts, shared leaves, duplicate parents, malformed boxes/scalars as structural data, encrypted objects, and cancellation.
+- Falsifiers and Gauntlet: deep/cyclic trees, wrong counts, shared leaves, duplicate parents, inheritance/locality confusion, every named box, non-finite/degenerate/reversed geometry, requested-box fallback substitution, raw/effective divergence, duplicate/malformed `/Tabs`, encrypted objects, and cancellation.
 - Surfaces: CLI inspect/objects, OpenReport summary, recovery materiality, capability discovery, and later C2 handoff.
 - Dependencies and consumers: depends on DOC.001–DOC.004; REC.005, DOC.009, and RPT may consume structural results.
 - Migration and withdrawal: later rendering semantics receive new contracts; this topology contract is not widened by page execution.
-- No-claim boundary: page discovery does not claim paintability, visual fidelity, valid resources, font support, or page-content conformance.
+- No-claim boundary: page discovery, `/Tabs` inventory, and geometry-request evidence do not claim accessibility meaning/compliance, paintability, visual fidelity, valid resources, font support, page-program execution, or page-content conformance.
 - Rationale: structural page inventory helps determine material recovery differences while respecting C1’s no-rendering boundary.
 
 #### `C1.CC.DOC.006@1` — Name and number tree structure
@@ -1657,7 +1659,7 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 - Determinism and replay: D0 under exact view, rule/card data, profile, dependencies, and semantic limits.
 - Falsifiers and Gauntlet: atomic positive/negative fixtures after card admission, rule mutation, missing-card refusal, generated-data drift, partial coverage, and alternate checker cases.
 - Surfaces: OpenReport validation slice, CLI inspect/objects, capability manifest, immune-system coverage, and close gate.
-- Dependencies and consumers: depends on DOC.001–DOC.006, the pre-C1 reviewed-card authority snapshot, ratified rights/license decisions, and FDN; IMM.001 supplies only a runtime coverage projection. DOC.009/RPT consume validation results.
+- Dependencies and consumers: depends on DOC.001–DOC.006, the pre-C1 reviewed-card authority snapshot, ratified rights/license decisions, and FDN.001–FDN.015; IMM.001 supplies only a runtime coverage projection. DOC.009/RPT consume validation results.
 - Migration and withdrawal: rule/card change versions the profile and results; generated rule data never silently update behavior.
 - No-claim boundary: no card means no normative validation; imported rule data do not replace controlling licensed sources or cover lexical/page/render/profile semantics outside scope.
 - Rationale: an early validation framework allows later rules to inherit evidence and coverage without generating normative meaning during this run.
@@ -1691,15 +1693,15 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 - Budgets: all lower-layer counters share one non-resettable account; open-specific orchestration/retained result/report budgets are explicit.
 - Cancellation: orchestrator stops new work, aborts private decode results, finalizes accounting/diagnostics, and returns typed cancellation.
 - Authority and secrets: caller gets only requested read/decrypt capabilities; no writer, external source, action, trust, or network authority is introduced.
-- Outputs and outcomes: immutable `StrictOpenResultId` plus source/graph/view alternatives as allowed by strict facts, object/security inventories, coverage, and explicit unavailable capabilities; RPT.001 alone owns the base `OpenReport` body.
-- Diagnostics: lower-layer codes are retained; orchestration adds only composition, missing-contract/card, authority, and coverage-summary codes.
-- Evidence and provenance: strict result binds source root, every base/final graph, selected view or live alternatives, security/decryption state, limits, and no-claims; report construction is downstream.
+- Outputs and outcomes: immutable `StrictOpenResultId` plus source/graph/view alternatives as allowed by strict facts, object/security inventories, coverage, explicit unavailable capabilities, and a view-keyed `OccurrenceVisibilityMapId` over every retained physical/virtual occurrence classified as visible, shadowed, unreachable, or unknown after bounded DOC.001 traversal; RPT.001 alone owns the base `OpenReport` body.
+- Diagnostics: lower-layer codes are retained; orchestration adds only composition, occurrence-without-classification, reachability frontier/limit, missing-contract/card, authority, and coverage-summary codes.
+- Evidence and provenance: strict result binds source root, every base/final graph, selected view or live alternatives, every occurrence/classification/path or unknown frontier, security/decryption state, limits, and no-claims; report construction is downstream.
 - Determinism and replay: semantic body targets D0 under the exact input manifest; I/O timing and wall observations remain separate.
-- Falsifiers and Gauntlet: well-formed atomic fixtures after card admission, malformed inputs proving no recovery leakage, partial source, credentials, cancellation, diagnostic truncation, and source change.
+- Falsifiers and Gauntlet: well-formed atomic fixtures after card admission, visible/shadowed/unreachable/unknown occurrences across revisions and object streams, alternate views, malformed inputs proving no recovery leakage, partial source, credentials, cancellation, diagnostic truncation, and source change.
 - Surfaces: Rust `open` facade, CLI `inspect` strict mode, reports, capability discovery, and Workflow B strict leg.
 - Dependencies and consumers: depends on applicable BYT.001–BYT.006, SYN.001–SYN.007, REV.001–REV.009, FLT.001–FLT.010, SEC.001–SEC.009, and DOC.001–DOC.008/DOC.010–DOC.014 contracts; RPT.001/RPT.003 and REC.002 consume its strict result.
 - Migration and withdrawal: a material composition change versions the contract and report claim row; narrower surfaces cannot claim more than this contract.
-- No-claim boundary: strict open does not render, extract text, validate trust, repair, write, or silently select a recovery interpretation.
+- No-claim boundary: strict open does not render, extract text, validate trust, repair, write, or silently select a recovery interpretation; unreachable means only “not reached under the exact bounded view/traversal,” never harmless, absent, sanitized, or semantically inert.
 - Rationale: one facade makes strictness observable end to end and prevents lower recovery conveniences from leaking into ordinary “open.”
 
 #### `C1.CC.DOC.010@1` — Pre-view selection and mapping basis
@@ -1757,7 +1759,7 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 - Determinism and replay: D0 under the exact view/graph/cards/classifier protocol/capabilities and semantic limits; traversal order cannot change the inventory root.
 - Falsifiers and Gauntlet: admitted atomic fixtures after card activation, encrypted/unencrypted combinations, unknown shapes, alternate revisions/views, cycles, partial sources, opaque nested payloads, and cancellation.
 - Surfaces: strict/recovery structural inventories, RPT.003/RPT.007, CLI inspect/objects, capability discovery, IMM.009 coverage, FUZ.008, and the C1 product gate.
-- Dependencies and consumers: depends on REV.009, DOC.001–DOC.004, DOC.008, SEC.001, the pre-C1 reviewed-card authority snapshot, and FDN; DOC.009, REC.010, RPT.001/RPT.003/RPT.007, IMM.009, and FUZ.008 consume it.
+- Dependencies and consumers: depends on REV.009, DOC.001–DOC.004, DOC.008, SEC.001, the pre-C1 reviewed-card authority snapshot, and FDN.001–FDN.015; DOC.009, REC.010, RPT.001/RPT.003/RPT.007, IMM.009, and FUZ.008 consume it.
 - Migration and withdrawal: card/classifier changes version the inventory contract and derivation; historical raw carrier evidence and pending/unknown states are never relabeled in place.
 - No-claim boundary: inventory does not establish whole-document absence, payload safety, encryption completeness, semantic reachability, an execution path, a sanitization result, or permission to open nested content.
 - Rationale: an explicit atomic owner discharges the declared R0 inventory surface without pretending that DOC.008's generic opaque-carrier record performed the card-specific classification.
@@ -1777,7 +1779,7 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 - Determinism and replay: D0 under exact raw tokens/view/dialect/cards/classifier protocol and semantic limits; scan order cannot alter the inventory root.
 - Falsifiers and Gauntlet: admitted atomic fixtures after card activation, byte-boundary splits, partial/encrypted strings, alternate revisions/views, duplicate occurrences, unsafe disclosure, permutation, and cancellation.
 - Surfaces: RPT.001 structural inventory, CLI inspect/objects, capability discovery, IMM.009 coverage, FUZ.008, and the C1 product gate.
-- Dependencies and consumers: depends on SYN.005, REV.009, DOC.001–DOC.004, the pre-C1 reviewed-card authority snapshot, and FDN; DOC.009, REC.010, RPT.001/RPT.007, IMM.009, and FUZ.008 consume it.
+- Dependencies and consumers: depends on SYN.005, REV.009, DOC.001–DOC.004, the pre-C1 reviewed-card authority snapshot, and FDN.001–FDN.015; DOC.009, REC.010, RPT.001/RPT.007, IMM.009, and FUZ.008 consume it.
 - Migration and withdrawal: reviewed card/classifier change versions the inventory and its derivations; old raw evidence remains scoped and is never reinterpreted in place.
 - No-claim boundary: an inventory entry is not decoded Unicode text, normalization, semantic string validity, text extraction, accessibility, searchability, layout, or rendering evidence.
 - Rationale: direct ownership keeps the declared UTF-8 string inventory visible while the pending card firewall prevents model-memory semantics from entering C1.
@@ -1797,7 +1799,7 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 - Determinism and replay: D0 under exact view/catalog evidence/dialect/cards/policy and semantic limits; traversal or duplicate encounter order cannot alter the inventory root.
 - Falsifiers and Gauntlet: admitted atomic fixtures after card activation, missing/multiple catalogs, duplicate entries, alternate views, partial/encrypted catalogs, permutation, and cancellation.
 - Surfaces: RPT.001 structural inventory, CLI inspect/objects, capability discovery, IMM.009 coverage, FUZ.008, and the C1 product gate.
-- Dependencies and consumers: depends on SYN.006, REV.009, DOC.001–DOC.004, the pre-C1 reviewed-card authority snapshot, and FDN; DOC.009, REC.010, RPT.001/RPT.007, IMM.009, and FUZ.008 consume it.
+- Dependencies and consumers: depends on SYN.006, REV.009, DOC.001–DOC.004, the pre-C1 reviewed-card authority snapshot, and FDN.001–FDN.015; DOC.009, REC.010, RPT.001/RPT.007, IMM.009, and FUZ.008 consume it.
 - Migration and withdrawal: reviewed card/classifier change versions the inventory and derivation; old raw catalog evidence and unresolved alternatives remain immutable.
 - No-claim boundary: carrier presence, absence, or value does not establish that rendering is required, possible, attempted, successful, safe, or within C1; no rendering or semantic rendering-need verdict is produced.
 - Rationale: a dedicated structural owner satisfies the declared R0 slot without widening the no-rendering stop line or treating a generic catalog accessor as completed inventory.
@@ -1807,17 +1809,17 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.REC.001@1` — Recovery hypothesis-basis representation
 
 - Identity, lifecycle, layer: active C1 L2 contract; `RecoveryHypothesisBasisId` identifies one registered assumption/evidence basis before a candidate document view exists.
-- Inputs and identity domain: exact source, final strict revision graph, strict-open defects, proposed repair assumptions, affected source locations, family/profile identity, cards, and semantic limits; no candidate view or candidate-derived value is an input.
+- Inputs and identity domain: exact source, final strict revision graph, strict-open defects, proposed repair assumptions, affected source locations, family/profile identity, initial direct/shared cost observations under the existing work account, cards, and semantic limits; no candidate view or candidate-derived value is an input.
 - Preconditions: REC.002 admitted the session; every assumption is registered and card/contract-linked; source and strict-graph facts are immutable; basis creation cannot invoke ordinary resolution.
 - Card slots: `SC.C1.REC.HYPOTHESIS.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: assumptions, affected regions, source evidence, family records, canonicalization, and diagnostics are bounded.
 - Cancellation: an unpublished basis remains private; retained partial family state states its frontier and cannot become a candidate view or selected result.
 - Authority and secrets: basis creation has only the admitted read/decrypt capabilities needed for raw evidence; caller preference cannot alter byte facts or mint normative evidence.
-- Outputs and outcomes: immutable `RecoveryHypothesisBasisId` containing assumptions, source support, affected scope, family/profile, initial constraint obligations, cards, limits, and explicit unresolved consequences.
+- Outputs and outcomes: immutable `RecoveryHypothesisBasisId` containing assumptions, source support, affected scope, family/profile, initial constraint obligations, cards, limits, explicit unresolved consequences, and `RecoveryHypothesisCostVectorId`. Each existing budget dimension records direct, shared-attributed, shared-unallocated, or unavailable cost; the vector is not a scalar confidence or probability.
 - Diagnostics: unknown assumption, conflicting source, missing strict parent, unbounded repair, card gap, graph mismatch, and budget exhaustion.
-- Evidence and provenance: the basis binds the exact strict result, source/final strict graph, algorithm/profile, cards, limits, every assumption, and raw supporting locations; it contains no derived-view claim.
+- Evidence and provenance: the basis binds the exact strict result, source/final strict graph, algorithm/profile, cards, limits, every assumption, raw supporting locations, and a `RecoveryCostAttributionReceiptId` that reconciles direct/shared/unavailable attribution; it contains no derived-view claim.
 - Determinism and replay: D0 under exact strict inputs/protocol/semantic budget; family enumeration order cannot change basis identity.
-- Falsifiers and Gauntlet: candidate-view input smuggling, invented source bytes, hidden assumptions, graph mismatch, equivalent-basis permutations, affected-scope omission, and cancellation.
+- Falsifiers and Gauntlet: candidate-view input smuggling, invented source bytes, hidden assumptions, graph mismatch, equivalent-basis permutations, affected-scope/cost omission, shared-cost double counting, cost-to-confidence laundering, and cancellation.
 - Surfaces: recovery family registry, candidate-view bootstrap, recovery report, CLI alternatives, held-out probe record, and fuzz harness.
 - Dependencies and consumers: depends on REC.002, REV.009, and FDN.001–FDN.015; REC.003–REC.006, DOC.010, and REC.010 consume it.
 - Migration and withdrawal: assumption or basis-identity grammar changes version the basis; old bases remain historical and never silently acquire candidate consequences.
@@ -1907,19 +1909,19 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.REC.006@1` — Bounded hypothesis search
 
 - Identity, lifecycle, layer: active C1 L2 orchestration contract; one search explores registered families under a shared non-resettable account.
-- Inputs and identity domain: strict result, admitted recovery session, family registry, source/final strict graph/context, generated hypothesis bases, candidate views and consequence receipts, semantic search limits, and cancellation.
+- Inputs and identity domain: strict result, admitted recovery session, family registry, source/final strict graph/context, generated hypothesis bases and their cost vectors, candidate views and consequence receipts, semantic search limits, and cancellation.
 - Preconditions: every family declares assumptions, kill budget, output contract, and materiality projection; no unregistered heuristic executes.
 - Card slots: `SC.C1.REC.BOUNDED-SEARCH.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: scan regions, candidates, branches, hypotheses, ordering/comparisons, canonicalization/symmetry work, decoded bytes, and diagnostics are independent dimensions.
 - Cancellation: checkpoints between bounded candidate/family units; stopping returns frontier, limits, and retained candidates without a singular promotion.
 - Authority and secrets: family work inherits/narrows source/decrypt leases; parallel branches cannot multiply capabilities or budgets.
-- Outputs and outcomes: returns generated/rejected bases and finalized hypotheses, candidate-view consequence receipts, frontier, budget consumption, fired limits, family coverage, and partial/ambiguous/refused search result.
+- Outputs and outcomes: returns generated/rejected bases and finalized hypotheses, candidate-view consequence receipts, each basis/candidate/final-hypothesis `RecoveryHypothesisCostVectorId`, aggregate budget reconciliation without double counting shared work, frontier, fired limits, family coverage, and partial/ambiguous/refused search result.
 - Diagnostics: family/candidate cap, canonicalization cap, resource exhaustion, cancellation, dependency/card gap, and internal family fault remain distinct.
-- Evidence and provenance: search receipt binds strict report, source/final strict graph, profile, family versions, cards, exact semantic limits, attempts, and every retained/rejected basis, candidate view, and finalized hypothesis ID.
+- Evidence and provenance: search receipt binds strict report, source/final strict graph, profile, family versions, cards, exact semantic limits, attempts, every cost-attribution receipt, and every retained/rejected basis, candidate view, and finalized hypothesis ID.
 - Determinism and replay: D0 under exact semantic limits and deterministic schedule-independent candidate identity; wall deadline firing narrows replay.
-- Falsifiers and Gauntlet: branch explosion, sibling budget conservation, retry/worker replacement, cancellation, family failure containment, ordering permutation, and diagnostic floods.
+- Falsifiers and Gauntlet: branch explosion, sibling budget conservation, direct/shared/unavailable cost reconciliation, retry/worker replacement, cancellation, family failure containment, ordering permutation, and diagnostic floods.
 - Surfaces: recovery facade/report, CLI alternatives, trial record, held-out probe, and fuzz harness.
-- Dependencies and consumers: depends on REC.001–REC.005, DOC.002, REC.010, and all foundation budget/evidence contracts; REC.007–REC.009 consume result.
+- Dependencies and consumers: depends on REC.001–REC.005, DOC.002, REC.010, and FDN.004–FDN.014; REC.007–REC.009 consume result.
 - Migration and withdrawal: search/family registry change versions the protocol; prior attempt distributions are preserved and cannot be selected away.
 - No-claim boundary: budget exhaustion cannot be relabeled as a successful singular recovery or exhaustive search.
 - Rationale: explicit multi-dimensional caps prevent combinatorial repair from becoming the wedge’s denial-of-service path.
@@ -1987,17 +1989,17 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.REC.010@1` — Candidate-view consequence finalization
 
 - Identity, lifecycle, layer: active C1 L2 contract; it finalizes a `RecoveryHypothesisId` only after a hypothesis basis has produced an independently identified candidate `DocumentViewId`.
-- Inputs and identity domain: one `RecoveryHypothesisBasisId`, candidate view from DOC.002, candidate-view mapping/coverage, satisfied and violated constraints, structural/history/security/materiality consequences, cards, and limits.
+- Inputs and identity domain: one `RecoveryHypothesisBasisId`, its initial `RecoveryHypothesisCostVectorId`, candidate view from DOC.002, candidate-view mapping/coverage, satisfied and violated constraints, structural/history/security/materiality consequences, consequence-pass cost attribution, cards, and limits.
 - Preconditions: basis and candidate view share the exact source, strict parent graph, recovery profile, and view-basis lineage; candidate construction did not consume a finalized hypothesis; every required consequence check has a typed result or explicit unavailable state.
 - Card slots: `SC.C1.REC.CANDIDATE-CONSEQUENCE.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: candidate values, constraint checks, affected objects/pages, security/materiality projections, evidence records, canonicalization, and diagnostics are bounded.
 - Cancellation: an interrupted consequence pass emits only a partial receipt and cannot mint a finalized hypothesis or admissible candidate.
 - Authority and secrets: consequence checks inherit narrowed read/decrypt leases from the admitted session; they cannot mutate bytes, widen credentials, or turn caller preference into evidence.
-- Outputs and outcomes: immutable `RecoveryConsequenceReceiptId` and, only when every mandatory check has a typed outcome, `RecoveryHypothesisId` binding basis, candidate view, constraints, affected scope, ordering dimensions, and material consequences.
-- Diagnostics: source/basis/view mismatch, missing consequence, violated hard constraint, security unknown, materiality unknown, card gap, stale view, budget exhaustion, and cancellation.
+- Outputs and outcomes: immutable `RecoveryConsequenceReceiptId` and, only when every mandatory check has a typed outcome, `RecoveryHypothesisId` binding basis, candidate view, constraints, affected scope, ordering dimensions, material consequences, and reconciled `RecoveryHypothesisCostVectorId` with direct/shared/unavailable attribution.
+- Diagnostics: source/basis/view mismatch, missing consequence, violated hard constraint, missing/inconsistent cost attribution, shared-cost double count, security unknown, materiality unknown, card gap, stale view, budget exhaustion, and cancellation.
 - Evidence and provenance: receipt binds strict result, final strict graph, basis, view-basis lineage, candidate view, every check/result, cards, profile, limits, and availability; it never rewrites raw basis evidence.
 - Determinism and replay: D0 under exact basis/view/check protocols/cards/semantic limits; evaluation order cannot change the receipt or finalized-hypothesis identity.
-- Falsifiers and Gauntlet: view-before-basis inversion, basis/view source mismatch, missing constraint promoted to pass, altered candidate after check, security-laundering, affected-scope omission, permutation, and cancellation.
+- Falsifiers and Gauntlet: view-before-basis inversion, basis/view source mismatch, missing constraint promoted to pass, altered candidate after check, security-laundering, affected-scope/cost omission, shared-cost double count, cost-to-confidence laundering, permutation, and cancellation.
 - Surfaces: recovery search/order/selection, recovery report enrichment, CLI alternatives, held-out probe, and fuzz target.
 - Dependencies and consumers: depends on REC.001–REC.005, DOC.002, DOC.008, DOC.012–DOC.014, REV.009, and FDN.001–FDN.015; REC.006–REC.009 and RPT.002/RPT.007 consume it.
 - Migration and withdrawal: consequence protocol or hypothesis identity change versions the receipt/hypothesis; old receipts remain scoped and cannot silently validate rebuilt views.
@@ -2009,13 +2011,13 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.RPT.001@1` — `OpenReport` semantic body
 
 - Identity, lifecycle, layer: active C1 L2/L8 report contract; the semantic body is an immutable derived artifact with one schema/version/root.
-- Inputs and identity domain: exact `SourceRootId`, source identity/availability, final strict `RevisionGraphId`, strict `DocumentViewId` or strict ambiguity, DOC.009 strict result, strict RPT.003 security inventory, DOC.012 encrypted-wrapper inventory, DOC.013 UTF-8-string inventory, DOC.014 `NeedsRendering` inventory, limits, diagnostics, and active operation capabilities; no recovery artifact is an input.
+- Inputs and identity domain: exact `SourceRootId`, source identity/availability, final strict `RevisionGraphId`, strict `DocumentViewId` or strict ambiguity, DOC.009 strict result and `OccurrenceVisibilityMapId`, DOC.005 page-attribute/geometry inventory, strict RPT.003 security inventory, DOC.012 encrypted-wrapper inventory, DOC.013 UTF-8-string inventory, DOC.014 `NeedsRendering` inventory, limits, diagnostics, and active operation capabilities; no recovery artifact is an input.
 - Preconditions: all referenced strict artifacts exist and are root/graph/view consistent; missing decision-critical artifacts carry explicit availability; recovery has not enriched this immutable body.
 - Card slots: `SC.C1.RPT.OPEN-REPORT.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: graph/view references, findings, diagnostics, interval summaries, capability records, no-claims, canonicalization, and serialized bytes are bounded.
 - Cancellation: a report may describe a cancelled operation only with exact observed coverage, terminal state, and private/public artifact status.
 - Authority and secrets: passwords, keys, plaintext, protected source snippets, and confidential unsalted digests are excluded or protected by policy.
-- Outputs and outcomes: base `OpenReportId` records source class/ranges, strict graph protocols/coverage/assumptions, strict selection or ambiguity, strict status, encryption, structural signatures, the three bounded DOC.012–DOC.014 structural inventories or their explicit unavailability, unexplained bytes, resource use, and no-claims.
+- Outputs and outcomes: base `OpenReportId` records source class/ranges, strict graph protocols/coverage/assumptions, strict selection or ambiguity, strict status, every visible/shadowed/unreachable/unknown occurrence classification and frontier, page structural/geometry evidence, encryption, structural signatures, the three bounded DOC.012–DOC.014 structural inventories or their explicit unavailability, unexplained bytes, resource use, and no-claims.
 - Diagnostics: schema construction rejects missing mandated identities, inconsistent root/graph/view, contradictory coverage, absent terminal state, and unsafe disclosure.
 - Evidence and provenance: every finding links typed source/virtual/object/graph/view locations, evidence facets, cards/contracts, and availability.
 - Determinism and replay: the strict semantic body targets D0; recovery enrichment and run observations are linked only through RPT.007 and RPT.004 and excluded from its root.
@@ -2029,13 +2031,13 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.RPT.002@1` — `RecoveryReport` semantic body
 
 - Identity, lifecycle, layer: active C1 L2/L8 report contract; it preserves search alternatives and strict/recovery separation.
-- Inputs and identity domain: source root, final strict revision graph, strict result/base report reference, recovery profile/search receipt, each hypothesis basis, candidate-view consequence receipt, finalized hypothesis and candidate view, frontier/order records, task selection, affected scope, and no-claims.
+- Inputs and identity domain: source root, final strict revision graph, strict result/base report reference, recovery profile/search receipt, each hypothesis basis, candidate-view consequence receipt, finalized hypothesis and candidate view, every `RecoveryHypothesisCostVectorId` and attribution receipt, frontier/order records, task selection, affected scope, and no-claims.
 - Preconditions: bases, views, receipts, and finalized hypotheses are stable and source/strict-graph-bound; report never substitutes one selected candidate for the frontier.
 - Card slots: `SC.C1.RPT.RECOVERY-REPORT.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: hypotheses, alternatives, discriminators, affected locations, assumption/evidence records, diagnostics, and serialized bytes are bounded.
 - Cancellation: search cancellation produces exact frontier, fired limit, and coverage; report finalization cannot hide unvisited candidates.
 - Authority and secrets: protected candidate/plaintext artifacts use availability references; caller selection is recorded as scoped attestation.
-- Outputs and outcomes: records each basis/candidate-view/finalized-hypothesis chain, proposed repairs, satisfied/violated constraints, ordering/nondominance, selection or no selection, material alternatives, budgets, and affected objects/pages/security findings.
+- Outputs and outcomes: records each basis/candidate-view/finalized-hypothesis chain, proposed repairs, satisfied/violated constraints, per-hypothesis direct/shared/unavailable cost vector with aggregate reconciliation, ordering/nondominance, selection or no selection, material alternatives, budgets, and affected objects/pages/security findings.
 - Diagnostics: missing alternative, inconsistent frontier, unbound view, hidden assumption, contradictory coverage, unsafe disclosure, and truncation.
 - Evidence and provenance: each report element links basis/view/consequence/hypothesis/search/strict IDs, exact locations, cards/contracts, evidence, and artifact availability.
 - Determinism and replay: semantic body is D0 for exact search result/protocol/limits; wall observations remain separate.
@@ -2049,17 +2051,17 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.RPT.003@1` — Structural security inventory report
 
 - Identity, lifecycle, layer: active C1 L2/L8 component-report contract; it composes encryption, structural signature, inert carrier, and plaintext-availability findings.
-- Inputs and identity domain: exact strict view/final strict graph, SEC.001 inventory, REV.008 ranges, DOC.008 carriers, DOC.012 encrypted-wrapper inventory, credential/decryption statuses, strict result, and coverage; no recovery hypothesis is an input.
+- Inputs and identity domain: exact strict view/final strict graph, SEC.001 inventory including raw `/P` and `/Perms`, SEC.004 typed `/Perms` validation outcome, REV.008 ranges, DOC.008 carriers, DOC.012 encrypted-wrapper inventory, credential/decryption statuses, strict result, and coverage; no recovery hypothesis is an input.
 - Preconditions: each component uses active cards/contracts; conclusions remain bounded to the strict view and observed coverage, with ambiguity or unavailability explicit.
 - Card slots: `SC.C1.RPT.SECURITY-INVENTORY.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: findings, objects/revisions/ranges, payload summaries, diagnostics, and serialized bytes are bounded.
 - Cancellation: report exposes scanned strict coverage and never asserts absence after truncation or unvisited strict regions.
 - Authority and secrets: no key/password/plaintext or protected payload content is emitted; cryptographic/trust/authorization providers are absent.
-- Outputs and outcomes: strict encryption declarations/scope, credentialed availability, signature fields/ranges, recognized/unknown/opaque security carriers, the bounded encrypted-payload/unencrypted-wrapper structural inventory or explicit unavailability, strict ambiguity, and exact no-claims.
+- Outputs and outcomes: strict encryption declarations/scope, credentialed availability, raw `/P` observation and separate `/Perms` valid/invalid/not-applicable/unsupported/unavailable outcome, signature fields/ranges, recognized/unknown/opaque security carriers, the bounded encrypted-payload/unencrypted-wrapper structural inventory or explicit unavailability, strict ambiguity, and exact no-claims.
 - Diagnostics: unsupported handler/carrier, encrypted-unavailable value, malformed range, opaque/nested payload, strict ambiguity, and coverage/diagnostic truncation.
 - Evidence and provenance: every finding binds view/graph/revision/object/span, cards/contracts, decryption context identity, and coverage.
 - Determinism and replay: D0 under exact strict view/graph/cards/capabilities and semantic limits.
-- Falsifiers and Gauntlet: encrypted/unencrypted carrier and wrapper/payload combinations, shadowed signatures/actions within the strict view, partial source, unknown carriers, truncation, and secret scans.
+- Falsifiers and Gauntlet: encrypted/unencrypted carrier and wrapper/payload combinations, distinct `/P` and `/Perms` mutations/outcomes, shadowed signatures/actions within the strict view, partial source, unknown carriers, truncation, and secret scans.
 - Surfaces: OpenReport component, CLI inspect/objects/revisions, evidence package, and C1 close gate.
 - Dependencies and consumers: depends on SEC.001–SEC.009, REV.008/REV.009, DOC.008, DOC.012, and DOC.009; RPT.001/RPT.007 and IMM.016 consume it.
 - Migration and withdrawal: later cryptographic validation/sanitization reports receive separate IDs; this structural report cannot be widened by prose.
@@ -2171,7 +2173,7 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.IMM.001@1` — SpecCard/clause-tagging runtime projection and coverage registry
 
 - Identity, lifecycle, layer: active C1 L7 runtime-metadata projection contract; it projects a pre-C1 human/source-pipeline authority snapshot and never creates, approves, or supersedes card authority.
-- Inputs and identity domain: immutable pre-C1 `ReviewedCardAuthoritySnapshotId`/`CardAuthoritySnapshotId`, immutable `CardLinkResolutionManifestId`, all 149 stable local link IDs, owning capability/contracts, source class, edition/clause/table/algorithm tag fields, rights status, reviewer roles, lifecycle, and coverage links. Every unreviewed source-location field remains `PENDING-LICENSED-SOURCE`; no tag is guessed.
+- Inputs and identity domain: immutable pre-C1 `ReviewedCardAuthoritySnapshotId`/`CardAuthoritySnapshotId`, immutable `CardLinkResolutionManifestId`, all 150 stable local link IDs, owning capability/contracts, source class, edition/clause/table/algorithm tag fields, rights status, reviewer roles, lifecycle, and coverage links. Every unreviewed source-location field remains `PENDING-LICENSED-SOURCE`; no tag is guessed.
 - Preconditions: the authority snapshot and resolution manifest predate implementation admission; the snapshot records licensed access, AI-use rights, project paraphrase, and two-person meaning review for every active card, while the manifest binds every local link to one reviewed-card branch or explicit human-reviewed project-law disposition. Absent, pending, ambiguous, or unreviewed authority stays blocked. G3 supplies slots only and supplies no semantic body.
 - Card slots: `SC.C1.IMM.CARD-REGISTRY.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: slots, links, review records, rights fields, coverage checks, diagnostics, and generated outputs are bounded.
@@ -2191,14 +2193,14 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.IMM.002@1` — Consequence-contract registry
 
 - Identity, lifecycle, layer: active C1 L7 generated-truth contract; it is the single structured home for every cataloged capability’s semantic spine.
-- Inputs and identity domain: contract ID/version, lifecycle, owner layer, input domain, preconditions, budgets, authority, outcomes, evidence, determinism, falsifiers, surfaces, dependencies, cards, and no-claims.
-- Preconditions: every field validates; dependencies exist and layer direction is legal; card slots are present even when pending.
+- Inputs and identity domain: contract ID/version, lifecycle, owner layer, input domain, preconditions, budgets, authority, outcomes, evidence, determinism, falsifiers, surfaces, dependencies, exact §5 grammar-expanded prerequisite IDs and separately indexed consumers, cards, and no-claims.
+- Preconditions: every field validates; every dependency token expands uniquely against the closed catalog; bare-family/prose prerequisites are rejected; dependencies exist and layer direction is legal; card slots are present even when pending.
 - Card slots: `SC.C1.IMM.CONTRACT-REGISTRY.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: contracts, fields, dependency edges, schema bytes, canonicalization, diagnostics, and generated projections are bounded.
 - Cancellation: registry generation is transactional; no partially updated root becomes current.
 - Authority and secrets: registry contains no credential/source content; contract lifecycle changes require authorized governance records.
-- Outputs and outcomes: canonical registry root, per-contract records, dependency/surface indexes, lifecycle/migration links, and validation findings.
-- Diagnostics: duplicate ID, missing field/card/falsifier/surface, illegal dependency, unknown outcome, lifecycle contradiction, and orphan contract.
+- Outputs and outcomes: canonical registry root, per-contract records, exact sorted prerequisite-edge and consumer indexes, lifecycle/migration links, and validation findings.
+- Diagnostics: duplicate ID, missing field/card/falsifier/surface, unknown/bare/ambiguous dependency token, range expansion outside one family, illegal dependency, unknown outcome, lifecycle contradiction, and orphan contract.
 - Evidence and provenance: registry binds plan/Constitution authority references, generator/build identity, source records, and review/change record.
 - Determinism and replay: D0 under exact structured inputs/generator/toolchain; file/order changes cannot alter semantic root.
 - Falsifiers and Gauntlet: duplicate/missing fields, dependency cycles, layer violation, prose/registry mismatch, surface widening, and migration cases.
@@ -2417,11 +2419,11 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 - Budgets: package bytes, fields/nodes/claims/artifacts, depth, canonicalization/symmetry work, materialization, diagnostics, and output are bounded.
 - Cancellation: stops at checkpoints, reconciles private materializations, and returns partial/refused coverage rather than a passing prefix.
 - Authority and secrets: no ambient network/filesystem; external retrieval/recomputation uses explicit narrow capabilities and disclosure policy.
-- Outputs and outcomes: check report with package integrity, schema/root status, verified/unsupported claims, artifact availability, coverage, diagnostics, and no-claims; seeded inputs additionally emit `SeededCheckerTrialReportId` with injected class and detected/missed/indeterminate outcome.
+- Outputs and outcomes: check report with package integrity, schema/root status, verified/unsupported claims, artifact availability, coverage, diagnostics, and no-claims; a terminal non-cancelled check additionally emits `CheckedPackageHandleId` scoped to the immutable raw package source, checker build/protocol, policy, exact checked-claim set, coverage, availability, and report root, including failed/partial/refused status rather than acting as a pass token; seeded inputs additionally emit `SeededCheckerTrialReportId` with injected class and detected/missed/indeterminate outcome.
 - Diagnostics: hostile encoding, duplicate/conflicting identity, unknown critical field, missing artifact, unavailable secret, budget cap, and producer/checker disagreement.
 - Evidence and provenance: binds raw package source, checker build/protocol/capabilities, pre-run lineage plan, policy, materialized artifact identities, seeded-defect identity where applicable, limits, and exact checked claims.
 - Determinism and replay: semantic check targets D0 under exact package/policy/checker/dependencies/semantic limits.
-- Falsifiers and Gauntlet: malformed packages, root ambiguity, duplicate IDs, missing identity fields, identity-only artifact, bombs, cancellation, producer-generated false package, and independent vectors.
+- Falsifiers and Gauntlet: malformed packages, root ambiguity, duplicate IDs, missing identity fields, identity-only artifact, stale/transplanted `CheckedPackageHandleId`, bombs, cancellation, producer-generated false package, and independent vectors.
 - Surfaces: Rust checker API, CLI package check, drift/close-gate evidence, and evidence-package round trip.
 - Dependencies and consumers: depends on FDN.001–FDN.016, IMM.002–IMM.005, IMM.014, and ratified D4; IMM.016 outputs are hostile inputs rather than an implementation prerequisite, while CLI.009 and IMM.020 consume checker results.
 - Migration and withdrawal: checker/schema protocol changes version results; old checker evidence remains scoped and may lapse.
@@ -2471,7 +2473,7 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.IMM.016@1` — Minimal evidence-package assembly
 
 - Identity, lifecycle, layer: active C1 L7 contract; C1 packages reports, registries, evidence, and availability records without PDF-signature creation or external publication.
-- Inputs and identity domain: exact strict/recovery/enrichment/capability-admission report roots, contract/claim/schema/card roots, artifacts and availability classes, checker protocol, pre-run/final lineage roots, no-claims, disclosure policy, and canonical package protocol.
+- Inputs and identity domain: exact strict/recovery/enrichment/capability-admission report roots, contract/claim/schema/card roots, artifacts and availability classes, checker protocol, every corroborating observation’s general `OracleLineageId`, checker-specific pre-run/final lineage roots, no-claims, disclosure policy, and canonical package protocol.
 - Preconditions: D1/D2 and D4 plus disclosure policy are ratified; all inputs are immutable and schema-valid. **PROPOSED defaults — awaiting ratification (D1/D2/D4):** the coupled SHA-256/deterministic-CBOR package and the staged checker-isolation profile; neither is activated by this plan.
 - Card slots: `SC.C1.IMM.EVIDENCE-PACKAGE.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: package bytes, claims, artifacts, graph depth, canonicalization/symmetry work, embedding/materialization, diagnostics, and output transaction are bounded.
@@ -2481,7 +2483,7 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 - Diagnostics: missing identity/availability, conflicting artifact, noncanonical/duplicate field, protected disclosure, unratified protocol, output limit, and transaction failure.
 - Evidence and provenance: package binds exact report/registry/artifact roots, producer protocol/build, disclosure policy, limits, and construction diagnostics.
 - Determinism and replay: unsigned package semantics target D0 under exact inputs/protocol; serialization canonicality is separately disclosed and checked.
-- Falsifiers and Gauntlet: producer/checker dual roots, duplicate/conflicting records, missing artifacts, unavailable secrets, protected hashes, bombs, cancellation, and schema migration.
+- Falsifiers and Gauntlet: producer/checker dual roots, duplicate/conflicting records, omitted/forged/unknown observation lineage, correlated-wrapper inflation, missing artifacts, unavailable secrets, protected hashes, bombs, cancellation, and schema migration.
 - Surfaces: Rust package builder, CLI package check input, C1 trial record/evidence handoff, and standalone checker.
 - Dependencies and consumers: depends on FDN.001–FDN.016, RPT.001–RPT.008, IMM.002–IMM.005, IMM.014, and IMM.020; IMM.013 independently consumes its raw output rather than producer objects, while CLI.009, IMM.019, and the close gate consume package/checker results.
 - Migration and withdrawal: package protocol changes version roots; old packages remain checkable by their protocol and never gain new evidence.
@@ -2593,19 +2595,19 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.CLI.002@1` — `mb revisions`
 
 - Identity, lifecycle, layer: active C1 L8 command contract; it projects revision graph/history evidence without choosing hidden recovery alternatives.
-- Inputs and identity domain: source/open artifact or saved OpenReport/evidence package, graph selector, strict/recovery policy, output projection, and limits.
-- Preconditions: selected graph ID exists or all graphs are requested; saved inputs pass schema/root checks.
+- Inputs and identity domain: source/open artifact, saved OpenReport, or evidence package plus its scoped `CheckedPackageHandleId`; graph selector, strict/recovery policy, output projection, and limits.
+- Preconditions: selected graph ID exists or all graphs are requested; a saved OpenReport passes generated schema/root checks; an evidence-package path is admitted only when IMM.013 checked the exact immutable raw package bytes and its handle covers the requested graph claims/artifact availability. A failed/partial/refused handle cannot be widened.
 - Card slots: `SC.C1.CLI.REVISIONS.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: graph nodes/edges/occurrences/ranges, source reads, diagnostics, and output bytes are bounded.
 - Cancellation: traversal returns explicit partial output only under JSONL terminal framing; ordinary report projection stays transactional.
 - Authority and secrets: read-only; protected spans/metadata are redacted by policy.
-- Outputs and outcomes: source/graph identities, candidate revisions/chains, xref/trailer links, object occurrence summaries, signature ranges, gaps, assumptions, and selection state.
+- Outputs and outcomes: source/graph identities, candidate revisions/chains, xref/trailer links, object occurrence summaries including visible/shadowed/unreachable/unknown classifications when available, signature ranges, gaps, assumptions, and selection state.
 - Diagnostics: unknown graph, stale package/report, source unavailable, partial coverage, ambiguous selection, output limit, and schema mismatch.
 - Evidence and provenance: output binds source/report/package, exact graph(s), request/profile, projection, and build.
 - Determinism and replay: D0 semantic projection for exact graph/request; human rendering is derived.
-- Falsifiers and Gauntlet: multiple graphs, forks/cycles, partial source, unknown selector, saved-report mismatch, cancellation, redaction, and output round trips.
+- Falsifiers and Gauntlet: multiple graphs, forks/cycles, partial source, unknown selector, saved-report mismatch, unchecked/stale/transplanted package handle, hidden occurrence classification, cancellation, redaction, and output round trips.
 - Surfaces: executable command, generated help/schema, capability manifest, and examples.
-- Dependencies and consumers: depends on REV.004/REV.008/REV.009, RPT.001/RPT.005/RPT.007, and CLI.006/CLI.007; Workflow B and product gate consume it.
+- Dependencies and consumers: depends on REV.004/REV.008/REV.009, RPT.001/RPT.005/RPT.007, IMM.013 for package-backed requests, and CLI.006/CLI.007; Workflow B and product gate consume it.
 - Migration and withdrawal: selector/output schema changes version the command; old graph IDs remain valid only in their source/protocol domain.
 - No-claim boundary: displayed history is bounded by discovery coverage/protocol and does not assert a singular conforming chain when alternatives survive.
 - Rationale: a dedicated revision view makes history/gaps inspectable without forcing users to parse one giant report.
@@ -2613,19 +2615,19 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.CLI.003@1` — `mb objects`
 
 - Identity, lifecycle, layer: active C1 L8 command contract; it exposes raw occurrences and view-scoped resolution as distinct projections.
-- Inputs and identity domain: source/open/package artifact, graph/view selector, object key/occurrence/range query, resolve depth policy, optional credential lease, projection, and limits.
-- Preconditions: selector IDs are exact; raw and resolved modes are explicit; plaintext output follows disclosure policy.
+- Inputs and identity domain: source/open artifact or evidence package plus its scoped `CheckedPackageHandleId`, graph/view selector, object key/occurrence/range query, resolve depth policy, optional credential lease, projection, and limits.
+- Preconditions: selector IDs are exact; raw and resolved modes are explicit; plaintext output follows disclosure policy. A package-backed query requires IMM.013 coverage of the exact raw package, requested claim/artifact, and availability; direct source/open paths require no checker handle.
 - Card slots: `SC.C1.CLI.OBJECTS.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: queried/visited objects, reference depth, decode/decrypt bytes, output bytes, diagnostics, and result count are bounded.
 - Cancellation: traversal/decode checkpoints; no partial value is emitted as a singular resolved object.
 - Authority and secrets: read-only; encrypted values remain ciphertext/refused without credential capability; plaintext requires protected output policy.
-- Outputs and outcomes: raw occurrence(s), effective resolved claim, paths/cycles, exact spans/virtual spans, revision/view/security context, and diagnostics.
+- Outputs and outcomes: raw occurrence(s) with visible/shadowed/unreachable/unknown classification or explicit unavailable frontier, effective resolved claim, paths/cycles, exact spans/virtual spans, revision/view/security context, and diagnostics.
 - Diagnostics: unknown selector/key, ambiguous occurrence, missing/free object, cycle, decode/decrypt refusal, protected output denial, and limit.
 - Evidence and provenance: every object/value projection binds source/graph/view/occurrence/path, cards/contracts, and decryption/filter receipts.
 - Determinism and replay: D0 semantic projection under exact inputs/capabilities/limits.
-- Falsifiers and Gauntlet: shadowed objects, object-stream members, cycles, wrong generation, duplicate dictionaries, encrypted values, redaction, and cancellation.
+- Falsifiers and Gauntlet: shadowed/unreachable/unknown objects, object-stream members, unchecked/stale/transplanted package handle, cycles, wrong generation, duplicate dictionaries, encrypted values, redaction, and cancellation.
 - Surfaces: executable command, generated help/schema, capability manifest, and examples.
-- Dependencies and consumers: depends on REV.005/REV.006/REV.009, DOC.001/DOC.002, SEC.001–SEC.009, FLT.001–FLT.010, RPT.005/RPT.007, and CLI.005–CLI.007; product gate consumes it.
+- Dependencies and consumers: depends on REV.005/REV.006/REV.009, DOC.001/DOC.002/DOC.009, SEC.001–SEC.009, FLT.001–FLT.010, RPT.005/RPT.007, IMM.013 for package-backed requests, and CLI.005–CLI.007; product gate consumes it.
 - Migration and withdrawal: query/output schema changes version the contract; friendly object labels never replace typed graph/view IDs.
 - No-claim boundary: a raw or resolved object projection does not validate higher-layer page, font, action, attachment, or security semantics.
 - Rationale: separating occurrences from effective values preserves the forensic distinction between physical history and selected meaning.
@@ -2807,7 +2809,7 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 - Determinism and replay: D0 property under exact witness/build/limits.
 - Falsifiers and Gauntlet: arbitrary bytes, deep nesting, token storms, huge numbers/names/strings, duplicate maps, marker payloads, allocation failure, and cancellation.
 - Surfaces: lexer/COS continuous/local targets and C1 panic gate.
-- Dependencies and consumers: targets SYN.001–SYN.007 and FDN contracts; FUZ.011/FUZ.012 consume findings.
+- Dependencies and consumers: targets SYN.001–SYN.007 and FDN.004–FDN.014; FUZ.011/FUZ.012 consume findings.
 - Migration and withdrawal: target/card changes version coverage; stale coverage cannot support a new parser build.
 - No-claim boundary: a fuzz target does not provide standards conformance by itself.
 - Rationale: raw syntax has the widest attacker-controlled state space and must be exercised before semantic layers.
@@ -2847,7 +2849,7 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 - Determinism and replay: D0 property under exact synthetic secret/context/witness/build.
 - Falsifiers and Gauntlet: wrong first/count, duplicate/nonmonotone offsets, truncation, nested streams, double decrypt, cross-context cache, and cancellation.
 - Surfaces: object-stream continuous/local target and C1 gate.
-- Dependencies and consumers: targets REV.006, FLT, SEC.009, FDN.013; FUZ.011/FUZ.012 consume findings.
+- Dependencies and consumers: targets REV.006, FLT.001–FLT.010, SEC.009, and FDN.013; FUZ.011/FUZ.012 consume findings.
 - Migration and withdrawal: context/parser changes version target coverage; secret fixtures rotate without changing claimed semantics.
 - No-claim boundary: object-stream fuzzing does not cover arbitrary document semantics or all cryptographic profiles.
 - Rationale: container membership and one-time decryption are subtle enough to need an isolated target.
@@ -2855,7 +2857,7 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.FUZ.006@1` — Lossless-filter target family
 
 - Identity, lifecycle, layer: active C1 L7 target contract; each named C1 filter and predictor has a standalone target plus declared-chain composition target.
-- Inputs and identity domain: arbitrary/stage-aware bytes, parameter shapes, chain definitions, transactional sink fault script, cards/fixtures, and limits.
+- Inputs and identity domain: arbitrary/stage-aware bytes, distinct internal `/Filter`/`/DecodeParms` and external `/FFilter`/`/FDecodeParms` shapes, raw `/DL` hints, chain definitions, transactional sink fault script, cards/fixtures, and limits.
 - Preconditions: normative vectors/expectations are rights/card-admitted; arbitrary-byte robustness runs independently.
 - Card slots: `SC.C1.FUZ.LOSSLESS-FILTERS.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: input/output/ratio, decoder state, chain stages, sink faults, CPU, diagnostics, execution, and witness bytes are bounded.
@@ -2865,9 +2867,9 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 - Diagnostics: expected decode refusal/resource limit is separate from invariant failure.
 - Evidence and provenance: binds exact filter contract/version/parameters, seed/mutation, cards, build, limits, receipts, and trace.
 - Determinism and replay: D0 property for exact witness/decoder/build/limits; chunk-boundary metamorphism is required.
-- Falsifiers and Gauntlet: ASCIIHex, ASCII85, RunLength, Flate, predictors, LZW/EarlyChange, chain shapes/order, bombs, sink faults, cancellation, and no-progress.
+- Falsifiers and Gauntlet: ASCIIHex, ASCII85, RunLength, Flate, predictors, LZW/EarlyChange, internal/external chain shapes/order/alignment, malformed and adversarial `/DL` hints that never allocate or prove sufficiency, bombs, sink faults, cancellation, and no-progress.
 - Surfaces: per-filter/chain continuous/local targets and C1 gate.
-- Dependencies and consumers: targets FLT.001–FLT.010 and FDN budget/transaction contracts; FUZ.011/FUZ.012 consume findings.
+- Dependencies and consumers: targets FLT.001–FLT.010, FDN.004–FDN.006, FDN.009, and FDN.012–FDN.014; FUZ.011/FUZ.012 consume findings.
 - Migration and withdrawal: each decoder/adapter change invalidates only its scoped coverage plus affected composition lanes.
 - No-claim boundary: filter target survival does not establish dependency freedom from all logic defects or image/render correctness.
 - Rationale: atomic and composition targets catch both decoder defects and planner/transaction drift.
@@ -2875,7 +2877,7 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.FUZ.007@1` — Password/decryption target family
 
 - Identity, lifecycle, layer: active C1 L7 target contract; it covers inventory, byte/text credential forms, handler matrix, password preparation, key/object context, RC4/AESV2/AESV3, routing, and plaintext isolation.
-- Inputs and identity domain: rights-admitted synthetic encrypted fixtures/vectors, wrong credentials, dictionary mutations, object/revision contexts, secret policy, and limits.
+- Inputs and identity domain: rights-admitted synthetic encrypted fixtures/vectors, wrong credentials, dictionary mutations including independent `/P` and `/Perms` cases, object/revision contexts, secret policy, and limits.
 - Preconditions: crypto provider selections remain symbolic/unavailable until D-005 ratification; normative vectors are approved and card-linked.
 - Card slots: `SC.C1.FUZ.STANDARD-HANDLER-READ.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: attempts, KDF/crypto work, input/plaintext bytes, memory, diagnostics, execution, and witness retention are bounded.
@@ -2885,7 +2887,7 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 - Diagnostics: expected wrong credential/unsupported profile/resource outcome remains separate from target defect.
 - Evidence and provenance: binds fixture rights/cards, provider/build, security/object context, limits, non-secret trace, and protected witness availability.
 - Determinism and replay: D0 property requires re-supplying synthetic secret; public metadata cannot reconstruct it.
-- Falsifiers and Gauntlet: byte/text boundaries, wrong credential/context, revision/object generation, filter defaults, object streams, malformed ciphertext, cancellation, and cross-tenant cache.
+- Falsifiers and Gauntlet: byte/text boundaries, wrong credential/context, revision/object generation, filter defaults, valid/invalid/not-applicable/unsupported/unavailable `/Perms` independently varied from `/P`, object streams, malformed ciphertext, cancellation, and cross-tenant cache.
 - Surfaces: security continuous/local targets and C1 credentialed gate.
 - Dependencies and consumers: targets SEC.001–SEC.009 and FLT.009; FUZ.011/FUZ.012 consume findings.
 - Migration and withdrawal: provider/card/matrix change versions coverage; a secret leak quarantines affected witnesses/caches and triggers incident handling.
@@ -2935,7 +2937,7 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.FUZ.010@1` — Resource/cancellation/concurrency target family
 
 - Identity, lifecycle, layer: active C1 L7 cross-cutting target contract; it injects budgets, cancellation, allocation/sink faults, parallelism, and cache races across C1.
-- Inputs and identity domain: operation scenario, checkpoint schedule, resource/fault script, worker/cache schedule, source/credential partitions, build, and limits.
+- Inputs and identity domain: operation scenario including CLI.001–CLI.009 request/option parsing, saved-artifact admission, projection/framing, output sink, and interrupt paths; checkpoint schedule, resource/fault script, worker/cache schedule, source/credential partitions, exact command/candidate build, and limits.
 - Preconditions: target operation exposes registered checkpoints and resource classes; concurrency model matches admitted implementation.
 - Card slots: `SC.C1.FUZ.RESOURCE-CANCEL-CONCURRENCY.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: schedules/steps, workers, faults, memory, diagnostics, execution, state captures, and witness bytes are bounded.
@@ -2945,9 +2947,9 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 - Diagnostics: distinguish injected fault/expected outcome, harness schedule limit, non-replayable race, and target invariant defect.
 - Evidence and provenance: binds scenario/schedule/faults, build/contracts, limits, trace/capture mode, observer effects, and witness.
 - Determinism and replay: deterministic schedulers target exact replay; native races retain probabilistic observation and repeated witness metadata without stronger claims.
-- Falsifiers and Gauntlet: every checkpoint class, sibling reservations/refunds, commit/abort, cache insert/evict, diagnostic collector, source change, credential crossing, and thread count.
+- Falsifiers and Gauntlet: every checkpoint class, CLI unknown/duplicate/oversized option and hostile value, unchecked saved package, schema mismatch, JSON/JSONL terminal framing, output truncation, broken pipe, redaction, interrupt/reconciliation, sibling reservations/refunds, commit/abort, cache insert/evict, diagnostic collector, source change, credential crossing, and thread count.
 - Surfaces: all C1 targets, cancellation gate, panic gate, drift evidence, and trial record.
-- Dependencies and consumers: targets FDN.004–FDN.014 and every transactional/cache-bearing contract; FUZ.011/FUZ.012 consume findings.
+- Dependencies and consumers: targets FDN.004–FDN.014, CLI.001–CLI.009, and every transactional/cache-bearing contract; FUZ.011/FUZ.012/FUZ.014 consume findings.
 - Migration and withdrawal: new checkpoint/resource class requires target coverage; old results do not cover changed concurrency semantics.
 - No-claim boundary: explored schedules do not prove absence of all concurrency faults or host failures.
 - Rationale: concurrency and cancellation can violate safety/evidence without malformed syntax, so they need an orthogonal target family.
@@ -3015,17 +3017,17 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.FUZ.014@1` — Assurance-run manifest and execution receipt
 
 - Identity, lifecycle, layer: active C1 L7 execution-record contract; one manifest declares one bounded assurance run before launch and one receipt records its terminal observation without rewriting the declaration.
-- Inputs and identity domain: FUZ.016 baseline, lane/target IDs, exact candidate build/toolchain/dependency roots, corpus/fixture/seed roots and rights, target configuration, semantic/resource limits, schedule/fault profile, worker identity, pre-run manifest root, and prospective-ledger event IDs.
-- Preconditions: baseline admits the lane; target/corpus/card/rights coverage is active; runtime and crypto-provider choices remain symbolic until their human ratifications; start event is prospectively appended through IMM.017 before execution.
+- Inputs and identity domain: FUZ.016 baseline, lane/target IDs, exact candidate and guidance-instrumented build/toolchain/dependency roots, corpus/fixture/seed roots and rights, target configuration, versioned guidance metric/schema, initial queue/corpus state, semantic/resource limits, schedule/fault profile, worker identity, general `OracleLineageId`, pre-run manifest root, and prospective-ledger event IDs.
+- Preconditions: baseline admits the lane; target/corpus/card/rights coverage is active; coverage-guided lanes bind exact instrumentation and feedback policy before launch; runtime and crypto-provider choices remain symbolic until their human ratifications; start event is prospectively appended through IMM.017 before execution.
 - Card slots: `SC.C1.FUZ.ASSURANCE-RUN-RECEIPT.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: input cases, executions, mutations/schedules, CPU/memory/storage, findings, witness bytes, diagnostics, and receipt bytes are bounded by the declared run envelope.
 - Cancellation: cancelled/expired/crashed/harness-failed runs retain exact terminal state, processed scope, outstanding work, and reconciliation; none can be represented as a passing run.
 - Authority and secrets: executor receives only declared local fixtures/corpora and narrow capabilities; no external retrieval, unratified provider activation, secret export, or held-out content access is implied.
-- Outputs and outcomes: immutable `AssuranceRunManifestId` and `AssuranceRunReceiptId`, start/end event links, executed scope, terminal state, finding/witness IDs, fired limits, missing work, environment/build roots, and explicit pass/fail/indeterminate contribution.
+- Outputs and outcomes: immutable `AssuranceRunManifestId` and `AssuranceRunReceiptId`, start/end event links, executed scope, terminal state, finding/witness IDs, fired limits, missing work, environment/build roots, `OracleLineageId`, and explicit pass/fail/indeterminate contribution. Coverage-guided receipts additionally bind observed feedback scope, queue additions/rejections, corpus evolution, merge/minimization decisions, and a `FuzzGuidanceReceiptId`; absent/stale/incompatible guidance is indeterminate, never a green run.
 - Diagnostics: baseline/target/build mismatch, stale corpus, rights/card block, unratified dependency/provider, missing start event, harness fault, cancellation, resource limit, receipt truncation, and protected-data violation.
-- Evidence and provenance: receipt binds unchanged pre-run manifest, fuzz baseline, candidate/toolchain/dependencies, target/corpus/seed/schedule, limits, executor, prospective start/end events, raw finding roots, and terminal observations.
+- Evidence and provenance: receipt binds unchanged pre-run manifest, fuzz baseline, candidate/instrumented build/toolchain/dependencies, target/corpus/seed/schedule, guidance schema and before/after queue/corpus roots, merge/minimization receipts, general lineage, limits, executor, prospective start/end events, raw finding roots, and terminal observations.
 - Determinism and replay: manifest identity is D0; deterministic runs state exact replay, while randomized/native-schedule runs bind seeds/schedules and support only their recorded observations.
-- Falsifiers and Gauntlet: manifest created after run, build substitution, seed omission, cancelled-as-pass, missing failed case, forged event link, rights leak, provider inference, stale receipt, and replay mismatch.
+- Falsifiers and Gauntlet: manifest created after run, candidate/instrumented build substitution, guidance schema drift, fabricated feedback, hidden queue rejection, corpus-root rewrite, seed omission, cancelled-as-pass, missing failed case, forged event or lineage link, correlated-wrapper inflation, rights leak, provider inference, stale receipt, and replay mismatch.
 - Surfaces: local/continuous assurance runner, reachable-panic gate, seeded checker trials, lane aggregation, cycle seal, and evidence package.
 - Dependencies and consumers: depends on FUZ.001–FUZ.010/FUZ.013/FUZ.016, IMM.009/IMM.011/IMM.014/IMM.017, FDN.016, and ratified D7/D-005 state as applicable; FUZ.011/FUZ.015, IMM.020, and IMM.019 consume receipts.
 - Migration and withdrawal: target/baseline/build/toolchain/corpus/protocol change creates a new manifest; prior receipts remain scoped and cannot cover the changed run.
@@ -3035,37 +3037,37 @@ No lower layer imports CLI, policy aggregation, laboratory adapters, or publicat
 #### `C1.CC.FUZ.015@1` — Assurance-lane result aggregation
 
 - Identity, lifecycle, layer: active C1 L7 aggregation contract; it combines exact run receipts and gate outcomes by predeclared lane without converting missing work into success.
-- Inputs and identity domain: FUZ.016 baseline, all expected/observed FUZ.014 manifests/receipts, FUZ.011 panic-gate result, FUZ.012 unresolved witnesses/tombstones, IMM.020 seeded-checker assessment, held-out protocol status, lane policy, dispositions, and availability.
-- Preconditions: baseline and candidate build roots match every included result; expected lane/run set is closed for this aggregate; duplicate, stale, cancelled, missing, or unavailable inputs remain explicit.
+- Inputs and identity domain: FUZ.016 baseline, all expected/observed FUZ.014 manifests/receipts and `FuzzGuidanceReceiptId` records, FUZ.011 panic-gate result, FUZ.012 unresolved witnesses/tombstones, IMM.020 seeded-checker assessment, every general `OracleLineageId`, held-out protocol status, optional predeclared recovery-calibration protocol with REC.006–REC.010 outcome links and known/independently adjudicated intent, lane policy, dispositions, and availability.
+- Preconditions: baseline and candidate/instrumented build roots match every included result; expected lane/run set is closed for this aggregate; duplicate, stale, cancelled, missing, unavailable, or lineage-unknown inputs remain explicit. A recovery-calibration lane requires FUZ.013 access/seal compliance, frozen denominators/strata, and adjudicated-intent provenance; otherwise its envelope is unavailable or indeterminate.
 - Card slots: `SC.C1.FUZ.ASSURANCE-LANE-AGGREGATE.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: lanes, runs, findings, witnesses, seed classes, cross-links, diagnostics, canonicalization, and aggregate bytes are bounded.
 - Cancellation: interrupted aggregation yields indeterminate and cannot produce an admitted lane summary.
 - Authority and secrets: aggregator is read-only and cannot waive findings, alter run receipts, expose protected witnesses, access held-out bytes, or ratify dependencies/providers.
-- Outputs and outcomes: immutable `AssuranceLaneAggregateId` with per-lane expected/executed/missing/cancelled/failed/indeterminate sets, unresolved findings, checker misses, coverage links, candidate root, and exact gate contribution.
-- Diagnostics: baseline/build mismatch, missing/duplicate/stale receipt, unresolved panic, checker miss, unavailable witness, invalid disposition, held-out protocol gap, and aggregation fault.
+- Outputs and outcomes: immutable `AssuranceLaneAggregateId` with per-lane expected/executed/missing/cancelled/failed/indeterminate sets, guidance-feedback and queue/corpus evolution accounting, lineage diversity/known-correlation/unknown summaries without numeric independence inflation, unresolved findings, checker misses, coverage links, candidate root, and exact gate contribution. When predeclared, it also emits `RecoveryCalibrationEnvelopeId` with denominators and typed outcomes for materially wrong singular selections, correctly retained ambiguity, safe-workflow refusals, security-headline changes, search cost/frontier width, family/producer strata, uncertainty/drift, and unavailable/indeterminate observations; it emits no global recovery-confidence score.
+- Diagnostics: baseline/build/instrumentation mismatch, missing/duplicate/stale guidance or run receipt, feedback/queue/corpus reconciliation failure, omitted/forged/unknown lineage, unresolved panic, checker miss, unavailable witness, invalid disposition, held-out/calibration protocol gap, denominator/stratum drift, and aggregation fault.
 - Evidence and provenance: aggregate binds baseline, every run manifest/receipt, panic result, witness status, checker assessment, held-out status, policy, dispositions, composer, and construction receipt.
 - Determinism and replay: D0 for exact baseline/results/policy; new receipt, disposition, candidate, or policy produces a new root.
-- Falsifiers and Gauntlet: omit failed run, count cancelled as executed-pass, stale-build inclusion, duplicate-run dilution, hidden checker miss, protected witness leak, held-out overstatement, and cancellation.
+- Falsifiers and Gauntlet: omit failed run or guidance receipt, count cancelled as executed-pass, stale-build inclusion, corpus-root rewrite, duplicate-run/correlated-lineage dilution, hidden checker miss, missing calibration denominator, scalar-confidence laundering, protected witness leak, held-out overstatement, and cancellation.
 - Surfaces: product/cycle-close gates, capability-admission evidence, cycle seal, evidence package, and future assurance planning.
 - Dependencies and consumers: depends on FUZ.011/FUZ.012/FUZ.014/FUZ.016, IMM.020, and FUZ.013 protocol status; IMM.019 and the product/close gates consume it.
 - Migration and withdrawal: lane policy or baseline change versions the aggregate and lapses old gate contribution; prior receipts remain immutable.
-- No-claim boundary: aggregation reports the declared assurance envelope only; it does not convert executed cases into universal correctness, independence, or cross-library comparison.
+- No-claim boundary: aggregation and recovery calibration report only the declared assurance envelope; they do not convert executed cases into universal correctness, absolute independence, a global recovery-confidence number, default-profile authority without its separate policy gate, or cross-library comparison.
 - Rationale: an explicit aggregate prevents target declarations or isolated green receipts from standing in for the expected assurance lanes.
 
 #### `C1.CC.FUZ.016@1` — C1 fuzz-baseline artifact
 
 - Identity, lifecycle, layer: active C1 L7 pre-run contract; one immutable baseline names the exact C1 candidate-facing target, corpus, toolchain, run, and disposition envelope before assurance execution.
-- Inputs and identity domain: candidate scope, FUZ.001–FUZ.010/FUZ.013 contract versions, target/corpus/fixture/rights manifests, required lanes/run classes, toolchain-role decision, symbolic dependency/provider constraints, semantic/resource ceilings, witness/disposition policy, and gate mapping.
+- Inputs and identity domain: candidate scope, FUZ.001–FUZ.010/FUZ.013 contract versions, target/corpus/fixture/rights manifests, required lanes/run classes, exact guidance instrumentation/build relation, guidance metric/schema and queue/corpus evolution/merge/minimization policy, toolchain-role decision, symbolic dependency/provider constraints, semantic/resource ceilings, witness/disposition policy, and gate mapping.
 - Preconditions: D1/D2 and D7 are human-ratified; target/card/rights gaps are blocked rather than guessed; D-005/runtime/crypto-crate selections remain symbolic until their separate ratification; baseline is rooted before FUZ.014 manifests launch.
 - Card slots: `SC.C1.FUZ.BASELINE.001` — `PENDING-LICENSED-SOURCE`.
 - Budgets: target/lane/run declarations, corpus roots, policy links, canonicalization, diagnostics, and artifact bytes are bounded; each later run has its own resource envelope.
 - Cancellation: interrupted baseline construction publishes no current baseline; prior baseline remains tied to its old candidate/scope.
 - Authority and secrets: baseline can reference protected/held-out partitions by approved identity/availability only; it cannot fetch data, activate a provider, expose secrets, or launch a run.
-- Outputs and outcomes: immutable `FuzzBaselineId` with exact candidate, target/lane matrix, expected run classes, corpus/fixture roots and availability, toolchain roles, symbolic provider blocks, limits, witness policy, gate links, and known gaps.
+- Outputs and outcomes: immutable `FuzzBaselineId` with exact candidate, target/lane matrix, expected run classes, corpus/fixture roots and availability, guidance instrumentation/metric/schema, initial queue and corpus roots, evolution/merge/minimization policy, toolchain roles, symbolic provider blocks, limits, witness policy, gate links, and known gaps.
 - Diagnostics: missing target/lane/card/rights, unratified hash/toolchain/provider, corpus alias, held-out access conflict, unmapped gate row, inconsistent limit, and stale candidate.
 - Evidence and provenance: baseline binds ratified decisions, candidate/contract/target/corpus manifests, rights/card roots, policy authors/review, construction tool, known gaps, and pre-run timestamp in a separate envelope.
 - Determinism and replay: semantic baseline is D0 under exact declarations/decisions/policy; timestamps and host observations are outside its root.
-- Falsifiers and Gauntlet: baseline after run, omitted hostile surface, duplicated corpus partition, hidden provider selection, target without gate, run class without receipt schema, stale candidate, and protected identity leak.
+- Falsifiers and Gauntlet: baseline after run, omitted hostile surface, missing CLI target, duplicated corpus partition, absent/stale guidance instrumentation, feedback schema without queue/corpus receipt, hidden provider selection, target without gate, run class without receipt schema, stale candidate, and protected identity leak.
 - Surfaces: assurance preflight, run-manifest creation, reachable-panic gate, lane aggregation, cycle seal, and next-cycle baseline diff.
 - Dependencies and consumers: depends on FUZ.001–FUZ.010/FUZ.013, IMM.001/IMM.009/IMM.011, FDN.016, and ratified D1/D2/D7 plus D-005 state; FUZ.011/FUZ.014/FUZ.015 and IMM.019 consume it.
 - Migration and withdrawal: any candidate/target/corpus/toolchain/policy change creates a successor baseline; old run receipts remain bound to the old root.
@@ -3235,11 +3237,11 @@ The loop can establish structural consistency and declared checker relations. It
 | FUZ.003 | lexer, raw COS, scalars, duplicates, stream boundaries | no reachable panic, exact spans/raw round trips, bounded nesting/allocation, no recovery leakage, transactional privacy. |
 | FUZ.004 | terminal/xref/hybrid/revision/occurrence/signature-range | graph/source separation, checked offsets, coverage honesty, order-independent identity, bounded search. |
 | FUZ.005 | object streams and virtual provenance | one-time decryption, bounded indexing, virtual spans, context isolation, no partial cache publication. |
-| FUZ.006 | ASCIIHex, ASCII85, RunLength, Flate, predictors, LZW, chain planner | declared order, deterministic bytes, expansion/byte limits, no progress loops, sink terminal state. |
-| FUZ.007 | encryption inventory, credentials, preparation, matrix, RC4/AESV2/AESV3, Crypt routing | exact context, secret non-export, wrong-credential behavior, plaintext partition, no writer/public-key widening. |
-| FUZ.008 | resolver, document structure, views, DOC.012–DOC.014 inventories, every recovery family including header/EOF placement, order/selection | cycles/limits, bounded inventory coverage, alternatives retained, strict-first, exact header evidence, partial-order validity, security non-laundering. |
+| FUZ.006 | ASCIIHex, ASCII85, RunLength, Flate, predictors, LZW, internal/external chain planner and `/DL` hint handling | declared order and shape alignment, advisory-only hint, deterministic bytes, expansion/byte limits, no progress loops, sink terminal state. |
+| FUZ.007 | encryption inventory, credentials, preparation, matrix, `/P`/`/Perms`, RC4/AESV2/AESV3, Crypt routing | exact context, separate permission-bit/integrity outcomes, secret non-export, wrong-credential behavior, plaintext partition, no writer/public-key widening. |
+| FUZ.008 | resolver, document/page structure and geometry, occurrence visibility, views, DOC.012–DOC.014 inventories, every recovery family including header/EOF placement, order/selection | cycles/limits, bounded inventory coverage, alternatives retained, strict-first, exact header evidence, raw/effective geometry, partial-order validity, security non-laundering. |
 | FUZ.009 | reports, schemas, packages, checker | mandatory identities, canonical ambiguity refusal, availability/coverage honesty, producer/checker disagreement. |
-| FUZ.010 | every checkpoint, resource lease, transaction, cache, shared diagnostic collector | conservation, bounded observation, race/isolation safety, stable terminal state and diagnostics. |
+| FUZ.010 | every checkpoint, resource lease, transaction, cache, shared diagnostic collector, and CLI.001–CLI.009 request/parser/saved-artifact/projection/framing/sink/interrupt boundary | conservation, checked package admission, bounded observation, redaction, broken-pipe/cancellation terminal state, race/isolation safety, stable diagnostics. |
 
 Every atomic contract also names its local falsifiers. The inventory above is the cross-contract orchestration view. IMM.009 must prove bidirectional links: every hostile-input contract has a target, and every target supports at least one active contract/gate.
 
@@ -3250,12 +3252,13 @@ FUZ.016 is the named, versioned pre-run C1 fuzz baseline. It is a scope commitme
 - exact candidate build, toolchain, feature/profile, and dependency identities;
 - active target/harness versions and expected lane/run classes;
 - seed/corpus/generator/mutator manifest roots and rights/partition state;
+- exact guidance-instrumented build relation, guidance metric/schema, initial queue/corpus roots, and queue evolution/merge/minimization policy;
 - semantic resource limits and host isolation;
 - target/contract/card/claim/gate linkage;
 - protected corpus/fixture availability and no-claim boundaries; and
 - symbolic runtime/crypto-provider blocks until human ratification.
 
-Each FUZ.014 pre-run manifest binds that baseline and each terminal receipt records executed scope, failed/interrupted work, crashes, panics, hangs, fired resource limits, harness failures, and witness roots. FUZ.011 evaluates reachable panics from the exact receipts. FUZ.012 retains minimized witnesses, sibling-site searches, fixes, regression properties, and tombstones. FUZ.015 then aggregates the expected lanes, missing/cancelled/failed/indeterminate runs, panic result, and checker assessment.
+Each FUZ.014 pre-run manifest binds that baseline and each terminal receipt records executed scope, failed/interrupted work, crashes, panics, hangs, fired resource limits, harness failures, witness roots, exact guidance feedback, and queue/corpus evolution. FUZ.011 evaluates reachable panics from the exact receipts. FUZ.012 retains minimized witnesses, sibling-site searches, fixes, regression properties, and tombstones. FUZ.015 then aggregates the expected lanes, missing/cancelled/failed/indeterminate runs, guidance receipts, general oracle lineage, panic result, checker assessment, and any predeclared recovery-calibration envelope. No run or aggregate in this authoring artifact has executed or measured anything.
 
 No artifact hides discarded runs or promotes target survival into a universal guarantee. A new build, semantic contract, parser/decoder/security dependency, target, corpus, or affected card invalidates the relevant baseline and every dependent run/gate/aggregate root until replaced.
 
@@ -3318,20 +3321,21 @@ C1 implementation may begin only when all applicable prerequisites are evidenced
 
 The wedge passes its product gate only when all rows below bind the same candidate build, immutable RPT.006 candidate-manifest root, IMM.012 audit receipt, and RPT.008 capability-admission envelope:
 
-1. Strict hostile inspection produces immutable RPT.001/RPT.003 reports with every source/base-and-final-graph/strict-view identity, exact observation coverage, raw/history/object inventory, structural signatures, encryption/security inventory, resource accounting, diagnostics, and no-claims; neither strict root has a recovery dependency.
-2. Bounded recovery exercises every initial C1 family, explicitly including common header/EOF-placement deviations, through basis → candidate view → REC.010 consequence finalization; preserves SYN.002 offsets/leading bytes and strict truth; retains materially distinct alternatives; and emits RPT.002/RPT.007 without modifying strict reports, graphs, source identity, or source bytes.
+1. Strict hostile inspection produces immutable RPT.001/RPT.003 reports with every source/base-and-final-graph/strict-view identity, exact observation coverage, raw/history/object inventory including visible/shadowed/unreachable/unknown occurrence classifications, page attribute/geometry/request evidence, structural signatures, encryption/security inventory, resource accounting, diagnostics, and no-claims; neither strict root has a recovery dependency.
+2. Bounded recovery exercises every initial C1 family, explicitly including common header/EOF-placement deviations, through basis → candidate view → REC.010 consequence finalization; preserves SYN.002 offsets/leading bytes and strict truth; retains materially distinct alternatives; carries evidence, per-hypothesis cost vectors with reconciled shared/unavailable attribution, and affected objects/pages; and emits RPT.002/RPT.007 without modifying strict reports, graphs, source identity, or source bytes.
 3. DOC.012, DOC.013, and DOC.014 each link directly to active two-person-reviewed `MB-SC-R0-038`, `MB-SC-R0-039`, and `MB-SC-R0-040` authority respectively; emit bounded report/diagnostic/coverage evidence; and pass IMM.009/FUZ.008 checks. A pending slot blocks its inventory, and no row may substitute generic `DOC.008` opacity, decoded-text meaning, rendering, execution, reachability, sanitization, or a safety verdict.
-4. Credentialed inspection covers the admitted standard-handler matrix including RC4, AESV2, AESV3, and version-specific password preparation, with caller-supplied credentials and secret/cache isolation.
-5. Every named lossless filter and predictor contract is active for its card-reviewed profile; chain order, parameters, transactional publication, limits, and virtual provenance pass local falsifiers.
+4. Credentialed inspection covers the admitted standard-handler matrix including RC4, AESV2, AESV3, version-specific password preparation, and a typed `/Perms` validation outcome kept separate from `/P`, with caller-supplied credentials and secret/cache isolation.
+5. Every named lossless filter and predictor contract is active for its card-reviewed profile; internal `/Filter`/`/DecodeParms` and external `/FFilter`/`/FDecodeParms` shapes, advisory-only `/DL`, chain order, parameters, transactional publication, limits, and virtual provenance pass local falsifiers.
 6. Structural signature/`ByteRange` discovery is present and explicitly stops before cryptographic/trust validation.
-7. `mb inspect`, `mb revisions`, `mb objects`, recovery alternatives, capability/schema discovery, secure credential input, output projection, and stable exit mapping agree with their contracts.
-8. FUZ.016 names the pre-run target/corpus/lane envelope; every expected run has a matching FUZ.014 receipt; FUZ.011 reports zero unresolved reachable panics for that exact envelope; missing/cancelled/stale work is failing or indeterminate.
+7. `mb inspect`, `mb revisions`, `mb objects`, recovery alternatives, capability/schema discovery, secure credential input, output projection, and stable exit mapping agree with their contracts; package-backed revision/object queries require an exact IMM.013 `CheckedPackageHandleId`, while direct-source and saved-report paths remain available under their own checks.
+8. FUZ.016 names the pre-run target/corpus/lane and coverage-guidance envelope, including CLI hostile surfaces; every expected run has a matching FUZ.014 run and guidance receipt; FUZ.011 reports zero unresolved reachable panics for that exact envelope; missing/cancelled/stale/instrumentation-mismatched work is failing or indeterminate.
 9. IMM.006–IMM.012 pass for the candidate: API existence, dependency/layer agreement, claim linkage, coverage, generated drift, clean-room scan, and aggregate drift audit with zero unresolved Grade-A findings.
 10. RPT.006 reports only candidate rows and every decision/card/provider block; RPT.008 alone reports admission by binding that unchanged manifest to the later IMM.012 receipt.
 11. FDN.016 and its IMM/FUZ consumers establish the exact safe-source/unsafe-capsule status for the candidate; no unregistered reachable unsafe site or stale capsule evidence remains.
 12. IMM.020 records actual checker lineage and every seeded detection/miss/indeterminate outcome against the earlier IMM.014 plan; under the proposed D4 profile, any miss is unresolved Grade A and blocks the stronger checker row.
-13. FUZ.015 accounts for every expected assurance lane and does not count a missing, cancelled, stale, failed, or indeterminate run as a passing contribution.
+13. FUZ.015 accounts for every expected assurance lane, guidance receipt, queue/corpus transition, and general `OracleLineageId`, and does not count a missing, cancelled, stale, failed, or indeterminate run as a passing contribution. A lineage-unknown observation remains explicit scoped uncertainty and cannot count as independent/diverse or strengthen a claim. Its typed `RecoveryCalibrationEnvelopeId`, when predeclared and available, reports the Rev 7 §14.10.1 outcomes, denominators, uncertainty, drift, search cost/frontier width, and family/producer strata; unavailable calibration cannot support a calibrated/default-profile claim and never yields a global recovery-confidence score.
 14. The product report states that no rendering, fonts, text extraction, semantic destination resolution, writer, public-key handler, signature trust, active execution, reachability verdict, sanitization, repair writeback, or external adjudication is present.
+15. Customer availability is blocked until the human-owned `VulnerabilityResponsePolicyStatusId` records an adopted draft covering intake channel, triage, embargo, advisory format, and claim-withdrawal linkage. A missing/unadopted status does not erase internal product evidence or campaign records, but the wedge is not offered to customers; this plan drafts no policy body and takes no external action.
 
 The formal Workflow B gate in C1 is the R0 projection of the long-term Document Autopsy workflow: hostile-source open, revision/object history, recovery alternatives, encryption/signature/security inventory, structured evidence, and explicit unsupported later-layer findings. It does not pretend that C1 supplies the later rendering/text/action-semantic branches of the long-term workflow.
 
@@ -3345,7 +3349,7 @@ The C1 gate requires these assurance lanes:
 - G3-subset: only lawfully committed, rights-cleared black-box structural evidence under the predeclared protocol. If unavailable, the campaign lane stays unavailable; it does not block the ordinary R0 product gate.
 - G5/G6 subset: hostile fuzz/bomb/malformed storms plus cancellation, concurrency, determinism, cache/tenant, replay, privacy, Miri/sanitizer evidence where applicable, unsafe-capsule falsifiers, and fault-injection lanes relevant to C1.
 
-Agreement is not normative proof. Shared oracle lineage is disclosed, and a correlated wrapper does not count as an independent falsifier.
+Agreement is not normative proof. Every corroborating observation carries the general `OracleLineageId`; shared or unknown lineage is disclosed, and a correlated wrapper does not count as another independent falsifier. IMM.014/IMM.020 remain the richer checker-specific specialization rather than a second general lineage schema.
 
 ### 11.5 Campaign close additions
 
@@ -3386,7 +3390,10 @@ If the commitment substrate is unavailable, the record stays `provisional-pendin
 | Fonts, CMaps, glyph execution, Unicode/text extraction, ICC/color pipeline | C3 | Preserve/inventory raw carriers; no glyph, text, color, or meaning claim. |
 | Writer, deterministic serialization output, incremental edits, signature-impact classification, WASM, release packaging | C4 | Source remains immutable; structural signature ranges only; no writer API. |
 | Public-key decryption, cryptographic signature/trust validation, transforms, redaction, sanitization, secure output, agent surface, C ABI preview | C5 | Preserve/inventory/refuse; no transform/security-output claim. |
+| `/Prop_Build` named domain row | C5 boundary review, then C6 if the licensed card classifies it as profile-only | Preserve the exact name as an unresolved registry gap at `PENDING-LICENSED-SOURCE`; the human SpecCard pipeline assigns the semantic owner, and C1 invents no interpretation or behavior. |
 | Rare codecs, advanced color/transparency, profiles, forms/appearance generation, authoring/layout, performance hardening, coverage scorer | C6 | Capability manifest marks absent; no speculative implementation detail. |
+| `PhoneticAlphabet`/`Phoneme` named domain rows | C6 | Named inventory gap only at `PENDING-LICENSED-SOURCE`; no C1 decoding, text, pronunciation, accessibility, or conformance semantics. |
+| PDF/VT named profile row | C6 | Named inventory gap only at `PENDING-LICENSED-SOURCE`; no C1 profile semantics, validation, rendering, or conformance claim. |
 | Field measurement, comparison, Flagships G/H, foundry distribution publication, final evaluation bundle | C7 | No measurement or comparator contact in C1 planning/execution before committed protocols. |
 
 ### 12.2 R0 no-claim matrix
