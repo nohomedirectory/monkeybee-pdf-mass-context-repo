@@ -104,7 +104,7 @@ Hash, status, counts, and disposition are slots. They are filled only from filed
 | R20 | Charter-set cross-consistency | Q2/Q3 traceability | Opus | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 8 | 2 | 0 | NO | ROUTED → G6. **G6 triage returned: A01–A08 all QUALIFY.** B01, B02 unpromoted. No v1.0 in-place edit. G6 `DRAFT`; successors `PROPOSED — awaiting human ratification`. |
 | R21 | Charter-set cross-consistency | duplication/drift | Sol (fast) | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 14 | 0 | 0 | NO | ROUTED → G6 (conditional); G6 triage pending. No v1.0 in-place edit. Freshness admissible (see disposition). |
 | R22 | Charter-set cross-consistency | claim-vocabulary legality | Opus | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 4 | 2 | 2 | NO | ROUTED → G6 (conditional). C02 admitted as a **nonconforming supplemental disposition**, not a graded finding — no owner action. See disposition. |
-| R23 | Traceability + cycle briefs | Q2/Q3 zero-orphan audit | gpt-5.6-sol (ultra, fast) | — | `b77359ccc716a2186d3053034132b7f68b41988e2366e64efe4451e10d5089b3` | ASSIGNED | — | — | — | — | — |
+| R23 | Traceability + cycle briefs | Q2/Q3 zero-orphan audit | gpt-5.6-sol (ultra, fast) | — | `b77359ccc716a2186d3053034132b7f68b41988e2366e64efe4451e10d5089b3` | NOT-RUN · CORRUPT-DISPATCH · TERMINATED | — | — | — | — | ROOT-FAULT; no authority/artifact read, no filesystem write, no findings or counts. Immutable R23 closed and replaced by R33; R24 remains blocked. |
 | R24 | Traceability + cycle briefs | dependency soundness | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R25 | Traceability + cycle briefs | oversimplification hunt | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R26 | Traceability + cycle briefs | clean-room contamination | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
@@ -141,6 +141,14 @@ Supplemental rounds are governed by every law that governs a baseline round: the
 | R32 | `human_actions/**` | source-scope-and-no-action integrity | `claude-opus-4-8`, effort `xhigh` | Runs after the R01–R30 priority floor is satisfied; G5 must have reached `SUBMIT-FOR-REVIEW` | PENDING | AUTHORIZED | — | — | — | — | — |
 
 `AUTHORIZED` is a supplemental-round status: allocated by root after initialization, not yet bound to an artifact hash and not yet spawned. It becomes `ASSIGNED` on binding and then follows the ordinary status path.
+
+### Failed-round replacement allocation R33
+
+R33 replaces immutable failed round R23 under the standing law that a failed round ID is never reused. It preserves R23's artifact, sole lens, model family, and owner route; it adds no filed evidence or lens coverage unless a valid reviewer packet later files and is mechanically integrated.
+
+| Round | Artifact | Declared lens (exactly one) | Model | Precondition to admit | Artifact hash | Status | A | B | C | Marginal-only | Owner disposition |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| R33 | Traceability + cycle briefs (R23 replacement) | Q2/Q3 zero-orphan audit | `gpt-5.6-sol`, effort `ultra`, live `fast` | R23 closed `NOT-RUN · CORRUPT-DISPATCH · TERMINATED`; unchanged seven-file manifest; R24 remains blocked | `b77359ccc716a2186d3053034132b7f68b41988e2366e64efe4451e10d5089b3` | ASSIGNED | — | — | — | — | — |
 
 ### R31 — notes on admission and reading
 
@@ -2140,3 +2148,60 @@ Bound manifest SHA-256: `b77359ccc716a2186d3053034132b7f68b41988e2366e64efe4451e
 **Future route and blocks.** Any eventual R23 findings route through root to G4 only after filing and G7 mechanical integration; no routing occurs at assignment. R24 remains unassigned and blocked until G4 performs premise-first R23 triage, revises, returns to `SUBMIT-FOR-REVIEW`, and exposes a new seven-file manifest. R05 remains unassigned and blocked pending G3 resubmission.
 
 **Write law now in force.** `gauntlet/ROUND_LOG.md` is closed to G7 until root verifies this bind, commits and pushes it, sends the reviewer task, and reports R23 reviewer termination. G7 does not review, predict, or pre-empt findings. The R01–R32 allocation and all prior reviewer-authored bytes are preserved except the authorized R23 allocation-row slots above. **No task has been sent; root verifies, commits, pushes, and sends.**
+
+## R23 failure closure — `2026-07-14T21:59:41+02:00`
+
+**Root-caused corrupt dispatch.** Root reports that its `ntm send` shell argument embedded the backticked path `gauntlet/ROUND_LOG.md` inside a double-quoted JSON string. Zsh treated the backticks as command substitution, attempted to execute that repository path, emitted `permission denied`, and stripped the path from the supplied EOF anchor. Although `ntm` reported one delivery and zero failures, the visible reviewer prompt contained the corrupted phrase `Write law now in force.  is closed.` Delivery-count success therefore did not establish payload integrity.
+
+**No review and no filing.** The only measured reviewer task-era timestamp was `2026-07-14T21:54:07.067494056+02:00`. Root reports that the reviewer performed no authority-chain read, artifact read, or filesystem write; it filed no Round Log entry and produced no finding, grade, count, marginal status, or lens coverage. Root interrupted the process at approximately ten seconds, then exited child PID `3396433`, shell PID `3396196`, session `monkeybee-pdf-mass-context-repo--r23`, and monitor PID `3396334`. Local checks found all four absent.
+
+**Telemetry.** Normal exit display reported 11,428 total tokens: 10,879 input, including 9,984 cached; 549 output, including 393 reasoning. No cost was supplied and none is estimated.
+
+**Integrity and immutable closure.** Immediately before this closure, `gauntlet/ROUND_LOG.md` remained exactly 2,142 lines / 398,500 bytes / SHA-256 `cda92c3d944a0b3f1fd36c52e47519a81bf264be2e913e027c228b64b7ea4570`, proving no reviewer append. R23 is permanently `NOT-RUN · CORRUPT-DISPATCH · TERMINATED` with root fault explicit and no counts. It is not a filed gauntlet round, does not cover the `Q2/Q3 zero-orphan audit` lens, and changes neither the ten-round A=63/B=27/C=9 totals nor the 5 Sol/5 Opus filed-family counts.
+
+**Replacement law.** A failed round ID is never reused. R33 is the authorized replacement for the same unchanged seven-file artifact, lens, model family, and G4 route. R24 remains blocked on a valid replacement result followed by G4 premise-first triage, revision, and a new manifest. The log remains under G7 control solely to bind R33 in this authorized task.
+
+## R33 replacement assignment/control — `2026-07-14T22:00:32+02:00`
+
+**Binding and preimage.** At the measured local clock `2026-07-14T22:00:32+02:00`, G7 bound replacement R33 only to the unchanged `Traceability + cycle briefs` artifact under the sole `Q2/Q3 zero-orphan audit` lens. The post-R23-closure preimage was 2,154 lines / 400,928 bytes / SHA-256 `0f27b9a14b7864db4beb6247a0964e346b3b35896d5fc7343d950e151c954a3f`. R33 uses the same `gpt-5.6-sol` family at effort `ultra`, live `fast`, priority service, and the same eventual G4 route; R23 remains closed and is not reused.
+
+**Exact seven-file artifact and manifest.**
+
+```text
+20c48dd5f0128dc0407084e1a97dbe0d62af3a41c4be1ab7d5e942b904be6434  plans/cycle_briefs/C3.md
+a1441406f1780243da87e3fbb54ad8df808cfe82c02d5c9b6204ce6fe01f9510  plans/cycle_briefs/C4.md
+b1da84efc76eacf218c27e65ceb590b38f2d886acef38604e7706775a295d308  plans/cycle_briefs/C5.md
+e6053bb70ab992dd3d3f975beb50adb2217e6af992d1b1ce78337eda28619a5f  plans/cycle_briefs/C7.md
+e7cf81c8f0fdb53e9f9055181e3fea8c9c5b0bfcf6409b5255040c90c14befa7  plans/cycle_briefs/C6.md
+f98ba02f1740726ebe6dfe47bd6b1b50add3e8d8c7aa563ac56e184deb44c6d3  reports/TRACEABILITY_MATRIX.md
+fd0fbcf7cf3e9af630078022e8046b39d4ab041e158e6a234a25d3e3aa4bcd20  plans/cycle_briefs/C2.md
+```
+
+These are ordinary `sha256sum` lines bytewise sorted under `LC_ALL=C`, including the final newline; their independently reproduced manifest SHA-256 is `b77359ccc716a2186d3053034132b7f68b41988e2366e64efe4451e10d5089b3`. The component identities are unchanged from the R23 bind.
+
+**G4 and replacement admission.** `ledger/owners/G4_STATE.md` independently hashes to `b3ab1487715fd9cfb58a8515721532cb9ec79927377507138458ea6c9d4a8d9d` and declares `SUBMIT-FOR-REVIEW`; its body remains excluded from reviewer delivery. R23 closed without review or filing, so replacement admission does not require or claim an owner revision. Exactly one lens is assigned, R33 is not a repeated-prompt block, and no filed count or convergence evidence is created by binding.
+
+**Wrong-base spawn failure, preserved.** Root first invoked `ntm spawn` for label `r33` without overriding configured `projects_base`, producing an untouched process under `/home/joseph/ntm_Dev/monkeybee-pdf-mass-context-repo`. It received no task or artifact context and was exited before the correct respawn; its exact old monitor PID `4037616` is absent. Disk checks find the preserved outside-repository directory, no `.git`, and only an `.ntm` control-plane entry at its top level. No deletion or cleanup is authorized.
+
+**Correct reviewer control plane.** Root respawned with `NTM_PROJECTS_BASE=/home/joseph/ntm_dev`. The fresh reviewer is session `monkeybee-pdf-mass-context-repo--r33`, window 1, pane 1, pane ID `%119`, pane shell PID `4046339`, child PID `4046578`, monitor PID `4046448`, `pane_dead=0`, current command `codex`. Both shell and child cwd resolve exactly to `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`. Process arguments identify `gpt-5.6-sol` with `model_reasoning_effort=ultra`. Before any task, root toggled inherited fast mode to default and back to priority; the live transcript records `Service tier set to default`, then `Service tier set to priority`, and footer `gpt-5.6-sol ultra fast`. The process is idle and has received no artifact or review prompt.
+
+**Exact bounded authority chain for later root delivery, in read order.**
+
+1. `AGENTS.md` — full.
+2. `OVERNIGHT_GOAL.md` — §1, §3/G4, and §4.
+3. `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` — full.
+4. `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` — §§0–2 and §§4–7.
+5. `CYCLE_0_WORK_ORDER.md` — §0 only.
+6. `MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md` — §§0.2, 3, 24.12–24.16, 33.1–33.18, and 35.
+7. All seven bound artifacts in full at the manifest identities above.
+8. Only this R33 assignment/control entry and its EOF anchor, supplied inline by root.
+
+**Exact one-lens task.** Apply only the `Q2/Q3 zero-orphan audit` lens. Using only the permitted local authority chain, test whether every Q2/Q3 obligation, gate, evidence requirement, dependency, artifact, and owner handoff carried by the traceability matrix and C2–C7 briefs has an explicit closed traceability path with no orphan in either direction. File only locally evidenced findings under this lens; do not rewrite the artifacts or apply an adjacent lens. No measurement, comparison, benchmark, web/search, or external action is authorized.
+
+**Freshness boundary.** The reviewer must not receive or open the G4 checkpoint body, any prior finding body or reviewer packet, owner disposition, convergence result, decision file, G6 successor, other Round Log byte, external source, competitor material, or prohibited processor source/documentation. Root supplies this R33 control entry and EOF anchor inline. Any accidental exposure must be disclosed and the affected evidence excluded.
+
+**Tightened write and termination law.** The reviewer may create no scratch or temporary file anywhere and may use no shell redirection or `tee`. Its only filesystem write is exactly one blind structured `apply_patch`-equivalent append to `gauntlet/ROUND_LOG.md`, using the root-supplied EOF anchor without reading other log bytes. It may not edit any artifact, checkpoint, report, or other path. After the append is flushed, the final standalone token must be exactly `TERMINATED` with no punctuation, styling, prefix, or suffix; then the reviewer and idle shell must exit.
+
+**Future route and blocks.** Any eventual R33 findings route through root to G4 only after filing and G7 mechanical integration. R24 remains unassigned and blocked until G4 premise-tests a valid R33 result, revises, returns to `SUBMIT-FOR-REVIEW`, and exposes a new seven-file manifest. R05 remains blocked pending G3 resubmission. No task or route occurs at assignment.
+
+**Write law now in force.** `gauntlet/ROUND_LOG.md` is closed to G7 until root verifies this replacement bind, commits and pushes it, sends the R33 reviewer task, and reports R33 reviewer termination. G7 does not review, predict, or pre-empt findings. All prior reviewer-authored bytes and all existing allocation rows are preserved; R23 remains immutable, and only the new R33 replacement allocation/control is added. **No task has been sent; root verifies, commits, pushes, and sends.**
