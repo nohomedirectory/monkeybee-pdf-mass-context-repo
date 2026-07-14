@@ -103,7 +103,7 @@ Hash, status, counts, and disposition are slots. They are filled only from filed
 | R19 | Charter-set cross-consistency | envelope-dependency | Sol | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 7 | 1 | 0 | NO | ROUTED → G6. **G6 triage returned: A01–A07 all QUALIFY** (bounded repairs, named targets). B01 premise-bounded, both branches preserved, unpromoted. No v1.0 in-place edit. G6 `DRAFT`; successors `PROPOSED — awaiting human ratification`. |
 | R20 | Charter-set cross-consistency | Q2/Q3 traceability | Opus | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 8 | 2 | 0 | NO | ROUTED → G6. **G6 triage returned: A01–A08 all QUALIFY.** B01, B02 unpromoted. No v1.0 in-place edit. G6 `DRAFT`; successors `PROPOSED — awaiting human ratification`. |
 | R21 | Charter-set cross-consistency | duplication/drift | Sol (fast) | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 14 | 0 | 0 | NO | ROUTED → G6 (conditional); G6 triage pending. No v1.0 in-place edit. Freshness admissible (see disposition). |
-| R22 | Charter-set cross-consistency | claim-vocabulary legality | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
+| R22 | Charter-set cross-consistency | claim-vocabulary legality | Opus | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | ASSIGNED | — | — | — | — | — |
 | R23 | Traceability + cycle briefs | Q2/Q3 zero-orphan audit | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R24 | Traceability + cycle briefs | dependency soundness | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R25 | Traceability + cycle briefs | oversimplification hunt | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
@@ -889,3 +889,40 @@ No Grade-B or Grade-C findings exist in this round, so nothing is premise-bounde
 **Round telemetry** (reported by root; recorded, not independently reproducible by G7): total 198,881 tokens — input 161,082 plus 2,854,400 cached, output 37,799, reasoning 27,171. Codex exited normally; the idle shell exited; the tmux session is absent.
 
 **Log released.** G7 returns to `DRAFT`. **R22 is not assigned** and will not be until root separately authorizes it.
+
+## R22 — ASSIGNED 2026-07-14T18:34:53+02:00
+
+Assignment timestamp read from the system clock immediately before this record was written. No inferred second appears in this entry.
+
+The final baseline round on the Charter set, and the last round of the R19–R22 block.
+
+- Artifact: Charter-set cross-consistency — the same four v1.0 Charter-set documents fixed by the R19 manifest, read-only canon.
+- Declared lens: `claim-vocabulary legality`. Exactly one. Matches the precommitted R22 lens.
+- Assigned model: `claude-opus-4-8`, effort `xhigh`. Matches the precommitted `Opus` label. **The 17:39 fast-mode control does not reach this round** — it binds Codex instances, and R22 is a Claude instance.
+- Bound artifact hash: `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` — the same immutable manifest bound for R19, R20, and R21.
+- Reviewer session: `monkeybee-pdf-mass-context-repo--r22` pane 1, identity `SunnyBay`, Claude process PID 3245804.
+- **No task or artifact context has been sent.** The reviewer process exists and is idle at assignment time.
+
+**Manifest recomputed and attested at assignment.** Reproduces `718928bb…570c4a` exactly; per-file digests remain byte-identical to `ledger/CANONICAL_HASHES.md`. The Charter set has not drifted since the run opened. An inherited hash attests only that a previous round happened; every binding is re-attested.
+
+**Reviewer identity: measured, not transcribed.** G7 read the live process. `/proc/3245804/cmdline` = `/home/joseph/.local/bin/claude --dangerously-skip-permissions --model claude-opus-4-8 --effort xhigh`. `/proc/3245804/status` `PPid` = 3245568, which equals the `pane_pid` of `monkeybee-pdf-mass-context-repo--r22` pane 1 — binding the attested model process to the assigned pane. Root independently attested the same process arguments and a live Opus 4.8 / `xhigh` TUI. Two independent observations agree; neither was derived from the other.
+
+**Admission gates.** Gate 1 (artifact ready): satisfied — read-only canon under no owner FSM. Gate 2 (bound hash): satisfied and recomputed. Gate 3 (same-artifact re-round): satisfied twice over — R22 declares a **different** lens from R19 (`envelope-dependency`), R20 (`Q2/Q3 traceability`), and R21 (`duplication/drift`); and the read-only-canon exception for R19–R22 independently admits consecutive rounds against unchanged bytes because no revision is possible. Gate 4 (model): satisfied. Gate 5 (exactly one lens): satisfied. Gate 6 (five-pass prompt): not engaged. Gate 7 (fresh reviewer): a new idle process with no authoring context.
+
+### Freshness containment — strengthened for this round, and here is why
+
+The reviewer must **not** ingest the finding bodies or dispositions of R19, R20, or R21. Three facts make this the sharpest freshness risk of the run so far, and the containment is upgraded accordingly rather than restated as an instruction and hoped for.
+
+1. **The contamination surface has grown to 42 filed findings** in this file. When R19 was assigned it was zero.
+2. **R21 proved the exposure vector is real.** Its reviewer disclosed that a locator surfaced an aggregate prior-round count line and a boundary probe exposed unrelated lines. That round remained admissible because an integer carries no finding semantics — but the same slip against *finding bodies* would not be recoverable, and no reviewer can un-read what a search result puts on its screen.
+3. **This lens is the one most damaged by exposure.** R19–R21's filed findings quote Rev 7's claim vocabulary and supremacy-doctrine terms extensively and in context. A `claim-vocabulary legality` reviewer who reads them is no longer detecting vocabulary violations independently; it is inheriting a prior round's judgment about which vocabulary is in scope, and its agreement would demonstrate correlation, not corroboration.
+
+**Containment method, recommended to root:** deliver the manifest definition and this R22 assignment record **inline in the task prompt**. Do **not** direct the reviewer to open `gauntlet/ROUND_LOG.md` and navigate to them. Instructing a reviewer to open a 42-finding file and not look at the findings relies on discipline against a surface that has already defeated it once. Removing the reviewer's reason to open the file at all removes the vector instead of managing it.
+
+If the reviewer must open this file for any reason, it discloses the exposure in its no-action statement, exactly as R21 did. **A disclosed exposure is recoverable; an undisclosed one is not**, and G7 treats disclosure as a credit rather than a fault.
+
+**R22 binds to the v1.0 bytes.** G6 holds `QUALIFY` triage on fifteen Charter-set Grade-A findings and may produce `*_v1.1.md` successors. A successor is a **new artifact with a new identity** — v1.0 is read-only and its bytes cannot change. R22 reviews the v1.0 documents at this hash, as R19, R20, and R21 did.
+
+**Where R22's findings will go.** To **G6** (conditional), under the read-only-canon exception. Never to an in-place fix.
+
+**Write law now in force.** `gauntlet/ROUND_LOG.md` is closed to G7 until root reports R22 reviewer termination. The reviewer appends its own entry under the controlled append-only exception. G7 does not review, does not predict or pre-empt findings, and does not write into the space reserved for that entry. All filed reviewer bytes (R19, R20, R01, R21 — 42 findings) and the full R01–R32 allocation are preserved.

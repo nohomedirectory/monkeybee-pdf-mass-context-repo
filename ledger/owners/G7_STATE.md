@@ -359,3 +359,29 @@ Round telemetry (root-reported, not independently reproducible by me): total 198
 Thirty-seven filed Grade-A findings now stand across four rounds. Fifteen carry G6 `QUALIFY` dispositions; fourteen (R21) await G6 triage; eight (R01) await G3. **Zero are human-ratified or externally adjudicated.**
 
 Owner FSM: back to `DRAFT`. **Log released.** **R22 is not assigned** and will not be until root separately authorizes it.
+
+### 18:34:53 — R22 ASSIGNED (control-plane write only); log closed to G7
+
+Clock read at `2026-07-14T18:34:53+02:00` immediately before writing. No inferred second in this entry. The final baseline round on the Charter set, closing the R19–R22 block.
+
+- Artifact: the four v1.0 Charter-set documents, read-only canon. Bound hash `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a`, recomputed at assignment; per-file digests still match `ledger/CANONICAL_HASHES.md`.
+- Sole lens: `claim-vocabulary legality` — matches the precommitted R22 lens.
+- Model: `claude-opus-4-8`, effort `xhigh`. The 17:39 fast-mode control does **not** reach this round — it binds Codex instances, and R22 is a Claude instance.
+- Reviewer: `monkeybee-pdf-mass-context-repo--r22` pane 1, `SunnyBay`, PID 3245804. Measured, not transcribed: `/proc/3245804/cmdline` shows `--model claude-opus-4-8 --effort xhigh`; `PPid` 3245568 equals the pane's `pane_pid`, binding process to pane. Root's independent attestation agrees.
+- Status: `ASSIGNED`, not `FILED`. **No task or artifact context has been sent.**
+
+All seven admission gates checked. Gate 3 satisfied twice over: R22's lens differs from all three prior Charter-set rounds, and the read-only-canon exception independently admits consecutive rounds against unchanged bytes.
+
+**I strengthened the freshness containment for this round rather than restating the rule and hoping.** Three facts converge:
+
+1. **The contamination surface is now 42 filed findings** in `gauntlet/ROUND_LOG.md`. It was zero when R19 was assigned.
+2. **R21 proved the vector is real.** Its reviewer disclosed that a locator surfaced a prior-round count line. That round survived because an integer carries no finding semantics — but the same slip against *finding bodies* would not be recoverable. No reviewer can un-read what a search result puts on screen.
+3. **This lens is the one most damaged by exposure.** R19–R21's findings quote Rev 7's claim vocabulary and supremacy-doctrine terms extensively, in context. A `claim-vocabulary legality` reviewer that reads them stops detecting violations independently and starts inheriting a prior round's judgment about which vocabulary is even in scope. Its agreement would then demonstrate correlation, not corroboration — which is precisely the failure the freshness rule exists to prevent, and it would be invisible in the output.
+
+**Recommendation to root, recorded in the assignment:** deliver the manifest definition and the R22 assignment record **inline in the task prompt**, and do not direct the reviewer to open the round log at all. Telling a reviewer to open a 42-finding file and not look at the findings relies on discipline against a surface that has already defeated it once. Removing the reason to open the file eliminates the vector instead of managing it. If the reviewer does open it, it discloses in its no-action statement as R21 did — a disclosed exposure is recoverable, an undisclosed one is not.
+
+Note also that R22 improves the filed cross-model balance to 3 Sol / 2 Opus. Still unbalanced, still not describable as cross-model corroboration, but moving the right way.
+
+**What I did not do:** I did not review, predict, grade, or integrate anything; I touched no filed reviewer bytes (R19, R20, R01, R21 — 42 findings intact); I set only R22 to `ASSIGNED`; I did not transition the owner FSM.
+
+Owner FSM: unchanged at `DRAFT`. **`gauntlet/ROUND_LOG.md` is closed to G7** until root reports R22 reviewer termination.
