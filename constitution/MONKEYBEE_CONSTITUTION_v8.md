@@ -12,6 +12,7 @@ inputs:
   - decisions/D3_DECODED_STREAM_IDENTITY.md
   - decisions/D4_EVIDENCE_CHECKER_ISOLATION.md
   - decisions/DEFERRED_REGISTER.md
+  - "gauntlet/ROUND_LOG.md (bounded R14 lines 1815-2081 only)"
 status: PROPOSED
 evidence-status: provisional-pending-substrate
 constitution-version: 8.0-proposed
@@ -26,7 +27,7 @@ This document is the frozen-kernel candidate extracted under Cycle 0 Work Order 
 - Stable Revision 7 section identifiers are preserved.
 - This file is the single normative home for §§4, 6, the §8 architecture and dependency-direction law, §§9–11, §30.1.1, and §§33–34. Shell references to these laws are marked `generated-echo` and cannot amend them.
 - The concrete crate atlas remains provisional shell content. Only the crate-boundary budget is in the kernel.
-- Revision 7 wording is preserved except where an `OPEN-C0` finding or the supplied §34.9 text requires a change. `reports/FIX_APPLICATION.md` identifies every change.
+- Revision 7 wording is preserved except where an `OPEN-C0` finding, the supplied §34.9 text, or a human-routed premise-qualified repair requires a change. `reports/FIX_APPLICATION.md` identifies every change.
 - Concrete hash-algorithm, digest-width, and canonical-serialization bindings remain `PROPOSED — awaiting human ratification`. D1 proposes SHA-256 at 256 bits and requires joint ratification with D2; neither proposal is treated as law here. Section 9.2's domain separation, framing, versioning, canonical-encoding, and collision-quarantine requirements remain the governing extracted law, but an unresolved concrete binding cannot mint a production identity. Hash and grammar ratification must precede the campaign's first external/tamper-evident commitment because re-hashing later cannot preserve the original commitment time.
 - Runtime dependency and cryptographic-crate choices remain pending under D-005. This Constitution defines capability, isolation, evidence, and migration requirements without selecting a crate by model preference.
 - SpecCard semantic bodies remain absent. Registry and review slots live in `constitution/SPECCARD_PIPELINE.md` and are all `PENDING-LICENSED-SOURCE`.
@@ -142,6 +143,9 @@ Each requirement becomes a `SpecCard` with:
 - failure behavior;
 - affected compatibility profiles;
 - test obligations;
+- linked atomic fixtures;
+- linked implementation or consequence contracts;
+- linked external profiles;
 - known ambiguities;
 - and provenance author/reviewer.
 
@@ -161,6 +165,8 @@ The registry records:
 - and project interpretation decisions.
 
 A standards update never silently changes behavior. It creates a registry revision, compatibility assessment, migration notes, and new or updated cards.
+
+**[UNVERIFIED — inherited Revision 7 identifier and status assertions; no licensed or public standards source was contacted in this no-fetch run.]**
 
 For this plan dated 2026-07-14, the public planning baseline is ISO 32000-2:2020 (confirmed current by ISO in 2026) plus the PDF Association’s June 2026 Errata Collection 3 bundle. The registry distinguishes an ISO edition, amendment, or corrigendum from a PDF Association errata-collection publication and records the authority and status of every resolution instead of describing all corrections generically as “formal ISO errata.” ISO 32000-1 remains a historical/compatibility source. ISO/TS 32001, 32002, 32003, and 32004 are registered as separate PDF 2.0 technical-specification profiles rather than folded into “PDF 2.0 core.” ISO/TS 32005:2023 is registered separately with the PDF/UA-2/WTPDF-related accessibility family, not as a core encryption or hash-extension profile. Published amendments become new registry revisions only after their status and source rights are confirmed; drafts under development are tracked as non-authoritative horizon items. This paragraph records identifiers only; access, model visibility, quotation, and implementation use still pass the rights gate above.
 
@@ -539,6 +545,11 @@ The system uses stable, typed identities rather than bare integers or memory add
 | `GlyphInstanceId` | One painted glyph instance. |
 | `SemanticNodeId` | One extracted text, structure, annotation, or accessibility node. |
 | `ClaimId` | One evidence-bearing statement. |
+| `SpecCardId` | One versioned project-authored clean-room requirement unit whose authority remains conditional on the §4 source and review record. |
+| `ConsequenceContractId` | One versioned machine contract for an atomic operation, profile-qualified capability, or atomic comparison subclaim under §10.10. |
+| `EvaluationProtocolId` | One immutable pre-unblinding evaluation-protocol commitment under §10.6. |
+| `CompetitorDiscoveryProtocolId` | One immutable pre-search field-discovery protocol commitment under §10.6. |
+| `CompetitorDiscoveryReportId` | One immutable, independently frozen execution report for a `CompetitorDiscoveryProtocolId` under §10.6. |
 | `SemanticReportProtocolId` | One versioned canonical value grammar for semantic report bodies, including the report-family schema/version and every identity-bearing field. |
 | `SemanticReportId` | One content commitment to a semantic report body only; run observations and operational telemetry are outside its domain. |
 | `RunObservationProtocolId` | One independently versioned canonical value grammar for run observation envelopes and their linkage to semantic reports. |
@@ -1009,6 +1020,9 @@ Records:
 - recovery status;
 - encryption state;
 - signatures found;
+- the exact-preservation interval ledger as independent, overlapping facets for parse/semantic ownership, raw-preservation requirement, explained/unexplained subranges, revision membership/supersession, cryptographic coverage, disclosure/sensitivity class, and transformation carry/drop intent;
+- metadata inventory and reconciliation across revisions;
+- the security/behavior reachability-and-effect inventory across every admitted revision/view/hypothesis, with per-node trigger, target, revision, visibility, required host capability, executable-feature class, sanitization state, evidence/provenance, and explicit analyzed/unavailable coverage;
 - unexplained bytes;
 - resource-limit usage;
 - and overall no-claim boundaries.
@@ -1018,6 +1032,8 @@ Records:
 Records:
 
 - exact `DocumentViewId`, `RevisionGraphId` where source-backed, and render `DerivationId`;
+- selected revision or recovery hypothesis and its selection evidence;
+- effective dialect for that selected revision/view;
 - page and box selection;
 - output profile;
 - compatibility profile;
@@ -1025,6 +1041,9 @@ Records:
 - color pipeline;
 - substitutions;
 - skipped or refused operators;
+- warnings and refusals;
+- unsupported or policy-blocked features beyond the operator surface;
+- resource-limit usage and any fired semantic limit;
 - cache identity;
 - determinism class;
 - and pixel-artifact hash.
@@ -1036,9 +1055,12 @@ Records:
 - exact `DocumentViewId`, `RevisionGraphId` where source-backed, and extraction `DerivationId`;
 - glyph count;
 - exact character-code spans;
+- text-view class (`PaintedGlyphText`, `ReplacementText`, `AccessibilityText`, or `SearchText`);
+- per-span source-code, font/CMap, CID/GID, visibility, and evidence facts;
 - Unicode coverage by evidence class;
 - missing or conflicting mappings;
 - reading-order algorithm;
+- returned order type (logical, visual, tagged, or search-oriented) and ranked alternatives where order is ambiguous; an order label does not assert correctness;
 - structure linkage;
 - and omitted regions.
 
@@ -1167,6 +1189,8 @@ Records:
 
 A replay bundle is never emitted through ambient networking. Export is a caller-authorized host action outside the semantic core. D3, D4, D5, wall-clock-stopped, partially captured, or mutable-external-service runs receive only the relation their evidence supports; none acquires a fictional bit-identical replay promise.
 
+D1R replay reproduces the admitted semantic plan and non-secret receipt but never asserts output-byte identity; secure encryption, randomized or hedged signing, trusted-time/timestamp/revocation inputs, mutable signer services, and other protected or variable inputs retain their §11.9 limits.
+
 #### `DivergenceReport`
 
 Records:
@@ -1179,7 +1203,7 @@ Records:
 - compatibility classification;
 - and a reproducible witness bundle.
 
-Processor-to-output meaning comes only from the same processor-result record, never from shared array position. If a serialization also emits an `external_output_artifact_ids` summary, that field is an exact generated set projection of the independently identified outputs in the processor-result records; a missing, duplicate, extra, or conflicting binding is invalid. Canonical ordering is solely an encoding concern and confers no processor priority, baseline role, winner, or majority semantics.
+Processor-to-output meaning comes only from the same processor-result record, never from shared array position. If a serialization also emits a `processor_output_artifact_ids` summary, that field is an exact generated set projection of the independently identified outputs in the processor-result records; a missing, duplicate, extra, or conflicting binding is invalid. Canonical ordering is solely an encoding concern and confers no processor priority, baseline role, winner, or majority semantics.
 
 #### `EvidencePackage`
 
@@ -1240,7 +1264,7 @@ Every retained run observation instantiates a separately versioned envelope gram
 
 The two protocol identities and their concrete encoding/hash parameters remain governed by §§9.2-9.2.1. These paragraphs close the typed value and linkage domains but do not select an octet grammar, hash family, or digest width; no production `SemanticReportId` or `RunObservationId` is available until D1/D2 ratification. A material semantic-body or observation-envelope grammar change creates the corresponding new protocol version without silently changing the other.
 
-Only the semantic body participates in D0 structural identity unless a measurement claim explicitly makes selected observations part of a separate measurement artifact. Bet 27 replay bundles bind this semantic body and retain the run observation envelope as evidence, but they reproduce only the guarantee of the declared determinism class: D0/D1/D2 identity where admitted, D3 bounds, D4 seed replay, and no stronger claim for D5. The semantic commitment binds its report-family schema version, identity grammar, processing/render/security profile versions, capability identities, and canonical encoding once ratified. Wall time, timestamps, process IDs, randomized temporary names, and nondeterministic event order never silently poison semantic report identities. Evidence packages can retain both parts and bind each observation to its semantic body through the typed IDs above.
+Only the semantic body participates in D0 structural identity unless a measurement claim explicitly makes selected observations part of a separate measurement artifact. Bet 27 replay bundles bind this semantic body and retain the run observation envelope as evidence, but they reproduce only the guarantee of the declared determinism class: D0/D1/D2 identity where admitted; D1R semantic-plan and non-secret-receipt reproduction without output-byte identity; D3 bounds; D4 seed replay; and no stronger claim for D5. The semantic commitment binds its report-family schema version, identity grammar, processing/render/security profile versions, capability identities, and canonical encoding once ratified. Wall time, timestamps, process IDs, randomized temporary names, and nondeterministic event order never silently poison semantic report identities. Evidence packages can retain both parts and bind each observation to its semantic body through the typed IDs above.
 
 ### 10.9 Provenance retention policy
 
@@ -1277,7 +1301,7 @@ Repository checks derive the public capability manifest, Appendix-E rows, API/do
 
 Report-family schemas together with the common §10.8 semantic-body/run-observation contract are the sole field sources for representative examples. An example generator consumes both inputs and emits explicit placeholders for every mandatory family field, `SemanticReportProtocolId`, `SemanticReportId`, capability-identity set, separately versioned run-observation schema and `RunObservationProtocolId`, `RunObservationId`, semantic-report backlink, observation coverage/telemetry, and telemetry-exclusion fact. While §9.2.1 remains pending, generated examples use explicit pending-ratification protocol markers and nonproduction identity placeholders rather than selecting an encoding.
 
-A schema-example validator rejects any example that omits a required family or common identity field, uses a friendly alias where the schema requires a typed ID, breaks the one-way semantic-report backlink, includes run telemetry in semantic identity, or introduces a field that would strengthen the report's claim. For `DivergenceReport`, it additionally requires each processor-result record's separate artifact, version, configuration, environment, and output identities and verifies that any external-output summary is the exact order-independent projection of those bindings. Appendix B is a non-normative `generated-echo` of §§10.6, 10.8, and 10.10 and is never hand-authoritative.
+A schema-example validator rejects any example that omits a required family or common identity field, uses a friendly alias where the schema requires a typed ID, breaks the one-way semantic-report backlink, includes run telemetry in semantic identity, or introduces a field that would strengthen the report's claim. For `DivergenceReport`, it additionally requires each processor-result record's separate artifact, version, configuration, environment, and output identities and verifies that `processor_output_artifact_ids` is the exact order-independent projection of those bindings. Appendix B is a non-normative `generated-echo` of §§10.6, 10.8, and 10.10 and is never hand-authoritative.
 
 ---
 
@@ -1316,7 +1340,7 @@ Every project-controlled potentially large allocation, loop, recursion, decode e
 
 Budgets are hierarchical and non-resettable. A nested form, pattern, image, object stream, font program, validator rule, recovery branch, or parallel worker receives a child lease over the parent `ResourceAccount`: it may add a stricter local cap, but it cannot create a fresh global allowance. Global cumulative counters and per-item counters are both enforced, sibling work reserves before launch, cancellation returns unused reservations, and account overflow/refund races are conformance-tested. Recursion, retry, worker replacement, and parallel fan-out therefore cannot multiply a caller’s decoded-byte, instruction, output, diagnostic, or memory budget.
 
-A child context that intersects parent and local limits must retain the computed intersection for the child's full lifetime. It may own that `Limits` value or borrow caller-provided `ChildContextStorage`; it may not return a reference to a temporary or merely comment that two borrowed limits were intersected. Limit checks read the retained intersection and continue charging the shared non-resettable account.
+A child context that intersects parent and local limits must retain the computed intersection for the child's full lifetime. It may own that `Limits` value or borrow caller-provided storage that outlives the child context; it may not return a reference to a temporary or merely comment that two borrowed limits were intersected. Limit checks read the retained intersection and continue charging the shared non-resettable account.
 
 A `WorkContext` belongs to an operation, not to `DocumentReality`. It binds an opaque `ProfileSnapshotId`, a least-authority non-`Copy` `CapabilityLease`, and a secret/PII handling policy. Lease fields are private and can be minted only by top-level admission from a host registry. A child context either borrows the same lease or receives a provable subset through `CapabilityLease::narrow`; no public constructor, clone, deserializer, retry, worker replacement, or child operation can add authority. A top-level host registry may know about fonts, trust stores, clocks, entropy, external sources, network adapters, or isolation workers, but it mints only the exact typed handles needed by the admitted operation. A byte decoder therefore cannot discover a trust store, a renderer cannot obtain entropy, and a validator cannot fetch a URL merely because the host supports those capabilities elsewhere.
 
@@ -1348,7 +1372,9 @@ The default limits object includes at least:
 | Form and pattern recursion | Recursive resource cycles. |
 | Type 3 glyph recursion | Recursive char procedures. |
 | Function instructions | Type 4 calculator-function loops. |
+| CMap tokens, mappings, `usecmap` depth, and aggregate entries | CMap interpreter expansion, inherited-chain cycles, and oversized mapping programs. |
 | Form-script events, instructions, heap, and field writes | AcroForm JavaScript recursion, event storms, mutation loops, and memory growth. |
+| Hostile XML/XMP bytes, depth, nodes, attributes, names/text, namespace declarations, comments/instructions, and parse output | XML expansion and parser-combinatoric attacks independently of any projection step. |
 | Static-XFA nodes, layout boxes, and projection output | XML/layout combinatorics and oversized fixed-page projection. |
 | External recognizer/tool calls and result bytes | Runaway external work, output floods, or repeated model invocation. |
 | Font instructions | TrueType and charstring execution. |
@@ -1461,7 +1487,7 @@ PDF contains several programmable sublanguages. MonkeyBee uses one common **meta
 - explicit numeric and error behavior; transactional effect journals where mutation is admitted; and
 - traceable termination, cancellation, refusal, and rollback.
 
-Type 4 functions, font hinting/charstrings, and Type 3 procedures normally receive no document mutation capability. Bet 16’s form-action tenant receives only a typed view of the explicitly selected field graph, supplied deterministic host facts, and event-specific write authority. Its deny-by-default manifest excludes dynamic code generation, `eval`, ambient application/document APIs, keystroke/UI/navigation/submission events, and any built-in not separately admitted. Reads, writes, event order, cycles, event storms, resource charges, and the entire effect journal commit atomically or not at all.
+Type 4 functions, font hinting/charstrings, and Type 3 procedures normally receive no document mutation capability. CMap interpretation is a distinct bounded tenant: it uses the dedicated CMap frontend/interpreter, never the Type 4 VM or a general PostScript interpreter; `usecmap` resolution is snapshot-bound and cycle-safe; and predefined mappings enter only through an explicit rights-cleared, version-identified data-pack capability. Bet 16’s form-action tenant receives only a typed view of the explicitly selected field graph, supplied deterministic host facts, and event-specific write authority. Its deny-by-default manifest excludes dynamic code generation, `eval`, ambient application/document APIs, keystroke/UI/navigation/submission events, and any built-in not separately admitted. Reads, writes, event order, cycles, event storms, resource charges, and the entire effect journal commit atomically or not at all.
 
 Static XFA projection is bounded XML/layout derivation with explicit asset/font capabilities, not script execution or an interactive runtime. PostScript XObject compatibility remains ignore/refuse policy, not an interpreter. General JavaScript and dynamic XFA remain inventory-only.
 
@@ -1946,3 +1972,5 @@ Every capability cycle after the kernel cycle proceeds as follows, and no cycle'
 6. **Close gate (blocking):** (a) drift audit — generated-truth diffs, contract-truth checks, claim-registry consistency, zero Grade-A findings to pass; (b) one held-out extension probe, selected from the sealed pool, with results recorded win-or-lose; (c) SpecCard coverage check for the cycle's surface; (d) sealed cycle trial record into the production ledger: attempts, failures, retries, cost, human interventions, median and best outcomes.
 
 Cycle trial records are the campaign's foundry-distribution evidence; a cycle without a sealed record contributes nothing to any §33 claim regardless of what it shipped.
+
+For Constitution v8.0-proposed, “assigned Gauntlet tier” in item 3 is a versioned dependency on `shell/MONKEYBEE_SHELL_CORPUS_v8.md` §27. It binds the entire G0–G7 taxonomy, the G6.1 toolchain/unsafe/supply-chain/privacy lanes, every §27.1 falsifier family, and §27.4's consequence-contract-derived release matrix without copying those shell sections into the kernel. A later change to that taxonomy, its falsifier pairing, or its release-matrix validity law is a declared kernel touch under item 2; no provisional shell edit silently changes the definition of done.

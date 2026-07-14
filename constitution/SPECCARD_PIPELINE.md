@@ -7,6 +7,7 @@ inputs:
   - CYCLE_0_WORK_ORDER.md
   - MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md §§4, 12–16
   - constitution/MONKEYBEE_CONSTITUTION_v8.md §4
+  - "gauntlet/ROUND_LOG.md (bounded R14 lines 1815-2081 only)"
 status: PROPOSED
 evidence-status: provisional-pending-substrate
 ---
@@ -68,6 +69,9 @@ The Constitution §4 is the normative home for source rights, the AI-use gate, t
 | `MB-SC-R0-038` | Encrypted-payload and unencrypted-wrapper inventory | `PENDING-LICENSED-SOURCE` | `PENDING-LICENSED-SOURCE` | `PENDING-LICENSED-SOURCE` |
 | `MB-SC-R0-039` | PDF 2.0 UTF-8 text-string inventory | `PENDING-LICENSED-SOURCE` | `PENDING-LICENSED-SOURCE` | `PENDING-LICENSED-SOURCE` |
 | `MB-SC-R0-040` | Catalog `NeedsRendering` inventory | `PENDING-LICENSED-SOURCE` | `PENDING-LICENSED-SOURCE` | `PENDING-LICENSED-SOURCE` |
+| `MB-SC-R0-041` | Catalog `/Version` override inventory | `PENDING-LICENSED-SOURCE` | `PENDING-LICENSED-SOURCE` | `PENDING-LICENSED-SOURCE` |
+| `MB-SC-R0-042` | Extension dictionaries and extension-level inventory | `PENDING-LICENSED-SOURCE` | `PENDING-LICENSED-SOURCE` | `PENDING-LICENSED-SOURCE` |
+| `MB-SC-R0-043` | ISO/TS encryption and integrity variant inventory | `PENDING-LICENSED-SOURCE` | `PENDING-LICENSED-SOURCE` | `PENDING-LICENSED-SOURCE` |
 
 ## 3. R0 coverage-slot map
 
@@ -75,13 +79,14 @@ This map says which pending slots must be resolved before the named planning sur
 
 | R0 planning surface | Required pending SpecCardIds | Coverage state |
 |---|---|---|
-| Header, dialect, and lexer | `MB-SC-R0-001` through `MB-SC-R0-006` | `PENDING-LICENSED-SOURCE` |
+| Header, dialect, and lexer | `MB-SC-R0-001` through `MB-SC-R0-006`, `MB-SC-R0-041`, `MB-SC-R0-042` | `PENDING-LICENSED-SOURCE` |
 | Raw COS and exact syntax preservation | `MB-SC-R0-002` through `MB-SC-R0-005`, `MB-SC-R0-013` | `PENDING-LICENSED-SOURCE` |
-| Cross-reference and revision discovery | `MB-SC-R0-006` through `MB-SC-R0-012` | `PENDING-LICENSED-SOURCE` |
+| Cross-reference and revision discovery | `MB-SC-R0-006` through `MB-SC-R0-012`, `MB-SC-R0-031` | `PENDING-LICENSED-SOURCE` |
 | Document structure inspection | `MB-SC-R0-014`, `MB-SC-R0-015`, `MB-SC-R0-037`, `MB-SC-R0-040` | `PENDING-LICENSED-SOURCE` |
-| Lossless filter pipeline | `MB-SC-R0-005`, `MB-SC-R0-016` through `MB-SC-R0-022` | `PENDING-LICENSED-SOURCE` |
+| Lossless filter pipeline | `MB-SC-R0-005`, `MB-SC-R0-016` through `MB-SC-R0-022`, `MB-SC-R0-029` | `PENDING-LICENSED-SOURCE` |
 | Standard-handler inventory | `MB-SC-R0-023` through `MB-SC-R0-031` | `PENDING-LICENSED-SOURCE` |
 | Caller-credential standard-handler read decryption | `MB-SC-R0-023` through `MB-SC-R0-031` | `PENDING-LICENSED-SOURCE` |
+| ISO/TS encryption and integrity variant inventory only | `MB-SC-R0-043` | `PENDING-LICENSED-SOURCE` |
 | Structural signature and `ByteRange` inspection | `MB-SC-R0-032` through `MB-SC-R0-034` | `PENDING-LICENSED-SOURCE` |
 | Active-content and attachment inventory | `MB-SC-R0-035`, `MB-SC-R0-036`, `MB-SC-R0-038`, `MB-SC-R0-040` | `PENDING-LICENSED-SOURCE` |
 | PDF 2.0 string inventory | `MB-SC-R0-039` | `PENDING-LICENSED-SOURCE` |
@@ -100,7 +105,7 @@ No step below is authorized to run until the human records the source-rights bas
 6. **Independent meaning review.** A second authorized human compares every semantic field to the controlling source, records disagreements, and either approves or returns the card. The author cannot self-approve.
 7. **Rights and leakage review.** The source-rights owner checks the paraphrase, quotation exposure, downstream visibility, and distribution class. A technically accurate card still remains blocked if its use or redistribution is unauthorized.
 8. **Registry transition.** Only after both reviews pass does the registry move from `PENDING-LICENSED-SOURCE` to a versioned approved state. The transition records source artifact identity, reviewers, review dates, card digest, superseded versions, and permitted contexts.
-9. **Fixture and contract linkage.** Rights-cleared atomic fixtures and consequence contracts cite the approved card. A fixture does not silently supply missing normative meaning.
+9. **Fixture, contract, and profile linkage.** Rights-cleared atomic fixtures, implementation/consequence contracts, and affected external profiles cite the approved card, and the card records those impact links. A fixture, contract, or profile does not silently supply missing normative meaning.
 10. **Change handling.** A new edition, errata decision, corrected interpretation, or rights change creates a new card version plus compatibility and claim-impact review; it never mutates prior meaning silently.
 
 ## 5. Empty SpecCard template
@@ -121,6 +126,9 @@ Every semantic field deliberately remains empty in this draft.
 | failure behavior | `PENDING-LICENSED-SOURCE` |
 | affected profiles | `PENDING-LICENSED-SOURCE` |
 | test obligations | `PENDING-LICENSED-SOURCE` |
+| linked atomic fixture IDs | `PENDING-LICENSED-SOURCE` |
+| linked implementation/consequence contract IDs | `PENDING-LICENSED-SOURCE` |
+| linked external profile IDs | `PENDING-LICENSED-SOURCE` |
 | known ambiguities | `PENDING-LICENSED-SOURCE` |
 | rights provenance | `PENDING-LICENSED-SOURCE` |
 | technical author | `PENDING-LICENSED-SOURCE` |
@@ -138,6 +146,9 @@ Every semantic field deliberately remains empty in this draft.
 - author and authorization basis: `PENDING-LICENSED-SOURCE`
 - independent meaning reviewer and authorization basis: `PENDING-LICENSED-SOURCE`
 - rights reviewer: `PENDING-LICENSED-SOURCE`
+- linked atomic fixture IDs: `PENDING-LICENSED-SOURCE`
+- linked implementation/consequence contract IDs: `PENDING-LICENSED-SOURCE`
+- linked external profile IDs: `PENDING-LICENSED-SOURCE`
 
 ### Meaning checks
 

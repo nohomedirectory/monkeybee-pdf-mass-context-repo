@@ -8,6 +8,7 @@ inputs:
   - MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md
   - constitution/MONKEYBEE_CONSTITUTION_v8.md
   - DISPUTES.md
+  - "gauntlet/ROUND_LOG.md (bounded R14 lines 1815-2081 only)"
 status: PROPOSED
 evidence-status: provisional-pending-substrate
 shell-version: 8.0-proposed
@@ -5868,8 +5869,8 @@ Every B.1-B.5 example emits a `SemanticReportProtocolId` marker, `SemanticReport
 
 | Example | Schema source | Identity fields the generator must emit |
 |---|---|---|
-| B.1 | Constitution §10.6 `OpenReport` | `SourceRootId`; every `RevisionGraphId`; selected `DocumentViewId` or explicit alternatives |
-| B.2 | Constitution §10.6 `RenderReport` | exact `DocumentViewId`; source-backed `RevisionGraphId`; render `DerivationId`; pixel artifact identity |
+| B.1 | Constitution §10.6 `OpenReport` | `SourceRootId`; every `RevisionGraphId`; selected `DocumentViewId` or explicit alternatives; exact-preservation interval facets; metadata history; security reachability/effect inventory and coverage |
+| B.2 | Constitution §10.6 `RenderReport` | exact `DocumentViewId`; source-backed `RevisionGraphId`; render `DerivationId`; selected revision/hypothesis; effective dialect; resource/unsupported-feature accounting; pixel artifact identity |
 | B.3 | Constitution §10.6 `TransformReceipt` | role-labeled root + `DocumentViewId` + `ExpectedStateId` for every document input; artifact/origin for every asset; candidate/output roots |
 | B.4 | Constitution §10.6 `DivergenceReport` | `SourceRootId`; `RevisionGraphId`; `DocumentViewId`; relevant `DerivationId`; external input identity; per-processor artifact, version, configuration, environment, and bound independent output identity; exact output-identity projection |
 | B.5 | Appendix A.13 checker boundary | package root; checker capability identity; availability and coverage accounting |
@@ -5941,6 +5942,52 @@ Every B.1-B.5 example emits a `SemanticReportProtocolId` marker, `SemanticReport
   },
   "encryption_state": "inventoried",
   "signatures_found": ["signature:1"],
+  "exact_preservation_interval_facets": {
+    "parse_or_semantic_ownership": [
+      {"range": [0, 1839021], "owner": "raw-syntax:example"}
+    ],
+    "raw_preservation_requirement": [[0, 1839021]],
+    "explained_subranges": [[0, 1839000]],
+    "unexplained_subranges": [[1839000, 1839021]],
+    "revision_membership_or_supersession": [
+      {"range": [0, 1839021], "revision_graph_id": "revision-graph:strict-example"}
+    ],
+    "cryptographic_coverage": [
+      {"range": [0, 1024], "signature_id": "signature:1"}
+    ],
+    "disclosure_or_sensitivity_class": [
+      {"range": [0, 1839021], "class": "internal-only"}
+    ],
+    "transformation_carry_or_drop_intent": []
+  },
+  "metadata_across_revisions": [
+    {"revision_id": "revision:0", "metadata_object_ids": ["object-version:metadata-0"]},
+    {"revision_id": "revision:1", "metadata_object_ids": ["object-version:metadata-1"]}
+  ],
+  "security_reachability_effect_inventory": {
+    "scope": {
+      "revision_graph_ids": ["revision-graph:strict-example", "revision-graph:recovery-example"],
+      "document_view_ids": ["document-view:hypothesis-7", "document-view:hypothesis-9"]
+    },
+    "coverage": {
+      "analyzed": ["document-view:hypothesis-7"],
+      "unavailable": ["document-view:hypothesis-9:resource-limit"]
+    },
+    "nodes": [
+      {
+        "node_id": "behavior-node:example",
+        "trigger": "trigger:example",
+        "target": "object-version:target-example",
+        "revision_id": "revision:1",
+        "visibility": "reachable-in-selected-view",
+        "required_host_capability": null,
+        "executable_feature_class": "inventory-only:example",
+        "sanitization_state": "not-transformed",
+        "evidence": ["ByteExact"],
+        "provenance": ["byte-span:behavior-example"]
+      }
+    ]
+  },
   "unexplained_bytes": [],
   "resource_usage": {"decoded_bytes": 920131, "objects": 834},
   "no_claims": ["cms_trust_not_evaluated"]
@@ -5958,6 +6005,15 @@ Every B.1-B.5 example emits a `SemanticReportProtocolId` marker, `SemanticReport
   "document_view_id": "document-view:example",
   "revision_graph_id": "revision-graph:strict-example",
   "derivation_id": "derivation:render-example",
+  "selected_revision_or_recovery": {
+    "revision_id": "revision:1",
+    "recovery_hypothesis_id": null,
+    "selection_evidence": ["selected-view-binding:example"]
+  },
+  "effective_dialect": {
+    "record_id": "effective-dialect:example",
+    "revision_id": "revision:1"
+  },
   "page_selection": {"page_id": "page:12", "box": "CropBox"},
   "processing_profile": "strict-display:example",
   "output_profile": "screen-output:example",
@@ -5975,6 +6031,12 @@ Every B.1-B.5 example emits a `SemanticReportProtocolId` marker, `SemanticReport
   "determinism": "D2 Same-target pixels",
   "substitutions": [],
   "skipped_or_refused_operators": [],
+  "warnings_and_refusals": [],
+  "unsupported_or_policy_blocked_features": [],
+  "resource_usage": {
+    "semantic_counters": {"page_operators": 328, "decoded_bytes": 8192},
+    "fired_limit": null
+  },
   "run_observation": {
     "schema": "org.monkeybee.run-observation.v8-example",
     "run_observation_protocol_id": "PENDING-HUMAN-RATIFICATION-D1-D2",
@@ -6096,7 +6158,7 @@ Every B.1-B.5 example emits a `SemanticReportProtocolId` marker, `SemanticReport
       "output_artifact_id": "artifact:external-a-pixels-example"
     }
   ],
-  "external_output_artifact_ids": [
+  "processor_output_artifact_ids": [
     "artifact:monkeybee-pixels-example",
     "artifact:external-a-pixels-example"
   ],
