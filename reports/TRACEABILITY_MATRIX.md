@@ -1,5 +1,6 @@
 ---
 generated-by: Claude G4 owner (NTM session `monkeybee-pdf-mass-context-repo--g4`, `claude-opus-4-8`)
+revised-by: Codex replacement G4 owner (`gpt-5.6-sol`, effort `ultra`, live priority/fast)
 date: 2026-07-14
 inputs:
   - MONKEYBEE_CAMPAIGN_CHARTER_v1.md (§0, §2, §3, §4, §5, §6, §7, §8, §9)
@@ -7,9 +8,10 @@ inputs:
   - AUDIT_FINDINGS_LEDGER.md (R1-5, R2-N1, R2-N5)
   - MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md (§0.2, §3.0, §3.5, §4.6, §10.10, §11.9, §13.9, §24.12–24.16, §26.2–26.3, §27–27.4, §28.3, §30.5–30.10, §31.4–31.10, §33.1–33.18, §35)
   - AGENTS.md, OVERNIGHT_GOAL.md, INDEX.md, DISPUTES.md
+  - committed blob `77c694e:gauntlet/ROUND_LOG.md` (R33 packet and integration, bounded to lines 2209–2289; findings premise-tested, grades unpromoted)
 status: PROPOSED
 evidence-status: provisional-pending-substrate
-artifact-status: self-check passed; routed for fresh-context review
+artifact-status: replacement self-check passed; review-ready; no reviewer routed
 owner-fsm-authority: `ledger/owners/G4_STATE.md` is the single normative home of the G4 owner phase. This header never states owner phase.
 ---
 
@@ -19,7 +21,7 @@ This matrix maps every requirement of the campaign's two precommitted questions 
 
 The matrix is an audit instrument, not a plan. It authors no cycle scope, resolves no dispute, and awards no claim. Where it finds a gap, it names the gap and the canon that creates it; the disposition belongs to the human and, where a canonical document is implicated, to the dispute channel.
 
-**Reading the status column.** `OWNED` — a cycle, artifact, and gate exist and are named in canon. `PARTIAL` — a producer exists but the requirement is not fully discharged by it, or the gate does not test it. `GAP` — canon requires it and no Charter cycle, day-zero item, or gate produces it. `EXTERNAL` — discharged outside the campaign's control by design (reviewer calendars, human ratification).
+**Reading the status column.** `OWNED` — a cycle, artifact, and gate exist and are named in canon. `PARTIAL` — a producer exists but the requirement is not fully discharged by it, or the gate does not test it. `GAP` — canon requires it and no Charter cycle, day-zero item, or gate produces it. `EXTERNAL` — discharged outside the campaign's control by design (reviewer calendars, human ratification). `UNSELECTED` — Rev 7 defines a candidate lane, but the Charter does not ratify it into Q2's public claim envelope; lack of a producer is visible, but the candidate is not silently promoted into a campaign requirement.
 
 **Grade vocabulary for findings** follows `AUDIT_FINDINGS_LEDGER.md`: A = directly confirmed in the artifact (grep or derivation); B = confirmed by close reading; C = judgment call.
 
@@ -34,7 +36,7 @@ From Charter §0, verbatim in substance:
 
 Two consequences of the ladder govern everything below, and the matrix enforces them rather than assuming them.
 
-**The claimed rung is the Artifact rung only.** Rev 7 §33.15 separates Artifact (`A0`/`A1`/`A2`/`Artifact-alien candidate`), Foundry (`F1`/`F2`/`Foundry-alien candidate`), and Lineage (`L1`/`L2`/`Lineage-alien candidate`) objects. §33.18 states the non-implication law and §33.17 states that evidence cannot be borrowed across objects. The campaign claims the Artifact rung. Therefore evidence classes that belong to the Foundry or Lineage objects — model/harness substitution (§33.7), repeatability across runs (`F2`), real elapsed evolution (`L2`) — are **not** requirements of Q3 as scoped, and this matrix does not manufacture them as gaps. Where the Charter emits such evidence anyway (the C7 foundry distribution; the C4 Evolution Trial), the matrix records which object it serves so that it cannot silently reinforce the Artifact rung it does not belong to.
+**The claimed rung is the Artifact rung only.** Rev 7 §33.15 separates Artifact (`A0`/`A1`/`A2`/`Artifact-alien candidate`), Foundry (`F1`/`F2`/`Foundry-alien candidate`), and Lineage (`L1`/`L2`/`Lineage-alien candidate`) objects. §33.18 states the non-implication law and §33.17 states that evidence cannot be borrowed across objects. The campaign claims the Artifact rung. Therefore evidence classes that belong to the Foundry or Lineage objects — model/harness substitution (§33.7), repeatability across runs (`F2`), real elapsed evolution (`L2`) — are **not** requirements of Q3 as scoped, and this matrix does not manufacture them as gaps. Where the Charter emits such evidence anyway (the C7 foundry distribution; the C4 Evolution Trial), §2.6 records it under a non-`Q3` object ID. The Evolution Trial has one bounded cross-use permitted by §33.13: it can inform the adaptive-maturity classification, but it cannot count as Artifact disproportion.
 
 **Baselines serve the Artifact rung here.** Charter §7's "Production disproportion" row could be misread as a foundry claim. Under §33.18 clause 1, artifact disproportion is precisely a "provenance-conditioned comparison with what that production envelope was expected to produce" — which is what Baselines A–D(/E) establish. The matrix maps baselines to the Artifact rung and says so explicitly, because the alternative reading would have the campaign asserting a foundry rung it never claims and cannot support at `F2` in fifteen days.
 
@@ -64,7 +66,6 @@ Requirement → producing cycle → artifact → gate → authority → prerequi
 | Q3-PRV-2 | Tamper-evident commitment substrate: independent steward custody or witnessed append-only log. A bare git timestamp is insufficient | Charter §3 item 2, §10; §33.4; Work Order §6 | Day zero (human-bound) | Commitment substrate; Charter hash = ledger entry #1 | Charter §10 makes commitment the condition of the Charter being evidence at all | Human action; independent steward availability | **Load-bearing for both questions.** §24.16: without prospective commitment, Q2 caps at `named_set_lead`. §33.4: without it, claim families are not precommitted and the Q3 package is exploratory. Degradation: honest log, self-attested tiers | OWNED (human-bound; not yet executed — D-001) |
 | Q3-PRV-3 | Precommitted claim families under one `EvaluationProtocolId`: artifact/foundry/lineage claim and reference class; supported profiles, metrics, determinism, failure conditions, claim expiry; baseline and ablation tasks; held-out commitments and access budgets; task-novelty, latent-archetype, training-data exposure, and benchmark-owner conflict analyses | §33.4 | **partially day zero** — Charter §3 item 3 commits the *discovery* protocols only | Discovery-protocol commitment | Day-zero dispatch | Substrate (Q3-PRV-2) | The C4 package's baselines, ablations, held-out probes, and novelty/leakage analyses would be measured under a protocol that was never committed before measurement — §33.4: "Post hoc discoveries are hypotheses until replicated under a new committed protocol" | PARTIAL — see F-7 |
 | Q3-PRV-4 | Sealed cycle trial records ×6: attempts, failures, retries, cost, human interventions, median and best outcomes | Charter §6 cl. 6(d); Work Order §3 cl. 6(d); §33.1, §33.8 | C1–C6 | Six sealed trial records in the ledger | Every cycle close gate, blocking | Ledger open (Q3-PRV-1) | §34.9: "a cycle without a sealed record contributes nothing to any §33 claim regardless of what it shipped" | OWNED |
-| Q3-PRV-5 | Total search and the full attempt distribution: success rate, median/percentiles, best-of-N, retries, interventions, defect distribution, representative failures, discarded branches | §33.8; Charter §5/C7 | C7 (compiled from trial records #1–#6) | Foundry distribution | C7 (Q2 package) | Q3-PRV-4 | §33.8: "Optional stopping, selective branch retention, or unreported provider routing invalidates a reliability claim." Note the object: this is Foundry-rung evidence (§33.18 cl. 2) | OWNED — but see the object note in F-9 |
 
 ### 1.3 Grounding that survives attack (§33.10, §27.1)
 
@@ -75,6 +76,7 @@ Requirement → producing cycle → artifact → gate → authority → prerequi
 | Q3-GRD-3 | Seeded-defect detection-rate trials | Charter §7 row 3, §8 risk 7; §27 G6.1 ("mutation/fault-seeding tests that measure whether the test suite catches plausible implementation defects") | **no cycle gate names it** | — | — | Immune system and falsifier stack (C1) | The F-01 pattern — the whole ecology agreeing on a wrong certificate — is the failure this trial is designed to catch. Charter §7 cites it as a Q3 evidence source; no gate requires it | GAP — see F-8 |
 | Q3-GRD-4 | One held-out extension probe at **every** close gate, results recorded win-or-lose, drawn from the sealed pool | Charter §6 cl. 6(b); Work Order §3 cl. 6(b); §28.3 | C1–C6 | Probe results in each trial record | Every close gate, blocking | Held-out splits sealed by a steward **before any implementation exists** (day-zero item 6) | §28.3: once a case has shaped the implementation beyond the frozen protocol it becomes a regression fixture and a fresh independently stewarded replacement is required. Without steward sealing, no strong held-out claim exists at all | OWNED |
 | Q3-GRD-5 | Recorded claim demotions after new evidence | §33.10 | C1–C6 (implicit in the evidence algebra) | Claim registry lifecycle states (`proposed`/`active`/`lapsed`/`withdrawn`, §10.3 cl. 29) | Drift audit reads the claim registry; no gate requires a demotion *record* | Claim registry (C1) | Reviewers cannot distinguish "never demoted because always right" from "never demoted because never checked" | PARTIAL — see F-8 |
+| Q3-GRD-6 | Grounding-surplus measurement across independent/analytic-oracle coverage, held-out failure, external disagreement, security findings from independent attack paths, oracle-lineage diversity, and claim demotion | §33.10; Charter §7 row 3 | **none named** | — | — | Q3-GRD-1 through Q3-GRD-5 plus security attack-path results | The campaign performs several grounding activities but emits no report that measures the required set. Raw activity cannot stand in for a reported metric, so reviewers cannot assess grounding surplus | GAP — see F-5 |
 
 ### 1.4 Zero Grade-A truth drift
 
@@ -91,8 +93,7 @@ Requirement → producing cycle → artifact → gate → authority → prerequi
 | Q3-DIS-2 | Mechanism ablations (§33.6), each supplying the strongest ordinary replacement; predeclared migration effort, expected effects, interactions, stopping; null and negative results reported | §33.6; Charter §5/C4 | C4 | Ablation results | C4 (Q3 package) | R2-N5 fix: §33.5 Baselines C/D and §33.6 ablations must be disambiguated (repo-level vs mechanism-level); one experiment may not count as two evidence classes | Double-counting Baselines C/D as ablations would inflate the evidence base with a single experiment — an own-goal in the exact class §33 exists to prevent | OWNED |
 | Q3-DIS-3 | Both baseline vintages: a **historical** baseline frozen near the program's start and a **contemporaneous** baseline run near the public claim date | §33.2 | **none named** — the Charter runs baselines once, at C4 | — | — | Q3-DIS-1 | §33.2: "A result may remain historically alien while lapsing as a current frontier claim." The Q3 verdict lands on the reviewers' calendar, by design, at an unbounded distance from the day-9 submission. Nothing refreshes the contemporaneous leg | GAP — see F-9 |
 | Q3-DIS-4 | Drift, novelty, and leakage analysis: model/harness/provider changes; task similarity to learned archetypes and public repositories; training-data uncertainty; scaffold information that encodes the answer; whether the baseline had the same opportunity to learn | §33.5.2; §33.4 | **none named** | — | — | Precommitment (Q3-PRV-3) | §33.5.2 is what stands between a disproportion claim and an artifact whose task was already in the training distribution. A PDF engine is a heavily represented archetype; this analysis is not optional decoration | GAP — see F-7 |
-| Q3-DIS-5 | Maturity taxonomy reported separately: structural, empirical, adaptive (§33.13) | §33.13 | **none named**; C7's §33.16 bundle lists maturity classification among its contents | §33.16 bundle (C7) | C7 | Trial records; Flagship F | §33.13: "Synthetic history … cannot be relabeled as years of empirical operation." A 15-day campaign has near-zero empirical maturity. Saying so is the requirement | PARTIAL — see F-5 |
-| Q3-DIS-6 | Evolution-surplus test / Evolution Trial (Flagship F) against the R2 artifact | §33.14; §31.6; Charter §5/C4 | C4 | Evolution Trial results | C4 (Q3 package) | Independent evaluators select the extensions (§33.14) | §31.6 calls this "the primary lineage test." Under §33.17 its evidence belongs to the **Lineage** object, which the campaign does not claim. It legitimately supports *adaptive maturity* (§33.13) and the campaign's own addendum-safety rehearsal — and must not be presented as Artifact-rung disproportion | OWNED — object noted in F-9 |
+| Q3-DIS-5 | Maturity taxonomy reported separately: structural, empirical, adaptive (§33.13) | §33.13 | **none named**; C7's §33.16 bundle lists maturity classification among its contents | §33.16 bundle (C7) | C7 | Trial records; `LIN-EVO-1` may inform bounded adaptive rehearsal only | §33.13: "Synthetic history … cannot be relabeled as years of empirical operation." A 15-day campaign has near-zero empirical maturity. Saying so is the requirement | PARTIAL — see F-5 |
 
 ### 1.6 Independence
 
@@ -106,8 +107,9 @@ Requirement → producing cycle → artifact → gate → authority → prerequi
 
 | ID | Requirement | Authority | Producing cycle | Artifact | Gate | Prerequisites | Failure / downgrade | Status |
 |---|---|---|---|---|---|---|---|---|
-| Q3-BND-1 | §33.16 public evaluation bundle: reviewed ledger export and commitment chain; protocol commitments/reveals; plan/revision history; model/tool/harness manifests and drift; total search; baseline/ablation protocols and distributions; held-out definitions after evaluation plus access budgets; evaluator/oracle lineage; task-novelty/leakage analysis; capability/claim matrix; maturity classification; independent reviews; known unknowns | §33.16; Charter §5/C7 | C7 | The §33.16 bundle | C7 | Every row above | The bundle is assembled at **day 15**; the Q3 package went to reviewers at **day 9**. Six of the bundle's thirteen contents are not in the C4 package's stated scope | PARTIAL — see F-7 |
+| Q3-BND-1 | §33.16 public evaluation bundle: reviewed ledger export and commitment chain; protocol commitments/reveals; plan/revision history; model/tool/harness manifests and drift; total search; baseline/ablation protocols and distributions; held-out definitions after evaluation plus access budgets; evaluator/oracle lineage; task-novelty/leakage analysis; capability/claim matrix; maturity classification; independent reviews; known unknowns | §33.16; Charter §5/C7 | C7 | The §33.16 bundle; if external review has not returned, the dated bundle must say `independent-review: PENDING-EXTERNAL` rather than imply receipt | C7 | Every row above; Q3-IND-2; Q3-BND-3 | The bundle is assembled at **day 15**; the Q3 package went to reviewers at **day 9**. Six contents lack upstream producers, and the external review is not guaranteed to return before C7 | PARTIAL — see F-7 |
 | Q3-BND-2 | Reference class and claim expiry declared; historical vs contemporaneous scope never averaged | §33.2, §33.5.2 ("it never averages these scopes"); §10.3 | Day zero (reference class); C4/C7 (expiry) | Claim registry rows | — | Q3-PRV-3 | §35's open row "Alien-artifact reference class" is unresolved. Work Order §4 does not route it to C0 or to a deferred owner cycle | GAP — see F-7 |
+| Q3-BND-3 | External Q3 review receipt is incorporated into a refreshed §33.16 bundle after the reviewers finish, without changing the dated C7 submission or treating receipt as self-award | §33.16; §33.15; Charter §2/G2, §5/C4–C7 | External review → **no post-submission campaign custodian named** | Independent-review receipt plus refreshed bundle | No post-C7 gate named | Q3-IND-2; Q3-BND-1 | Until the receipt arrives, the bundle remains explicitly pending. After it arrives, canon names no campaign owner who preserves and incorporates it | GAP — see F-7 |
 
 ---
 
@@ -147,9 +149,22 @@ Requirement → producing cycle → artifact → gate → authority → prerequi
 | Q2-CMP-1 | The clause-by-clause coverage matrix run across MonkeyBee and the frozen field | Charter §5/C7, §7 Q2 row 4 | C7 | The coverage matrix | C7 (Q2 package) | Q2-INS-3, Q2-INS-4, Q2-INS-5, Q2-FLD-2, Q2-FLD-4 | Three of its five prerequisites are GAPs. This is the direct answer path to Q2's headline and it is the least-provisioned requirement in the campaign | PARTIAL — blocked by F-3, F-4 |
 | Q2-CMP-2 | Flagship H — the Wild-Tail Ledger (S2): stratified steward-drawn sample after freeze; typed partial/refusal accounting; per-stratum uncertainty; document as the primary analysis unit; published whether MonkeyBee leads or trails | Charter §5/C7; §31.8; §24.15.2 | C7 | The wild-tail ledger | C7 (Q2 package) | C3 wild-tail corpus and gate; steward; external-processor harness | §31.8: "publishable whether MonkeyBee leads or trails." This is the only Q2 lane whose instrument, corpus, and statistical law all exist in the campaign as briefed | OWNED |
 | Q2-CMP-3 | Flagship G — Hostile Legacy Execution: admitted AcroForm calculate/format/validate action execution as an atomic field-state transaction; static XFA projection; PostScript-XObject policy; sanitizer/interpreter parity over the shared executable-feature registry | Charter §5/C7 ("Flagships G and H **by name**"); §31.7 | **its capability surface is scheduled by no cycle** | — | C7 is scheduled to *execute* it | Bet 16's metered form-action interpreter (`mb-form`, L5); bounded static-XFA projection (`mb-transform`, L6); `mb-action` executable-feature registry; §17.12 calculator VM (C2) | Rev 7 §3.5 places Bet 16's form-JavaScript subset and static XFA projection **outside R0–R4** — "[M], capability-gated, and non-blocking for every declared release envelope." The Charter builds R0–R4. C7 cannot execute a flagship whose surface no cycle builds | GAP — see F-1 |
-| Q2-CMP-4 | "Plus supremacy-lane results" — the S1/S3/S4/S6 lanes named by Q2's own statement and defined in §24.15 | Charter §0 Q2; §24.15 | **none named** — C7 names only Flagships G and H; C6 calls its perf slice "the S6/S1 prerequisite" | — | — | Frozen field per lane; each lane has its own eligible-comparator search | C6 explicitly schedules itself as the prerequisite for lanes that no cycle then executes. This is the §34.4 envelope-dependency pattern — the same class as R2-N1, in the campaign layer this time | GAP — see F-2 |
+| Q2-CMP-4 | The public claim envelope resolves which atomic supremacy-lane results Charter §0's word "plus" requires; no generated artifact may silently promote every Rev 7 candidate lane into that envelope | Charter §0 Q2; §24.12 rule 1; §24.15; §35 open decision 1 | **none named** | — | — | Human ratification before the relevant discovery commitments; atomic lane register below | C7 names Flagships G/H, while the broader lane selection remains unresolved and Work Order §4 routes no owner. Without selection, Q2's "plus" clause has no determinate denominator | GAP — see F-2 |
 | Q2-CMP-5 | Predeclared statistics and honest outcome vocabulary: primary analysis unit, pairing/clusters, uncertainty, effect target, multiplicity, stopping/peeking, missingness; no metric laundering; outcomes reported as `leading`/`equivalent`/`non_inferior`/`trailing`/`incomparable`/`indeterminate`/`disqualified` | §24.12 rules 11, 12; §10.3 cl. 29 | C7 | Scorecards | C7 (under the committed protocol) | Q2-FLD-3 | Only an uncertainty-aware `leading` result under the exact declared field scope supports the headline. Everything else keeps its own name | OWNED |
 | Q2-CMP-6 | Goodhart guards and held-out guards per lane | §24.15.1, §24.15.2; §28.3 | C7 | Steward samples; held-out sets | C7 | Sealed pools (day zero) | §24.15.1: "never relax thresholds or challenger eligibility after seeing failures" | OWNED |
+
+#### 2.4.1 Atomic lane-routing register
+
+This register makes every Rev 7 lane visible without deciding the unresolved Charter claim envelope. `UNSELECTED` is not a favorable disposition: it means no Q2 claim may cite that lane until a human-ratified envelope selects it and the lane receives its own discovery, measurement, evidence, and lifecycle path. S2's full path is `Q2-CMP-2` above.
+
+| ID | Lane | Authority | Producer / artifact / gate | Per-lane dependency and lifecycle | Status |
+|---|---|---|---|---|---|
+| Q2-LAN-1 | S1 — rendering | §24.15.1; Charter §5/C6 names an S1 prerequisite | No execution cycle; no S1 scorecard or gate | Its own exact field, search/report, evaluation commitment, uncertainty rule, expiry, and refresh | UNSELECTED; no producer — see F-2 |
+| — | S2 — Wild-Tail Ledger (`Q2-CMP-2`, defined in the comparison table) | §24.15.2; Charter §5/C7; §31.8 | C7 / wild-tail ledger / C7 package | S2 field and steward sample; publish every honest outcome; lapse/refresh under §24.16 | OWNED |
+| Q2-LAN-3 | S3 — structured extraction and provenance crossing | §24.15.3 | No execution cycle; no S3 scorecard or gate | Its own comparator search, corpus, evidence axes, expiry, and refresh | UNSELECTED; no producer — see F-2 |
+| Q2-LAN-4 | S4 — generation validation and writer-extension scorecard | §24.15.4 | No execution cycle; no S4 scorecard or gate | Separate atomic profile/feature fields; no cross-axis scalar; expiry and refresh | UNSELECTED; no producer — see F-2 |
+| Q2-LAN-5 | S5 — atomic candidate-conjunction family | §24.15.5 | No declared S5 conjunction set, producer, report, or gate. Flagship G remains separately tracked by Q2-CMP-3; canon does not bind it to the whole S5 family | One independently refreshed report, eligible-comparator search, metric, evidence, expiry, and falsifier **per exact conjunction** | UNSELECTED; no producer — see F-2 |
+| Q2-LAN-6 | S6 — performance | §24.15.6; Charter §5/C6 names an S6 prerequisite | C6 hardens performance; no cycle executes an S6 comparison or emits its scorecard | Atomic workload field, equal output contract, multidimensional decision rule, expiry, and refresh | UNSELECTED; no producer — see F-2 |
 
 ### 2.5 Credibility and lifecycle
 
@@ -157,19 +172,29 @@ Requirement → producing cycle → artifact → gate → authority → prerequi
 |---|---|---|---|---|---|---|---|---|
 | Q2-CRD-1 | Everything in the Q3 column: the credibility of a Q2 result rests on the same ledger, substrate, independence, and drift discipline | Charter §7 Q2 row 5 | Day zero → C7 | — | — | All of §1 above | Q2 inherits every Q3 gap. Charter §2/G3 already states it: "Q2 verdict (conditional on G2 machinery + R4)" | OWNED (by reference) |
 | Q2-CRD-2 | Claim lifecycle after submission: a newly discovered or released material challenger preserves historical reports but **lapses** current-facing registered/observed field leads until characterized; every planning-gate transition and release-claim freeze re-observes the register | §24.16; §24.12 rules 4, 5 | **none named** — the campaign ends at C7 submission | — | — | — | Between day-15 submission and an external verdict of unbounded latency, an unowned register drifts. A lapsed claim that nobody lapses is a false claim | GAP — see F-9 |
+| Q2-IND-1 | No self-award: C7 submits the Q2 evidence package to an independent adjudicator; an external receipt and verdict answer Q2 on the adjudicator's calendar | Charter §0, §5/C7; Q2-CRD-1 by reference to §33.15 | C7 submission → external; **no post-submission campaign custodian named** | Q2 package plus external adjudication receipt | C7 gate is submission, not verdict; no post-C7 gate named | Day-zero independence layer; Q2-CRD-1 | If no adjudicator is obtained, there is no Q2 verdict and no internal substitute. If a receipt arrives, canon names no campaign owner who preserves it and updates the dated package | EXTERNAL with handoff GAP |
+
+### 2.6 Canon-mandated evidence for non-target ladder objects
+
+These outputs remain required by the Charter, but they are not Q3 Artifact-rung requirements and therefore do not receive `Q3-*` IDs. Their explicit category prevents reverse-ledger bookkeeping from borrowing their evidence into the claimed object.
+
+| ID | Object and artifact | Authority | Producer / gate | Bounded use | Failure / no-claim boundary | Status |
+|---|---|---|---|---|---|---|
+| FND-DST-1 | Foundry — total-search and attempt distribution compiled from trial records #1–#6 | §33.8; §33.18 cl. 2; Charter §5/C7 | C7 / foundry distribution / C7 | Foundry-process transparency and any separately authorized future Foundry assessment | Does not support Q3 Artifact disproportion; selective retention or unreported routing invalidates reliability statements | OWNED, non-target object |
+| LIN-EVO-1 | Lineage — Evolution Trial (Flagship F) against the R2 artifact | §33.14; §31.6; §33.18 cl. 3; Charter §5/C4 | C4 / Evolution Trial / C4 checkpoint | Addendum-safety rehearsal; under §33.13, bounded input to Q3-DIS-5's adaptive-maturity classification | Does not support Q3 Artifact disproportion and cannot be relabeled as elapsed lineage maturity | OWNED, non-target object |
 
 ---
 
 ## 3. Reverse direction — artifact and gate back to requirement
 
-Zero-orphan rule, reverse leg: every artifact the campaign produces and every gate it enforces must support at least one Q2/Q3 requirement, or be justified as G1 (survival-wedge) work that carries no evidentiary burden. G1 work is legitimate and is *not* an orphan — the degradation law (Charter §2) requires precisely that G1 deliverables stand alone.
+Zero-orphan rule, reverse leg: every artifact the campaign produces and every gate it enforces must support at least one Q2/Q3 requirement, be justified as G1 (survival-wedge) work that carries no evidentiary burden, or be explicitly classified as canon-mandated evidence for a non-target ladder object under §2.6. G1 work is legitimate and is *not* an orphan — the degradation law (Charter §2) requires precisely that G1 deliverables stand alone. The third category preserves Foundry/Lineage outputs without borrowing them into Q3.
 
 | Producer | Artifact / gate | Requirements supported | Verdict |
 |---|---|---|---|
-| Day zero | Production ledger | Q3-PRV-1, Q3-PRV-4, Q3-PRV-5 | Supported |
+| Day zero | Production ledger | Q3-PRV-1, Q3-PRV-4; upstream records for FND-DST-1 | Supported; cross-object use explicit |
 | Day zero | Commitment substrate | Q3-PRV-2, Q3-PRV-3, Q2-FLD-1, Q2-FLD-3 | Supported — both questions degrade without it (see chain 2, §6) |
 | Day zero | Discovery protocols + challenge windows | Q2-FLD-1, Q2-FLD-5 | Supported |
-| Day zero | Independence layer | Q3-GRD-1, Q3-IND-1, Q3-IND-2, Q2-CMP-2 (steward) | Supported |
+| Day zero | Independence layer | Q3-GRD-1, Q3-IND-1, Q3-IND-2, Q2-CMP-2 (steward), Q2-IND-1 | Supported; external receipts remain outside campaign control |
 | Day zero | SpecCard pipeline | Q2-INS-1, Q2-INS-2, Q2-INS-3 | Supported |
 | Day zero | Corpus program + sealed held-out splits | Q3-SUB-2, Q3-GRD-4, Q2-CMP-2, Q2-CMP-6 | Supported |
 | Day zero | License + vulnerability-disclosure policy | G1 (wedge sales, customer trust); R1-6 fix | G1 — no evidentiary burden, correctly so |
@@ -178,7 +203,7 @@ Zero-orphan rule, reverse leg: every artifact the campaign produces and every ga
 | C1 | R0 wedge (L0–L2, decryption, CLI) | Q3-SUB-1, Q2-SUR-1, **G1** | Supported |
 | C1 | Immune system | Q3-DFT-1, Q3-DFT-2, Q3-SUB-6 (raw signal only), Q3-GRD-5 (claim registry mints the lifecycle states; no gate requires the demotion record — F-8) | Supported |
 | C1 | Fuzz baseline; zero-reachable-panics gate | Q3-SUB-1, Q3-GRD-2 | Supported |
-| C1–C6 | Sealed cycle trial records | Q3-PRV-4, Q3-PRV-5 | Supported |
+| C1–C6 | Sealed cycle trial records | Q3-PRV-4; upstream inputs to FND-DST-1 | Supported; cross-object use explicit |
 | C1–C6 | Held-out probe at each close gate | Q3-GRD-4 | Supported |
 | C1–C6 | Drift audit at each close gate | Q3-DFT-2 | Supported |
 | C2 | Render engine minus real text; D2 receipts | Q3-SUB-1, Q2-SUR-1 | Supported |
@@ -190,39 +215,42 @@ Zero-orphan rule, reverse leg: every artifact the campaign produces and every ga
 | C4 | Writer, WASM, release engineering, R2 | Q3-SUB-1, Q3-SUB-3, Q3-SUB-4, Q2-SUR-1 | Supported |
 | C4 | Baselines A–D(/E) | Q3-DIS-1 | Supported |
 | C4 | Ablations | Q3-DIS-2 | Supported |
-| C4 | Evolution Trial (Flagship F) | Q3-DIS-6 — **Lineage-object evidence** (§33.18 cl. 3), plus adaptive-maturity (§33.13) and the campaign's own addendum rehearsal | Supported, object-tagged |
+| C4 | Evolution Trial (Flagship F) | LIN-EVO-1 — **Lineage-object evidence** (§33.18 cl. 3); bounded input to Q3-DIS-5 adaptive maturity plus the campaign's addendum rehearsal | Supported in the non-target register; never Artifact disproportion |
 | C4 | Q3 package submission | Q3-IND-2 | Supported |
 | C5 | Transforms, redaction, signatures, secure output, agent surface, C ABI preview; R3 | Q3-SUB-1, Q2-SUR-1, **G1 (CDR product)** | Supported |
 | C5 | Flagship D with lineage-diverse forensic tools | Q3-GRD-2 | Supported |
 | C6 | Track A fidelity + Track B authoring; R4 | Q2-SUR-1, Q3-SUB-1 | Supported |
-| C6 | Performance-hardening slice | Declared in Charter §5/C6 as "the S6/S1 prerequisite" — **the lanes it is a prerequisite for are executed by no cycle** | **Reverse orphan** — F-2 |
+| C6 | Performance-hardening slice | **G1 product hardening** under Charter §2 and §5/C6; conditional prerequisite for unselected Q2-LAN-1/Q2-LAN-6 | G1-supported, not a reverse orphan; the S1/S6 forward route remains absent — F-2 |
 | C6 | Coverage-matrix scorer | Q2-INS-3 | Supported (its field-side counterpart is missing — F-3) |
 | C7 | Field freeze | Q2-FLD-2 (partially), Q2-FLD-6 | Supported |
 | C7 | Coverage matrix across MonkeyBee and the field | Q2-CMP-1 | Supported in intent; blocked by F-3/F-4 |
 | C7 | Flagship H | Q2-CMP-2 | Supported |
 | C7 | Flagship G | Q2-CMP-3 — **its capability surface is built by no cycle** | **Forward orphan** — F-1 |
-| C7 | Foundry distribution | Q3-PRV-5 — **Foundry-object evidence** (§33.18 cl. 2) for a rung the campaign does not claim | Supported, object-tagged — F-9 |
-| C7 | §33.16 bundle | Q3-BND-1, Q3-DIS-5 (maturity classification is a bundle content with no upstream producer — F-5) | Supported (six contents unsourced — F-7) |
-| C7 | Q2 package submission | Q2-CMP-1, Q2-CMP-2, Q2-CMP-3, Q2-CMP-4, Q2-CMP-5, Q2-CMP-6 | Supported |
+| C7 | Foundry distribution | FND-DST-1 — **Foundry-object evidence** (§33.18 cl. 2) for a rung the campaign does not claim | Supported in the non-target register — F-9 |
+| C7 | §33.16 bundle | Q3-BND-1, Q3-BND-3, Q3-DIS-5 (maturity classification has no named producer — F-5) | Pending-capable; six contents and the post-review handoff remain unsourced — F-7 |
+| C7 | Q2 package submission | Q2-CMP-1, Q2-CMP-2, Q2-CMP-3, Q2-CMP-4, Q2-CMP-5, Q2-CMP-6, Q2-IND-1 | Supported as submission, never as verdict |
+| External / post-submission | Q3 independent-review receipt and bundle refresh | Q3-IND-2, Q3-BND-3 | Receipt is external; post-submission campaign custodian is a disclosed GAP |
+| External / post-submission | Q2 adjudication receipt | Q2-IND-1 | Receipt is external; no adjudicator means no verdict, and the campaign custodian is a disclosed GAP |
 | All cycles | Ledger entries; not-done list; honest degradation records | Q3-IND-3 | Supported |
 
 **Boundary note on C2 benchmark tracking.** AGENTS rule 9 forbids measurement of or comparison against other PDF libraries before the discovery protocols are committed through the substrate. Charter §5/C2's "benchmark tracking begins here" is therefore **self-regression tracking only** — MonkeyBee against its own prior builds, per §26.2's workload classes. Comparative measurement against external processors (§26.3's baseline lab; lane S6) is a C7 activity under a committed evaluation protocol. A C2 implementer who reads "benchmark tracking" as "start benchmarking against the incumbents" would poison the Q2 evidence chain permanently and irreversibly. The C2 brief states this explicitly.
 
 ---
 
-**Reverse-coverage ledger.** All fifty requirement IDs defined in §1 and §2 are accounted for in exactly one of three dispositions, and the accounting is mechanically checkable — every ID is written out in full, so a `grep -oE "Q[23]-[A-Z]{3}-[0-9]+"` over this file reproduces the audit without reading prose:
+**Reverse-coverage ledger.** Every Q2/Q3 requirement ID defined in §1 and §2 is assigned one of the dispositions below. The two non-target object IDs are separately closed by §2.6 and the reverse rows above. The accounting is mechanically checkable because every ID is written in full; self-check recomputes the exact distinct-ID set rather than relying on a prose count.
 
 - **Discharged by a named producer** — the rows above.
 - **Discharged by reference** — Q2-CRD-1 alone. Q2's credibility requirement *is* the Q3 column; giving it a separate producer would be circular, and Charter §2/G3 already states the dependency ("Q2 verdict, conditional on G2 machinery + R4").
-- **Not discharged** — the fourteen forward orphans in §4, plus the eight `PARTIAL` rows whose producer exists but whose gate does not test it (Q3-SUB-4, Q3-PRV-3, Q3-GRD-5, Q3-DIS-5, Q3-BND-1, Q2-FLD-3, Q2-FLD-5, Q2-CMP-1).
+- **Not discharged** — the sixteen forward orphans in §4, plus the eight `PARTIAL` rows whose producer exists but whose gate does not test it (Q3-SUB-4, Q3-PRV-3, Q3-GRD-5, Q3-DIS-5, Q3-BND-1, Q2-FLD-3, Q2-FLD-5, Q2-CMP-1), and Q2-IND-1's external receipt with an unassigned post-submission handoff.
+- **Unselected candidate lanes** — Q2-LAN-1, Q2-LAN-3, Q2-LAN-4, Q2-LAN-5, and Q2-LAN-6. Q2-CMP-4 is the single forward requirement to ratify the public lane envelope; the candidate lanes do not become five additional Charter obligations by generated prose.
 
 ## 4. Orphan audit
 
-**Forward orphans** (a requirement with no producer): Q3-SUB-5, Q3-SUB-6, Q3-SUB-7, Q3-GRD-3, Q3-DIS-3, Q3-DIS-4, Q3-BND-2, Q2-INS-4, Q2-INS-5, Q2-FLD-2, Q2-FLD-4, Q2-CMP-3, Q2-CMP-4, Q2-CRD-2. **Fourteen.**
+**Forward orphans** (a ratified requirement with no producer): Q3-SUB-5, Q3-SUB-6, Q3-SUB-7, Q3-GRD-3, Q3-GRD-6, Q3-DIS-3, Q3-DIS-4, Q3-BND-2, Q3-BND-3, Q2-INS-4, Q2-INS-5, Q2-FLD-2, Q2-FLD-4, Q2-CMP-3, Q2-CMP-4, Q2-CRD-2. **Sixteen.**
 
-**Reverse orphans** (an artifact or gate supporting no requirement): the C6 performance-hardening slice, whose stated purpose is to be the prerequisite of lanes S1/S6 that no cycle executes. **One.**
+**Reverse orphans** (an artifact or gate supporting no target requirement, G1 purpose, or explicit non-target-object obligation): **zero.** C6 performance hardening is G1 product work authorized by Charter §2/§5/C6; its conditional S1/S6 role still has no execution path. FND-DST-1 and LIN-EVO-1 close the two non-target-object artifacts without lending them to Q3.
 
-**Not orphans, and deliberately so:** the G1 wedge deliverables (R0 inspection at C1, CDR at C5), the license, and the vulnerability-disclosure policy. Under the graceful-degradation law they carry no evidentiary burden by design — "no G1 deliverable is ever gated on G2/G3 machinery" (Charter §2). Their appearance outside the evidence thread is the law working, not a defect.
+**Not orphans, and deliberately so:** the G1 wedge deliverables (R0 inspection at C1, CDR at C5), G1 performance hardening at C6, the license, and the vulnerability-disclosure policy. Under the graceful-degradation law they carry no evidentiary burden by design — "no G1 deliverable is ever gated on G2/G3 machinery" (Charter §2). Their appearance outside the evidence thread is the law working, not a defect.
 
 ---
 
@@ -240,11 +268,11 @@ So C7 is scheduled to execute a flagship whose capability lies outside every env
 
 **Recommended disposition (human):** either (a) add the Bet 16 metered form-action surface and bounded static-XFA projection to a cycle — C6 Track A is the only plausible home, and it would enlarge an already two-track cycle; or (b) strike Flagship G from C7 and record the Q2 claim as resting on the coverage matrix plus Flagship H, with the hostile-legacy conjunction explicitly out of scope. Option (b) costs a lane; option (a) costs cycle capacity on an [M]-tagged moonshot that Rev 7 §P18 forbids putting on the critical path. This matrix recommends (b) and notes that it is a `sequence`/`scope` change under Charter §11.
 
-### F-2 — Supremacy lanes S1, S3, S4, S6 are required by Q2's own statement and executed by no cycle · Grade A
+### F-2 — Q2's public supremacy-lane envelope is unresolved; candidate lanes lack atomic routes · Grade A
 
-Charter §0 defines Q2 as an uncertainty-aware `leading` outcome on the completion field "**plus supremacy-lane results**." Rev 7 §24.15 defines those lanes: S1 rendering, S2 wild-tail, S3 structured extraction, S4 generation, S5 atomic conjunctions, S6 performance. C7's scope names only Flagships G and H — and Flagship H is S2 (§31.8 draws its input from "the S2 … sample"). S1, S3, S4, S5, and S6 have no producing cycle.
+Charter §0 defines Q2 as an uncertainty-aware `leading` outcome on the completion field "**plus supremacy-lane results**." Rev 7 §24.15 defines candidate lanes S1 rendering, S2 wild-tail, S3 structured extraction, S4 generation, S5 atomic conjunctions, and S6 performance. C7's scope names Flagships G and H; Flagship H is S2 (§31.8 draws its input from "the S2 … sample"), while Flagship G has its own unsatisfied capability path (F-1). Canon does **not** say that every S1–S6 lane is ratified into Q2. It also does not resolve which set the word "plus" selects. Work Order §4 leaves §35 open decision 1 unrouted.
 
-The internal contradiction is sharpest at C6, whose own text calls its performance-hardening slice "**the S6/S1 prerequisite**" — the Charter schedules the prerequisite and omits the consequence. `grep` over the Charter finds `S1` and `S6` **only** in that one line, and `S2`/`S3`/`S4` nowhere at all.
+The atomic routing register makes both facts visible. S2 has a producer. S1, S3, S4, S5, and S6 have no producers, but stay `UNSELECTED` until the human fixes the claim envelope. S5 cannot be represented as one aggregate: §24.15.5 requires one search, metric, evidence set, expiry, and falsifier per exact conjunction. The internal dependency gap is sharpest at C6, whose text calls performance hardening "the S6/S1 prerequisite" while no cycle executes either lane. That slice remains authorized G1 product work; it is not a reverse orphan.
 
 **Recommended disposition (human):** decide which lanes Q2's "plus supremacy-lane results" actually names, and either schedule them into C7's scope with their own comparator searches (each lane requires its own eligible-comparator discovery under §24.15 and §24.16 — this is not free) or narrow Q2's statement in a Charter successor. Note that Rev 7 §35 open decision 1 — "Initial public supremacy claim envelope: S1 rendering field scorecard versus S2 wild-tail ledger; unresolved" — is precisely this decision, and Work Order §4 routes it to **neither** the resolve-now list nor the deferred register. It is unowned.
 
@@ -270,7 +298,7 @@ There is also a sequencing problem inside the Charter's own text: §3 item 3 say
 
 **Recommended disposition (human):** assign scouts (they may be agents; they may not be the same context that authors the measurement), schedule stage-2 execution early enough that the challenge window's predeclared duration elapses before C7, and separate the day-zero commitment (stage 1) from the field freeze (stage 2 close) in the Charter's day map.
 
-### F-5 — Four §33 obligations that constitute the Artifact rung have no producer · Grade B
+### F-5 — Five §33 obligations needed to assess the Artifact rung have no producer · Grade B
 
 The Artifact rung is defined at §33.15 as reviewers judging the functioning artifact "a provenance-conditioned extreme outlier in **integrated consequence**." §33 supplies the instruments that make that phrase measurable, and Charter §7's six-row table does not carry them:
 
@@ -278,10 +306,11 @@ The Artifact rung is defined at §33.15 as reviewers judging the functioning art
 |---|---|---|
 | Artifact and operational boundary declaration | §33.3 | zero (`grep -i "artifact boundary"`) |
 | Integration-surplus metrics | §33.9 | zero (`grep -i surplus`) |
+| Grounding-surplus metrics | §33.10 | raw activities exist, but no report or gate measures the six-dimension set |
 | Consequence-compression audit | §33.12 | zero (`grep -i compression`) |
 | Maturity taxonomy (structural / empirical / adaptive) | §33.13 | zero (`grep -i maturity`) |
 
-§33.12 is not an accessory: it is the test that separates "alien compression" from "accumulation," which is the exact discrimination between the candidate rung and `A1`. §33.11's operational-surplus metrics are named in the Charter only through C4's "release engineering," and no gate tests them.
+§33.10 requires measurement of independent/analytic-oracle coverage, held-out failure, external disagreement, security findings from independent attack paths, oracle-lineage diversity, and claim demotion. Q3-GRD-1 through Q3-GRD-5 preserve the raw activities; Q3-GRD-6 records the missing measurement path. §33.12 is not an accessory: it is the test that separates "alien compression" from "accumulation," which is the exact discrimination between the candidate rung and `A1`. §33.11's operational-surplus metrics are named in the Charter only through C4's "release engineering," and no gate tests them.
 
 **Recommended disposition (human):** these are C4-package contents. Either the C4 checkpoint's package manifest expands to carry them (with §33.3's boundary declaration authored at day 0, since it must precede the ledger's classification of construction-time agents), or the Q3 package arrives at independent review missing the instruments its own protocol specifies.
 
@@ -295,11 +324,11 @@ Q3-SUB-4 maps to C4's release engineering. C4's gate is "Q3 package submitted." 
 
 §33.4 requires a single `EvaluationProtocolId` committed **before unblinding or final measurement**, covering baselines, ablations, held-out commitments and access budgets, model substitutions, evaluator lineage, and the task-novelty / latent-archetype / training-data-exposure / benchmark-owner-conflict analyses. Charter §3 item 3 commits the **discovery** protocols. `grep -i "EvaluationProtocolId"` over the Charter: zero. `grep -iE "novelty|leakage"`: zero.
 
-The C4 package is stated as "baselines, ablations, red-team results, Evolution Trial, ledger-to-date." The §33.16 bundle assembled at C7 additionally requires model/tool/harness manifests and drift, total search, task-novelty/leakage analysis, capability/claim matrix, maturity classification, and known unknowns. Six of thirteen bundle contents have no upstream producer, and the bundle is assembled at day 15 for a package that was submitted at day 9.
+The C4 package is stated as "baselines, ablations, red-team results, Evolution Trial, ledger-to-date." The §33.16 bundle assembled at C7 additionally requires model/tool/harness manifests and drift, total search, task-novelty/leakage analysis, capability/claim matrix, maturity classification, and known unknowns. Six of thirteen bundle contents have no upstream producer, and the bundle is assembled at day 15 for a package that was submitted at day 9. Independent reviews are also a §33.16 bundle input, but the C4 review runs on an external calendar and is not guaranteed to return before C7. Q3-BND-1 therefore requires an explicit `PENDING-EXTERNAL` state, and Q3-BND-3 exposes that no post-submission campaign custodian is named to incorporate the later receipt.
 
 Separately, §35's "Alien-artifact reference class" row (§33.2 requires the reference class to be declared) is routed by Work Order §4 to neither the resolve-now list nor the deferred register.
 
-**Recommended disposition (human):** add an `EvaluationProtocolId` commitment to the day-zero checklist alongside the discovery commitment; resolve the reference-class row; reconcile the C4 package manifest with §33.16's contents.
+**Recommended disposition (human):** add an `EvaluationProtocolId` commitment to the day-zero checklist alongside the discovery commitment; resolve the reference-class row; reconcile the C4 package manifest with §33.16's contents; and name, outside this turn, the post-review custodian who preserves the external receipt and refreshes the dated bundle without changing the C7 submission gate.
 
 ### F-8 — Seeded-defect trials and claim-demotion records are cited as evidence and gated nowhere · Grade B
 
@@ -311,10 +340,10 @@ Charter §7 lists "seeded-defect trials" as a source of Q3's grounding evidence,
 
 ### F-9 — Object hygiene: three evidence classes serve rungs the campaign does not claim, and no one owns the post-submission lapse · Grade C
 
-§33.17 and §33.18 forbid borrowing evidence across the Artifact, Foundry, and Lineage objects. Three Charter artifacts sit on the wrong side of that line unless explicitly tagged:
+§33.17 and §33.18 forbid borrowing evidence across the Artifact, Foundry, and Lineage objects. Three Charter evidence classes require explicit object handling:
 
-- The **C7 foundry distribution** is Foundry-object evidence (§33.18 cl. 2). The campaign claims no foundry rung. It should be published as what it is, not read as reinforcing the Artifact rung.
-- The **C4 Evolution Trial** is, in §31.6's own words, "the primary lineage test." The campaign claims no lineage rung. It legitimately supports *adaptive maturity* under §33.13 and the campaign's addendum-safety rehearsal; it is not artifact disproportion.
+- The **C7 foundry distribution** is registered as FND-DST-1, Foundry-object evidence (§33.18 cl. 2). The campaign claims no foundry rung. It is published as what it is and never read as reinforcing the Artifact rung.
+- The **C4 Evolution Trial** is registered as LIN-EVO-1 and is, in §31.6's own words, "the primary lineage test." The campaign claims no lineage rung. Its bounded uses are the addendum-safety rehearsal and input to *adaptive maturity* under §33.13; it is not Artifact disproportion.
 - **Baselines A–D** are Artifact-rung evidence under §33.18 cl. 1 (provenance-conditioned comparison against what the production envelope was expected to produce) — not, as Charter §7's "Production disproportion" phrasing may suggest, a foundry claim.
 
 And §33.2's two vintages: the Charter runs baselines **once**, at C4. §33.2 requires a historical baseline frozen near the program's start **and** a contemporaneous baseline near the public claim date. The verdict lands on the reviewers' calendar at an unbounded remove from day 9 (Charter §8 risk 6 accepts this "by design"). §24.16 says the same for Q2: a newly released material challenger "lapses current-facing registered/observed field leads until characterized." The campaign ends at submission. **No one owns the refresh, and a lapsed claim that nobody lapses is a false claim.**
@@ -345,7 +374,7 @@ The same substrate carries §33.4's claim-family precommitment, on which Q3's wh
 
 If C1–C4 land as briefed and the day-zero human-bound items are executed, the campaign submits a Q3 package with a functioning R2 artifact, wild-tail evidence, an external-reader matrix, a prospective ledger, sealed trial records, red-team results, drift audits with zero Grade-A findings, equal-resource baselines, ablations, and an Evolution Trial. Independent reviewers can render a verdict on that. The verdict may be `A1`, `A2`, or the candidate rung — and a verdict of `A1` is a real answer to Q3, not a failure of the campaign.
 
-What stops it from being an unqualified yes is F-5: four §33 obligations that *constitute* the Artifact rung — the artifact-boundary declaration (§33.3), integration-surplus metrics (§33.9), the consequence-compression audit (§33.12), and the maturity taxonomy (§33.13) — have no producer in any cycle. The candidate rung asks reviewers to judge the artifact an outlier "in integrated consequence." §33.9 and §33.12 are the instruments that measure integrated consequence and separate compression from accumulation. Submitted without them, the package supports the rungs below the candidate rung and asks reviewers to take the top rung on inspection. That is precisely the move the FrankenSim re-audit in this repository catalogues. These gaps are cheap to close — they are C4-package contents and a day-zero boundary declaration, not new cycles — and closing them is the difference between a Q3 answer and a Q3 answer that can reach its target.
+What stops it from being an unqualified yes is F-5: five §33 obligations needed to assess the Artifact rung — the artifact-boundary declaration (§33.3), integration-surplus metrics (§33.9), grounding-surplus metrics (§33.10), the consequence-compression audit (§33.12), and the maturity taxonomy (§33.13) — have no producer in any cycle. The candidate rung asks reviewers to judge the artifact an outlier "in integrated consequence." §33.9, §33.10, and §33.12 are the instruments that measure integration, grounding, and compression rather than asking reviewers to infer them from activity. Submitted without them, the package supports the rungs below the candidate rung and asks reviewers to take the top rung on inspection. That is precisely the move the FrankenSim re-audit in this repository catalogues. The external review receipt also has no post-submission bundle custodian (Q3-BND-3); until it returns, the C7 bundle must stay explicitly pending rather than imply a verdict.
 
 **Q2: no, not as briefed.**
 
@@ -355,11 +384,11 @@ Three independent blockers, any one of which is sufficient:
 2. **The comparison has no field-side instrument.** C6's scorer reads MonkeyBee's own clause tagging. Nothing scores the competitors clause-by-clause, and §24.12 rule 4 forbids inferring their coverage from documentation. The matrix's second column cannot be filled by any means the campaign builds (F-3).
 3. **The discovery process skips its middle stage.** §24.16's three commitments are irreversible and ordered. The Charter commits stage 1 at day 0 and freezes at C7 with no scheduled stage-2 execution, no scouts, and a challenge window that opens before there is anything published to challenge. §24.16's own remedy is unambiguous: incomplete or uncommitted discovery caps the result at `named_set_lead` — which is not a field lead, and therefore not an answer to Q2 as asked (F-4).
 
-Add two further reductions that shrink what remains: Flagship G's capability surface is built by no cycle and cannot be executed at C7 (F-1), and the S1/S3/S4/S6 lanes named by Q2's own "plus supremacy-lane results" are scheduled nowhere while C6 declares itself their prerequisite (F-2).
+Add two further reductions that shrink what remains: Flagship G's capability surface is built by no cycle and cannot be executed at C7 (F-1), and Q2's public lane envelope is unresolved. S2 has a path; S1, S3, S4, S5, and S6 have neither selection nor execution paths, while C6 declares itself a prerequisite for S1/S6 (F-2). They remain visible as `UNSELECTED`, not silently promoted into requirements.
 
 **What Q2 *can* honestly yield if every cycle completes as briefed:** Flagship H — the wild-tail ledger — is fully provisioned. Its corpus is sealed at day 0, its gate runs at C3, its harness exists, its statistical law is written, and §31.8 requires it to be published whether MonkeyBee leads or trails. That is a real, publishable, uncertainty-aware comparative result. It is not "a `leading` outcome on a full-field PDF-completion field."
 
-**The honest summary:** Q3 is answerable and the gaps that stand between the package and its target rung are closable inside the existing cycle structure. Q2, as worded in Charter §0, is not answerable by the campaign as briefed — not because a cycle is expected to fail, but because the question names an instrument, a field, and a set of lanes that no cycle builds. The remedy is not more work at C7; it is a decision, before the day-zero commitments freeze, about what Q2 is actually asking. That decision belongs to the human, and §24.16 makes it irreversible once the discovery protocol is committed: a field definition authored after the search has begun is not a predeclared field.
+**The honest summary:** Q3 is answerable and the gaps that stand between the package and its target rung are closable inside the existing cycle structure, but its independent-review bundle handoff is still unassigned. Q2, as worded in Charter §0, is not answerable by the campaign as briefed — not because a cycle is expected to fail, but because the question names an instrument and field that no cycle builds, and leaves its additional lane envelope unresolved. The remedy is not more work at C7; it is a decision, before the day-zero commitments freeze, about what Q2 is actually asking. That decision belongs to the human, and §24.16 makes it irreversible once the discovery protocol is committed: a field definition authored after the search has begun is not a predeclared field. C7 submission still does not award a verdict; if no independent adjudicator is obtained, Q2 remains unanswered (Q2-IND-1).
 
 ---
 
