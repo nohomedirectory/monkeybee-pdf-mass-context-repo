@@ -324,3 +324,29 @@ For Traceability + cycle briefs specifically, seven immutable IDs now exist: bas
 The preceding `dependency-soundness | R10, R24 | Allocated` summary and R24/R34 correction must now be read with this supersession: R10 remains allocated and unfiled; R24 and R34 are terminal `NOT-RUN` with zero coverage; R35 is the Opus replacement and remains `BOUND-UNSENT` with zero coverage. The `dependency soundness` lens has filed zero times across these allocations. Allocated, bound, failed, and filed are not interchangeable states.
 
 The exact R35 control keeps the Round Log closed, withholds every prior finding/convergence/disposition body and all recovery context, permits at most one later structured packet at the then-current true EOF without reading prior log bytes, forbids scratch/temp/todo/task files, shell redirection, and `tee`, and requires exact final standalone token `TERMINATED`. The excluded wrong-path preflight is a control-plane launch failure, not a round. This report records the control; it does not dispatch R35 or strengthen any claim.
+
+## R35 failure and R36 replacement control correction — `2026-07-15T00:48:32+02:00`
+
+This append-only correction supersedes the preceding R34/R35 control correction only where that section describes R35 as bound-unsent or gives allocation counts before R36. It changes no reviewer grade, filed count, curve point, owner disposition, or convergence conclusion. Its source Round Log is 3,201 lines / 605,448 bytes / SHA-256 `05cb4aed097ec0e001836df28dd305524ba68d5f050502ae823cc62cba66fcbe`.
+
+### Filed evidence remains unchanged
+
+- Filed rounds: exactly 13.
+- Aggregate grades: A=93, B=56, C=18.
+- Filed model-family split: 7 Sol / 6 Opus.
+- R35 is immutable `NOT-RUN · CORRUPT-DISPATCH · TERMINATED`: root fault, no reviewer tool, packet, finding, count, `dependency soundness` coverage, or dependency-soundness conclusion.
+- R36 is `BOUND-UNSENT`: no task has been sent, no packet has filed, and it adds no count, coverage, or curve point.
+
+The Traceability + cycle briefs curve therefore remains the single valid R33 point at A+B=6. It is still a first-look point under its own Q2/Q3 lens, not a convergence series. Neither failed R35 nor bound-unsent R36 says anything about the artifact under `dependency soundness`.
+
+### Allocation and model accounting correction
+
+The immutable allocation-row ledger now has 36 rows: 30 baseline + 2 supplemental + replacements R33, R34, R35, and R36. Counting every immutable row, including failed IDs, yields 17 Sol / 19 Opus. Excluding failed R23, R24, R34, and R35 while retaining their same-family replacements yields 32 active planned slots at 16 Sol / 16 Opus. Replacement IDs preserve planned coverage; they do not enlarge it.
+
+For Traceability + cycle briefs specifically, eight immutable IDs now exist: baseline R23–R26 plus replacements R33–R36. R23, R24, R34, and R35 are failed terminal records; active planned slots remain four—R33 replaces R23, R36 carries the original R24 slot, and R25/R26 remain baseline slots. One active slot, R33, has filed.
+
+### Lens-coverage and blind-write control
+
+The preceding `dependency-soundness | R10, R24 | Allocated` summary and later corrections must now be read with this supersession: R10 remains allocated and unfiled; R24, R34, and R35 are terminal `NOT-RUN` with zero coverage; R36 is the Opus replacement and remains `BOUND-UNSENT` with zero coverage. The `dependency soundness` lens has filed zero times across these allocations. Allocated, bound, failed, and filed are not interchangeable states.
+
+The exact R36 control keeps the Round Log closed, withholds every prior finding/convergence/disposition body and all recovery context, permits at most one later structured packet at the then-current true EOF without reading prior log bytes, forbids scratch/temp/todo/task paths, shell redirection, and `tee`, and requires exactly one structured `apply_patch` append followed by exact standalone token `TERMINATED` and process exit. This report records the control; it does not dispatch R36 or strengthen any claim.

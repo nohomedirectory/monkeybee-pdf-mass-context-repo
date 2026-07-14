@@ -6,7 +6,7 @@ inputs:
   - OVERNIGHT_GOAL.md
 status: DRAFT
 evidence-status: provisional-pending-substrate
-updated-at: 2026-07-15T00:36:43+02:00
+updated-at: 2026-07-15T00:52:06+02:00
 timestamp-correction: the initially written literal 2026-07-14T19:26:00+02:00 was a future, unmeasured value and is preserved here as invalid; the exact update second is not inferred
 ---
 
@@ -14,8 +14,8 @@ timestamp-correction: the initially written literal 2026-07-14T19:26:00+02:00 wa
 
 ## Global state
 
-- Active subgoal: `G3` gauntlet. G1 and G3 have resubmitted after premise-first finding repairs plus bounded navigation corrections; independent root gates pass. R34 is terminal with zero coverage; G7 has sealed exact-Opus replacement R35 `BOUND-UNSENT` against the unchanged G4 manifest.
-- Current phase: `G0/G6 DONE; G1 SUBMIT-FOR-REVIEW after R15 and time-scoped path snapshot repair; G2/G5 SUBMIT-FOR-REVIEW with exact Sol ultra/fast replacement panes pre-staged; G3 SUBMIT-FOR-REVIEW after R05 and ready for R06 after the serialized R35/G4 gate; G4 SUBMIT-FOR-REVIEW / R24 and R34 NOT-RUN / R35 BOUND-UNSENT at 22749762…02c6; G7 DRAFT idle with Round Log closed; 13 filed rounds at A=93/B=56/C=18 with 7 Sol/6 Opus pending valid R35 coverage; G8 INGEST with a live exact-model owner and disk checkpoint`
+- Active subgoal: `G3` gauntlet. G1 and G3 have resubmitted after premise-first finding repairs plus bounded navigation corrections; independent root gates pass. R35 is a zero-credit corrupt dispatch; G7 has sealed untouched exact-Opus replacement R36 against the unchanged G4 manifest.
+- Current phase: `G0/G6 DONE; G1 SUBMIT-FOR-REVIEW after R15 and time-scoped path snapshot repair; G2/G5 SUBMIT-FOR-REVIEW with exact Sol ultra/fast replacement panes pre-staged; G3 SUBMIT-FOR-REVIEW after R05 and ready for R06 after the serialized R36/G4 gate; G4 SUBMIT-FOR-REVIEW / R24, R34, and R35 NOT-RUN / R36 BOUND-UNSENT at 22749762…02c6; G7 DRAFT idle with Round Log closed; 13 filed rounds at A=93/B=56/C=18 with 7 Sol/6 Opus pending valid R36 coverage; G8 INGEST with a live exact-model owner and disk checkpoint`
 - Priority rule: preserve G0, ledger, G3, G3 gauntlet, G1, and `MORNING_REPORT.md`; shed work only from the bottom of the governing ladder.
 - Canonical-input mutation allowance: none.
 - Bead/code allowance: none.
@@ -34,10 +34,10 @@ Each owner must persist a checkpoint below and in its partial output at every tr
 | G1 owner | Constitution v8, shell corpus, fix map | `constitution/**`, `shell/**`, `reports/FIX_APPLICATION.md`, `ledger/owners/G1_STATE.md` | SUBMIT-FOR-REVIEW | Root handoff snapshot repair passed; three substantive artifacts remain frozen, report is `06faddd7…2f602`, four-artifact manifest `24327520…60292`, state `48951eb4…b408` | Root commits the bounded owner group; R16 then becomes eligible after higher-priority G3 routing |
 | G2 owner | resolve-now and deferred decisions | `decisions/**`, `ledger/owners/G2_STATE.md` | SUBMIT-FOR-REVIEW | Nine artifacts and owner self-check persisted at 16:56; root integrity gate passed. Fresh `g2b` is preattested exact Sol ultra/fast with no task/context | Fresh R27/R28 packets, then REVISE |
 | G3 owner | Cycle 1 delta plan | `plans/CYCLE_1_DELTA_PLAN.md`, `ledger/owners/G3_STATE.md` | SUBMIT-FOR-REVIEW | R05 dispositions are 17 qualify / 24 narrow / 0 rejected; plan remains `e0cb3ea2…501b`; repaired state `041a6ba4…7311` has one live checkpoint surface and marks R06 eligible but unrouted | Commit the bounded owner pair after G1 releases its stable gate; bind and dispatch R06 after the serialized R35/G4 slot |
-| G4 owner | traceability matrix and C2-C7 briefs | `reports/TRACEABILITY_MATRIX.md`, `plans/cycle_briefs/**`, `ledger/owners/G4_STATE.md` | SUBMIT-FOR-REVIEW | R24 and R34 are terminal with zero coverage; valid fresh R35 is exact Opus/xhigh, untouched, and sealed `BOUND-UNSENT` at unchanged manifest `22749762…02c6` | Root commits/pushes control, dispatches R35 blind, then routes only a validated filed packet for premise-first `REVISE` |
+| G4 owner | traceability matrix and C2-C7 briefs | `reports/TRACEABILITY_MATRIX.md`, `plans/cycle_briefs/**`, `ledger/owners/G4_STATE.md` | SUBMIT-FOR-REVIEW | R24/R34/R35 are terminal with zero coverage; fresh R36 is exact Opus/xhigh, untouched, and sealed `BOUND-UNSENT` at unchanged manifest `22749762…02c6` | Root commits/pushes control, dispatches R36 blind, then routes only a validated filed packet for premise-first `REVISE` |
 | G5 owner | human-action packages | `human_actions/**`, `ledger/owners/G5_STATE.md` | SUBMIT-FOR-REVIEW | P1-P8, tracker, and index persisted; no-action/source checks passed. Fresh `g5b` is preattested exact Sol ultra/fast with no task/context | Fresh R32 source-scope/no-action packet, then REVISE |
 | G6 owner | conditional charter successors | qualifying `*_v1.1.md` files and `ledger/owners/G6_STATE.md` only | DONE | R19–R22 incorporated; root review repair applied; four successors remain PROPOSED; exact 83-row §35 schedule and v1.0 hashes preserved; commit `03285ba` pushed | None; owner process terminated normally |
-| G7 control owner | gauntlet records and convergence | `gauntlet/**`, `ledger/owners/G7_STATE.md` | DRAFT / bound-unsent | G7d sealed R34 zero-coverage closure and R35 bind; Round Log `5d4abb3c…d99c2f`, convergence `0c3a7cb3…bfb9f83`, checkpoint `d8e485ab…52bf4b6`; root reproduced all seven protected suffixes | Stay idle and do not open the log until root reports R35 termination and exact reviewer suffix bounds |
+| G7 control owner | gauntlet records and convergence | `gauntlet/**`, `ledger/owners/G7_STATE.md` | DRAFT / bound-unsent | G7d sealed R35 zero-credit closure and R36 bind; Round Log `05cb4aed…fcbe`, convergence `f8db137d…97ea`, checkpoint `b89c02ad…4e48`; root reproduced the EOF/process/artifact controls | Stay idle and do not open the log until root reports R36 termination and exact reviewer suffix bounds |
 | G8 owner | integrity gate and morning handoff | `MORNING_REPORT.md`, `ledger/owners/G8_STATE.md` only; root retains final `INDEX.md` and ledger seal | INGEST | Session `g8` attested `gpt-5.6-sol`/`ultra`/live `fast`; first disk checkpoint SHA-256 `be635034…f94e2`; every terminal input marked expected-not-yet-terminal; `MORNING_REPORT.md` absent by design | Root supplies the bounded terminal evidence packet after all reviews/revisions; G8 rereads `AGENTS.md`, enters `DRAFT`, and writes the nine-part report |
 
 ## Reviewer finite-state machine
