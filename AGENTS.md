@@ -61,3 +61,21 @@ Methodology intuition (planning, fresh-eyes review, convergence, blunder hunts, 
 ## The spirit of this repo
 
 Every document here exists to make one thing true: that when this project claims something, the claim carries its own reasons for trust. The FrankenSim re-audit in this repo shows what happens to extraordinary work without that property. Prefer verified-and-small over impressive-and-unaccounted, in every task, at every scale.
+
+---
+
+## G0 extension — navigation and evidence hygiene
+
+**Extension provenance:** `generated-by: Codex G0 owner`; `date: 2026-07-14`; `inputs: AGENTS.md, OVERNIGHT_GOAL.md, INDEX.md, reports/INGEST_REPORT.md`; `status: PROPOSED`; `evidence-status: provisional-pending-substrate`.
+
+Every seed rule above remains unchanged and governs this extension.
+
+14. **`INDEX.md` is navigation, not authority.** It records where things are and how they are classified. If it disagrees with the truth hierarchy above, follow the hierarchy and record the mismatch in `DISPUTES.md`.
+15. **Classify before relying.** Distinguish read-only canon, generated campaign artifacts, owner checkpoints, orchestration ledgers, and local control-plane state. Generated or operational state never silently upgrades or supersedes canon.
+16. **Do not reconstruct unavailable inputs.** If a named input is absent, record `SOURCE-UNAVAILABLE`, identify the dependent finding or task, and wait for the exact artifact. A related document is context, not a substitute.
+17. **Make verification reproducible.** Prefer stable section identifiers. Local line numbers are supporting coordinates, not durable IDs. An absence finding records the searched file, bounded region when applicable, and search vocabulary.
+18. **Keep shared state disk-first.** Owner phase and unresolved evidence live in the owner's checkpoint and partial artifact. Orchestration state routes work; an owner checkpoint records the owner's current progress. Any meaningful mismatch is surfaced rather than silently reconciled.
+19. **Treat `.ntm/` as local control-plane state.** It is non-normative, may change during a run, and must not be cited as campaign evidence. Its existence and classification belong in the run ledger and repository inventory.
+20. **Generated prose cannot strengthen a claim.** Reports and summaries preserve the scope, uncertainty, provenance, and no-claim boundary of their source evidence.
+
+For a handoff, a fresh agent should be able to state four things after the reading order above: the active goal, its authority chain, the files it may change, and every unavailable input that affects its work. If any answer is unclear, stop at orientation and record the ambiguity.
