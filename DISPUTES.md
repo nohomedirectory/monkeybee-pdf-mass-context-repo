@@ -7,6 +7,8 @@ inputs:
   - MONKEYBEE_CAMPAIGN_CHARTER_v1.md
   - CYCLE_0_WORK_ORDER.md
   - AUDIT_FINDINGS_LEDGER.md
+  - MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md
+  - human_actions/P5_CHALLENGE_WINDOW_PROPOSAL.md
 status: DRAFT
 evidence-status: provisional-pending-substrate
 ---
@@ -47,6 +49,13 @@ These entries preserve conflicts or unavailable evidence. They do not silently a
 - authority resolution for this run: do not expand G2's ratification mandate silently. Record both in `decisions/DEFERRED_REGISTER.md`, keep C1 consumers symbolic and unavailable until ratified, and place the routing choice in the morning ratification queue.
 - effect: the delta plan may specify capability and evidence consequences but cannot select a crate or dependency policy by model preference.
 
+## D-006 — Challenge-window duration conflicts with the day-15 Q2 submission
+
+- conflict: Charter §3.3 requires prospectively committed nomination and challenge windows long enough to withstand a "rigged short" objection, while Charter §4 schedules Q2 package submission at approximately day 15. Rev 7 §24.16 permits only `named_set_lead` until discovery coverage, the nomination/challenge process, and the frozen `CompetitorDiscoveryReportId` exist.
+- evidence: `human_actions/P5_CHALLENGE_WINDOW_PROPOSAL.md` proposes a 21-day initial nomination floor, a 14-day discovery-report challenge, and 30 days for a measured artifact's maintainer to contest configuration. Even the first window remains open at day 15; a shorter window would weaken the very independence property Charter §3.3 requires.
+- authority resolution for this run: preserve the day-15 submission as a dated package but cap any not-yet-frozen field result at `named_set_lead`. Permit a later addendum only after every applicable predeclared window closes and the report is frozen. Treat any Charter v1.1 sequencing change as conditional G6 work that requires fresh-review corroboration, not as established by this owner finding alone.
+- effect: G5 supplies the unsent proposal and downgrade path; no window is opened and no claim is upgraded. The morning ratification queue must ask the human to ratify durations and the submission/addendum sequence.
+
 ## Ratification state
 
-All five resolutions are `PROPOSED — awaiting human ratification`. Work continues under them because they maximize evidentiary integrity and avoid irreversible contamination or false execution claims.
+All six resolutions are `PROPOSED — awaiting human ratification`. Work continues under them because they maximize evidentiary integrity and avoid irreversible contamination or false execution claims.
