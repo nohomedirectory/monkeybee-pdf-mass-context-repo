@@ -93,3 +93,71 @@ Judgment calls I made while recording, all fixed before any round runs:
 Ratification queue from G7 is unchanged at one item: the `marginal-only` definition (zero Grade-A and zero Grade-B findings) remains my operationalization of a term the goal left open.
 
 Owner FSM: still `DRAFT`. Zero rounds are filed; nothing in the gauntlet record yet supports any statement about any artifact's quality. Next transition condition is unchanged: root routes a filed reviewer packet, or root directs a transition.
+
+### 17:07 — R19 ASSIGNED; round log now closed to G7 until termination
+
+Root admitted R19 as the run's first filed round while G3 remains ineligible for R01. Recorded in `gauntlet/ROUND_LOG.md`: the R19 control row moves `PRECOMMITTED → ASSIGNED` with its bound identity, and a full assignment record is written **before** the reviewer files, so the identity a round was assigned against cannot later be reconstructed from the round's own output.
+
+- Artifact: the four v1.0 Charter-set documents (read-only canon).
+- Sole lens: `envelope-dependency` — matches the precommitted R19 lens.
+- Model: `gpt-5.6-sol`, effort `ultra` — matches the precommitted `Sol` label, whose exact targets are `max` or `ultra`.
+- Bound hash: `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a`.
+
+**I recomputed the hash rather than accepting it.** The manifest — sorted `sha256sum` lines over the four documents, trailing newline included — reproduces root's asserted value exactly. The four per-file digests are also byte-identical to the canonical baseline captured at 15:55 in `ledger/CANONICAL_HASHES.md`, which independently establishes that the canon under review has not drifted since the run opened. A hash I merely copied would prove only that I copied it; recomputation is what makes it evidence, and it costs seconds.
+
+All seven admission gates checked and recorded against the binding. Gate 1 is satisfied by the read-only-canon exception: the Charter set sits under no owner FSM, so it is permanently stable and needs no `SUBMIT-FOR-REVIEW`. Gates 2, 4, and 5 verified. Gate 3 is not engaged (first round on this artifact). Gate 6 is not engaged (R19 is not a five-pass block round). Gate 7 is root's to guarantee at spawn, with the reviewer attesting its own identity in the filed entry.
+
+Two points recorded so the record cannot be misread later:
+
+- **Execution order is not round order.** R19 files first while R01–R18 wait. Round IDs are immutable identities, not a schedule; nothing was renumbered or retargeted. Under the per-artifact phase model I precommitted at initialization, R19 is the Charter set's *first* round, so it is a structural-phase round despite its global position. That distinction only exists because the phase model was defined per-artifact before any round ran.
+- **R19's findings cannot route to an in-place fix.** The Charter set is read-only. A graded defect routes to G6 for a `*_v1.1.md` successor with a changelog citing the finding; restyling and preference findings never qualify, and G6 records `NOT-TRIGGERED` if nothing does.
+
+**Write law now in force, per root's explicit order:** G7 makes no further write to `gauntlet/ROUND_LOG.md` until root reports reviewer termination. The reviewer appends its own R19 entry under the controlled append-only exception. I do not review, do not pre-empt its findings, and do not write into the space reserved for its entry. On termination I validate the entry against the schema, route it to G6 through root, append the disposition, and persist here.
+
+Owner FSM: `DRAFT`. Still zero rounds filed — `ASSIGNED` is not `FILED`, and R19 supports no statement about the Charter set until its entry exists.
+
+### 17:21 — R19 FILED, VALIDATED, ROUTED TO G6; log released; back to DRAFT
+
+Root reported reviewer termination and verified session absence. R19 is the run's first filed round: **A=7, B=1, C=0; marginal-only NO.**
+
+**Schema validation: PASS**, checked against `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` and recomputed rather than taken on the entry's word:
+
+- Declared counts match the filed findings: I recounted the subsections — 7 Grade-A (A01–A07), 1 Grade-B (B01), 0 Grade-C. Declared `A=7; B=1; C=0`. A reviewer's own count is not evidence of itself.
+- All five required fields (evidence, requirement, consequence, repair boundary, loss guard) present on all eight findings — 8 of each, recomputed.
+- Artifact hash in the entry is byte-identical to the hash I bound at assignment. No `STALE-ASSIGNMENT`.
+- Model identity attested twice — PID 3038450 process arguments and the live TUI footer — both `gpt-5.6-sol` at `ultra`, matching the assignment. No `MODEL-MISMATCH`, no silent fallback.
+- Exactly one lens; reviewer FSM line complete through `TERMINATED`; finding IDs monotonic; the C subsection omitted while `C=0` is still declared, as the schema requires; no repair written into artifact or log; round verdict present.
+- `marginal-only: NO` is consistent with the definition I precommitted before any round ran — a round with any Grade-A or Grade-B finding is not marginal-only. The definition was fixed in advance precisely so this call could not be made after seeing the result.
+- Lens purity holds on inspection: all eight findings argue ordering and dependency between committed envelopes.
+
+**Deviation recorded, not repaired.** The reviewer appended at end-of-file rather than beneath the append marker. Placement only; every content requirement is met. I re-verified after filing that the five-pass prompt is still byte-for-byte identical to the protocol's, the R19 assignment record is intact, and all 32 allocation rows survive — so the entry's own claim that its EOF append was its only write holds up against my own check. I did not rewrite reviewer bytes to tidy the placement; the log is append-oriented and a reviewer's filed bytes are its own.
+
+**Routing disposition appended: all eight findings → G6 (conditional).** No v1.0 in-place edit is authorized or performed. The seven Grade-A findings route under the read-only-canon exception I precommitted at initialization (`AGENTS.md` rule 11; `DISPUTES.md` D-003): a graded defect against the Charter set may only produce a `*_v1.1.md` successor with a changelog citing the finding, never a silent edit. R19-B01 routes premise-first — the routed item is the unresolved premise itself (whether Charter C6's performance lanes are distinct from S6), and G6 resolves that before deciding whether a defect exists. A Grade B is not a confirmed defect and I have not recorded it as one. Root is triggering G6.
+
+**What I did not do:** I did not review, re-grade, confirm, refute, or repair a single finding. I validated structure and identity and routed the packet. Whether these seven Grade-A findings are correct is G6's triage call, and the record says so explicitly in both artifacts rather than letting a validated schema read as a validated finding.
+
+One convergence rule I fixed now, before it can matter: if G6 later returns `NOT-TRIGGERED` on a finding, the convergence report keeps the filed grade and records the triage outcome beside it. It does not retroactively lower the count. The gauntlet's record is a record of what the review found, not a record edited to look cleaner than the review was.
+
+`CONVERGENCE_REPORT.md` updated: R19 row, grade totals (A=7, B=1, C=0 across 1 filed round), Charter-set curve (`R19: 8`), `gpt-5.6-sol` filed count 1, and the envelope-dependency lens marked filed for the Charter set only — R01 still owes that lens over the C1 plan, and coverage of one artifact never generalizes to another.
+
+Owner FSM: back to `DRAFT`. **Log released** — `gauntlet/ROUND_LOG.md` is open for the next root-routed reviewer. One filed round is not a curve: nothing yet establishes convergence, non-convergence, or a trend for any artifact. R01–R12 remain blocked on G3 reaching `SUBMIT-FOR-REVIEW`.
+
+### 17:25 — R20 ASSIGNED (control-plane write only); log closed to G7
+
+Root routed an assignment-only instruction. No reviewer exists yet. This was a control-plane write and nothing else.
+
+- Artifact: the same four v1.0 Charter-set documents fixed by the R19 manifest, read-only canon.
+- Sole lens: `Q2/Q3 traceability` — matches the precommitted R20 lens.
+- Model: `claude-opus-4-8`, effort `xhigh` — matches the precommitted `Opus` label.
+- Bound hash: `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a`.
+- Status: `ASSIGNED`, not `FILED`. R20 supports no statement about anything until its entry exists.
+
+**Manifest recomputed at 17:25, not carried forward from R19.** The four per-file digests and the manifest hash reproduce `718928bb…570c4a` exactly, and each per-file digest still matches the 15:55 canonical baseline in `ledger/CANONICAL_HASHES.md`. Re-attesting at each binding is the point: a hash inherited from a previous round attests only that the previous round happened. The canon under review has not drifted since the run opened.
+
+Admission gates checked against the binding. Gate 3 (same-artifact re-round against an unchanged hash) is satisfied on two independent grounds: R20 declares a **different** lens from R19, which the general rule permits against an unchanged artifact, and the read-only-canon exception for R19–R22 independently admits consecutive rounds because no revision is possible. Gates 1, 2, 4, 5 satisfied; gate 6 not engaged (not a block round); gate 7 is root's at spawn.
+
+**R20 binds to the v1.0 bytes, and pending G6 triage does not change that.** If G6 produces a `*_v1.1.md` successor, that successor is a new artifact with a new identity — the v1.0 Charter set is read-only and its bytes cannot change. R20's findings will bind to the v1.0 documents at this hash exactly as R19's do, and remain valid against them whatever G6 concludes. I recorded this at assignment because it is the kind of thing that becomes contested later and cannot be reconstructed after the fact.
+
+**What I did not do:** I did not review, predict, grade, or integrate anything; I did not touch R19's entry, its validation record, or its routing disposition; I did not transition the owner FSM.
+
+Owner FSM: unchanged at `DRAFT`, deliberately. **`gauntlet/ROUND_LOG.md` is closed to G7** until root reports R20 reviewer termination. On termination I validate the entry against the schema, route it to G6 through root, append the disposition, and persist here.

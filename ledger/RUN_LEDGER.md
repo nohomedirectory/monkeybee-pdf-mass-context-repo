@@ -54,6 +54,9 @@ This ledger is provisional pending establishment of the campaign's tamper-eviden
 | 17:07 | G7 control substrate initialized and root-verified before R01. | `ROUND_LOG.md` carries immutable R01-R32 slots, model/lens/admission laws, exact repeated prompt, and directory-hash rules; `CONVERGENCE_REPORT.md` has empty curve and coverage tables; G7 is `DRAFT` with zero filed rounds. Root reproduced formatting and the planned 16 Opus / 16 Sol split. |
 | 17:09 | R19 admitted while R01 remained ineligible. | G3 was still reconciling its draft, so otherwise idle reviewer capacity was assigned to the immutable Charter set without displacing the flagship. G7 bound manifest hash `718928bb…c4a`; root spawned a fresh no-recovery/no-CASS `gpt-5.6-sol` process at `ultra`, attested process arguments and live TUI, and assigned only `envelope-dependency`. |
 | 17:12 | G1 reached `SUBMIT-FOR-REVIEW`; root reproduced its structural gate. | The Constitution/shell union preserves all 554 unique Rev 7 level-2-4 headings; all 17 OPEN-C0 rows are mapped; the 40 sequential SpecCard registry slots remain pending with no semantic bodies; 9/9 canonical hashes, provenance, formatting, and Markdown-only scope pass. Retained Rule 13 and processor-name hits are recorded as typed/scoped structures or local-canon extraction and remain subject to R13-R18. |
+| 17:13 | G1 submission committed, pushed, and owner stopped. | Commit `a6a278e` landed only G1-owned outputs plus root orchestration evidence; `origin/main` advanced. The exact auto-restart monitor stopped, Codex exited normally after a second Enter submitted the already-typed `/exit`, the idle shell exited, and session absence was verified. G1 will relaunch for R13-R18 revisions. |
+| 17:20 | R19 filed and reviewer terminated. | Fresh `gpt-5.6-sol`/`ultra`, sole lens `envelope-dependency`, bound Charter-set hash `718928bb…c4a`: A=7, B=1, C=0, marginal-only=NO. Root verified the pre-review prefix hash, schema, formatting, and EOF-only append; then exited Codex and the idle shell normally and verified session absence. The confirmed defects trigger conditional G6; v1.0 canon remains untouched. |
+| 17:22 | Conditional G6 owner spawned and assigned. | Fresh NTM owner `MaroonDeer`; process arguments and live TUI attest `gpt-5.6-sol` at `ultra`. Exclusive writes are qualifying `*_v1.1.md` successors plus `ledger/owners/G6_STATE.md`; it must preserve v1.0 sources in full, cite graded findings in changelogs, avoid restyling, and remain DRAFT through R20-R22. |
 
 ## Fetch record
 
@@ -94,6 +97,7 @@ This ledger is provisional pending establishment of the campaign's tamper-eviden
 | 16:34 | G5 owner `MossyCitadel`; `monkeybee-pdf-mass-context-repo--g5`, pane 1 | `claude-opus-4-8`, effort `xhigh`; process args and TUI display `Opus 4.8` | Owner FSM; human-action packages and G5 checkpoint only | INGEST persisted; actively working |
 | 16:56 | G7 owner `MaroonLeopard`; `monkeybee-pdf-mass-context-repo--g7`, pane 1 | `claude-opus-4-8`, effort `xhigh`; process args and TUI display `Opus 4.8` | Owner FSM; gauntlet round log, convergence ledger, and G7 checkpoint only | Assignment delivered; INGEST checkpoint pending verification |
 | 17:09 | R19 reviewer `OliveHeron`; `monkeybee-pdf-mass-context-repo--r19`, pane 1 | `gpt-5.6-sol`, effort `ultra`; process args and live TUI both attested | Stateless reviewer FSM; immutable Charter-set manifest; sole lens `envelope-dependency`; append-only R19 exception | Active; started against bound hash `718928bb…c4a` |
+| 17:22 | G6 owner `MaroonDeer`; `monkeybee-pdf-mass-context-repo--g6`, pane 1 | `gpt-5.6-sol`, effort `ultra`; process args and live TUI both attested | Owner FSM; qualifying Charter-set v1.1 successors and G6 checkpoint only | R19-trigger assignment delivered; INGEST checkpoint pending verification |
 
 ### NTM action card: G3 flagship owner
 
@@ -181,7 +185,10 @@ Disposition: workspace trust gate was explicitly confirmed after verifying the t
 
 ## Gauntlet telemetry
 
-R19 is active. No round has filed yet.
+| Round | Artifact | Exact model | One lens | A | B | C | Marginal-only | Process state |
+|---|---|---|---|---:|---:|---:|---|---|
+| R19 | Four-file Charter set (`718928bb…c4a`) | `gpt-5.6-sol`, `ultra` | `envelope-dependency` | 7 | 1 | 0 | NO | TERMINATED; session absent |
+| R20 | Four-file Charter set (`718928bb…c4a`) | `claude-opus-4-8`, `xhigh` | `Q2/Q3 traceability` | — | — | — | — | SPAWNED; PID 3096698 and live TUI identity verified; review in progress |
 
 ## Failures and degraded sources
 
@@ -207,6 +214,7 @@ R19 is active. No round has filed yet.
 | 16:58 | Two NTM telemetry invocations used unsupported argument forms. | No provider-token data was returned and no repository state changed. | Used the supported session-metrics form; it reports that provider API token/cost telemetry is unavailable, so counts remain labeled unavailable rather than estimated. |
 | 16:59 | The first G2 shutdown guard used Bash's `mapfile` under the repository's default zsh. | The command stopped at its first shell builtin; no signal or key was sent. | Re-ran under explicit `/bin/bash`, verified exactly one monitor PID, and performed a normal model/shell shutdown. |
 | 17:05 | G4's submission checkpoint carried future transition times (`17:08` while wall time had not reached 17:05). | Root propagated the bad label into several run-ledger rows before checking the wall clock. Artifact content and Git history were unaffected, but timestamp evidence was misstated. | Appended the session-record correction above, used commit/G5/G7 evidence to bound events without inventing seconds, and queued G4 checkpoint repair for its review-driven revision. |
+| 17:13 | First G1 model-exit wait ended with Codex still present. | The pane showed `/exit` typed but not submitted; no process was killed and the auto-restart monitor was already stopped. | Sent one Enter, observed the pane return to Bash, exited the idle shell normally, and verified session absence. |
 
 ## Cost and token telemetry
 

@@ -20,7 +20,7 @@ It reports what the review gauntlet actually found, round by round, and whether 
 
 It may never upgrade a claim. An artifact that survives every allocated round is an artifact no allocated round refuted; it is not an artifact shown to be correct, and it stays exactly as provisional as its own status line says. It may never report an unreviewed lens as covered, and it may never let a falling curve stand in for coverage: a curve can fall because the artifact improved, because the lenses stopped looking where the defects are, or because five processes from the same family share one blind spot. This report distinguishes those cases where the evidence allows and says so where it does not.
 
-**Current state: zero rounds have run.** Every number below is a slot, and every slot is empty. Nothing in this report yet supports any statement about the quality of any artifact.
+**Current state: one round filed (R19), 31 allocated rounds unfiled.** One data point is not a curve. Nothing here yet establishes convergence, non-convergence, or a trend for any artifact, and a single round under a single lens cannot speak to the lenses it did not apply.
 
 ## Findings per round
 
@@ -28,9 +28,13 @@ Filled from filed round entries only. Grades are the reviewer's, per the protoco
 
 | Round | Artifact | Lens | Model | A | B | C | Marginal-only | Phase |
 |---|---|---|---|---|---|---|---|---|
-| — | No rounds filed | — | — | — | — | — | — | — |
+| R19 | Charter-set cross-consistency | envelope-dependency | `gpt-5.6-sol` (`ultra`) | 7 | 1 | 0 | NO | Structural (Charter set, round 1 of 4) |
 
-Totals by grade: A=0; B=0; C=0, across 0 filed rounds.
+Totals by grade: **A=7; B=1; C=0**, across 1 filed round.
+
+R19 is filed, validated against the reviewer protocol's schema by G7, and routed to G6 (conditional Charter-set successors). Its seven Grade-A and one Grade-B findings are the reviewer's grades, recorded as filed. G7 has not re-graded them, and no G6 triage has returned: **a filed Grade-A finding is a claimed defect, not yet an adjudicated one.** Should G6 return `NOT-TRIGGERED` on any finding, this table keeps the filed grade and records the triage outcome beside it rather than retroactively lowering the count — the gauntlet's own record is not edited to look cleaner than the review was.
+
+Execution order is not round order: R19 filed first because its artifact is read-only canon and permanently eligible, while R01–R12 wait on the C1 delta plan reaching `SUBMIT-FOR-REVIEW`. Its phase is structural because phases are counted per artifact, and R19 is the Charter set's first round.
 
 ## Convergence curves by artifact
 
@@ -40,7 +44,7 @@ One curve per gauntleted artifact, reported honestly whether it falls, stalls, o
 |---|---|---|---|---|---|
 | C1 delta plan | 13 — 12 baseline (R01–R12) + 1 supplemental (R31) | 0 | — | No | Not established |
 | Constitution + fix map | 6 (R13–R18) | 0 | — | No | Not established |
-| Charter-set cross-consistency | 4 (R19–R22) | 0 | — | No | Not established |
+| Charter-set cross-consistency | 4 (R19–R22) | 1 | R19: 8 | No | Not established |
 | Traceability + cycle briefs | 4 (R23–R26) | 0 | — | No | Not established |
 | Decision briefs | 2 (R27–R28) | 0 | — | No | Not established |
 | Whole repository | 2 (R29–R30) | 0 | — | No | Not established |
@@ -75,7 +79,7 @@ The correlated-blind-spot limitation is the reason this is tracked at all: a gau
 
 | Model | Baseline rounds (R01–R30) | Supplemental rounds (R31–R32) | Total allocated | Filed rounds |
 |---|---|---|---|---|
-| `gpt-5.6-sol` (`max`/`ultra`) | 15 | 1 (R31, `ultra`) | 16 | 0 |
+| `gpt-5.6-sol` (`max`/`ultra`) | 15 | 1 (R31, `ultra`) | 16 | 1 (R19) |
 | `claude-opus-4-8` (`xhigh`) | 15 | 1 (R32, `xhigh`) | 16 | 0 |
 
 The baseline runs two model families in a 15/15 split, verified against the allocation at initialization. Root's two supplemental rounds preserve the balance at 16/16; neither model family reviews its own family's blind spots any more than it did before. This is a genuinely different model family for half the rounds, which is what the goal asks for and better than the single-family fallback it tells us to confess to. It is not independence: both families are large language models reviewing documents, both are subject to the shared-premise failure the re-audit catalogs, and neither is the different-model-family **plus human** red team the Charter's day-zero track requires. This report does not present the 15/15 split as adjudication, as external review, or as a substitute for the independence layer that remains unengaged.
@@ -99,7 +103,7 @@ Every lens OVERNIGHT_GOAL §4 names, and whether the precommitted baseline actua
 
 | Lens (OVERNIGHT_GOAL §4 rotation) | Allocated rounds | Coverage |
 |---|---|---|
-| envelope-dependency | R01, R19 | Allocated |
+| envelope-dependency | R01, R19 | **R19 filed** (Charter set) · R01 allocated, unfiled (C1 plan) |
 | identity-law consistency | R13 | Allocated |
 | PDF-normative-fact check | R02 | Allocated |
 | security/DoS | R11, R28 | Allocated |
@@ -122,6 +126,8 @@ Root-authorized lenses outside the OVERNIGHT_GOAL §4 rotation are tracked separ
 | source-scope-and-no-action integrity | R32 (supplemental) | Allocated |
 
 Allocated is not the same as covered. A lens becomes covered only when its round files an entry, and a lens whose round is later closed `NOT-RUN` or `REALLOCATED` returns to unreviewed. Both supplemental rounds are allocated and unfiled; at this moment the kernel-touch lens and the source-scope lens have each been applied exactly zero times.
+
+Coverage is per artifact, not global. R19 applied the envelope-dependency lens to the **Charter set**; it says nothing about that lens over the C1 delta plan, which is R01's job and is still unfiled. One lens covering one artifact never generalizes to another artifact, however similar the reasoning looks.
 
 ## Artifact coverage
 

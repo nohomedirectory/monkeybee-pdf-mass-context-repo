@@ -12,7 +12,7 @@ evidence-status: provisional-pending-substrate
 
 ## Global state
 
-- Active subgoal: `G3`, with G1/G2/G4/G5 awaiting fresh reviews and G7 controlling one active Charter-set round
+- Active subgoal: `G3`, with G1/G2/G4/G5 awaiting fresh reviews, G6 triggered by R19, and G7 integrating the first filed round
 - Current phase: `G0 DONE; owner wave active; G2, G4, and G5 SUBMIT-FOR-REVIEW`
 - Priority rule: preserve G0, ledger, G3, G3 gauntlet, G1, and `MORNING_REPORT.md`; shed work only from the bottom of the governing ladder.
 - Canonical-input mutation allowance: none.
@@ -34,7 +34,7 @@ Each owner must persist a checkpoint below and in its partial output at every tr
 | G3 owner | Cycle 1 delta plan | `plans/CYCLE_1_DELTA_PLAN.md`, `ledger/owners/G3_STATE.md` | DRAFT | Authority sections ingested; provenance-bearing partial plan exists | Plan reaches 2,500–4,000 substantive lines with all contract families, then SELF-CHECK |
 | G4 owner | traceability matrix and C2-C7 briefs | `reports/TRACEABILITY_MATRIX.md`, `plans/cycle_briefs/**`, `ledger/owners/G4_STATE.md` | SUBMIT-FOR-REVIEW | Fifty requirements accounted bidirectionally; six briefs and root integrity check passed | Fresh R23-R26 packets, then REVISE |
 | G5 owner | human-action packages | `human_actions/**`, `ledger/owners/G5_STATE.md` | SUBMIT-FOR-REVIEW | P1-P8, tracker, and index persisted; no-action/source checks passed | Fresh human-package evidence-boundary packet, then REVISE |
-| G6 owner | conditional charter successors | qualifying `*_v1.1.md` files only | INGEST | Dormant unless graded defect qualifies | A genuine charter-set defect survives triage |
+| G6 owner | conditional charter successors | qualifying `*_v1.1.md` files and `ledger/owners/G6_STATE.md` only | INGEST | R19 filed seven Grade-A Charter-set defects; Sol/ultra owner spawned at 17:22 | Persist trigger/authority checkpoint, draft only affected successors, remain DRAFT through R20-R22 |
 | G7 owner | gauntlet records and convergence | `gauntlet/**`, `ledger/owners/G7_STATE.md` | DRAFT | R01-R30 baseline and R31-R32 supplements initialized before any result; zero rounds filed | Admit R01 only after G3 submission hash is bound |
 | G8 owner | integrity gate and morning handoff | `MORNING_REPORT.md`, final `INDEX.md`, ledger seal | INGEST | Terminal criteria imported from goal | G0-G7 dispositions are available |
 
