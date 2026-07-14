@@ -12,7 +12,7 @@ evidence-status: provisional-pending-substrate
 
 ## Global state
 
-- Active subgoal: `G3`, with G1 self-checking, G2/G4/G5 awaiting fresh reviews, and G7 ready to admit reviewer packets
+- Active subgoal: `G3`, with G1/G2/G4/G5 awaiting fresh reviews and G7 controlling one active Charter-set round
 - Current phase: `G0 DONE; owner wave active; G2, G4, and G5 SUBMIT-FOR-REVIEW`
 - Priority rule: preserve G0, ledger, G3, G3 gauntlet, G1, and `MORNING_REPORT.md`; shed work only from the bottom of the governing ladder.
 - Canonical-input mutation allowance: none.
@@ -29,7 +29,7 @@ Each owner must persist a checkpoint below and in its partial output at every tr
 | Owner | Scope | Files owned | State | Last checkpoint | Next transition condition |
 |---|---|---|---|---|---|
 | G0 owner | orientation, inventory, Grade-A verification | `INDEX.md`, `reports/INGEST_REPORT.md`, `ledger/owners/G0_STATE.md`, permitted AGENTS extension | DONE | All five fresh-review findings resolved; closure suite and root verification passed | None; terminate owner process |
-| G1 owner | Constitution v8, shell corpus, fix map | `constitution/**`, `shell/**`, `reports/FIX_APPLICATION.md`, `ledger/owners/G1_STATE.md` | DRAFT | Authority sections ingested; provenance-bearing partial corpus exists | Draft corpus covers extraction envelope and OPEN-C0 map, then SELF-CHECK |
+| G1 owner | Constitution v8, shell corpus, fix map | `constitution/**`, `shell/**`, `reports/FIX_APPLICATION.md`, `ledger/owners/G1_STATE.md` | SUBMIT-FOR-REVIEW | 554 headings preserved, 17 OPEN-C0 rows mapped, 40 pending slots, root structural gate passed | Fresh R13-R18 packets, then REVISE |
 | G2 owner | resolve-now and deferred decisions | `decisions/**`, `ledger/owners/G2_STATE.md` | SUBMIT-FOR-REVIEW | Nine artifacts and owner self-check persisted at 16:56; root integrity gate passed | Fresh R27/R28 packets, then REVISE |
 | G3 owner | Cycle 1 delta plan | `plans/CYCLE_1_DELTA_PLAN.md`, `ledger/owners/G3_STATE.md` | DRAFT | Authority sections ingested; provenance-bearing partial plan exists | Plan reaches 2,500–4,000 substantive lines with all contract families, then SELF-CHECK |
 | G4 owner | traceability matrix and C2-C7 briefs | `reports/TRACEABILITY_MATRIX.md`, `plans/cycle_briefs/**`, `ledger/owners/G4_STATE.md` | SUBMIT-FOR-REVIEW | Fifty requirements accounted bidirectionally; six briefs and root integrity check passed | Fresh R23-R26 packets, then REVISE |

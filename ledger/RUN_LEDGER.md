@@ -52,6 +52,8 @@ This ledger is provisional pending establishment of the campaign's tamper-eviden
 | 17:13 | G5 precommit formatting correction verified. | The owner removed one trailing-space byte in P8, recorded the root correction while remaining at `SUBMIT-FOR-REVIEW`, and reproduced a clean per-file check across all 11 owned files. No semantic text or other path changed. |
 | 17:05 | **Timestamp correction for the five preceding future-labeled rows.** | Current wall time was `2026-07-14T17:05:24+02:00`; therefore labels 17:08, 17:10, 17:11, 17:12, and 17:13 could not be observation times. The 17:08 G4 row inherited an impossible owner checkpoint timestamp: commit `f0bffa2` proves the submitted G4 files existed no later than `17:01:07`; the exact owner-transition minute is `[UNVERIFIED]`. The G4 shutdown occurred after that commit and before 17:04. The G5 validation occurred before commit `20896a2` at 17:04:28; its formatting correction is directly recorded by G5 at 17:03:21. The G3 compaction/reminder occurred before 17:04, and G7 directly records the supplemental authorization at 17:04. This correction supersedes only those five rows' time labels; their event contents stand. G4 must correct its checkpoint's future times in `REVISE`. |
 | 17:07 | G7 control substrate initialized and root-verified before R01. | `ROUND_LOG.md` carries immutable R01-R32 slots, model/lens/admission laws, exact repeated prompt, and directory-hash rules; `CONVERGENCE_REPORT.md` has empty curve and coverage tables; G7 is `DRAFT` with zero filed rounds. Root reproduced formatting and the planned 16 Opus / 16 Sol split. |
+| 17:09 | R19 admitted while R01 remained ineligible. | G3 was still reconciling its draft, so otherwise idle reviewer capacity was assigned to the immutable Charter set without displacing the flagship. G7 bound manifest hash `718928bb…c4a`; root spawned a fresh no-recovery/no-CASS `gpt-5.6-sol` process at `ultra`, attested process arguments and live TUI, and assigned only `envelope-dependency`. |
+| 17:12 | G1 reached `SUBMIT-FOR-REVIEW`; root reproduced its structural gate. | The Constitution/shell union preserves all 554 unique Rev 7 level-2-4 headings; all 17 OPEN-C0 rows are mapped; the 40 sequential SpecCard registry slots remain pending with no semantic bodies; 9/9 canonical hashes, provenance, formatting, and Markdown-only scope pass. Retained Rule 13 and processor-name hits are recorded as typed/scoped structures or local-canon extraction and remain subject to R13-R18. |
 
 ## Fetch record
 
@@ -91,6 +93,7 @@ This ledger is provisional pending establishment of the campaign's tamper-eviden
 | 16:33 | G4 owner `SapphireIsland`; `monkeybee-pdf-mass-context-repo--g4`, pane 1 | `claude-opus-4-8`, effort `xhigh`; process args and TUI display `Opus 4.8` | Owner FSM; traceability, cycle briefs, and G4 checkpoint only | INGEST persisted; actively working |
 | 16:34 | G5 owner `MossyCitadel`; `monkeybee-pdf-mass-context-repo--g5`, pane 1 | `claude-opus-4-8`, effort `xhigh`; process args and TUI display `Opus 4.8` | Owner FSM; human-action packages and G5 checkpoint only | INGEST persisted; actively working |
 | 16:56 | G7 owner `MaroonLeopard`; `monkeybee-pdf-mass-context-repo--g7`, pane 1 | `claude-opus-4-8`, effort `xhigh`; process args and TUI display `Opus 4.8` | Owner FSM; gauntlet round log, convergence ledger, and G7 checkpoint only | Assignment delivered; INGEST checkpoint pending verification |
+| 17:09 | R19 reviewer `OliveHeron`; `monkeybee-pdf-mass-context-repo--r19`, pane 1 | `gpt-5.6-sol`, effort `ultra`; process args and live TUI both attested | Stateless reviewer FSM; immutable Charter-set manifest; sole lens `envelope-dependency`; append-only R19 exception | Active; started against bound hash `718928bb…c4a` |
 
 ### NTM action card: G3 flagship owner
 
@@ -178,7 +181,7 @@ Disposition: workspace trust gate was explicitly confirmed after verifying the t
 
 ## Gauntlet telemetry
 
-No rounds have run yet.
+R19 is active. No round has filed yet.
 
 ## Failures and degraded sources
 
