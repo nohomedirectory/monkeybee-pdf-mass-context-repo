@@ -638,3 +638,12 @@ I did not revalidate, re-grade, confirm, refute, promote, demote, or rewrite any
 - Idle reviewer identity: session `monkeybee-pdf-mass-context-repo--r03`, pane ID `%85`, pane PID `3251961`; Claude PID `3252202`, `claude-opus-4-8`, effort `xhigh`; pane and `/proc` attestations agree.
 - R03 is `ASSIGNED`; no reviewer task was sent. Owner FSM remains **`DRAFT`** and the round log is **closed** pending root-reported reviewer termination.
 - This turn changed only the R03 allocation-row hash/status slots and appended the R03 control record plus this checkpoint, all via `apply_patch`; no prior finding body was opened.
+
+### R03 integration checkpoint — `DRAFT`
+
+- Clock read immediately before integration: `2026-07-14T20:06:42+02:00`.
+- Byte validation reproduced prefix SHA-256 `6058f689bbcb3d4663e8505e380645961c097f17a8066fbe3b9047b34113cc16`, reviewer-suffix SHA-256 `d42c1989b354ca100dbdbd876b83cde0f7f0f13f12c35356209d5004d166af7a`, and pre-integration whole-log SHA-256 `9aa593b3de3cce05d79c37aac8e37b2d2ad2b72b21849c26b194e8f0db5314ae` at the exact recorded byte bounds.
+- Schema validation passed mechanically: A=1/B=1/C=1, marginal-only NO, three finding headings, five required fields on each, matching bound artifact hash, and FSM through `TERMINATED`. No substantive claim was reviewed.
+- Process correction: the no-action statement's no-shell-file-writing absolute is false because transcript-visible `tee` wrote under `/data/tmp/claude-1000`; root verified no repository path was written by `tee` and structured `Edit` remained the sole repository write. Reviewer bytes and grades are preserved. The disclosed overlong packet is retained.
+- R03-A01/B01/C01 route to G3 through root for premise-first triage with grades unpromoted. Root reports reviewer process, shell, tmux session, and monitor absent.
+- Owner FSM remains **`DRAFT`**. **Log released.**
