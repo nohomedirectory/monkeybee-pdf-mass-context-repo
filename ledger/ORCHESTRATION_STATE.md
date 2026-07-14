@@ -6,7 +6,7 @@ inputs:
   - OVERNIGHT_GOAL.md
 status: DRAFT
 evidence-status: provisional-pending-substrate
-updated-at: 2026-07-14T20:38:15+02:00
+updated-at: 2026-07-14T21:13:35+02:00
 timestamp-correction: the initially written literal 2026-07-14T19:26:00+02:00 was a future, unmeasured value and is preserved here as invalid; the exact update second is not inferred
 ---
 
@@ -14,8 +14,8 @@ timestamp-correction: the initially written literal 2026-07-14T19:26:00+02:00 wa
 
 ## Global state
 
-- Active subgoal: `G3` gauntlet. G3's R03 revision is committed/pushed at `441bd4a`; continuing G7 has bound R04 only to plan SHA-256 `41a89dd9…7faae`, exact Sol ultra/fast/priority reviewer pane `%86`, and the sealed immutable pass-1 prompt. Root independently reproduced the binding and may now release the R04 task after committing this control point. R13 remains `FILED · VALIDATED · TERMINATED` at A=3/B=2/C=0; the replacement G1 owner has received that bounded packet and is ingesting it from disk before the required `REVISE` transition.
-- Current phase: `G0/G6 DONE; G1 active on bounded R13 intake from SUBMIT-FOR-REVIEW; G2/G4/G5 SUBMIT-FOR-REVIEW; G3 SUBMIT-FOR-REVIEW with R04 ASSIGNED; continuing G7 DRAFT/log closed for R04; R13 FILED/VALIDATED/TERMINATED; G8 INGEST without a process`
+- Active subgoal: `G3` gauntlet. R04 is `FILED · VALIDATED · TERMINATED` at A=11/B=5/C=1 against plan SHA-256 `41a89dd9…7faae`; continuing G7 preserved the reviewer suffix, recorded the bounded locator exposure, and routed all 17 grades and loss guards to G3 unpromoted. G3 is now authorized for premise-first `REVISE`. G1's R13 revision is committed/pushed as `744450d`; R14 remains unassigned.
+- Current phase: `G0/G6 DONE; G1/G2/G4/G5 SUBMIT-FOR-REVIEW; G3 awaiting bounded R04 REVISE; continuing G7 DRAFT/log released after R04 integration; 9/32 rounds filed at A=58/B=17/C=5; G8 INGEST with a live exact-model owner and disk checkpoint`
 - Priority rule: preserve G0, ledger, G3, G3 gauntlet, G1, and `MORNING_REPORT.md`; shed work only from the bottom of the governing ladder.
 - Canonical-input mutation allowance: none.
 - Bead/code allowance: none.
@@ -31,14 +31,14 @@ Each owner must persist a checkpoint below and in its partial output at every tr
 | Owner | Scope | Files owned | State | Last checkpoint | Next transition condition |
 |---|---|---|---|---|---|
 | G0 owner | orientation, inventory, Grade-A verification | `INDEX.md`, `reports/INGEST_REPORT.md`, `ledger/owners/G0_STATE.md`, permitted AGENTS extension | DONE | All five fresh-review findings resolved; closure suite and root verification passed | None; terminate owner process |
-| G1 owner | Constitution v8, shell corpus, fix map | `constitution/**`, `shell/**`, `reports/FIX_APPLICATION.md`, `ledger/owners/G1_STATE.md` | SUBMIT-FOR-REVIEW (active intake) | R13 validated and routed A=3/B=2/C=0 with grades unpromoted; replacement owner session `g1r` is preattested Sol ultra/fast/priority, has received only the bounded R13 task, and is following the prescribed full read order before its first write | Persist `REVISE` with all R13 premises/loss guards, premise-test, make only qualifying repairs, self-check, and resubmit before R14 |
+| G1 owner | Constitution v8, shell corpus, fix map | `constitution/**`, `shell/**`, `reports/FIX_APPLICATION.md`, `ledger/owners/G1_STATE.md` | SUBMIT-FOR-REVIEW | R13 cycle reached `REVISE -> SELF-CHECK -> SUBMIT-FOR-REVIEW`; A01/A02/A03 repaired, B01/B02 retained unpromoted, component manifest `dd86aaf3…1d6`, commit `744450d` pushed; owner session absent | Fresh R14 packet, then resume owner from disk and enter `REVISE` |
 | G2 owner | resolve-now and deferred decisions | `decisions/**`, `ledger/owners/G2_STATE.md` | SUBMIT-FOR-REVIEW | Nine artifacts and owner self-check persisted at 16:56; root integrity gate passed | Fresh R27/R28 packets, then REVISE |
-| G3 owner | Cycle 1 delta plan | `plans/CYCLE_1_DELTA_PLAN.md`, `ledger/owners/G3_STATE.md` | SUBMIT-FOR-REVIEW | R03 marker split rejected under higher authority; linkage-only manifest/gate repair retained all markers and features; stable 42/42, R01 10/10, R02 5/5, R03 4/4 suite; SHA-256 `41a89dd9…7faae`; R04 now bound to this exact identity | Fresh R04 files, terminates, and is mechanically validated before G3 receives premise-first triage |
+| G3 owner | Cycle 1 delta plan | `plans/CYCLE_1_DELTA_PLAN.md`, `ledger/owners/G3_STATE.md` | SUBMIT-FOR-REVIEW | Plan remains 3,453 lines / 134 contracts / SHA-256 `41a89dd9…7faae`; R04 mechanically validated at A=11/B=5/C=1 with the out-of-chain locator risk visible and every grade/loss guard unpromoted | Persist `REVISE`, independently premise-test all 17 R04 items, make only qualifying preserve-features repairs, self-check, and resubmit before R05 |
 | G4 owner | traceability matrix and C2-C7 briefs | `reports/TRACEABILITY_MATRIX.md`, `plans/cycle_briefs/**`, `ledger/owners/G4_STATE.md` | SUBMIT-FOR-REVIEW | Fifty requirements accounted bidirectionally; six briefs and root integrity check passed | Fresh R23-R26 packets, then REVISE |
 | G5 owner | human-action packages | `human_actions/**`, `ledger/owners/G5_STATE.md` | SUBMIT-FOR-REVIEW | P1-P8, tracker, and index persisted; no-action/source checks passed | Fresh R32 source-scope/no-action packet, then REVISE |
 | G6 owner | conditional charter successors | qualifying `*_v1.1.md` files and `ledger/owners/G6_STATE.md` only | DONE | R19–R22 incorporated; root review repair applied; four successors remain PROPOSED; exact 83-row §35 schedule and v1.0 hashes preserved; commit `03285ba` pushed | None; owner process terminated normally |
-| Continuing G7 owner | gauntlet records and convergence | `gauntlet/**`, `ledger/owners/G7_STATE.md` | DRAFT | R04 bound at `2026-07-14T20:37:30+02:00` to exact plan hash `41a89dd9…7faae`, Sol ultra/fast/priority pane `%86`, sole oversimplification-and-feature-loss lens, and immutable pass-1 prompt; convergence unchanged; log closed | Root commits/verifies the bind, sends only the sealed R04 task, then reports reviewer termination for mechanical integration |
-| G8 owner | integrity gate and morning handoff | `MORNING_REPORT.md`, final `INDEX.md`, ledger seal | INGEST | Terminal criteria imported from goal; attempted NTM spawn was refused without creating a session because the configured process cap was already exceeded | Reuse released capacity for an exact-model owner process after a reviewer or owner normally terminates |
+| Continuing G7 owner | gauntlet records and convergence | `gauntlet/**`, `ledger/owners/G7_STATE.md` | DRAFT | R04 integrated at measured `2026-07-14T21:12:26+02:00`; log released; reviewer suffix remains byte-identical; aggregate 9 rounds at A=58/B=17/C=5; C1 A+B points 10/4/2/16; R04 is only pass 1/5 | Root commits/verifies integration, routes R04 to G3, then may bind an eligible different-artifact round while G3 revises |
+| G8 owner | integrity gate and morning handoff | `MORNING_REPORT.md`, `ledger/owners/G8_STATE.md` only; root retains final `INDEX.md` and ledger seal | INGEST | Session `g8` attested `gpt-5.6-sol`/`ultra`/live `fast`; first disk checkpoint SHA-256 `be635034…f94e2`; every terminal input marked expected-not-yet-terminal; `MORNING_REPORT.md` absent by design | Root supplies the bounded terminal evidence packet after all reviews/revisions; G8 rereads `AGENTS.md`, enters `DRAFT`, and writes the nine-part report |
 
 ## Reviewer finite-state machine
 
