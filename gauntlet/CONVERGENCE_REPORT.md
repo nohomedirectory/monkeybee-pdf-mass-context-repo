@@ -720,3 +720,23 @@ Filed evidence is now 16 rounds at 8 Sol / 8 Opus with aggregate A=98, B=60, C=2
 The five-pass-A A+B curve is R04=16 -> R05=32 -> R41=7 -> R48=1. Every point is non-marginal, including R48 because B=1. No consecutive marginal-only condition exists, so convergence remains **NOT ESTABLISHED** pending G3 premise testing and later eligible review work.
 
 The bound plan remains 3,543 lines / 487,507 bytes / `fc4cf43598e788cacea1ffabce7110d23ba3aea66a7d89afa33bbf60cba72260`; G3 checkpoint remains 1,186 / 210,496 / `b79a1dbda35dc9c1140cd8a42c7b4c217ea3643d737c9094231c3d11ce490ae1`. Root alone may commit/push this evidence group and route the immutable packet plus G7 qualification to G3.
+
+## R48 owner disposition and R08 bound-unsent correction — `2026-07-15T09:23:52+02:00`
+
+This append supersedes only the pending-owner and no-bound wording in the immediately preceding R48 correction. Every prior report and reviewer byte remains unchanged; reviewer grades remain immutable allegations.
+
+### R48 owner disposition
+
+Pushed G3 checkpoint 1,392 lines / 250,723 bytes / `f855610289af5cfc7a910e7561d2903c0a60986ef168a139faa102f1105ed6d6` records ACCEPT R48-B01/C02, NARROW R48-C01/C03, REJECT 0, and REGRADE 0 against submitted successor plan 3,566 / 495,395 / `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0`. The bounded repairs preserve conservative seven-axis recovery alternatives, raw DSS/VRI/LTV carriers with C5 interpretation, a thin C1 `mb validate` surface, and C1 report/projection access while leaving the dedicated explanation graph/API in C5. Licensed-source and human-ratification gates remain unresolved.
+
+This distinct owner decision closes the R48 route but changes no filed grade, family count, curve point, artifact verdict, or convergence conclusion. R48 remains a chain-qualified non-marginal Opus filing at A=0/B=1/C=3 and marginal-only NO.
+
+### R08 bound state
+
+R08 is the original precommitted C1 five-pass-A position 5/5 slot, now the sole `BOUND-UNSENT` row. It binds only submitted plan `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0`, sole `oversimplification-and-feature-loss` lens, and untouched `gpt-5.6-sol` / ultra / live-fast / priority process in session `monkeybee-pdf-mass-context-repo--r08`, pane `%90`, shell 3268140, child 3268359, exact lowercase cwd. Sealed control is separator-inclusive `[887020,893006)`, 5,986 bytes / `011e4ee644745acd10d9b406e0406ef0bd8af6e6af5ffde18034b696834cbff5`; no task has been sent.
+
+### Evidence, allocation, and convergence
+
+Filed evidence remains 16 rounds at 8 Sol / 8 Opus with A=98/B=60/C=22. Immutable allocation remains 48 rows at 20 Sol / 28 Opus; 16 failed IDs leave 32 active planned slots at 16/16. Sixteen active-unfiled slots remain: R08 is bound-unsent and 15 are unbound. R08 supplies zero finding, grade, coverage, marginal result, verdict, route, curve point, owner disposition, or conclusion before filing.
+
+The five-pass-A A+B curve remains R04=16 -> R05=32 -> R41=7 -> R48=1, all non-marginal. No consecutive marginal-only condition exists; convergence remains **NOT ESTABLISHED**. Root alone may commit/push the three G7 documents, revalidate identities and the untouched R08 process, and then deliver only the sealed control.
