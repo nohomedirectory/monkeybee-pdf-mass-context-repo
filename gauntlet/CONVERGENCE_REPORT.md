@@ -1100,3 +1100,13 @@ One sealed R10 control candidate now occupies Round EOF for the original precomm
 This is not an operational bind. R10's allocation row remains byte-identical `PRECOMMITTED` until the control passes owner SELF-CHECK, independent submission review, mandatory hardening review, and a fresh terminal gate. No bootstrap was instantiated, nothing was sent, and no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model point, or convergence evidence is added.
 
 Allocation therefore remains 58 unique rows at 22 Sol / 36 Opus; 27 failed at 6/21; 31 active planned at 16/15; 18 valid filed at 9/9 with A=118/B=64/C=22; 13 active-unfiled at 7/6; and no bound row. Established C1 and Constitution sequences are unchanged. Convergence remains **NOT ESTABLISHED**.
+
+## R10 corrected-base `BOUND-UNSENT` bind — `2026-07-15T21:48:04+02:00`
+
+The fresh corrected-base owner FSM passed INGEST, DRAFT, SELF-CHECK, independent SUBMIT-FOR-REVIEW, and mandatory REVISE hardening before the operational row changed. Only the sole R10 allocation row advances from `PRECOMMITTED` to `BOUND-UNSENT`; the corrected sealed control and all protected history remain byte-preserved.
+
+R10 binds the submitted plan identity `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59` under the sole `dependency soundness` lens. Exact `gpt-5.6-sol` / `ultra` / live `fast` / priority and reservation/process facts remain sealed supplied conditions and are `ROOT-REPRODUCTION-REQUIRED` before any later bootstrap instantiation or dispatch.
+
+Allocation remains 58 rows at 22 Sol / 36 Opus; 27 failed at 6/21; 31 active at 16/15; 18 valid filed at 9/9; and 13 active-unfiled at 7/6. R10 is the sole `BOUND-UNSENT` row. It adds no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model point, or convergence evidence. Convergence remains **NOT ESTABLISHED**.
+
+No bootstrap was instantiated or sent, and no reviewer, process, PID, pane, owner, session, service, `.ntm`, quarantine, external source, or prohibited source was inspected or contacted.
