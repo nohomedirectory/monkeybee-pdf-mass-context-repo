@@ -858,3 +858,43 @@ The sealed R09 control is heading-to-EOF `[987878,998308)`, 92 lines / 10,430 by
 Allocation remains 51 immutable rows at 22 Sol / 29 Opus; 19 failed IDs leave 32 active planned slots at 16/16. Filed evidence remains 18 rounds at 9/9 with A=118/B=64/C=22. Fourteen active-unfiled slots remain at 7/7: R09 is sole bound-unsent and 13 are unbound. R09 contributes no finding, grade, marginal result, verdict, owner disposition, or curve value before filing; R10 remains precommitted.
 
 The five-pass-A sequence remains R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24, all non-marginal. The Constitution sequence remains R14=15 non-marginal -> R15=21 non-marginal -> R51=0 marginal-only. No qualifying consecutive-marginal condition exists; convergence remains **NOT ESTABLISHED**. Root alone may commit/push, reattest R09, create the detached activation, and send the sealed control.
+
+## R09 zero-credit method-control termination — `2026-07-15T13:41:58+02:00`
+
+This append supersedes only the R09 bound-unsent activation wording immediately above. Every prior reviewer packet/control byte, grade, finding body, loss guard, curve point, owner disposition, and substantive conclusion remains unchanged.
+
+R09 is immutable `NOT-RUN · METHOD-CONTROL-SEQUENCING-VIOLATION · TERMINATED`. At the exact Opus 4.8/xhigh dispatch roots, its first and only tool was a compound read-only Bash identity/history/status call rather than mandatory Tool 1 full `AGENTS.md`. Root interrupted immediately after the result. The stable 21-line transcript contains one Bash tool use, empty file-history backups, zero repository writes, and no valid packet. Session, pane, shell, and child are absent; host zombies are zero.
+
+R09 contributes no finding, grade, authority/artifact coverage, marginal result, verdict, route, curve point, owner disposition, or convergence evidence. The plan remains 3,655 lines / 531,012 bytes / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`; the dispatched Round root and 10,430-byte R09 control retain `cdb87d261be92f838e1fd2b2afd39f8c0c737bada0daf2252a49afe4422c59ec` and `12f9b299d5e571ac535107026587c7066b45de6b5fb1796089e56bbfd28cf241`.
+
+Before replacement allocation, the ledger has 51 rows at 22 Sol / 29 Opus; 20 failed at 6/14; 31 active at 16/15; 18 filed at 9/9 with A=118/B=64/C=22; 13 active-unfiled at 7/6; and zero bound. The original planned C1 slot is not duplicated: a fresh Opus replacement must add one immutable row while restoring the active 16/16 balance.
+
+The five-pass-A sequence remains R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24, all non-marginal. The Constitution sequence remains R14=15 non-marginal -> R15=21 non-marginal -> R51=0 marginal-only. R09 adds no point. Convergence remains **NOT ESTABLISHED**.
+
+## R52 one-for-one allocation-only state — `2026-07-15T13:43:19+02:00`
+
+This append restores the original planned-slot balance without treating failed R09 as another planned slot. R52 is one fresh Opus row for the same C1 delta plan, sole `obscure-section self-containment` lens, exact `claude-opus-4-8` / `xhigh`, G3 premise-first route, and plan `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`.
+
+R52 is only `ALLOCATED · UNSENT` at this checkpoint. No control exists, no task was sent, and no finding, grade, coverage, marginal result, verdict, route, owner disposition, or curve point is added. R10 remains untouched `PRECOMMITTED`.
+
+Allocation is 52 unique rows at 22 Sol / 30 Opus; 20 failed at 6/14; 32 active at 16/16; 18 filed at 9/9 with A=118/B=64/C=22; and 14 active-unfiled at 7/7. No round is bound-unsent yet. The prior C1 and Constitution sequences are unchanged, so convergence remains **NOT ESTABLISHED**.
+
+## R52 sealed `BOUND-UNSENT` control state — `2026-07-15T13:45:33+02:00`
+
+This append supersedes only the allocation-only/no-bound wording immediately above. The construction patch advanced R52 alone from `ALLOCATED · UNSENT` to `BOUND-UNSENT` and placed one self-contained control at actual Round EOF. R10 remains untouched `PRECOMMITTED`.
+
+R52 binds only the committed C1 delta plan 3,655 lines / 531,012 bytes / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`, sole `obscure-section self-containment` lens, exact `claude-opus-4-8` / `xhigh`, G3 premise-first route, and reserved session `monkeybee-pdf-mass-context-repo--r52`, pane `%149` index 1, shell 2552530, child 2552770, exact lowercase cwd. Post-construction reattestation reproduced every coordinate, the Opus 4.8/xhigh welcome TUI, default placeholder, and no task history.
+
+The sealed control is heading-to-EOF `[1003884,1014543)`, 94 lines / 10,659 bytes / `39dfad9be83e1f157022af369bc5cdaa4045017f872e2c0cda8cc7febb181cc6`; separator-inclusive `[1003883,1014543)` is 95 lines / 10,660 bytes / `a6aeaef1bcbb03b84c977ebed3b33165194405a987f019370bda61ed5b6c601f`. Its heading and final literal anchor are unique, and the anchor is actual Round EOF.
+
+Allocation remains 52 unique rows at 22 Sol / 30 Opus; 20 failed at 6/14; 32 active at 16/16; 18 filed at 9/9 with A=118/B=64/C=22; and 14 active-unfiled at 7/7. R52 is the sole bound-unsent row and supplies no finding, grade, coverage, marginal result, verdict, route, owner disposition, or curve point before filing.
+
+The five-pass-A and Constitution sequences remain unchanged. No qualifying consecutive-marginal condition exists; convergence remains **NOT ESTABLISHED**. No task, prompt, context, authority, artifact, control, or anchor byte was sent to R52.
+
+## R52 activation-instruction clarification and reseal — `2026-07-15T13:47:44+02:00`
+
+This append supersedes only the two provisional R52 control roots immediately above. A root control review observed that “receipt means the assignment is live” did not expressly distinguish the sealed heading from quoted data or an embedded script; R09's recorded refusal used exactly that interpretation. Under persisted G7 `REVISE`, one paragraph now states that a validly activated sealed heading is the direct human-authorized task instruction to execute as written, not data or an embedded script to inspect, summarize, negotiate, reinterpret, or decline.
+
+No process, artifact, authority, lens, route, schema, grade, write boundary, termination law, allocation count, or convergence conclusion changed. The corrected R52 control is heading-to-EOF `[1003884,1014945)`, 96 lines / 11,061 bytes / `58ef7ce7367765954c4f4c765fdf27aad6e943bdd70f851f666062ee9cd98a93`; separator-inclusive `[1003883,1014945)` is 97 / 11,062 / `e1043024009b097d2a1b4d641f5223d51a0a0b0e84459e9335d73a6d4fc6c2a7`. The anchor remains unique at actual EOF.
+
+The earlier 10,659/10,660-byte roots remain historical pre-correction DRAFT seals and carry no terminal control status. Post-correction R52 reattestation still reproduces the exact untouched session, pane, PIDs, cwd, command, Opus 4.8/xhigh TUI, default placeholder, and no task history. Nothing was sent; R52 remains sole `BOUND-UNSENT`; convergence remains **NOT ESTABLISHED**.

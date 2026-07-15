@@ -3733,3 +3733,167 @@ No task, prefix, authority byte, artifact byte, context, prompt, anchor, control
 **Integration-control state: `BOUND-UNSENT`.**
 
 **G7 R50/R09 follow-up FSM state: `DONE/HANDOFF` (terminal disk state persisted; R09 unsent).**
+
+## R09 failure integration / R52 replacement follow-up — INGEST (`2026-07-15T13:35:52+02:00`)
+
+- generated-by: G7 owner follow-up
+- date: 2026-07-15
+- inputs: live human instruction; full `AGENTS.md`; fixed control refs; identity-only checks of the three writable G7 documents; existing G7 terminal checkpoint
+- status: DRAFT
+- evidence-status: provisional-pending-substrate
+
+### Crash-safe ingest receipt
+
+- The fresh bounded FSM is exactly `INGEST -> DRAFT -> SELF-CHECK -> SUBMIT-FOR-REVIEW -> DONE/HANDOFF`, entering a persisted `REVISE` state before any correction discovered after SELF-CHECK or submission and restarting the bounded gate after that correction. This marker is persisted before opening the R09 failure transcript, any root-recorded failure prose, or the replacement control evidence.
+- Writable scope is exactly `gauntlet/ROUND_LOG.md`, `gauntlet/CONVERGENCE_REPORT.md`, and `ledger/owners/G7_STATE.md`, with every edit made through `apply_patch`. Every other current or future path is concurrent and excluded from cleanliness predicates and mutation. No reviewer/owner contact, dispatch, pane input, stage, commit, push, fetch, browse, or external action is authorized.
+- Mandatory first repository action was a full read of all 81 lines / 8,055 bytes of `AGENTS.md`, SHA-256 `5591f13d75685e52158a9aecfd7f90a2ecf42275d18e3ca5f7fc1550dadad939`. The applicable gauntlet skill was then read in full before evidence work.
+- Starting control reproduces: branch `main`; HEAD == local `origin/main` == `aa80fb601fe52d20eea6433bbc1608650bc75b9b`. Fixed-base and cached diffs for the three writable paths are empty, as is their path-scoped untracked set; no whole-worktree cleanliness predicate was used.
+- Starting writable identities reproduce: Round Log 5,498 lines / 998,308 bytes / `cdb87d261be92f838e1fd2b2afd39f8c0c737bada0daf2252a49afe4422c59ec`; Convergence Report 860 / 124,233 / `8060cdb66df039fcd6d51c6fd1b0ba638fa92986f12df1039f244ce72bec1bbe`; G7_STATE 3,735 / 820,239 / `9be9ab579738f28f0d89a690c0f99bdbde1d8adbe1bb25805f1ca33686ef5b12`.
+- No new R09 failure claim receives credit before disk corroboration. INGEST may now read the required orientation chain, reviewer protocol, root-recorded failure evidence, exact transcript, committed control identities, and read-only R52 process/TUI state. DRAFT must be persisted before any allocation-row, Round control, Convergence, or disposition mutation.
+
+**G7 R09/R52 follow-up FSM state: `INGEST` (control boundary persisted; semantic premise testing authorized).**
+
+## R09 failure integration / R52 replacement follow-up — DRAFT (`2026-07-15T13:41:12+02:00`)
+
+- Crash-safe transition persisted: `INGEST -> DRAFT` after premise testing and before any R09 operational-row change, Round failure closure, Convergence append, R52 allocation, or replacement-control construction. Pre-transition identities are Round Log 5,498 lines / 998,308 bytes / `cdb87d261be92f838e1fd2b2afd39f8c0c737bada0daf2252a49afe4422c59ec`; Convergence Report 860 / 124,233 / `8060cdb66df039fcd6d51c6fd1b0ba638fa92986f12df1039f244ce72bec1bbe`; G7_STATE 3,754 / 822,783 / `3f1834b369430edf1c9c6a58858029f17bc1d729dab89b6d223039c99bf9de2c`.
+- The required orientation chain and all 90 reviewer-protocol lines were read. `ALIEN_ARTIFACT.md` and `PROJECT_OVERVIEW.md` remain repository-wide `SOURCE-UNAVAILABLE` inputs, but neither is authority or evidence for this bounded mechanical follow-up.
+- Fixed dispatch chain passes: commit `3c7a470a30ec22c7a22a79b7623d223e143b78fb` is an ancestor of current pushed control `aa80fb601fe52d20eea6433bbc1608650bc75b9b`; the latter commit names only `ledger/RUN_LEDGER.md`. At the dispatch commit, Round is 5,498 / 998,308 / `cdb87d261be92f838e1fd2b2afd39f8c0c737bada0daf2252a49afe4422c59ec`, the plan is 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`, and the marker-bounded R09 control is 10,430 bytes / `12f9b299d5e571ac535107026587c7066b45de6b5fb1796089e56bbfd28cf241`. Current Round and plan reproduce those identities.
+- Fixed root record and stable transcript independently agree. Transcript UUID/path `f69d234b-f78b-482f-bc66-45d56517a43d` is exactly 21 lines / 80,820 bytes / `d78408ff4ce530e1a9c53a6d043f0431906b4ca204778431274030928484afcb`. The delivered message is 10,700 raw content bytes; ordinary newline termination makes the detached task exactly 10,701 bytes / `5e71bc4f38093d1922573ac00582a1a29394f1e0ad1e1ac48e82fc43bee3965f`.
+- Transcript order contains exactly one tool use and one result. The first and only tool is Bash command `git rev-parse HEAD; echo "---"; git log --oneline -3; echo "---status---"; git status --short | head`, before either mandatory read. All assistant events identify `claude-opus-4-8`; the fixed dispatch record attests `xhigh`. Both file-history snapshots have empty tracked-file backups, the sole command is read-only, and no repository write or valid reviewer packet exists. The root interruption follows that result.
+- R09 session `monkeybee-pdf-mass-context-repo--r09`, shell 3342482, and child 3342718 are absent; host zombie count is zero. Therefore R09 is mechanically retainable only as immutable `NOT-RUN · METHOD-CONTROL-SEQUENCING-VIOLATION · TERMINATED`, with zero finding, grade, authority/artifact coverage, marginal result, verdict, curve, route, owner-disposition, or convergence credit.
+- R52 pre-allocation attestation passes: session `monkeybee-pdf-mass-context-repo--r52`, pane `%149` index 1, shell 2552530, sole shell child 2552770, `pane_dead=0`, exact lowercase pane/shell/child cwd, and exact child command `/home/joseph/.local/bin/claude --dangerously-skip-permissions --model claude-opus-4-8 --effort xhigh`. TUI is the untouched welcome screen showing `Opus 4.8 with xhigh effort` and rotating default placeholder `Try "refactor <filepath>"`, with no task history.
+- Pre-mutation allocation independently returns 51 unique rows at 22 Sol / 29 Opus; 19 failed at 6/13; 32 active at 16/16; 18 filed at 9/9 with A=118/B=64/C=22; 14 active-unfiled at 7/7; R09 alone bound-unsent. The exact current R09 row is `[11074,11430)`, 356 bytes / `4b08f688627eb92cfd118474967b303ad99184eaadf576ca6a96407b28b1c125`. The immutable suffix after that row through the old Round EOF is 986,878 bytes / `0134706970327668e82f7d6d6c6cac34bdf0aa9f859360ae0b76604d0c83c34b`.
+- A relocation-independent manifest over all 18 filed reviewer-packet spans, each bounded by its exact heading and termination/next-heading marker, is 2,853 manifest bytes / `414f2ccd0b296af6bd2180b2e564e33f78f16533fc60d050da1687f988dfcf88`. The corresponding 29 prior assignment/control spans are 6,164 manifest bytes / `c1db5a9e164938044f4988a56deea337528b810175d7a84d70dfcd787fe7b1bb`. R09 is explicitly `[987878,998308)`, 92 lines / 10,430 bytes / `12f9b299d5e571ac535107026587c7066b45de6b5fb1796089e56bbfd28cf241`; separator-inclusive `[987877,998308)` is 10,431 bytes / `5e729b5a9274e5a9baf79b05cffbc827a01474f0239daf78b85d6062e0855462`. One attempted Ruby manifest invocation failed because Ruby is absent and receives zero credit; the displayed roots are from the successful read-only Perl rerun.
+- DRAFT mutation order is bounded: first replace only the R09 operational row and append zero-credit Round/Convergence closures; next reattest R52 and separately persist one `ALLOCATED · UNSENT` R52 row for the same planned slot; only then replace that row with `BOUND-UNSENT` while appending one self-contained R52 control at actual Round EOF. R10 remains untouched. No task or control byte will be sent.
+
+**G7 R09/R52 follow-up FSM state: `DRAFT` (failure premises accepted; bounded integration and replacement construction authorized).**
+
+### DRAFT checkpoint — R09 immutable zero-credit closure (`2026-07-15T13:42:50+02:00`)
+
+- Exactly one operational row changed: R09 is now `NOT-RUN · METHOD-CONTROL-SEQUENCING-VIOLATION · TERMINATED`; its artifact, sole lens, exact model/effort, grade slots, and original planned route are retained. One evidence-neutral Round closure and one Convergence supersession were appended.
+- Post-integration identities before this checkpoint are Round Log 5,528 lines / 1,001,584 bytes / `88684945f1cd87e91517dddfdd1bf87fcdd92902ef25d4d6cc707712e5d1b2d6`; Convergence Report 872 / 126,120 / `f551c9cf31b0c610f7bcc3ee4fbfc642c90cb46ed65b7697765dbbd3a6ff586d`; G7_STATE 3,769 / 827,945 / `827f174d9cdea9672844aa5b619c571026b0755e9887c9da523401e7a6100784`.
+- Intermediate arithmetic reruns exactly: 51 rows at 22 Sol / 29 Opus; 20 failed at 6/14; 31 active at 16/15; 18 filed at 9/9 and A=118/B=64/C=22; 13 active-unfiled at 7/6; zero bound. This deliberate one-row deficit exists only until the separately persisted one-for-one replacement allocation.
+- The 18-packet relocation-independent manifest remains `414f2ccd0b296af6bd2180b2e564e33f78f16533fc60d050da1687f988dfcf88`; the 29-control manifest remains `c1db5a9e164938044f4988a56deea337528b810175d7a84d70dfcd787fe7b1bb`. No prior packet/control byte changed.
+- R09 control relocated by the operational-row expansion to `[988152,998582)` but remains exactly 92 lines / 10,430 bytes / `12f9b299d5e571ac535107026587c7066b45de6b5fb1796089e56bbfd28cf241`. Its historical anchor is no longer EOF by design; the literal anchor itself is unchanged.
+- Fixed-base numstat at this checkpoint is Round 31 additions / 1 deletion, Convergence 12 / 0, and G7_STATE 34 / 0. `git diff --check` is silent. No reviewer contact, process input, dispatch, R52 allocation, R10 mutation, stage, commit, push, fetch, browse, or external action occurred.
+
+**G7 R09/R52 follow-up FSM state: `DRAFT` (R09 closure persisted; R52 not yet allocated).**
+
+### DRAFT checkpoint — R52 `ALLOCATED-UNSENT` (`2026-07-15T13:43:49+02:00`)
+
+- Immediate pre-allocation reattestation reproduced R52 session `monkeybee-pdf-mass-context-repo--r52`, pane `%149` index 1, shell 2552530, sole child 2552770, `pane_dead=0`, exact lowercase pane/shell/child cwd, exact Opus 4.8/xhigh command, untouched welcome TUI, rotating default placeholder, and no task history. Plan identity remained `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`.
+- Before the allocation patch, R52 had zero rows, control headings, and final anchors. The separate patch appended exactly one R52 replacement-allocation section and one row at `ALLOCATED · UNSENT`, plus an allocation-only Convergence entry. It constructed no reviewer control and changed no existing operational row.
+- Post-allocation identities before this checkpoint are Round Log 5,542 lines / 1,003,821 bytes / `c1e9fdc94cb1733f9b555a39b27a370680a0737533ceb050c5a0227b986b4849`; Convergence Report 880 / 127,066 / `75f80d379c99c58023bdc3b5545b86c71cc2ae1e2f3f6c830d6ef6b3aca9db2e`; G7_STATE 3,780 / 829,918 / `b2f1c76a9462944a610e24ad809e57ef12897d5444b2090f43cabef4ce893eb5`.
+- Allocation rerun returns 52 unique rows at 22 Sol / 30 Opus; 20 failed at 6/14; 32 active at 16/16; 18 filed at 9/9 with A=118/B=64/C=22; 14 active-unfiled at 7/7; zero bound. R52 adds no second planned slot and no reviewer evidence. R10 remains `PRECOMMITTED`.
+- Fixed-base numstat is Round 45 additions / 1 deletion, Convergence 20 / 0, and G7_STATE 45 / 0; `git diff --check` remains silent. No task, control, prompt, context, authority, artifact, or anchor byte was sent; no reviewer/owner/process contact or external action occurred.
+- The next and only Round construction mutation replaces the exact R52 allocation row with its `BOUND-UNSENT` successor and appends one R52 reviewer control at actual EOF. No later DRAFT Round append is authorized unless SELF-CHECK finds a defect and first enters persisted `REVISE`.
+
+**G7 R09/R52 follow-up FSM state: `DRAFT` (R52 allocated-unsent; control construction next).**
+
+### DRAFT checkpoint — R52 `BOUND-UNSENT` control sealed (`2026-07-15T13:45:33+02:00`)
+
+- The one construction patch replaced only the R52 allocation row with its `BOUND-UNSENT` successor and appended one R52 reviewer control at Round EOF. It changed no R09 byte, no other operational row, and no prior packet/control byte. R10 remains `PRECOMMITTED`.
+- Post-construction identities before this checkpoint are Round Log 5,637 lines / 1,014,543 bytes / `34f74776550921a7870d4c706d11e2b93696b6d279b774d7ffe5960fd5087364`; Convergence Report 880 / 127,066 / `75f80d379c99c58023bdc3b5545b86c71cc2ae1e2f3f6c830d6ef6b3aca9db2e`; G7_STATE 3,791 / 832,010 / `133a7e503c8ddb6dcb178e0c03a67cc601b3d68ee34d025fb3fcf708097aa786`.
+- R52 heading-to-EOF is `[1003884,1014543)`, 94 lines / 10,659 bytes / `39dfad9be83e1f157022af369bc5cdaa4045017f872e2c0cda8cc7febb181cc6`. The separator-inclusive control is `[1003883,1014543)`, 95 / 10,660 / `a6aeaef1bcbb03b84c977ebed3b33165194405a987f019370bda61ed5b6c601f`. Exactly one control heading, schema-example packet heading, allocation row, and final literal anchor exist; the anchor ends at actual EOF and Round's final bytes are `2a 0a`.
+- Control inspection confirms mandatory full AGENTS Tool 1, full reviewer-protocol Tool 2, fail-closed sequencing, compaction reread law, exact declared authority selections, artifact lines 1–3655, sole lens, A/B/C packet schema, blind freshness, plan-space/no-action boundary, one structured anchored Edit, and exact standalone `TERMINATED` response. It contains no prior round ID/result, disposition arithmetic, convergence verdict, G3 checkpoint path/body, or unrelated outcome.
+- Relocation-independent historical protection remains exact after construction: 18 prior packet spans / manifest root `414f2ccd0b296af6bd2180b2e564e33f78f16533fc60d050da1687f988dfcf88`; 29 prior control spans / `c1db5a9e164938044f4988a56deea337528b810175d7a84d70dfcd787fe7b1bb`. The historical 10,430-byte R09 control still hashes to `12f9b299d5e571ac535107026587c7066b45de6b5fb1796089e56bbfd28cf241` through its literal anchor.
+- Required post-construction R52 reattestation passes: exact session, pane `%149`, index 1, shell 2552530, sole child 2552770, `pane_dead=0`, exact lowercase pane/shell/child cwd, exact Opus 4.8/xhigh command and TUI, rotating default placeholder, and no task history.
+- Expected terminal arithmetic is now structurally present: 52 unique rows at 22 Sol / 30 Opus; 20 failed at 6/14; 32 active at 16/16; 18 filed at 9/9 with A=118/B=64/C=22; 14 active-unfiled at 7/7; R52 sole bound-unsent. It receives terminal credit only after a fresh SELF-CHECK from disk.
+- No task, prompt, prefix, context, authority, artifact, control, finding, or anchor byte was sent. No pane input, reviewer/owner/process contact, dispatch, stage, commit, push, fetch, browse, or external action occurred. No later DRAFT Round append is authorized.
+
+**Integration-control state: `BOUND-UNSENT`.**
+
+**G7 R09/R52 follow-up FSM state: `DRAFT` (construction persisted; fresh SELF-CHECK required).**
+
+## R09 failure integration / R52 replacement follow-up — SELF-CHECK (`2026-07-15T13:46:04+02:00`)
+
+- Crash-safe transition persisted: `DRAFT -> SELF-CHECK` after R09 zero-credit integration, separate R52 allocation, sealed EOF control construction, Convergence updates, and post-construction R52 reattestation.
+- Pre-transition identities are Round Log 5,637 lines / 1,014,543 bytes / `34f74776550921a7870d4c706d11e2b93696b6d279b774d7ffe5960fd5087364`; Convergence Report 892 / 128,865 / `404a5a0306f94fb19174e72ce63bd63d5d839ac246956ac33d0cd370dc6caff7`; G7_STATE 3,806 / 835,068 / `3519c9e8e5aa7b3562cf201e4fe4ce41c62ddf6d2089915fd9de41129874ff84`.
+- The fresh pass now independently reruns fixed refs and path-scoped diff/index/untracked gates; exact R09 root/transcript/tool/write/process facts; 52-row allocation and curve arithmetic; all prior packet/control seals; R09 and R52 marker-bounded controls; R52 schema, blind-content, one-lens, EOF, and no-send laws; UTF-8/LF/CR/whitespace/conflict health; added-line claim vocabulary, URL, and prohibited-source guards; exact plan/protocol identities; and live R52 session/process/TUI state.
+- No whole-worktree cleanliness predicate is authorized. Every path outside the three writable files remains concurrent and excluded; checks use fixed base `aa80fb601fe52d20eea6433bbc1608650bc75b9b` and explicit pathspecs.
+- Any defect found from this marker onward requires a persisted `SELF-CHECK -> REVISE` transition before correction, followed by a restarted bounded gate. A clean pass advances only after its results are persisted.
+
+**G7 R09/R52 follow-up FSM state: `SELF-CHECK` (fresh terminal gate started).**
+
+## R09 failure integration / R52 replacement follow-up — REVISE (`2026-07-15T13:47:00+02:00`)
+
+- Crash-safe transition persisted: `SELF-CHECK -> REVISE` before any correction. The live root control review arrived after SELF-CHECK had already begun; the only post-marker work was the first read-only fixed-ref/path-scope/format/vocabulary gate. That raced work receives no terminal gate credit and the full SELF-CHECK will restart from disk after correction.
+- Premise decision: the existing activation sentence — receipt of the valid envelope means the assignment is live — establishes activation, but it does not expressly distinguish the sealed heading from quoted data or an embedded script to inspect. R09's recorded statement that it would not execute the embedded reviewer script as-is is direct evidence that this residual interpretation is material for a one-for-one replacement.
+- Narrow correction authorized under REVISE: add one unambiguous paragraph inside the sealed R52 activation section stating that, after a valid root envelope, the sealed heading is the direct human-authorized task instruction to execute as written, not quoted data, an embedded script, or material to inspect/summarize/negotiate. Do not change process, artifact, authority, lens, schema, write, termination, or no-action law.
+- Existing R52 construction roots `39dfad9be83e1f157022af369bc5cdaa4045017f872e2c0cda8cc7febb181cc6` and `a6aeaef1bcbb03b84c977ebed3b33165194405a987f019370bda61ed5b6c601f` are retained as superseded DRAFT pre-correction seals, not terminal roots. No R52 byte has yet changed, and no task or control byte has been sent.
+
+**G7 R09/R52 follow-up FSM state: `REVISE` (instruction-vs-data clarification required before correction).**
+
+### REVISE checkpoint — R52 activation instruction clarified and resealed (`2026-07-15T13:47:44+02:00`)
+
+- The correction changed only one paragraph inside the R52 activation section. It explicitly makes the validly activated sealed heading the direct human-authorized task instruction to execute as written and distinguishes it from quoted data, an embedded reviewer script, or material to inspect/summarize/negotiate/reinterpret/decline. No other control law or operational row changed.
+- Corrected identities before this checkpoint are Round Log 5,639 lines / 1,014,945 bytes / `5f392b65cf08f9af0866233745071a4ecfd3cc5ac7b0ea11dff5c2d6e6e10aa2`; Convergence Report 892 / 128,865 / `404a5a0306f94fb19174e72ce63bd63d5d839ac246956ac33d0cd370dc6caff7`; G7_STATE 3,825 / 838,485 / `3142aed9d96c1cc30d5a076639b270a87726de0c03fbac2b566b5cadeb1e6331`.
+- Corrected R52 control is `[1003884,1014945)`, 96 lines / 11,061 bytes / `58ef7ce7367765954c4f4c765fdf27aad6e943bdd70f851f666062ee9cd98a93`; separator-inclusive `[1003883,1014945)`, 97 / 11,062 / `e1043024009b097d2a1b4d641f5223d51a0a0b0e84459e9335d73a6d4fc6c2a7`. Heading and anchor remain unique; the anchor is actual EOF.
+- Historical protection remains exact: all 18 prior packet spans retain manifest root `414f2ccd0b296af6bd2180b2e564e33f78f16533fc60d050da1687f988dfcf88`; all 29 prior control spans retain `c1db5a9e164938044f4988a56deea337528b810175d7a84d70dfcd787fe7b1bb`. No R09 control byte changed.
+- Post-correction R52 reattestation again passes every session/pane/PID/dead-state/cwd/command/TUI/default-placeholder/no-history gate. No task, prompt, context, authority, artifact, control, or anchor byte was sent, and no reviewer/owner/process was contacted.
+- The raced initial SELF-CHECK remains zero-credit in full. REVISE output is now ready for a wholly new `SELF-CHECK`; no verification result from before correction will be carried forward.
+
+**G7 R09/R52 follow-up FSM state: `REVISE` (narrow correction persisted; fresh SELF-CHECK required).**
+
+## R09 failure integration / R52 replacement follow-up — SELF-CHECK restart (`2026-07-15T13:48:12+02:00`)
+
+- Crash-safe transition persisted: `REVISE -> SELF-CHECK` after the activation instruction clarification, corrected control reseal, Convergence supersession, and post-correction R52 reattestation.
+- Corrected pre-transition identities are Round Log 5,639 lines / 1,014,945 bytes / `5f392b65cf08f9af0866233745071a4ecfd3cc5ac7b0ea11dff5c2d6e6e10aa2`; Convergence Report 900 / 130,373 / `b2e5d4db076fe881afbcc96e982d0029d22379e7c2ebca9b947003c42adf3dd3`; G7_STATE 3,836 / 840,500 / `7accb081044a900c6b410377857667ea1a4f87e5712f08272d77994f55b1b0a1`.
+- This is a wholly new gate. It carries no result from the raced pre-correction pass and reruns every fixed-ref, failure-transcript, allocation, protected-slice, control-schema, activation-instruction, process/TUI, format, vocabulary, path-scope, index/untracked, and no-contact check from current disk bytes.
+- Any defect found from this restart marker requires another persisted `SELF-CHECK -> REVISE` transition before correction. A clean pass advances only after its results are persisted.
+
+**G7 R09/R52 follow-up FSM state: `SELF-CHECK` (fresh post-REVISE terminal gate started).**
+
+## R09 failure integration / R52 replacement follow-up — SELF-CHECK-RESULT (`2026-07-15T13:50:33+02:00`)
+
+- The wholly new post-REVISE pass succeeds from current disk bytes. Pre-result identities are Round Log 5,639 lines / 1,014,945 bytes / `5f392b65cf08f9af0866233745071a4ecfd3cc5ac7b0ea11dff5c2d6e6e10aa2`; Convergence Report 900 / 130,373 / `b2e5d4db076fe881afbcc96e982d0029d22379e7c2ebca9b947003c42adf3dd3`; G7_STATE 3,845 / 841,744 / `b5b8ec819e259bcf60f28f8e389d1e7571a215eaad7f3c0edd6b7feadaff5a9d`.
+- Control refs pass: branch `main`; HEAD == local `origin/main` == `aa80fb601fe52d20eea6433bbc1608650bc75b9b`; dispatch commit `3c7a470a30ec22c7a22a79b7623d223e143b78fb` is an ancestor. At that commit, Round is 5,498 / 998,308 / `cdb87d261be92f838e1fd2b2afd39f8c0c737bada0daf2252a49afe4422c59ec` and plan is 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`. Current plan retains that identity; reviewer protocol remains 90 / 4,942 / `e525a0e35fb703152d44d63d5f6874d48907d2b87e528e3f9f99dbd93baa33c3`.
+- Fixed-base diff uses only the three writable pathspecs and reports Round 142 additions / 1 deletion, Convergence 40 / 0, and G7_STATE 110 / 0 before this result. Hunk counts are 2/1/1. The sole deletion is the former R09 operational row; all other changes are its replacement plus append-only evidence and the R52 row/control. Allowed-path index and untracked outputs are empty; `git diff --check` is silent.
+- All three writable files decode as UTF-8, end in LF, and contain no CR byte, trailing horizontal whitespace, or conflict marker. Owner-added-line scans return no Rule-13 token, URL, or prohibited processor name.
+- R09 transcript and termination rerun pass: exact 21 / 80,820 / `d78408ff4ce530e1a9c53a6d043f0431906b4ca204778431274030928484afcb`; newline-terminated detached task 10,701 / `5e71bc4f38093d1922573ac00582a1a29394f1e0ad1e1ac48e82fc43bee3965f`; one Bash tool use and one result; exact forbidden first command; two empty file-history backups; zero Edit/Write tool; assistant model `claude-opus-4-8`. Fixed root evidence supplies `xhigh`. R09 session/PIDs are absent and host zombies are zero.
+- Allocation rerun returns 52 unique rows at 22 Sol / 30 Opus; 20 failed at 6/14; 32 active at 16/16; 18 filed at 9/9 with A=118/B=64/C=22; 14 active-unfiled at 7/7; exactly one bound-unsent ID, R52. R09 has em-dash grade/marginal slots and exact terminal zero-credit status; R52 has em-dash grade/marginal slots and `BOUND-UNSENT`; R10 remains `PRECOMMITTED`.
+- Fixed-base byte preservation is independently stronger than the per-marker check: Round prefix `[0,11074)` remains `e468bcc2b7efe8c5492ae2033c40e587eab3c7bfb1b1077abcc7c0eca4505e58`; after the sole replacement row, the next 986,878 bytes reproduce the entire old suffix with `0134706970327668e82f7d6d6c6cac34bdf0aa9f859360ae0b76604d0c83c34b`. The 18 prior reviewer-packet manifest remains `414f2ccd0b296af6bd2180b2e564e33f78f16533fc60d050da1687f988dfcf88`; the 29 prior-control manifest remains `c1db5a9e164938044f4988a56deea337528b810175d7a84d70dfcd787fe7b1bb`.
+- Historical R09 control is now `[988152,998582)`, 92 lines / 10,430 bytes / `12f9b299d5e571ac535107026587c7066b45de6b5fb1796089e56bbfd28cf241`; separator-inclusive 10,431 / `5e729b5a9274e5a9baf79b05cffbc827a01474f0239daf78b85d6062e0855462`. It no longer reaches EOF, as intended, but every marker-bounded byte is unchanged.
+- Corrected R52 control is `[1003884,1014945)`, 96 lines / 11,061 bytes / `58ef7ce7367765954c4f4c765fdf27aad6e943bdd70f851f666062ee9cd98a93`; separator-inclusive `[1003883,1014945)`, 97 / 11,062 / `e1043024009b097d2a1b4d641f5223d51a0a0b0e84459e9335d73a6d4fc6c2a7`. One heading, schema-example heading, row, and final anchor exist; the anchor is actual EOF.
+- R52 control content passes: the sealed heading is expressly the direct human-authorized task instruction rather than quoted/embedded data; mandatory Tool 1 full AGENTS and Tool 2 full protocol; fail-closed sequencing; compaction reread; five exact authority selections; artifact lines 1–3655; sole lens; fresh-context/no-action boundary; A/B/C packet schema; one structured anchored Edit; exact standalone `TERMINATED`. No actual prior round/result ID, disposition arithmetic, convergence verdict, G3 checkpoint path/body, or unrelated outcome appears.
+- Live R52 reattestation passes at the terminal gate: session `monkeybee-pdf-mass-context-repo--r52`, pane `%149` index 1, shell 2552530, sole child 2552770, `pane_dead=0`, exact lowercase pane/shell/child cwd, exact Claude Opus 4.8/xhigh command and TUI, rotating default placeholder, and no task history.
+- Curve rerun remains R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24, all non-marginal; Constitution remains R14=15 non-marginal -> R15=21 non-marginal -> R51=0 marginal-only. R09 and unfiled R52 add no point. No consecutive-marginal condition exists; convergence remains `NOT ESTABLISHED`.
+- No task, prompt, prefix, context, authority, artifact, control, finding, or anchor byte was sent to R52. No pane input, reviewer/owner/process contact, dispatch, R10 mutation, stage, commit, push, fetch, browse, or external action occurred.
+
+No content or state defect remains. `REVISE` is not re-entered; the bounded evidence is ready for the internal `SUBMIT-FOR-REVIEW` checkpoint.
+
+**G7 R09/R52 follow-up FSM state: `SELF-CHECK` (fresh post-REVISE pass succeeded; ready for `SUBMIT-FOR-REVIEW`).**
+
+## R09 failure integration / R52 replacement follow-up — SUBMIT-FOR-REVIEW (`2026-07-15T13:51:17+02:00`)
+
+- Crash-safe transition persisted: `SELF-CHECK -> SUBMIT-FOR-REVIEW` after the wholly new post-REVISE pass and a post-result UTF-8/LF/diff/vocabulary/path-scope check.
+- Submission preimage is Round Log 5,639 lines / 1,014,945 bytes / `5f392b65cf08f9af0866233745071a4ecfd3cc5ac7b0ea11dff5c2d6e6e10aa2`; Convergence Report 900 / 130,373 / `b2e5d4db076fe881afbcc96e982d0029d22379e7c2ebca9b947003c42adf3dd3`; G7_STATE 3,865 / 847,172 / `b54f0dc2942f58dca80bce90f1009eeec90f600e1c9573d292e61851a6ad856d`.
+- Bounded submission content is the immutable R09 zero-credit failure integration, stable transcript/process proof, preserved historical packets/controls, one-for-one R52 allocation, corrected sealed R52 control, exact arithmetic/convergence evidence, and the recorded `REVISE` clarification that makes the validly activated heading a direct human-authorized task instruction rather than quoted data.
+- R52 remains the sole `BOUND-UNSENT` row. This state name is not an activation: no detached envelope, task, prompt, prefix, control, context, authority, artifact, finding, or anchor byte is sent; no pane input or reviewer/owner/process contact occurs.
+- Any newly found content defect requires a persisted `SUBMIT-FOR-REVIEW -> REVISE` transition before correction and a restarted bounded gate. A clean handoff check advances to `DONE/HANDOFF`; root alone may later commit/push, revalidate, build the detached activation, and send it.
+
+**G7 R09/R52 follow-up FSM state: `SUBMIT-FOR-REVIEW` (internal checkpoint persisted; R52 remains unsent).**
+
+## R09 failure integration / R52 replacement follow-up — DONE/HANDOFF (`2026-07-15T13:51:54+02:00`)
+
+### Bounded handoff gate
+
+- Crash-safe transition persisted: `SUBMIT-FOR-REVIEW -> DONE/HANDOFF` only after the internal submission marker and a new read-only handoff gate. The bounded path was `INGEST -> DRAFT -> SELF-CHECK -> REVISE -> SELF-CHECK -> SUBMIT-FOR-REVIEW -> DONE/HANDOFF`; the first SELF-CHECK was zero-credited after the root clarification and rerun wholly from disk.
+- Terminal Round Log identity is 5,639 lines / 1,014,945 bytes / `5f392b65cf08f9af0866233745071a4ecfd3cc5ac7b0ea11dff5c2d6e6e10aa2`. Terminal Convergence Report identity is 900 / 130,373 / `b2e5d4db076fe881afbcc96e982d0029d22379e7c2ebca9b947003c42adf3dd3`. This checkpoint's exact pre-transition identity is 3,875 / 848,829 / `5a1aca80d93b342fa554431262a4913496f33cdf27c8692ea3ede6cd26d73aff`; its whole-file terminal identity is sampled after this append and emitted in the external handoff without another write.
+- HEAD == local `origin/main` remains `aa80fb601fe52d20eea6433bbc1608650bc75b9b`. Final pre-transition fixed-base/path-scoped numstat is Round 142 additions / 1 deletion, Convergence 40 / 0, and G7_STATE 140 / 0. The sole deletion is the old R09 operational row. Allowed-path index and untracked outputs are empty; diff/UTF-8/LF/CR/whitespace/conflict and added-line vocabulary/source guards pass.
+- R09 is immutable `NOT-RUN · METHOD-CONTROL-SEQUENCING-VIOLATION · TERMINATED` with zero finding, grade, coverage, marginal result, verdict, route, curve point, owner disposition, or convergence credit. Exact transcript, detached-task, first-tool, empty-backup, zero-write, interruption, session/PID-absence, and zero-zombie evidence remains in the fresh SELF-CHECK result.
+- Every historical reviewer/control byte is protected twice: fixed-base prefix/suffix replay passes, and the relocation-independent 18-packet / 29-control manifest roots remain `414f2ccd0b296af6bd2180b2e564e33f78f16533fc60d050da1687f988dfcf88` / `c1db5a9e164938044f4988a56deea337528b810175d7a84d70dfcd787fe7b1bb`. R09 control remains 10,430 bytes / `12f9b299d5e571ac535107026587c7066b45de6b5fb1796089e56bbfd28cf241` through its literal anchor.
+- R52 is the sole `BOUND-UNSENT` row. Corrected control is `[1003884,1014945)`, 96 lines / 11,061 bytes / `58ef7ce7367765954c4f4c765fdf27aad6e943bdd70f851f666062ee9cd98a93`; separator-inclusive `[1003883,1014945)`, 97 / 11,062 / `e1043024009b097d2a1b4d641f5223d51a0a0b0e84459e9335d73a6d4fc6c2a7`. Its heading and anchor are unique, the anchor is actual EOF, and one paragraph expressly identifies a validly activated heading as the direct human-authorized task instruction rather than quoted/embedded data.
+- Terminal allocation is 52 unique rows at 22 Sol / 30 Opus; 20 failed at 6/14; 32 active at 16/16; 18 filed at 9/9 with A=118/B=64/C=22; 14 active-unfiled at 7/7; R52 sole bound-unsent. R10 remains untouched `PRECOMMITTED`.
+- Final live reattestation still reproduces R52 session `monkeybee-pdf-mass-context-repo--r52`, pane `%149` index 1, shell 2552530, sole child 2552770, `pane_dead=0`, exact lowercase pane/shell/child cwd, exact Claude Opus 4.8/xhigh command and TUI, rotating default placeholder, and no task history.
+- The five-pass-A sequence remains 16 -> 32 -> 7 -> 1 -> 24, all non-marginal. Constitution remains 15 non-marginal -> 21 non-marginal -> 0 marginal-only. R09 and unfiled R52 add no point. Convergence remains `NOT ESTABLISHED`.
+
+### Terminal disposition
+
+Retain the R09 zero-credit row/closures, one-for-one R52 allocation, corrected sealed R52 control, Convergence supersessions, and append-only G7 FSM evidence. Root alone may commit and push these three documents, reproduce their terminal roots, reattest R52, construct the detached activation, and send it.
+
+No task, prompt, prefix, context, authority, artifact, control, finding, or anchor byte was sent to R52. No pane input, reviewer/owner/process contact, dispatch, R10 bind, stage, commit, push, fetch, browse, or external action occurred. G7 stops idle; no further reviewer is bound in this turn.
+
+**Integration-control state: `BOUND-UNSENT`.**
+
+**G7 R09/R52 follow-up FSM state: `DONE/HANDOFF` (terminal disk state persisted; R52 unsent).**
