@@ -212,7 +212,7 @@ R41 is the sole one-for-one replacement for immutable failed round R40, which re
 
 | Round | Artifact | Declared lens (exactly one) | Model | Precondition to admit | Artifact hash | Status | A | B | C | Marginal-only | Owner disposition |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| R41 | C1 delta plan (R40 replacement for R39/R06) | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | R40 closed `NOT-RUN · WRAPPER-SYNTAX-FAILURE · TERMINATED`; pushed G3 plan and checkpoint declare `SUBMIT-FOR-REVIEW`; original pass 3/5 payload unchanged | `e0cb3ea2947604447444558f40dae5e57fd61edd53c47ed46e787266faf3501b` | BOUND-UNSENT | — | — | — | — | Bound only to the untouched R41 identity and exact wrapper-repaired control below; one-for-one R40/R39/R06 replacement with zero findings, grades, coverage, verdict, route, or conclusion; no task sent. |
+| R41 | C1 delta plan (R40 replacement for R39/R06) | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | R40 closed `NOT-RUN · WRAPPER-SYNTAX-FAILURE · TERMINATED`; pushed G3 plan and checkpoint declare `SUBMIT-FOR-REVIEW`; original pass 3/5 payload unchanged | `e0cb3ea2947604447444558f40dae5e57fd61edd53c47ed46e787266faf3501b` | FILED · VALIDATED · TERMINATED | 4 | 3 | 0 | NO | ROUTED → G3 for independent premise testing of R41-A01–A04 and R41-B01–B03; grades unpromoted. R07 blocked pending a revised G3 `SUBMIT-FOR-REVIEW` hash. |
 
 ### R31 — notes on admission and reading
 
@@ -3905,3 +3905,103 @@ Each finding heading is monotonic `R41-A01`, `R41-B01`, or `R41-C01` within its 
 **Blind sole-write and exit law.** `gauntlet/ROUND_LOG.md` is closed. R41 may not read, search, hash, count, or otherwise ingest any prior Round Log byte. Root must supply the then-current full EOF paragraph literally. R41 may make no repository write except scheduled call 101's structured `apply_patch` append to this Round Log using that paragraph unchanged. No shell redirection, `tee`, scratch path, Edit/Write operation, artifact mutation, or second write is permitted. After the append flushes, the reviewer response must be the exact standalone token `TERMINATED`, with no punctuation, style, prefix, suffix, or later tool call; the model process and idle pane shell must then exit. Root handles process verification separately.
 
 **R41 BOUND-UNSENT EOF write law.** Owner FSM remains `DRAFT`. R41 is the sole `BOUND-UNSENT` row, is zero findings/grades/coverage/verdict/conclusion before filing, and is bound only to the exact identity, artifact, sole lens, authority, exact wrapper grammar, 101-call schedule, freshness, output-capacity, and blind-write controls above. Every earlier reviewer packet and owner closure is sealed; no other round is allocated or bound. **No task has been sent to R41. Root may commit and push this three-file control group; only after the pushed dispatch commit and every bound identity are revalidated may root deliver this control and this full paragraph as the unique true-EOF anchor.**
+
+## R41 — plans/CYCLE_1_DELTA_PLAN.md — oversimplification-and-feature-loss
+
+- reviewer process: session monkeybee-pdf-mass-context-repo--r41; pane %133; pane shell PID 864387; reviewer child PID 864611; monitor PID 864483; exact cwd /home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo; coordinates carried as provenance only
+- model identity: gpt-5.6-sol; reasoning effort ultra; live fast; priority service; pre-bind evidence carried as immutable provenance only, with no process inspection or action
+- started / filed: 2026-07-15T03:49:52+02:00 / 2026-07-15T03:55:07+02:00
+- dispatch commit: e6d4b3c1742e236898bec4b4e60860726c2f1478
+- artifact binding: e84e372a:plans/CYCLE_1_DELTA_PLAN.md; 3,542 lines; 479,366 bytes; SHA-256 e0cb3ea2947604447444558f40dae5e57fd61edd53c47ed46e787266faf3501b
+- authority chain read: AGENTS.md in full; ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md in full; OVERNIGHT_GOAL.md §1 and §§3–4; MONKEYBEE_CAMPAIGN_CHARTER_v1.md §1, §§3–6, and §§8–11; CYCLE_0_WORK_ORDER.md §0, §3, and §§6–8; CAMPAIGN_CHARTER_REASONING.md §§3–8; MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md §§3–6, §§10–16.6, §§25–30.11, and §§33–35; plans/CYCLE_1_DELTA_PLAN.md in full after identity verification
+- freshness / exclusions: stateless fresh-context review; no prior finding, packet, disposition, convergence statement, owner decision, recovery event, owner checkpoint, Round Log content, session history, or unrelated artifact was read, searched, reconstructed, or used as an allegation or lead; the root-supplied paragraph above was used only as the blind EOF write anchor
+- review lens: oversimplification-and-feature-loss only; five passes applied with the exact prompt: Find every concrete place this artifact oversimplifies, loses a required feature, collapses an envelope without preserving dependencies, or makes an implementation-relevant assertion without its required evidence interface. DO NOT LOSE FEATURES. I am positive you missed at least 80 elements. Report only evidence-backed findings under this lens; do not rewrite the artifact.
+- reviewer FSM: SPAWNED -> INGEST-DECLARED-CHAIN -> APPLY-ONE-LENS -> FILE-GRADED-FINDINGS -> TERMINATED
+- counts: A=4; B=3; C=0
+- marginal-only: NO
+- filing status: allegations pending G7 mechanical integration and G3 premise testing
+- no-action statement: no external source, web, prohibited processor material, comparator, measurement, SpecCard semantic body, skill, subagent, process control, owner contact, artifact edit, commit, push, publication, or external action was used; apart from this authorized Round Log append, no repository file was changed
+
+### R41-A01 — The self-contained encrypted-object-stream slice collapses terminal outcomes
+
+- evidence: In §9.6 step 14, a downstream failure “or cancellation” aborts output and “records Refused”; the same slice then lists “indeterminate transaction state” among required refusals.
+- requirement: Artifact §0.3, C1.CC.FDN.006@1, and C1.CC.FLT.002@1 keep epistemic Refused separate from operation-terminal Cancelled and Indeterminate and from publication state; Rev 7 P17 and §11.5 impose the same distinction.
+- consequence: A fresh implementer following the advertised self-contained slice can serialize cancellation or uncertain commit visibility as refusal, losing the retry, replay, cleanup, and publication facts needed to decide whether work or effects may safely recur.
+- repair boundary: Amend only §9.6 step 14 and its required-refusals list so downstream error/refusal, Cancelled, and Indeterminate remain separate terminal branches, with abort used only while state is private and provably abortable.
+- loss guard: Preserve value-less refusal for actual unsupported or policy cases, exact causal errors, private-output cleanup accounting, indeterminate visibility, and the rule that no partial decoded artifact becomes cache-visible.
+
+### R41-A02 — Final revision-graph identity imports selected-view and task-policy state
+
+- evidence: C1.CC.DOC.010@1 defines DocumentViewBasisId around one selected strict chain or recovery-hypothesis basis; C1.CC.REV.006@1 consumes that basis; C1.CC.REV.009@1 hashes object-stream sets keyed by view basis into RevisionGraphId; §9.6 step 6 finalizes a corresponding graph per basis. REV.009 also absorbs PreservationOverlayId even though C1.CC.BYT.005@1 permits carry/drop intent in that overlay.
+- requirement: Rev 7 §12.6 requires RevisionGraphId to contain no caller/task-selected effective chain because selection belongs to DocumentViewId; the artifact's own REV.004 and DOC.010 no-claim boundaries preserve that graph/view distinction.
+- consequence: Two task selections or recovery bases over the same discovery can mint different history roots, while future carry/drop policy can also perturb the graph. Reports, caches, signature/history anchors, and comparisons can no longer refer to one selection-neutral discovery graph with several views.
+- repair boundary: Keep RevisionGraphId graph-neutral: either include every admitted object-stream/history overlay under source/base-graph and revision-specific context without a selected basis, or keep view-specific decoded-member overlays outside RevisionGraphId; separate preservation/history facts from any carry/drop intent before graph finalization.
+- loss guard: Preserve one-time container decryption, virtual-member provenance, overlay availability and uncertainty, immutable supersession links, signature/history facts, and distinct DocumentViewId identities for every selected strict or recovery interpretation.
+
+### R41-A03 — The pre-implementation gate requires evidence that can exist only after implementation
+
+- evidence: Artifact §0.1 records document-only repository reality. C1.CC.FDN.016@1 takes an exact source/build root, feature/dependency graph, committed lockfile, unsafe-site inventory, and executed assurance evidence, while §11.2 says C1 implementation may begin only after the committed lockfile and FDN.016 inventory/capsule evidence exist.
+- requirement: Artifact §12.4 places source creation behind the later human-authorized plan-to-execution conversion, and §11.2 is expressly the gate for beginning that conversion; a self-contained gate must distinguish pre-source policy admission from candidate-bound post-source verification.
+- consequence: No first source tree, manifest, lockfile, build, or FDN.016 audit can be created without violating the gate that requires those same artifacts before implementation begins.
+- repair boundary: Split the row into a pre-implementation bootstrap gate for ratified D7, toolchain roles, edition, deny-unsafe policy, dependency/capsule admission rules, and a post-bootstrap candidate gate for the exact lockfile, source/build inventory, capsule records, and executed assurance.
+- loss guard: Preserve human ratification before source work, deny-unsafe by default, exact feature/target inventory, zero assumed capsules, and fresh build-scoped FDN.016 evidence before product or campaign admission.
+
+### R41-A04 — The foundation budget law deletes contract-declared partial degradation paths
+
+- evidence: C1.CC.FDN.005@1 says a soft limit may return “only” an explicitly caller-permitted partial recovery frontier or validation report, while DOC.005, DOC.008, DOC.009, RPT.001, and the source/interval contracts separately define bounded partial coverage and frontiers for strict inspection and inventory work.
+- requirement: Artifact §0.3 and C1.CC.FDN.010@1 admit Partial as a general scoped outcome; Rev 7 §§10.1 and 11.3 plus P17 require the owning contract to return the typed partial, ambiguous, refused, cancelled, or indeterminate result warranted by its coverage and failure mode.
+- consequence: Implementers can discard useful exact strict-open, source, page-tree, carrier, or report coverage—or mislabel it Refused—merely because the soft-limit foundation contract recognizes only two degraded product shapes.
+- repair boundary: Replace the closed two-result list in FDN.005 with a rule permitting any owning consequence contract's explicitly declared, caller-authorized Partial or degraded outcome, retaining recovery-frontier and validation-report cases as examples.
+- loss guard: Preserve non-resettable accounting, hard-limit preemption, explicit fired-limit evidence, disjoint covered/missing scope, and the prohibition on labeling any degraded result Complete.
+
+### R41-B01 — The CLI checker is semantically coupled to the producer assembler
+
+- evidence: C1.CC.CLI.009@1 declares that mb package check “depends on IMM.013/IMM.014/IMM.016/IMM.020,” although C1.CC.IMM.013@1 accepts raw hostile package bytes and explicitly treats IMM.016 outputs as hostile inputs rather than an implementation prerequisite.
+- requirement: Rev 7 §10.6, §30.9, and Appendix A.13 require the hostile-input checker to remain separately reviewable and able to ingest raw package bytes without trusting or reusing the producer path; artifact IMM.013 encodes that boundary locally.
+- consequence: If producer assembly is blocked, withdrawn, or unavailable, the command surface for the otherwise admitted checker is also blocked; the wrapper therefore loses independent third-party/hostile-package checking and makes the isolation boundary look narrower than the checker contract.
+- repair boundary: Remove IMM.016 from CLI.009's prerequisite edge set and model producer packages as optional interoperability/fuzz inputs; retain schema/protocol compatibility and the applicable IMM.014/IMM.020 lineage ceiling.
+- loss guard: Preserve producer-to-checker round trips, hostile raw-byte admission, no trusted producer objects, independent parser/root construction, exact availability coverage, and downgraded language when final lineage evidence is absent.
+
+### R41-B02 — Structural signature discovery has no path over decoded object-stream members
+
+- evidence: C1.CC.REV.005@1 retains compressed entries only as unresolved locators and defers decoded members to REV.006. C1.CC.REV.008@1 consumes REV.004/REV.005 and pre-graph facts but not REV.006, while REV.009 merely joins the already-finished member and signature overlays; no later signature-candidate pass consumes virtual members.
+- requirement: Rev 7 §16.5 requires the core signature layer to parse signature fields and dictionaries, and §10.6 requires OpenReport to record signatures found; artifact §§1, 8.9 RPT.001, and 11.3 claim structural signature inventory under exact coverage.
+- consequence: If an active reviewed card admits a signature field or dictionary through an object-stream member, C1 can index the member yet omit its structural signature and ByteRange evidence without an explicit unsupported-region record.
+- repair boundary: Premise-test the reviewed signature/object-stream cards, then either add a post-REV.006 virtual-member discovery input to REV.008 before final overlay construction or encode a card-backed exclusion with explicit coverage and report no-claim state.
+- loss guard: Preserve structural-only scope, virtual rather than invented source spans, no CMS/digest/trust inference, bounded candidate scanning, graph-finalization acyclicity, and visibility of unsupported or unavailable member coverage.
+
+### R41-B03 — The C1 assurance gate omits two required dependency-hygiene evidence interfaces
+
+- evidence: In the scheduled full artifact read, §§8.1 FDN.016, 8.10 IMM.007/IMM.011, and 11.3–11.4 cover unsafe inventory, dependency direction, allowlisting, licensing/provenance, Miri, and sanitizers, but define no candidate-bound dependency-advisory or duplicate-version audit outcome; the bounded review vocabulary was “dependency advisory,” “duplicate-version audit,” and “supply-chain lane.”
+- requirement: Rev 7 §27 G6.1 lists dependency advisory, license, provenance, and duplicate-version audits as cross-cutting assurance; C1 already admits generic compression and cryptographic dependencies and makes exact dependency state gate-bearing.
+- consequence: A candidate can satisfy the written product gate with licensed, provenance-recorded, layer-correct dependencies while carrying a known advisory or an unreviewed duplicate-version split that changes the audited runtime surface.
+- repair boundary: Add one candidate/build/lockfile-bound dependency-hygiene result to the existing IMM/FUZ aggregation and product-gate inputs, or explicitly disposition these two G6.1 checks as unavailable and withhold the affected customer-facing admission.
+- loss guard: Preserve symbolic provider selection until human ratification, offline/no-ambient-fetch execution, exact feature/target coverage, historical advisory evidence, license/provenance checks, and no inference that a clean scan proves dependency correctness.
+
+### Round verdict
+
+Owner revision is warranted before plan-to-execution conversion. Four Grade-A findings affect terminal-state law, graph/view identity, bootstrap satisfiability, and partial-outcome preservation. Three Grade-B findings need G3 premise testing on the intended standalone CLI boundary, card legality of signature carriers in object streams, and the C1 timing of the two G6.1 dependency-hygiene checks. The lens is not marginal-only because the confirmed defects can block the first legal implementation step or erase identity and outcome distinctions that downstream reports, caches, replay, and recovery depend on.
+
+- termination state: TERMINATED
+
+## R41 G7 integration closure — filing receipt (2026-07-15)
+
+**Filing receipt.** G7 mechanically received one R41 reviewer packet at the prior true EOF. After the unique allocation-row update, the separator-inclusive reviewer slice is `[720644,734124)`, 78 lines / 13,480 bytes / SHA-256 `87b9329963836d19059f28e7b4597cf399ae70d6dd442fdbee99b4c74812e03d`; heading-to-termination is `[720645,734124)`, 13,479 bytes / `3523937bffc12264963ea02b14842142b70bd5e3d74b7b8a84e3473fd2634641`. Every reviewer byte and the filed grades A=4/B=3/C=0, marginal-only NO are preserved.
+
+**Integration boundary.** The unique R41 allocation row is `FILED · VALIDATION-PENDING · TERMINATED` with the reviewer counts copied mechanically. Findings and grades remain allegations pending G7 validation and independent G3 premise testing; no grade, verdict, artifact disposition, or owner conclusion is promoted by this receipt. Validation, termination confirmation, routing, and convergence integration remain subsequent G7 transitions.
+
+**Owner/control boundary.** Overarching G7 owner FSM remains `DRAFT`. This receipt changes no reviewer packet byte, artifact, other allocation row, root ledger, or external state. R07 remains blocked; G7 has not contacted G3, bound another round, committed, pushed, or dispatched any reviewer.
+
+## R41 G7 mechanical validation, termination, and routing closure (2026-07-15)
+
+**Validation disposition.** The R41 packet is mechanically valid under its sealed one-artifact, one-lens control: one heading; exact process/model/mode/tier, authority, freshness, exclusion, no-action, FSM, count, marginal, verdict, and termination fields; seven unique finding IDs; and one required schema-label set per finding. Filed values remain A=4/B=3/C=0 and marginal-only NO. Mechanical validity does not accept the allegations or promote their grades.
+
+**Termination disposition.** The quarantined transcript has 101 exact calls and outputs, a sole final structured Round Log append, one exact standalone `TERMINATED`, and no later tool. The bound session, pane, shell, child, and monitor are absent; host zombies are zero. No unfiled reasoning is admitted.
+
+**Owner route.** Route R41-A01, R41-A02, R41-A03, R41-A04, R41-B01, R41-B02, and R41-B03 to G3 for independent premise testing against the pushed C1 plan. The grades are evidence labels only and remain unpromoted. G3 must independently accept, reject, narrow, or regrade each allegation before any artifact disposition; G7 performs no artifact edit and has not contacted G3.
+
+**Gate consequence.** R07 remains blocked until G3 revises the C1 delta plan and exposes a new pushed `SUBMIT-FOR-REVIEW` hash. R41 creates no current artifact verdict beyond revision-warranted allegations pending owner adjudication, adds no claim, and authorizes no implementation or external action.
+
+**Accounting.** Immutable allocation remains 41 rows at 20 Sol / 21 Opus; failed IDs remain R06/R23/R24/R34/R35/R36/R37/R39/R40. Excluding failures leaves 32 active planned slots at 16 Sol / 16 Opus. Filed evidence is 15 rounds at 8 Sol / 7 Opus with A=98/B=59/C=19; 17 active-unfiled; zero bound-unsent.
+
+**Control boundary.** Overarching G7 owner FSM remains `DRAFT`. Reviewer bytes and grades are sealed. G7 has not edited the artifact or root ledgers, contacted G3, bound R07, committed, pushed, or dispatched a reviewer.

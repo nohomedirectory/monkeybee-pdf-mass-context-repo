@@ -1777,3 +1777,125 @@ I did not revalidate, re-grade, confirm, refute, promote, demote, or rewrite any
 - Stop idle immediately with no post-seal tool call. Root will independently verify this seal and record any post-seal harness event.
 
 **Recovery-control state: `BOUND-UNSENT`.**
+
+## R41 valid-filing integration checkpoint — INGEST-VERIFIED (2026-07-15)
+
+- Overarching G7 owner FSM remains `DRAFT`. Integration transition persisted separately: `BOUND-UNSENT -> INGEST-VERIFIED`.
+- Pushed provenance reproduces exactly: `HEAD = origin/main = e6d4b3c1742e236898bec4b4e60860726c2f1478`. Before reviewer append, Round Log bytes `[0,720679)` reproduce 3,907 lines / 720,679 bytes / SHA-256 `72f5415ec4c08a7da2525c71bd669c29fba9f12d25ca200b7b6dd7665091eae0`.
+- Current Round Log reproduces 3,985 lines / 734,159 bytes / SHA-256 `4c4407b20983b1933bd06e4abbb676d946db1815294ab7c480b2e5c369189f15`. The separator-inclusive reviewer append `[720679,734159)` is 78 lines / 13,480 bytes / SHA-256 `87b9329963836d19059f28e7b4597cf399ae70d6dd442fdbee99b4c74812e03d`; heading-to-EOF `[720680,734159)` is 13,479 bytes / `3523937bffc12264963ea02b14842142b70bd5e3d74b7b8a84e3473fd2634641`.
+- Convergence Report remains 519 lines / 77,938 bytes / SHA-256 `fdf6ef155843995dcc263b790045db07a0b90bb79837e0f5e245ca91dd8588f3`. G7 checkpoint preimage is 1,779 lines / 385,182 bytes / SHA-256 `7c196678b22711ab1ee7a8309063feb3e89018995ca0b58ac7496ad9c2f01373`; its full final bullet plus state marker was unique at actual EOF.
+- Transcript `/home/joseph/.codex/sessions/2026/07/15/rollout-2026-07-15T03-22-08-019f635d-f082-7570-8f1a-89148aea4904.jsonl` reproduces 459 lines / 1,476,197 bytes / SHA-256 `df69147017265727156accee406ffbe334010877c22caa20ac5b3d1fb501293e`. Its normalized task plus terminal newline is 19,092 bytes / `fb8f9093746482f0446c0f7ba21897dcf03ff9fe5ae86ea9abfbec5e1481a715`.
+- Structured transcript mechanics reproduce 101 custom execution calls and 101 call-ID-matched outputs. Calls 1–100 equal the sealed 100-command R41 schedule and exact dual-30,000 wrappers byte-for-byte; all 100 outputs report successful script execution with no failure or truncation marker. Call 4 returns the pushed dispatch commit.
+- Call 101 has exactly one nested `tools.apply_patch` operation, zero nested execution command, one update-file header targeting only `gauntlet/ROUND_LOG.md`, and the exact supplied full EOF paragraph as its sole context. Its reconstructed added bytes equal `[720679,734159)` byte-for-byte. The output reports success; one exact assistant message `TERMINATED` follows, with no later tool, plus one terminal task event and one patch-end event.
+- Packet schema gate passes mechanically: one R41 packet heading; exact process/model/mode/tier, timestamps, dispatch, artifact, authority, freshness/exclusion, sole lens, reviewer FSM, counts, marginal, filing, and no-action fields; A=4/B=3/C=0; `marginal-only: NO`; IDs R41-A01 through R41-A04 and R41-B01 through R41-B03 exactly once; one each evidence/requirement/consequence/repair-boundary/loss-guard label per finding; one verdict; one exact termination line at EOF.
+- Session `monkeybee-pdf-mass-context-repo--r41` is absent from the direct tmux session census. Shell 864387, reviewer child 864611, and monitor 864483 have no `/proc` entry; pane `%133` is absent with its session; host zombies are zero.
+- Strict pre-integration arithmetic is 41 unique immutable rows at 20 Sol / 21 Opus; failed R06/R23/R24/R34/R35/R36/R37/R39/R40; 32 active planned slots at 16 Sol / 16 Opus; 14 filed at 7 Sol / 7 Opus and A=94/B=56/C=19; 18 active-unfiled; R41 alone `BOUND-UNSENT`.
+- Input boundary was honored: only AGENTS, the three G7-owned files, the named bounded R41 transcript, process/session state, and git metadata were read. Live root-ledger contents, the C1 artifact, G3 state, and every unrelated repository artifact were not read or altered.
+- No diagnostic failure was returned during this transition. Expected absent-process/session results are evidence of termination, not failed probes. No hook-absence inference is made from returned output.
+- Next transition condition: change only the unique R41 allocation row to filed with preserved grades, then append one immutable owner filing closure after the reviewer packet through its exact termination-line EOF anchor; preserve every reviewer byte.
+
+**Integration-control state: `INGEST-VERIFIED`.**
+
+## R41 valid-filing integration checkpoint — R41-FILED (2026-07-15)
+
+- Overarching G7 owner FSM remains `DRAFT`. Integration transition persisted separately: `INGEST-VERIFIED -> R41-FILED`.
+- Only the unique R41 allocation row changed: status is `FILED · VALIDATION-PENDING · TERMINATED`, counts are A=4/B=3/C=0, and marginal-only is NO. Artifact, sole lens, Sol family, pass 3/5, G3 route, failed-predecessor lineage, model/mode/tier, and all other allocation rows are unchanged. Grades remain unpromoted.
+- Reviewer preservation gate passes after the row-length shift: separator-inclusive R41 reviewer bytes relocate to `[720644,734124)`, 78 lines / 13,480 bytes / SHA-256 `87b9329963836d19059f28e7b4597cf399ae70d6dd442fdbee99b4c74812e03d`; heading-to-termination remains 13,479 bytes / `3523937bffc12264963ea02b14842142b70bd5e3d74b7b8a84e3473fd2634641`.
+- One owner filing receipt was appended through the unique full verdict-plus-termination EOF context. It occupies separator-inclusive `[734124,735438)`, 8 lines / 1,314 bytes / SHA-256 `dc63295f3c3e4d03e9abf37d4bbe5b3d71df554526f9d16f878374b7791013dd` and is actual Round Log EOF. It explicitly leaves validation, termination confirmation, routing, and convergence integration pending.
+- Post-filing Round Log is 3,993 lines / 735,438 bytes / SHA-256 `e16ca254af355d952b5ccd57e8945d35ec972a9d342a4ecad1c751321dd337cb`; `git diff --check` for Round Log exits zero.
+- Mechanical filed arithmetic is now 41 immutable rows at 20 Sol / 21 Opus; nine failed IDs; 32 active planned slots at 16 Sol / 16 Opus; 15 filed at 8 Sol / 7 Opus and A=98/B=59/C=19; 17 active-unfiled; zero bound-unsent. This arithmetic does not itself validate or route any allegation.
+- No diagnostic failure was returned during this transition. No hook-absence inference is made. No artifact/root-ledger write, G3 contact, R07 bind, commit, push, or dispatch occurred.
+- Next transition condition: independently re-run packet schema, identity, uniqueness, grade, lens, authority/freshness/no-action, and reviewer-byte seals against the filed row, then advance only to `R41-VALIDATED`.
+
+**Integration-control state: `R41-FILED`.**
+
+## R41 valid-filing integration checkpoint — R41-VALIDATED (2026-07-15)
+
+- Overarching G7 owner FSM remains `DRAFT`. Integration transition persisted separately: `R41-FILED -> R41-VALIDATED`.
+- Mechanical packet validation re-ran against post-filing bytes and passed: all 13 required packet metadata labels occur once; process/model/mode/tier, dispatch commit, artifact, authority, freshness/exclusion, sole lens, five-state FSM, and no-action disclosures match the sealed control.
+- Numeric/schema validation passes: one exact A=4/B=3/C=0 count line; one `marginal-only: NO`; exact IDs R41-A01–A04 and R41-B01–B03; each of the seven finding blocks has exactly one evidence, requirement, consequence, repair-boundary, and loss-guard label; one verdict; one termination line.
+- Global finding-ID scan now has 176 headings and 176 unique IDs with zero duplicate. R41 has one allocation row, one reviewer packet heading, one filing-receipt heading, and the expected seven findings.
+- The unique R41 row now reads `FILED · VALIDATED · TERMINATED` with exact 4/3/0/NO grades. Only that row changed; the filed grades remain reviewer-authored evidence values and are unpromoted pending owner premise testing.
+- Reviewer bytes remain separator-inclusive `[720644,734124)`, 78 lines / 13,480 bytes / SHA-256 `87b9329963836d19059f28e7b4597cf399ae70d6dd442fdbee99b4c74812e03d`; the filing receipt remains `[734124,735438)`, 1,314 bytes / `dc63295f3c3e4d03e9abf37d4bbe5b3d71df554526f9d16f878374b7791013dd`.
+- Post-validation Round Log is 3,993 lines / 735,438 bytes / SHA-256 `66948663cd9b909cd13e95c6648e22195ba054228d72d24e7e4a1512be867e94`; Round Log `git diff --check` exits zero.
+- No diagnostic failure was returned during validation. No hook-absence inference is made. No termination-process claim is advanced beyond INGEST evidence until the next dedicated transition; no routing, convergence update, artifact edit, G3 contact, R07 bind, commit, push, or dispatch occurred.
+- Next transition condition: revalidate the transcript final-token/no-later-tool boundary, exact sole write, process/session absence, and zero zombies, then persist `R41-TERMINATED` without changing reviewer bytes or grades.
+
+**Integration-control state: `R41-VALIDATED`.**
+
+## R41 valid-filing integration checkpoint — R41-TERMINATED (2026-07-15)
+
+- Overarching G7 owner FSM remains `DRAFT`. Integration transition persisted separately: `R41-VALIDATED -> R41-TERMINATED`.
+- Transcript termination recheck passes: 101 calls and 101 call-ID-matched outputs; call 101 contains one and only one nested structured `apply_patch`, one Round Log target, and no other nested tool; its successful output precedes the sole assistant message, exact `TERMINATED`.
+- Event ordering is exact: final call index precedes final output index, which precedes the sole terminal assistant message; there is no later tool. One terminal task event and one patch-end event follow the filing boundary.
+- Shell 864387, reviewer child 864611, and monitor 864483 remain absent from `/proc`. Direct `tmux has-session` returns 1 for `monkeybee-pdf-mass-context-repo--r41`, proving session/pane absence; host zombies remain zero. The expected absent-session return is evidence, not a failed diagnostic.
+- Reviewer bytes, row status, grades, marginal flag, filing receipt, and Round Log identity remain unchanged from `R41-VALIDATED`. No packet reasoning beyond filed text is admitted.
+- No diagnostic failure was returned during this transition. No hook-absence inference is made. No routing, convergence edit, artifact mutation, G3 contact, R07 bind, commit, push, or dispatch occurred.
+- Next transition condition: route exactly R41-A01–A04 and R41-B01–B03 to G3 for independent premise testing without contacting G3, changing grades, accepting allegations, or editing the artifact; persist the route in the R41 row and owner closure.
+
+**Integration-control state: `R41-TERMINATED`.**
+
+## R41 valid-filing integration checkpoint — FINDINGS-ROUTED (2026-07-15)
+
+- Overarching G7 owner FSM remains `DRAFT`. Integration transition persisted separately: `R41-TERMINATED -> FINDINGS-ROUTED`.
+- The unique R41 row keeps final `FILED · VALIDATED · TERMINATED`, A=4/B=3/C=0, and marginal-only NO, and now routes exactly R41-A01–A04 and R41-B01–B03 to G3 for independent premise testing. Grades are unpromoted; no allegation is accepted, rejected, narrowed, or regraded by G7.
+- One final mechanical validation/termination/routing closure was appended through the filing receipt's full unique EOF paragraph. It occupies separator-inclusive `[735444,737498)`, 14 lines / 2,054 bytes / SHA-256 `32a4cba72fe947379bb595e0c314e402139dabbdd77609de7e693b3c41b0b89d` and is actual Round Log EOF.
+- After the route-row length shift, reviewer bytes relocate intact to `[720650,734130)`, 78/13,480/`87b9329963836d19059f28e7b4597cf399ae70d6dd442fdbee99b4c74812e03d`; the filing receipt relocates intact to `[734130,735444)`, 8/1,314/`dc63295f3c3e4d03e9abf37d4bbe5b3d71df554526f9d16f878374b7791013dd`.
+- Post-route Round Log is 4,007 lines / 737,498 bytes / SHA-256 `48e686bea5077228b0d02dad44e7182e3634615ec7448d9cbacad1016335b52f`; Round Log `git diff --check` exits zero.
+- Final route arithmetic is 41 immutable rows at 20 Sol / 21 Opus; nine failed IDs; 32 active planned slots at 16 Sol / 16 Opus; 15 filed at 8 Sol / 7 Opus with A=98/B=59/C=19; 17 active-unfiled; zero bound-unsent.
+- R07 is explicitly blocked until G3 revises the C1 plan and exposes a new pushed `SUBMIT-FOR-REVIEW` hash. G7 did not read or edit the live artifact, contact G3, bind R07, commit, push, or dispatch.
+- No diagnostic failure was returned during this transition. No hook-absence inference is made.
+- Next transition condition: append one evidence-preserving R41 integration block at actual Convergence Report EOF, updating filed totals, Sol/Opus split, allocation/failure/active counts, curve point, and G3 route without rewriting prior content or promoting grades.
+
+**Integration-control state: `FINDINGS-ROUTED`.**
+
+## R41 valid-filing integration checkpoint — CONVERGENCE-UPDATED (2026-07-15)
+
+- Overarching G7 owner FSM remains `DRAFT`. Integration transition persisted separately: `FINDINGS-ROUTED -> CONVERGENCE-UPDATED`.
+- The exact prior Convergence Report remains byte prefix `[0,77938)`, 519 lines / 77,938 bytes / SHA-256 `fdf6ef155843995dcc263b790045db07a0b90bb79837e0f5e245ca91dd8588f3`. The R41 append occupies `[77938,80699)`, 27 lines / 2,761 bytes / SHA-256 `03e61d78d771bf5e2ad7303dc10c628b2f4fbd9c437270115989448b34f75b5b` at actual EOF.
+- Post-update Convergence Report is 546 lines / 80,699 bytes / SHA-256 `29bc0ada9dd419cc3de6d4074fd49c3fd7b8918e8b99d97d96fed128f335979d`; report `git diff --check` exits zero.
+- Filed totals are now exactly 15 rounds, A=98/B=59/C=19, with an 8 Sol / 7 Opus split. Immutable allocation remains 41 at 20 Sol / 21 Opus; nine failed IDs; 32 active planned slots at 16/16; 17 active-unfiled; zero bound-unsent.
+- The C1 five-pass-A same-lens/same-prompt curve is now R04 A+B=16 → R05 A+B=32 → R41 A+B=7. The third point is non-marginal, follows a prior rise, and crosses model families; zero consecutive marginal-only points means convergence remains not established. Failed R06/R39/R40 add no curve point.
+- The report routes R41-A01–A04 and R41-B01–B03 to G3 for independent premise testing with grades unpromoted, retains R07's block pending a revised pushed G3 `SUBMIT-FOR-REVIEW` hash, and makes no owner-adjudicated artifact claim.
+- Failed/non-evidentiary diagnostic: the first convergence-verification batch was stopped by the local no-backtick safety guard before any nested command ran because the Python EOF literal contained Markdown state delimiters. It produced no gate result and changed no repository byte or process. The corrected `chr(96)` construction reproduced the prefix, append, final identity, actual EOF, and diff gate above.
+- No other diagnostic failure was returned during this transition. No hook-absence inference is made. No artifact/root-ledger edit, G3 contact, R07 bind, commit, push, or dispatch occurred.
+- Next transition condition: run the full owned-path, provenance, allocation, packet/schema, transcript/write/termination, reviewer-seal, convergence, route, claim-vocabulary, EOF, and diff gates; disclose every failed diagnostic; then persist `SELF-CHECKED`.
+
+**Integration-control state: `CONVERGENCE-UPDATED`.**
+
+## R41 valid-filing integration checkpoint — SELF-CHECKED (2026-07-15)
+
+- Overarching G7 owner FSM remains `DRAFT`. Integration transition persisted separately: `CONVERGENCE-UPDATED -> SELF-CHECKED`.
+- Provenance gate passes: `HEAD = origin/main = e6d4b3c1742e236898bec4b4e60860726c2f1478`. Pre-checkpoint owned identities are Round Log 4,007 lines / 737,498 bytes / SHA-256 `48e686bea5077228b0d02dad44e7182e3634615ec7448d9cbacad1016335b52f`; Convergence Report 546 / 80,699 / `29bc0ada9dd419cc3de6d4074fd49c3fd7b8918e8b99d97d96fed128f335979d`; G7 checkpoint 1,864 / 399,930 / `0f19fd671e11cc14d18b708debe47e7c2a6e5163adc0998d0ad5176d4eefc3b3`.
+- Scope/diff gate passes: owned diff names are exactly the three authorized paths; numstat is Convergence 27/0, Round Log 101/1, G7 checkpoint 85/0 before this append. Global and owned `git diff --check` exit zero. Whole-worktree name-only awareness shows concurrent root `ledger/RUN_LEDGER.md`; its live contents were not read or altered.
+- Allocation arithmetic passes mechanically: 41 unique immutable rows at 20 Sol / 21 Opus; failed IDs R06/R23/R24/R34/R35/R36/R37/R39/R40; 32 active planned slots at 16 Sol / 16 Opus; 15 filed at 8 Sol / 7 Opus with A=98/B=59/C=19; 17 active-unfiled; zero bound-unsent. R41 is uniquely `FILED · VALIDATED · TERMINATED` at 4/3/0/NO.
+- R07 remains the precommitted C1 pass 4/5 row and is blocked by the R41 route until G3 supplies a revised pushed `SUBMIT-FOR-REVIEW` hash. No R07 bind or reviewer dispatch occurred.
+- Packet/uniqueness gate passes: 15 reviewer packet headings map to 15 unique round IDs; all 176 finding headings are unique. R41 has exactly one packet, one filing receipt, one validation/termination/routing closure, and exact IDs R41-A01–A04 plus R41-B01–B03.
+- R41 packet schema passes: all 13 required metadata fields occur once; process/model/mode/tier, dispatch, artifact, authority, freshness/exclusion, sole lens, reviewer FSM, count, marginal, filing, and no-action values match control. Each finding has one evidence, requirement, consequence, repair-boundary, and loss-guard label; there is one verdict and one exact termination line.
+- Transcript/write gate passes: transcript is 459 lines / 1,476,197 bytes / SHA-256 `df69147017265727156accee406ffbe334010877c22caa20ac5b3d1fb501293e`; normalized task plus newline is 19,092 bytes / `fb8f9093746482f0446c0f7ba21897dcf03ff9fe5ae86ea9abfbec5e1481a715`. Exactly 101 calls match 101 outputs; calls 1–100 equal the sealed schedule/wrappers; call 101 has one sole Round Log `apply_patch`; all outputs report success without failure/truncation marker; exact `TERMINATED` follows with no later tool.
+- Termination gate passes: shell 864387, child 864611, monitor 864483, pane `%133`, and R41 session are absent; direct session probe returns the expected absent status; host zombies are zero. No unfiled reasoning is admitted.
+- Protected reviewer packets independently reproduce at semantic ranges: R03 `[278255,296149)` / `d42c1989b354ca100dbdbd876b83cde0f7f0f13f12c35356209d5004d166af7a`; R13 `[303444,313033)` / `18eb5b573f833f92cdc7aaafab37bbc2688a9c9f83aa33c80da91b0a3ccc4f5c`; R04 `[320784,346878)` / `df313c958971724d0c59eae7302cc4d89475cd0f66d1e5f22e044e92dd435145`; R14 `[356573,412677)` / `4567275fbaba4e3e04d433ec4757897ed6ae4aee183ada2c552a28785794a122`; R33 `[432590,443495)` / `f932428fcf0f4b114e3574ed9119b29f4491f82e23d76b31416d023cdd5d858a`; R05 `[452781,546573)` / `602f25a0f8750f93a8dfcc23c7f32a960c4e50bcaad6d19f0b4cbabf3f5fbbe9`; R15 `[557094,586154)` / `610bc2ec58c899cad9b14da7097ebacca457c0987f237edfd5d45737f2d84595`.
+- Later protected blocks independently reproduce: R38 packet `[634911,647061)` / `fe3e5aacfec181a5f631997631eb3ae8e1e11e5f18293e3e68286c2c544edab4`; R38 closure `[647061,650038)` / `3a78fe2d0c00a73a418c774d547abe1493de037b331b8323a6c65293fc1df221`; R06 control `[650038,659784)` / `a6de26d4c806885b187587637f68a2e953d118076ab8045a9a3b1961265b6734`; R06 closure `[659784,662654)` / `e2db810a8da8abaf6d27b4908e14c85153feb1762b341174309863a99932435a`; R39 control `[662654,677303)` / `fce7e591682196660af2c78ccd8f5ed0eef783d69816d226e454d8b6f2a6deb0`; R39 closure `[677303,680114)` / `4acf1512d5e91aa39325ccbca108aeacba320afdc30a4aa5442fb6a585365e41`; R40 control `[680114,698653)` / `504dcb0fdc72d4de1e72ef987dc34c3114dbc68a5a086d8a615f28c52dea06f5`; R40 closure `[698653,701630)` / `501724a12e940d02ceacb9eddd0cd7b2984f9822918c31429a5f363cee887553`; R41 control `[701630,720650)` / `398cbdee630f997d44997b49b1e8a2a069dee5287b8e6df3d53f852e8094dd72`.
+- R41 integration blocks reproduce: reviewer packet `[720650,734130)`, 78/13,480/`87b9329963836d19059f28e7b4597cf399ae70d6dd442fdbee99b4c74812e03d`; filing receipt `[734130,735444)`, 8/1,314/`dc63295f3c3e4d03e9abf37d4bbe5b3d71df554526f9d16f878374b7791013dd`; final route closure `[735444,737498)`, 14/2,054/`32a4cba72fe947379bb595e0c314e402139dabbdd77609de7e693b3c41b0b89d` at actual EOF.
+- Convergence gate passes: prior 77,938-byte report is an exact prefix at SHA-256 `fdf6ef155843995dcc263b790045db07a0b90bb79837e0f5e245ca91dd8588f3`; append `[77938,80699)` is 27/2,761/`03e61d78d771bf5e2ad7303dc10c628b2f4fbd9c437270115989448b34f75b5b`. It records the 15-round totals, 8/7 filed-family split, 41-row accounting, zero bound-unsent, G3 route, R07 block, and five-pass-A 16 → 32 → 7 curve with convergence not established.
+- EOF/state gate passes: full Round route-control paragraph, Convergence release paragraph, and G7 transition suffix each occur once at actual EOF. Integration-state markers INGEST-VERIFIED, R41-FILED, R41-VALIDATED, R41-TERMINATED, FINDINGS-ROUTED, and CONVERGENCE-UPDATED each occur once in order.
+- Claim-vocabulary gate: a raw owned-added-line scan finds one capitalized outcome token solely inside R41-A04's scoped loss guard prohibiting mislabeling of a degraded result. In-memory semantic classification of that properly scoped finding yields zero prohibited campaign-claim use. No repository byte is changed or claim strengthened by this classification.
+- Failed/non-evidentiary diagnostic: the first Convergence EOF-check batch was rejected by the local no-backtick guard before any nested command ran because its Python literal contained Markdown delimiters. It changed no byte or process and supplies no result; the corrected `chr(96)` rerun passed. No other diagnostic failure was returned. No hook-absence inference is made.
+- Forbidden-method gate passes: all writes used structured `apply_patch`; no shell write/redirection/`tee`, scratch/temp/todo/task path, artifact/root-ledger edit, source/Beads action, web/external action, owner contact, R07 bind, commit, push, or reviewer dispatch occurred.
+- Next transition condition: rehash the post-checkpoint G7 state, re-run final owned diff/EOF/accounting/no-bound gates, then append terminal `RELEASED`. Root may route G3 owner disposition next; R07 remains eligible only after a revised pushed G3 submission.
+
+**Integration-control state: `SELF-CHECKED`.**
+
+## R41 valid-filing integration checkpoint — RELEASED (2026-07-15)
+
+- Overarching G7 owner FSM remains `DRAFT`. Terminal integration transition persisted separately: `SELF-CHECKED -> RELEASED`.
+- Pre-release G7 checkpoint is 1,887 lines / 406,938 bytes / SHA-256 `f6025408edefb69b5f50929d71025dd4f9b3889ff62c8c2d8e3245765ac34f31`; this append uses the full unique SELF-CHECKED transition paragraph at actual EOF.
+- Fixed released artifacts are Round Log 4,007 lines / 737,498 bytes / SHA-256 `48e686bea5077228b0d02dad44e7182e3634615ec7448d9cbacad1016335b52f` and Convergence Report 546 / 80,699 / `29bc0ada9dd419cc3de6d4074fd49c3fd7b8918e8b99d97d96fed128f335979d`.
+- Effective integration path is `BOUND-UNSENT -> INGEST-VERIFIED -> R41-FILED -> R41-VALIDATED -> R41-TERMINATED -> FINDINGS-ROUTED -> CONVERGENCE-UPDATED -> SELF-CHECKED -> RELEASED`; every intermediate state is persisted once in order.
+- Released accounting is 41 immutable rows at 20 Sol / 21 Opus; failed R06/R23/R24/R34/R35/R36/R37/R39/R40; 32 active planned slots at 16 Sol / 16 Opus; 15 filed rounds at 8 Sol / 7 Opus with A=98/B=59/C=19; 17 active-unfiled; zero bound-unsent.
+- R41 is filed, validated, terminated, and routed to G3 for independent premise testing of R41-A01–A04 and R41-B01–B03 with grades unpromoted. R07 remains blocked until a revised pushed G3 `SUBMIT-FOR-REVIEW` hash exists.
+- The C1 five-pass-A curve is 16 → 32 → 7 with all three points non-marginal; convergence remains not established. Release makes no owner acceptance of an allegation and no strengthened artifact claim.
+- Final owned/global diff checks returned zero; owned diff remains limited to the three authorized paths, and concurrent root `ledger/RUN_LEDGER.md` remains non-owned, unread, and untouched. No diagnostic failure was returned after SELF-CHECKED; no hook-absence inference is made.
+- Stop idle. Root may route G3 owner disposition next. G7 does not contact G3, edit the artifact, bind R07 or another round, commit, push, or dispatch a reviewer.
+
+**Integration-control state: `RELEASED`.**

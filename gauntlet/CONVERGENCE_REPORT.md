@@ -517,3 +517,30 @@ R41 remains evidence-neutral before filing. It preserves the pushed C1 delta-pla
 The sealed R41 control retains the 101-call schedule and 100 exact read-only commands, dual 30,000-token wrapper-capacity law, maximum 100-line ranges, exact first/second tools, pushed-commit gate, bounded authority, one artifact, one lens, and blind no-Round-Log-read law. A malformed wrapper is an immediate zero-credit `WRAPPER-SYNTAX-FAILURE` with no compensating call or write. The only permitted future write is one final structured `apply_patch` append through the supplied full true-EOF anchor, followed by exact standalone `TERMINATED` and process/shell exit.
 
 No task has been sent to R41. G7 remains in owner FSM `DRAFT`, has not dispatched or bound another round, and stops this transition with R41 as the sole bound-unsent allocation.
+
+## R41 valid filing, G3 route, and convergence correction — 2026-07-15
+
+This append-only correction supersedes the stale R41 bound-unsent and pre-filing totals above. It changes no earlier report byte, reviewer packet, finding text, grade, loss guard, owner premise disposition, or artifact. Its source Round Log is 4,007 lines / 737,498 bytes / SHA-256 `48e686bea5077228b0d02dad44e7182e3634615ec7448d9cbacad1016335b52f`; the sealed R41 reviewer slice is 78 lines / 13,480 bytes / `87b9329963836d19059f28e7b4597cf399ae70d6dd442fdbee99b4c74812e03d`.
+
+### Filed evidence and grade arithmetic
+
+- Valid filed rounds: 15.
+- Aggregate filed grades: A=98, B=59, C=19.
+- Filed model-family split: 8 Sol / 7 Opus.
+- R41 is `FILED · VALIDATED · TERMINATED` under the sole `oversimplification-and-feature-loss` lens with A=4/B=3/C=0 and marginal-only NO. Mechanical admission validates identity, schema, method, sole write, and termination only; all seven premises and grades remain unpromoted.
+
+### C1 five-pass-A curve correction
+
+R41 carries the original R06 pass 3/5 slot after terminal failures R06, R39, and R40. The same-lens, same-prompt successive-revision curve is now R04 A+B=16 → R05 A+B=32 → R41 A+B=7. The third-point fall is reportable evidence, but it follows a prior rise, crosses model families, and remains non-marginal. There are zero consecutive marginal-only points, so C1 convergence is not established and no artifact-quality claim follows from the numeric drop.
+
+The earlier different-lens points R01, R02, and R03 remain outside this repeated-lens series. Failed R06/R39/R40 add zero curve point, finding, grade, or coverage; R41 is one valid Sol point, not three replacement points.
+
+### Allocation, failure, and active-slot accounting
+
+The immutable allocation ledger remains 41 rows: 30 baseline + 2 supplemental + replacements R33 through R41. Counting failed rows yields 20 Sol / 21 Opus. Failed terminal IDs remain R06, R23, R24, R34, R35, R36, R37, R39, and R40. Excluding those nine leaves 32 active planned slots at 16 Sol / 16 Opus; 15 are filed and 17 remain active-unfiled. Zero rounds are bound-unsent.
+
+### Owner route and release boundary
+
+R41-A01–A04 and R41-B01–B03 are routed to G3 for independent premise testing against the pushed C1 plan. G7 does not accept, reject, narrow, or regrade them and has not contacted G3. The reviewer verdict remains evidence that revision is warranted under the filed lens, not an owner-adjudicated artifact verdict.
+
+R07 remains blocked until G3 revises the C1 delta plan and exposes a new pushed `SUBMIT-FOR-REVIEW` hash. Overarching G7 owner FSM remains `DRAFT`; this correction binds no round, edits no artifact or root ledger, dispatches no reviewer, and strengthens no claim.
