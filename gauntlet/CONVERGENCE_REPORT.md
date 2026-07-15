@@ -958,3 +958,17 @@ R54 binds only the committed C1 plan 3,655 lines / 531,012 bytes / `db0bbb1df5bb
 The placeholder-only minimal bootstrap requires first Tool 1 full `AGENTS.md`, Tool 2 full protocol, and Tool 3 exact sealed-control-only Read. The control prescribes sub-capacity gap-free authority/artifact windows, two mechanical union gates, zero-credit failed Reads with explicit retry disclosure, numbered citation checks, exact start and pre-write clock labels, one generic Round Edit, no Write tool, no post-Edit tool, and standalone `TERMINATED`. No live bootstrap is instantiated or sent here.
 
 Allocation remains 54 unique rows at 22 Sol / 32 Opus; 22 failed at 6/16; 32 active planned at 16/16; 18 valid filed at 9/9 with A=118/B=64/C=22; and 14 active-unfiled at 7/7. R54 is the sole bound-unsent row and supplies no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model credit, or convergence evidence before a valid filing. The prior sequences are unchanged, so convergence remains **NOT ESTABLISHED**.
+
+## R54 citation-integrity and termination disqualification — `2026-07-15T16:13:48+02:00`
+
+This append supersedes only the R54 bound-unsent and prospective-route wording immediately above. The sealed control and physical reviewer packet remain byte-identical and every reviewer allegation, grade, verdict, and finding body remains unpromoted.
+
+Transcript replay reproduces the exact direct bootstrap, first three ordered Reads, identity gates, all 34 prescribed primary authority/artifact windows including Rev 7 line 2431, gap-free primary unions, bound plan, one Edit, no later tool, and process retirement. It also establishes two independent sealed-control failures. The four post-ingest citation rereads omit five cited plan coordinates, and the packet's line-219 attribution points to a heading rather than the rule that begins at line 221. The final assistant event adds a filing-success sentence before `TERMINATED` instead of returning the required standalone terminal response.
+
+R54 is immutable `NOT-RUN · METHOD-CONTROL-CITATION-INTEGRITY-AND-TERMINATION-VIOLATION · TERMINATED`. Its 43-line / 11,289-byte physical packet receives no finding, grade, authority/artifact coverage, marginal result, verdict, route, curve point, owner disposition, cross-model credit, or convergence evidence. No G3 route is created.
+
+The verdict's owner-revision recommendation is admissible because the protocol asks the reviewer to address that question without deciding disposition. The broad process-list result is an admissible read-only identity variance: it confirms the bound PID and model/effort, exposes no reviewer semantics, and causes no contact, monitoring loop, or process action. Neither variance cures the citation or termination failures.
+
+Allocation is 54 unique rows at 22 Sol / 32 Opus; 23 failed at 6/17; 31 active planned at 16/15; 18 valid filed at 9/9 with A=118/B=64/C=22; and 13 active-unfiled at 7/6. No round is bound-unsent. No replacement row is allocated, and R10 remains untouched `PRECOMMITTED`.
+
+The C1 five-pass-A sequence remains R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24, all non-marginal. The Constitution sequence remains R14=15 non-marginal -> R15=21 non-marginal -> R51=0 marginal-only. R54 adds no point. Convergence remains **NOT ESTABLISHED**.
