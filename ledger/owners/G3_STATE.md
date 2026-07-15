@@ -38,14 +38,14 @@ owner-fsm: SUBMIT-FOR-REVIEW
 
 ## Current checkpoint
 
-- Timestamp: `2026-07-15T09:10:20+02:00`
+- Timestamp: `2026-07-15T12:56:46+02:00`
 - Phase: `SUBMIT-FOR-REVIEW`
-- Active goal: the exact final R48 plan identity is bound; G3 remains idle awaiting root commit and push, with R08 unbound and undispatched.
+- Active goal: the final R50 submission identity is already bound; G3 is idle awaiting root commit/push. R09 remains unallocated.
 - Exclusive writable paths for this round: `plans/CYCLE_1_DELTA_PLAN.md` and `ledger/owners/G3_STATE.md`, exclusively through structured `apply_patch`.
-- Current plan: final R48 submission is exactly 3,566 lines / 495,395 bytes / SHA-256 `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0`, with `owner-fsm: SUBMIT-FOR-REVIEW`. R48 repairs remain bounded to REC.007/REC.008/REC.010 and §9.5 materiality retention, CLI.010 plus its exact consumers/gates, the two §12.1 later-owner clarifications, and the two one-token local-link-count reconciliations.
-- Checkpoint navigation: this is the sole live current-state surface. R05 and earlier identities, goals, phases, and next-round statements remain valid only within their dated historical sections; they are not present routing state.
-- Round condition: owner dispositions are `accept=2` (R48-B01/C02), `narrow=2` (R48-C01/C03), `reject=0`, total=`4`; reviewer B/C grades remain unpromoted. R08 remains unbound and root-owned.
-- Branch observation: immediately before the first R48 write, repository `HEAD` and local `origin/main` both exactly equaled pushed control commit `49bffc48ced1a707ed8565b58bfb64e8a45a4b12`; the worktree was clean.
+- Current plan: final R50 submission is exactly 3,655 lines / 531,012 bytes / SHA-256 `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`.
+- Checkpoint navigation: this is the sole live current-state surface. Dated historical identities, goals, phases, and next-round statements remain historical evidence only and do not govern present routing.
+- Round condition: every R50 allegation has an independent owner disposition (`ACCEPT=22`, `NARROW=2`, `REJECT=0`, `REGRADE=0`) and every credited gate is green. G3 remains idle; R09 remains unallocated and root-owned.
+- Branch observation: before the first R50 write, branch=`main`; repository `HEAD` and local `origin/main` both exactly equaled dispatch commit `077d1dc5f77fa7e139e94f049081dec243adf6ee`; the worktree was clean.
 - External fetches: none.
 - Sub-agent activity: none; G3 remains the sole owner and will not route its own review.
 
@@ -1390,3 +1390,690 @@ All credited gates are green. Next gate: reverify the appended checkpoint and bo
 - Final append-sensitive checks passed before this binding: `HEAD` and local `origin/main` both `49bffc48ced1a707ed8565b58bfb64e8a45a4b12`; plan/checkpoint frontmatter and the sole live checkpoint surface all read `SUBMIT-FOR-REVIEW`; exactly the two owned paths are modified; both guarded-category vectors are `[0,0,0,0]`; UTF-8/newline/whitespace/conflict checks pass; scoped and whole-worktree `git diff --check` each exit 0.
 - Credited totals remain catalog/specification=`138/138`, 17 required fields exactly once, contract card fields=`138`, contract-local links=`157/157`, whole-plan links=`162/157`, markers=`158` (`138` card fields plus `20` non-card references), actual-card crosswalk=`43/43`, C1 surface matrix=`43/43`, canonical identities=`9/9`, reference unknowns=`0`, DAG cycles=`0`, and prior-round/R48 regressions all green. R48 disposition arithmetic remains `accept=2`, `narrow=2`, `reject=0`, total=`4`.
 - The PreToolUse broken-pipe observation remains zero-credit and yields no hook inference. All licensed-source and human-ratification gates recorded above remain unresolved; no loss guard or capability ceiling changed during submission. G3 stops idle at `SUBMIT-FOR-REVIEW`. R08 merely awaits root commit and push and has not been bound, routed, reviewed, or dispatched.
+
+## R50 owner intake: `SUBMIT-FOR-REVIEW -> REVISE` — `2026-07-15T11:18:34+02:00`
+
+- Fixed gate reproduced before any write: branch `main`; `HEAD` and local `origin/main` both `077d1dc5f77fa7e139e94f049081dec243adf6ee`; clean worktree; submitted plan exactly 3,566 lines / 495,395 bytes / SHA-256 `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0`; checkpoint exactly 1,392 lines / 250,723 bytes / SHA-256 `f855610289af5cfc7a910e7561d2903c0a60986ef168a139faa102f1105ed6d6`.
+- `AGENTS.md` and the local planning-workflow instructions were read in full. The skill's evidence/dependency validation discipline applies; its implementation and conversion steps are excluded by the human's plan-space and no-Beads laws.
+- The immutable committed R50 packet was read only from `077d1dc5f77fa7e139e94f049081dec243adf6ee:gauntlet/ROUND_LOG.md` byte range `[911591,941132)`. It reproduces exactly 217 separator-inclusive lines / 29,541 bytes / SHA-256 `9b4eae3e9dc80d3cdcbb04b612ad602a933667a8d6f704c6690c28aab3d29cbf`; the semantic packet body is committed lines 4812–5027.
+- The committed G7 closure at lines 5029–5053 was read in full. Its qualification is accepted only for process, schema, identity, and coverage. It establishes no allegation, premise, disposition, grade, consequence, repair, or loss guard as owner truth.
+- Intake arithmetic is immutable reviewer evidence only: A=`20`, B=`4`, total=`24`, marginal-only=`NO`. Every R50-A01–A20 and R50-B01–B04 begins owner work as an allegation; the reviewer's “confirmed” wording and grades remain unpromoted.
+- Both owned live FSM surfaces now read `REVISE`; no substantive plan content changed at intake. Next gate: read the required authority chain and entire plan gap-free, then persist premise-tested dispositions in crash-safe batches before applying any supported repair. R09 remains unallocated.
+
+### R50 plan-read display diagnostic — `2026-07-15T11:23:00+02:00`
+
+- The fresh R50 plan read returned lines 1–3300 in fully displayed bounded windows. The subsequent read-only request `sed -n '3301,3450p' plans/CYCLE_1_DELTA_PLAN.md` exceeded the display allowance and returned only a truncation notice.
+- The entire 3301–3450 interval receives zero read credit; no displayed or omitted byte from that request is inferred. Correction boundary: replace it with smaller, non-overlapping, fully returned windows, then continue through line 3566 before asserting a gap-free plan read. Owner FSM remains `REVISE`, and neither plan content nor any authority conclusion changed because of this display failure.
+
+### R50 gap-free authority and plan-read closure — `2026-07-15T11:23:37+02:00`
+
+- The required local authority chain and the R50-relevant Rev 7 kernel ranges were read in fully returned bounded windows. The immutable R50 packet and G7 closure remain confined to the committed dispatch bytes recorded at intake; no live Round Log byte supplied evidence.
+- The submitted plan has now been read gap-free from line 1 through line 3566 in fully returned windows. Credited coverage is lines 1–3300, replacement windows 3301–3350, 3351–3400, 3401–3450, 3451–3500, and 3501–3566. The clipped 3301–3450 request remains zero-credit and contributes no inferred text.
+- Current plan identity is exactly 3,566 lines / 495,384 bytes / SHA-256 `bbedeb4eb6662b6839209b1a9807a93d7d8324a2d63159079c67194251b3c355`; the only difference from the submitted identity remains the persisted owner-FSM value `REVISE`. Next gate: independent per-allegation premise testing and crash-safe disposition batches before any substantive plan repair. R09 remains unallocated.
+
+## R50 independent owner dispositions, batch 1/3 — `2026-07-15T11:27:09+02:00`
+
+Reviewer grades and loss guards remain immutable packet evidence. The dispositions below are G3 premise results, not grade promotion.
+
+#### R50-A01 — `ACCEPT`
+
+- Premise and evidence: Rev 7 §10.2 (lines 1686–1735) defines fifteen facet identities with distinct meanings. Plan `C1.CC.FDN.010@1` (lines 565–583) accepts an unnamed facet set and gated issuers but has no closed fifteen-entry registry or per-facet payload/lifecycle schema; the C1 Charter requires the identity/evidence/report/checker stack.
+- Consequence and repair: the omission is reproduced. Extend FDN.010 and the IMM registries with the closed project-law facet identities, typed payload slots, issuer relations, lifecycle, and validation hooks; measurement- and external-observation facets remain dormant unless their separate protocols admit evidence.
+- Loss guard: outcome state stays separate from facets; lineage, scoped issuance, no scalar confidence, and every pending licensed-source boundary remain intact.
+
+#### R50-A02 — `ACCEPT`
+
+- Premise and evidence: Rev 7 §10.2 (lines 1735–1739) requires a canonically ordered keyed `EvidenceSet` scoped by subclaim, metric, region, profile, source snapshot, and protocol, with exact duplicate and incompatibility rules. FDN.010 exposes generic evidence records and an incompatible-evidence diagnostic but no keyed schema or constructor.
+- Consequence and repair: the keyed composition law is absent. Add the single validated `EvidenceSet` schema, ordering/key grammar, identical-observation deduplication, distinct-lineage retention, incompatible-payload refusal, and explicit ambiguity path to FDN.010 and its registry/checker consumers.
+- Loss guard: retain multiplicity for non-identical corroboration and never collapse the structure into a confidence number.
+
+#### R50-A03 — `ACCEPT`
+
+- Premise and evidence: Rev 7 §10.3 (lines 1741–1744) requires each operation to register required inputs, scope propagation, approximation metrics, and refusal conditions. FDN.010 mentions registered claim algebras, while `IMM.002@1` (lines 2263–2281) and `IMM.003@1` (lines 2283–2301) contain no typed algebra record or unknown-composition validation input.
+- Consequence and repair: locally consistent but mutually incompatible propagation rules could pass the current generated-truth checks. Add a typed claim-algebra subrecord to FDN.010/IMM.002/IMM.003 and require linkage, generation, composition, and drift checks to fail closed on a missing or unknown rule.
+- Loss guard: preserve recovery alternatives, partial security scope, explicit refusal, and the prohibition on scalar confidence.
+
+#### R50-A04 — `ACCEPT`
+
+- Premise and evidence: Rev 7 §10.10 (lines 2072–2094) mandates semantic scope, expected-state grammar, substrate, transaction/publication, retry/idempotency, state/signature consequences, assurance profile, release row, and the other named axes. Plan §5 (lines 190–220) and IMM.002 list broad presentation fields but do not require those axes as individually typed values or an explicit reasoned not-applicable state.
+- Consequence and repair: later conversion would have to recreate missing judgments from prose. Extend the §5 canonical registry record and IMM.002 validation with every omitted named axis and `NotApplicable(reason)`; keep the existing seventeen-field presentation and one atomic ID per capability rather than adding a work inventory.
+- Loss guard: retain delta-only conversion, all existing outcomes and surfaces, no measurement execution, and no work-ledger semantics in plan space.
+
+#### R50-A05 — `ACCEPT`
+
+- Premise and evidence: Rev 7 §10.9 (lines 2049–2070) gives five availability classes, their materialization preconditions, and checker narrowing/refusal law. Plan §9.7 (lines 3310–3318) names the labels, while FDN.010, IMM.013, and IMM.016 accept generic availability without one class schema, transition/retention law, or recomputation/materialization receipt.
+- Consequence and repair: producer and checker interpretation can diverge. Add one FDN.010-owned availability-class subregistry and receipt law consumed by provenance, retention/cache policy, package assembly, checker materialization, reports, and IMM truth checks.
+- Loss guard: keep content identity separate from availability, retain sensitivity and narrow retrieval authority, and refuse or narrow decision-critical missing material.
+
+#### R50-A06 — `ACCEPT`
+
+- Premise and evidence: Rev 7 §11.2 (lines 2141–2172) says the default limits object includes the later image, tile, page-program, graphics, form/pattern, font, function, XML/form, external-tool, path, clip, and transparency dimensions. FDN.005 (lines 465–483) contains only the active C1 subset, while plan §12.3 freezes the work/budget law after initial kernel adoption.
+- Consequence and repair: later cycles would otherwise add kernel dimensions after freeze. Register the omitted dimensions and profile/receipt slots now as dormant and unavailable in C1; no deferred execution surface or host authority is activated.
+- Loss guard: all C1 rendering, font, form, program, and external-tool exclusions remain unchanged.
+
+#### R50-A07 — `ACCEPT`
+
+- Premise and evidence: Rev 7 §11.2.2 (lines 2174–2178) distinguishes one physical producer charge, logical consumer attribution, pessimistic private reservation, bounded cache-hit work, and one retention owner. FDN.005 has non-resettable accounts and a cache-hit falsifier, and FDN.013 has per-entry retention, but neither states the shared producer/consumer/reservation/retention law across C1.
+- Consequence and repair: both double charging and free fan-out remain implementable. Add those exact ownership and attribution fields to FDN.005 receipts and bind FDN.013 cache entries to the producing account, consumer attribution, private reservation, lookup/materialization charge, and retention owner.
+- Loss guard: preserve parent conservation, tenant/credential isolation, and recovery's direct/shared/unavailable cost vector.
+
+#### R50-A08 — `ACCEPT`
+
+- Premise and evidence: Rev 7 §11.4 (lines 2194–2200) requires large allocations to use budget-aware fallible reservation helpers and forbids ordinary abort as the allocation-failure response. FDN.005 explicitly disclaims universal dependency fallibility but defines no reservation-to-allocation helper or typed allocation-failure/refund contract; FUZ.010 mentions allocation faults only generically.
+- Consequence and repair: a reserved budget can still flow into an infallible large allocation. Add a FDN.005 helper subcontract for reserve, attempt, typed failure, refund/cleanup, and dependency-boundary refusal, then bind exact allocation-fault scenarios in FUZ.010.
+- Loss guard: retain the honest compiler/allocator/OS/dependency boundary and make no universal fallibility or process-survival promise.
+
+## R50 independent owner dispositions, batch 2/3 — `2026-07-15T11:27:44+02:00`
+
+#### R50-A09 — `ACCEPT`
+
+- Premise and evidence: Rev 7 §11.5 (lines 2202–2227) binds visibility/durability claims to an admitted `TransactionalOutput` capability, exact host protocol, weaker receipt/refusal law, and path/sink fault matrix. RPT.005 (lines 2121–2139), IMM.016 (lines 2543–2561), and CLI.006 (lines 2745–2763) accept publication labels, but no C1 contract mints the host capability or receipt; FUZ.010 omits much of the mandated fault matrix.
+- Consequence and repair: atomic or durable language can outpace the host evidence. Add one L0 host-output publication contract, route all three consumers plus FDN.006 through its capability/receipt, and cover short write, quota, flush, directory durability, path replacement, no-clobber, permission, rename-domain, and post-visibility failures in FUZ.010.
+- Loss guard: PDF writing remains excluded; weaker stream sinks remain usable; an acknowledged or indeterminate visible result is never rewritten as rollback.
+
+#### R50-A10 — `ACCEPT`
+
+- Premise and evidence: Rev 7 §11.8 (lines 2249–2265) freezes a shared metered least-authority embedded-program meta-contract and executable-feature registry. The plan excludes C1 execution but has no dormant kernel contract or future sanitizer/tenant seam; §12.3 bars an unversioned later kernel addition.
+- Consequence and repair: later page, font, function, and form tenants would otherwise bypass or mutate the kernel. Add one dormant L0 meta-contract covering narrowed capabilities, deterministic host facts, work/cancellation, termination, effect journals, and shared sanitizer visibility, with every tenant unavailable in C1.
+- Loss guard: no execution, ambient I/O, dynamic code, host action, or memory-derived semantic body is admitted.
+
+#### R50-A11 — `ACCEPT`
+
+- Premise and evidence: Rev 7 §11.9 (lines 2267–2287) defines D0 Structural, D1 Serialized, D1R variable-input serialization, D2 same-target pixels, D3 cross-target bounds, D4 Statistical, and D5 Fast. FDN.012 (lines 605–623) uses an unnamed class, and RPT.005/CLI.006 label canonical serialized output D0 rather than D1.
+- Consequence and repair: replay and serialization receipts cannot check their promised relation. Add the qualified seven-entry class registry to FDN.012, distinguish these names from campaign decisions, and relabel canonical machine serialization D1 while leaving structural semantic roots D0.
+- Loss guard: replay still proves only its declared equivalence relation and never upgrades correctness, conformance, safety, or trust.
+
+#### R50-A12 — `ACCEPT`
+
+- Premise and evidence: RPT.006 (lines 2141–2159) claims assurance tiers actually passed and corpus coverage despite excluding downstream audit results from its inputs/provenance. RPT.008 (lines 2181–2199) correctly binds the unchanged candidate root to later audit, lane, panic, and lineage receipts.
+- Consequence and repair: the candidate manifest would need to fabricate or import post-root outcomes. Restrict RPT.006 to declared, required, blocked, and unavailable assurance/corpus rows; keep observed pass/fail/corpus dispositions solely in the downstream RPT.008 envelope.
+- Loss guard: preserve the immutable candidate root, row-level no-claims, and the prohibition on an audit result entering its own input manifest.
+
+#### R50-A13 — `ACCEPT`
+
+- Premise and evidence: Charter C1 gate text (lines 95–97) requires a G0–G3-subset result, and Rev 7 G3 (lines 5539–5544) defines a scoped external black-box evidence lane. Plan §§10.5, 11.4, and 11.6 state only prose availability; FUZ.016/FUZ.014/FUZ.015 have no protocol/right/custody/artifact/request/result or typed unavailable state for that lane.
+- Consequence and repair: campaign closure cannot distinguish unavailable, unrun, stale, contaminated, or selectively retained lane state. Add a symbolic `G3SubsetLaneProtocolId` mapping through FUZ.016 declarations, FUZ.014 terminal receipts, and FUZ.015 aggregation with rights, custody, exact external artifact/configuration, lineage, availability, and protocol-bound request/result identities.
+- Loss guard: the ordinary wedge stays independent of this lane; this authoring turn performs no contact, retrieval, execution, observation, measurement, or comparison.
+
+#### R50-A14 — `ACCEPT`
+
+- Premise and evidence: Work Order §34.9 (lines 67–76) requires one steward-selected sealed-pool probe with results retained regardless of direction. FUZ.013 (lines 3087–3105) governs partitions, and FUZ.014 (lines 3107–3125) governs runs, but IMM.019 consumes a generic probe root without a typed selection/protocol/result composition.
+- Consequence and repair: an opaque root cannot prove pool membership, access-budget use, candidate binding, result retention, reveal demotion, or replacement. Extend FUZ.013/FUZ.014/FUZ.015 and IMM.019 with `HeldOutProbeProtocolId`, `HeldOutProbeId`, and `HeldOutProbeResultId` plus the exact selection, custody, access, terminal, reveal, and replacement relations.
+- Loss guard: steward custody, hidden-byte inaccessibility, consumed access budget, unfavorable outcomes, and fresh replacement requirements remain mandatory.
+
+#### R50-A15 — `ACCEPT`
+
+- Premise and evidence: Rev 7 `EvaluationProtocolCommitment` (§10.6, lines 1928–1944) and §33.4 (lines 6701–6718) require an independently time-bound protocol before candidate generation/unblinding. IMM.018 opens the ledger and IMM.019 seals it, but neither defines the trial claim/reference/artifact/denominator/metric/missingness/stopping/reveal protocol or amendment chain.
+- Consequence and repair: the local seal cannot establish prospective trial design. Add a human/steward-owned pre-run evaluation-protocol contract whose immutable identity, custody evidence, reveal state, and amendment history are bound by IMM.017 events and IMM.019; the plan records only the interface.
+- Loss guard: local prospective logging remains distinct from independent custody, and this turn performs no commitment, message, publication, or evaluation.
+
+#### R50-A16 — `ACCEPT`
+
+- Premise and evidence: Work Order §34.9 requires attempt/failure/retry/cost/intervention and distribution fields, while Rev 7 §33.8 (lines 6769–6774) additionally requires denominator, success rate, percentiles, restarts, representative failures, and no selective retention. IMM.019 (lines 2603–2621) emits an unspecified attempt distribution; plan §11.5 adds two named outputs but no computation protocol.
+- Consequence and repair: identical event sets can yield incompatible sealed summaries. Add a versioned trial-aggregation subrecord with population/denominator, outcome taxonomy/order, missingness, percentile/median rules, favorable-selection count/rule, provider-route treatment, stopping policy, and all-attempt linkage.
+- Loss guard: every failure, retry, discarded branch, intervention, missing datum, and route remains visible; a favorable branch cannot hide the distribution.
+
+## R50 independent owner dispositions, batch 3/3 — `2026-07-15T11:28:33+02:00`
+
+#### R50-A17 — `ACCEPT`
+
+- Premise and evidence: Rev 7 G6.1 (lines 5609–5623) requires reproducible-build comparison. Plan §11.2 names a reproducible-build candidate row, but FUZ.016/FUZ.014/FUZ.015 (lines 3107–3165) have no two-build input relation, environment separation, comparator, discrepancy taxonomy, or row outcome.
+- Consequence and repair: the named gate row has no producing schema. Add a dedicated FUZ assurance run class with independently produced build roots, pinned source/toolchain/lock/features/target inputs, environment relation, artifact comparator, discrepancy/indeterminate states, and aggregate mapping.
+- Loss guard: retain exact D7/toolchain/dependency identities and perform no field, product, or external-tool measurement.
+
+#### R50-A18 — `ACCEPT`
+
+- Premise and evidence: Rev 7 §27.3 (lines 5676–5687) requires semantic reason, upstream-coupling inventory, independent oracle, old/new correctness review, deliberate re-freeze, and no ordinary bulk regeneration. IMM.010 (lines 2423–2441), FUZ.012 (lines 3067–3085), and plan §10.4 contain only regeneration/drift or bug-closure fragments, not that full policy.
+- Consequence and repair: behavior drift can be normalized by regeneration while existing checks still pass. Add a typed golden-change/re-freeze record to IMM.010 and FUZ.012, require it in IMM.012 when adjudicated goldens change, and distinguish derived echo regeneration from behavioral golden adjudication.
+- Loss guard: deterministic regeneration of derived echoes remains valid, and no changed artifact is accepted merely because a generator reproduced it.
+
+#### R50-A19 — `ACCEPT`
+
+- Premise and evidence: Charter §3 item 7 (line 64) requires a vulnerability-response policy draft before customers. Plan product-gate row 15 (lines 3438–3440) consumes `VulnerabilityResponsePolicyStatusId`, but that token has no identity schema, authorized issuer/reviewer, adoption/lapse state, version, evidence root, or truth check.
+- Consequence and repair: customer availability depends on an unauthenticated unversioned assertion. Add a human-owned status-artifact contract limited to identity, authorized roles, draft/adoption/lapse state, version/lifecycle, evidence linkage, claim-withdrawal linkage, and exact gate consumption.
+- Loss guard: do not draft policy content, create a channel, contact anyone, publish, or take any external action.
+
+#### R50-A20 — `ACCEPT`
+
+- Premise and evidence: Rev 7 §25.8 (lines 5285–5297) requires structured manifest categories for font types, color/ICC coverage, validation profiles, determinism classes, host adapters, and no-claim boundaries. RPT.006 (lines 2141–2159) and CLI.008 (lines 2785–2803) omit several of those categories and express later-layer absence only in prose.
+- Consequence and repair: callers cannot preflight absent, disabled, decision-blocked, and unsupported categories consistently. Add the missing structured category rows and lifecycle states to RPT.006, RPT.008, and CLI.008.
+- Loss guard: every C1 exclusion remains unavailable; an empty or blocked row never represents implemented or normatively grounded support.
+
+#### R50-B01 — `ACCEPT`
+
+- Premise and evidence: Charter graceful-degradation law (lines 42–50) forbids independence machinery from stranding the wedge. CLI.009 already allows raw checking with narrowed lineage language, but RPT.008 (lines 2181–2199) globally requires IMM.020 and product-gate rows 10/12 reject any missing required root.
+- Consequence and repair: the global dependency contradicts the row-scoped product law. Introduce an authenticated checker state of `Assessed(root)` or `Unavailable(reason, affected_rows, evidence)` in RPT.008; only checker/package/independence rows require the root, while unrelated R0 rows may be admitted under an explicitly narrowed envelope.
+- Loss guard: no independent-check, package-check admission, lineage, or stronger checker language is issued without the actual D4/IMM.020 evidence. The immutable reviewer B grade is retained; owner acceptance does not rewrite it.
+
+#### R50-B02 — `NARROW`
+
+- Premise and evidence: Rev 7 §§10.7 and 25.3 define a general typed explanation graph and command, but the Charter's C1 L0–L2 autopsy scope cannot mean every §25.3 command because rendering, text, writing, transforms, and other listed commands are explicitly later-cycle. Plan §12.1 (lines 3488–3495) therefore has authority to defer the dedicated command, yet FDN.011/RPT.001 do not name an exact typed handoff from C1 object provenance to the later cause graph.
+- Consequence and repair: reject the alleged requirement to expose `mb explain` in C1; accept only the upgrade-seam gap. Add a typed `ObjectExplanationHandoffId` over existing source/graph/view/object/virtual/enclosing-span and occurrence-state nodes, with unresolved inverse causality explicit, and bind the C5 row to it.
+- Loss guard: no pixel, glyph, text, signature-impact, transform, divergence, or unique inverse-causality explanation enters C1; the R48 deferral remains intact.
+
+#### R50-B03 — `ACCEPT`
+
+- Premise and evidence: Rev 7 §30.1.1 (lines 6034–6047) requires at least two named criteria before a module becomes a crate. IMM.007 (lines 2363–2381) lists only a `boundary-budget warning`, while the product gate requires IMM.006–IMM.012 to pass.
+- Consequence and repair: an over-split workspace could pass. Make a proven two-criterion match a required per-crate record; a violation fails, missing evidence is indeterminate, and only authenticated versioned kernel change control can alter the law.
+- Loss guard: the concrete atlas stays provisional, modules may still merge or split within the budget, and no one-contract/one-crate rule is introduced. The immutable reviewer B grade is retained.
+
+#### R50-B04 — `NARROW`
+
+- Premise and evidence: Rev 7 G6.1 (lines 5618–5621) requires public-API semver checks only after stability is claimed. C1 makes no general Rust-facade or C-ABI compatibility promise (plan §4.1), but it does claim major-version stability for selected schemas, diagnostics, and CLI status meanings.
+- Consequence and repair: a global public-API lane would invent a promise, while existing stable surfaces need comparison evidence. Add a `StabilityActivationRecord` and FUZ run class for only the declared stable schema/diagnostic/CLI rows; record `NoPublicApiStabilityPromise` for the C1 Rust facade and assign first broader activation to the C4 release-engineering gate.
+- Loss guard: preserve append-only contract/schema history and explicit migrations; no unclaimed facade stability is manufactured.
+
+### R50 premise-test arithmetic
+
+- Owner dispositions: `ACCEPT=22`, `NARROW=2`, `REJECT=0`, `REGRADE=0`, total=`24`.
+- The two narrows are R50-B02 and R50-B04. All A01–A20 and B01/B03 are accepted on independently reproduced local premises. Reviewer grades remain the immutable packet values A=`20`, B=`4`, C=`0`; no grade was silently changed or promoted.
+- Next gate: persist `REVISE -> DRAFT`, apply only the bounded repairs above, then persist `DRAFT -> SELF-CHECK` and run the full suite. R09 remains unallocated.
+
+## R50 transition: `REVISE -> DRAFT` — `2026-07-15T11:29:05+02:00`
+
+- Pre-transition plan identity was exactly 3,566 lines / 495,384 bytes / SHA-256 `bbedeb4eb6662b6839209b1a9807a93d7d8324a2d63159079c67194251b3c355`; pre-transition checkpoint identity was exactly 1,570 lines / 275,538 bytes / SHA-256 `5b9b74f3d4fcb16182fa73c5ee1e117a2a20f85f2f671d269ca249d291a7c6b7`.
+- Both owned live FSM surfaces now read `DRAFT`. No substantive plan repair preceded this transition; the only plan mutation since intake remains the owner-FSM header sequence.
+- Authorized repair set is exactly the 22 accepted and two narrowed R50 dispositions above. Reviewer grades remain immutable packet evidence, all earlier round guards remain mandatory, and R09 remains unallocated.
+
+### R50 DRAFT repair checkpoint 1/3 — `2026-07-15T11:31:29+02:00`
+
+- Plan identity after the first bounded repair group is 3,612 lines / 507,205 bytes / SHA-256 `ab18b6198cd8d689d66e42d90609802998c084b323248ebb98b3a4dbae18c226`, with owner FSM still `DRAFT`.
+- Applied only R50-A01–A11 kernel/schema boundaries: typed consequence-axis projection; closed facet, keyed evidence, claim-algebra, and availability laws in FDN.010; dormant future limit dimensions plus shared-work and fallible-allocation laws in FDN.005/FDN.013 interfaces; the qualified determinism registry; new FDN.017 host-output publication contract; and new dormant FDN.018 embedded-program meta-contract.
+- The catalog and specification each gained only FDN.017 and FDN.018 in this group. Every new card slot remains `PENDING-LICENSED-SOURCE`; no tenant, host publication, later-layer behavior, evidence observation, run, or external action was activated.
+- Next bounded group: downstream report/registry/checker/golden/stability repairs and the two human-owned IMM interfaces. No SELF-CHECK credit is claimed from this intermediate identity.
+
+### R50 DRAFT repair checkpoint 2/3 and disjoint-root ancestry notice — `2026-07-15T11:37:25+02:00`
+
+- Plan identity after the second bounded repair group is 3,652 lines / 522,469 bytes / SHA-256 `1e9b2785297a387aabeeb63fa2c06bf43fd961b8c1a1879ccd29f25b8d09e65c`, with owner FSM still `DRAFT`.
+- Applied only the accepted/narrowed downstream boundaries: D1 serialized-output classification; typed object-explanation handoff without a C1 command; stability activation/no-promise states; FDN.017 consumption by report/package/CLI output; declarative-only candidate assurance rows and structured absent-category discovery; row-scoped checker unavailability; typed consequence axes and claim algebras in IMM.002/IMM.003; active-scope compatibility checks; blocking two-criterion crate records; golden re-freeze law; protocol-bound prospective events; trial aggregation and probe roots; and new IMM.021/IMM.022 human-owned interfaces.
+- Operational notice independently reproduced: `HEAD` and local `origin/main` now both equal pushed ancestry `c4c9a0af22ffe55456f25c898229164b509f74b4`. The committed plan blob is identical at dispatch and new HEAD (`f9724ab2b42945177704020ffc039d474af8a3e9` both), and the committed checkpoint blob is likewise identical (`1ec3fa78678ba9e4d5bf894157d8be52ad4b2b81` both). Only the two G3 paths remain locally modified. G3 performs no rebase, revert, overwrite, commit, or push.
+- Next bounded group: FUZ lane/run/aggregation mappings, product/campaign gate reconciliation, exact counts/crosswalks, and loss-guard wording. No SELF-CHECK credit is claimed from this intermediate identity; R09 remains unallocated.
+
+### R50 DRAFT structural-validator diagnostic — `2026-07-15T11:41:28+02:00`
+
+- The first read-only catalog/spec and ID probes over-escaped punctuation in their Python regular expressions. Both matched zero contract IDs; their zero counts, empty failure maps, and vacuous set-equality result receive zero credit.
+- This is a validator-construction failure, not an artifact finding. Correction boundary: rerun with punctuation-literal ID patterns, require nonzero expected counts, and inspect every field/card failure before any FSM transition. The concurrent added-line guarded-category and prohibited-name/URL probes returned no match, but they remain DRAFT preflight only and do not supply final SELF-CHECK credit.
+
+### R50 DRAFT final-block parser diagnostic — `2026-07-15T11:41:52+02:00`
+
+- The punctuation-literal retry correctly returned catalog/specification=`142/142 unique`, exact set parity, and one card field per parsed contract, but its field counter bounded blocks only by the next contract heading. Because FUZ.016 is the last contract before §9, the parser leaked later list items into that block and falsely reported 56 fields.
+- The combined field result receives zero credit. Correction boundary: terminate every contract block at the next Markdown heading of level two through four, require exactly 17 fields for all 142 blocks, and rerun catalog/spec parity in the same corrected probe. No plan edit follows this parser-boundary failure.
+
+### R50 DRAFT short-reference boundary diagnostic — `2026-07-15T11:42:47+02:00`
+
+- The first whole-plan shorthand-reference probe allowed a dot immediately before its three-letter family token and therefore misclassified the `LZW.001` suffix inside valid card-local ID `SC.C1.FLT.LZW.001` as a contract reference. Its one reported unknown is a namespace-boundary parser error, and the shorthand-closure result receives zero credit.
+- Correction boundary: exclude dotted/card-local prefixes, rerun full and shorthand reference closure, and remeasure card/link/marker counts independently rather than carrying mixed-invocation totals forward. No plan edit or contract conclusion follows this false match.
+
+### R50 DRAFT dependency diagnostic and bounded correction — `2026-07-15T11:43:59+02:00`
+
+- The post-repair dependency audit found one substantive DRAFT defect: FUZ.015 still had an unconditional prerequisite on IMM.020. Because RPT.008 requires FUZ.015 for ordinary product admission, that hidden edge would have recreated the checker bottleneck and violated accepted R50-B01 despite the new row-scoped RPT.008 state.
+- Smallest correction applied: FUZ.015 now accepts `CheckerAssessmentState`, retains authenticated unavailability without treating it as pass, and conditionally consumes IMM.020 only for checker-specific aggregate contribution. Its general assurance aggregate remains available without that root. IMM.016 and IMM.019 retain their checker/package or campaign-specific prerequisites; they are not on the unrelated R0 product path.
+- The corrected plan is exactly 3,655 lines / 530,966 bytes / SHA-256 `390457d362c3e0999674b7f02b7b474dac9758b9e81589f17e562144a894f340`, still at `DRAFT`. No other repair boundary changed.
+
+### R50 DRAFT repair checkpoint 3/3 — `2026-07-15T11:43:59+02:00`
+
+- Final DRAFT structure preflight now returns catalog/specification=`142/142 unique`, exact set parity, all 142 contract blocks with exactly 17 fields and one pending card field, full/shorthand unknown references=`0`, prerequisite graph=`142` nodes / `1,572` unique edges / `142` visits / `0` cycles, contract-local links=`161/161`, whole-plan links=`166/161`, and plan pending markers=`162`.
+- The third repair group mapped typed G3-subset, held-out probe, paired-build, and active-stability run classes through FUZ.013–FUZ.016; expanded FUZ.010 host/allocation faults; bound golden adjudication into FUZ.012/IMM.012; reconciled product versus campaign/checker gates; bound IMM.021/IMM.022; updated object-explanation and stability handoffs; and reconciled the four new contract-local link IDs.
+- The two preflight parser defects and the hidden FUZ.015 edge are recorded above without credit. Next gate is `DRAFT -> SELF-CHECK`, followed by a fresh gap-free read and the entire credited suite from line 1. R09 remains unallocated.
+
+### R50 DRAFT edge-arithmetic correction — `2026-07-15T11:44:28+02:00`
+
+- The checkpoint immediately above copied the pre-correction prerequisite total of `1,572` after the FUZ.015-to-IMM.020 unconditional edge had been removed. That stale total is non-evidentiary and is not rewritten.
+- Fresh post-correction graph result is exactly `142` nodes / `1,571` unique prerequisite edges / `142` topological visits / `0` cycles, with unknown or malformed prerequisite references=`0`. All other checkpoint 3 counts remain as measured.
+- This visible arithmetic correction closes the DRAFT navigation defect. The next gate remains `DRAFT -> SELF-CHECK`; no plan edit was required.
+
+### R50 DRAFT newline/added-line validator diagnostic and concurrent-root observation — `2026-07-15T11:44:53+02:00`
+
+- The first format preflight tested `endswith` against the two literal bytes backslash-plus-`n`, not the newline byte, and therefore falsely reported both owned files without a final newline. Its final-newline predicates receive zero credit.
+- The same invocation joined diff additions with a literal backslash-plus-`n`, so its `added_lines=1` result and guarded/prohibited counts receive zero credit even though no match was displayed. Correction boundary: use byte value 10 and character value 10 directly, then rerun both owned files and the entire added-line scan.
+- Concurrent status at this instant also listed root/G7 paths `gauntlet/CONVERGENCE_REPORT.md`, `gauntlet/ROUND_LOG.md`, and `ledger/owners/G7_STATE.md` in addition to the two G3 paths. G3 did not read, edit, stage, revert, or overwrite those files. Both scoped and whole-worktree `git diff --check` exited 0; those preflight exits do not prove authorship scope and receive no terminal-suite credit yet.
+
+## R50 transition: `DRAFT -> SELF-CHECK` — `2026-07-15T11:45:35+02:00`
+
+- Pre-transition plan identity was exactly 3,655 lines / 530,966 bytes / SHA-256 `390457d362c3e0999674b7f02b7b474dac9758b9e81589f17e562144a894f340`; pre-transition checkpoint identity was exactly 1,629 lines / 285,166 bytes / SHA-256 `1b58204e92228ac7e66d07c93036e1373dc4781b495fcd3985738dfe944be346`.
+- Corrected DRAFT preflight returned final-newline/UTF-8/whitespace/conflict health for both owned files, added-line guarded-category vector `[0,0,0,0]`, prohibited-name/URL count `0`, exactly the two owned paths in the scoped status, and exit 0 from scoped plus whole-worktree `git diff --check`.
+- Both owned live FSM surfaces now read `SELF-CHECK`. The plan header mutation changes its identity, so no post-transition hash is inferred. The credited suite restarts from a gap-free read of every plan line and does not inherit DRAFT preflight credit. Concurrent root/G7 modifications remain out of scope and untouched. R09 remains unallocated.
+
+### R50 SELF-CHECK display-truncation diagnostic — `2026-07-15T11:47:26+02:00`
+
+- After credited, fully returned reads through plan lines 1–1,000, the paired read-only display request for lines 1,001–1,100 and 1,101–1,200 exceeded the available display context and was truncated without returning usable artifact text.
+- The entire 1,001–1,200 interval receives zero credit; no content or absence conclusion is inferred from that invocation. Correction boundary: reread 1,001–1,200 in smaller, fully returned windows and continue the gap-free full-plan read only from credited output.
+- No repository write other than this crash-safe diagnostic record follows from the failed read. The owner FSM remains `SELF-CHECK`; the pushed disjoint ancestry notice recorded above remains controlling and G3 does not touch the concurrent root/G7 paths.
+
+### R50 SELF-CHECK full-plan read checkpoint — `2026-07-15T11:49:48+02:00`
+
+- The post-repair plan was read from line 1 through line 3,655 in order. Lines 1–1,000 and 1,201–3,655 returned in credited bounded windows; the zero-credit 1,001–1,200 invocation above was replaced by four fully returned 50-line windows. There is now no unread plan interval in this SELF-CHECK pass.
+- Current plan identity is exactly 3,655 lines / 530,971 bytes / SHA-256 `3872ac468563c1dc2b6e38e01de11457e7fcd82e8f43538a726af2eac3e903c2`; current pre-checkpoint-write state identity was 1,641 lines / 287,065 bytes / SHA-256 `2c8a0398e55f8fffb665e1a3bc08558411a5f04eb0191ced64549f32eb55f0ed`.
+- Concurrent pushed ancestry advanced again: local `HEAD` and local `origin/main` both equal `f51b27de4e9b650a2c21733346fd2b3bac4f68a2`. The committed plan blob remains `f9724ab2b42945177704020ffc039d474af8a3e9` at both dispatch and current HEAD; the committed checkpoint blob remains `1ec3fa78678ba9e4d5bf894157d8be52ad4b2b81` at both. G3 therefore retains its two owned working-tree changes and performs no rebase, revert, overwrite, commit, push, or fetch.
+- `git status --short` currently lists the two owned paths plus concurrent root-owned `ledger/RUN_LEDGER.md`; G3 does not read or touch that ledger. The next gate is the credited structural, regression, authority, claim, hygiene, and diff suite; no passage is inferred from the full read alone.
+
+### R50 SELF-CHECK structural-validator construction failure — `2026-07-15T11:51:35+02:00`
+
+- The first credited structural-suite invocation exited before reading results because an inline Python f-string used an invalid escaped expression and raised `SyntaxError: unexpected character after line continuation character`.
+- The entire invocation receives zero credit and supplies no artifact finding, count, or absence inference. Correction boundary: replace the formatter expression with syntax-valid output logic and rerun the full catalog/spec/field/reference/DAG/card/retention bundle from disk.
+- No plan edit follows this validator-construction failure. The owner FSM remains `SELF-CHECK`.
+
+### R50 SELF-CHECK structural-validator grammar/expectation failure — `2026-07-15T11:52:30+02:00`
+
+- The syntax-corrected bundle executed but used three invalid assumptions: it searched only for backtick-form catalog cells and therefore returned catalog `0`; it allowed a hyphen immediately before shorthand tokens and therefore falsely reported the card-local suffixes `COS.001` and `PNG.001`; and it assumed, without first reading the crosswalk grammar, that actual `MB-SC-R0-*` references must be the contiguous numeric range 001–043.
+- The invocation exited 1 and the entire bundled result receives zero terminal credit, including values that happened to agree with DRAFT preflight. These are validator grammar/expectation failures, not artifact findings.
+- Correction boundary: inspect the bounded catalog and C1-surface/crosswalk syntax, scrub full card-local IDs before shorthand reference matching, derive the expected actual-card set from the plan's declared crosswalk rather than a guessed numeric range, and rerun the entire bundle. No plan edit follows.
+
+### R50 SELF-CHECK crosswalk-parser retry failure — `2026-07-15T11:53:35+02:00`
+
+- The next structural retry still exited 1 because its crosswalk parser made two mechanical mistakes: it expected eight data rows although the displayed table has nine, including the project-policy Recovery row, and it did not strip both Markdown code-span delimiters around `MB-SC-R0-* through MB-SC-R0-*` expressions before range expansion.
+- Its reported nine rows and 19/43 expansion therefore do not conflict with the artifact; the entire retry receives zero terminal credit. The bounded displayed table shows nine rows, eight of which enumerate actual-card IDs and collectively intend the registry 001–043, while Recovery remains a project-policy coverage row.
+- Correction boundary: strip code-span delimiters, expand ranges from the nine data rows, require the union 001–043 and one pending marker per row, then rerun the entire structural bundle. No plan edit follows; FSM remains `SELF-CHECK`.
+
+### R50 SELF-CHECK credited structural gate — `2026-07-15T11:54:22+02:00`
+
+- Corrected catalog/specification parsing returns 142 catalog IDs / 142 specification IDs, each namespace unique with exact parity. Relative to the current committed 138-ID control, exactly `FDN.017`, `FDN.018`, `IMM.021`, and `IMM.022` were added; no prior catalog or specification ID and no prior exclusion row disappeared.
+- Every one of the 142 contract blocks has exactly the required 17 fields and exactly one card-slot field bearing `PENDING-LICENSED-SOURCE`. Full and shorthand contract-reference closure, dependency-reference closure, and range grammar all return zero unknown or malformed references.
+- The prerequisite graph has 142 nodes / 1,571 unique edges / 142 topological visits / zero cycles. Seven separately indexed guarded transitions are present: DOC.010, DOC.015, both RPT.008 transitions, IMM.017, CLI.009, and FUZ.015; each has an explicit source-to-target phase and an additional-consumption clause.
+- Contract card fields contain 161 occurrences / 161 distinct `SC.C1.*` links; the full plan contains 166 occurrences / 161 distinct links and 162 pending markers. The nine-row C1-surface crosswalk retains one pending marker per row and expands to actual registry coverage 43/43 (`MB-SC-R0-001` through `MB-SC-R0-043`).
+- This credited gate supersedes only the two zero-credit parser retries above. Next gate: round-specific regression and R50 repair/loss-guard verification; owner FSM remains `SELF-CHECK`.
+
+### R50 SELF-CHECK broad regression-search display failure — `2026-07-15T11:54:50+02:00`
+
+- A broad read-only `rg` over all earlier-round names and the word `regression` in the checkpoint exceeded the display limit and returned a truncation warning (`365` output lines; original output approximately `22,981` tokens).
+- The probe receives zero credit and no displayed row, count, or absence claim from it is used. Correction boundary: parse the checkpoint in memory, emit only exact unique disposition totals and failures, and run finite exact plan-anchor predicates for every prior-round/R50 row.
+- No artifact edit follows except this diagnostic record; FSM remains `SELF-CHECK`.
+
+### R50 SELF-CHECK prior-round ID-counter expectation failure — `2026-07-15T11:55:36+02:00`
+
+- The first compact checkpoint counter incorrectly expected four A/B/C-form R03 IDs. It found the actual three disposition IDs (`R03-A01`, `R03-B01`, `R03-C01`) and exited 1 even though the historical 4/4 suite counts those three rows plus a separate `R03 linkage regressions` aggregate predicate.
+- The invocation receives zero credit for every round. The bounded R03 locator read independently shows the three disposition rows and the fourth linkage-regression row; no checkpoint or plan defect is established.
+- Correction boundary: require the exact three R03 IDs plus the separately named linkage predicate, then rerun disposition coverage and all plan-anchor regressions from scratch. No plan edit follows; FSM remains `SELF-CHECK`.
+
+### R50 SELF-CHECK finite-regression locator retry failure — `2026-07-15T11:58:44+02:00`
+
+- The first finite combined regression run was not all-green and receives zero credit in full. Its prior-round locator parser only inspected repaired table rows and whole code spans, so heading-block rounds and slash-composed identifiers produced zero-anchor misses: R01=`3/10`, R02=`5/5`, R03=`3/4`, R04=`0/17`, R05=`0/41`, R41=`5/7`, and R48=`3/4`.
+- Its R50 predicates returned 15/24 because nine checks copied disposition wording rather than the exact repaired-plan wording; examples include the plan's explicit dormant facet classes, empty executable-tenant registry, no-measurement boundary, checker conditional clause, crate split boundary, and no-promise stability language. These are locator vocabulary misses; no required artifact string was shown absent by an authority-derived predicate.
+- The same invocation's baseline-retention sets and 43/43 surface/stop-line predicates happened to return green, but they receive no credit from the rejected combined run. Correction boundary: extract individual stable IDs from both table rows and disposition heading blocks, split slash-composed identifiers, bind the nine R50 rows to exact current-plan phrases, and rerun all round and surface predicates together from disk.
+- No plan edit follows. FSM remains `SELF-CHECK`.
+
+### R50 SELF-CHECK finite-regression second retry diagnostic — `2026-07-15T12:00:07+02:00`
+
+- The heading-aware finite retry returned R01=`10/10`, R02=`5/5`, R03=`4/4`, R04=`17/17`, R05=`39/41`, R41=`7/7`, R48=`4/4`, C1 surface/stop-line=`43/43`, and R50=`23/24`; because the combined run was not all-green, every total remains zero-credit.
+- The three misses are exact-locator gaps, not plan defects: R05-B11's G4 lane and R05-B16's proof-kernel guard contain no automatically selected contract/type locator, while R50-A03's plan says the recovery vector is “not a scalar confidence or probability” and forbids a “scalar score” rather than using the predicate's exact “no scalar confidence” phrase.
+- Bounded artifact anchors are present at the G4 lane, the proof-kernel decision row, and FDN.010/REC.001/REC.007/FUZ.015. Correction boundary: add those exact finite phrases to their three predicates and rerun every round, retention set, surface, and R50 row from scratch. No plan edit follows; FSM remains `SELF-CHECK`.
+
+### R50 SELF-CHECK credited round, surface, and loss-guard gate — `2026-07-15T12:01:08+02:00`
+
+- The restarted finite exact-anchor suite passes R01=`10/10`, R02=`5/5`, R03=`4/4` (three disposition IDs plus the linkage-regression predicate), R04=`17/17`, R05=`41/41`, R41=`7/7`, and R48=`4/4`. Each prior row has at least one exact pushed-plan locator still present; no baseline contract, typed identity/receipt/record/manifest/envelope/report token, slash-name token, command token, or local card-link token disappeared.
+- The C1 positive-surface/stop-line matrix passes `43/43`, including `mb validate` and all retained strict/revision/credential/recovery/report/filter/security/checker/package surfaces plus later-layer exclusion boundaries.
+- The checkpoint contains exactly the routed R50 namespace A01–A20/B01–B04 and exactly 24 owner disposition blocks, each with premise/evidence, consequence/repair, and loss guard. Arithmetic is `ACCEPT=22`, `NARROW=2`, `REJECT=0`, `REGRADE=0`; the narrows are R50-B02 and R50-B04, and reviewer grades remain unpromoted packet evidence.
+- One explicit repaired-plan and loss-guard predicate passes for every R50 item (`24/24`), including the fifteen-facet/EvidenceSet/claim-algebra/axis registries; availability, dormant-limit/shared-work/fallible-allocation laws; FDN.017/FDN.018; seven determinism classes; candidate-manifest separation; typed G3/probe/protocol/aggregation/reproducible-build/golden/status/category rows; row-scoped checker state; explanation handoff; two-criterion crate boundary; and active-scope stability law. The sole plan occurrence of `mb explain` remains the explicit C5 exclusion row.
+- This credited run supersedes only the zero-credit locator retries above. Next gate: canonical authority hashes, CLI/schema-specific checks, claim/clean-room/source guards, provenance/FSM, and file/diff integrity. FSM remains `SELF-CHECK`; R09 remains unallocated.
+
+### R50 SELF-CHECK transition-relation parser diagnostic — `2026-07-15T12:02:39+02:00`
+
+- The first relation validator returned target edges=`151` and FUZ.002–FUZ.010 explicit FUZ.001 prerequisites=`9/9`, but it exited 1 after inflating guarded transition consumers to `31`. Its parser read explanatory contract references after each artifact expression instead of stopping at the clause's `only`/`after` guard boundary, and its expectation treated seven transition clauses as seven distinct owning contracts even though both RPT.008 clauses share one owner.
+- The entire invocation receives zero relation credit; the 31-edge value is a parser artifact, not a plan finding. Correction boundary: stop each `additionally consumes` expression at its guard introducer, require seven clauses across six owning contracts, resolve the exact consumed-artifact tokens, and rerun target/prerequisite/transition checks together.
+- No plan edit follows; FSM remains `SELF-CHECK`.
+
+### R50 SELF-CHECK credited relation gate — `2026-07-15T12:03:09+02:00`
+
+- The corrected declared-grammar pass returns 151 separately indexed target edges and zero unknown targets/range errors. All nine FUZ.002–FUZ.010 target families retain FUZ.001 as an explicit prerequisite (`9/9`).
+- Seven guarded transition clauses across six owning contracts resolve to 10 exact consumed-artifact edges: DOC.010 consumes REC.001/REC.003–REC.005; DOC.015 consumes SEC.009; RPT.008 separately consumes IMM.020 and IMM.022; IMM.017 consumes IMM.021; CLI.009 consumes IMM.020; and FUZ.015 conditionally consumes IMM.020. Every phase has an explicit source-to-target arrow and guard.
+- These relations remain outside the already credited 1,571-edge prerequisite DAG. No target or transition was merged into that DAG, and no relation error remains. FSM remains `SELF-CHECK`.
+
+### R50 SELF-CHECK authority/hygiene wrapper construction failure — `2026-07-15T12:04:17+02:00`
+
+- The first combined authority/provenance/claim/format wrapper did not launch. A literal Markdown-fence token inside its JavaScript template terminated the template and the tool returned `SyntaxError: Invalid or unexpected token` before any repository diagnostic ran.
+- The invocation receives zero credit for every intended gate and supplies no artifact finding. It made no repository or process-state change.
+- Correction boundary: construct fence patterns from character codes rather than literal template delimiters, then rerun the full nine-hash/provenance/FSM/CLI/slot/claim/source/encoding/scope bundle from disk. FSM remains `SELF-CHECK`.
+
+### R50 SELF-CHECK authority/hygiene credited-attempt defect — `2026-07-15T12:05:19+02:00`
+
+- The corrected combined wrapper exited 1 on one candidate artifact regression: formal plan token `Complete` measured `2`, while the pushed control and the prior credited suite require `3`. The entire combined invocation receives zero credit until this discrepancy is premise-tested and the full bundle restarts.
+- Other returned values were green but are not credited from the failed bundle: canonical hashes `9/9`; plan/checkpoint input lists `24/24` and `26/26`; one live SELF-CHECK surface; CLI.010 `17/17`; 142 card fields / 162 pending markers / zero semantic-body or alternate-state fields; added-line guarded vector `[0,0,0,0]`; prohibited-name/URL counts zero; UTF-8/newline/tabs/trailing/conflict/fence health; and exact two-owned-path scoped diff.
+- Next gate: compare all current/control `Complete` occurrences and the FDN.010 outcome algebra. If an R50 edit removed the formal canonical variant rather than lawfully narrowing it, persist `SELF-CHECK -> REVISE` before any plan repair and restart the full suite after the bounded correction.
+
+## R50 SELF-CHECK defect transition: `SELF-CHECK -> REVISE` — `2026-07-15T12:05:50+02:00`
+
+- Pre-transition plan identity was exactly 3,655 lines / 530,971 bytes / SHA-256 `3872ac468563c1dc2b6e38e01de11457e7fcd82e8f43538a726af2eac3e903c2`; pre-transition checkpoint identity was exactly 1,731 lines / 302,367 bytes / SHA-256 `49de0fb9562a6e37a2033d20fdade77941d5653624c05349bc8fcbd23a012084`.
+- Independent control/current comparison proves the defect is in FDN.005, not FDN.010: the pushed FDN.005 soft-limit outcome sentence explicitly prohibited any degraded result from being `Complete`; the R50 shared-work/fallible-allocation rewrite retained caller permission and exact covered/missing scope but dropped that explicit canonical loss guard. Current formal token count is 2 versus pushed/prior-suite 3.
+- Owner FSM is now `REVISE` in the plan, checkpoint frontmatter, and sole live current-state surface. Smallest authorized repair: restore the prior prohibition to the end of the current FDN.005 soft-limit outcome sentence without changing the new shared-work, retention, allocation, or partial-scope semantics.
+- Next required transitions are `REVISE -> DRAFT -> SELF-CHECK`, followed by a fresh gap-free plan read and the entire credited suite. No prior partial SELF-CHECK result will be substituted; R09 remains unallocated.
+
+## R50 defect-recovery transition: `REVISE -> DRAFT` — `2026-07-15T12:06:12+02:00`
+
+- Pre-transition plan identity was exactly 3,655 lines / 530,967 bytes / SHA-256 `c8c760f9478e955e3ae10f3349695b76ddf05821debd3634784790aef9884611`; pre-transition checkpoint identity was exactly 1,738 lines / 303,704 bytes / SHA-256 `31d3a87ac2efe622b855e9748155bc5ed289e4dd715aa8bca0ee9591b4ee88f2`.
+- Both owned live FSM surfaces now read `DRAFT`. Authorized content delta remains exactly one appended loss-guard clause in FDN.005; no other R50 repair, contract, dependency, capability, or exclusion may change.
+- After the edit, run a bounded local diff/claim check, persist the repaired DRAFT identity, then transition to SELF-CHECK and restart every gate from a new gap-free read. R09 remains unallocated.
+
+### R50 DRAFT truncated patch-result diagnostic and disk determination — `2026-07-15T12:07:43+02:00`
+
+- The structured `apply_patch` invocation for the one-clause FDN.005 repair returned a transport/display result stating that its output exceeded the available model context and was truncated. That result receives zero credit and does not establish success or failure.
+- A fresh bounded disk read independently finds exactly one sentence `No degraded result is \`Complete\`.` at plan line 480, appended to the existing FDN.005 output contract without removing its R50 shared-work, retention-owner, private-reservation, `FallibleAllocationLease`, or exact partial-scope terms. The patch therefore landed once; it was not retried blindly.
+- Repaired DRAFT plan identity is exactly 3,655 lines / 531,000 bytes / SHA-256 `bfa8877f3c7e9b59a3dbd52d90719b77e0fabb7da81ebf7d8d42307fa054ebe3`. Pre-record checkpoint identity was exactly 1,744 lines / 304,476 bytes / SHA-256 `e069294a143a3c7be704d87c140c625854c3923c4e1de1342853e19d9cf444d3`.
+
+### R50 DRAFT concurrent root-ancestry notice — `2026-07-15T12:07:43+02:00`
+
+- The human reported disjoint G7 control commits advancing pushed ancestry beyond dispatch without staging or touching either G3-owned path. A current read-only check observes `HEAD` and local `origin/main` both at `9e538d37be5289f45e69722b27bfc8a86fe52c07`; dispatch `077d1dc5f77fa7e139e94f049081dec243adf6ee` is its ancestor.
+- At that observed HEAD, the committed blobs for both `plans/CYCLE_1_DELTA_PLAN.md` and `ledger/owners/G3_STATE.md` exactly match their dispatch blobs (`f9724ab2b42945177704020ffc039d474af8a3e9` and `1ec3fa78678ba9e4d5bf894157d8be52ad4b2b81`, respectively). Concurrent root-owned changes remain out of scope and untouched; no rebase, revert, overwrite, commit, push, or fetch follows.
+
+### R50 DRAFT bounded-repair checker expectation failure — `2026-07-15T12:08:33+02:00`
+
+- The first in-memory sole-delta checker exited 1 because it incorrectly expected the reconstructed pre-repair DRAFT plan to be 530,965 bytes. Replacing six-byte `REVISE` with five-byte `DRAFT` makes the correct DRAFT size 530,966 bytes; the checker introduced a one-byte arithmetic error.
+- Although that invocation reconstructed the exact recorded REVISE identity (530,967 bytes / SHA-256 `c8c760f9478e955e3ae10f3349695b76ddf05821debd3634784790aef9884611`) and displayed the desired term counts, the entire invocation receives zero credit because its aggregate predicate failed.
+- No plan or process state changed. Correction boundary: use 530,966 as the pre-repair DRAFT byte expectation, retain the exact REVISE hash oracle, and rerun every bounded local predicate together before transitioning.
+
+### R50 DRAFT credited bounded-repair proof — `2026-07-15T12:09:07+02:00`
+
+- The corrected in-memory proof passes: the exact restored FDN.005 sentence occurs once at line 480; formal `Complete` count is 3; and the plan retains its shared immutable-artifact charge, logical-consumer record, worst-case private reservation, single retention owner, `FallibleAllocationLease`, and exact covered/missing partial scope.
+- Removing only the 34-byte appended clause reconstructs the pre-repair DRAFT at 530,966 bytes / SHA-256 `390457d362c3e0999674b7f02b7b474dac9758b9e81589f17e562144a894f340`; changing that reconstructed header back to REVISE reproduces the recorded pre-repair identity exactly at 530,967 bytes / SHA-256 `c8c760f9478e955e3ae10f3349695b76ddf05821debd3634784790aef9884611`.
+- Added lowercase Rule-13 counter vector remains `[0,0,0,0]` in the published vocabulary order. Repaired DRAFT identity is exactly 3,655 lines / 531,000 bytes / SHA-256 `bfa8877f3c7e9b59a3dbd52d90719b77e0fabb7da81ebf7d8d42307fa054ebe3`.
+
+## R50 defect-recovery transition: `DRAFT -> SELF-CHECK` — `2026-07-15T12:09:07+02:00`
+
+- Pre-transition plan identity was exactly 3,655 lines / 531,000 bytes / SHA-256 `bfa8877f3c7e9b59a3dbd52d90719b77e0fabb7da81ebf7d8d42307fa054ebe3`; pre-transition checkpoint identity was exactly 1,761 lines / 307,150 bytes / SHA-256 `bf5948dc14f5ac534798ee84431bfe2612a61579cdf9facdc4e2603ff224053b`.
+- Both owned live FSM surfaces now read `SELF-CHECK`. The entire suite restarts from a new gap-free line-1 read; no green value from the failed earlier wrapper or any earlier partial SELF-CHECK receives terminal credit.
+- Any new defect requires a persisted `SELF-CHECK -> REVISE -> DRAFT -> SELF-CHECK` loop before resubmission. R09 remains unallocated.
+
+### R50 restarted SELF-CHECK credited gap-free plan read — `2026-07-15T12:11:15+02:00`
+
+- A fresh read after the FDN.005 repair covered every plan line exactly once from 1 through 3,655 using bounded contiguous windows: 1–200, 201–400, 401–600, 601–750, 751–825, 826–900, 901–1100, 1101–1300, 1301–1500, 1501–1560, 1561–1620, 1621–1800, then consecutive 200-line windows through 3,400, followed by 3,401–3,550 and 3,551–3,655.
+- Every window exited normally and returned its entire requested text within the display budget. No clipped, truncated, failed, or inferred window contributes; the previously problematic 751–900 and 1501–1620 spans were deliberately split and fully returned.
+- The full read finds the restored FDN.005 loss guard in context and no new substantive contradiction. Repaired SELF-CHECK plan identity is exactly 3,655 lines / 531,005 bytes / SHA-256 `b312f424c6e913ad916abaff92d9ef402ea0d1a779c556223297752add7ccdb9`; pre-record checkpoint identity was exactly 1,773 lines / 308,903 bytes / SHA-256 `a996182b6da917730fb64c4ec2804817438476c37338e1f8b8c04de980f1fc15`.
+
+### R50 restarted SELF-CHECK credited structural and relation gate — `2026-07-15T12:12:35+02:00`
+
+- Catalog/specification parsing returns 142 catalog IDs / 142 specification IDs, each namespace unique with exact parity and exactly the required 17 fields per contract. Relative to dispatch, only `FDN.017`, `FDN.018`, `IMM.021`, and `IMM.022` were added in both places; no prior ID disappeared.
+- The 142 card-slot fields contain 161 occurrences / 161 distinct `SC.C1.*` links and one pending marker per field. The full plan contains 166 occurrences / 161 distinct local links and 162 `PENDING-LICENSED-SOURCE` markers. The nine-row crosswalk retains one marker per row and expands to actual registry coverage 43/43 (`MB-SC-R0-001` through `MB-SC-R0-043`).
+- Full/shorthand/range/dependency reference closure returns zero errors. The prerequisite graph has 142 nodes / 1,571 unique edges / 142 topological visits / zero cycles; the separately indexed target relation has 151 edges, and FUZ.002–FUZ.010 retain explicit FUZ.001 prerequisites 9/9.
+- Seven guarded transition clauses across six owners resolve to 10 exact consumed-artifact edges, with phase arrows and no transition error. Pre-record checkpoint identity was exactly 1,779 lines / 309,957 bytes / SHA-256 `1988dfe957d6290c3e8e6382c3dd8d99ef4b05250ad6aa5260b778ce3a00bb63`. Owner FSM remains `SELF-CHECK`.
+
+### R50 restarted SELF-CHECK combined-regression locator failure — `2026-07-15T12:13:58+02:00`
+
+- The first restarted combined round/surface/R50/loss-guard invocation exited 1 and receives zero credit in full. Its sole miss was a literal loss-guard locator for `no scalar confidence`; the plan instead preserves the authority-equivalent exact wording `not a scalar confidence or probability` in REC.001 and separately rejects scalar score/rank substitutions.
+- The displayed green values from that failed aggregate—including all historical round counts, 43/43 surface checks, 24/24 R50 repair anchors, and zero control-token disappearance—are not credited. No plan defect or repository/process change follows from the locator mismatch.
+- Correction boundary: replace only the failed predicate with the exact current plan phrase, retain every other predicate unchanged, and rerun the entire combined gate from disk. Pre-record checkpoint identity was exactly 1,786 lines / 311,328 bytes / SHA-256 `0a27ec0eab75a66b96729c5e3ee4882545824d31a44d924bbb8299a617db3761`.
+
+### R50 restarted SELF-CHECK credited round, surface, and repair gate — `2026-07-15T12:14:41+02:00`
+
+- The corrected full combined run passes historical disposition coverage at R01=`10/10`, R02=`5/5`, R03=`4/4` (three IDs plus the separate linkage predicate), R04=`17/17`, R05=`41/41`, R41=`7/7`, and R48=`4/4`. It also finds zero disappearance from the dispatch control for typed identity/receipt/record/manifest/envelope/report/bundle/handle tokens, PDF slash-name tokens, C1 command tokens, and local card-link tokens.
+- The positive-surface/stop-line matrix passes `43/43`, retaining strict, revision, object, credential, recovery, validation, report, filter, security, checker, package, and later-layer exclusion boundaries.
+- Exactly 24 R50 disposition headings remain with arithmetic `ACCEPT=22`, `NARROW=2`, `REJECT=0`, `REGRADE=0`. One independently repaired-plan predicate and the preserved loss-guard set pass for every R50 item (`24/24` and `9/9`).
+- Current primary repair anchor lines are: A01/A02/A03=`574`; A04=`211`; A05=`580`; A06=`477`; A07/A08=`480`; A09=`241`; A10=`242`; A11=`614`; A12/A20=`2196`; A13=`3533`; A14/A16=`2652`; A15=`348`; A17=`3196`; A18=`2472`; A19=`349`; B01=`2230`; B02=`600`; B03=`2413`; B04=`674`. Pre-record checkpoint identity was exactly 1,792 lines / 312,399 bytes / SHA-256 `a13c16e5fc2f176ef83a36fee91c5f6dab711650161e36b1f6a5fe20e7ba8fc5`.
+
+### R50 restarted SELF-CHECK authority/hygiene wrapper failure — `2026-07-15T12:16:47+02:00`
+
+- The first restarted authority/provenance/claim/format wrapper exited 1 and receives zero credit in full. It found one real checkpoint defect: the newly added DRAFT credited-proof record used all four lowercase Rule-13 words as counter labels, producing added-line vector `[1,1,1,1]`.
+- The wrapper also had two diagnostic defects. Its whole-plan scan demanded zero instances of the second guarded token even though current and dispatch each contain exactly eight, all in scoped full-snapshot/full-frontier contract claims. Its porcelain parser trimmed the leading status column and misrendered the first concurrent path as `auntlet/ROUND_LOG.md`; it did not read that path. These values receive zero credit and establish no plan defect.
+- Other displayed green values—including canonical hashes, provenance, CLI.010, slot firewall, clean-room/URL, encoding/fence/whitespace, diff, and identity results—also receive zero credit from the failed aggregate. No repository or process state changed during the read-only invocation.
+
+### R50 SELF-CHECK transition-patch context failure — `2026-07-15T12:17:24+02:00`
+
+- The first structured patch attempt for this transition failed verification before any write because its checkpoint context accidentally duplicated the A20 coordinate. Fresh hashes and both live headers remained byte-identical at SELF-CHECK; no partial transition occurred.
+- The failed write receives zero credit. This corrected attempt uses the exact persisted anchor line and records the failure without changing any plan semantics or historical disposition.
+
+## R50 claim-label defect transition: `SELF-CHECK -> REVISE` — `2026-07-15T12:17:24+02:00`
+
+- Pre-transition plan identity was exactly 3,655 lines / 531,005 bytes / SHA-256 `b312f424c6e913ad916abaff92d9ef402ea0d1a779c556223297752add7ccdb9`; pre-transition checkpoint identity was exactly 1,799 lines / 313,791 bytes / SHA-256 `c585c3f9b04aa67078f292aed20bdca5cc61f8c2e0bcda26795895da4c3608df`.
+- Both owned live FSM surfaces now read `REVISE`. Smallest repair boundary: replace only the four counter labels in the DRAFT proof line with a position-stable numeric vector; preserve the recorded counts, plan identity, and all historical diagnostics.
+- After `REVISE -> DRAFT`, verify the sole state delta, return to SELF-CHECK, and restart every credited gate including the full line-1 plan read. R09 remains unallocated.
+
+## R50 claim-label defect transition: `REVISE -> DRAFT` — `2026-07-15T12:17:49+02:00`
+
+- Pre-transition plan identity was exactly 3,655 lines / 531,001 bytes / SHA-256 `8f1c706170ab237e106994ce3fe6989bf8803dada702519f9ae23cfcb3ac3ac2`; pre-transition checkpoint identity was exactly 1,816 lines / 316,352 bytes / SHA-256 `28421c137cd988a0ba28edd97f9104d82e1dfc2bca2dc44fe73b6c4245b0ee51`.
+- Both owned live FSM surfaces now read `DRAFT`. Authorized repair remains exactly one checkpoint line: retain its four zero results as `[0,0,0,0]` without spelling the guarded labels.
+- After the repair, run a bounded added-line and in-memory sole-delta proof before returning to SELF-CHECK. R09 remains unallocated.
+
+### R50 DRAFT credited state-only Rule-13 repair proof — `2026-07-15T12:18:31+02:00`
+
+- The added-line Rule-13 vector is `[0,0,0,0]`; the replacement numeric-vector record occurs exactly once and the old counter-label form is absent.
+- The plan is unchanged except for the DRAFT FSM header and exactly reproduces its prior repaired DRAFT identity: 3,655 lines / 531,000 bytes / SHA-256 `bfa8877f3c7e9b59a3dbd52d90719b77e0fabb7da81ebf7d8d42307fa054ebe3`.
+- No other checkpoint, plan contract, disposition, loss guard, or repository/process state changed. Pre-record checkpoint identity was exactly 1,822 lines / 317,077 bytes / SHA-256 `72dbfc3d613d316a3aab52af8be24635890728f686afaeff13de27f499f9cdd5`.
+
+## R50 claim-label defect transition: `DRAFT -> SELF-CHECK` — `2026-07-15T12:18:31+02:00`
+
+- Pre-transition plan identity was exactly 3,655 lines / 531,000 bytes / SHA-256 `bfa8877f3c7e9b59a3dbd52d90719b77e0fabb7da81ebf7d8d42307fa054ebe3`; pre-transition checkpoint identity was exactly 1,822 lines / 317,077 bytes / SHA-256 `72dbfc3d613d316a3aab52af8be24635890728f686afaeff13de27f499f9cdd5`.
+- Both owned live FSM surfaces now read `SELF-CHECK`. Every gate restarts, including a fresh gap-free plan read and corrected authority/hygiene wrapper; earlier restarted green results do not supply terminal credit.
+- Any further defect repeats the full repair loop. R09 remains unallocated.
+
+### R50 second-restart plan-read paired-window truncation — `2026-07-15T12:19:19+02:00`
+
+- The paired display request for plan lines 401–600 and 601–750 showed an outer transport marker that approximately 2,322 tokens were truncated from the middle, even though both child reads returned exit 0.
+- Both requested windows receive zero credit; no text on either side of the clipping marker is used to infer the omitted span. No repository or process state changed during the read-only calls.
+- Correction boundary: reread all lines 401–750 in smaller standalone windows and require every replacement to return without a clipping marker before extending credited gap-free coverage. Pre-record checkpoint identity was exactly 1,834 lines / 318,376 bytes / SHA-256 `e4ccb8352619f6ab80c6c4ecc3ff86b476b9da315e94d28281a9c4cc0d8ccc48`.
+
+### R50 second-restart plan-read 901–1100 transport truncation — `2026-07-15T12:20:51+02:00`
+
+- The standalone display request for plan lines 901–1100 returned an outer `Output exceeded the available model context and was truncated` marker rather than the requested text. The entire requested window receives zero credit; no omitted or previously observed text is inferred.
+- No repository or process state changed during the read-only call. After the required post-compaction full reread of `AGENTS.md`, current disk checks reproduce both owned live FSM headers as `SELF-CHECK`, plan identity 3,655 lines / 531,005 bytes / SHA-256 `b312f424c6e913ad916abaff92d9ef402ea0d1a779c556223297752add7ccdb9`, and pre-record checkpoint identity 1,840 lines / 319,213 bytes / SHA-256 `41e4de6d87a6468d7ebc69e8bc9e38e3627618fd10236116545cd82bdf6e68ba`.
+- Correction boundary: reread all lines 901–1100 as four standalone 50-line windows and require each replacement to return fully before extending credited gap-free coverage. R09 remains unallocated.
+
+### R50 second-restart credited read frontier 1–1100 — `2026-07-15T12:21:34+02:00`
+
+- The four replacement windows 901–950, 951–1000, 1001–1050, and 1051–1100 each exited normally and returned every requested numbered line without a clipping marker.
+- Combined with the already credited standalone replacements through line 900, the fresh post-repair read is now gap-free and credited for plan lines 1–1100. No semantic defect was observed in this span; this is only a read-coverage result.
+- Plan identity remains 3,655 lines / 531,005 bytes / SHA-256 `b312f424c6e913ad916abaff92d9ef402ea0d1a779c556223297752add7ccdb9`. Pre-record checkpoint identity was 1,846 lines / 320,262 bytes / SHA-256 `9f13e83d306165663640bd327451a3a698217789f5c26c1f27e809c43c29d71b`; owner FSM remains `SELF-CHECK`.
+
+### R50 second-restart credited read frontier 1–1620 — `2026-07-15T12:22:07+02:00`
+
+- Standalone numbered windows 1101–1200, 1201–1300, 1301–1400, 1401–1500, 1501–1560, and 1561–1620 each exited normally and returned every requested line without a clipping marker.
+- The fresh post-repair read is now gap-free and credited for plan lines 1–1620. The intentionally split 1501–1620 replacement closes that historically fragile span without inference; no semantic defect was observed in the newly read range.
+- Plan identity remains 3,655 lines / 531,005 bytes / SHA-256 `b312f424c6e913ad916abaff92d9ef402ea0d1a779c556223297752add7ccdb9`. Pre-record checkpoint identity was 1,852 lines / 321,071 bytes / SHA-256 `b67f56e79f84e0825c887acbdb1f8a66bf2e39ae84a91bd320c995ebf7bb3aa0`; owner FSM remains `SELF-CHECK`.
+
+### R50 second-restart credited read frontier 1–2700 — `2026-07-15T12:22:57+02:00`
+
+- Standalone numbered windows 1621–1700 and each consecutive 100-line window from 1701 through 2700 exited normally and returned every requested line without a clipping marker.
+- The fresh post-repair read is now gap-free and credited for plan lines 1–2700. No semantic defect was observed in the newly read range; all pending-source, capability-ceiling, uncertainty, replay, clean-room, and no-action boundaries encountered remain intact.
+- Plan identity remains 3,655 lines / 531,005 bytes / SHA-256 `b312f424c6e913ad916abaff92d9ef402ea0d1a779c556223297752add7ccdb9`. Pre-record checkpoint identity was 1,858 lines / 321,901 bytes / SHA-256 `2ca2d597c5faade5756ae56cc8c5ca4c509822de8f3237fbb868bbc726b0065a`; owner FSM remains `SELF-CHECK`.
+
+### R50 second-restart credited read frontier 1–3000 — `2026-07-15T12:23:34+02:00`
+
+- After another full `AGENTS.md` reread on the human's instruction, standalone numbered windows 2701–2800, 2801–2900, and 2901–3000 each exited normally and returned every requested line without a clipping marker.
+- The fresh post-repair read is now gap-free and credited for plan lines 1–3000. No semantic defect was observed in the newly read range; the CLI.010 atomic surface, pending-source firewall, and no-claim boundaries remain intact.
+- Plan identity remains 3,655 lines / 531,005 bytes / SHA-256 `b312f424c6e913ad916abaff92d9ef402ea0d1a779c556223297752add7ccdb9`. Pre-record checkpoint identity was 1,864 lines / 322,737 bytes / SHA-256 `5da5d2927802e1df28d11af117b096471759639cf8c5e2f8d6e41cd15c38522a`; owner FSM remains `SELF-CHECK`.
+
+### R50 second-restart credited gap-free plan read — `2026-07-15T12:24:15+02:00`
+
+- Standalone numbered windows 3001–3100, 3101–3200, 3201–3300, 3301–3400, 3401–3500, 3501–3550, 3551–3600, and 3601–3655 each exited normally and returned every requested line without a clipping marker.
+- Together with the persisted credited frontiers, the fresh post-repair read covers every plan line exactly once from 1 through 3,655, with narrower replacement windows used wherever an earlier request had clipped or truncated. No failed or clipped request contributes evidence.
+- The whole read finds no new substantive contradiction, missing loss guard, or unauthorized widening. Plan identity remains exactly 3,655 lines / 531,005 bytes / SHA-256 `b312f424c6e913ad916abaff92d9ef402ea0d1a779c556223297752add7ccdb9`; pre-record checkpoint identity was 1,870 lines / 323,581 bytes / SHA-256 `ddc80812104f48f4e16af49dce5caf539c66eacdf34df75f902a47f204b99b2a`. Owner FSM remains `SELF-CHECK`.
+
+### R50 second-restart locator shell-quoting failure — `2026-07-15T12:24:53+02:00`
+
+- A read-only heading/catalog locator probe failed because literal backticks inside a double-quoted shell pattern were interpreted as command substitutions; `zsh` reported two `command not found` errors and the resulting locator output receives zero credit.
+- A separately invoked bounded plan display in the same orchestration call returned normally but was only inspection context, not a credited gate. No repository or process state changed.
+- Correction boundary: use a quote-safe in-memory parser with no shell-interpreted backticks and require its entire structural aggregate to pass. Pre-record checkpoint identity was 1,876 lines / 324,576 bytes / SHA-256 `47309095a9f11c80950077c49006bae429d4a7280f7a9d4cc23f9e8889fc7fe9`; owner FSM remains `SELF-CHECK`.
+
+### R50 second-restart structural-parser boundary failure — `2026-07-15T12:26:04+02:00`
+
+- The first quote-safe structural aggregate exited 1 and receives zero credit in full. Its sole failure was `FUZ.016 top fields 23`: the parser allowed the final section-8 contract block to extend through later section-9 workflow bullets instead of stopping at the section boundary.
+- The displayed catalog/spec parity, field, card/link, marker, and crosswalk values are not credited from this failed aggregate. The exact CLI.010 17-field display and all other green-looking subresults likewise receive zero credit.
+- No repository or process state changed. Correction boundary: cap the final FUZ.016 block at `## 9. End-to-end R0 workflows`, keep every predicate unchanged, and rerun the entire structural aggregate. Pre-record checkpoint identity was 1,882 lines / 325,427 bytes / SHA-256 `2be8a79fb025aff6c202d61e0c63f11ba364685ee7f14bd5cb2ea05165f53cdb`; owner FSM remains `SELF-CHECK`.
+
+### R50 second-restart credited structural/card gate — `2026-07-15T12:26:37+02:00`
+
+- The corrected aggregate passes catalog/specification parsing at 142 catalog IDs / 142 specification IDs, each namespace unique, exact 142/142 parity, and no prior-ID loss. All 142 contract blocks carry the exact 17 required fields once; CLI.010 independently returns each field once.
+- Card-slot fields return 161 occurrences / 161 distinct `SC.C1.*` links with 142/142 field-local pending markers. The whole plan returns 166 occurrences / 161 distinct local links and exactly 162 `PENDING-LICENSED-SOURCE` markers.
+- The registry crosswalk has nine data rows, one pending marker per row, and expands to actual registry coverage 43/43 with zero missing IDs. Pre-record checkpoint identity was 1,888 lines / 326,410 bytes / SHA-256 `fdd1d259300fceb4df0b65ef305f8ba9ea95e8290f74c9f4dbe5fcb278939e33`; owner FSM remains `SELF-CHECK`.
+
+### R50 second-restart reference/DAG parser-scope failure — `2026-07-15T12:28:27+02:00`
+
+- The first reference/DAG aggregate exited 1 and receives zero credit in full. Its whole-plan shorthand scanner misclassified `COS.001`, `PNG.001`, and `LZW.001` suffixes inside longer local card-link IDs as contract-family references. Its dependency grammar also rejected the exact zero-prerequisite wording used by FDN.005 and FDN.008.
+- The displayed graph, target-relation, transition, and FUZ prerequisite values receive zero credit even though they matched their oracles. No plan defect is established by either parser miss.
+- No repository or process state changed. Correction boundary: recognize only the 12 cataloged contract families in shorthand/range parsing and admit the exact `base ... no C1 contract prerequisite` form as a zero-edge declaration, then rerun every reference and graph predicate. Pre-record checkpoint identity was 1,894 lines / 327,330 bytes / SHA-256 `2760bf7ccaaaf6ad5e4bc35a5a2ba1637ff16bba68dd367b8ec3d893882b250c`; owner FSM remains `SELF-CHECK`.
+
+### R50 second-restart credited reference and DAG gate — `2026-07-15T12:29:05+02:00`
+
+- Full, shorthand, slash, and range parsing across the 12 declared contract families expands 3,035 references with zero unknown IDs, unversioned full IDs, wrong versions, reversed ranges, or cross-family ranges. All 142 dependency fields match the declared grammar, including the two explicit zero-prerequisite foundation declarations.
+- The prerequisite graph has 142 nodes / 1,571 unique edges / 142 topological visits / zero cycles / zero self-edges. The separately indexed FUZ target relation has exactly 151 edges.
+- Seven guarded transition clauses across six owners expand to 10 exact consumed-artifact edges, and FUZ.002–FUZ.010 retain explicit FUZ.001 prerequisites 9/9. Pre-record checkpoint identity was 1,900 lines / 328,406 bytes / SHA-256 `3a89304a8707249c79f2259cf443b9b961cd7c4d70121c90e155e2470a7fe66e`; owner FSM remains `SELF-CHECK`.
+
+### R50 second-restart historical-locator display truncation — `2026-07-15T12:31:12+02:00`
+
+- A broad read-only historical-ID locator over R01/R02/R03/R05 emitted a truncation warning after 105 displayed lines (original output approximately 10,752 tokens). That display receives zero credit; no omitted row, count, or plan-anchor inference is used.
+- The separate R50 heading locator in the same orchestration call returned normally but was inspection context only, not a credited gate. No repository or process state changed.
+- Correction boundary: parse the checkpoint in memory, emit only exact per-round totals and missing predicates, and bind each row to finite repaired-plan anchors plus the dispatch-control retention sets. Pre-record checkpoint identity was 1,906 lines / 329,350 bytes / SHA-256 `42c4c4825ab5acdf80c844b6f8abe90e4da630acef6763aaf37acdfe19ba9ad1`; owner FSM remains `SELF-CHECK`.
+
+### R50 second-restart combined-regression locator failure — `2026-07-15T12:34:27+02:00`
+
+- The first finite combined round/surface/R50/loss-guard/control-retention aggregate exited 1 and receives zero credit in full. Its only miss was R05-A05: the special locator expected singular `does not compute`, while REV.008 preserves the plural sentence `discovery and raw family naming do not compute a digest, parse or validate CMS`.
+- Every displayed matching total—including R01 10/10, R02 5/5, R03 4/4, R04 17/17, R05 40/41, R41 7/7, R48 4/4, surfaces 43/43, R50 24/24, loss guards 9/9, and zero dispatch-control token disappearance—receives zero credit from the failed aggregate.
+- No repository or process state changed. Correction boundary: change only the R05-A05 locator to the exact plural plan phrase and rerun the entire aggregate from disk. Pre-record checkpoint identity was 1,912 lines / 330,257 bytes / SHA-256 `87f37be4362f099c0d6e854c49a02ca6e9f043a9b3202f19153f0b7ff070c94a`; owner FSM remains `SELF-CHECK`.
+
+### R50 second-restart credited round, surface, and loss-guard gate — `2026-07-15T12:35:31+02:00`
+
+- The restarted finite suite passes R01=`10/10`, R02=`5/5`, R03=`4/4` (three disposition IDs plus the separate linkage predicate), R04=`17/17`, R05=`41/41`, R41=`7/7`, and R48=`4/4`. Each row has a live exact plan anchor and its final disposition state; the R05-A05 special guard is bound to the exact plural REV.008 sentence.
+- The positive-surface and stop-line matrix passes `43/43`, retaining strict, revision, credential, recovery, report, validation, filter, security, checker, package, hostile-input, and later-layer exclusion boundaries.
+- Exactly 24 R50 owner disposition blocks remain, each with premise/evidence, consequence/repair, and loss guard. Arithmetic is `ACCEPT=22`, `NARROW=2`, `REJECT=0`, `REGRADE=0`; B02 and B04 are the two narrows, and reviewer grades remain unpromoted evidence.
+- R50 repaired-plan predicates pass `24/24` and the grouped loss-guard set passes `9/9`. Primary anchors are A01=`574`, A02=`575`, A03=`574`, A04=`211`, A05=`580`, A06=`477`, A07/A08=`480`, A09=`241`, A10=`242`, A11=`614`, A12=`2196`, A13=`3533`, A14/A16=`2652`, A15=`2612`, A17=`3196`, A18=`2472`, A19=`2712`, A20=`2190`, B01=`2230`, B02=`600`, B03=`2413`, and B04=`674`.
+- Against the dispatch-plan control, typed identity/receipt/record/manifest/envelope/report/bundle/handle tokens are 66→82 with zero disappearance; slash-name tokens 20→20; command tokens 9→9; and local card-link tokens 157→161. Pre-record checkpoint identity was 1,918 lines / 331,285 bytes / SHA-256 `a30f15deaa0013385de67afa49236a38cea0eb7575f939d597f5ca5f072e9d40`; owner FSM remains `SELF-CHECK`.
+
+### R50 second-restart credited authority/provenance gate — `2026-07-15T12:37:17+02:00`
+
+- All nine canonical-input SHA-256 identities reproduce exactly. Plan and checkpoint frontmatter input lists are byte-order-identical to the dispatch control at `24/24` and `26/26`, and both provenance headers remain intact.
+- The authorized immutable R50 reviewer packet reproduces at exactly 29,541 bytes / SHA-256 `9b4eae3e9dc80d3cdcbb04b612ad602a933667a8d6f704c6690c28aab3d29cbf`; no live Round Log content was read.
+- Plan/checkpoint frontmatter and the sole live Current checkpoint agree on `SELF-CHECK`; the live surface retains R09 as unallocated. CLI.010 carries all 17 required fields exactly once, with one pending card slot and neither the stale CLI range nor the prohibited command name.
+- The card firewall returns 142 card fields / 142 field-local markers / 162 whole-plan markers / one exact marker kind / zero semantic-body fields. Plan identity remains 3,655 lines / 531,005 bytes / SHA-256 `b312f424c6e913ad916abaff92d9ef402ea0d1a779c556223297752add7ccdb9`; pre-record checkpoint identity was 1,926 lines / 332,975 bytes / SHA-256 `c448505cb4feaaade2bad2aea46c475d1f6658e8a349db189b9f10f775147794`.
+
+### R50 second-restart credited claim, clean-room, and format gate — `2026-07-15T12:38:15+02:00`
+
+- Added-line lowercase Rule-13 vector is `[0,0,0,0]`. Whole-plan lowercase vector is `[0,8,0,0]`, byte-count equal to the dispatch control; formal plan uses remain exactly `Complete=3` and `best_outcomes=2` within their scoped outcome/distribution structures.
+- The locally derived 12-name denied-source registry returns zero hits in both owned files. URL counts are `0/0`, and added material contains zero URL, DOI, ISBN, or numbered-RFC source markers. No source/doc contact, measurement, comparison, or external action occurred.
+- Both owned files pass fatal UTF-8 decoding, final-newline, NUL/CR/tab/trailing-whitespace/conflict-marker/task-box checks. Plan fences are exactly four delimiter lines with two `text` openers; the checkpoint has zero fences.
+- Plan identity remains 3,655 lines / 531,005 bytes / SHA-256 `b312f424c6e913ad916abaff92d9ef402ea0d1a779c556223297752add7ccdb9`; pre-record checkpoint identity was 1,933 lines / 334,185 bytes / SHA-256 `55b6bdd251b0d2380fcd715139ee0f6b050f0192be18ffbb50167220fd987b9b`. Owner FSM remains `SELF-CHECK`.
+
+### R50 second-restart credited repository-scope gate — `2026-07-15T12:39:01+02:00`
+
+- Branch is `main`; `HEAD` and local `origin/main` both equal pushed descendant `9e538d37be5289f45e69722b27bfc8a86fe52c07`, and dispatch `077d1dc5f77fa7e139e94f049081dec243adf6ee` is its ancestor. No fetch, rebase, revert, overwrite, commit, or push occurred.
+- The committed G3 plan and checkpoint blobs at current HEAD exactly match their dispatch blobs (`f9724ab2b42945177704020ffc039d474af8a3e9` and `1ec3fa78678ba9e4d5bf894157d8be52ad4b2b81`). The only G3-scoped changed paths are `plans/CYCLE_1_DELTA_PLAN.md` and `ledger/owners/G3_STATE.md`; there are zero untracked paths.
+- Whole-worktree status additionally names four concurrent out-of-scope paths: `gauntlet/CONVERGENCE_REPORT.md`, `gauntlet/ROUND_LOG.md`, `ledger/RUN_LEDGER.md`, and `ledger/owners/G7_STATE.md`. Only path facts were read; their content remains untouched and supplies no G3 evidence.
+- Scoped and whole `git diff --check HEAD` both exit 0. Pre-record checkpoint identity was 1,940 lines / 335,348 bytes / SHA-256 `4087ead1789c57031993319ebc4e24d8cc308c2070a838c00dc589f1594bf0bf`; owner FSM remains `SELF-CHECK`.
+
+## R50 terminal transition: `SELF-CHECK -> SUBMIT-FOR-REVIEW` — `2026-07-15T12:40:11+02:00`
+
+- Pre-transition plan identity was exactly 3,655 lines / 531,005 bytes / SHA-256 `b312f424c6e913ad916abaff92d9ef402ea0d1a779c556223297752add7ccdb9`; pre-transition checkpoint identity was exactly 1,947 lines / 336,529 bytes / SHA-256 `8855e99d1be3db3c031c07e5a2aab20f51069299686dfbbfc8c19e1af2a6e507`.
+- The final state-sensitive sweep passed: added-line guard vector `[0,0,0,0]`; UTF-8/newline/whitespace/conflict health; one live current surface; 24 disposition blocks with `22/2/0/0` arithmetic; 142 catalog / 142 specification entries / 162 pending markers; zero denied-name or URL hits; exact owned scope; no untracked paths; and scoped/whole diff checks at exit 0.
+- Both owned live FSM surfaces now read `SUBMIT-FOR-REVIEW`. The plan identity must be computed from disk after this header mutation and bound in the next terminal record; no pre-mutation identity is reused.
+- G3 performs no review routing, R09 allocation, dispatch, contact, commit, push, fetch, or external action and will stop idle after the identity binding.
+
+### R50 terminal identity binding — `2026-07-15T12:41:01+02:00`
+
+- Post-mutation plan identity is exactly 3,655 lines / 531,012 bytes / SHA-256 `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`. It was computed from disk only after the plan header changed to `SUBMIT-FOR-REVIEW`; the prior SELF-CHECK hash is retained only as transition provenance.
+- The R50 artifact was revised, not merely retained. Independently supported plan-space repairs cover all 24 dispositions (`ACCEPT=22`, `NARROW=2`, `REJECT=0`, `REGRADE=0`); the later bounded FDN.005 loss-guard correction and checkpoint-only Rule-13 label correction are both preserved with their failed diagnostics.
+- Final contract accounting is 142 catalog IDs / 142 specification IDs, exact 17-field grammar for every contract, 161 card-field link occurrences / 161 distinct, 166 whole-plan link occurrences / 161 distinct, 142 field-local pending markers, 162 whole-plan pending markers, nine crosswalk rows, and actual registry coverage 43/43. Every slot remains `PENDING-LICENSED-SOURCE` with zero semantic-body fields.
+- Credited checks are green: gap-free plan read 1–3655; reference closure; 142-node / 1,571-edge acyclic prerequisite graph; 151 target edges; seven guarded transition clauses / 10 edges; prior rounds `10/10`, `5/5`, `4/4`, `17/17`, `41/41`, `7/7`, `4/4`; C1 surfaces `43/43`; R50 predicates `24/24`; loss guards `9/9`; canonical hashes `9/9`; provenance `24/24` and `26/26`; claim, clean-room, source, CLI, UTF-8, newline, whitespace, conflict, scope, and diff gates.
+- Unresolved licensed/human gates remain explicit: every normative card body and the pre-C1 reviewed-card snapshot/link-resolution manifest; human ratification of D1/D2, D3, D-004, D4, D5, D6, D7, and both D-005 runtime/crypto routes; human/steward custody for IMM.018/IMM.021 and the held-out seal/probe protocol; authenticated IMM.022 adoption before customer availability; candidate-Constitution ratification and explicit human plan-to-execution conversion. None is inferred or activated here.
+- Exact changed-file manifest is only `plans/CYCLE_1_DELTA_PLAN.md` and `ledger/owners/G3_STATE.md`. Four concurrent out-of-scope path facts remain untouched. The pre-binding checkpoint identity was 1,954 lines / 337,615 bytes / SHA-256 `4b6124ce8c28b3f09f72d900ab098a4db9a35cfb6468268c5ded5de23fabcd6e`.
+- G3 is idle at `SUBMIT-FOR-REVIEW`, awaiting root commit/push. R09 remains unallocated; no reviewer, owner, or next round is bound or dispatched.
+
+### R50 terminal-verifier transport truncation — `2026-07-15T12:43:25+02:00`
+
+- The first post-binding terminal verifier returned the transport notice `Output exceeded the available model context and was truncated`. The entire verbose aggregate receives zero credit; no displayed or undisplayed predicate is inferred from it.
+- The underlying call was read-only. No repository or process state changed, and no absence or success inference is made from the clipped transport result.
+- Correction boundary: retain `SUBMIT-FOR-REVIEW`, replace the verbose aggregate with separate bounded identity/FSM, guard/health, and repository-scope checks, and credit only fully returned results. Pre-record checkpoint identity was 1,964 lines / 340,143 bytes / SHA-256 `49aab93e7c4afcb606e6f8ab4aaa0b262c275e9e402a24c4a1d097958d23fe80`.
+
+### R50 bounded terminal identity/FSM parser failure — `2026-07-15T12:44:27+02:00`
+
+- The first bounded identity/FSM replacement exited 1 and receives zero credit in full. Its live-surface parser used an unanchored text count for `## Current checkpoint`; a historical prose mention caused the count to exceed one, left the extracted live block empty, and invalidated every live-field predicate in that probe.
+- The returned plan identity, plan phases, terminal-binding presence, inverse header identity, apparent live-field failures, and checkpoint identity are not credited from this failed aggregate. No artifact defect is established by its empty extraction.
+- No repository or process state changed. Correction boundary: locate the heading only as an exact full line, cap the live block at the next exact level-two heading, then rerun the entire bounded identity/FSM predicate set. Pre-record checkpoint identity was 1,970 lines / 340,969 bytes / SHA-256 `4bc9a72549829acffd6dbfe1ebd2ce6c2d0cb9f81b3de3cfd604bd2c31fe4cc2`.
+
+### R50 corrected bounded identity/FSM aggregate failure — `2026-07-15T12:45:01+02:00`
+
+- The exact-heading replacement returned every identity, phase, live-surface, plan-binding, R09, terminal-record, and inverse-header predicate true except its expected `active_goal_already_bound` predicate, then exited 1. Under the failed-diagnostic rule, the entire aggregate receives zero credit; its displayed true and false values are not reused as terminal evidence.
+- No repository or process state changed. Correction boundary: run a standalone, exact live-block premise test that succeeds only when the stale bind directive and the later post-mutation identity binding coexist. Only a fully returned exit-0 result may establish a navigation defect. Pre-record checkpoint identity was 1,976 lines / 341,999 bytes / SHA-256 `790e8158e18516cb13ea01bfa804e53c4119e9f1ed81c0be85d13a1f21e3a388`.
+
+## R50 post-binding navigation repair: `SUBMIT-FOR-REVIEW -> REVISE` — `2026-07-15T12:45:19+02:00`
+
+- A standalone exact-heading premise test returned exit 0 and proved one live `Current checkpoint`, the stale directive to bind the post-mutation identity, and the later terminal record that already binds that exact 3,655-line / 531,012-byte / `db0bbb1d...ed59` identity.
+- The independently established defect is state navigation only. The smallest repair boundary is the sole live Active goal; all historical directives and identities remain preserved, and no plan content, disposition, contract, loss guard, capability, or unresolved gate may change.
+- Pre-transition plan identity was 3,655 lines / 531,012 bytes / SHA-256 `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`; pre-transition checkpoint identity was 1,981 lines / 342,888 bytes / SHA-256 `ec3a754cc514cefcf56c19a902578e344786d343f0e6feb67fb2707c80082829`.
+- Both owned live FSM surfaces now read `REVISE`. Next gate: persist `REVISE -> DRAFT`, apply only the bounded live-goal repair, then persist `DRAFT -> SELF-CHECK` and restart the terminal gates. R09 remains unallocated.
+
+### R50 post-binding navigation repair: `REVISE -> DRAFT` — `2026-07-15T12:45:42+02:00`
+
+- Pre-transition plan identity was 3,655 lines / 531,001 bytes / SHA-256 `8f1c706170ab237e106994ce3fe6989bf8803dada702519f9ae23cfcb3ac3ac2`; pre-transition checkpoint identity was 1,988 lines / 344,117 bytes / SHA-256 `63a50aebcb083690768f6d65fcbf7297db97fd7905d4fac5f52fe493d4e16155`.
+- Both owned live FSM surfaces now read `DRAFT`. Authorized repair remains exactly one live Active-goal line: state that the terminal identity is already bound and that the owner is validating before returning idle. Historical evidence remains byte-preserved.
+
+### R50 bounded live-goal repair applied — `2026-07-15T12:45:56+02:00`
+
+- The sole substantive navigation repair replaces the stale future bind directive in the one live Active goal with an explicit statement that the R50 terminal submission identity is already bound. The live timestamp is synchronized to this DRAFT checkpoint.
+- No plan body, plan contract, disposition, loss guard, historical checkpoint, unresolved gate, capability, evidence interface, or R09 allocation changed. Pre-repair checkpoint identity was 1,993 lines / 344,648 bytes / SHA-256 `3630f83b8117c9fa7473c52cd08af0b0317b16564fd9d8b5c170086f3e8c0a53`.
+
+### R50 post-binding navigation repair: `DRAFT -> SELF-CHECK` — `2026-07-15T12:46:24+02:00`
+
+- The fully returned DRAFT preflight passed one exact live surface, synchronized DRAFT phases, the repaired `already bound` live goal, absence of the stale bind directive from that surface, preserved R09 status, and exact in-memory reconstruction of the bound SUBMIT-FOR-REVIEW plan identity.
+- Pre-transition plan identity was 3,655 lines / 531,000 bytes / SHA-256 `bfa8877f3c7e9b59a3dbd52d90719b77e0fabb7da81ebf7d8d42307fa054ebe3`; pre-transition checkpoint identity was 1,998 lines / 345,335 bytes / SHA-256 `b6d9b416cc4b70881e75127e37c61e6c34d8df6b97da8f3e138d7931d1084b52`.
+- Both owned live FSM surfaces now read `SELF-CHECK`. The terminal suite restarts with bounded outputs; any artifact defect requires another persisted repair loop. R09 remains unallocated.
+
+### R50 restarted reference/DAG command-construction failure — `2026-07-15T12:48:35+02:00`
+
+- The first restarted reference/DAG wrapper failed JavaScript parsing on literal backticks inside the embedded read-only command. The shell validator never launched, so the attempt receives zero credit and supplies no artifact result.
+- No repository or process state changed. Correction boundary: use a backtick-free parser representation while preserving every reference, dependency, target, transition, and graph predicate, then rerun the gate from disk. Pre-record checkpoint identity was 2,004 lines / 346,182 bytes / SHA-256 `f4358934737760390787e3f49601801dff992c99b776d4d325ce8bc2eb84d447`.
+
+### R50 restarted reference/DAG base-classification failure — `2026-07-15T12:49:06+02:00`
+
+- The backtick-free reference/DAG aggregate launched and exited 1, so every displayed value receives zero credit. Its sole failed predicate counted all contracts with zero catalog edges as explicit base declarations; that incorrectly included contracts whose prerequisite segment names only non-contract inputs.
+- No plan defect is established, and no repository or process state changed. Correction boundary: count the exact `no C1 contract prerequisite` declaration text separately from graph out-degree, retain every other predicate, and rerun the entire gate. Pre-record checkpoint identity was 2,009 lines / 346,876 bytes / SHA-256 `c79cdd2d8328c5a1972a5bcdb06627aa857b0a1664a6509119ba29cad30e3aa1`.
+
+### R50 restarted historical-state inspection truncation — `2026-07-15T12:49:58+02:00`
+
+- A broad combined historical-state read clipped after 348 displayed lines with an original size near 15,219 tokens. The entire display receives zero credit, and no returned fragment is used for any prior-round or R50 regression inference.
+- No repository or process state changed. Correction boundary: replace broad display with finite exact counters and bounded predicates, and pair them with the byte-identical plan-content proof rather than rereading historical prose in one output. Pre-record checkpoint identity was 2,014 lines / 347,675 bytes / SHA-256 `7e6e81a976a5663ab56b8845fd9cd86a1aa641ca56b3ff6724e26c4f62ec7eee`.
+
+### R50 restarted regression delimiter-parser failure — `2026-07-15T12:51:25+02:00`
+
+- The first finite regression/retention aggregate exited 1 and receives zero credit in full. Its R50 heading and primary-anchor patterns omitted the Markdown delimiters around dispositions and line numbers, so it parsed zero disposition rows and zero anchors.
+- Every displayed prior-round, surface, predicate, feature-retention, and loss-guard value is uncredited from this failed aggregate. No repository or process state changed.
+- Correction boundary: construct delimiter-aware expressions without shell-active quoting, retain the entire predicate set, and rerun from disk. Pre-record checkpoint identity was 2,019 lines / 348,394 bytes / SHA-256 `1000043a25fdbe19ed1833e7808185639a2154a21cb5a53888a54041940d4096`.
+
+### R50 credited finite regression/retention gate and orchestration steer — `2026-07-15T12:52:42+02:00`
+
+- The corrected delimiter-aware finite gate returned fully at exit 0. It proves the exact SELF-CHECK plan identity; prior-round regression records `10/10`, `5/5`, `4/4`, `17/17`, `41/41`, `7/7`, and `4/4`; C1 surface/exclusion coverage `43/43`; R50 repair predicates `24/24`; grouped loss guards `9/9`; and 24 exact R50 disposition blocks with premise/evidence, consequence/repair, and loss-guard fields.
+- Disposition arithmetic independently reproduces `ACCEPT=22`, `NARROW=2`, `REJECT=0`, `REGRADE=0`; only R50-B02 and R50-B04 are narrowed. All 24 stored primary anchors resolve to nonempty plan lines.
+- Dispatch-to-current feature-retention sets reproduce typed artifacts `66 -> 82`, PDF-name carriers `20 -> 20`, command surfaces `9 -> 9`, and local card links `157 -> 161`, each with zero disappearance. The exact FDN.005 degraded-outcome guard remains present.
+- Root orchestration control independently reports the semantic body green at 142 catalog/specification IDs, exact 17 fields each, 161 distinct card links, 162 pending markers, 1,571 acyclic prerequisite edges, 151 target relations, all 43 R0 registry slots after range expansion, and canonical hashes `9/9`. Per the live steer, G3 will not run another broad historical-state display or brittle aggregate; only bounded loss-guard, clean-room/claim, byte-health/diff/scope, phase/navigation, and final-identity gates remain.
+- The plan body remains preserved and R09 remains unallocated. Pre-record checkpoint identity was 2,025 lines / 349,201 bytes / SHA-256 `bbcb5cad18c9944336ec8da790ae943a1ec63cea0add9ce267cb8a40dc9e85b5`.
+
+### R50 credited bounded loss-guard gate — `2026-07-15T12:53:07+02:00`
+
+- A finite anchored counter returned exit 0: 24 unique R50 disposition rows, exactly one nonempty loss guard per row, the prior grouped guard result `9/9`, and the exact FDN.005 degraded-outcome sentence present once in the byte-identical SELF-CHECK plan.
+- No plan or process state changed. Pre-record checkpoint identity was 2,033 lines / 350,906 bytes / SHA-256 `919ce9ace16c4c852902fe12967442903db132c9c03bb0b1cd30acb6f4969aaa`; owner FSM remains `SELF-CHECK` and R09 remains unallocated.
+
+### R50 bounded claim-scanner case-folding failure — `2026-07-15T12:53:34+02:00`
+
+- The first bounded claim scan exited 1 and receives zero credit in full. Its lowercase Rule-13 counter was mistakenly case-insensitive, so it folded formal capitalized `Complete` outcome tokens into the guarded count, including checkpoint lines that accurately cite that formal outcome.
+- No artifact defect is established, and no repository or process state changed. Correction boundary: use case-sensitive exact lowercase word boundaries, retain the separate formal `Complete` and `best_outcomes` counters, and rerun the entire bounded claim gate. Pre-record checkpoint identity was 2,038 lines / 351,474 bytes / SHA-256 `829f07b58e2b9f1af7760450384bd75f4727fa22f84420bb1cb5f2f177876ff8`.
+
+### R50 bounded clean-room source-marker scan failure — `2026-07-15T12:54:13+02:00`
+
+- The first bounded clean-room aggregate exited 1 and receives zero credit in full because its combined owned-file added-line scan reported one URL/DOI/ISBN/numbered-RFC marker-class match. No source addition or artifact defect is inferred until that exact line is classified.
+- Every other displayed clean-room value is uncredited from this failed aggregate. No repository or process state changed.
+- Correction boundary: locate only the exact matched added line, distinguish plan content from checkpoint diagnostic-category prose, then rerun the whole bounded gate with plan-source markers and checkpoint evidence labels classified separately. Pre-record checkpoint identity was 2,043 lines / 352,251 bytes / SHA-256 `4e8093e2be2e262bc6293d46e3a0929c3b693d6434d63041890a07741c472cc3`.
+
+### R50 credited bounded claim and clean-room gates — `2026-07-15T12:54:45+02:00`
+
+- The corrected case-sensitive claim gate returned exit 0: added-line lowercase Rule-13 vector `[0,0,0,0]`; whole-plan vector `[0,8,0,0]`, identical to dispatch; and formal outcome counters `Complete=3`, `best_outcomes=2`.
+- The exact source-marker locator returned two matches, both in checkpoint process-evidence labels that describe a zero-source scan and its failed classifier. No match occurs in the plan. The classified clean-room rerun then returned exit 0: 12-name local denied registry, zero denied-name hits, zero owned-file URLs, zero plan-added URL/DOI/ISBN/numbered-RFC markers, zero semantic-body fields, and 162 pending markers.
+- No source/doc contact, measurement, comparison, external action, or plan mutation occurred. Pre-record checkpoint identity was 2,049 lines / 353,126 bytes / SHA-256 `1fe9f153776bdde2e9c3dfa61f5600885477cd3e248bb58a2536477d926bc550`; owner FSM remains `SELF-CHECK` and R09 remains unallocated.
+
+### R50 byte-health display correction and credited scope gate — `2026-07-15T12:55:20+02:00`
+
+- The first byte-health aggregate displayed `final_newline: False` for both files because the field represented the negated bad-state predicate rather than the positive invariant. Root independently established decimal terminal byte 10 in both owned files. Per control, the entire ambiguously labeled aggregate receives zero credit; no artifact defect exists and no extra newline is added.
+- The one authorized replacement used a literal terminal-byte predicate and returned exit 0: plan terminal byte decimal 10; checkpoint terminal byte decimal 10.
+- The separate repository-scope gate returned fully at exit 0: branch `main`; `HEAD` and local `origin/main` both `9e538d37be5289f45e69722b27bfc8a86fe52c07`; dispatch is an ancestor; committed owned blobs still match dispatch; the exact G3-scoped changed set is the two authorized paths; owned paths are unstaged; untracked count is zero; scoped and entire-worktree diff checks both exit 0. Four concurrent out-of-scope path facts remain untouched.
+- Pre-record checkpoint identity was 2,055 lines / 354,151 bytes / SHA-256 `b9550159be2fbb74e484d7c81467c7eeee95bcb4dda36074f39b04b1f83e6e3c`. Owner FSM remains `SELF-CHECK`; the plan body is unchanged and R09 remains unallocated.
+
+## R50 post-binding repair terminal transition: `SELF-CHECK -> SUBMIT-FOR-REVIEW` — `2026-07-15T12:56:24+02:00`
+
+- The bounded phase/navigation gate returned exit 0: exactly one live Current checkpoint; plan, checkpoint frontmatter, and live phase synchronized at SELF-CHECK; stale future-bind wording absent from the live surface; R09 unallocated; and exact header-only reconstruction of the prior submitted plan identity.
+- All terminal gates are green: root-controlled semantic counts and canonical hashes; the fully returned finite regression/retention gate; 24/24 disposition loss guards; case-sensitive claim gate; classified clean-room gate; literal terminal byte 10 in both owned files; exact two-path G3 scope; and scoped/entire-worktree diff checks.
+- Pre-transition plan identity was 3,655 lines / 531,005 bytes / SHA-256 `b312f424c6e913ad916abaff92d9ef402ea0d1a779c556223297752add7ccdb9`; pre-transition checkpoint identity was 2,062 lines / 355,479 bytes / SHA-256 `e6f95f89975fe4c2707ec18e7faeb5750512adac87f53ff70c8f25899baa0426`.
+- Both live FSM surfaces now read `SUBMIT-FOR-REVIEW`. The plan body is unchanged; only its FSM header changed. Next and final write: compute the post-mutation plan identity from disk, bind it here, replace the transient live goal with an already-bound idle statement, and leave R09 unallocated.
+
+### R50 post-binding repair final submission identity — `2026-07-15T12:56:46+02:00`
+
+- Final post-mutation plan identity is exactly 3,655 lines / 531,012 bytes / SHA-256 `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`, computed from disk only after the FSM header changed to `SUBMIT-FOR-REVIEW`. The plan body is byte-preserved from the credited SELF-CHECK artifact.
+- R50 remains revised with disposition arithmetic `ACCEPT=22`, `NARROW=2`, `REJECT=0`, `REGRADE=0`; the two narrowed rows are R50-B02 and R50-B04. Every reviewer grade remains unpromoted evidence and every stored loss guard remains intact.
+- Final contract accounting remains 142 catalog IDs / 142 specification IDs; exact 17-field grammar for all contracts; 161 card-field link occurrences / 161 distinct; 166 whole-plan link occurrences / 161 distinct; 142 field-local pending markers; 162 whole-plan pending markers; nine crosswalk rows; and actual registry coverage 43/43. Every slot remains `PENDING-LICENSED-SOURCE` with zero semantic-body fields.
+- Credited terminal evidence includes root-controlled semantic/canonical results; finite prior-round/R50 regression retention; 24/24 row loss guards and grouped 9/9 guards; claim and clean-room gates; direct decimal terminal byte 10; phase/navigation agreement; exact authorized scope; and scoped/entire-worktree diff checks. Every failed, clipped, or misclassified diagnostic remains recorded at zero credit with its correction.
+- Unresolved licensed/human gates remain: every normative card body and the pre-C1 reviewed-card snapshot/link-resolution manifest; human ratification of D1/D2, D3, D-004, D4, D5, D6, D7, and both D-005 runtime/crypto routes; human/steward custody for IMM.018/IMM.021 and the held-out seal/probe protocol; authenticated IMM.022 adoption before customer availability; candidate-Constitution ratification; and explicit human plan-to-execution conversion. None is inferred or activated here.
+- Exact changed-file manifest is only `plans/CYCLE_1_DELTA_PLAN.md` and `ledger/owners/G3_STATE.md`. Four concurrent out-of-scope path facts remain untouched. Pre-binding checkpoint identity was 2,069 lines / 356,790 bytes / SHA-256 `5b8e9e5151c456140d488bbf8779d1f1ce1db94da29f02be83a73ebacfacfc3b`.
+- G3 is idle at `SUBMIT-FOR-REVIEW`, awaiting root commit/push. R09 remains unallocated; no review, bind, dispatch, owner contact, commit, push, fetch, or external action occurred.
