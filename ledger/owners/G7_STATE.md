@@ -3607,3 +3607,129 @@ Retain the corrected R51 row, immutable packet, G7 owner/control prose, Converge
 No next reviewer was bound, allocated, dispatched, or contacted. No owner/process contact, stage, commit, push, fetch, or external action occurred. Root handoff is limited to the three owned dirty documents and the prerequisite G1 premise-first disposition before any R17 bind.
 
 **G7 recovery FSM state: `DONE/HANDOFF` (terminal recovery persisted; no next reviewer bind).**
+
+## R50 disposition integration / R09 bind follow-up — INGEST (`2026-07-15T13:11:11+02:00`)
+
+- generated-by: G7 owner follow-up
+- date: 2026-07-15
+- inputs: live human instruction; full `AGENTS.md`; current `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md`; fixed control refs; identity-only checks of the three G7 documents and two committed G3 inputs; read-only R09 session/process/TUI control
+- status: DRAFT
+- evidence-status: provisional-pending-substrate
+
+### Crash-safe ingest receipt
+
+- Follow-up FSM is exactly `INGEST -> DRAFT -> SELF-CHECK -> SUBMIT-FOR-REVIEW -> DONE/HANDOFF`, entering `REVISE` before any correction found after SELF-CHECK or submission. This section persists `INGEST` before any R50/G3 semantic evidence is opened. Identity-only byte counts and hashes receive control credit; no G3 plan or checkpoint prose has yet been relied on.
+- Writable scope is exactly `gauntlet/ROUND_LOG.md`, `gauntlet/CONVERGENCE_REPORT.md`, and `ledger/owners/G7_STATE.md`, using structured `apply_patch`. G1's five concurrent owned paths are excluded and their bodies will not be opened. No whole-worktree cleanliness predicate is used. No owner/reviewer contact, dispatch, task send, stage, commit, push, fetch, browse, or external action is authorized.
+- Control refs reproduce: branch `main`; HEAD == local `origin/main` == `cf932eabc47dca8d42b0286995d670a94299f590`. Commit `727724d233f2c4be4e199f064a8f4a371f79aee1` is an ancestor and names exactly `ledger/owners/G3_STATE.md` and `plans/CYCLE_1_DELTA_PLAN.md`; no other path is named by that commit.
+- Starting G7 identities reproduce exactly: Round Log 5,383 lines / 985,405 bytes / `8f058f231d0fc07f76b287403da751f1b0d5d6db4101596d64212882ce4f3652`; Convergence Report 838 / 120,942 / `ac422e813057e9c68cec9c1c9b72202fa53c10108e2ed72d79a3e8a0d24e70c2`; G7_STATE 3,609 / 797,051 / `9367c26a5a83806d2b9cb260dc27774f87c375e7c2502dbe57a0d16e3381b130`. Owned-path index and untracked outputs are empty.
+- Committed G3 input identities reproduce without semantic display: plan 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`; checkpoint 2,079 / 359,226 / `4bc8f1a61ca6f5ecd9b096ad51d78cf2135179496f701b60fc36556f45821525`.
+- Current reviewer protocol is 90 lines / 4,942 bytes / `e525a0e35fb703152d44d63d5f6874d48907d2b87e528e3f9f99dbd93baa33c3`; it was read as control law. The R09 assignment will additionally require full `AGENTS.md` as reviewer Tool 1 and the full protocol as Tool 2, per live human instruction.
+- Reserved R09 pre-construction attestation passes: session `monkeybee-pdf-mass-context-repo--r09`; pane `%91`, index 1; shell PID 3342482; child PID 3342718; `pane_dead=0`; exact lowercase pane/shell/child cwd `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`; exact child command `/home/joseph/.local/bin/claude --dangerously-skip-permissions --model claude-opus-4-8 --effort xhigh`. The captured TUI is the untouched Claude welcome screen with `Opus 4.8 with xhigh effort`, the repository cwd, and default `Try "edit <filepath> to..."` placeholder; no task history is visible.
+- Quarantine boundary: next, and only after this marker, DRAFT may read the committed G3 disposition and R50 evidence, premise-test the 22 ACCEPT / 2 NARROW / 0 REJECT / 0 REGRADE accounting, preserve reviewer grades and bodies, then construct the R09 bind. Any raced pre-marker semantic work would receive zero credit and be rerun; none occurred.
+
+**G7 R50/R09 follow-up FSM state: `INGEST` (control gate persisted; semantic ingest not yet started).**
+
+## R50 disposition integration / R09 bind follow-up — DRAFT (`2026-07-15T13:14:29+02:00`)
+
+- Crash-safe transition persisted: `INGEST -> DRAFT` after semantic premise testing and before any R50 disposition integration, allocation-row mutation, Convergence append, or R09 control construction. Pre-transition G7_STATE was 3,630 lines / 800,603 bytes / `ed4d5b6c5ac4f94fbb72b21c6045db81604a38f2df81d6b67ca65dfee5970828`.
+- Committed G3 evidence independently reproduces 24 unique owner disposition blocks, each with premise/evidence, consequence/repair, and loss guard. Arithmetic is `ACCEPT=22`, `NARROW=2`, `REJECT=0`, `REGRADE=0`; accepts are R50-A01–A20 plus R50-B01/B03, and the only narrows are R50-B02/B04. The checkpoint repeatedly preserves reviewer grades as unpromoted evidence and binds the revised plan to 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`.
+- The immutable R50 packet has 24 unique IDs at A20/B4/C0, exactly one each of evidence/requirement/consequence/repair-boundary/loss-guard per ID, one counts line, one marginal-only NO line, one verdict, and one terminal line. Its current protected slice is 217 lines / 29,541 bytes / `9b4eae3e9dc80d3cdcbb04b612ad602a933667a8d6f704c6690c28aab3d29cbf`; the following 26-line / 2,742-byte G7 qualification closure is `00365c0e6bbd0ddd3eee3b6756a27666b678f77273f377750e767b42ff4df8ef`.
+- One first schema probe stopped at the historical semantic-body endpoint and omitted the terminal line; that probe receives zero credit in full. The corrected heading-to-next-heading parser reran from disk and returned the exact 24-ID, 20/4/0, 24/24/24/24/24, and 1/1/1/1 schema values above.
+- DRAFT mutation boundary: update only the operational R50 owner-disposition cell and append a minimal owner-route closure; retain every R50 reviewer byte, grade, finding body, and G7 qualification byte. Then persist R09 `ALLOCATED · UNSENT` against the committed plan hash before constructing a single EOF control and advancing only R09 to `BOUND-UNSENT`. R10 remains untouched.
+- R09 control will expose only its activation envelope, bound process/artifact identity, exact authority selections, full-artifact requirement, sole `obscure-section self-containment` lens, grade/schema/no-action/fresh-context/termination laws, and final append anchor. It will not expose prior findings, owner dispositions, convergence, G3 checkpoint content, or unrelated outcomes. No task, prompt, prefix, authority byte, artifact byte, anchor, or context is sent in this turn.
+- Any defect found after SELF-CHECK begins requires a persisted `REVISE` transition before correction. DRAFT itself may apply only the bounded mutations named above.
+
+**G7 R50/R09 follow-up FSM state: `DRAFT` (premises accepted; bounded integration and construction authorized).**
+
+### DRAFT checkpoint — R50 owner route integrated (`2026-07-15T13:14:55+02:00`)
+
+- The operational R50 row now records the committed G3 result once: ACCEPT 22, NARROW 2 (B02/B04), REJECT 0, REGRADE 0, against successor plan `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`. Status, original reviewed-artifact hash, A20/B4/C0, marginal-only NO, model/lens/pass identity, and every reviewer byte remain unchanged.
+- One minimal Round owner-route closure and one Convergence supersession were appended. They distinguish G3 owner decisions from immutable reviewer allegations and leave all filed, grade, family, curve, and convergence totals unchanged.
+- The R50 row length shifts every later protected Round slice by exactly 50 bytes. Post-mutation R50 packet is `[913160,942701)`, 217 lines / 29,541 bytes / `9b4eae3e9dc80d3cdcbb04b612ad602a933667a8d6f704c6690c28aab3d29cbf`; its G7 qualification closure is `[942701,945443)`, 26 / 2,742 / `00365c0e6bbd0ddd3eee3b6756a27666b678f77273f377750e767b42ff4df8ef`. These match the pre-mutation seals exactly.
+- Post-integration Round identity is 5,405 lines / 987,648 bytes / `0a474b7d4b3ca0d2b1201b0232552e4c1a87d639eceef62ba357f89bee306457`.
+- R09 and R10 rows remain byte-unchanged at this checkpoint; no reviewer/control pane received any input. Next DRAFT step is a fresh R09 pre-allocation attestation, followed by a separate persisted `ALLOCATED · UNSENT` row/hash transition before control construction.
+
+**G7 R50/R09 follow-up FSM state: `DRAFT` (R50 route integrated; R09 remains precommitted).**
+
+### DRAFT checkpoint — R09 `ALLOCATED · UNSENT` (`2026-07-15T13:16:18+02:00`)
+
+- Immediate pre-allocation reattestation reproduces session `monkeybee-pdf-mass-context-repo--r09`, pane `%91` index 1, shell 3342482, child 3342718, `pane_dead=0`, exact lowercase pane/shell/child cwd, and exact `/home/joseph/.local/bin/claude --dangerously-skip-permissions --model claude-opus-4-8 --effort xhigh` child command. TUI remains the untouched Opus 4.8/xhigh welcome screen with the default placeholder and no task history.
+- Exactly one R09 allocation row existed and zero R09 control headings/final anchors existed before mutation. That row alone now binds artifact `plans/CYCLE_1_DELTA_PLAN.md` at 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`, sole lens `obscure-section self-containment`, exact `claude-opus-4-8` / `xhigh`, and G3 route as `ALLOCATED · UNSENT`. Grade/marginal slots remain em dash.
+- Post-allocation Round identity is 5,405 lines / 987,876 bytes / `90ac35b75aa1c715ad6d9716bad9c4dedc2a4dbd43384d2e62a3f5473010ffa5`. The allocation-row expansion is 228 bytes and relocates all later protected slices without changing their content.
+- No control was appended and no row was advanced to `BOUND-UNSENT` by the allocation patch. R10 remains `PRECOMMITTED`; the reserved pane received no task, prefix, authority, artifact, context, anchor, or prompt.
+- Next DRAFT mutation is one Round patch: advance only R09 to `BOUND-UNSENT` and append one self-contained R09 assignment/control heading through actual EOF. No later DRAFT Round append is permitted unless a post-SELF-CHECK defect first enters persisted `REVISE`.
+
+**G7 R50/R09 follow-up FSM state: `DRAFT` (R09 allocated-unsent; control construction next).**
+
+### DRAFT checkpoint — R09 `BOUND-UNSENT` control sealed (`2026-07-15T13:18:43+02:00`)
+
+- Pre-control G7_STATE identity was 3,662 lines / 806,765 bytes / `d92eee4d17836a2319066d893722834f4ce54156113a8152b0cc198236ef5f72`. The one construction patch advanced only R09 from `ALLOCATED · UNSENT` to `BOUND-UNSENT` and appended one R09 assignment/control at Round EOF. R10 remains `PRECOMMITTED`.
+- Terminal Round identity is provisionally 5,498 lines / 998,308 bytes / `cdb87d261be92f838e1fd2b2afd39f8c0c737bada0daf2252a49afe4422c59ec`; no later DRAFT Round append is authorized. The unique R09 heading begins at byte 987,878. Heading-to-EOF is `[987878,998308)`, 92 lines / 10,430 bytes / `12f9b299d5e571ac535107026587c7066b45de6b5fb1796089e56bbfd28cf241`. Separator-inclusive control is `[987877,998308)`, 93 / 10,431 / `5e729b5a9274e5a9baf79b05cffbc827a01474f0239daf78b85d6062e0855462`.
+- Exactly one control heading and one final literal anchor exist; the anchor is the final Round line. Control-only scans return no Rule-13 token, prohibited processor name, or URL. The control names mandatory full AGENTS Tool 1, mandatory full reviewer-protocol Tool 2, compaction restart law, exact authority intervals and artifact 1–3655 coverage, sole lens, blind freshness, A/B/C schema, no-action law, single structured anchored filing, and exact terminal behavior.
+- The final R09 row change adds one net byte before later protected slices. R50 now resides at `[913389,942930)`, 29,541 bytes / `9b4eae3e9dc80d3cdcbb04b612ad602a933667a8d6f704c6690c28aab3d29cbf`; its G7 qualification is `[942930,945672)`, 2,742 / `00365c0e6bbd0ddd3eee3b6756a27666b678f77273f377750e767b42ff4df8ef`. Both match pre-integration seals.
+- Post-construction reattestation again reproduces session `monkeybee-pdf-mass-context-repo--r09`, pane `%91` index 1, shell 3342482, child 3342718, `pane_dead=0`, exact lowercase cwd, exact Claude Opus 4.8/xhigh process, and the untouched default-placeholder TUI with no task history.
+- Convergence now records R50's committed owner route and R09's mechanical bind. Expected allocation is 51 rows, 19 failed, 32 active at 16/16, 18 filed at 9/9 and A118/B64/C22, 14 active-unfiled at 7/7, with R09 sole bound-unsent. These values receive terminal credit only after the fresh SELF-CHECK rerun.
+- No task, prefix, authority byte, artifact byte, context, prompt, anchor, or control byte was sent to R09. No pane input, reviewer/owner contact, dispatch, stage, commit, push, fetch, browse, or external action occurred.
+
+**Integration-control state: `BOUND-UNSENT`.**
+
+**G7 R50/R09 follow-up FSM state: `DRAFT` (construction persisted; fresh SELF-CHECK required).**
+
+## R50 disposition integration / R09 bind follow-up — SELF-CHECK (`2026-07-15T13:21:26+02:00`)
+
+- Crash-safe transition persisted: `DRAFT -> SELF-CHECK` after R50 owner-route integration, R09 allocation, sealed EOF control construction, Convergence updates, and post-construction R09 reattestation.
+- Pre-transition identities are Round Log 5,498 lines / 998,308 bytes / `cdb87d261be92f838e1fd2b2afd39f8c0c737bada0daf2252a49afe4422c59ec`; Convergence Report 860 / 124,233 / `8060cdb66df039fcd6d51c6fd1b0ba638fa92986f12df1039f244ce72bec1bbe`; G7_STATE 3,676 / 809,441 / `35b96400c0af7598e6dbf78304ea88a7f467acc29b6330c9644f250d51871c48`.
+- DRAFT found no control-content defect after construction. The fresh pass now independently rechecks allocation arithmetic, exact R50/G3 route, every protected packet/control seal, R09 control schema and EOF boundary, allowed diff/index/untracked scope, UTF-8/LF/CR/conflict/whitespace health, added-line claim vocabulary and prohibited-source guards, control refs, and exact R09 process/TUI state.
+- Any defect found from this marker onward requires a persisted `SELF-CHECK -> REVISE` transition before correction. A clean pass advances only after its results are persisted.
+
+**G7 R50/R09 follow-up FSM state: `SELF-CHECK` (fresh terminal gate started).**
+
+## R50 disposition integration / R09 bind follow-up — SELF-CHECK-RESULT (`2026-07-15T13:24:27+02:00`)
+
+- The fresh pass succeeds from current disk bytes. Pre-result identities are Round Log 5,498 lines / 998,308 bytes / `cdb87d261be92f838e1fd2b2afd39f8c0c737bada0daf2252a49afe4422c59ec`; Convergence Report 860 / 124,233 / `8060cdb66df039fcd6d51c6fd1b0ba638fa92986f12df1039f244ce72bec1bbe`; G7_STATE 3,685 / 810,739 / `ba21c31bb6bdb1cf25b6b0d0ab415088d71fe575a86cc7ca8a86cec38576d264`.
+- Control provenance passes: branch `main`; HEAD == local `origin/main` == `cf932eabc47dca8d42b0286995d670a94299f590`; committed G3 plan/checkpoint remain 3,655/531,012/`db0bbb…ed59` and 2,079/359,226/`4bc8f1…1525`; commit `727724d…ee1` remains an ancestor. Current reviewer protocol remains 90 / 4,942 / `e525a0e35fb703152d44d63d5f6874d48907d2b87e528e3f9f99dbd93baa33c3`.
+- Fixed-base diff against `cf932eabc47dca8d42b0286995d670a94299f590` names exactly the three writable paths. Pre-result numstat is Round 117 additions / 2 deletions, Convergence 22 / 0, and G7_STATE 76 / 0; hunk counts are 3/1/1. The two Round deletions are solely the prior R09 and R50 operational rows; the rest is replacement rows plus EOF appends. Allowed-path index and untracked outputs are empty; `git diff --check` is silent.
+- G3 arithmetic rerun returns 24 unique blocks, 22 ACCEPT, 2 NARROW, 0 REJECT, 0 REGRADE, and 24/24/24 premise-repair-guard fields; only B02/B04 are narrowed. R50's operational row records that result against `db0bbb…ed59`, while original artifact hash `af3f349d…8fd0`, A20/B4/C0, marginal-only NO, model/lens/pass, reviewer bodies, and grades remain immutable and unpromoted.
+- Allocation rerun returns 51 unique rows at 22 Sol / 29 Opus; 19 failed at 6/13 with the recorded IDs; 32 active at 16/16; 18 filed at 9/9 with A=118/B=64/C=22; 14 active-unfiled at 7/7; exactly one bound-unsent ID, R09. R10 remains precommitted.
+- Every fixed-base protected slice matches byte-for-byte after the exact +279-byte row-shift relocation: R03 `d42c1989…af7a`; R13 `18eb5b57…4f5c`; R04 `df313c95…5145`; R14 `4567275f…a122`; R33 `f932428f…858a`; R05 `602f25a0…fbbe9`; R15 `610bc2ec…4595`; R38 `fe3e5aac…dab4`; R41 `87b93299…e03d`; R48 `6102ff0e…ea9a`; R50 `9b4eae3e…9cbf`; R16 control `1a064c04…a851b`, separator `b27c8de5…951dd`, closure `4e55284f…d973`; R51 control `576e7a35…bc26`, separator `41944f82…1148`, packet `ffe00d97…b64`, and packet separator `485c11dd…f73e`. No reviewer byte changed.
+- R09 control schema/EOF gate passes: one assignment heading, one schema-example packet heading, zero finding headings, one final literal anchor at actual EOF, mandatory full AGENTS Tool 1, mandatory full protocol Tool 2, five exact authority selections, artifact lines 1–3655, one declared lens, exact G3 route, grading/no-action/fresh-context/single-write/termination laws, and no prior R50/R51 result or G3/Convergence filename. Heading-to-EOF `[987878,998308)` remains 92 lines / 10,430 bytes / `12f9b299d5e571ac535107026587c7066b45de6b5fb1796089e56bbfd28cf241`; separator-inclusive `[987877,998308)` remains 93 / 10,431 / `5e729b5a9274e5a9baf79b05cffbc827a01474f0239daf78b85d6062e0855462`.
+- Added-line claim-vocabulary and prohibited-source/URL guards return no hit. All three writable files decode as UTF-8, end in LF, and have no CR byte, trailing horizontal whitespace, or conflict marker. Exact final two bytes are `2a 0a` for Round, `2e 0a` for Convergence, and `2a 0a` for G7_STATE before this result append.
+- Live reattestation passes again: R09 session/pane/index/shell/child/dead-state/cwd/command match the bound values; TUI still shows Opus 4.8 with xhigh effort at the default placeholder and no task history. No activation, pane input, reviewer/owner contact, R10 bind, stage, commit, push, fetch, browse, or external action occurred.
+- Curves remain five-pass-A 16 -> 32 -> 7 -> 1 -> 24, all non-marginal, and Constitution 15 non-marginal -> 21 non-marginal -> 0 marginal-only. No qualifying consecutive-marginal condition exists; convergence remains `NOT ESTABLISHED`.
+
+Expected no-match exit 1 is credited only for explicit absence scans: prohibited added vocabulary/source markers, prior-result identifiers inside the sealed R09 control, CR/whitespace/conflict markers, and pre-filed R09 finding headings. No content defect was found; `REVISE` is not entered.
+
+**G7 R50/R09 follow-up FSM state: `SELF-CHECK` (fresh pass succeeded; ready for `SUBMIT-FOR-REVIEW`).**
+
+## R50 disposition integration / R09 bind follow-up — SUBMIT-FOR-REVIEW (`2026-07-15T13:25:07+02:00`)
+
+- Crash-safe transition persisted: `SELF-CHECK -> SUBMIT-FOR-REVIEW` after the fresh pass and the post-result vocabulary/UTF-8/LF/diff check.
+- Submission preimage is Round Log 5,498 lines / 998,308 bytes / `cdb87d261be92f838e1fd2b2afd39f8c0c737bada0daf2252a49afe4422c59ec`; Convergence Report 860 / 124,233 / `8060cdb66df039fcd6d51c6fd1b0ba638fa92986f12df1039f244ce72bec1bbe`; G7_STATE 3,702 / 815,260 / `557a9a6e5ce290db5b7f9213238515299d0ad1e1c6e846bcf647798716372292`.
+- Bounded submission content is the committed G3 R50 owner-route integration, preserved R50 evidence, R09 allocation row, sealed R09 control, exact allocation/convergence accounting, and process/TUI attestation. It requests no reviewer work in this turn.
+- R09 remains the sole `BOUND-UNSENT` row. This owner-state name is not an activation: no detached envelope, task, prefix, control, prompt, context, authority byte, artifact byte, or anchor is sent; no pane input or reviewer/owner contact occurs.
+- Any newly found content defect requires a persisted `SUBMIT-FOR-REVIEW -> REVISE` transition before correction. A clean bounded handoff gate advances to `DONE/HANDOFF`; root alone may perform later commit/push/revalidation/activation work.
+
+**G7 R50/R09 follow-up FSM state: `SUBMIT-FOR-REVIEW` (internal checkpoint persisted; R09 remains unsent).**
+
+## R50 disposition integration / R09 bind follow-up — DONE/HANDOFF (`2026-07-15T13:25:59+02:00`)
+
+### Bounded submission gate
+
+- Crash-safe transition persisted: `SUBMIT-FOR-REVIEW -> DONE/HANDOFF` only after the internal submission marker and a new read-only handoff gate. No submission-stage defect was found, so `REVISE` is not entered.
+- Terminal Round Log identity is 5,498 lines / 998,308 bytes / `cdb87d261be92f838e1fd2b2afd39f8c0c737bada0daf2252a49afe4422c59ec`. Terminal Convergence Report identity is 860 / 124,233 / `8060cdb66df039fcd6d51c6fd1b0ba638fa92986f12df1039f244ce72bec1bbe`. This checkpoint's exact pre-transition identity is 3,712 / 816,693 / `a20f8b40ca69dd6267adb90fd19648712e3c712a467fb1867a7aa70391fffb48`; its whole-file terminal identity is sampled after this append and emitted in the external handoff without another write.
+- Final fixed-base/path-scoped diff before this transition names only the three writable paths: Round 117 additions / 2 deletions, Convergence 22 / 0, and G7_STATE 103 / 0. Index and allowed untracked outputs are empty; diff/UTF-8/LF/CR/whitespace/conflict and added-line claim/prohibited-source guards pass.
+- R50 navigation now records committed G3 disposition `ACCEPT=22`, `NARROW=2` at B02/B04, `REJECT=0`, `REGRADE=0` against successor `db0bbb1d…ed59`. Immutable reviewer packet remains 29,541 bytes / `9b4eae3e…9cbf`, A20/B4/C0, marginal-only NO; reviewer bodies and grades remain unchanged and unpromoted.
+- Every historical protected packet/control slice matches fixed base after the exact +279-byte relocation. R09 remains one EOF control: heading-to-EOF `[987878,998308)`, 92 lines / 10,430 bytes / `12f9b299d5e571ac535107026587c7066b45de6b5fb1796089e56bbfd28cf241`; separator-inclusive `[987877,998308)`, 93 / 10,431 / `5e729b5a9274e5a9baf79b05cffbc827a01474f0239daf78b85d6062e0855462`. Its heading and final anchor are unique, and the anchor is actual Round EOF.
+- Terminal allocation is 51 unique rows at 22 Sol / 29 Opus; 19 failed at 6/13; 32 active at 16/16; 18 filed at 9/9 with A=118/B=64/C=22; 14 active-unfiled at 7/7; R09 is the sole bound-unsent row. R10 remains precommitted. Convergence remains `NOT ESTABLISHED`.
+- Final live attestation still reproduces session `monkeybee-pdf-mass-context-repo--r09`, pane `%91` index 1, shell 3342482, child 3342718, `pane_dead=0`, exact lowercase cwd, exact Claude Opus 4.8/xhigh command and TUI, default placeholder, and no task history.
+- HEAD == local `origin/main` remains `cf932eabc47dca8d42b0286995d670a94299f590`. No G1-owned body or whole-worktree cleanliness predicate was used.
+
+### Terminal disposition
+
+R50 is owner-dispositioned in navigation while its reviewer evidence remains immutable. R09 is mechanically `BOUND-UNSENT` against committed plan `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59` under sole lens `obscure-section self-containment`, exact `claude-opus-4-8` / `xhigh`, and G3 route. The sealed control has not been delivered.
+
+No task, prefix, authority byte, artifact byte, context, prompt, anchor, control byte, or detached activation was sent to R09. No reviewer/owner contact, pane input, R10 bind, stage, commit, push, fetch, browse, or external action occurred. Root alone may commit and push the three owned documents, reproduce the terminal roots, reattest R09, construct the detached activation, and send it. G7 stops idle.
+
+**Integration-control state: `BOUND-UNSENT`.**
+
+**G7 R50/R09 follow-up FSM state: `DONE/HANDOFF` (terminal disk state persisted; R09 unsent).**

@@ -836,3 +836,25 @@ The Constitution five-pass-B A+B sequence now has three valid points: R14=15 -> 
 This append supersedes only the preceding R51 paragraph's five-variance count and any reliance on the packet's authored start/file times. The control-heading time `11:42:54+02:00` is not activation receipt; transcript activation is `11:50:35.675+02:00`. The pre-write clock sample `12:05:37+02:00` is not filing; the successful structured Edit is bounded to `12:08:38.262+02:00` through `12:08:38.386+02:00`, followed by exact terminal text at `12:08:40.150+02:00` and no later reviewer tool.
 
 The immutable packet, A=0/B=0/C=0, marginal-only YES, six attached method/metadata variances, allocation arithmetic, G1 premise-first route, and `FILED · CHAIN-QUALIFIED · TERMINATED` classification remain unchanged. The correction supplies no new curve point and promotes no grade. The Constitution sequence remains R14=15 non-marginal -> R15=21 non-marginal -> R51=0 marginal-only; convergence remains **NOT ESTABLISHED**.
+
+## R50 committed G3 disposition integration — `2026-07-15T13:14:55+02:00`
+
+This append supersedes only earlier statements that R50 owner disposition was pending. It preserves every reviewer packet, reviewer grade, finding body, loss guard, curve value, and prior conclusion.
+
+Committed G3 evidence at `727724d233f2c4be4e199f064a8f4a371f79aee1` records 24 premise-tested owner decisions against successor plan 3,655 lines / 531,012 bytes / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`: ACCEPT R50-A01–A20 and R50-B01/B03; NARROW R50-B02/B04; REJECT 0; REGRADE 0. These are owner dispositions, not promotions of the immutable A=20/B=4/C=0 reviewer grades or the reviewer's wording.
+
+R50 remains one chain-qualified, non-marginal Sol filing at A+B=24. The five-pass-A sequence remains R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24, all non-marginal. Filed evidence remains 18 rounds at 9 Sol / 9 Opus with aggregate A=118/B=64/C=22; allocation remains 51 immutable rows with 19 failed and 32 active planned at 16/16.
+
+The owner route is closed, satisfying the sequencing prerequisite for a later C1 round without adding a curve point. At this exact checkpoint, 14 active-unfiled rounds remain unbound; R09 has not yet been allocated or contacted. Convergence remains **NOT ESTABLISHED**.
+
+## R09 bind-only accounting after R50 disposition — `2026-07-15T13:18:43+02:00`
+
+This append advances only mechanical allocation/control state after the committed R50 owner route closed. It changes no filed packet, reviewer grade, finding body, loss guard, family total, curve point, artifact verdict, owner decision, or convergence condition.
+
+R09 is the sole `BOUND-UNSENT` row. It binds only precommitted C1 delta-plan lens `obscure-section self-containment`, exact `claude-opus-4-8` / `xhigh`, G3 route, and committed plan 3,655 lines / 531,012 bytes / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`. Its untouched reserved identity is session `monkeybee-pdf-mass-context-repo--r09`, pane `%91` index 1, shell 3342482, child 3342718, exact lowercase cwd. No task or control byte has been sent.
+
+The sealed R09 control is heading-to-EOF `[987878,998308)`, 92 lines / 10,430 bytes / `12f9b299d5e571ac535107026587c7066b45de6b5fb1796089e56bbfd28cf241`; separator-inclusive `[987877,998308)`, 93 / 10,431 / `5e729b5a9274e5a9baf79b05cffbc827a01474f0239daf78b85d6062e0855462`. Heading and final literal anchor each occur once, and the anchor is actual Round EOF.
+
+Allocation remains 51 immutable rows at 22 Sol / 29 Opus; 19 failed IDs leave 32 active planned slots at 16/16. Filed evidence remains 18 rounds at 9/9 with A=118/B=64/C=22. Fourteen active-unfiled slots remain at 7/7: R09 is sole bound-unsent and 13 are unbound. R09 contributes no finding, grade, marginal result, verdict, owner disposition, or curve value before filing; R10 remains precommitted.
+
+The five-pass-A sequence remains R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24, all non-marginal. The Constitution sequence remains R14=15 non-marginal -> R15=21 non-marginal -> R51=0 marginal-only. No qualifying consecutive-marginal condition exists; convergence remains **NOT ESTABLISHED**. Root alone may commit/push, reattest R09, create the detached activation, and send the sealed control.

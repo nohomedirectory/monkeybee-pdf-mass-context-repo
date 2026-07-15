@@ -90,7 +90,7 @@ Hash, status, counts, and disposition are slots. They are filled only from filed
 | R06 | C1 delta plan | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | 5-pass A (3/5) | `e0cb3ea2947604447444558f40dae5e57fd61edd53c47ed46e787266faf3501b` | NOT-RUN · METHOD-VIOLATION · TERMINATED | — | — | — | — | First and second tools were unlisted skill reads before AGENTS or reviewer protocol; root interrupted before any authorized read or write. No packet, findings, grades, coverage, or conclusion; process and session absent; immutable ID not reused. |
 | R07 | C1 delta plan | oversimplification-and-feature-loss | `claude-opus-4-8`, effort `xhigh` | 5-pass A (4/5) | `fc4cf43598e788cacea1ffabce7110d23ba3aea66a7d89afa33bbf60cba72260` | NOT-RUN · METHOD/CONTROL-SELECTION-VIOLATION · TERMINATED | — | — | — | — | ROOT SELECTION ERROR; first tool was forbidden `AskUserQuestion`, root's intended protocol choice misregistered as chat-only review, then two unlisted Bash calls used compound/echo and pipe/early-artifact access. Interrupted before any write. No packet, finding, grade, coverage, verdict, or conclusion; session/processes absent; immutable ID not reused. |
 | R08 | C1 delta plan | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | 5-pass A (5/5) | `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0` | NOT-RUN · AUTHORITY-SCOPE/FRESH-CONTEXT-CONTROL-VIOLATION · TERMINATED | — | — | — | — | Call 42 searched excluded Rev 7 bytes outside the sealed authority ranges; Call 47 also searched whole authority files and returned truncated output. Root terminated before any write. No packet, finding, grade, coverage, verdict, route, or conclusion; partial reasoning quarantined; immutable ID not reused. |
-| R09 | C1 delta plan | obscure-section self-containment | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
+| R09 | C1 delta plan | obscure-section self-containment | `claude-opus-4-8`, effort `xhigh` | — | `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59` | BOUND-UNSENT | — | — | — | — | Precommitted G3 route; exact reserved R09 Opus/xhigh process; sealed control at Round EOF. Root-only activation after commit/push; no task sent. |
 | R10 | C1 delta plan | dependency soundness | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R11 | C1 delta plan | security/DoS | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R12 | C1 delta plan | claim vocabulary and de-slopification | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
@@ -285,7 +285,7 @@ R50 is the fresh one-for-one replacement for immutable failed R49, which replace
 
 | Round | Artifact | Declared lens (exactly one) | Model | Precondition to admit | Artifact hash | Status | A | B | C | Marginal-only | Owner disposition |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| R50 | C1 delta plan (R49/R08 replacement) | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | R49 closed `NOT-RUN · CONTEXT-CAPACITY/RECOVERY-REPLAY-LOOP · TERMINATED`; original pass 5/5 payload unchanged; exact filed process session `monkeybee-pdf-mass-context-repo--r50`, pane `%142`, shell 2008272, child 2008528 now absent | `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0` | FILED · CHAIN-QUALIFIED · TERMINATED | 20 | 4 | 0 | NO | G7 qualifies schema/process/coverage only. All 24 immutable grades are routed to root for independent G3 premise-first disposition; no substantive truth, grade promotion, owner disposition, or convergence conclusion is admitted. |
+| R50 | C1 delta plan (R49/R08 replacement) | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | R49 closed `NOT-RUN · CONTEXT-CAPACITY/RECOVERY-REPLAY-LOOP · TERMINATED`; original pass 5/5 payload unchanged; exact filed process session `monkeybee-pdf-mass-context-repo--r50`, pane `%142`, shell 2008272, child 2008528 now absent | `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0` | FILED · CHAIN-QUALIFIED · TERMINATED | 20 | 4 | 0 | NO | G3 OWNER DISPOSITION on committed successor `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`: ACCEPT R50-A01–A20 and R50-B01/B03; NARROW R50-B02/B04; REJECT 0; REGRADE 0. Reviewer grades and finding bodies remain immutable and unpromoted; owner route closed. |
 
 ### R31 — notes on admission and reading
 
@@ -5381,3 +5381,118 @@ The G7f closure above is retained as historical partial output, but its implicit
 - The timestamp correction is the sixth disclosed method/metadata variance. With the transcript-bound correction attached, R51 remains `FILED · CHAIN-QUALIFIED · TERMINATED`, not protocol-pristine. No finding, grade, artifact verdict, owner disposition, allocation count, curve value, or convergence conclusion changes.
 
 G1 premise-first disposition remains required before R17. No reviewer or owner is allocated or contacted by this correction.
+
+## R50 committed G3 owner disposition integration — `2026-07-15T13:14:55+02:00`
+
+- generated-by: G7 gauntlet/convergence owner follow-up
+- date: 2026-07-15
+- inputs: committed G3 checkpoint and successor plan at `727724d233f2c4be4e199f064a8f4a371f79aee1`; immutable R50 reviewer packet; prior G7 qualification and route
+- status: DRAFT
+- evidence-status: provisional-pending-substrate
+
+### Premise-first owner route
+
+The committed G3 checkpoint contains 24 unique R50 disposition blocks with premise/evidence, consequence/repair, and loss guard. Its exact arithmetic is ACCEPT 22, NARROW 2, REJECT 0, REGRADE 0. Accepted IDs are R50-A01–A20 plus R50-B01 and R50-B03; only R50-B02 and R50-B04 are narrowed. The submitted repaired plan is 3,655 lines / 531,012 bytes / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`.
+
+This owner decision is distinct from reviewer evidence. The R50 packet remains A=20/B=4/C=0, marginal-only NO; every finding body, grade, loss guard, and the reviewer's wording remains immutable and unpromoted. G7 records the G3 decision and route closure without elevating an allegation into campaign fact.
+
+### Seal and accounting boundary
+
+Immediately before the operational-row change, the immutable R50 packet was separator-inclusive `[913110,942651)`, 217 lines / 29,541 bytes / `9b4eae3e9dc80d3cdcbb04b612ad602a933667a8d6f704c6690c28aab3d29cbf`; its following G7 qualification closure was `[942651,945393)`, 26 lines / 2,742 bytes / `00365c0e6bbd0ddd3eee3b6756a27666b678f77273f377750e767b42ff4df8ef`. The row mutation occurs earlier in the file and may relocate those slices; it does not edit them. Exact post-mutation relocation is recorded in the owner checkpoint after disk verification.
+
+Filed evidence remains 18 rounds at 9 Sol / 9 Opus with A=118/B=64/C=22. The five-pass-A curve remains R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24, all non-marginal. R50's owner route is now closed, but no curve value or convergence condition changes; convergence remains `NOT ESTABLISHED`.
+
+R09 becomes eligible for its separate precommitted bind only after this closure. This section does not allocate, bind, contact, or send anything to R09 or R10.
+
+## R09 reviewer assignment/control — `2026-07-15T13:18:43+02:00`
+
+- generated-by: G7 gauntlet/convergence owner follow-up
+- date: 2026-07-15
+- inputs: committed C1 delta plan, current reviewer protocol, declared bounded authority, untouched reserved R09 process
+- status: DRAFT
+- evidence-status: provisional-pending-substrate
+
+### Stateless role and detached activation
+
+R09 is a fresh stateless reviewer, not root, G3, G7, an artifact owner, a controller, or an orchestrator. The coordinates below are identity evidence only. Do not coordinate with, contact, bind, dispatch, monitor, tend, or send anything to another process. Do not load an orchestration skill. Construction state is `BOUND-UNSENT`.
+
+The only live activation envelope is exactly:
+
+```text
+ROOT-SUPPLIED DISPATCH COMMIT: <exactly 40 lowercase hexadecimal characters>
+ROOT-SUPPLIED ROUND LOG SHA-256: <exactly 64 lowercase hexadecimal characters>
+ROOT-SUPPLIED R09 CONTROL SHA-256: <exactly 64 lowercase hexadecimal characters>
+
+<this sealed R09 heading through its final literal anchor>
+```
+
+Receipt of that envelope after root commits and pushes means the assignment is live. The dispatch commit must equal reviewer HEAD and contain the exact bound artifact and Round identities. The detached Round and control roots must match the root-supplied values. A missing or mismatched envelope fails closed before artifact access or write. Do not ask whether to proceed and do not offer an alternate review.
+
+Root must reattest the reserved pane immediately before activation. Any changed session, pane, index, shell/child PID, cwd, process command, model/effort display, dead pane, non-default prompt, or prior task history is a gate failure: root must not dispatch and must not substitute another pane.
+
+### Mandatory first two tools
+
+Tool 1 of any kind must read all of `AGENTS.md`. Tool 2 of any kind must read all of `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md`. No identity probe, existence check, command, question, skill read, or other tool may precede Tool 1 or occur between these reads. Any different first or second tool is an immediate method-control-sequencing failure: stop before further tool use, artifact access, analysis, or write; return `TERMINATED`; leave classification to root.
+
+After any context compaction, the first next repository read must again be all of `AGENTS.md`. Resume only manifest-marked unread ranges; do not replay already observed authority or artifact ranges merely because compaction occurred. A bounded retry is allowed only for a failed or truncated read, receives zero evidence credit itself, and must be disclosed.
+
+### Bound process, artifact, route, and sole lens
+
+- reviewer process: session `monkeybee-pdf-mass-context-repo--r09`; pane `%91` index 1; pane shell PID 3342482; reviewer child PID 3342718; `pane_dead=0`; exact cwd `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`
+- exact child command: `/home/joseph/.local/bin/claude --dangerously-skip-permissions --model claude-opus-4-8 --effort xhigh`
+- required model evidence: process arguments must show exact `claude-opus-4-8` with effort `xhigh`, and live TUI must show `Opus 4.8 with xhigh effort`; no fallback model, effort, pane, or process is admissible; the Codex fast/service-tier gate does not apply to this Claude process
+- artifact: only `plans/CYCLE_1_DELTA_PLAN.md`, exactly 3,655 lines / 531,012 bytes / SHA-256 `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`
+- lens: exactly one lens, `obscure-section self-containment`
+- owner route after a valid filing: root to G3 for independent premise-first disposition; reviewer grades remain unpromoted allegations
+
+After the two mandatory reads, reproduce the process/model/cwd evidence, confirm reviewer HEAD equals the root-supplied dispatch commit, and independently reproduce the artifact identity before analysis. If the artifact differs, follow the reviewer protocol's `STALE-ASSIGNMENT` fail-closed path. If model evidence differs, follow its `MODEL-MISMATCH` path. Never review a substitute artifact or use a substitute process.
+
+### Declared authority and exact coverage
+
+After the two mandatory reads and identity gate, read only these authority selections:
+
+- `OVERNIGHT_GOAL.md` lines 23–36 and 58–87
+- `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` lines 28–41, 54–150, and 174–206
+- `CYCLE_0_WORK_ORDER.md` lines 10–20, 67–79, and 112–126
+- `CAMPAIGN_CHARTER_REASONING.md` lines 34–79
+- `MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md` lines 353–1003, 1651–3213, 5164–6202, and 6674–8005
+
+Read every declared authority line and artifact lines 1–3655 in bounded calls that avoid output truncation. Maintain an explicit in-memory coverage manifest with `observed`, `unread`, or `retry-required` intervals. Every authority read or search is confined to the declared selections; no command may display or return an authority byte outside them. Artifact-only searches are allowed after full artifact ingest. Never substitute summaries, infer an unread interval, or widen authority scope during retry.
+
+### One-lens instruction
+
+Apply only `obscure-section self-containment`. Test whether low-connectivity, easily overlooked, or locally specialized plan sections, contract rows, registries, gates, and interfaces state enough of their own terms, inputs, outputs, prerequisites, lifecycle, refusal/failure behavior, evidence linkage, owner boundary, and preservation obligations to be implemented and checked from explicit local definitions and resolvable references. A cross-reference satisfies the lens only when its target and relation are explicit in the bound artifact or declared authority.
+
+Report a finding only when local evidence shows that an obscure element depends on unstated context, an unresolved reference, an undefined local term, or a missing interface needed to interpret that element. Do not broaden into general feature coverage, generic dependency soundness, style review, or the repeated oversimplification lens except where the fact is necessary evidence for self-containment. Do not rewrite the artifact.
+
+### Blind freshness, plan-space, and no-action law
+
+Root supplies no prior finding, reviewer packet, owner disposition, convergence text, G3 checkpoint body, G7 state, decision, route result, recovery narrative, or unrelated campaign outcome. Do not read Round Log semantics, Convergence Report, any owner checkpoint, root ledger, another artifact, author context, external source, competitor material, or prohibited PDF-processor source/documentation. Mechanical verification of the root-supplied whole-Round hash and the unique final literal anchor is allowed only without displaying prior Round content.
+
+Remain in plan space. Do not edit the artifact or canon; create source, scaffolding, Beads, pseudo-Beads, SpecCard semantic bodies, task/todo/scratch/temp files, measurements, comparisons, or external actions; contact any owner/reviewer/process; fetch, browse, commit, push, publish, purchase, or send anything. Registry/slot presence and `PENDING-LICENSED-SOURCE` markings may be assessed without supplying missing normative semantics. A finding remains an allegation pending G7 validation and independent G3 premise testing.
+
+### Reviewer FSM and packet schema
+
+Use assignment FSM `INGEST -> REVIEW -> SELF-CHECK -> FILE -> TERMINATE`, with no revision loop and no owner consultation. Preserve reviewer-protocol FSM `SPAWNED -> INGEST-DECLARED-CHAIN -> APPLY-ONE-LENS -> FILE-GRADED-FINDINGS -> TERMINATED`. Apply A/B/C grades exactly as defined by the protocol.
+
+The sole packet heading is:
+
+```text
+## R09 — plans/CYCLE_1_DELTA_PLAN.md — obscure-section self-containment
+```
+
+Include exactly one reviewer-process field, model-identity field, started/filed field with measured ISO timestamps, pushed-identity field, artifact-hash field, authority-chain field, authority/artifact coverage and retry/compaction disclosure, reviewer-FSM field, counts line, marginal-only line, and no-action statement. State `A=<n>; B=<n>; C=<n>` and `marginal-only: YES | NO`; `YES` is legal only when A=0 and B=0.
+
+Each unique monotone `R09-A01`, `R09-B01`, or `R09-C01` allegation contains exactly one `evidence`, `requirement`, `consequence`, `repair boundary`, and `loss guard`, with stable local anchors and the self-containment mechanism. Omit empty grade subsections, never counts. End with exactly one `### Round verdict` covering revision need, uncertainty, and marginal rationale, followed by exactly `- termination state: TERMINATED`. Do not state an owner disposition or promote a grade.
+
+### Blind single-shot write and exact termination
+
+Construct and self-check the packet in memory. Immediately before filing, reconfirm artifact hash, root-supplied dispatch/Round identities, and uniqueness of the exact final literal anchor without displaying prior Round semantics. The only repository write is one final structured anchored mutation to `gauntlet/ROUND_LOG.md`: replace the exact final literal anchor with itself plus the schema-valid packet. On this Claude surface, use exactly one structured `Edit` with the literal anchor as `old_string` and anchor-plus-packet as `new_string`; do not use whole-file Write, shell redirection, pipe-to-write, `tee`, scratch storage, or another write method. Preserve every preceding byte and write no other path.
+
+If the single append fails, do not retry with another method or write elsewhere; leave the repository unchanged and state the boundary. Do not edit this control, the artifact, canon, checkpoint, convergence report, or root ledger. Do not commit or push.
+
+After a successful append, make no later tool call or work. The final assistant response is exactly the standalone token `TERMINATED`, with no prefix or suffix. The model process must then exit, followed by the idle shell; root verifies session/PID absence. The packet itself must already contain the exact terminal line above.
+
+Construction remains `BOUND-UNSENT`. G7 has sent no task, prefix, authority byte, artifact byte, context, finding, prompt, or anchor. Root alone may commit and push the three G7 documents, reproduce their identities and the sealed control roots, reattest the untouched R09 pane/process/TUI, construct the detached activation, and send only that envelope plus this heading through actual EOF.
+
+**R09 FINAL LITERAL ANCHOR — APPEND REVIEWER PACKET HERE AFTER ROOT ACTIVATION.**
