@@ -1016,3 +1016,17 @@ R56 binds only the submitted C1 plan 3,655 lines / 531,012 bytes / `db0bbb1df5bb
 The placeholder-only bootstrap requires exact sequential Tools 1-4, with only narrowly defined action-only narration tolerated at zero credit. The control preserves 34 gap-free primary windows, two union gates, whole-candidate citation closure, exact PID scoping, one anchored Round Edit, the literal EOF anchor, and the exact standalone terminal response. No live bootstrap was instantiated or sent.
 
 Allocation remains 56 unique rows at 22 Sol / 34 Opus; 24 failed at 6/18; 32 active planned at 16/16; 18 valid filed at 9/9 with A=118/B=64/C=22; and 14 active-unfiled at 7/7. R56 is the sole bound-unsent row and supplies no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model credit, or convergence evidence before qualification. Established sequences are unchanged; convergence remains **NOT ESTABLISHED**.
+
+## R56 citation-integrity and blind-identity-output disqualification — `2026-07-15T18:06:34+02:00`
+
+This append supersedes only the R56 bound-unsent and prospective-route wording immediately above. The sealed control and physical reviewer packet remain byte-identical, and neither Grade-B allegation, reviewer grade, verdict, nor finding body is promoted or dispositioned.
+
+Transcript replay reproduces exact startup, model/cwd and PID-scoped identity, all 34 primary authority/artifact Reads including Rev 7 line 2,431, both primary unions, the six stated citation Reads, sole Round Edit, no later tool, standalone terminal response, and retirement. It also establishes two sealed failures: the packet's claimed coordinate extraction omits coordinates appearing in its own top and method fields, so the separate citation-recheck union is not a superset of the whole candidate; and Tool 7 prints literal anchor bytes outside the fixed-identity output whitelist. The exact-quotation assertion also normalizes one source punctuation character. The control makes the omitted-coordinate condition terminal before write and separately bars the excess identity output.
+
+The transport-delimiter representation is admissible and does not change an instruction byte. Tool 7 remains read-only and exposes no earlier Round outcome, but that does not waive the exact output whitelist. The owner-revision recommendation is required packet framing rather than an owner disposition. None cures either method-control failure.
+
+R56 is immutable `NOT-RUN · METHOD-CONTROL-CITATION-INTEGRITY-AND-BLIND-IDENTITY-OUTPUT-VIOLATION · TERMINATED`, with no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model credit, or convergence evidence. No G3 route or replacement is created.
+
+Allocation is now 56 unique rows at 22 Sol / 34 Opus; 25 failed at 6/19; 31 active planned at 16/15; 18 valid filed at 9/9 with A=118/B=64/C=22; and 13 active-unfiled at 7/6. No row is bound-unsent. R10 remains untouched `PRECOMMITTED`.
+
+The C1 five-pass-A sequence remains R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24, all non-marginal. The Constitution sequence remains R14=15 non-marginal -> R15=21 non-marginal -> R51=0 marginal-only. R56 adds no point. Convergence remains **NOT ESTABLISHED**.
