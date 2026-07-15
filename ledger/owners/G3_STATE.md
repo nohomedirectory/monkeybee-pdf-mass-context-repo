@@ -38,14 +38,14 @@ owner-fsm: SUBMIT-FOR-REVIEW
 
 ## Current checkpoint
 
-- Timestamp: `2026-07-15T04:54:39+02:00`
+- Timestamp: `2026-07-15T09:10:20+02:00`
 - Phase: `SUBMIT-FOR-REVIEW`
-- Active goal: the final R41 submission identity is already bound; G3 remains idle awaiting root commit and push, with R07 unbound and undispatched.
+- Active goal: the exact final R48 plan identity is bound; G3 remains idle awaiting root commit and push, with R08 unbound and undispatched.
 - Exclusive writable paths for this round: `plans/CYCLE_1_DELTA_PLAN.md` and `ledger/owners/G3_STATE.md`, exclusively through structured `apply_patch`.
-- Current plan: final R41 submission exactly 3,543 lines / 487,507 bytes / SHA-256 `fc4cf43598e788cacea1ffabce7110d23ba3aea66a7d89afa33bbf60cba72260`, with `owner-fsm: SUBMIT-FOR-REVIEW`.
+- Current plan: final R48 submission is exactly 3,566 lines / 495,395 bytes / SHA-256 `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0`, with `owner-fsm: SUBMIT-FOR-REVIEW`. R48 repairs remain bounded to REC.007/REC.008/REC.010 and §9.5 materiality retention, CLI.010 plus its exact consumers/gates, the two §12.1 later-owner clarifications, and the two one-token local-link-count reconciliations.
 - Checkpoint navigation: this is the sole live current-state surface. R05 and earlier identities, goals, phases, and next-round statements remain valid only within their dated historical sections; they are not present routing state.
-- Round condition: all seven R41 allegations have independent owner dispositions (`accept=5`, `narrow=2`, `reject=0`, `regrade=0`), only those bounded repairs are present, and all credited gates are green. R07 remains unbound and is eligible only after root commits and pushes this new submission.
-- Branch observation: immediately before the first R41 write, repository `HEAD` and local `origin/main` both exactly equaled corrected control commit `95fd0e5fdb196362a47b6904911982b6dbdec50a`.
+- Round condition: owner dispositions are `accept=2` (R48-B01/C02), `narrow=2` (R48-C01/C03), `reject=0`, total=`4`; reviewer B/C grades remain unpromoted. R08 remains unbound and root-owned.
+- Branch observation: immediately before the first R48 write, repository `HEAD` and local `origin/main` both exactly equaled pushed control commit `49bffc48ced1a707ed8565b58bfb64e8a45a4b12`; the worktree was clean.
 - External fetches: none.
 - Sub-agent activity: none; G3 remains the sole owner and will not route its own review.
 
@@ -1184,3 +1184,209 @@ All bounded gates are green. Next gate: persist `SELF-CHECK -> SUBMIT-FOR-REVIEW
 - Both live checkpoint phase surfaces now read `SUBMIT-FOR-REVIEW`. The sole live Active goal already states that the final R41 submission identity is bound and G3 remains idle awaiting root commit and push, with R07 unbound and undispatched.
 - The plan was not edited and remains exactly 3,543 lines / 487,507 bytes / SHA-256 `fc4cf43598e788cacea1ffabce7110d23ba3aea66a7d89afa33bbf60cba72260` at `owner-fsm: SUBMIT-FOR-REVIEW`. No owner contact, route, bind, dispatch, commit, push, fetch, or external action occurred.
 - G3 stops idle at `SUBMIT-FOR-REVIEW`. The exact final checkpoint identity is computed after this transition and reported in the handoff because embedding a self-hash would alter the bytes it identifies.
+
+## R48 owner intake: `SUBMIT-FOR-REVIEW -> REVISE` — `2026-07-15T08:27:28+02:00`
+
+- Control and intake identities reproduced before any write: `HEAD` and local `origin/main` both `49bffc48ced1a707ed8565b58bfb64e8a45a4b12`; plan exactly 3,543 lines / 487,507 bytes / SHA-256 `fc4cf43598e788cacea1ffabce7110d23ba3aea66a7d89afa33bbf60cba72260`; checkpoint exactly 1,186 lines / 210,496 bytes / SHA-256 `b79a1dbda35dc9c1140cd8a42c7b4c217ea3643d737c9094231c3d11ce490ae1`; both FSM fields were `SUBMIT-FOR-REVIEW`; worktree clean.
+- Required intake reads completed: `AGENTS.md` in full; the entire committed R48 reviewer packet at Round Log lines 4610–4665; and the immediately following G7 chain qualification/route closure at lines 4666–4678. The four filings are R48-B01 and R48-C01/C02/C03; reviewer grades and reasoning remain unpromoted allegations.
+- Packet-identity diagnostic: the committed packet independently reproduces as 56 lines / 15,538 bytes, but two read-only methods compute SHA-256 `c54991cb0120d98b4afc6afec334392205c3305398c573a70d1023f3ab5023a3`, not the G7 receipt's `6102ff0e3c64414444657ad8d6e69bec2bde6a97ece2cb62e941bbe28e7bea9a`. The conflict is preserved rather than smoothed. The exact pushed packet bytes and headings remain the routed allegation input; neither hash claim is promoted into premise evidence.
+- G7's authority correction is binding as process scope: reviewer-unread Rev 7 lines 5684–6202 receive no reviewer credit and must be read independently by G3. G7 performed no owner disposition. Next gate: read the governing Rev 7 ranges in full, explicitly including 5684–6202, then inspect exact plan anchors and persist each independent disposition before any substantive plan edit.
+
+### R48 packet-boundary correction — `2026-07-15T08:28:00+02:00`
+
+- Root clarified that the earlier line-window slice omitted the packet's leading separator newline and included the following blank newline. Its equal 56-line / 15,538-byte size therefore did not identify the immutable packet. The `c54991cb...23a3` result is rejected with zero credit as a boundary-selection diagnostic; it is not the packet identity and establishes no filing conflict.
+- The separator-inclusive committed byte range `[865861,881399)` was independently streamed twice from `49bffc48ced1a707ed8565b58bfb64e8a45a4b12:gauntlet/ROUND_LOG.md`. It reproduces exactly 56 lines / 15,538 bytes / SHA-256 `6102ff0e3c64414444657ad8d6e69bec2bde6a97ece2cb62e941bbe28e7bea9a`, matching the G7 immutable filing receipt.
+- This correction arrived immediately after the intake transition patch. The owner FSM remains `REVISE`; no substantive plan edit or premise conclusion preceded the corrected packet identity.
+
+### R48 authority-display diagnostic — `2026-07-15T08:28:29+02:00`
+
+- The first grouped read of the short Goal/Charter/Work-Order/Reasoning authority selections exceeded the tool output allowance and was truncated at 10,158 tokens / 276 output lines. The entire grouped display is uncredited even where early text appeared intact; it supplies no premise result and changed no file.
+- Correction gate: reread each named authority selection in separate bounded calls, credit only fully returned windows, then read every required Rev 7 range through non-overlapping bounded windows. Owner FSM remains `REVISE`; substantive plan content is still unchanged apart from its FSM header.
+
+### R48 long-line authority-window diagnostic — `2026-07-15T08:31:05+02:00`
+
+- The first read-only display of Rev 7 lines 6991–7150 was clipped because exceptionally long table rows exceeded the per-command output allowance. That entire window is rejected with zero premise credit; the independently intact adjacent windows 6674–6830 and 6831–6990 remain credited, and no file changed because of the failed display.
+- Correction gate: reread lines 6991–7150 in smaller, gap-free subwindows before continuing at line 7151. Owner FSM remains `REVISE`; no R48 disposition or substantive plan repair has yet been promoted.
+
+## R48 independent owner dispositions — `2026-07-15T08:33:49+02:00`
+
+- Authority coverage: the short Goal/Charter/Work-Order/Reasoning selections were independently reread in fully returned bounded windows after the rejected grouped display. Rev 7 lines 353–1003, 1651–3213, 5164–6202, and 6674–8005 were read gap-free in bounded windows, explicitly including reviewer-unread lines 5684–6202. The clipped 6991–7150 attempt was replaced by fully returned windows 6991–7030, 7031–7070, 7071–7110, and 7111–7150 before reading 7151–8005. The committed separator-inclusive R48 packet was reread from its exact corrected byte range only to bind routed allegation wording and loss guards; reviewer grades and conclusions remain unpromoted.
+- Owner arithmetic before repair: `accept=2` (R48-B01, R48-C02), `narrow=2` (R48-C01, R48-C03), `reject=0`, total=`4`. These are owner premise dispositions, not promotions of the reviewer's B/C grades.
+
+### R48-B01 — `ACCEPT`
+
+- Independent premise and evidence: Rev 7 §14.7 defines the closed material-ambiguity axes as effective objects, page order, visible appearance, extracted text, attachment inventory, signature interpretation, and security conclusions; §14.7.1 requires whole-document security/absence claims across every live materially distinct hypothesis. The live plan's REC.007 inputs/outputs permit materiality projection and equivalence coalescing but do not name the seven axes or state what unavailable appearance/text results do; REC.008 retains only alternatives already called materially distinct; REC.010 allows an unspecified required check to be unavailable; §9.5 calls the frontier materially distinct. C1 §12.1 simultaneously and correctly excludes rendering and text extraction until C2/C3. The allegation is therefore reproduced as an under-specified durable coalescing boundary, not as evidence that a faulty implementation already exists.
+- Smallest authorized repair: make REC.010 carry one seven-axis materiality projection with exact value/evidence or explicit unavailable/indeterminate state per axis; make REC.007 forbid coalescing or a non-material-distinction conclusion whenever either appearance or text—or any other required axis—is unavailable and structural identity does not independently prove equality; make REC.008 and §9.5 retain materially distinct **and equivalence-unresolved** alternatives. Add no rendering or text capability and infer no unavailable semantics.
+- Preserved loss guard: every hypothesis remains live unless equality extends to all seven axes under admitted evidence; a C1 decision cannot suppress an alternative that C2/C3 may later show differs in appearance or text. Whole-document security/absence language remains unavailable across an unresolved material-equivalence frontier.
+- Uncertainty: later C2/C3 may define stronger equality proofs and lawful coalescing, but C1 has no authority to predict those semantics. The repair therefore chooses conservative retention and explicit unavailability, not a guessed visual/text comparator.
+
+### R48-C01 — `NARROW`
+
+- Independent premise and evidence: Rev 7 §16.5 places DSS/VRI and other validation-related embedded data in the eventual signature-structure family, but the higher-authority Charter C5 scope expressly assigns layered cryptographic signature validation, including DSS/VRI and timestamps, to C5. Work Order §2 assigns R0 the narrower structural signature/`ByteRange` discovery fix, and the C1 plan's REV.008 satisfies that boundary while DOC.001/DOC.008 preserve generic raw/unknown/opaque carriers. The allegation does not establish authority for a new C1 DSS/VRI semantic classifier or card slot.
+- Smallest authorized repair: explicitly name DSS/VRI/LTV validation-data structure/linkage interpretation and evaluation in the existing C5 exclusion/owner row, while stating that C1 preserves raw carriers under DOC.001/DOC.008 and makes no named DSS/VRI/LTV interpretation. Add no C1 certificate, revocation, path, trust, or profile semantics.
+- Preserved loss guard: the raw carriers and relationships are not discarded or declared harmless; C5 retains the obligation to surface their presence/linkage structurally before any stronger certificate, path, revocation, trust, or LTV conclusion. Generic C1 preservation cannot be promoted into content classification.
+- Uncertainty: licensed source cards may later separate a smaller structural subset from C5 evaluation. Until that authority exists, the exact named semantics stay deferred and `PENDING-LICENSED-SOURCE`; no model-memory fill is permitted.
+
+### R48-C02 — `ACCEPT`
+
+- Independent premise and evidence: Charter C1 requires the CLI surface from Rev 7 §25.3 so the wedge is invocable; §25.3 names `mb validate`. The plan already makes DOC.007 and RPT.010 layers 1–3 an active C1 capability but exposes RPT.010 only through the inspect projection, while the closed CLI namespace stops at CLI.009. The capability/surface mismatch is reproduced.
+- Smallest authorized repair: add one atomic `C1.CC.CLI.010@1` thin `mb validate` command over DOC.007/RPT.010, update only the closed catalog, shared CLI consumers, FUZ.010 coverage, workflow/gate references, and contract namespace required for internal closure. The command is limited to exact C1 layers 1–3 and uses the existing report/outcome/projection laws.
+- Preserved loss guard: `mb validate` cannot imply PDF/A, PDF/UA, whole-document/profile conformance, rendering behavior, external-validator agreement, or any rule/card that was unsupported, unavailable, not evaluated, or pending. Full standardized-profile validation remains later-cycle work.
+- Uncertainty: the exact licensed rule semantics remain unavailable; the command exposes only active reviewed-card-backed rules and otherwise preserves RPT.010's explicit unsupported/not-evaluated/refused outcomes.
+
+### R48-C03 — `NARROW`
+
+- Independent premise and evidence: Rev 7 §10.7 describes a long-term explanation-query family spanning objects, visibility, pixels, glyphs, changes, signatures, and divergence. The C1 plan already exposes object paths/cycles/spans through DOC.001/CLI.003 and visible/shadowed/unreachable/unknown occurrence state through DOC.009/RPT.001/CLI.001–CLI.003; FDN.011 preserves typed provenance while expressly denying unique inverse causality. Neither the Charter nor Work Order requires a separate typed explanation graph in C1, and the later visual/text/transform domains are outside C1. The omission is therefore a navigation/surface ambiguity, not a missing underlying R0 capability.
+- Smallest authorized repair: split the §12.1 wording: explicitly state that C1 object-provenance and occurrence-visibility questions are available through the existing report and inspect/revisions/objects projections, while the dedicated typed explanation graph and `mb explain` API remain C5. Add no new explanation contract or cross-domain inference.
+- Preserved loss guard: enclosing/container provenance never becomes unique inverse byte or causal attribution; no pixel, glyph, text, signature-impact, transform, or divergence explanation is imported into C1.
+- Uncertainty: a later owner may choose a dedicated object/visibility convenience API, but that is not required to preserve the currently contracted evidence and receives no new C1 ID in this repair.
+
+Next gate: apply only these accepted/narrowed bounded repairs to the plan, then persist the repaired identity and `REVISE -> SELF-CHECK` before running the full credited suite.
+
+### R48 REVISE diagnostic and claim-word correction — `2026-07-15T08:37:50+02:00`
+
+- The first full plan-diff display after repair exceeded the combined output allowance and was clipped. It is rejected as a full visual-diff check; the separately returned identity, status, stat, and `git diff --check` results from that invocation remain read-only observations, and bounded reads subsequently inspected every repaired region.
+- The first compact catalog/spec validator did not launch: literal `\\n` sequences reached `python3 -c` and caused `SyntaxError: unexpected character after line continuation character` before the plan was read. It is zero-credit, changed no file, and supplied no count. A corrected read-only invocation then independently returned catalog=`138/138 unique`, specification blocks=`138/138 unique`, equal sets, zero duplicate IDs, zero mandatory-field failures across all 17 fields, and one CLI.010 heading/card slot.
+- Root's added-line guarded-word allegation was independently reproduced as exactly five lowercase standalone occurrences across four R48-added checkpoint lines. Only those process-coverage adjectives were changed: `intact` or `fully returned` now carries the intended read-coverage meaning, and the disposition heading uses `Authority coverage`. Historical text was not rewritten.
+- A compact reference/DAG preflight returned 279 fully qualified references with zero unknowns, 138 dependency nodes / 1,541 edges / 138 topological visits, and zero dependency failures/cycle nodes. Its broad shorthand scan also reported `COS.001`, `LZW.001`, and `PNG.001`; these are known non-contract card/domain fragments rather than dependency-grammar failures and receive no shorthand-closure credit. The formal SELF-CHECK must rerun reference closure with the declared contract-family grammar.
+
+Owner FSM remains `REVISE`. Next gate: rerun the added-line guarded-word scan and exact repaired-artifact preflight; if green, persist `REVISE -> SELF-CHECK` before any credited suite result.
+
+## R48 transition: `REVISE -> SELF-CHECK` — `2026-07-15T08:38:41+02:00`
+
+- Bound repaired pre-transition plan: exactly 3,566 lines / 495,384 bytes / SHA-256 `55fcb674fe72841440ce5f451c76bab55c2fa3e49e591c2ef1c09d45bc2033c3`; bound pre-transition checkpoint: exactly 1,253 lines / 224,090 bytes / SHA-256 `80991f505a96e6aaa38f2bd378cd3fa87a35042de62cf3e4b3047a36756b3d9e`.
+- Pre-transition repair checks passed: catalog/specification sets are 138/138 unique and equal; all 138 blocks have each of the 17 required fields exactly once; CLI.010 has one pending card slot; dependency preflight visits 138/138 nodes with no dependency failure or cycle; the R48-added-line guarded-word scan returns zero matches; both owned files pass `git diff --check`; and exactly the two G3-owned paths are modified.
+- Both live owner-FSM surfaces now read `SELF-CHECK`. The header mutation changes the plan identity, so no post-transition identity is inferred from the bound preimage. The credited suite starts after this persisted transition and must independently read the full plan, establish exact post-transition identities, rerun every structural/authority/loss-guard/claim/format/path gate, and restart through `REVISE` on any artifact failure.
+
+### R48 SELF-CHECK full-read diagnostic — `2026-07-15T08:39:57+02:00`
+
+- The first post-edit plan read of lines 751–900 was clipped by the output allowance and is rejected in full. Adjacent plan windows 1–150, 151–300, 301–450, 451–600, and 601–750 were fully returned; none is substituted for the failed interval.
+- Correction boundary: reread 751–900 in smaller gap-free windows before continuing at line 901. No plan defect or mutation follows from a display failure, so both owner FSM surfaces remain `SELF-CHECK` and no credited full-plan-read result exists yet.
+
+### R48 SELF-CHECK second full-read diagnostic — `2026-07-15T08:40:42+02:00`
+
+- The first post-edit plan read of lines 1501–1620 was clipped around DOC.002 and is rejected in full. Windows 751–825 and 826–900 repaired the prior display gap, and later windows through 1500 were fully returned; none supplies the missing DOC.002 interval.
+- Correction boundary: reread 1501–1620 in smaller gap-free windows before continuing at line 1621. This is another display construction failure, not an artifact defect; no plan edit follows and both owner FSM surfaces remain `SELF-CHECK`.
+
+### R48 SELF-CHECK third full-read diagnostic — `2026-07-15T08:42:28+02:00`
+
+- A grouped post-edit plan read requesting lines 1621–1740, 1741–1860, and 1861–1980 exceeded the available model context and returned only the truncation notice. All three requested windows are rejected with zero read credit; no portion of lines 1621–1980 is inferred from that invocation.
+- Correction boundary: reread lines 1621–1980 through smaller, non-overlapping, fully returned windows before continuing at line 1981. This display failure identifies no artifact defect, so both owner FSM surfaces remain `SELF-CHECK` and the plan is unchanged.
+
+### R48 SELF-CHECK combined-diff display diagnostic — `2026-07-15T08:44:28+02:00`
+
+- A single read-only invocation requested both owned-path diffs and exceeded the output allowance; its combined display was truncated within the plan diff before later checkpoint output. The invocation receives zero credit as an intact visual diff and no omitted hunk is inferred from it.
+- Correction boundary: inspect the plan and checkpoint diffs independently through bounded, fully returned windows. The same invocation's separately returned control-commit, exact-identity, path-status, diff-stat, live-header, and empty scoped/whole `git diff --check` results remain discrete observations. This display construction failure identifies no artifact defect, so both owner FSM surfaces remain `SELF-CHECK`.
+
+## R48 SELF-CHECK defect transition: `SELF-CHECK -> REVISE` — `2026-07-15T08:46:06+02:00`
+
+- The post-edit plan was read gap-free through all 3,566 lines. The failed 751–900 and 1501–1620 displays remained zero-credit and were replaced by their smaller fully returned windows; the failed 1621–1980 grouped display was likewise replaced by six fully returned 60-line windows before the read continued through line 3,566.
+- One artifact defect was independently reproduced after that read: the 138 contract `Card slots` fields contain 157 local-link occurrences and 157 distinct `SC.C1.*` IDs after adding CLI.010, but §3.5 still states that `CardLinkResolutionManifestId` binds “all 156” local IDs. The stale declaration occurs exactly once and contradicts the live registry count.
+- Smallest repair boundary: change only that §3.5 numeric declaration from 156 to 157. Preserve every local ID, pending marker, resolution branch, human-review requirement, card-authority boundary, and no-semantic-body rule. This is an internal count reconciliation, not new normative semantics.
+- The pre-transition plan was exactly 3,566 lines / 495,388 bytes / SHA-256 `2225292692bcff56f81f3588a29cb5efcccf1bacfd2ff5df25eb975476680ab8`; both owner-FSM surfaces now read `REVISE`. Next gate: apply the one-token repair, rebind the repaired identity, persist `REVISE -> SELF-CHECK`, and restart the entire credited suite from its first control/identity check.
+
+## R48 correction transition: `REVISE -> SELF-CHECK` — `2026-07-15T08:46:58+02:00`
+
+- The sole substantive correction changed §3.5's local-link count from 156 to 157. Fresh targeted results are: contract card fields=`138`; contract-local link occurrences=`157`; distinct contract-local IDs=`157`; matching “all 157” declaration=`1`; stale “all 156” declaration=`0`; CLI.010 pending card field=`1`; stale `CLI.001–CLI.009` range=`0`; prohibited ``mb autopsy`` command token=`0`.
+- The repaired `REVISE` plan was exactly 3,566 lines / 495,384 bytes / SHA-256 `68277fa5463c348b1c8c0685329046ff20e0a292f771cbe9d9b27a3586c016ff`; the pre-transition checkpoint was exactly 1,286 lines / 229,583 bytes / SHA-256 `e13ab34029ce1647f95165651e6aa3f318606e88e958610fa83f9d58104e4ccc`.
+- Both R48-added-line guarded-word scans return zero across all four guarded categories; scoped and whole-worktree `git diff --check` both exit 0; changed-path status lists exactly the two G3-owned files.
+- Both owner-FSM surfaces now read `SELF-CHECK`. The plan header mutation changes its identity, so no post-transition hash is inferred. The credited suite restarts from its first control/identity check, including a new full 3,566-line read; no result from the failed prior suite substitutes for this restart.
+
+## R48 second SELF-CHECK defect transition: `SELF-CHECK -> REVISE` — `2026-07-15T08:49:07+02:00`
+
+- The restarted plan read was fully returned and gap-free through line 2,340 when it reached IMM.001. That contract's input-domain field still says `all 156 stable local link IDs`, contradicting the independently verified 157 contract-local occurrences/distinct IDs and the corrected §3.5 resolution-manifest count.
+- A whole-plan exact-number search returned only the corrected §3.5 `157` surface and the stale IMM.001 `156` surface. Thus the remaining contradiction is localized to one numeric token in one contract field; no other 156/157 count surface is present.
+- Smallest repair boundary: change only IMM.001's stable-local-link count from 156 to 157. Preserve the immutable authority snapshot and resolution-manifest inputs, every local ID and pending marker, all review/rights/linkage gates, and the runtime-projection no-authority boundary.
+- The pre-transition plan was exactly 3,566 lines / 495,388 bytes / SHA-256 `0126d6e52f619541553196514ac6915f1858c03d324431d9a736a07a7b07c47f`; the pre-transition checkpoint was exactly 1,293 lines / 230,912 bytes / SHA-256 `53d1742be19235b169313e162934a07ece9caa4817b976fb06392504d81e6133`. Both owner-FSM surfaces now read `REVISE`; the interrupted restart receives no full-suite credit.
+
+### R48 second-REVISE added-line vocabulary diagnostic — `2026-07-15T08:49:55+02:00`
+
+- The post-repair added-line guard failed: each of the four guarded tokens appeared exactly once in the checkpoint diff and zero times in the plan diff. All four checkpoint matches are confined to the earlier transition sentence that spelled out the token labels while reporting their then-zero totals.
+- This failed invocation receives no vocabulary-gate credit. Correction boundary: replace only that self-referential result-label sentence with a token-free statement that all four guarded categories returned zero; then rerun both owned-path added-line guards before leaving `REVISE`.
+
+## R48 second correction transition: `REVISE -> SELF-CHECK` — `2026-07-15T08:50:24+02:00`
+
+- The second substantive correction changed only IMM.001's stable-local-link count from 156 to 157. Fresh targeted results are: contract card fields=`138`; contract-local link occurrences=`157`; distinct contract-local IDs=`157`; §3.5 count=`157`; IMM.001 count=`157`; stale 156 surfaces=`0`.
+- The repaired `REVISE` plan was exactly 3,566 lines / 495,384 bytes / SHA-256 `bbedeb4eb6662b6839209b1a9807a93d7d8324a2d63159079c67194251b3c355`; the pre-transition checkpoint was exactly 1,305 lines / 232,893 bytes / SHA-256 `6c908a99c575d5290e27659d1d2a89f891194e8c172986272e04a2603787fb64`.
+- Both owned-path added-line vocabulary guards return `[0,0,0,0]`; scoped and whole-worktree `git diff --check` both exit 0; changed-path status lists exactly the two G3-owned files.
+- Both owner-FSM surfaces now read `SELF-CHECK`. The plan header mutation changes its identity, so no post-transition hash is inferred. The entire credited suite restarts from line 1, including another gap-free read of all 3,566 lines; neither interrupted prior run supplies credit.
+
+### R48 restarted full-read display diagnostic — `2026-07-15T08:52:10+02:00`
+
+- In the current restarted suite, plan lines 1–300 were fully returned. The next read-only request for lines 301–600 exceeded the display allowance and returned only a truncation notice, so that entire 301–600 interval receives zero read credit and no portion is inferred from it.
+- The earlier clipped requests for lines 751–900 and 1501–1620 also remain zero-credit diagnostics; their replacement reads from an interrupted suite do not carry into this restart. Correction boundary: reread 301–450 and 451–600, then use 751–825 plus 826–900 and 1501–1560 plus 1561–1620 when those intervals are reached. Owner FSM remains `SELF-CHECK`; this display failure identifies no artifact defect and changes no plan content.
+
+### R48 restarted full-plan read coverage — `2026-07-15T08:55:04+02:00`
+
+- The current restarted suite has now read the plan gap-free through all 3,566 lines at exactly 495,388 bytes / SHA-256 `d66db3ec53f95d8fd2f64a056f00d0b5cc0370dcccfb4ec12e62a3860112b9fa` and `owner-fsm: SELF-CHECK`.
+- Credited coverage is lines 1–300; replacement windows 301–450 and 451–600; 601–750; replacement windows 751–825 and 826–900; 901–1500; replacement windows 1501–1560 and 1561–1620; six 60-line windows through 1621–1980; and bounded fully returned windows 1981–3566. The clipped 301–600, 751–900, 1501–1620, and grouped 1621–1980 requests remain zero-credit diagnostics and supply no inferred bytes.
+- `AGENTS.md` was reread in full when directed during this sequence. No additional artifact defect was found in the returned plan text, and the plan was not edited during read closure. Owner FSM remains `SELF-CHECK`; next gate is the restarted structural, regression, loss-guard, provenance, claim, format, and scope suite.
+
+### R48 actual-card crosswalk validator diagnostic — `2026-07-15T08:57:32+02:00`
+
+- A combined read-only slot/card validator correctly returned the contract-field, local-link, marker, CLI.010, and reconciled 157-link surfaces, but its actual-card subcheck counted only literal `MB-SC-R0-NNN` tokens and did not expand `MB-SC-R0-NNN` through `MB-SC-R0-NNN` range expressions. Its reported 21-card literal set and false exact-crosswalk predicate receive zero actual-card coverage credit; they do not identify a plan defect.
+- Correction boundary: retain only the independently exact non-crosswalk fields from that invocation, then rerun actual-card coverage with a range-aware parser over §3.5. Owner FSM remains `SELF-CHECK`; no plan edit follows this validator-construction failure.
+
+### R48 restarted round-regression wrapper diagnostic — `2026-07-15T09:00:58+02:00`
+
+- The first combined R01–R05/R41/R48 regression wrapper used several paraphrased, punctuation-sensitive predicates instead of the plan's exact artifact wording. It returned partial row totals R01=`7/10`, R02=`5/5`, R03=`3/4`, R04=`12/17`, R05=`27/41`, R41=`4/7`, and R48=`3/4`; no round total from that mixed invocation receives regression credit.
+- The reported misses are validator-construction failures unless an exact-anchor retry reproduces a missing guard. Correction boundary: inspect the exact plan anchors for every missed ID, replace only the brittle predicates, and rerun all seven round suites from scratch. Owner FSM remains `SELF-CHECK`; no plan edit or loss-guard conclusion follows from these partial totals.
+
+### R48 round-regression retry diagnostic — `2026-07-15T09:02:25+02:00`
+
+- The first exact-anchor retry used repeated unbounded cross-document regular expressions. The read-only process exceeded the initial invocation window and then finished without emitting any result. It receives zero credit for every round and supplies no row disposition, pass, or defect evidence.
+- Correction boundary: replace the unbounded expressions with finite substring checks over a Markdown-punctuation-normalized in-memory copy of the same plan, then rerun every R01–R05/R41/R48 row from scratch. Owner FSM remains `SELF-CHECK`; the plan is unchanged.
+
+### R48 unbounded-regex child process rescue correction — `2026-07-15T09:03:30+02:00`
+
+- Root independently observed that failed read-only wrapper child PID `1828591` remained active at 100 percent CPU after the zero-credit checkpoint. Root sent `TERM` only to that child, verified the PID absent, verified host zombies remain zero, and reported that G3 and repository files were untouched.
+- The prior invocation remains zero-credit exactly as recorded; termination does not rehabilitate any result or identify an artifact defect. G3 performs no further unbounded cross-document regular-expression scan and continues only with finite substring checks.
+
+### R48 bounded-substring regression diagnostic — `2026-07-15T09:03:30+02:00`
+
+- The first finite-substring retry returned R01=`10/10`, R02=`5/5`, R03=`4/4`, R04=`16/17`, R05=`38/41`, R41=`7/7`, and R48=`4/4`. Its four misses—R04-A07 and R05-A04/A05/B14—were exact-wording mismatches in the validator: the plan uses its established permission-as-authorization sentence, raw occurrence wording, expanded structural-signature no-claim sentence, and four-field recoverability sentence.
+- Because the combined round run was not all-green, none of its round totals receives credited-suite status. Correction boundary: bind those four rows to the exact returned plan anchors and rerun all seven round suites through the same finite method. Owner FSM remains `SELF-CHECK`; no plan edit follows.
+
+### R48 checkpoint-structure display diagnostic — `2026-07-15T09:06:32+02:00`
+
+- A read-only validator requested the current/control checkpoint comparison, live-state surfaces, historical-prefix retention, and diff-hunk detail in one invocation. Its output exceeded the available model context and returned only a truncation notice, so the entire invocation receives zero credit and no omitted result is inferred.
+- Correction boundary: rerun the state checks as compact bounded predicates and inspect the checkpoint diff through separately bounded hunk windows. This display construction failure identifies no artifact defect; both owner FSM surfaces remain `SELF-CHECK` and neither owned artifact changed because of it.
+
+## R48 credited SELF-CHECK — `2026-07-15T09:08:21+02:00`
+
+- Control and identities: `HEAD` and local `origin/main` both remain `49bffc48ced1a707ed8565b58bfb64e8a45a4b12`. The credited plan is exactly 3,566 lines / 495,388 bytes / SHA-256 `d66db3ec53f95d8fd2f64a056f00d0b5cc0370dcccfb4ec12e62a3860112b9fa` at `owner-fsm: SELF-CHECK`. The checkpoint immediately before this append was exactly 1,353 lines / 240,383 bytes / SHA-256 `164582d96399b814f03f801311bfa44196e1c84e48db3e759eb822f221809a37`.
+- Read coverage: the restarted post-repair read is gap-free through all 3,566 plan lines. Every clipped interval and grouped display remains zero-credit; only its smaller, non-overlapping, fully returned replacement windows contribute to this result.
+- Contract structure: catalog=`138/138 unique`; specification blocks=`138/138 unique`; exact set parity; duplicate live IDs=`0`; every block has each of the 17 required fields exactly once. Relative to the pushed 137-ID namespace, removals=`0` and the sole addition is `C1.CC.CLI.010@1`.
+- Reference and grammar closure: fully qualified references=`279`, unknown=`0`; prerequisite graph=`138` nodes / `1,541` unique edges / `138` topological visits / `0` cycles or relation failures; target edges=`149`. Declared transition relations=`3`, their ordered phase endpoints=`6`, and contract-consumption relations=`22`, with zero bad guards. FUZ.002–FUZ.010 dependency on FUZ.001=`9/9`.
+- Card and marker accounting: contract `Card slots` fields=`138`; contract-local link occurrences/distinct IDs=`157/157`; whole-plan local-link occurrences/distinct IDs=`162/157`; whole-plan `PENDING-LICENSED-SOURCE` markers=`158`, partitioned as `138` card fields plus `20` non-card law/registry references. Marker variants=`0`; semantic-body fields=`0`; alternate active slot tokens=`0`. The §3.5 and IMM.001 declarations each bind `157` exactly once, with stale 156 surfaces=`0`. Range-aware actual-card crosswalk=`43/43` with missing=`0` and extra=`0`.
+- CLI.010: all 17 fields occur exactly once, its card slot carries exactly one pending marker, the stale CLI.001–CLI.009 range is absent, and the prohibited alternate command token is absent. The C1 surface matrix is `43/43`: all 42 retained C1 surface/exclusion probes plus the new validate-surface probe.
+- Prior-round and R48 loss-guard regressions all pass under finite exact-anchor checks: R01=`10/10`, R02=`5/5`, R03=`4/4`, R04=`17/17`, R05=`41/41`, R41=`7/7`, R48=`4/4`. Reviewer grades remain unpromoted; owner arithmetic is `accept=2` (R48-B01/C02), `narrow=2` (R48-C01/C03), `reject=0`, total=`4`.
+- Repair trace: R48-B01 is confined to REC.007 lines 1962–1976, REC.008 lines 1982–1996, REC.010 lines 2022–2036, §9.5 lines 3269–3270, and product gate line 3422. R48-C01 is confined to the C5 DSS/VRI/LTV row at line 3492. R48-C02 is confined to catalog line 353, shared consumer line 2760, CLI.010 lines 2825–2843, FUZ.010 lines 3030/3042, workflow/matrix/gate lines 3260/3324/3340/3427. R48-C03 is confined to the later-cycle explanation row at line 3494. The two independently found count repairs are the single tokens at lines 153 and 2246.
+- Loss guards: unresolved equivalence retains every recovery alternative across all seven materiality axes; raw DSS/VRI/LTV carriers remain preserved without C1 named interpretation; validate exposes only C1 layers 1–3 and cannot strengthen unsupported, unavailable, unevaluated, refused, profile, rendering, or external-validator outcomes; object/visibility evidence remains available while the dedicated explanation graph/API and every cross-domain or inverse-causality inference stay later-cycle.
+- Canon and provenance: all `9/9` canonical SHA-256 identities match the expected local authority set. Plan/checkpoint frontmatter input lists are byte-identical to pushed control (`24/24` and `26/26`). The checkpoint has one live `## Current checkpoint`, its frontmatter/live phase agree, every R48 disposition heading occurs once, and the pushed historical body from `## Files read in the required order` onward is byte-identical with only this R48 suffix appended.
+- Claim, clean-room, and format gates: both owned-path added-diff guarded-category vectors are `[0,0,0,0]`; processor-name and URL counts are zero in both owned files; no new source locator, measurement, comparison, semantic card body, code, scaffold, Beads/pseudo-Beads, or external action exists. Both files are exact UTF-8, end in a newline, and have zero tabs, trailing-whitespace lines, or conflict markers; plan fence delimiters=`4`, balanced.
+- Retention and diff scope: versus pushed control, missing contracts=`0/137`, missing typed identity/receipt/record/manifest/envelope/report tokens=`0/64` (current=`65`), missing slash-name tokens=`0/92` (current=`97`), missing local links=`0/156` (current=`157`), and missing command tokens=`0`. `mb explain` occurs only in the explicit C5 exclusion row. The plan diff has exactly `30` authorized hunks and numstat `+60/-37`; unauthorized hunk locations=`0`. The checkpoint diff has five authorized hunks: four live navigation/FSM fields plus the append-only R48 suffix. Exactly the two G3-owned paths are modified; scoped and whole-worktree `git diff --check` each exit 0.
+- Diagnostic honesty: the rejected packet line slice, clipped authority/plan/diff/checkpoint displays, literal-newline validator, literal-only card parser, brittle regression predicates, and unbounded-regex invocation remain explicitly zero-credit. Root's TERM rescue of PID `1828591`, verified absence, zero-zombie observation, and untouched repository facts remain recorded without rehabilitating that invocation. The final round results above come only from the bounded finite retry.
+- Unresolved authority: every card slot remains pending licensed authority. DSS/VRI/LTV interpretation and validate-rule semantics remain gated; R41-B02 virtual-member applicability still has no all-occurrence conclusion. D1–D7, D-004/D-005 provider/runtime choices, reviewed-card authority/linkage, and human plan-to-execution conversion retain their human-ratification or licensed-source gates. No unavailable semantics were inferred from memory.
+
+All credited gates are green. Next gate: reverify the appended checkpoint and both diff checks, then use `apply_patch` to transition the plan and checkpoint from `SELF-CHECK` to `SUBMIT-FOR-REVIEW`, bind the post-header plan identity, and stop idle. R08 remains unbound and becomes eligible only after root commits and pushes this submission.
+
+## R48 transition: `SELF-CHECK -> SUBMIT-FOR-REVIEW` — `2026-07-15T09:09:29+02:00`
+
+- Pre-transition plan identity: exactly 3,566 lines / 495,388 bytes / SHA-256 `d66db3ec53f95d8fd2f64a056f00d0b5cc0370dcccfb4ec12e62a3860112b9fa`. Pre-transition checkpoint identity: exactly 1,372 lines / 246,920 bytes / SHA-256 `abdc344376a5b72cdebad2af5b6689f29315844c93c6ceae0568f8eff5e97695`.
+- Immediately before transition, the plan/checkpoint live phase surfaces agreed on `SELF-CHECK`; both added-diff guarded-category vectors were `[0,0,0,0]`; UTF-8/newline/whitespace/conflict checks passed; exactly the two owned paths were modified; and scoped plus whole-worktree `git diff --check` exited 0.
+- The only post-suite plan mutation is the owner-FSM header change. Plan content below that header is unchanged. Both owned live FSM surfaces now read `SUBMIT-FOR-REVIEW`.
+- Next and final owner gate: compute the post-header plan identity, bind it in the live checkpoint and final record, rerun append-sensitive integrity checks, and stop idle. R08 is not bound, routed, or dispatched.
+
+### R48 PreToolUse hook transport diagnostic — observed `2026-07-15T09:08:21+02:00`
+
+- The PreToolUse hook transport reported `failed to write hook stdin: Broken pipe`. This event receives zero credit. The underlying identity command returned normally, subsequent hash and diff checks passed, and no repository or process state changed because of the transport failure. No inference about hook presence, absence, execution, or coverage is made.
+- The instruction to persist this observation arrived immediately after the terminal FSM patch had applied. It is recorded at the first available write before final identity binding; the already-persisted transition chronology is not backdated or reordered. The final gate reruns every append-sensitive check after this entry.
+
+### R48 final submission identity — `2026-07-15T09:10:20+02:00`
+
+- Final plan identity after the sole owner-FSM header mutation: exactly **3,566 lines / 495,395 bytes / SHA-256 `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0`**, with `owner-fsm: SUBMIT-FOR-REVIEW`. Replacing only that header value in memory reproduces the credited 495,388-byte `SELF-CHECK` plan and SHA-256 `d66db3ec53f95d8fd2f64a056f00d0b5cc0370dcccfb4ec12e62a3860112b9fa`.
+- Checkpoint identity immediately before this final binding append was exactly 1,384 lines / 248,806 bytes / SHA-256 `728fb0f283693968ad5682826697d208b98943ca085c5c17116fd5f836933813`. The post-append checkpoint identity is computed without another write and reported in the owner handoff.
+- Final append-sensitive checks passed before this binding: `HEAD` and local `origin/main` both `49bffc48ced1a707ed8565b58bfb64e8a45a4b12`; plan/checkpoint frontmatter and the sole live checkpoint surface all read `SUBMIT-FOR-REVIEW`; exactly the two owned paths are modified; both guarded-category vectors are `[0,0,0,0]`; UTF-8/newline/whitespace/conflict checks pass; scoped and whole-worktree `git diff --check` each exit 0.
+- Credited totals remain catalog/specification=`138/138`, 17 required fields exactly once, contract card fields=`138`, contract-local links=`157/157`, whole-plan links=`162/157`, markers=`158` (`138` card fields plus `20` non-card references), actual-card crosswalk=`43/43`, C1 surface matrix=`43/43`, canonical identities=`9/9`, reference unknowns=`0`, DAG cycles=`0`, and prior-round/R48 regressions all green. R48 disposition arithmetic remains `accept=2`, `narrow=2`, `reject=0`, total=`4`.
+- The PreToolUse broken-pipe observation remains zero-credit and yields no hook inference. All licensed-source and human-ratification gates recorded above remain unresolved; no loss guard or capability ceiling changed during submission. G3 stops idle at `SUBMIT-FOR-REVIEW`. R08 merely awaits root commit and push and has not been bound, routed, reviewed, or dispatched.
