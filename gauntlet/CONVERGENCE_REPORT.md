@@ -802,3 +802,13 @@ R16 is the precommitted Constitution + fix-map five-pass-B position 3/5 under th
 Filed evidence remains 17 rounds at 9 Sol / 8 Opus with A=118/B=64/C=22. Immutable allocation remains 50 rows at 22 Sol / 28 Opus; 18 failed IDs leave 32 active planned slots at 16/16. Fifteen active-unfiled slots remain: R16 is the sole bound-unsent round and 14 are unbound.
 
 R16 adds no five-pass-B point until a valid packet files and is mechanically integrated. Existing valid five-pass-B points remain R14 A+B=15 and R15 A+B=21, both non-marginal. R50 owner disposition remains pending and unpromoted; no in-progress G3 state is integrated or inferred. C1 and overall convergence remain **NOT ESTABLISHED**.
+
+## Evidence-neutral R16 closure / R51 replacement correction — `2026-07-15T11:44:40+02:00`
+
+This append supersedes only the prior mechanical R16 bound wording. Immutable R16 is `NOT-RUN · METHOD-CONTROL-SEQUENCING-VIOLATION · TERMINATED`: three read-only Bash tools preceded the mandatory full `AGENTS.md` and reviewer-protocol reads, root interrupted before analysis or write, and no packet or content finding filed. R16 contributes zero grade, coverage, marginal result, verdict, route, curve point, disposition, or conclusion.
+
+Fresh R51 replaces R16 one-for-one without enlarging planned coverage. It preserves Constitution + fix map, sole `oversimplification-and-feature-loss` lens with PDF-normative-fact loss focus, five-pass B position 3/5, exact `claude-opus-4-8` / `xhigh`, G1 route, and manifest `24327520e55a7324f69f12244d7ea05a6d0f9997da68fd19c111659740c60292`. R51 is `BOUND-UNSENT`; no task or reviewer packet exists.
+
+Filed evidence remains 17 valid rounds at 9 Sol / 8 Opus with A=118/B=64/C=22. Immutable allocation is now 51 rows at 22 Sol / 29 Opus; 19 failed IDs leave 32 active planned slots at 16/16. Fifteen active-unfiled slots consist of sole bound R51 plus 14 unbound.
+
+R51 adds no five-pass-B point before a valid filing. Existing valid five-pass-B points remain R14 A+B=15 and R15 A+B=21, both non-marginal. R50 owner disposition remains pending and unpromoted; concurrent G3 work is neither read nor inferred. C1 and overall convergence remain **NOT ESTABLISHED**.
