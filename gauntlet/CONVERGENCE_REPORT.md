@@ -1048,3 +1048,17 @@ R57 binds the submitted C1 plan identity `db0bbb1df5bb317d3bd2cdf313708fa8a10af8
 Allocation remains 57 unique rows at 22 Sol / 35 Opus; 25 failed at 6/19; 32 active planned at 16/16; 18 valid filed at 9/9 with A=118/B=64/C=22; and 14 active-unfiled at 7/7. R57 is the sole bound-unsent row and supplies no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model credit, or convergence evidence before qualification.
 
 The C1 and Constitution sequences are unchanged. R57 adds no point; convergence remains **NOT ESTABLISHED**. No G3 route, bootstrap instantiation, reviewer contact, or dispatch occurred.
+
+## R57 citation-integrity disqualification — `2026-07-15T19:19:34+02:00`
+
+This append supersedes only the R57 bound-unsent and prospective-route wording above. The sealed control and physical reviewer packet remain byte-identical; none of the physical A=0/B=2/C=2 allegations, grades, verdict prose, or finding bodies is promoted or dispositioned.
+
+Record-by-record transcript replay reproduces exact startup, model/cwd and PID-scoped admission, 34 primary Reads, both primary unions, 34 distinct post-freeze Reads, physical packet schema, sole generic Round Edit, no later tool, exact terminal response, and supplied retirement boundary. It also establishes a sealed citation-integrity failure: R57-C02 attributes its three-layer definition to plan line 1,704, but the post-freeze numbered result returns line 1,704 blank and the clause on line 1,705. Two nonliteral backtick shorthands additionally lack exact returned-byte matches and are not individually labeled as paraphrase.
+
+The full-plan citation union passes set inclusion, the startup narration fits its narrow boundary, and the generic count-only anchor diagnostic was corrected to the exact unique anchor before authority ingest. None cures the wrong direct attribution, which the sealed control makes terminal before write.
+
+R57 is immutable `NOT-RUN · METHOD-CONTROL-CITATION-INTEGRITY-VIOLATION · TERMINATED`, with no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model credit, or convergence evidence. No G3 route or replacement is created.
+
+Allocation is 57 unique rows at 22 Sol / 35 Opus; 26 failed at 6/20; 31 active planned at 16/15; 18 valid filed at 9/9 with A=118/B=64/C=22; and 13 active-unfiled at 7/6. No row is bound-unsent. R10 remains untouched `PRECOMMITTED`.
+
+The C1 five-pass-A sequence remains R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24, all non-marginal. The Constitution sequence remains R14=15 non-marginal -> R15=21 non-marginal -> R51=0 marginal-only. R57 adds no point; convergence remains **NOT ESTABLISHED**.
