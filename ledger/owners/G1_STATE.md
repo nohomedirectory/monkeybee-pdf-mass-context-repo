@@ -29,8 +29,8 @@ evidence-status: provisional-pending-substrate
 
 - owner: `Codex G1 owner`
 - subgoal: `G1 — Constitution v8, shell, and fix application`
-- phase: `SUBMIT-FOR-REVIEW`
-- checkpoint: The restarted bounded suite passes. Report §16 now preserves the exact R15 final-gate facts as a time-scoped reproducibility snapshot; substantive artifacts remain frozen. New four-artifact manifest: `24327520e55a7324f69f12244d7ea05a6d0f9997da68fd19c111659740c60292`. Stop idle without routing R16.
+- phase: `DONE/HANDOFF`
+- checkpoint: R51 follow-up is terminal for root handoff. The corrected bounded restart and post-submission guard pass; all four submitted artifacts remain byte-identical at manifest `24327520e55a7324f69f12244d7ea05a6d0f9997da68fd19c111659740c60292`. No reviewer or R17 action occurred or is authorized.
 - declared outputs: `constitution/**`, `shell/**`, `reports/FIX_APPLICATION.md`, and `ledger/owners/G1_STATE.md`
 
 ## Transition record
@@ -64,6 +64,21 @@ evidence-status: provisional-pending-substrate
 | `REVISE` | 2026-07-15T00:32:44+02:00 | Bounded SELF-CHECK failure 1: the aggregate health wrapper emitted `newline=0` for all five owned files. No newline relation or other same-run result is credited. Determine whether this is a predicate defect; frozen Constitution/pipeline/shell bytes may not change. |
 | `SELF-CHECK` | 2026-07-15T00:33:06+02:00 | Direct pre-decode probes show terminal byte `10` and valid UTF-8 for every owned file. The failed wrapper tested a scalar consumed by `Encode::decode`; no artifact defect exists. Restart every bounded gate with newline measured before decoding. |
 | `SUBMIT-FOR-REVIEW` | 2026-07-15T00:35:14+02:00 | The restarted bounded suite passes every required relation. Report §16's four-path statement is timestamped and explicitly non-continuing; frozen substantive hashes match, and only report/checkpoint changed in this turn. Report `06faddd7…`; manifest `24327520…`. Stop idle; no R16 route. |
+| `INGEST` | 2026-07-15T13:09:16+02:00 | Begin the bounded R51 follow-up sub-FSM. `HEAD` and `origin/main` equal required control `cf932eabc47dca8d42b0286995d670a94299f590`; all submitted line/byte/hash tuples, manifest, and checkpoint tuple match exactly. Evidence analysis and disposition remain gated behind this persisted state. |
+| `DRAFT` | 2026-07-15T13:10:54+02:00 | Root sequencing correction: post-`INGEST`, pre-`DRAFT` R51 marker search, committed range display, blob count, and all derived byte/hash probes are zero-credit raced work. No artifact or disposition mutation occurred. Rerun all required R51 evidence reads from disk before any premise use. |
+| `SELF-CHECK` | 2026-07-15T13:14:15+02:00 | Credited DRAFT rereads reproduce the R51 packet/control identities, zero allegation IDs, corrected transcript-bound timing record, and six disclosed variances. The informational §34.4/§34.9 premise is supported only as a human-ratification question; artifact-repair count remains zero. Begin fresh terminal checks. |
+| `REVISE` | 2026-07-15T13:15:37+02:00 | R51 SELF-CHECK failure 1: UTF-8-aware navigation check found the R51 run-record heading labeled `INGEST` while top-level live phase is `SELF-CHECK`. Correct only the ambiguous heading, then restart the entire terminal suite. |
+| `SELF-CHECK` | 2026-07-15T13:15:56+02:00 | The R51 run-record heading is phase-neutral; historical `INGEST`, `DRAFT`, `SELF-CHECK`, and `REVISE` transitions remain append-only. Restart all terminal checks from disk with no pre-failure credit. |
+| `SUBMIT-FOR-REVIEW` | 2026-07-15T13:17:48+02:00 | Restarted terminal suite passes: four artifact tuples and manifest unchanged; R51 control/packet identities and six variances reproduced; zero allegation IDs; navigation, UTF-8/LF/CR/whitespace/conflict/fence, clean-room, controlled-word, registry, scoped-path, and diff gates pass. No R17 action. |
+| `DONE/HANDOFF` | 2026-07-15T13:19:58+02:00 | Submission gate remained stable on disk. The warning-producing post-submission delta scan is zero-credit; its initialized-counter rerun passes. Persist terminal root handoff before final read-only identity verification; no reviewer or R17 action. |
+| `REVISE` | 2026-07-15T13:22:08+02:00 | Terminal diagnostic failure 2: a wrapper incorrectly applied the recorded `163/205` controlled-vocabulary baseline to all four artifacts by adding the report to its scope. The observed `177/238` result proves no defect. Zero-credit the wrapper; correct only its scope and restart bounded checks. |
+| `SELF-CHECK` | 2026-07-15T13:22:26+02:00 | No artifact repair was needed. Restart the bounded terminal suite from its control bracket with corrected diagnostic scope; carry forward no result from the failed aggregate. |
+| `REVISE` | 2026-07-15T13:23:19+02:00 | Terminal SELF-CHECK failure 3: exact packet bytes/hash matched, but a guessed field-format regex returned zero verdict/termination matches and forced a nonzero exit. Credit no result from the wrapper. Correct only the verifier against the sealed syntax, then restart all bounded gates. |
+| `SELF-CHECK` | 2026-07-15T13:23:40+02:00 | The exact permitted packet range shows one `Round verdict` heading and one `termination state: TERMINATED` field. No artifact repair was needed. Restart all bounded terminal gates with literal syntax checks. |
+| `REVISE` | 2026-07-15T13:24:43+02:00 | Terminal SELF-CHECK failure 4: the three-file controlled-vocabulary wrapper imposed whole-word boundaries and returned `133/168`, while the persisted `163/205` relation uses substring matching. Credit no result from the wrapper or same restart. Restore the recorded matcher and restart all bounded gates. |
+| `SELF-CHECK` | 2026-07-15T13:25:01+02:00 | Root confirms the original baseline matcher: case-insensitive controlled-token substrings over exactly Constitution, SpecCard pipeline, and shell. Keep the report hash separate; restart the bounded gate once with no speculative diagnostic. |
+| `SUBMIT-FOR-REVIEW` | 2026-07-15T13:26:33+02:00 | The bounded restart passes from a stable control bracket: exact artifact identities/manifest, sealed control/packet identities, zero allegation IDs, phase-neutral navigation, file hygiene, scoped diff, original `163/205` matcher relation, and initialized checkpoint-delta guards all pass. No artifact repair, reviewer action, or R17 action. |
+| `DONE/HANDOFF` | 2026-07-15T13:27:42+02:00 | Post-submission identities, navigation, hygiene, scoped diff, and initialized delta guards pass. Persist terminal root handoff before final read-only hash reporting; all submitted artifacts remain frozen and no reviewer or R17 action is authorized. |
 
 ## R15 bounded packet receipt — persisted before artifact edits
 
@@ -252,6 +267,143 @@ Final content identities before this transition:
 - pre-transition checkpoint SHA-256: `58bd473b4d910d08e6b0e35869ba9d1cfe7910931b55dc42816596a41d80732a`. The post-transition checkpoint hash is computed after this append-only mutation and reported externally; embedding that digest in its own bytes would be self-referential.
 
 Terminal phase is `SUBMIT-FOR-REVIEW`. No finding disposition, grade, loss guard, substantive artifact, reviewer route, R16 binding, commit, push, or external action changed.
+
+## R51 follow-up sub-FSM — run record
+
+- control gate: `HEAD=origin/main=cf932eabc47dca8d42b0286995d670a94299f590`, branch `main`;
+- submitted artifacts:
+  - Constitution: `2009` lines / `187151` bytes / `2d3828110ae9d525003a19ee5340141a1f347be44be275520fe4c8253be789fe`;
+  - SpecCard pipeline: `204` lines / `19387` bytes / `6a15a6ac957bfe3f700acc383313c8945770578b19a1f549bd41816169a0bfb1`;
+  - shell: `6645` lines / `457434` bytes / `158679c21172682e33c0e30ca6c670bf079602394170d5478000e5e3b8032315`;
+  - fix report: `405` lines / `66729` bytes / `06faddd7deef40524056b86ea192c85a5f0822cc3f5a7768b3d27a991922f602`;
+- bytewise-sorted four-artifact manifest: `24327520e55a7324f69f12244d7ea05a6d0f9997da68fd19c111659740c60292`;
+- admitted pre-follow-up checkpoint: `554` lines / `110948` bytes / `48951eb4e2e2c470fc7b9da1af26dd8d0cf948d8cf586eda66e2dae97a69b408`;
+- write boundary: only the four submitted artifacts and this checkpoint, always through structured `apply_patch`. Concurrent root/G7 paths remain excluded and are neither cleanliness preconditions nor repair targets;
+- intake distinction: the human routes R51 as `CHAIN-QUALIFIED`, marginal-only `YES`, with `A=0/B=0/C=0`. This is packet metadata, not an allegation disposition, and no graded allegation exists to accept, narrow, reject, or regrade;
+- R17 remains gated and out of scope. No allocation, binding, dispatch, contact, preparation, review route, commit, push, fetch, web action, scratch file, or external action is authorized;
+- ingest credit boundary: only control identities and the human-routed packet shape are admitted here. Committed R51 evidence, corrected transcript-bound times, six disclosed variances, G7 recovery, and the informational §34.4/§34.9 candidate remain unread and unassessed until `DRAFT` is persisted.
+
+### Sequencing correction and zero-credit boundary
+
+- root correction: `DRAFT` was required before substantive R51 evidence analysis, not merely before disposition;
+- zero-credit reads: the committed Round marker-only search; the committed blob line/byte count; the display of committed lines `5198–5385`; and every conclusion or recollection derived from those reads;
+- zero-credit probes: the attempted sealed-control slice, pre-packet prefix, packet slice line/byte count, packet-slice hash, and prefix-plus-packet hash. Their outputs are diagnostic history only and establish no identity, boundary, variance, timestamp, finding count, marginality, or candidate premise;
+- interrupted-turn boundary: the interrupted turn supplies no evidence;
+- mutation audit: before this `DRAFT` transition, no submitted artifact and no R51 premise disposition changed. The only repository mutation was the required `INGEST` checkpoint write through structured `apply_patch`;
+- restart law: every R51 evidence byte needed for this task must now be reread from disk under `DRAFT`. No zero-credit byte or derived value may be carried forward.
+
+### DRAFT reread, mechanical admission, and recovery assessment
+
+- credited committed evidence boundary: marker search and newline-preserving rereads of `gauntlet/ROUND_LOG.md` at control commit `cf932eabc47dca8d42b0286995d670a94299f590`, lines `5198–5309` (R51 control), `5310–5337` (packet), `5338–5365` (G7 recovery), and `5366–5383` (timestamp correction) only. The live Round Log and every unrelated Round body remained unopened;
+- reread diagnostic: the first DRAFT aggregate range display collapsed line separators in the tool rendering and receives no credit for line-sensitive relations. Four exact newline-preserving bounded rereads replaced it;
+- current committed marker coordinates: control heading byte `959015`, final anchor byte `968865`, packet heading byte `968950`, G7-recovery heading byte `976884`, and timestamp-correction heading byte `983360`;
+- control identity: the exact marker-bounded control bytes `[959015,968949)` are `9,934` bytes and hash to `576e7a3542f2f3a3d8c186b9d312e67caf55d18be580d131aa445df10a05bc26`, reproducing the committed recovery's control root independently at its shifted current-blob coordinate;
+- packet identity: exact heading-through-termination bytes `[968950,976882)` are `7,932` bytes and hash to `ffe00d970ec926f0385a86a2c5957c0d283ddb7e488b1fa616eba1ef2986ab64`. The file-line span `5310–5337` is `28` lines / `7,934` bytes because it also carries the two separator line feeds outside the hashed heading-through-termination body;
+- packet schema: all `12` required packet fields are present; allegation-ID count `0`; `Round verdict` count `1`; termination count `1`; counts remain `A=0/B=0/C=0`; marginal-only remains `YES`. These are reviewer/filed values and are not promoted into new findings or campaign claims;
+- variance-counter diagnostic: the first variance wrapper used a full-date sentinel for the write-end local time even though the committed correction abbreviates that second endpoint after “through”; the rerun exposed the missing literal. Replacing only the sentinel with exact local text `12:08:38.386+02:00` reproduced five numbered variances plus the timestamp variance, with all ten required fragments present;
+- no-allegation disposition: R51 has no graded allegation to accept, narrow, reject, regrade, or repair. `CHAIN-QUALIFIED` classifies the filing chain; it supplies no premise for an artifact edit. The four submitted artifacts remain frozen.
+
+#### Six disclosed variances — premise-first owner record
+
+1. **Structured Edit surface:** `VARIANCE-CONFIRMED / NON-DISQUALIFYING-ON-COMMITTED-RECOVERY`. The literal named surface differed, while the committed recovery and byte identities support one anchored structured append with the prior prefix preserved. No grade or artifact premise follows.
+2. **Reviewer did not recompute the sealed control range:** `VARIANCE-CONFIRMED / NON-DISQUALIFYING`. The blind boundary explains the refusal; G1's independent marker-bounded recomputation above matches the full control root.
+3. **Read-only compound Bash:** `RECOVERY-ATTESTED / NO-CONTRARY-LOCAL-EVIDENCE`. The committed G7 recovery binds all three calls after the mandatory start reads and classifies them as read-only. Raw transcript inspection is outside this owner's permitted evidence boundary, so this record does not claim an independent transcript replay.
+4. **`FIX_APPLICATION` coordinate `1–406` versus `405` content lines:** `DISPLAY-COORDINATE-NONDEFECT`. Disk reproduces `405` newline-terminated lines, `66,729` bytes, final byte `0x0a`, and the admitted report hash; the empty EOF display coordinate adds no content line.
+5. **Constitution wildcard:** `EXACT-TWO-FILE-NONDEFECT`. The committed `constitution/` tree contains only the Constitution and SpecCard pipeline paths, so the wildcard neither under- nor over-covered that directory.
+6. **Timestamp field:** `CORRECTION-ADMITTED / QUALIFICATION-RETAINED / NOT-PROTOCOL-PRISTINE`. The packet's authored values are superseded for measured timing: activation `2026-07-15T11:50:35.675+02:00`; Tool 1 `11:52:01.898+02:00`; successful structured write `2026-07-15T12:08:38.262+02:00` through `12:08:38.386+02:00`; terminal text `12:08:40.150+02:00`. The ordering is coherent, the packet bytes/hash remain unchanged, and no finding, grade, allocation, convergence, or artifact conclusion changes.
+
+#### Informational §34.4 / §34.9 candidate disposition
+
+- status: `INFORMATIONAL-PREMISE-SUPPORTED-IN-NARROW-FORM / NO-AUTO-REPAIR / HUMAN-RATIFICATION-REQUIRED`;
+- local premise: Constitution §34.4, a kernel section, directly cites shell §0.3 planning gates and §24.13's generated register but does not state the explicit versioned-dependency/kernel-touch law that §34.9 states for shell §27, §27.1, and §27.4. The textual dependency-binding asymmetry therefore exists;
+- limiting evidence: Work Order §1 places §24.12–§24.16 in the shell reference corpus and expressly permits cross-home citations while requiring one normative home. No local law found in the bounded sections requires every kernel-to-shell citation to repeat §34.9's versioned-dependency mechanism. Section 34.4 also requires re-observation at every gate, so silently freezing that live register relation could change rather than merely clarify its operation;
+- consequence: the evidence supports a dependency-governance question, not a demonstrated PDF-normative loss, filed R51 allegation, grade, or presently authorized artifact defect. No artifact edit qualifies merely to mirror §34.9 wording;
+- human-ratification need: a human must decide whether changes to shell §0.3/§24.13 should be declared kernel touches for §34.4, and if so define the version identity, migration/claim-lapse effect, and change-control boundary. Until that decision, preserve current bytes and record the question only here;
+- R17 boundary: this disposition satisfies only G1's premise-first handoff obligation. It does not bind, allocate, dispatch, contact, prepare, or authorize R17.
+
+Artifact-repair count under R51: `0`. Finding-disposition count under R51: `0`. Informational candidate dispositions: `1`, non-finding and human-ratification gated.
+
+### R51 SELF-CHECK failure 1
+
+- failed relation: phase/navigation truth. The top-level live phase was `SELF-CHECK`, but the unqualified section heading `R51 follow-up sub-FSM — INGEST` could make a fresh owner treat the initial phase as current despite later transitions;
+- diagnostic precursor: the first navigation wrapper omitted UTF-8 source semantics and matched zero Unicode headings. It receives no evidence credit. The corrected UTF-8-aware wrapper found one heading, label `INGEST`, and one conflict;
+- correction boundary: rename only the R51 run-record heading so it does not assert a live phase. Preserve every transition row and all R51 evidence/disposition prose. No artifact mutation is authorized;
+- restart law: after the bounded correction, persist `REVISE -> SELF-CHECK` and rerun the entire terminal suite from disk. The pre-failure head read and navigation probes are not carried forward.
+- correction applied: the heading is now `R51 follow-up sub-FSM — run record`; no transition row, evidence record, disposition, or artifact changed.
+
+### Restarted terminal SELF-CHECK result
+
+- control race bracket: start and end both reproduce `HEAD=origin/main=cf932eabc47dca8d42b0286995d670a94299f590`, branch `main`; no raced result was credited;
+- submitted artifact tuples: Constitution `2009/187151/2d3828110ae9d525003a19ee5340141a1f347be44be275520fe4c8253be789fe`; pipeline `204/19387/6a15a6ac957bfe3f700acc383313c8945770578b19a1f549bd41816169a0bfb1`; shell `6645/457434/158679c21172682e33c0e30ca6c670bf079602394170d5478000e5e3b8032315`; report `405/66729/06faddd7deef40524056b86ea192c85a5f0822cc3f5a7768b3d27a991922f602`; mismatches `0`;
+- bytewise-sorted four-artifact manifest: `24327520e55a7324f69f12244d7ea05a6d0f9997da68fd19c111659740c60292`;
+- R51 evidence: control `9,934` bytes / `576e7a3542f2f3a3d8c186b9d312e67caf55d18be580d131aa445df10a05bc26`; packet `7,932` bytes / `ffe00d970ec926f0385a86a2c5957c0d283ddb7e488b1fa616eba1ef2986ab64`; allegation IDs `0`; verdicts/terminations `1/1`; numbered-plus-timestamp variances `5+1=6`;
+- navigation: one phase-neutral R51 run-record heading, zero R51 phase-like headings, and follow-up sequence `INGEST -> DRAFT -> SELF-CHECK -> REVISE -> SELF-CHECK` before this submission; zero artifact repairs and one informational non-finding disposition;
+- file health: all five owned Markdown files pass strict UTF-8, terminal LF, CR `0`, trailing whitespace `0`, conflict markers `0`, and balanced fences;
+- clean-room/claim guard: R51-added lines have controlled-word, prohibited-processor-name, URL, task-inventory, and new-fence hits `0`. Constitution/pipeline/shell retain their prior `163` matching-line / `205` occurrence enforcement baseline without a new use;
+- SpecCard guard: `43` sequential registry rows, `129/129` markers, `34` empty-template rows, semantic bodies `0`;
+- path scope: only `ledger/owners/G1_STATE.md` differs among the five writable paths; staged paths `0`; scoped `git diff --check` passes. Concurrent excluded paths were not opened and whole-worktree cleanliness was not required;
+- pre-submission checkpoint: `622` lines / `122602` bytes / `6bceb9cfa8dc3a0f9f1f9bda36d080b6f12c8bb6068f17339c0046e0d0389a77`.
+
+Submission boundary: R51 remains `CHAIN-QUALIFIED`, `A=0/B=0/C=0`, marginal-only `YES`, with no finding disposition or repair. The informational dependency candidate remains human-ratification gated. This phase authorizes only final state/hash/navigation verification before `DONE/HANDOFF`; it does not authorize reviewer contact or R17 work.
+
+### R51 terminal root handoff — 2026-07-15T13:19:58+02:00
+
+- transition: `SUBMIT-FOR-REVIEW -> DONE/HANDOFF`, persisted before terminal identity verification;
+- pre-transition checkpoint: `638` lines / `125491` bytes / `a3736e7e50685b47a4b71ce41c2909ea4fb43e31fe7d4bd68c8f36c96d2ad2ba`;
+- pre-transition control bracket: branch `main`; `HEAD=origin/main=cf932eabc47dca8d42b0286995d670a94299f590`;
+- artifact result: all four submitted artifacts remain byte-identical to the admitted R51 inputs; their sorted manifest remains `24327520e55a7324f69f12244d7ea05a6d0f9997da68fd19c111659740c60292`;
+- arithmetic: R51 graded allegations `0` (`A=0/B=0/C=0`), finding dispositions `0`, artifact repairs `0`, informational candidate dispositions `1`; the candidate remains non-finding and human-ratification gated;
+- diagnostic disclosure: the first post-submission delta wrapper emitted uninitialized-value warnings and blank numeric fields. It is zero-credit. After the mandatory post-compaction AGENTS.md reread, the rerun initialized every counter and reproduced `85` added checkpoint lines with controlled-word, prohibited-name, URL, task-inventory, and fence hits each `0`;
+- terminal boundary: no R17 allocation, binding, dispatch, contact, preparation, or reviewer action; no commit, push, fetch, web action, external action, or submitted-artifact edit. Root receives the idle handoff after read-only terminal verification.
+
+### R51 terminal diagnostic failure 2 — 2026-07-15T13:22:08+02:00
+
+- failed relation: a terminal wrapper expected the recorded `163` matching lines / `205` occurrences after scanning Constitution, pipeline, shell, and report together; it returned `177/238` and exited nonzero;
+- cause: the persisted baseline is scoped to Constitution/pipeline/shell. The unchanged report was outside that aggregate but was mistakenly added to the wrapper input;
+- evidence credit: none. Neither the failed aggregate nor any of its term counts is a pass;
+- defect boundary: no submitted artifact changed, and this failed expectation establishes no artifact or controlled-vocabulary defect;
+- correction boundary: rerun the recorded baseline over Constitution/pipeline/shell, retain the exact report identity as its separate no-change proof, rerun the initialized added-line guard across the checkpoint delta, and restart every bounded terminal gate before resubmission.
+
+### R51 terminal SELF-CHECK failure 3 — 2026-07-15T13:23:19+02:00
+
+- failed relation: the combined control/packet wrapper exited nonzero after its packet field-count assertions returned verdicts `0` and terminations `0`;
+- reproduced but uncredited output: control bytes/hash and packet bytes/hash matched their admitted values, and packet allegation-ID count was `0`. Because the wrapper failed, none of those same-wrapper results is carried into the restarted suite;
+- cause boundary: the verifier guessed bold-field and bare-termination line syntax instead of matching the sealed packet's actual formatting;
+- evidence and artifact boundary: no packet, submitted artifact, finding disposition, grade, or informational disposition changed. The failed formatting assumption establishes no evidence defect;
+- correction boundary: under `REVISE`, inspect only the already permitted committed packet range to obtain its exact verdict/termination syntax. Persist `SELF-CHECK` before rerunning the entire bounded terminal suite with literal syntax and no guessed format.
+- correction applied: the permitted sealed-range inspection reproduced exactly one `### Round verdict` heading and one `- termination state: TERMINATED` field. The restarted verifier matches those literal forms; no repository artifact was repaired.
+
+### R51 terminal SELF-CHECK failure 4 — 2026-07-15T13:24:43+02:00
+
+- failed relation: the restarted Constitution/pipeline/shell vocabulary wrapper returned `133` matching lines / `168` occurrences and exited nonzero against the persisted `163/205` baseline;
+- cause: the wrapper added whole-word boundaries. The persisted enforcement baseline counts case-insensitive controlled-token substrings, including inflected forms, and therefore has a different measured relation;
+- evidence credit: none. The failed wrapper and every earlier result in that restart are discarded;
+- defect boundary: file scope was corrected, all submitted hashes remained admitted, and no artifact or vocabulary defect is established by changing the matcher semantics;
+- correction boundary: use the persisted case-insensitive substring matcher over Constitution/pipeline/shell, keep the report as a separate hash identity, and restart all bounded gates after the next `SELF-CHECK` transition.
+- correction adopted: root independently confirmed that exact matcher scope and semantics. The next restart uses it literally and introduces no new diagnostic variant.
+
+### R51 restarted terminal SELF-CHECK — 2026-07-15T13:26:33+02:00
+
+- control bracket: start and end both reproduce branch `main` and `HEAD=origin/main=cf932eabc47dca8d42b0286995d670a94299f590`;
+- submitted identities: Constitution `2009/187151/2d3828110ae9d525003a19ee5340141a1f347be44be275520fe4c8253be789fe`; pipeline `204/19387/6a15a6ac957bfe3f700acc383313c8945770578b19a1f549bd41816169a0bfb1`; shell `6645/457434/158679c21172682e33c0e30ca6c670bf079602394170d5478000e5e3b8032315`; report `405/66729/06faddd7deef40524056b86ea192c85a5f0822cc3f5a7768b3d27a991922f602`;
+- sorted four-artifact manifest: `24327520e55a7324f69f12244d7ea05a6d0f9997da68fd19c111659740c60292`; artifact mismatches `0`;
+- sealed R51 identities: control `9,934` bytes / `576e7a3542f2f3a3d8c186b9d312e67caf55d18be580d131aa445df10a05bc26`; packet `7,932` bytes / `ffe00d970ec926f0385a86a2c5957c0d283ddb7e488b1fa616eba1ef2986ab64`; allegation IDs `0`; literal verdict/termination counts `1/1`;
+- phase/navigation: exactly one live phase surface, one phase-neutral R51 run-record heading, zero phase-like R51 headings, and the append-only transition sequence through this submission is nonconflicting;
+- hygiene: all five owned Markdown files are strict UTF-8 with terminal LF; CR, trailing-whitespace, and conflict-marker counts are `0`; fence counts are even at `20/0/60/0/4`;
+- controlled-vocabulary relation: the exact original case-insensitive substring matcher over Constitution/pipeline/shell reproduces `163` matching lines / `205` occurrences and its recorded per-token partition. The report remains separately proven by its exact hash;
+- clean-room delta: the initialized checkpoint-delta scan covers `129` added lines and returns controlled-token, prohibited-name, URL, task-inventory, and new-fence hits each `0`;
+- path/diff: only `ledger/owners/G1_STATE.md` differs among the five writable paths; staged paths `0`; scoped `git diff --check` passes. Whole-worktree cleanliness is not a gate and excluded concurrent bodies remain unopened;
+- pre-submission checkpoint: `681` lines / `132438` bytes / `c8e1a8f9097cda5d694a222b8ad1bda3459310cef655a906ab79878035756f7d`;
+- result: R51 remains `CHAIN-QUALIFIED`, marginal-only `YES`, `A=0/B=0/C=0`, with finding dispositions `0`, artifact repairs `0`, and one informational human-ratification question. Failures 2–4 and the warning-producing scan remain explicit and zero-credit.
+
+### R51 final DONE/HANDOFF — 2026-07-15T13:27:42+02:00
+
+- transition: `SUBMIT-FOR-REVIEW -> DONE/HANDOFF`, persisted before final read-only hash reporting;
+- pre-transition checkpoint: `696` lines / `135251` bytes / `66e03ca101bbbabaee9c6c9c198905b710cf02b50c23c41adf8afde18a12e19c`;
+- post-submission guard: branch/control identities stable; four artifact tuples and manifest exact; one live submission phase and phase-neutral run-record navigation; all five files healthy; only this checkpoint changed among writable paths; staged paths `0`; scoped diff health passes;
+- initialized delta guard: `143` added checkpoint lines before this transition, with controlled-token, prohibited-name, URL, task-inventory, and fence hits each `0`;
+- terminal arithmetic: graded allegations `0` (`A=0/B=0/C=0`), finding dispositions `0`, artifact repairs `0`, informational candidate dispositions `1`; human ratification remains required for that non-finding question;
+- terminal boundary: all four submitted artifacts remain byte-identical. No reviewer action, R17 allocation/binding/dispatch/contact/preparation, commit, push, fetch, web action, external action, or excluded-body read occurred. Root receives the idle handoff.
 
 ## R14 replacement-owner intake — persisted before artifact edits
 
