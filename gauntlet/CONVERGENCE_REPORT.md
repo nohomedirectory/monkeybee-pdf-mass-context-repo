@@ -740,3 +740,21 @@ R08 is the original precommitted C1 five-pass-A position 5/5 slot, now the sole 
 Filed evidence remains 16 rounds at 8 Sol / 8 Opus with A=98/B=60/C=22. Immutable allocation remains 48 rows at 20 Sol / 28 Opus; 16 failed IDs leave 32 active planned slots at 16/16. Sixteen active-unfiled slots remain: R08 is bound-unsent and 15 are unbound. R08 supplies zero finding, grade, coverage, marginal result, verdict, route, curve point, owner disposition, or conclusion before filing.
 
 The five-pass-A A+B curve remains R04=16 -> R05=32 -> R41=7 -> R48=1, all non-marginal. No consecutive marginal-only condition exists; convergence remains **NOT ESTABLISHED**. Root alone may commit/push the three G7 documents, revalidate identities and the untouched R08 process, and then deliver only the sealed control.
+
+## R08 zero-credit closure and R49 bound-unsent correction — `2026-07-15T09:47:09+02:00`
+
+This append supersedes only the stale R08-bound wording immediately above. It preserves all prior report and reviewer bytes and changes no filed finding, grade, loss guard, curve point, artifact verdict, owner disposition, or convergence conclusion.
+
+### R08 terminal control
+
+R08 is immutable `NOT-RUN · AUTHORITY-SCOPE/FRESH-CONTEXT-CONTROL-VIOLATION · TERMINATED`. Call 42 searched the entire Rev 7 authority file and returned bytes outside the declared selections. Independent structured transcript inspection also shows Call 47 searched the artifact plus whole Charter, Campaign Reasoning, and Work Order files and returned truncated output. There was no `apply_patch`, repository write, packet, finding, grade, coverage, verdict, route, or conclusion; partial reasoning is quarantined and R08 receives zero credit.
+
+### R49 replacement state
+
+R49 is the one-for-one Sol replacement for the original pass-5/5 slot. It binds only submitted plan `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0`, sole `oversimplification-and-feature-loss` lens, and untouched `gpt-5.6-sol` / ultra / live-fast / priority process in session `monkeybee-pdf-mass-context-repo--r49`, pane `%141`, shell 1929789, child 1930040, exact lowercase cwd. Its separator-inclusive control is `[896331,901887)`, 5,556 bytes / `90cbf147f770a498415198274bc758cb63bdd78ccc18022e5ce7f070401babc7`; no task has been sent.
+
+### Evidence, allocation, and convergence
+
+Filed evidence remains 16 rounds at 8 Sol / 8 Opus with A=98/B=60/C=22. Immutable allocation is 49 rows at 21 Sol / 28 Opus; 17 failed IDs leave 32 active planned slots at 16/16. Sixteen active-unfiled slots remain: R49 is sole bound-unsent and 15 are unbound. R08 and R49 add no evidence or curve point.
+
+The five-pass-A A+B curve remains R04=16 -> R05=32 -> R41=7 -> R48=1, all non-marginal. No consecutive marginal-only condition exists; convergence remains **NOT ESTABLISHED**. Root alone may commit/push the three G7 documents, revalidate identities and untouched R49, then send only the sealed control.

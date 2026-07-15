@@ -2877,3 +2877,113 @@ I did not revalidate, re-grade, confirm, refute, promote, demote, or rewrite any
 - Root handoff only: independently rehash, commit and push the three G7 documents, revalidate the submitted plan/G3 identities and untouched R08 process, then send only the sealed R08 control with pushed identity lines. G7 does not commit, push, dispatch, contact another owner/reviewer, bind another round, or take external action and stops idle now.
 
 **Integration-control state: `BOUND-UNSENT`.**
+
+## R08 failure closure / R49 replacement bind — INGEST-VERIFIED (`2026-07-15T09:42:50+02:00`)
+
+- Overarching G7 owner FSM remains `DRAFT`. Disk-first transition persisted separately: prior `BOUND-UNSENT -> INGEST-VERIFIED`; no R08 closure or R49 allocation/bind is implied yet.
+- Pre-transition G7 checkpoint was exactly 2,879 lines / 647,947 bytes / SHA-256 `d6af9011ada0284cdbec2781615fcadbc4a65421abb6b6bef523f9e4f43a0a2c`; the full terminal `BOUND-UNSENT` section immediately above was actual EOF.
+- Fixed clean-base gate passes before every write: HEAD and `origin/main` are both `c43c03b60d8ab5508bfb4b661d97fa07beb34ad0`; intake status is clean. Round Log is 4,718 lines / 893,006 bytes / `3146ba06169f0ac42a05a7ea852a5d91d6c5d250646e3d8068a4832fdbc5c7e5`; Convergence is 742 / 108,143 / `2ade7d6b42704d83002916b517febed04f7dc8fc677c67c3c72e7358fc24cedb`.
+- Bound plan reproduces 3,566 lines / 495,395 bytes / `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0` with G3 owner FSM `SUBMIT-FOR-REVIEW`. R08 pushed control reproduces heading-to-EOF 5,985 bytes / `5e0f879ed41b45f0be1d2ca87e2c85d23a77bc9fea97675c7f7175b5b34f5d02` and separator-inclusive 5,986 / `011e4ee644745acd10d9b406e0406ef0bd8af6e6af5ffde18034b696834cbff5`.
+- Quarantined transcript independently reproduces 228 lines / 1,681,005 bytes / `41922b09f7f0079b5ae479bff8bf4401755efbe3635247b63c71c38561d80c2c`. Its normalized dispatched task plus terminal newline is 6,156 bytes / `fcc436dcdef37ba54ff8e1b4d1bf1399e2757a9b0579d200c8d43f47f13c261b` and carries pushed commit `c43c03b60d8ab5508bfb4b661d97fa07beb34ad0` plus pushed Round hash `3146ba06169f0ac42a05a7ea852a5d91d6c5d250646e3d8068a4832fdbc5c7e5`.
+- Structured-only transcript census has exactly 47 custom exec calls and 47 outputs, zero `apply_patch` input, and zero repository write. Call 1 reads all AGENTS and Call 2 reads all reviewer protocol. One context compaction is recorded; Call 37 rereads all AGENTS immediately afterward, and root instruction `Reread AGENTS.md` is followed by another full AGENTS read at Call 43.
+- Fatal method boundary is independently reproduced. Call 42 runs one `rg` against both the artifact and the entire Rev 7 authority file. Its returned Rev 7 matches include excluded lines 9, 58, 60, 61, 129, 1098, 1248, 1252, 1302, 1304, 1306, 1328, 1360, 1364, 4563, 4567, 4571, 5160, 6600, 6611, 6612, 6617, and 6639. Later in-scope reads cannot cure that authority-scope/fresh-context violation.
+- Independent correction to root summary: Call 47 did not search only the bound artifact. Its exact command searches the artifact plus entire Charter, Campaign Reasoning, and Work Order files; its output is visibly truncated. This is an additional authority-search scope/capacity variance, not a new allegation. Calls 44–46 are read-only and limited to in-scope material. Reviewer prose and partial reasoning remain quarantined and receive zero credit.
+- There is no Round packet, finding, grade, verdict, or write. Round Log remains byte-identical to its pushed preimage. R08 shell 3268140 and child 3268359 are absent; host zombie count is zero. Root-attested receipt metadata is one target, one delivery, zero failure, no hooks, no CASS check, and forced noninteractive; it is dispatch-control metadata only.
+- Current allocation is 48 immutable rows at 20 Sol / 28 Opus; 16 failed IDs leave 32 active planned slots at 16/16. Filed evidence is 16 rounds at 8/8 with A=98/B=60/C=22. R08 is the sole bound-unsent row before closure.
+- Fresh R49 intake passes without process action: session `monkeybee-pdf-mass-context-repo--r49`, target `1.1`, pane `%141`, `pane_dead=0`, shell 1929789, child 1930040, exact lowercase repository cwd, exact `gpt-5.6-sol` with effort `ultra`, live `fast`, and priority service after the displayed default-to-priority cycle. Welcome/default placeholder is untouched; no task, authority, artifact, context, finding, or anchor is present.
+- No diagnostic command failed. G7 read no reviewer reasoning, changed no process/session or non-owned path, and took no external action. Next transition terminalizes only the unique R08 row and appends its zero-credit closure at actual Round EOF.
+
+**Integration-control state: `INGEST-VERIFIED`.**
+
+## R08 failure closure / R49 replacement bind — R08-CLOSED (`2026-07-15T09:44:55+02:00`)
+
+- Overarching G7 owner FSM remains `DRAFT`. Disk-first transition persisted separately: `INGEST-VERIFIED -> R08-CLOSED`; R49 is not yet allocated or bound.
+- Pre-transition G7 checkpoint was exactly 2,896 lines / 652,194 bytes / SHA-256 `d29803aea510ec14218c57cc18eb0bd8c266616f9f47f01dcbc7b29430d342d8`; its full `INGEST-VERIFIED` section immediately above was actual EOF.
+- Round preimage was exactly 4,718 lines / 893,006 bytes / `3146ba06169f0ac42a05a7ea852a5d91d6c5d250646e3d8068a4832fdbc5c7e5`. Only the unique R08 allocation row changed non-append-only; one zero-credit owner closure was appended at true EOF.
+- Current Round Log is 4,728 lines / 895,017 bytes / `b10a4ed9e7d65c08a3535f27bb36ec79f206a6418577318b7a98625b0e91e538`. R08 control remains byte-identical after row relocation: heading range `[887109,893094)` is 5,985 bytes / `5e0f879ed41b45f0be1d2ca87e2c85d23a77bc9fea97675c7f7175b5b34f5d02`; separator-inclusive `[887108,893094)` is 5,986 / `011e4ee644745acd10d9b406e0406ef0bd8af6e6af5ffde18034b696834cbff5`.
+- Separator-inclusive R08 closure is `[893094,895017)`, 10 lines / 1,923 bytes / `1c24d16176d3c439f641093d89e08ee6b93597493840acaef5bf71437e4c1c0e` and is actual EOF. No reviewer packet or finding byte exists.
+- R08 row is immutable `NOT-RUN · AUTHORITY-SCOPE/FRESH-CONTEXT-CONTROL-VIOLATION · TERMINATED`, with em-dash A/B/C/marginal slots. Historical artifact, sole lens, Sol model/mode/tier, pass 5/5, and G3 route are preserved; its ID will not be reused.
+- Closure records Call 42 whole-Rev-7 overreach and the independently observed Call 47 whole-authority-file search/truncation. Partial reasoning remains quarantined; zero finding, grade, coverage, verdict, route, curve point, owner disposition, or conclusion is admitted.
+- Interim allocation is 48 rows at 20 Sol / 28 Opus with 17 failed IDs. Excluding failures leaves 31 active planned slots at 15 Sol / 16 Opus. Filed evidence remains 16 rounds at 8/8 and A=98/B=60/C=22; 15 active-unfiled rows are unbound and zero are bound-unsent.
+- No diagnostic or write-method failure occurred during closure. Next transition adds exactly one immutable Sol replacement row R49 for the failed R08 slot, restoring planned parity without adding coverage.
+
+**Integration-control state: `R08-CLOSED`.**
+
+## R08 failure closure / R49 replacement bind — R49-ALLOCATED (`2026-07-15T09:45:43+02:00`)
+
+- Overarching G7 owner FSM remains `DRAFT`. Disk-first transition persisted separately: `R08-CLOSED -> R49-ALLOCATED`; no process is bound and no task has been sent.
+- Pre-transition G7 checkpoint was exactly 2,910 lines / 654,568 bytes / SHA-256 `ef9be49f2ddcb028c0f93bc8ccdb51675e583fc7dc12d193bc25b62a6d779828`; its full `R08-CLOSED` section immediately above was actual EOF.
+- Exactly one immutable allocation section and row R49 were inserted immediately after R48. Round Log is now 4,736 lines / 896,228 bytes / `df1320cc623012d3fc15e54fb3a22c69f2b12a83d987bdf4b057d3f04e43c696`.
+- R49 is `ALLOCATED · UNSENT` and preserves the failed R08 payload one-for-one: submitted C1 plan `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0`, sole `oversimplification-and-feature-loss` lens, Sol family, original five-pass-A position 5/5, and G3 route. It adds no planned lens, pass, evidence, or coverage.
+- Mechanical allocation parser passes: 49 unique rows at 21 Sol / 28 Opus; 17 failed IDs leave 32 active planned slots at 16/16. Filed evidence remains 16 at 8/8 with A=98/B=60/C=22. R49 is the sole allocated-unsent row; zero rows are bound-unsent.
+- R49 has em-dash grade/marginal slots, no process binding, and zero finding, grade, coverage, verdict, route, curve point, owner disposition, or conclusion. No task, authority, artifact content, context, or write anchor was delivered.
+- No diagnostic or write-method failure occurred. Next transition reattests the untouched R49 process immediately before binding, changes only its row to `BOUND-UNSENT`, and appends the compact fresh-context control at actual Round EOF.
+
+**Integration-control state: `R49-ALLOCATED`.**
+
+## R08 failure closure / R49 replacement bind — R49-BOUND-UNSENT (`2026-07-15T09:46:46+02:00`)
+
+- Overarching G7 owner FSM remains `DRAFT`. Disk-first transition persisted separately: `R49-ALLOCATED -> R49-BOUND-UNSENT`; no task has been sent.
+- Pre-transition G7 checkpoint was exactly 2,922 lines / 656,352 bytes / SHA-256 `be4eda967539f6cf9707b894027a7adcaad8fcdd05c62400c4080350a4ccab5d`; its full `R49-ALLOCATED` section immediately above was actual EOF.
+- Immediate pre-bind reattestation passes: session `monkeybee-pdf-mass-context-repo--r49`, target `1.1`, pane `%141`, `pane_dead=0`, shell 1929789, child 1930040; shell and child cwd exactly `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`; child args identify `gpt-5.6-sol` with effort `ultra`.
+- Pane shows `gpt-5.6-sol ultra fast`, default then priority service messages with priority live, untouched welcome/default placeholder, and no task/history. No authority, artifact, context, finding, or anchor is present; every process diagnostic exited zero.
+- Round pre-bind identity was 4,736 lines / 896,228 bytes / `df1320cc623012d3fc15e54fb3a22c69f2b12a83d987bdf4b057d3f04e43c696`. Only the unique R49 row changed for binding; compact control was appended at true EOF.
+- Current Round Log is 4,764 lines / 901,887 bytes / `c6a1d745fba0ca59d5e5939ea87a6bbb90e1c51a4f48cc34bf3624bbb07aacc6`. Separator-inclusive R49 control is `[896331,901887)`, 28 lines / 5,556 bytes / `90cbf147f770a498415198274bc758cb63bdd78ccc18022e5ce7f070401babc7`; heading-to-EOF is `[896332,901887)`, 5,555 bytes / `b4d632ec8eabd90d59f0989834f770d3863269a9e001567dc9fad398898b74b1`.
+- Final literal `**R49 FINAL LITERAL ANCHOR — APPEND PACKET HERE AFTER ROOT ACTIVATION.**` is unique at actual EOF with terminal newline. Exactly one R49 row and control exist; zero R49 packet/finding headings exist.
+- Exact repeated prompt occurs once within the R49 control and reproduces 375 bytes / `6b934de06db65a1901e80238293231af8f171ca2d8267d2c344d5f84f469853e`. It follows the declared authority chain and remains non-quota.
+- Strengthened control confines every authority read/search to declared selections, permits artifact-only search and transparent bounded retries, and constrains post-compaction recovery to full AGENTS followed only by protocol, declared selections, and bound artifact. It retains one artifact, one lens, evidence schema, sole structured Round append, standalone `TERMINATED`, and no later work without fixed-call ritual.
+- R08 control remains byte-identical after allocation-row relocation: heading range `[888423,894408)`, 5,985 bytes / `5e0f879ed41b45f0be1d2ca87e2c85d23a77bc9fea97675c7f7175b5b34f5d02`.
+- Allocation is 49 unique rows at 21 Sol / 28 Opus; 17 failed IDs leave 32 active planned slots at 16/16. Filed evidence remains 16 rounds at 8/8 with A=98/B=60/C=22. R49 is the sole bound-unsent row; 15 active-unfiled rows remain unbound.
+- R49 contributes zero evidence before filing. G7 did not dispatch, contact R49, alter a process, edit an artifact/root ledger, stage, commit, push, or take external action. No diagnostic or write-method failure occurred.
+- Next transition appends an evidence-neutral R08-failure/R49-bound correction to Convergence while preserving filed totals, curve, and `NOT ESTABLISHED`.
+
+**Integration-control state: `R49-BOUND-UNSENT`.**
+
+## R08 failure closure / R49 replacement bind — CONVERGENCE-UPDATED (`2026-07-15T09:47:27+02:00`)
+
+- Overarching G7 owner FSM remains `DRAFT`. Disk-first transition persisted separately: `R49-BOUND-UNSENT -> CONVERGENCE-UPDATED`; R49 remains bound and unsent.
+- Pre-transition G7 checkpoint was exactly 2,940 lines / 659,690 bytes / SHA-256 `124715c0dd6c2fffb758ce5ffb93a01e4fe3bf115cf2905756ca2a59dabb81cc`; its full `R49-BOUND-UNSENT` section immediately above was actual EOF.
+- Convergence preserves its entire 108,143-byte pushed preimage as an exact prefix at `2ade7d6b42704d83002916b517febed04f7dc8fc677c67c3c72e7358fc24cedb`. One append-only correction occupies `[108143,110298)`, 18 lines / 2,155 bytes / `23119d7f288ebdfc0ed67ad5112d6a004ff2faf9fe3984a105daecc26cc2f8df` and is actual EOF.
+- Current Convergence Report is 760 lines / 110,298 bytes / `b89f22e145b074058ccfa5e45f8775bf2ea84c9bc73fa9512cdda333ee373fe3`. No prior report byte, reviewer grade, finding, loss guard, route decision, or owner disposition changed.
+- Correction records R08 zero-credit termination, the Call 47 transcript-summary correction, and R49 as the one-for-one evidence-neutral bound replacement. Filed evidence remains 16 rounds at 8/8 with A=98/B=60/C=22.
+- Allocation is 49 rows at 21 Sol / 28 Opus; 17 failures leave 32 active planned slots at 16/16. R49 is sole bound-unsent among 16 active-unfiled rows; 15 are unbound.
+- Five-pass-A curve remains R04=16 -> R05=32 -> R41=7 -> R48=1, all non-marginal. R08/R49 add no point and convergence remains `NOT ESTABLISHED`.
+- No diagnostic or write-method failure occurred. Next transition runs full provenance, transcript/process, allocation, protected-slice/control, prompt/scope, format/vocabulary, exact-diff, and no-delivery gates.
+
+**Integration-control state: `CONVERGENCE-UPDATED`.**
+
+## R08 failure closure / R49 replacement bind — SELF-CHECKED (`2026-07-15T09:48:32+02:00`)
+
+- Overarching G7 owner FSM remains `DRAFT`. Disk-first transition persisted separately: `CONVERGENCE-UPDATED -> SELF-CHECKED`; R49 remains the sole bound-unsent round and has received no task.
+- Pre-transition G7 checkpoint is exactly 2,953 lines / 661,524 bytes / SHA-256 `4ebf22c4e947399a356fa54b34386aa7c0fce8befacd49d59dbbc60d18421675`, with the full `CONVERGENCE-UPDATED` section at actual EOF. The pushed 647,947-byte G7 preimage remains an exact prefix at `d6af9011ada0284cdbec2781615fcadbc4a65421abb6b6bef523f9e4f43a0a2c`.
+- Provenance and scope pass: HEAD and `origin/main` remain `c43c03b60d8ab5508bfb4b661d97fa07beb34ad0`; unstaged paths are exactly the three authorized files; staged diff is empty; `git diff --check` exits zero. Numstat is Convergence +18/-0, Round +47/-1, and G7 +74/-0. No artifact, canon, G3/root/other-owner checkpoint, index, process/session, commit, push, dispatch, contact, or external state changed.
+- Bound plan remains 3,566 lines / 495,395 bytes / `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0` at G3 `SUBMIT-FOR-REVIEW`.
+- Round Log is 4,764 lines / 901,887 bytes / `c6a1d745fba0ca59d5e5939ea87a6bbb90e1c51a4f48cc34bf3624bbb07aacc6`. Line-native diff has exactly three hunks: unique R08 row terminalization, one R49 allocation insertion, and one true-EOF insertion containing R08 closure plus R49 control. No reviewer packet hunk exists.
+- Quarantined R08 transcript gate passes mechanically: 228 lines / 1,681,005 bytes / `41922b09f7f0079b5ae479bff8bf4401755efbe3635247b63c71c38561d80c2c`; 47 calls / 47 outputs; one compaction; Calls 1/2 are AGENTS/protocol; zero `apply_patch`; Call 42 uses whole-Rev-7 `rg`; Call 47 names entire Charter, Campaign Reasoning, and Work Order files. R08 shell/child are absent and zombie count is zero. Reviewer prose remains quarantined.
+- The dispatched task plus terminal newline reproduces 6,156 bytes / `fcc436dcdef37ba54ff8e1b4d1bf1399e2757a9b0579d200c8d43f47f13c261b`. The root-summary correction for Call 47 is retained in Round, Convergence, and G7; it changes no classification or evidence total.
+- R08 control remains byte-identical at heading range `[888423,894408)`, 5,985 bytes / `5e0f879ed41b45f0be1d2ca87e2c85d23a77bc9fea97675c7f7175b5b34f5d02`. Its owner closure is `[894408,896331)`, 1,923 bytes / `1c24d16176d3c439f641093d89e08ee6b93597493840acaef5bf71437e4c1c0e`.
+- R49 control is actual Round EOF at separator-inclusive `[896331,901887)`, 5,556 bytes / `90cbf147f770a498415198274bc758cb63bdd78ccc18022e5ce7f070401babc7`; heading-to-EOF is 5,555 bytes / `b4d632ec8eabd90d59f0989834f770d3863269a9e001567dc9fad398898b74b1`. Final literal is unique and followed by newline.
+- R49 schema/control gate passes: exactly one allocation row and one assignment/control; zero R49 packet or finding headings. The row preserves submitted artifact, sole lens, Sol ultra/live-fast/priority family, original pass 5/5, G3 route, em-dash grades, and `BOUND-UNSENT`.
+- Exact repeated prompt occurs once in the R49 control at 375 bytes / `6b934de06db65a1901e80238293231af8f171ca2d8267d2c344d5f84f469853e`. Authority-search and post-compaction restrictions explicitly prevent the R08 overreach while retaining transparent bounded retries and artifact-only searches; one-artifact/one-lens judgment is otherwise unrestricted.
+- Protected reviewer slices were semantically relocated and all reproduce: R03 `[290017,307911)` / `d42c1989b354ca100dbdbd876b83cde0f7f0f13f12c35356209d5004d166af7a`; R13 `[315206,324795)` / `18eb5b573f833f92cdc7aaafab37bbc2688a9c9f83aa33c80da91b0a3ccc4f5c`; R04 `[332546,358640)` / `df313c958971724d0c59eae7302cc4d89475cd0f66d1e5f22e044e92dd435145`; R14 `[368335,424439)` / `4567275fbaba4e3e04d433ec4757897ed6ae4aee183ada2c552a28785794a122`; R33 `[444352,455257)` / `f932428fcf0f4b114e3574ed9119b29f4491f82e23d76b31416d023cdd5d858a`; R05 `[464543,558335)` / `602f25a0f8750f93a8dfcc23c7f32a960c4e50bcaad6d19f0b4cbabf3f5fbbe9`; R15 `[568856,597916)` / `610bc2ec58c899cad9b14da7097ebacca457c0987f237edfd5d45737f2d84595`; R38 `[646673,658823)` / `fe3e5aacfec181a5f631997631eb3ae8e1e11e5f18293e3e68286c2c544edab4`; R41 `[732412,745892)` / `87b9329963836d19059f28e7b4597cf399ae70d6dd442fdbee99b4c74812e03d`; R48 `[867720,883258)` / `6102ff0e3c64414444657ad8d6e69bec2bde6a97ece2cb62e941bbe28e7bea9a`.
+- Normalized allocation parser passes: 49 unique rows at 21 Sol / 28 Opus; failed IDs are R06, R07, R08, R23, R24, R34, R35, R36, R37, R39, R40, R42, R43, R44, R45, R46, and R47. Excluding them leaves 32 active slots at 16/16. Filed evidence is 16 at 8/8 with A=98/B=60/C=22; 16 active-unfiled slots comprise R49 bound-unsent plus 15 unbound. All 180 finding IDs are unique.
+- Convergence Report is 760 lines / 110,298 bytes / `b89f22e145b074058ccfa5e45f8775bf2ea84c9bc73fa9512cdda333ee373fe3`; pushed 108,143-byte preimage reproduces `2ade7d6b42704d83002916b517febed04f7dc8fc677c67c3c72e7358fc24cedb`, and append `[108143,110298)` is 2,155 bytes / `23119d7f288ebdfc0ed67ad5112d6a004ff2faf9fe3984a105daecc26cc2f8df`. Curve remains R04=16 -> R05=32 -> R41=7 -> R48=1, all non-marginal; `NOT ESTABLISHED` remains explicit.
+- Final live R49 gate passes: exact session/target/pane/PIDs, `pane_dead=0`, shell/child cwd, child model/effort args, `gpt-5.6-sol ultra fast`, priority service, welcome screen, and default placeholder remain unchanged. No task, authority, artifact, context, finding, or anchor appears; G7 made no process action.
+- Format/vocabulary gates pass: all three owned files decode as UTF-8, end with newline, and have zero tabs, trailing-whitespace lines, or conflict markers; added-line Rule-13 scan returns zero guarded-token hits.
+- Every diagnostic returned usable output and no corrective rerun was needed. G7 makes no inference about hook transport presence or absence. The independently found Call 47 scope/truncation discrepancy is a control-evidence correction, not a failed diagnostic, and has zero campaign-evidence credit.
+- All bounded gates pass. Next transition appends terminal `BOUND-UNSENT` at actual G7 EOF; root alone may commit/push, revalidate identities and untouched R49, then send only the sealed control.
+
+**Integration-control state: `SELF-CHECKED`.**
+
+## R08 failure closure / R49 replacement bind — terminal BOUND-UNSENT (`2026-07-15T09:49:12+02:00`)
+
+- Overarching G7 owner FSM remains `DRAFT`. Terminal transition is `SELF-CHECKED -> BOUND-UNSENT`; full bounded chain is `BOUND-UNSENT -> INGEST-VERIFIED -> R08-CLOSED -> R49-ALLOCATED -> R49-BOUND-UNSENT -> CONVERGENCE-UPDATED -> SELF-CHECKED -> BOUND-UNSENT`.
+- Pre-transition G7 checkpoint was exactly 2,976 lines / 667,828 bytes / SHA-256 `85f4f572f0361b4bbd61c09aeb5338bb9f44c21e713effd1db2ffd482280467b`; its full `SELF-CHECKED` section immediately above was actual EOF.
+- Final Round Log is 4,764 lines / 901,887 bytes / `c6a1d745fba0ca59d5e5939ea87a6bbb90e1c51a4f48cc34bf3624bbb07aacc6`. R08 is immutable zero-credit; R49 control remains actual EOF at `[896331,901887)`, 5,556 bytes / `90cbf147f770a498415198274bc758cb63bdd78ccc18022e5ce7f070401babc7`.
+- Final Convergence Report is 760 lines / 110,298 bytes / `b89f22e145b074058ccfa5e45f8775bf2ea84c9bc73fa9512cdda333ee373fe3`; R08/R49 add no evidence or curve point and convergence remains `NOT ESTABLISHED`.
+- Final accounting is 49 immutable rows at 21 Sol / 28 Opus; 17 failures; 32 active slots at 16/16; 16 filed at 8/8 with A=98/B=60/C=22; 16 active-unfiled with R49 sole bound-unsent and 15 unbound.
+- The Call 47 whole-authority-file search/truncation correction and every zero-credit boundary are preserved in `SELF-CHECKED`. No R08 packet or R49 packet exists; all protected reviewer slices remain sealed.
+- R49 remains untouched at exact session/pane/PIDs/cwd and `gpt-5.6-sol` ultra/live-fast/priority identity, with no task, authority, artifact, context, finding, or anchor delivered. G7 did not dispatch or contact it.
+- Root handoff only: independently rehash, commit and push the three G7 documents, revalidate the submitted plan and untouched R49 process, then send only the sealed R49 control with pushed identity lines. G7 does not commit, push, dispatch, contact another owner/reviewer, bind another round, alter a process, or take external action and stops idle now.
+
+**Integration-control state: `BOUND-UNSENT`.**
