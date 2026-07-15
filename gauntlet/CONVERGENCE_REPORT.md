@@ -1170,3 +1170,11 @@ Independent replay of the stable 188-line / 525,163-byte transcript rooted `2ae5
 Physical packet count is zero and filed findings are A=0, B=0, C=0. R61 receives no review, finding, grade, coverage, verdict, route, owner-disposition, curve, cross-model, marginal, or convergence credit. Retirement and current process-absence assertions remain `ROOT-REPRODUCTION-REQUIRED`.
 
 Allocation is 61 rows at 25 Sol / 36 Opus; 31 failed at 10/21; 18 filed at 9/9; and 12 active-unfiled at 6/6. No row is bound-unsent or allocated-unsent, and no R62 is allocated or constructed. Established sequences are unchanged; Convergence remains **NOT ESTABLISHED**.
+
+## R11 zero-credit assignment state — `2026-07-16`
+
+Baseline R11 is assigned to submitted C1 delta plan root `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59` under sole lens `security/DoS`. Its immutable row model family remains `Opus`; the assignment control requires exact `claude-opus-4-8` with effort `xhigh`. Every reservation/process/TUI/placeholder/freshness fact is `ROOT-REPRODUCTION-REQUIRED`; G7 performed no live probe.
+
+R11 is `ASSIGNED`, root delivery pending, with no packet or reviewer filing. Allocation remains 61 rows at 25 Sol / 36 Opus; 31 failed at 10/21; 18 filed at 9/9; and 12 active-unfiled at 6/6. R11 is the sole assigned row; no row is bound-unsent or allocated-unsent.
+
+This assignment grants no review, finding, grade, coverage, marginal, curve, cross-model, route, owner-disposition, or convergence credit. No activation was instantiated or delivered. Established sequences are unchanged; Convergence remains **NOT ESTABLISHED**.

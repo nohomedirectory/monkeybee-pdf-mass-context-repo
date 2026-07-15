@@ -92,7 +92,7 @@ Hash, status, counts, and disposition are slots. They are filled only from filed
 | R08 | C1 delta plan | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | 5-pass A (5/5) | `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0` | NOT-RUN · AUTHORITY-SCOPE/FRESH-CONTEXT-CONTROL-VIOLATION · TERMINATED | — | — | — | — | Call 42 searched excluded Rev 7 bytes outside the sealed authority ranges; Call 47 also searched whole authority files and returned truncated output. Root terminated before any write. No packet, finding, grade, coverage, verdict, route, or conclusion; partial reasoning quarantined; immutable ID not reused. |
 | R09 | C1 delta plan | obscure-section self-containment | `claude-opus-4-8`, effort `xhigh` | — | `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59` | NOT-RUN · METHOD-CONTROL-SEQUENCING-VIOLATION · TERMINATED | — | — | — | — | Immutable zero-credit closure. The exact dispatched process made forbidden compound Bash its first and only tool instead of reading full `AGENTS.md`, then root interrupted and terminated it. Zero write, packet, finding, grade, coverage, marginal result, verdict, route, curve point, owner disposition, or convergence credit; session/PIDs absent; immutable ID not reused. |
 | R10 | C1 delta plan | dependency soundness | `gpt-5.6-sol`, effort `ultra`, supplied live `fast`, supplied priority service | — | `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59` | NOT-RUN · INCOMPLETE-PRIMARY-UNION · TERMINATED | — | — | — | — | Immutable zero-credit transcript-qualified closure. The stable transcript has 39 paired successful exec calls, zero apply_patch, zero compaction, exactly 25 successful primary Reads ending after plan lines 1-700, no twenty-sixth primary Read, no lens analysis/replay/filing, and one exact `TERMINATED` assistant message. No cause is inferred. No packet, finding, grade, coverage, marginal result, verdict, route, disposition, curve, cross-model, or convergence credit; ID not reused; R59 is the one-for-one replacement. |
-| R11 | C1 delta plan | security/DoS | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
+| R11 | C1 delta plan | security/DoS | Opus | — | `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59` | ASSIGNED | — | — | — | — | Root delivery pending after commit/push and fresh reservation reattestation; zero packet, review, finding, grade, coverage, marginal, curve, or convergence credit. |
 | R12 | C1 delta plan | claim vocabulary and de-slopification | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R13 | Constitution + fix map | identity-law consistency | Sol (fast) | — | `9e81eaaa03c1368335b8aaff260af0ff918d7a6a76ca45bed85a00d4313743ec` | FILED · VALIDATED · TERMINATED | 3 | 2 | 0 | NO | ROUTED → G1 (independent premise-first triage; grades preserved and unpromoted). Freshness and start-time corrections recorded below. |
 | R14 | Constitution + fix map | oversimplification-and-feature-loss | claude-opus-4-8 (xhigh) | 5-pass B (1/5) | `dd86aaf319ecc87d0526d90b56b1993e8023925eeec4467ffd7807f89f92efb4` | FILED · VALIDATED · TERMINATED | 5 | 10 | 4 | NO | METHOD-NONCOMPLIANT / PROCESS-QUARANTINED; mechanically admissible for routing → G1 through root; all grades and loss guards unpromoted. R15 blocked pending a new G1 `SUBMIT-FOR-REVIEW` manifest. |
@@ -7854,5 +7854,60 @@ If any gate failed, do not patch. After a successful patch result, make no later
 - **Zero-credit disposition:** physical packet count is zero; filed findings are A=0, B=0, C=0. R61 receives no review, finding, grade, coverage, verdict, route, owner-disposition, curve, cross-model, marginal, or convergence credit. It is neither a clean review nor a marginal-only result, and its ID is not reused.
 - **Allocation after closure:** 61 unique rows at 25 Sol / 36 Opus; 31 failed at 10/21; 18 filed at 9/9; and 12 active-unfiled at 6/6. No row is `BOUND-UNSENT` or `ALLOCATED-UNSENT`. No R62 is allocated or constructed.
 - **Provenance and preservation:** the pre-closure Round matched pushed bind construction. Retirement, process absence, and host-state assertions remain `ROOT-REPRODUCTION-REQUIRED`; G7 did not inspect or contact a live process. Historical construction/bind prose, R10/R59/R60 failed history, R61 control bytes, helper bytes, grammar bytes, root-bind anchor, and final-anchor literal remain preserved. Convergence remains `NOT ESTABLISHED`.
+
+## R11 reviewer assignment/control — `2026-07-16`
+
+- generated-by: G7 gauntlet/convergence owner
+- date: 2026-07-16
+- inputs: pushed R11 baseline row, submitted C1 delta plan, reviewer protocol, root-supplied untouched reservation
+- status: DRAFT
+- evidence-status: provisional-pending-substrate
+
+### Assignment and zero-credit state
+
+R11 is `ASSIGNED` to the submitted C1 delta plan under exactly one lens, `security/DoS`, with exact reviewer class `claude-opus-4-8` and effort `xhigh`. Root delivery is pending. No campaign task, authority, artifact, control, anchor, or prompt has been delivered to the reservation, and no packet exists. Assignment supplies no finding, grade, coverage, marginal, curve, cross-model, route, owner-disposition, or convergence credit.
+
+### Root-supplied reservation premises
+
+Every fact in this subsection is `ROOT-REPRODUCTION-REQUIRED`; G7 did not inspect or contact the reservation. Reserved session is `monkeybee-pdf-mass-context-repo--r11`; pane `%93`, index 1; shell PID `3362053`; sole child PID `3362288`; `pane_dead=0`; exact lowercase cwd `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`. Exact process arguments are `/home/joseph/.local/bin/claude --dangerously-skip-permissions --model claude-opus-4-8 --effort xhigh`; live TUI is root-attested as `Opus 4.8` with `xhigh` effort; untouched placeholder is exact `Try "edit <filepath> to..."`; campaign delivery count is zero. The Codex fast/service-tier gate does not apply to this Claude process.
+
+### Bound artifact, sole lens, and route
+
+- artifact: only `plans/CYCLE_1_DELTA_PLAN.md`, exactly 3,655 newline-terminated lines / 531,012 bytes / SHA-256 `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`
+- lens: exactly `security/DoS`; adjacent observations are out of scope unless needed as direct evidence for that lens
+- model: exact `claude-opus-4-8`, effort `xhigh`; no substitute model, effort, pane, process, artifact, hash, or lens is admissible
+- route after a later transcript-qualified filing: root to G3 for independent premise-first disposition; reviewer allegations remain unpromoted
+
+Under this lens, inspect only whether the submitted plan states bounded, terminating, resource-accounted, adversary-aware behavior and evidence interfaces for its own declared inputs, state transitions, parsing/decoding/recovery paths, credentials, cancellation, refusal, and failure surfaces. Do not repair or rewrite the plan, infer missing normative semantics, or broaden into another lens.
+
+### Admission and detached activation gates
+
+Root must first commit and push this assignment, derive the pushed commit, Round root, exact R11 control coordinates/root, and unchanged final-anchor identity, then freshly reattest every reservation premise immediately before delivery. Any variance, non-default prompt state, prior campaign input, missing process, dead pane, extra child, model/effort mismatch, cwd mismatch, placeholder change, or identity mismatch fails closed with no delivery; R11 remains `ASSIGNED`.
+
+The later detached activation must bind the pushed commit, whole-Round SHA-256, exact R11 control SHA-256 and coordinates, exact artifact identity, exact process coordinates, and this unchanged final anchor. It must contain only those mechanical fields plus this sealed R11 control and anchor. G7 does not instantiate or send that activation.
+
+For the reviewer, Tool 1 of any kind must read all of `AGENTS.md`; Tool 2 of any kind must read all of `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md`. No tool, question, identity probe, skill read, or repository access may precede Tool 1 or occur between those reads. After them, independently verify own PID/cwd/model evidence, pushed HEAD, artifact identity, sole lens, and supplied Round/control/anchor identities before artifact analysis. An artifact-hash or model-identity mismatch discovered after delivery follows the reviewer protocol and may consume the sole structured Round write below as a fail-closed R11 status packet; it permits no lens analysis. Every other admission mismatch terminates without a write.
+
+### Declared local authority, read, and no-action boundary
+
+After the first two tools and identity admission, read these local sources in this order and only in bounded reads: `OVERNIGHT_GOAL.md` §§1, 3/G3, and 4; `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` §5/C1 (supporting lines 93-99); `CYCLE_0_WORK_ORDER.md` §7 (lines 116-119); controlling `MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md` §§6, 10, and 11 (lines 924-1003, 1651-2090, and 2091-2282); then the submitted artifact in full through EOF. These campaign and controlling Revision 7 sections may ground a graded security/DoS allegation when tied to exact plan evidence.
+
+The reviewer may optionally read only the corresponding generated `constitution/MONKEYBEE_CONSTITUTION_v8.md` §§6, 10, and 11 (lines 225-305, 839-1341, and 1342-1557), plus its status and extraction contract at lines 1-35. That proposed Constitution is corroborative generated evidence only: it cannot supersede controlling authority, ground an allegation by itself, fill a missing requirement, resolve a conflict, or widen a claim. Record each authority section and artifact interval actually read; structural or partial coverage is not semantic coverage.
+
+Do not read G3/G7 owner history, Convergence, another packet/control, another artifact, any other Constitution section, an external source, competitor material, or prohibited processor material. Remain in plan space: no source, scaffold, task inventory, measurement, comparison, artifact edit, external action, process contact, stage, commit, push, publication, purchase, or send.
+
+After any reviewer context compaction, reread all of `AGENTS.md` before any further repository action. A failed, clipped, widened, or mismatched source read receives zero evidence credit and fails closed unless the sealed control explicitly permits a bounded retry. Never convert structural, corroborative, or partial coverage into a broader semantic claim.
+
+### Sole packet write and exact termination
+
+If the artifact hash is stale or model identity mismatches, the reviewer may instead use exactly one structured `apply_patch` to insert one R11 packet before the unchanged final anchor. Its sole heading remains the exact R11 heading below; it records status `STALE-ASSIGNMENT` or `MODEL-MISMATCH`, A/B/C=0, marginal-only YES, the mismatch evidence, the no-action statement, and termination state `TERMINATED`; it contains no allegation subsection and earns zero review or convergence credit. That write exhausts the sole packet allowance. Every other failed admission gate permits no write.
+
+If every admission, authority, one-lens, evidence, and self-check gate passes, the reviewer may make exactly one structured `apply_patch` to `gauntlet/ROUND_LOG.md`: replace the exact physical final anchor with one R11 packet, one blank separator line, and the byte-identical anchor. The packet's sole heading is `## R11 — plans/CYCLE_1_DELTA_PLAN.md — security/DoS`; it follows the reviewer protocol schema, states A/B/C counts and `marginal-only`, gives every allegation one evidence/requirement/consequence/repair-boundary/loss-guard set, and ends with `- termination state: TERMINATED`.
+
+No other write, retry, path, packet, row edit, scratch artifact, or post-patch tool is allowed. After a successful patch result, the entire assistant response is exact standalone `TERMINATED`. A failed patch is not retried and receives the same exact terminal response. Root later stabilizes and independently qualifies the transcript before any credit.
+
+### Root-only delivery and retirement instructions
+
+After a separate root validation/commit/push and immediate fresh reattestation, root may instantiate the detached activation once and deliver it exactly once only to the attested R11 reservation. Root must record delivery identity outside G7's scope. After terminal response, root stabilizes the transcript, retires the reviewer and idle shell, independently proves retirement, and sends the stable transcript to G7 for qualification. Until a chain-qualified packet and retirement boundary are independently reproduced, R11 stays zero-credit and Convergence remains `NOT ESTABLISHED`.
 
 **R61 FINAL LITERAL ANCHOR — KEEP AS PHYSICAL EOF; APPEND ONLY THE ASSIGNED R61 PACKET IMMEDIATELY BEFORE THIS LINE.**
