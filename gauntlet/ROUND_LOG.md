@@ -284,7 +284,7 @@ R50 is the fresh one-for-one replacement for immutable failed R49, which replace
 
 | Round | Artifact | Declared lens (exactly one) | Model | Precondition to admit | Artifact hash | Status | A | B | C | Marginal-only | Owner disposition |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| R50 | C1 delta plan (R49/R08 replacement) | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | R49 closed `NOT-RUN · CONTEXT-CAPACITY/RECOVERY-REPLAY-LOOP · TERMINATED`; original pass 5/5 payload unchanged; exact untouched session `monkeybee-pdf-mass-context-repo--r50`, pane `%142`, shell 2008272, child 2008528 bound | `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0` | BOUND-UNSENT | — | — | — | — | Zero findings, grades, coverage, verdict, route, curve point, disposition, cross-model credit, or conclusion; control sealed at true EOF and no task delivered. |
+| R50 | C1 delta plan (R49/R08 replacement) | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | R49 closed `NOT-RUN · CONTEXT-CAPACITY/RECOVERY-REPLAY-LOOP · TERMINATED`; original pass 5/5 payload unchanged; exact filed process session `monkeybee-pdf-mass-context-repo--r50`, pane `%142`, shell 2008272, child 2008528 now absent | `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0` | FILED · CHAIN-QUALIFIED · TERMINATED | 20 | 4 | 0 | NO | G7 qualifies schema/process/coverage only. All 24 immutable grades are routed to root for independent G3 premise-first disposition; no substantive truth, grade promotion, owner disposition, or convergence conclusion is admitted. |
 
 ### R31 — notes on admission and reading
 
@@ -4808,3 +4808,246 @@ This is not a quota. Local evidence controls finding count and grade.
 **Root handoff.** Root alone may commit and push the three G7 documents, reproduce their identities and the untouched R50 process, then send only the two pushed identity lines, one blank line, and this heading through EOF. G7 does not dispatch or contact R50.
 
 **R50 FINAL LITERAL ANCHOR — APPEND PACKET HERE AFTER ROOT ACTIVATION.**
+
+## R50 — plans/CYCLE_1_DELTA_PLAN.md — oversimplification-and-feature-loss
+
+- reviewer process: session monkeybee-pdf-mass-context-repo--r50; target 1.1; pane %142; shell 2008272; child 2008528; cwd /home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo.
+- model identity: gpt-5.6-sol at effort ultra; process arguments and live TUI both observed; live mode fast; priority service tier observed.
+- started / filed: 2026-07-15T10:17:21+02:00 / 2026-07-15T10:49:16+02:00.
+- pushed identities: dispatch commit 1b3e7aaffbc32f10dcb0756d7f405703d47f3119; pre-append Round Log SHA-256 c49084362eedfcdbe2602acc515289b75a2da92d167a995a295ab11eb0010632.
+- artifact hash: af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0; 3,566 lines; 495,395 bytes.
+- authority chain read: all of AGENTS.md; all of ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md; OVERNIGHT_GOAL.md lines 23–36 and 58–87; MONKEYBEE_CAMPAIGN_CHARTER_v1.md lines 28–41, 54–150, and 174–206; CYCLE_0_WORK_ORDER.md lines 10–20, 67–79, and 112–126; CAMPAIGN_CHARTER_REASONING.md lines 34–79; MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md lines 353–1003, 1651–3213, 5164–6202, and 6674–8005.
+- authority/artifact coverage: every declared authority selection and plans/CYCLE_1_DELTA_PLAN.md lines 1–3566 observed; unread ranges: none; bounded post-ingest rechecks were limited to cited evidence anchors and artifact-wide absence searches.
+- retries: MONKEYBEE_CAMPAIGN_CHARTER_v1.md lines 100–121 were retried after one combined ingest output truncated; one dependency-graph diagnostic was retried with bounded output after its first output truncated and then reported 138 nodes, 655 edges, zero unknown references, and zero cyclic SCCs; the first mechanical prewrite check failed at Python parse time before any read or write because of a non-ASCII bytes literal and the corrected check reproduced every bound identity.
+- compaction uncertainty: one context compaction occurred after all declared ranges were observed; the coverage manifest survived in the compaction summary, AGENTS.md was reread immediately and again on root's exact reminder, no observed authority/artifact range was replayed merely because of compaction, and no coverage uncertainty remains.
+- freshness boundary: no prior finding, packet, owner disposition, convergence text, checkpoint body, decision, route result, recovery narrative, or earlier outcome was supplied or read; prior Round Log semantics were not read, and only its mechanical hash/final-anchor properties were checked.
+- repeated prompt: the assigned oversimplification-and-feature-loss paragraph was applied byte-for-byte after the authority chain as repeated five-pass-A position 5/5.
+- assignment FSM: INGEST -> REVIEW -> SELF-CHECK -> FILE -> TERMINATE.
+- reviewer FSM: SPAWNED -> INGEST-DECLARED-CHAIN -> APPLY-ONE-LENS -> FILE-GRADED-FINDINGS -> TERMINATED.
+- counts: A=20; B=4; C=0.
+- marginal-only: NO.
+- no-action statement: no other artifact, owner context, external source, competitor material, or prohibited processor source/documentation was read; nothing was contacted, fetched, measured, compared, generated as source/scaffolding/Beads, committed, pushed, published, purchased, or sent; the reviewed artifact and canon were not edited.
+
+### R50-A01 — The named evidence-facet registry is truncated
+
+- evidence: In plans/CYCLE_1_DELTA_PLAN.md §8.1, C1.CC.FDN.010@1 accepts generic “evidence facets,” but an artifact-wide exact-token search found only ByteExact and ObservedBytes; DeterministicallyDerived, BoundedApproximation, UnboundedApproximation, NormativeBasis, ProfileDefined, CompatibilityObserved, Recovered, Heuristic, ExternalCheck, CallerAttestation, EmpiricalMeasurement, MechanizedProof, and CryptographicCheck are absent.
+- requirement: Rev 7 §10.2 defines all fifteen facet meanings, and the Charter C1 scope requires the identity/evidence/report/checker stack rather than a two-facet projection.
+- consequence: An implementation cannot mint, validate, propagate, serialize, or refuse the omitted evidence classes consistently, so later layers would either invent meanings locally or require a forbidden post-C1 kernel change.
+- repair boundary: Add the omitted project-law facet identities, payload slots, issuer-capability relations, and lifecycle hooks to the C1 kernel registry without supplying any SpecCard semantic body.
+- loss guard: Preserve the separation between outcome state and evidence facets, OracleLineage correlation, scoped issuance, and the PENDING-LICENSED-SOURCE boundary.
+
+### R50-A02 — EvidenceSet composition lost its keyed invariants
+
+- evidence: C1.CC.FDN.010@1 says unsupported compositions fail closed but does not define an EvidenceSet; artifact-wide searches for EvidenceSet, “canonically ordered keyed,” “duplicate-identical,” and “named subclaim” returned no match.
+- requirement: Rev 7 §10.2 requires facets to be keyed by subclaim, metric, region, profile, source snapshot, and protocol; identical observations deduplicate, distinct corroboration remains separate, and incompatible payloads refuse or become explicit ambiguity.
+- consequence: Contradictory bounds or normative payloads can be attached to one singular claim, while legitimate corroboration can be accidentally collapsed or counted twice.
+- repair boundary: Add one canonical EvidenceSet schema and validated constructor contract, including key grammar, ordering, deduplication, incompatibility, and ambiguity outcomes.
+- loss guard: Retain distinct lineage-bearing corroboration and multiplicity where observations are not identical; do not turn the structure into a scalar confidence score.
+
+### R50-A03 — Registered claim algebras have no registry interface
+
+- evidence: C1.CC.FDN.010@1 says weaknesses propagate through “registered claim algebras,” but the phrase appears nowhere else except the formal-vocabulary introduction; IMM.002 and IMM.003 expose no algebra record for required inputs, scope propagation, approximation metrics, or refusal conditions.
+- requirement: Rev 7 §10.3 requires each operation to register exactly those composition rules and requires unknown compositions to fail closed.
+- consequence: Domain contracts can encode mutually inconsistent propagation behavior while the generated claim registry still appears structurally valid.
+- repair boundary: Add a typed claim-algebra subrecord to the consequence-contract/claim registries and make linkage, generation, and drift checks validate it.
+- loss guard: Preserve the artifact's explicit recovery, partial-security, alternative-retention, and no-numeric-confidence rules rather than replacing them with one generic union.
+
+### R50-A04 — The consequence-contract schema drops mandatory axes
+
+- evidence: Plans §5 and C1.CC.IMM.002@1 enumerate their structured fields, but artifact-wide searches find no SemanticScopeId, idempotency, retry semantics, external/runtime substrate, performance/benchmark profile, or release-claim row; transactional/publication and state/signature consequences are also not mandatory or explicitly not-applicable fields.
+- requirement: Rev 7 §10.10 requires every atomic consequence contract to bind those axes, and Work Order §34.9 makes consequence contracts the source for later acceptance criteria and gate rows.
+- consequence: Bead conversion and generated claims must recreate omitted judgments from prose, reintroducing the feature-loss and drift vector the contract spine exists to prevent.
+- repair boundary: Extend the structured contract record and its truth checks with each omitted axis and an explicit not-applicable representation where an axis genuinely does not apply.
+- loss guard: Keep one atomic contract identity per capability, preserve delta-only conversion, and do not introduce benchmark execution or a work ledger into plan space.
+
+### R50-A05 — Artifact availability is only a five-label workflow aside
+
+- evidence: Embedded, ExternallyRetrievable, Recomputable, IdentityOnly, and Unavailable each occur only in §9.7; FDN.010, IMM.013, and IMM.016 use generic availability fields but define no class meanings, materialization preconditions, transition law, or retention/recomputation receipt.
+- requirement: Rev 7 §10.9 defines the five availability contracts and requires a checker to narrow or refuse when decision-critical material cannot be obtained.
+- consequence: Producer and checker can interpret the same availability label differently, including treating an identity digest as retrievable evidence or silently evicting material needed for explanation.
+- repair boundary: Add one kernel availability-class contract consumed by provenance, cache retention, package assembly, checker materialization, and report schemas.
+- loss guard: Preserve sensitivity controls, explicit narrow retrieval authority, identity/content separation, and refusal when protected or missing material cannot be reconstructed.
+
+### R50-A06 — The initial limits registry omits later-required dimensions
+
+- evidence: C1.CC.FDN.005@1 lists source/object/decode/recovery/canonicalization/diagnostic/CPU/wall/output limits, while artifact-wide searches find none of Rev 7's image-pixel, tile-cache, page-operator, graphics-state, form/pattern, Type-3, function-instruction, form-script, Static-XFA, external-tool, font-instruction, path, clip, or transparency dimensions.
+- requirement: Rev 7 §11.2 says the default limits object includes at least those dimensions, while plans §12.3 declares initial-kernel-adoption and forbids later work/budget-law changes.
+- consequence: C2–C6 would have to add kernel dimensions after freeze or account execution work outside the shared non-resettable profile and receipt grammar.
+- repair boundary: Register the omitted dimensions and receipt/profile slots now as inactive C1 capabilities, without implementing any deferred renderer, font, form, or external-tool behavior.
+- loss guard: Preserve C1's explicit exclusions and ensure dormant dimensions grant no execution or host authority.
+
+### R50-A07 — Shared physical work and logical attribution are conflated
+
+- evidence: FDN.005 names cache-hit charging as a falsifier and recovery contracts track shared costs, but artifact-wide searches for physical decode, logical consumers, worst-case private reservation, and explicit retention charge return no C1-wide accounting law.
+- requirement: Rev 7 §11.2.2 charges a shared artifact's physical production once, attributes logical consumers without multiplying that counter, reserves concurrent private work pessimistically, and assigns one retention owner.
+- consequence: Implementations can double-charge shared decode work or make cache fan-out effectively free, invalidating resource receipts and denial-of-service bounds.
+- repair boundary: Add producer ownership, consumer attribution, concurrent reservation, cache-hit work, and retention-charge rules to FDN.005/FDN.013 receipts.
+- loss guard: Preserve non-resettable parent accounting, tenant/credential isolation, and the recovery-specific direct/shared/unavailable cost vector.
+
+### R50-A08 — Allocation-failure tests have no fallible-allocation contract
+
+- evidence: The artifact mentions allocation failure only in SYN/FUZ falsifiers; no fallible-allocation or budget-aware-helper interface exists, and FDN.005 explicitly notes that pre-admission does not make every dependency allocation fallible.
+- requirement: Rev 7 §11.4 requires large allocations to pass through fallible reservation helpers and forbids process abort as the ordinary allocation-failure response.
+- consequence: Accounting can reserve bytes and then invoke an infallible allocation path; an abort can escape the reachable-panic gate because it is not a caught panic or typed limit outcome.
+- repair boundary: Define the reservation-to-allocation helper contract, typed allocation failure, refund/cleanup behavior, and dependency no-claim path, then bind allocation-fault targets to it.
+- loss guard: Retain the honest boundary that compiler, allocator, OS, and dependencies cannot be promised universally fallible.
+
+### R50-A09 — Publication classes have no host-sink capability contract
+
+- evidence: RPT.005, IMM.016, and CLI.006 accept Buffered, AtomicVisibility, or DurableCommit labels and report observed state, but no TransactionalOutput or destination-capability contract produces those guarantees; FUZ.010 names generic commit/broken-pipe faults but omits short writes, quota/disk-full, flush, directory durability, symlink/path replacement, cross-filesystem rename, no-clobber races, and permission changes.
+- requirement: Rev 7 §11.5 and G6 require the exact host capability, commit protocol, weaker-receipt/refusal law, and fault matrix before atomicity or durability can be claimed.
+- consequence: Saved reports and evidence packages can advertise atomic visibility or durable commit without evidence that the host path and crash envelope supported it.
+- repair boundary: Add one C1 host-output publication capability/receipt contract and make RPT.005, IMM.016, CLI.006, FDN.006, and FUZ.010 consume its exact class and fault outcomes.
+- loss guard: Keep PDF writing excluded, preserve weaker non-filesystem sinks, and report post-visibility failure as committed or indeterminate rather than fictional rollback.
+
+### R50-A10 — The frozen embedded-program meta-contract vanished
+
+- evidence: Artifact-wide searches for embedded-program sandbox, meta-contract, executable-feature registry, operand stack, event fan-out, and effect journal return no match; §0.2 merely excludes execution and no C1 contract preserves the future kernel seam.
+- requirement: Rev 7 §11.8 defines one metered least-authority meta-contract and shared executable-feature registry, while plans §12.3 says later cycles cannot change the initially adopted kernel.
+- consequence: Page programs, font programs, functions, and later form tenants must either bypass the common law or force a kernel touch after C1.
+- repair boundary: Add dormant L0 contract/registry interfaces for metering, narrowed capabilities, deterministic host facts, termination, effect journaling, and sanitizer visibility without implementing any tenant.
+- loss guard: Preserve the C1 prohibition on execution, ambient host action, dynamic code, and memory-derived semantic bodies.
+
+### R50-A11 — Determinism classes are undefined and serialization is mislabeled D0
+
+- evidence: FDN.012 references a class and replay relation, but every exact Rev 7 class name from D0 Structural through D5 Fast is absent; RPT.005 nevertheless calls canonical JSON “D0,” collapsing serialized bytes into the structural class.
+- requirement: Rev 7 §11.9 distinguishes D0 structural identity from D1 serialized bytes, D1R variable-input serialization, D2 same-target pixels, D3 cross-target bounds, D4 distributions, and D5 permitted variation.
+- consequence: Reports, packages, and replay bundles cannot state or check the promised equivalence relation, and deterministic serialization can be over- or under-claimed.
+- repair boundary: Add the full qualified determinism-class registry and reclassify canonical serialized outputs separately from D0 semantic bodies.
+- loss guard: Disambiguate determinism classes from campaign decisions D1/D2 and preserve the rule that replay never upgrades correctness.
+
+### R50-A12 — The candidate manifest claims assurance results it cannot consume
+
+- evidence: C1.CC.RPT.006@1 says each candidate row reports Gauntlet tiers actually passed and corpus coverage, yet its inputs contain no run/audit/checker receipts and its provenance expressly excludes downstream audit results; RPT.008 requires the candidate root to predate and remain unchanged by those results.
+- requirement: Plans §7 and C1.CC.RPT.008@1 separate the unaudited candidate declaration from the later admission envelope, and Rev 7 §10.10 requires release rows to carry their actual evidence.
+- consequence: RPT.006 must either fabricate passed-tier data, use stale prior evidence, or violate the immutable pre-audit-root boundary.
+- repair boundary: Restrict RPT.006 to declared/required/unavailable assurance rows and place observed pass/corpus dispositions only in RPT.008 or another explicitly downstream envelope.
+- loss guard: Preserve the immutable candidate root, row-level no-claims, and the rule that an audit result never becomes a member of its own input manifest.
+
+### R50-A13 — The G3-subset gate has no typed lane
+
+- evidence: “G3-subset” appears only in plans §§10.5, 11.4, and 11.6; the closed catalog and FUZ.002–FUZ.016 define no black-box protocol, rights/custody admission, exact external artifact/configuration, request/result record, or unavailable-lane receipt.
+- requirement: Charter C1 gates on G0–G3-subset evidence, Rev 7 G3 defines differential processor/validator evidence, and plans §5 requires a stable contract for every gate-bearing capability.
+- consequence: The campaign gate cannot mechanically distinguish a lawfully unavailable G3 lane from an unrun, stale, contaminated, or selectively reported observation.
+- repair boundary: Add a symbolic plan-space lane contract or an exact typed mapping through FUZ.016/FUZ.014/FUZ.015 that consumes precommitted protocol, rights, custody, lineage, and availability artifacts.
+- loss guard: Preserve the ordinary wedge's graceful product path and perform no processor contact, retrieval, comparison, or measurement before the committed protocol permits it.
+
+### R50-A14 — The held-out probe root is untyped and unmapped
+
+- evidence: IMM.019 consumes generic “final gate/probe/card roots” and §11.5 requires independent sealed-pool selection and a favorable-or-unfavorable result, but no ProbeProtocolId, HeldOutProbeId, ProbeResultId, or contract maps FUZ.013/FUZ.014 records into that gate root.
+- requirement: Work Order §34.9 makes one sealed held-out extension probe a blocking cycle-close artifact, and plans §5 requires gate-bearing capabilities to have stable contracts and falsifiers.
+- consequence: An opaque root can be sealed without proving pre-implementation pool membership, independent selection, access-budget use, exact candidate binding, result retention, or post-reveal demotion.
+- repair boundary: Define the probe selection/execution/result composition or explicitly map existing corpus/run receipts to one typed probe root with all required fields and checks.
+- loss guard: Preserve steward custody, hidden-byte inaccessibility, query-budget consumption, unfavorable outcomes, and replacement-set requirements.
+
+### R50-A15 — The cycle trial has no pre-unblinding evaluation commitment
+
+- evidence: Artifact-wide searches find no EvaluationProtocolId or EvaluationProtocolCommitment; IMM.018 opens a ledger and IMM.019 seals final events, while FUZ.016 is only a fuzz-baseline commitment and does not declare the foundry trial's claim, reference class, artifact boundary, metrics, missingness, stopping, or reveal law.
+- requirement: Rev 7 §§10.6 and 33.4 require an independently time-committed evaluation protocol before candidate generation/unblinding for a foundry trial or held-out evaluation.
+- consequence: Trial definitions and scoring choices can be reconstructed after outcomes are visible, so the sealed record cannot support the prospective foundry-distribution role assigned by the Work Order.
+- repair boundary: Add a human/steward-owned pre-run trial-protocol artifact contract and require IMM.017 events and IMM.019 seals to bind its immutable identity and amendment history.
+- loss guard: Preserve the distinction between the local prospective ledger and independent commitment custody; this plan must not perform the external commitment.
+
+### R50-A16 — Trial distribution fields have no computation interface
+
+- evidence: IMM.019 outputs an “attempt distribution” but defines no population, success predicate, ordered outcome metric, percentile/median rule, best-of-N selection rule, missingness, provider-route treatment, or stopping rule; §11.5 adds protocol-scoped median and best_outcomes only in prose, and best-of-N is absent artifact-wide.
+- requirement: Work Order §34.9 requires attempts, failures, retries, cost, interventions, median, and scoped best outcomes, while Rev 7 §33.8 also requires success rate, percentiles, restarts, time/cost, defects, representative failures, and no selective retention.
+- consequence: Two sealers can compute incompatible distributions from the same event interval, and a favorable branch can be selected without a machine-checkable denominator.
+- repair boundary: Add a versioned trial-aggregation subrecord with population/denominator, outcome taxonomy and ordering, missingness, percentile/median and best-of-N rules, route/stopping policy, and all-attempt linkage.
+- loss guard: Retain every failure, retry, discarded branch, intervention, missing datum, and provider route; formal best_outcomes must never hide the rest of the distribution.
+
+### R50-A17 — The reproducible-build row has no run schema
+
+- evidence: The exact phrase “reproducible-build” occurs only in the post-bootstrap failure row; FUZ.011 mentions generic reproducibility lanes, but FUZ.016/FUZ.014/FUZ.015 define no two-build inputs, build-environment separation, artifact comparator, nondeterminism classification, or row outcome.
+- requirement: Rev 7 G6.1 requires reproducible-build comparison, and plans §11.2 makes the row a named admission consequence.
+- consequence: The gate references a row that no contract can create, pass, fail, mark unavailable, or bind to the candidate.
+- repair boundary: Add a dedicated assurance run class or an exact FUZ mapping for independently produced build artifacts, pinned inputs/environments, comparator relation, discrepancies, and aggregate disposition.
+- loss guard: Preserve exact D7/toolchain/lock/features/target identities and avoid any competitor or field measurement.
+
+### R50-A18 — The golden policy was reduced to one warning sentence
+
+- evidence: Plans §10.4 says changing a golden is insufficient for bug closure, but artifact-wide searches find no upstream coupling inventory, deliberate re-freeze, or bulk-regeneration prohibition in IMM.010, FUZ.012, or a gate.
+- requirement: Rev 7 §27.3 requires a semantic reason, upstream coupling inventory, independent oracle, old-versus-new correctness review, deliberate re-freeze, and forbids ordinary bulk regeneration.
+- consequence: Schema/report/fixture goldens can be regenerated after behavior drift while the generated-echo and bug-closure checks still pass.
+- repair boundary: Bind the full golden-change record and re-freeze authorization to IMM.010/FUZ.012 and the drift gate.
+- loss guard: Preserve legitimate deterministic regeneration of derived echoes and distinguish generated artifacts from adjudicated behavioral goldens.
+
+### R50-A19 — The customer-security gate consumes an undefined status token
+
+- evidence: VulnerabilityResponsePolicyStatusId occurs exactly once, in product-gate row 15; no contract, schema, issuer, lifecycle, evidence root, dependency edge, or truth check defines how the human-owned status is created or adopted.
+- requirement: Charter §3 item 7 requires the vulnerability-disclosure/security-response policy draft before customers, and plans §5 requires a typed evidence interface for a gate-bearing assertion.
+- consequence: Customer availability depends on a string-like token that cannot be authenticated, versioned, lapsed, or checked against the exact candidate and claim-withdrawal process.
+- repair boundary: Define only the human-owned status artifact's identity, authorized issuer/reviewer, adoption state, version/lifecycle, evidence linkage, and gate consumption.
+- loss guard: Do not draft policy content, contact anyone, publish a channel, or take any external action in this plan-space repair.
+
+### R50-A20 — Capability discovery omits mandatory absent-category rows
+
+- evidence: RPT.006 outputs source/dialect/filter/decryption/report/CLI/determinism/assurance/corpus fields but no structured font types, color/ICC coverage, validation profiles, or host adapters; those phrases are absent artifact-wide and §12 records several exclusions only as prose/no-claims.
+- requirement: Rev 7 §25.8 requires those exact capability-manifest categories so callers can discover absence before processing, and Charter C1 requires an invocable CLI discovery surface.
+- consequence: A C1 caller cannot reliably preflight unavailable later-layer classes or distinguish absent, disabled, decision-blocked, and unsupported host dependencies.
+- repair boundary: Add the missing structured categories with explicit unavailable/absent/blocked lifecycle states to RPT.006 and CLI.008.
+- loss guard: Preserve every C1 exclusion and never represent an empty row as implemented support or normative coverage.
+
+### R50-B01 — Checker degradation and the product gate may be mutually exclusive
+
+- evidence: Plans §§1 and 11.1 say independence failure must not strand ordinary R0 value, and §11.6 says checker unavailability narrows or withholds the package/checker surface; however RPT.008 requires IMM.020, product-gate rows 10 and 12 require its root, and a missing required root cannot pass.
+- requirement: Charter §3 item 4 and plans §11.1 require claim-tier degradation without silently blocking unrelated product value.
+- consequence: If “required” is global, the wedge cannot pass after checker isolation fails; if an unavailable status artifact counts as the root, the contract does not say so, leaving admission implementations divergent.
+- repair boundary: Clarify row-scoped optionality and the exact typed unavailable/withheld checker state that permits unrelated R0 rows while blocking checker-dependent language.
+- loss guard: Never issue independent-check support, package-check admission, or a stronger checker row without the actual D4/IMM.020 evidence.
+
+### R50-B02 — The object-explanation surface may have been deferred without authority
+
+- evidence: Plans §12.1 assigns the dedicated typed explanation graph and mb explain to C5, while Rev 7 §§10.7 and 25.3 define public object explanation and the CLI command and Charter C1 requires the report/checker and CLI surfaces; C1 retains only queryable provenance through inspect/revisions/objects.
+- requirement: A deferral that removes a C1-facing feature needs an authority-backed owner boundary and must preserve every dependency needed by the later surface.
+- consequence: If Charter “CLI surface” includes object explanation, C1 loses a required R0 query; even if it does not, no typed cause-graph contract ensures current provenance can be upgraded without rework.
+- repair boundary: Either add an object-only C1 explanation contract or record the controlling deferral and the exact provenance/cause-graph handoff required by the later owner.
+- loss guard: Do not admit pixel, glyph, text, signature-impact, transform, or divergence explanations before their owning layers exist.
+
+### R50-B03 — The crate-boundary budget appears non-blocking
+
+- evidence: IMM.007 makes the Rev 7 crate-boundary budget a precondition but lists a “boundary-budget warning” as its only explicit outcome; the product gate requires IMM.006–IMM.012 to pass without saying whether that warning fails admission.
+- requirement: Rev 7 §30.1.1 allows a module to become a crate only when at least two stated criteria hold, and plans §12.3 preserves that budget as frozen kernel law.
+- consequence: A proliferated workspace may satisfy dependency acyclicity while violating the context/collision/fan-out constraint the budget was meant to enforce.
+- repair boundary: Specify whether a criteria violation is fail, indeterminate, or an authenticated human exception, and require evidence for the qualifying criteria.
+- loss guard: Keep the crate atlas provisional and do not force one contract or capability into one crate.
+
+### R50-B04 — The conditional public-API semver lane is absent
+
+- evidence: “semver” is absent artifact-wide; FDN.015 covers durable schema migration and IMM.006 checks current API existence, but neither compares a public Rust/CLI API against a prior admitted surface even though several codes, schemas, and command meanings are declared stable within a major version.
+- requirement: Rev 7 G6.1 requires public-API semver checks once stability is claimed.
+- consequence: If C1's major-version stability language covers the public facade, a breaking surface change can pass the current-build truth checks because no prior admitted surface is in the comparison domain.
+- repair boundary: Add a stability-activation flag plus a semver comparison run class, or explicitly state that C1 makes no public API stability promise and name the later activation owner.
+- loss guard: Do not manufacture a stability promise merely to satisfy the lane; preserve append-only schema/contract history and explicit migrations.
+
+### Round verdict
+
+Owner revision is required before plan-to-execution conversion. The twenty A findings are confirmed local omissions or contradictions under this lens; the four B findings retain the stated unresolved premise. All grades remain unpromoted allegations pending G7 validation and independent G3 premise testing. This round is not marginal-only because frozen-kernel interfaces and blocking close/customer gates currently lack the evidence machinery needed to preserve their declared features.
+
+- termination state: TERMINATED
+
+## R50 G7 validation and root-routing closure — `2026-07-15T11:04:44+02:00`
+
+- generated-by: G7 gauntlet/convergence owner
+- date: 2026-07-15
+- inputs: immutable R50 packet, reviewer transcript, reviewer protocol, submitted C1 plan identity, pushed Round prefix
+- status: DRAFT
+- evidence-status: provisional-pending-substrate
+
+### Mechanical qualification
+
+G7 admits R50 only as `FILED · CHAIN-QUALIFIED · TERMINATED` for reproduced identity, schema, one-lens chain, declared authority/artifact coverage, sole-write boundary, and terminal behavior. The immutable packet remains 217 lines / 29,541 bytes / SHA-256 `9b4eae3e9dc80d3cdcbb04b612ad602a933667a8d6f704c6690c28aab3d29cbf`. Reviewer grades A=20/B=4/C=0 and marginal-only NO are preserved exactly. Mechanical qualification does not establish any allegation or promote the packet's “confirmed” wording into owner or campaign truth.
+
+### Process and coverage disclosure
+
+The declared authority and all 3,566 artifact lines were initially observed. Call 7's combined display omitted Charter lines 108–114; bounded Call 8 reread lines 100–121 and closes that interval. One later compaction was followed first by full AGENTS reads at Calls 54 and 58, with no automatic authority/artifact replay. Redundant plan-only rechecks at Calls 63/64 and broad plan-only search Call 72 returned truncated displays after initial ingest; they create no unread range and supply no independent substantive truth. Call 108 failed at parse time before I/O; corrected Call 109 passed. Call 110 alone appended the packet, followed by exact `TERMINATED`, no later tool, process exit, session/PID absence, and zero zombies.
+
+### Root route
+
+All 24 allegations—R50-A01 through R50-A20 and R50-B01 through R50-B04—route unchanged to root for independent G3 premise-first disposition. G7 does not accept, narrow, reject, regrade, repair, or contact G3 in this turn. Every grade and loss guard remains immutable and unpromoted. The R50 packet replaces zero-credit R08/R49 only in the planned pass-5/5 role; both failure records remain immutable and contribute no evidence.
+
+### Accounting and convergence boundary
+
+Valid filed evidence is 17 rounds at 9 Sol / 8 Opus with aggregate A=118/B=64/C=22. Immutable allocation remains 50 rows at 22 Sol / 28 Opus; 18 failed IDs leave 32 active planned slots at 16/16. Fifteen active slots remain unfiled and unbound; no round is bound-unsent.
+
+The five-pass-A A+B sequence now has five valid points: R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24. Every point is non-marginal, including R50. No consecutive marginal-only condition exists; convergence remains **NOT ESTABLISHED**. Owner revision and disposition are required before any next C1 review round.

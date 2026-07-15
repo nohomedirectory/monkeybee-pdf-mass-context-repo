@@ -776,3 +776,19 @@ R50 is the one-for-one Sol replacement for R49/R08 and the original pass-5/5 slo
 Filed evidence remains 16 rounds at 8 Sol / 8 Opus with A=98/B=60/C=22. Immutable allocation is 50 rows at 22 Sol / 28 Opus; 18 failed IDs leave 32 active planned slots at 16/16. Sixteen active-unfiled slots remain: R50 is sole bound-unsent and 15 are unbound. R49 and R50 add no evidence or curve point.
 
 The five-pass-A A+B curve remains R04=16 -> R05=32 -> R41=7 -> R48=1, all non-marginal. No consecutive marginal-only condition exists; convergence remains **NOT ESTABLISHED**. Root alone may commit/push the three G7 documents, revalidate identities and untouched R50, then send only the sealed control.
+
+## R50 chain-qualified filing and root-route correction — `2026-07-15T11:06:38+02:00`
+
+This append supersedes only the stale R50 bound-unsent wording immediately above. It preserves every prior report and reviewer byte and changes no reviewer grade, finding body, loss guard, artifact verdict, owner disposition, or substantive conclusion.
+
+### R50 filing and qualification
+
+R50 filed one immutable packet under the sole `oversimplification-and-feature-loss` lens for repeated five-pass-A position 5/5. Mechanical process, schema, and declared-chain coverage qualify the filing as `FILED · CHAIN-QUALIFIED · TERMINATED`; this qualification does not establish the truth of any allegation or promote any grade. The packet records A=20, B=4, C=0 and marginal-only NO.
+
+All 24 allegations, R50-A01 through R50-A20 and R50-B01 through R50-B04, remain unchanged and route to root for independent G3 premise-first disposition. G7 has not accepted, narrowed, rejected, regraded, repaired, or sent any allegation to G3. R08 and R49 remain immutable zero-credit failures; R50 fills only their original planned pass-5/5 role.
+
+### Evidence, allocation, and convergence
+
+Filed evidence is now 17 rounds at 9 Sol / 8 Opus with A=118/B=64/C=22. Immutable allocation remains 50 rows at 22 Sol / 28 Opus; 18 failed IDs leave 32 active planned slots at 16 Sol / 16 Opus. Fifteen active-unfiled slots remain, all unbound, and no round is bound-unsent.
+
+The five-pass-A A+B curve is R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24, with every point non-marginal. The fifth planned pass is now represented by a valid filing, but owner revision is required before any later C1 round. No consecutive marginal-only condition exists; convergence remains **NOT ESTABLISHED**.

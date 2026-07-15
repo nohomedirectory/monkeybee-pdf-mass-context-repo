@@ -3120,3 +3120,120 @@ I did not revalidate, re-grade, confirm, refute, promote, demote, or rewrite any
 - Root handoff only: commit/push the three G7 documents, revalidate identities and untouched R50, then send only the sealed R50 control. G7 stops idle without dispatch, contact, process action, commit, push, or external action.
 
 **Integration-control state: `BOUND-UNSENT`.**
+
+## R50 filing integration — INGEST-VERIFIED (`2026-07-15T11:02:22+02:00`)
+
+- Overarching G7 owner FSM remains `DRAFT`. Crash-safe transition persisted separately: prior `BOUND-UNSENT -> INGEST-VERIFIED`; no filing admission, grade promotion, or owner disposition is implied yet.
+- Pre-transition G7 checkpoint was exactly 3,122 lines / 697,029 bytes / SHA-256 `06986cca1d4b6c41a33b48944a183fb2fbb63643d58cad209094f411a1c8bcfc`; its corrected terminal `BOUND-UNSENT` section immediately above was actual EOF.
+- Pushed provenance passes: HEAD and `origin/main` are both `1b3e7aaffbc32f10dcb0756d7f405703d47f3119`. Intake status contains only the reviewer-modified Round Log; Convergence and G7 match pushed bytes before this checkpoint.
+- Reviewed artifact reproduces 3,566 lines / 495,395 bytes / SHA-256 `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0`.
+- The pushed Round blob is exact live prefix `[0,911493)`: 4,810 lines / `c49084362eedfcdbe2602acc515289b75a2da92d167a995a295ab11eb0010632`. The sole immutable R50 suffix is `[911493,941034)`: 217 lines / 29,541 bytes / `9b4eae3e9dc80d3cdcbb04b612ad602a933667a8d6f704c6690c28aab3d29cbf`. Whole pre-integration Round Log is 5,027 / 941,034 / `eed349683512506144b108a2b3ffa824af71740191db0d066efbf65a06d40f71`.
+- Quarantined transcript reproduces 536 lines / 2,340,744 bytes / `8f79c19b9236803d9c0bdb93e89baf3252e6effb8790a60e75f604e32c499f7f`. Structured census has 110 calls and 110 paired outputs: 109 nested `tools.exec_command` calls followed by sole nested `tools.apply_patch` Call 110, whose only patch header targets `gauntlet/ROUND_LOG.md`. There is no later tool call.
+- Calls 1/2 read all AGENTS and reviewer protocol. Call 7 ingested the four short authority sources; its display truncation omitted only Charter lines 108–114, and Call 8's bounded Charter 100–121 retry closes that interval. Calls 9–29 cover every declared Rev 7 selection contiguously. Calls 30–44 cover plan lines 1–3566 contiguously with no gap.
+- One compaction occurs at `2026-07-15T08:38:41.855Z` after full authority/artifact ingest. Call 54 is the first repository read afterward and rereads all AGENTS. Root reminder at `08:39:19.410Z` is followed by Call 58 rereading all AGENTS. Calls 55–57 continue plan-only analysis and Call 60 performs a selected-range-only authority heading check; no authority/artifact replay occurs merely because of compaction.
+- Root-audit disclosure is preserved: Calls 63 and 64 are redundant plan-range rechecks whose displays truncate after full initial ingest; Call 72 is a broad plan-only keyword search whose display truncates. They create no unread range and supply no independent truth. Every allegation remains premise-test pending.
+- Call 108 fails at Python parse time on a non-ASCII bytes literal before any read or write. Call 109 corrects the mechanical check and reproduces dispatch HEAD, Round hash/final anchor, and artifact identity. Call 110 is the sole successful structured append.
+- Final assistant message is exact standalone `TERMINATED`, 10 bytes / `3f916dfa4a82da97aca4d4d02ded5727376ceb34acbf819545fc70fb9b1ca6c8`, followed by one `task_complete` event and no later tool. R50 session, shell 2008272, and child 2008528 are absent; host zombies are zero.
+- Packet schema gate passes: one sole lens at repeated pass 5/5; A=20/B=4/C=0; exact monotone IDs R50-A01–A20 and R50-B01–B04; exactly one evidence, requirement, consequence, repair boundary, and loss guard per finding; one verdict; marginal-only NO; one exact termination line; UTF-8 and final newline.
+- Guarded-word hits are confined to R50-A16's formal scoped fields `best-of-N`, `best_outcomes`, and scoped best outcomes; this is a scoped claim structure, not campaign-claim leakage. Packet contains no prohibited processor name or URL.
+- Transcript call paths are limited to AGENTS, reviewer protocol, declared authority files, the bound plan, and mechanical Round Log access. No Convergence/G3/root-ledger path, prohibited processor material, external action, code/scaffolding/Beads/SpecCard body, measurement, comparison, commit, or push appears.
+- Rejected diagnostics: the first combined protocol/packet/convergence display truncated and supplies no full-read gate; bounded packet chunks and the relevant Convergence tail corrected it. A first patch-target probe searched the packet body, saw the reviewed artifact path, and falsely returned `patch_round_target_only=False`; exact patch-header parsing corrected it to the sole Round Log target. A first Call-7 coverage parser assumed the wrong emitted heading and returned an all-missing result; the corrected `FILE <path>` parser identifies only Charter 108–114 missing from Call 7 and closed by Call 8. All rejected probes are zero-credit and changed no repository byte or process.
+- Mechanical validation admits neither truth nor grade. Next transition changes only the unique R50 allocation row to the filed state and appends a distinct G7 filing receipt after the immutable packet.
+
+**Integration-control state: `INGEST-VERIFIED`.**
+
+## R50 filing integration — R50-FILED (`2026-07-15T11:03:01+02:00`)
+
+- Overarching G7 owner FSM remains `DRAFT`. Crash-safe transition persisted separately: `INGEST-VERIFIED -> R50-FILED`; schema/process/coverage qualification is still pending.
+- Pre-transition G7 checkpoint was exactly 3,143 lines / 702,115 bytes / SHA-256 `71ad9f8279f31af5e22cef3d13eba1f8718c36b08e1e9582616c9a746e271169`; its full `INGEST-VERIFIED` section immediately above was actual EOF.
+- Only the unique R50 allocation row changed to `FILED · PENDING-VALIDATION · TERMINATED`, with immutable reviewer grades A=20/B=4/C=0 and marginal-only NO. Artifact, sole lens, Sol model/mode/tier, pass 5/5, R49/R08 replacement lineage, and G3 route remain unchanged.
+- Round Log is now 5,027 lines / 941,101 bytes / `bf4757f80d47d0d49b9bf593e9d51f610dd228931f99f3ec3bc9fbc7a5d4a4ea`. The row-length shift relocates the separator-inclusive reviewer packet to `[911560,941101)`; it remains exactly 217 lines / 29,541 bytes / `9b4eae3e9dc80d3cdcbb04b612ad602a933667a8d6f704c6690c28aab3d29cbf` and actual EOF. No reviewer byte changed.
+- Mechanical filed arithmetic is provisionally 17 rounds at 9 Sol / 8 Opus with A=118/B=64/C=22. These are immutable reviewer counts, not truth promotion; the next transition decides only schema/process/coverage qualification.
+- There is no bound-unsent row after filing. Fifteen active planned slots remain unfiled and unbound. R08 and R49 remain immutable failed zero-credit rows and are not reused.
+- No G7 validation/routing closure has yet been appended to Round Log. Next transition classifies R50 only as `CHAIN-QUALIFIED` if the reproduced schema/process/coverage gates remain satisfied.
+
+**Integration-control state: `R50-FILED`.**
+
+## R50 filing integration — R50-VALIDATED (`2026-07-15T11:03:49+02:00`)
+
+- Overarching G7 owner FSM remains `DRAFT`. Crash-safe transition persisted separately: `R50-FILED -> R50-VALIDATED`.
+- Pre-transition G7 checkpoint was exactly 3,155 lines / 703,858 bytes / SHA-256 `463e5b0c49f83440e203bd964efa8e511a4768db3da8f96c77757f608f1cc1b3`; its full `R50-FILED` section immediately above was actual EOF.
+- Unique R50 row is now `FILED · CHAIN-QUALIFIED · TERMINATED`, A=20/B=4/C=0, marginal-only NO. Qualification is limited to reproduced identity, schema, declared one-lens chain, authority/artifact coverage, sole-write boundary, and terminal behavior.
+- Qualification does not establish any allegation, requirement premise, grade, loss mechanism, repair need, artifact verdict, owner disposition, or campaign claim. All 24 findings remain reviewer allegations pending independent G3 premise-first disposition through root.
+- Round Log is 5,027 lines / 941,126 bytes / `f7a140f3597369b5cc31f1e1ba2ada822e7622c8d8428835fd4eba97da82018f`. The second row-length shift relocates the immutable reviewer packet to `[911585,941126)`; it remains 217 lines / 29,541 bytes / `9b4eae3e9dc80d3cdcbb04b612ad602a933667a8d6f704c6690c28aab3d29cbf` at actual EOF.
+- The Call-7 Charter retry, single compaction/no-replay behavior, Calls 63/64/72 non-load-bearing truncations, Call-108 parse-time failure, corrected Call 109, sole Call-110 append, exact `TERMINATED`, process absence, and zero-zombie boundary remain attached as process provenance.
+- Guarded terms in R50-A16 remain scoped formal aggregation fields; no guarded campaign claim is admitted. No prohibited processor material, unauthorized path, external action, artifact edit, code, Beads, measurement, comparison, commit, or push is admitted.
+- Next transition records the already proven reviewer/process termination boundary without changing the row, packet, grades, or qualification.
+
+**Integration-control state: `R50-VALIDATED`.**
+
+## R50 filing integration — R50-TERMINATED (`2026-07-15T11:04:23+02:00`)
+
+- Overarching G7 owner FSM remains `DRAFT`. Crash-safe transition persisted separately: `R50-VALIDATED -> R50-TERMINATED`; no Round Log or Convergence byte changes in this transition.
+- Pre-transition G7 checkpoint was exactly 3,168 lines / 705,845 bytes / SHA-256 `4bcee49d9827c67e1bca32d6c47a295b0cbfb7e3780243b053d2eb4a14720f69`; its full `R50-VALIDATED` section immediately above was actual EOF.
+- Transcript Call 110 is the final and sole write call. Its paired output succeeds; the next final assistant message is exact standalone `TERMINATED`; one `task_complete` follows; there is no later tool call.
+- Root exited the reviewer and idle shell. Read-only absence gate reconfirms session `monkeybee-pdf-mass-context-repo--r50` absent and `/proc/2008272` plus `/proc/2008528` absent. The expected nonzero `tmux has-session` result is credited only as the intended absence boundary, not as a failed diagnostic. Host zombie census remains zero from ingest.
+- Immutable row, packet, A=20/B=4/C=0 grades, marginal-only NO, and `CHAIN-QUALIFIED` scope remain unchanged. Termination adds no substantive evidence or truth promotion.
+- Next transition routes all 24 immutable allegations to root for independent G3 premise-first disposition and appends the distinct G7 validation/routing closure after the packet.
+
+**Integration-control state: `R50-TERMINATED`.**
+
+## R50 filing integration — FINDINGS-ROUTED (`2026-07-15T11:04:44+02:00`)
+
+- Overarching G7 owner FSM remains `DRAFT`. Crash-safe transition persisted separately: `R50-TERMINATED -> FINDINGS-ROUTED`.
+- Pre-transition G7 checkpoint was exactly 3,179 lines / 707,283 bytes / SHA-256 `595212edfc2a63fdcb6d123a1129cd0ba0b32be190519bad394254b7204070f1`; its full `R50-TERMINATED` section immediately above was actual EOF.
+- Unique R50 row preserves `FILED · CHAIN-QUALIFIED · TERMINATED`, A=20/B=4/C=0, marginal-only NO, and now records the root route. No reviewer byte or grade changed.
+- One distinct G7 validation/root-routing closure was appended immediately after the packet. Round Log is 5,053 lines / 943,874 bytes / `36945b3229b08648256e80b05de928279ef7bc30752a829c44864fea196228c6`.
+- Immutable packet is semantically relocated to `[911591,941132)`, still 217 lines / 29,541 bytes / `9b4eae3e9dc80d3cdcbb04b612ad602a933667a8d6f704c6690c28aab3d29cbf`. G7 closure is contiguous `[941132,943874)`, 26 lines / 2,742 bytes / `00365c0e6bbd0ddd3eee3b6756a27666b678f77273f377750e767b42ff4df8ef` and actual EOF.
+- All R50-A01–A20 and R50-B01–B04 allegations route unchanged to root for independent G3 premise-first disposition. No finding is accepted, narrowed, rejected, regraded, repaired, or promoted; G7 did not contact G3 or any reviewer.
+- R08 and R49 remain immutable zero-credit failures. R50 fills only their original planned pass-5/5 role and adds no allocation row or lens.
+- Current mechanical accounting is 50 allocations at 22 Sol / 28 Opus; 18 failures; 32 active slots at 16/16; 17 valid filed rounds at 9 Sol / 8 Opus with A=118/B=64/C=22; 15 active-unfiled slots, all unbound; zero bound-unsent.
+- Five-pass-A sequence is R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24, all non-marginal. Owner revision is required before another C1 round; convergence remains `NOT ESTABLISHED`.
+- Next transition appends an evidence/accounting correction to Convergence Report without changing the immutable packet, route, grades, or substantive qualification.
+
+**Integration-control state: `FINDINGS-ROUTED`.**
+
+## R50 filing integration — CONVERGENCE-UPDATED (`2026-07-15T11:07:02+02:00`)
+
+- Overarching G7 owner FSM remains `DRAFT`. Crash-safe transition persisted separately: `FINDINGS-ROUTED -> CONVERGENCE-UPDATED`.
+- Pre-transition G7 checkpoint was exactly 3,194 lines / 709,399 bytes / SHA-256 `6bebe98fc3141cad5a83e7a5fe6f2a18c4f5430d1e307501157629b57257200a`; its full `FINDINGS-ROUTED` section immediately above was actual EOF.
+- Convergence Report preimage was 778 lines / 112,440 bytes / `1de921eb8fae93a4a80ad21dfad9a264fa81ab521995accfa42db45b43316790`. The append is contiguous `[112440,114193)`, 16 lines / 1,753 bytes / `eff317277d3e7579d01167e92d8ce44d6323ce7b84b65d67ee79abbc88287e8d`; the resulting report is 794 lines / 114,193 bytes / `18c35c0b560e05fb2b37ff55d16edc75b850006f26f55c0a6eb053e232425c21`.
+- The correction supersedes only stale R50 bound-unsent wording. It records R50 as `FILED · CHAIN-QUALIFIED · TERMINATED`, routes all 24 immutable allegations to root for independent G3 premise-first disposition, and promotes no allegation or grade.
+- Filed accounting is 17 rounds at 9 Sol / 8 Opus with A=118/B=64/C=22. Allocation remains 50 rows at 22 Sol / 28 Opus; 18 failures leave 32 active slots at 16/16; 15 active-unfiled slots are all unbound and no round is bound-unsent.
+- The five-pass-A A+B curve is R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24, every point non-marginal. Owner revision is required before any later C1 round; convergence remains `NOT ESTABLISHED`.
+- Round Log remains 5,053 lines / 943,874 bytes / `36945b3229b08648256e80b05de928279ef7bc30752a829c44864fea196228c6`; immutable R50 packet and distinct G7 routing closure identities are unchanged.
+- Next transition runs the bounded mechanical self-check and records all credited gates and rejected diagnostics before release.
+
+**Integration-control state: `CONVERGENCE-UPDATED`.**
+
+## R50 filing integration — SELF-CHECKED (`2026-07-15T11:10:44+02:00`)
+
+- Overarching G7 owner FSM remains `DRAFT`. Crash-safe transition persisted separately: `CONVERGENCE-UPDATED -> SELF-CHECKED`.
+- Pre-transition G7 checkpoint was exactly 3,207 lines / 711,279 bytes / SHA-256 `4faefa9f47b200482fe37388744a4daa4913ef8f129fb23d04294b1aea36a7e4`; its full `CONVERGENCE-UPDATED` section immediately above was actual EOF.
+- Provenance gate passes: HEAD and `origin/main` both equal pushed dispatch commit `1b3e7aaffbc32f10dcb0756d7f405703d47f3119`; submitted plan remains 3,566 lines / 495,395 bytes / `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0`.
+- Owned identities are Round Log 5,053 lines / 943,874 bytes / `36945b3229b08648256e80b05de928279ef7bc30752a829c44864fea196228c6`, Convergence Report 794 / 114,193 / `18c35c0b560e05fb2b37ff55d16edc75b850006f26f55c0a6eb053e232425c21`, and pre-self-check G7 checkpoint 3,207 / 711,279 / `4faefa9f47b200482fe37388744a4daa4913ef8f129fb23d04294b1aea36a7e4`.
+- Exact-prefix and append gates pass: immutable R50 packet `[911591,941132)` remains 217 lines / 29,541 bytes / `9b4eae3e9dc80d3cdcbb04b612ad602a933667a8d6f704c6690c28aab3d29cbf`; G7 routing closure `[941132,943874)` remains 26 / 2,742 / `00365c0e6bbd0ddd3eee3b6756a27666b678f77273f377750e767b42ff4df8ef` at Round EOF. Convergence preimage and append reproduce `1de921eb…790` and `eff31727…e8d`; prior G7 preimage and convergence checkpoint append reproduce `6bebe98f…00a` and `904f7b69…6e5`.
+- Semantic hash selection with adjacent sealed separators uniquely relocates every protected reviewer packet: R03 `[291602,309496)`, R13 `[316791,326380)`, R04 `[334131,360225)`, R14 `[369920,426024)`, R33 `[445937,456842)`, R05 `[466128,559920)`, R15 `[570441,599501)`, R38 `[648258,660408)`, R41 `[733997,747477)`, R48 `[869305,884843)`, and R50 `[911591,941132)`; each reproduces its recorded hash.
+- R50 schema gate passes: one packet heading, one G7 closure heading, one allocation row, exact IDs R50-A01–A20 and R50-B01–B04, 24 each of evidence/requirement/consequence/repair-boundary/loss-guard labels, one count line, one marginal-only NO line, one verdict, and one termination line. All 204 finding IDs across Round Log are unique. No prohibited processor name or URL occurs in the packet.
+- Transcript gate passes at 536 lines / 2,340,744 bytes / `8f79c19b9236803d9c0bdb93e89baf3252e6effb8790a60e75f604e32c499f7f`: 110 calls / 110 outputs, 109 read-only `exec_command` operations, sole Call 110 `apply_patch` targeting only Round Log, no later tool, exact 10-byte `TERMINATED` with `3f916dfa…ca6c8`, and one `task_complete`. The single compaction, Calls 54/58 AGENTS rereads, four disclosed truncated outputs, Call 108 parse failure, and corrected Call 109 all reproduce.
+- Process gate passes: `tmux list-sessions` contains no R50 session; `ps` returns no shell 2008272 or child 2008528; host zombie count is zero.
+- Normalized accounting gate passes: 50 unique immutable rows at 22 Sol / 28 Opus; exact 18 failed IDs; 32 active at 16/16; 17 filed at 9/8 with A=118/B=64/C=22; 15 active-unfiled and zero bound. R08/R49 remain zero-credit; R50 fills only their planned role.
+- Diff/format gate passes: unstaged diff names exactly the three authorized paths, staged diff is empty, `git diff --check` is clean, all three files are UTF-8 with terminal newline, and there are zero trailing-whitespace or conflict-marker lines. Added-line Rule-13 scan finds only R50-A16's formal scoped `best-of-N`, `best_outcomes`, and scoped outcome fields plus G7's explicit classification of those formal fields; no campaign-claim leakage is admitted.
+- Rejected diagnostics, zero evidence credit: an initial combined display was truncated; a patch-target probe searched packet prose and falsely rejected; a first Call-7 coverage parser assumed wrong headings; the historical-hash `rg` display truncated; the first protected-slice Python probe failed at parse time; a raw-heading locator was confounded by quoted headings; an allocation parser let Markdown backticks invoke nonexistent `Sol`/`Opus` shell commands and then raised `IndexError`; a first closure-heading literal was wrong; and a broad allocation-table display truncated. Corrected bounded or direct-file probes above passed. These failures changed no repository byte, reviewer process, route, grade, count, or conclusion.
+- Process-order deviation, zero evidence credit: after the 2026-07-15 post-`FINDINGS-ROUTED` compaction, read-only checks opened `gauntlet/CONVERGENCE_REPORT.md` and `ledger/owners/G7_STATE.md` before root reminder delivery. No repository mutation occurred. Root then sent exact `Reread AGENTS.md`, and all AGENTS.md was reread before any post-compaction write. The deviation changes no R50 qualification, route, count, or conclusion and supports no inference beyond this bounded ordering fact.
+- All 24 findings remain immutable allegations routed only to root for independent G3 premise-first disposition. G7 contacted nobody, dispatched nothing, and performed no external action. Convergence remains `NOT ESTABLISHED`.
+- Next transition releases the bounded integration to root without allocating or dispatching another round.
+
+**Integration-control state: `SELF-CHECKED`.**
+
+## R50 filing integration — RELEASED (`2026-07-15T11:11:23+02:00`)
+
+- Overarching G7 owner FSM remains `DRAFT`. Crash-safe transition persisted separately: `SELF-CHECKED -> RELEASED`.
+- Pre-transition G7 checkpoint was exactly 3,227 lines / 716,568 bytes / SHA-256 `b9fbe5dd0d56802859a9cdea41be546871c3e69c4981eb020aec65daf75e7af1`; its full `SELF-CHECKED` section immediately above was actual EOF. That section is contiguous `[711279,716568)`, 20 lines / 5,289 bytes / `79686a92cd3a21d5c10d0000998fd22cb958b403cbf604194f885ebd98cc66e5`.
+- Released Round Log identity is 5,053 lines / 943,874 bytes / `36945b3229b08648256e80b05de928279ef7bc30752a829c44864fea196228c6`. Immutable R50 packet `[911591,941132)` and distinct G7 routing closure `[941132,943874)` retain their seals and actual-EOF relationship.
+- Released Convergence Report identity is 794 lines / 114,193 bytes / `18c35c0b560e05fb2b37ff55d16edc75b850006f26f55c0a6eb053e232425c21`.
+- R50 remains `FILED · CHAIN-QUALIFIED · TERMINATED`, A=20/B=4/C=0, marginal-only NO. All 24 grades remain immutable allegations routed only to root for independent G3 premise-first disposition; no owner disposition or truth promotion exists.
+- Final accounting is 50 immutable rows at 22 Sol / 28 Opus; 18 failures; 32 active slots at 16/16; 17 filed rounds at 9 Sol / 8 Opus with A=118/B=64/C=22; 15 active-unfiled, zero bound. Convergence remains `NOT ESTABLISHED`, and owner revision is required before another C1 round.
+- G7 allocated and dispatched no next round, contacted no owner or reviewer, and took no external action. Root alone may commit/push the three owned documents and route the immutable R50 packet plus G7 qualification to G3.
+
+**Integration-control state: `RELEASED`.**
