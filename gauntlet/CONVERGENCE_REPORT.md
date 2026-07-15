@@ -1092,3 +1092,11 @@ R58 is immutable `NOT-RUN · METHOD-CONTROL-CANDIDATE-FREEZE-QUOTATION-AND-CITAT
 Allocation is 58 unique rows at 22 Sol / 36 Opus; 27 failed at 6/21; 31 active planned at 16/15; 18 valid filed at 9/9 with A=118/B=64/C=22; and 13 active-unfiled at 7/6. No row is bound-unsent. R10 remains untouched `PRECOMMITTED`.
 
 The C1 five-pass-A sequence remains R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24, all non-marginal. The Constitution sequence remains R14=15 non-marginal -> R15=21 non-marginal -> R51=0 marginal-only. R58 adds no point; convergence remains **NOT ESTABLISHED**.
+
+## R10 sealed-control candidate — pre-bind checkpoint — `2026-07-15T21:04:36+02:00`
+
+One sealed R10 control candidate now occupies Round EOF for the original precommitted C1 `dependency soundness` slot. It binds only the submitted plan identity `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`, exact `gpt-5.6-sol` / `ultra` / live `fast` / priority identity, and the eventual premise-first G3 route that may exist only after a chain-qualified filing.
+
+This is not an operational bind. R10's allocation row remains byte-identical `PRECOMMITTED` until the control passes owner SELF-CHECK, independent submission review, mandatory hardening review, and a fresh terminal gate. No bootstrap was instantiated, nothing was sent, and no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model point, or convergence evidence is added.
+
+Allocation therefore remains 58 unique rows at 22 Sol / 36 Opus; 27 failed at 6/21; 31 active planned at 16/15; 18 valid filed at 9/9 with A=118/B=64/C=22; 13 active-unfiled at 7/6; and no bound row. Established C1 and Constitution sequences are unchanged. Convergence remains **NOT ESTABLISHED**.

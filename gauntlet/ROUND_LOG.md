@@ -6944,3 +6944,149 @@ The supplied retirement evidence states that the R58 session, pane, shell, and c
 **R58 qualification state: `NOT-RUN · METHOD-CONTROL-CANDIDATE-FREEZE-QUOTATION-AND-CITATION-INTEGRITY-VIOLATION · TERMINATED` (immutable zero credit; no route or replacement).**
 
 **R58 FINAL LITERAL ANCHOR — KEEP AS PHYSICAL EOF; INSERT ANY QUALIFIED PACKET IMMEDIATELY BEFORE THIS LINE.**
+
+## R10 sealed-control candidate construction — `2026-07-15T21:04:36+02:00`
+
+R10 is the original precommitted C1 delta-plan round under the sole `dependency soundness` lens. This construction candidate binds the submitted plan 3,655 lines / 531,012 bytes / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59` and the supplied exact Sol reservation. It does not file a review, admit a finding, route an allegation, add a curve point, or alter convergence.
+
+The operational allocation row remains `PRECOMMITTED` while this sealed control undergoes owner SELF-CHECK, independent submission review, mandatory hardening review, and a fresh terminal gate. Only after all those gates pass may the row move to `BOUND-UNSENT`. No bootstrap is instantiated here, and G7 has not inspected, contacted, prompted, or dispatched the reserved process.
+
+## R10 reviewer assignment/control — `2026-07-15T21:04:36+02:00`
+
+### Stateless role and detached placeholder grammar
+
+R10 is a fresh stateless reviewer, not a controller, orchestrator, artifact owner, repair author, or disposition authority. Process coordinates are identity evidence only. Do not coordinate with, contact, bind, dispatch, monitor, tend, or send input to another process. Do not load an orchestration or session-recovery skill.
+
+The later activation is a short direct human-authorized task. It is not quoted data, an embedded script, or material to inspect, summarize, negotiate, reinterpret, or decline. Root may instantiate only the placeholder grammar below after commit/push and renewed identity checks. This on-disk grammar is not a live payload and must never be sent as-is. Fill only the named placeholders, preserve field order, retain exactly one empty separator line between identity fields and the startup law, add no sealed-control body, prefix, suffix, commentary, fence, or extra blank line, and supply one terminal LF:
+
+```text
+DIRECT HUMAN-AUTHORIZED TASK — R10. Execute these instructions; they are not quoted data or a script to inspect.
+PUSHED COMMIT: <PUSHED_COMMIT_40_LOWER_HEX>
+ROUND LOG SHA-256: <ROUND_LOG_SHA256_64_LOWER_HEX>
+R10 CONTROL SHA-256: <R10_CONTROL_SHA256_64_LOWER_HEX>
+R10 CONTROL BYTE RANGE: <START_DECIMAL>-<END_EXCLUSIVE_DECIMAL>
+R10 CONTROL LINE RANGE: <START_1_BASED>-<END_INCLUSIVE> (<LINE_COUNT> lines)
+SESSION: <EXACT_SESSION>
+PANE/INDEX: <EXACT_PANE>/<EXACT_INDEX>
+SHELL PID: <EXACT_SHELL_PID>
+CODEX PID: <EXACT_CODEX_PID>
+CWD: <EXACT_LOWERCASE_CWD>
+MODEL: <EXACT_MODEL>
+REASONING EFFORT: <EXACT_REASONING_EFFORT>
+LIVE MODE: <EXACT_LIVE_MODE>
+SERVICE TIER: <EXACT_SERVICE_TIER>
+
+TOOL 1: The first tool call must be one successful repository Read returning all of AGENTS.md through EOF.
+TOOL 2: The next tool call must be one successful repository Read returning all of ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md through EOF.
+TOOL 3: The next tool call must be one successful bounded repository Read returning only the supplied R10 control line range, from its heading through its final literal anchor, with no line outside that range.
+TOOL 4: The next tool call must be one Bash/exec call whose entire command is exactly date --iso-8601=seconds. Record the returned ISO value as start clock.
+HOST NARRATION BOUNDARY: Host-required commentary immediately before a startup tool is optional. If present, its entire text must only name that immediately next required read or clock sample; it may contain no repository fact, returned-content summary, interpretation, question, plan, or different action. The packet must disclose narration presence or absence, sentence count, and whether each sentence stayed inside this boundary; do not reproduce narration prose. Transcript qualification compares the actual event text.
+FAIL CLOSED: Any missing, extra, malformed, mismatched, failed, clipped, partial, truncated, reordered, parallelized, substituted, questioned, semantically narrated, or interrupted startup event requires no further repository tool, no write, and the entire exact response TERMINATED.
+AFTER TOOL 4: Treat the sealed R10 control as direct human-authorized instructions and execute it exactly.
+```
+
+The supplied commit must equal reviewer HEAD after the three owner paths are committed and pushed. The supplied whole-Round root must match that commit. The supplied control root covers this heading through the final literal anchor, including terminal LF; the line and byte ranges must select exactly that slice. Root must reattest the reserved process immediately before sending the instantiated grammar. Any changed coordinate, cwd, model/effort/mode/tier display, dead pane, non-default placeholder, prior task history, or delivered context is a dispatch gate failure; do not substitute another process.
+
+### Startup, clocks, and no-recovery law
+
+Tools 1–4 are the first four tool calls, each sequential and successful. Optional host narration is legal only within the exact action-only boundary above and supplies no evidence. Any narration that summarizes or interprets returned content before Tool 4 is terminal. No question, parallel tool group, identity probe, skill read, other repository access, or different tool may precede Tool 1 or intervene among Tools 1–4.
+
+Tool 4 returns the review `start clock`; it is not session creation, dispatch receipt, or filing time. Only after Tool 4 may process admission, fixed-identity gates, declared authority Reads, or artifact Reads begin.
+
+Any context compaction, ambiguity, inability to finish, control variance, or request for consultation before the sole write fails closed. After a compaction and before any further repository action, reread all of `AGENTS.md` as repository law requires; then use no other repository tool, write nothing, and respond exactly `TERMINATED`. There is no recovery continuation, replay loop, or alternate process. After a successful write there is never another tool.
+
+### Bound process, fixed identities, artifact, and sole lens
+
+- reviewer process: session `monkeybee-pdf-mass-context-repo--r10`; pane `%92` index 1; pane shell PID 3356823; reviewer child PID 3357062; `pane_dead=0`; exact cwd `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`
+- required model: exact `gpt-5.6-sol`, reasoning effort `ultra`, live mode `fast`, service tier `priority`; process arguments must show the exact model and `model_reasoning_effort=ultra`; activation evidence must show the live `gpt-5.6-sol ultra fast` footer, `Service tier set to priority`, exact lowercase cwd, default placeholder `Summarize recent commits`, and no prior task, artifact, authority, control, bootstrap, CASS, hook, or recovery context; no fallback is admissible
+- artifact: only `plans/CYCLE_1_DELTA_PLAN.md`, 3,655 lines / 531,012 bytes / SHA-256 `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`
+- lens: exactly one, `dependency soundness`
+
+After Tool 4, any reviewer-side process check must target child PID 3357062 only and may target shell PID 3356823 only to verify parentage. Use exact PID-scoped endpoints. Global or name-wide process listings, broad discovery, other-pane inspection, monitoring loops, semantic process inspection, process input, and contact are forbidden. A process/model/mode/tier/cwd mismatch requires no artifact analysis, no write, and exact `TERMINATED`.
+
+After process admission, verify only these fixed identities: reviewer HEAD equals the supplied pushed commit; whole Round hash equals the supplied root; supplied control slice equals the supplied control root; control end offset equals whole-Round byte size; exact R10 final-anchor count equals one; and the bound artifact path, line count, byte count, and hash equal this control. Artifact drift is `STALE-ASSIGNMENT`; model drift is `MODEL-MISMATCH`; live-mode or tier drift is `MODE-MISMATCH`. Each branch writes no packet and ends exactly `TERMINATED`.
+
+Every fixed-identity command is individually bounded and content-silent. Standard output may contain only a commit/hash, decimal line or byte size, exact-slice byte count, or decimal count for the exact R10 anchor; standard error must be empty. Do not print literal anchor text, Round/control content, trailing bytes, earlier Round semantics, git history, another outcome, or unrelated status. Do not use a generic anchor-substring probe, content display, EOF-content probe, dump, global process listing, or command that can reveal a non-whitelisted byte. Exact-anchor count plus a sealed slice ending at whole-file byte size is the EOF proof.
+
+### Declared authority and 34 prescribed primary Reads
+
+Read only the declared authority selections and the bound artifact below. Each repository Read uses a 1-based offset and line-count limit, or a mechanically equivalent bounded interface that returns the same numbered interval. Every successful result must expose the requested numbered first line, last line, and count. A request alone earns no coverage.
+
+- `OVERNIGHT_GOAL.md`: 23/14 -> 23–36; 58/30 -> 58–87.
+- `MONKEYBEE_CAMPAIGN_CHARTER_v1.md`: 28/14 -> 28–41; 54/97 -> 54–150; 174/33 -> 174–206.
+- `CYCLE_0_WORK_ORDER.md`: 10/11 -> 10–20; 67/13 -> 67–79; 112/15 -> 112–126.
+- `CAMPAIGN_CHARTER_REASONING.md`: 34/46 -> 34–79.
+- `MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`: 353/350 -> 353–702; 703/301 -> 703–1003; 1651/350 -> 1651–2000; 2001/350 -> 2001–2350; 2351/350 -> 2351–2700; 2701/350 -> 2701–3050; 3051/163 -> 3051–3213; 5164/350 -> 5164–5513; 5514/350 -> 5514–5863; 5864/339 -> 5864–6202; 6674/350 -> 6674–7023; 7024/350 -> 7024–7373; 7374/350 -> 7374–7723; 7724/282 -> 7724–8005.
+- bound plan: 1/350 -> 1–350; 351/350 -> 351–700; 701/350 -> 701–1050; 1051/350 -> 1051–1400; 1401/350 -> 1401–1750; 1751/350 -> 1751–2100; 2101/350 -> 2101–2450; 2451/350 -> 2451–2800; 2801/350 -> 2801–3150; 3151/350 -> 3151–3500; 3501/155 -> 3501–3655.
+
+The 34 calls must merge exactly to Goal [23,36]+[58,87] (44 lines), Charter [28,41]+[54,150]+[174,206] (144), Work Order [10,20]+[67,79]+[112,126] (39), Reasoning [34,79] (46), Rev 7 [353,1003]+[1651,3213]+[5164,6202]+[6674,8005] (4,585), and bound plan [1,3655] (3,655). Rev 7 line 2,431 must return inside the 2,351–2,700 result; adjacency, inference, or overlap is not coverage.
+
+Maintain a process-local primary interval ledger for exactly 34 Reads: tool sequence, file, requested offset/limit, expected first/last/count, observed first/last/count, success state, and credited interval. Use no scratch or repository write. Any failed, clipped, capped, missing, partial, truncated, mismatched, repeated, retried, widened, or out-of-scope primary result is terminal: issue no replacement Read, perform no lens analysis, write nothing, and respond exactly `TERMINATED`.
+
+Before analysis, deterministically sort/merge the 34 credited intervals and prove exactly the six sets and counts above. Any gap, extra interval, overlap ambiguity, count mismatch, or one-line omission is terminal no-write `TERMINATED`. This is primary union gate 1. After the final post-draft phase succeeds, rerun the merge from the retained primary ledger and reproduce the same six sets/counts before filing; this is primary union gate 2. Primary results never substitute for post-draft results.
+
+### Sole dependency-soundness lens and graph obligations
+
+Apply only `dependency soundness`. Draw and test the semantic dependency graph expressed by the bound plan; do not create an implementation schedule, task graph, Bead inventory, or second lens. Adjacent observations are out of scope unless strictly necessary to establish one dependency premise.
+
+Use the closed contract catalog as the node universe. Parse every exact prerequisite segment admitted by the plan's dependency grammar, expand every token/range/union against that catalog, and orient canonical edges `prerequisite -> dependent`. Keep assurance `targets` relations and guarded alternate-mode `consumes` transitions in separate typed ledgers; neither is a prerequisite edge. Keep decision, card, human-custody, external-substrate, and later-cycle prerequisites in a separate external-prerequisite ledger rather than inventing contract nodes.
+
+Mechanically test: unknown or duplicate catalog endpoints; invalid family/range expansion; self-loops and strongly connected components; required capabilities with no producer or no gate/workflow consumer; prerequisite order that consumes an artifact before minting; guarded transitions whose source artifact is not already minted or whose target phase does not advance; lower-layer imports of higher policy; security/filter/object-resolution ownership cycles; disagreement among contract dependency fields, the dependency spine, workflow matrix, decision table, product gate, campaign-close gate, exclusions, and handoff; and envelope dependencies that either strand ordinary R0 value behind campaign-only evidence or let campaign closure pass without its required prior artifacts.
+
+Distinguish intentional graph roots/leaves and explicitly unavailable external prerequisites from true orphans. Test every discovered concern against local coordinates before grading. The graph analysis must retain a canonical newline-terminated node ledger, prerequisite-edge ledger, assurance-target ledger, guarded-transition ledger, and external-prerequisite ledger in process-local memory. The packet discloses each ledger's entry count and SHA-256, SCC/self-loop/unknown/orphan/unsatisfied-prerequisite results, and the exact plan sections used. A hash or count is an integrity aid, not a claim that the graph is sound.
+
+Report only locally evidenced missing, contradictory, cyclic, premature, unresolved, or unowned dependencies under this lens. Do not rewrite the artifact, select a dependency/provider, resolve a human decision, accept or reject an allegation, or broaden into feature coverage, self-containment, style, security, claim vocabulary, or oversimplification review.
+
+### Pre-write clock, final candidate freeze, and distinct post-draft replay
+
+After primary union gate 1 and lens analysis, draft all source-bearing packet content in process-local memory. Then invoke one read-only Bash/exec call whose entire command is exactly `date --iso-8601=seconds`; label the returned value `PRE-WRITE filing-clock sample`. Assemble the entire candidate packet, including that exact clock, every top field, method disclosure, graph result, allegation, verdict, no-action statement, and termination field. Freeze all candidate bytes before citation replay. There is no clock or other dynamic placeholder left to fill after freeze.
+
+The normalized eligible-coordinate set is the full declared-authority union plus bound plan [1,3655]. After freeze, issue a fresh, distinct second phase of exactly the same 34 prescribed Reads, keep a separate post-draft interval ledger, and verify every result's numbered first line, last line, and count. Primary Reads cannot substitute. Any failed, clipped, capped, missing, partial, truncated, mismatched, repeated, retried, widened, or out-of-scope post-draft result is terminal no-write `TERMINATED`.
+
+Mechanically merge the 34 successful post-draft intervals and prove the same six sets/counts, including Rev 7 line 2,431 and all plan lines. Prove the normalized eligible-coordinate set is exactly covered. Then mechanically extract every explicit file coordinate or range from every candidate field, including identity, authority, coverage, graph/method disclosures, allegations, repair/loss fields, verdict, and no-action text. Expand ranges to individual line numbers and prove the candidate set is a subset of both the eligible set and successful post-draft union.
+
+Every source-attributed proposition in every candidate field must begin `checked paraphrase —`, name the correct local file and stable section, cite a nonblank verified coordinate/range, and be compared directly with the returned numbered lines. This rule applies to evidence, requirement, consequence, repair boundary, loss guard, top fields, graph disclosure, verdict, and method prose whenever they attribute source meaning. Operational facts such as tool counts, roots, clocks, and process identity are not source propositions but must match their observed records.
+
+Natural-language literal quotation claims are forbidden throughout the candidate. Do not place natural-language prose inside ASCII or typographic quotation marks. Backticks may mark only an exact stable identifier, field name, file path, hash, process coordinate, command, or fixed status token; they may not disguise a paraphrase or shorthand. Any inaccurate attribution, blank/wrong coordinate, unsupported range, unlabeled nonliteral rendering, missing coordinate class, quotation claim, or backtick misuse is a no-write integrity failure.
+
+If any candidate byte changes after freeze, discard the entire candidate and post-draft ledger, sample a new PRE-WRITE clock, assemble and freeze the new entire candidate including a disclosure of the discarded attempt, and repeat all 34 distinct post-draft Reads, unions, coordinate extraction, graph-field checks, and direct proposition comparisons from scratch. No prior post-draft result carries forward. If compaction or a failed Read occurs, restart is forbidden and the round ends zero-credit without writing.
+
+The final packet must truthfully state 34/34 primary Reads, both primary union results, 34/34 post-draft Reads, the post-draft union, all-field coordinate subset result, direct checked-paraphrase result, graph-ledger counts/roots, candidate-restart count, startup-narration presence/count/boundary result without reproducing its prose, and failures/retries/compaction state. An expected pass statement may be present in the frozen candidate only if the subsequent gate proves it exactly; otherwise do not write.
+
+### Blind freshness, plan-space, and no-action law
+
+Read only the startup files, exact sealed R10 control, declared authority selections, bound artifact, and exact PID-scoped identity endpoints. Do not read any Round line outside this control; owner checkpoint, root ledger, convergence report, orchestration state, prior finding, reviewer packet, owner disposition, author discussion, other artifact, external source, competitor material, or prohibited processor source/documentation. Do not inspect another process or pane.
+
+Remain in plan space. Do not edit the artifact or canon; create source, scaffolding, Beads, pseudo-Beads, task/todo/scratch/temp files, benchmarks, comparisons, campaign measurements, or semantic card bodies; contact another owner/reviewer/process; fetch, browse, stage, commit, push, publish, purchase, send, or take an external action. Registry/slot presence and `PENDING-LICENSED-SOURCE` markings may be assessed without supplying missing normative semantics.
+
+Do not strengthen, certify, accept, reject, regrade, repair, route, or disposition an artifact claim or allegation. A no-finding result remains bounded to this one lens and declared evidence. The reviewer files allegations only.
+
+### Reviewer FSM, grades, packet schema, and honest clocks
+
+Use assignment FSM `INGEST -> REVIEW -> SELF-CHECK -> FILE -> TERMINATE`, with no owner consultation. Preserve protocol FSM `SPAWNED -> INGEST-DECLARED-CHAIN -> APPLY-ONE-LENS -> FILE-GRADED-FINDINGS -> TERMINATED`.
+
+Apply protocol grades exactly: `A` for a directly confirmed local violation, `B` for a probable defect with one unresolved premise, and `C` for judgment or optional wording concern. Never adjust a grade to move a curve. An owner-revision recommendation in the verdict is protocol framing only, not a disposition.
+
+The sole packet heading is:
+
+```text
+## R10 — plans/CYCLE_1_DELTA_PLAN.md — dependency soundness
+```
+
+Include exactly one of each top field: `reviewer process`; `model identity`; `started / filed`; `pushed identity`; `artifact hash`; `authority chain read`; `primary coverage, retries, compaction, and union gates`; `dependency graph ledger and tests`; `post-draft replay and citation integrity`; `reviewer FSM`; `counts`; `marginal-only`; and `no-action statement`.
+
+The `started / filed` field states `start clock=<Tool-4 ISO value>; pre-write filing-clock sample=<final pre-freeze ISO value> PRE-WRITE; actual patch/result/terminal chronology pending transcript qualification`. Never label either sample as actual filing time.
+
+State `A=<n>; B=<n>; C=<n>` and `marginal-only: YES | NO`; `YES` is legal only when A=0 and B=0. Each monotone `R10-A01`, `R10-B01`, or `R10-C01` allegation has exactly one `evidence`, `requirement`, `consequence`, `repair boundary`, and `loss guard`. Omit empty grade subsections; never omit counts; include no finding from another lens.
+
+End with one `### Round verdict` stating whether owner revision is advisable or required, what remains uncertain, and why the sole lens is or is not marginal-only. It decides no allegation, route, or owner disposition. The packet last line before the preserved anchor is exactly `- termination state: TERMINATED`.
+
+### Final identity gate, sole structured patch, preserved anchor, and exact finish
+
+After the final post-draft closure and primary union gate 2 pass, reconfirm artifact hash and supplied commit/Round/control identities using only the content-silent whitelist. Reconfirm the sealed slice ends at whole-Round byte size and the exact R10 anchor count is one. This final gate changes no candidate byte. Then internally settle the exact assistant response required after the patch.
+
+The only repository write is exactly one structured `apply_patch` against `gauntlet/ROUND_LOG.md`. Replace the exact final literal anchor with the frozen schema-valid R10 packet, one blank separator line, then the unchanged exact anchor, leaving the anchor as physical EOF. Preserve every preceding byte. Do not use a Write/Edit tool, shell write, redirection, pipe-to-write, `tee`, scratch storage, another method/path, or a retry. If any gate failed, do not patch.
+
+After a successful patch result, make no later tool call. The next and final assistant event is one plain-text block whose entire content is exactly `TERMINATED`: no success narration, blank prefix/suffix, backticks, punctuation, or tool call. If the interface cannot guarantee this, do not patch and end with that same exact token. If the patch fails, do not retry; the next and final response is still exactly that token. Root later qualifies the transcript and retires the process.
+
+**R10 FINAL LITERAL ANCHOR — KEEP AS PHYSICAL EOF; APPEND ONLY THE ASSIGNED R10 PACKET IMMEDIATELY BEFORE THIS LINE.**

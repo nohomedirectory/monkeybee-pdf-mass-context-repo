@@ -5996,3 +5996,167 @@ Root-only handoff recipe:
 G7 performs none of the root-only recipe. The owner FSM is terminal and idle.
 
 **G7 R58 chain-qualification FSM state: `DONE/HANDOFF` (immutable zero-credit closure sealed; no route; idle for root).**
+
+## R10 sealed-control construction follow-up — INGEST (`2026-07-15T20:57:39+02:00`)
+
+- Crash-safe fresh-turn transition persisted: prior `DONE/HANDOFF -> INGEST` before reading R10 semantic evidence, designing its assignment, changing its operational row, or appending any construction record.
+- Required orientation was read through EOF before this checkpoint: `AGENTS.md` (reread after compaction and again on direct instruction), all 743 lines of `/home/joseph/.codex/skills/running-the-gauntlet-on-your-rust-port/SKILL.md`, all of `OVERNIGHT_GOAL.md`, all of `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md`, and the directly relevant terminal G7 handoff/instruction state. The skill's evidence-first discipline narrows this turn to reproducible plan-space control construction under the repository's stronger clean-room and no-action laws.
+- Fixed control reproduces from disk: branch `main`; HEAD == local `origin/main` == `1d00bb8e0347ca37a79244a693f9f1791a5a1f81`; worktree, index, and untracked sets are empty. No fetch or process observation was performed.
+- Starting identities reproduce exactly: Round Log 6,946 lines / 1,230,872 bytes / `ad365627d03f10e4cc7c9b658b389529980db2ee3ea5551eca5437e1434723db`; Convergence Report 1,094 / 160,499 / `01451d2171df4f7f3c960e29de0eacd5f2a340f81eaf97132fda05072a10902b`; pre-append G7_STATE 5,998 / 1,223,925 / `5e237af6f95abfd684953dd5ca1f821a52be9997483f5ac7c2a3e8cc82f00f2a`; submitted plan 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`.
+- The current operational row reproduces once at Round line 94 as `| R10 | C1 delta plan | dependency soundness | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |`. It has not changed. R58 control, packet, closure, and anchor bytes remain historical protected evidence.
+- Supplied R10 reservation facts are quarantined as root evidence only: session `monkeybee-pdf-mass-context-repo--r10`, pane `%92` index 1, shell 3356823, child 3357062, lowercase repository cwd, exact `gpt-5.6-sol` with reasoning effort `ultra`, live-fast priority mode, default placeholder, and no delivered context. G7 will not inspect or contact that process.
+- Writable scope is exactly `gauntlet/ROUND_LOG.md`, `gauntlet/CONVERGENCE_REPORT.md`, and `ledger/owners/G7_STATE.md`, every mutation through structured patch application. No stage, commit, push, fetch, browse, file creation, process contact, dispatch, artifact/canon/plan/root-ledger edit, implementation work, measurement, comparison, or external action is authorized.
+- INGEST authorizes only disk-backed premise testing of the precommitted R10 slot, relevant historical control failures, authority coordinates, allocation state, and protected slices. Any semantic construction or operational row change remains sequenced behind a persisted `INGEST -> DRAFT` transition.
+
+**G7 R10 sealed-control construction FSM state: `INGEST` (orientation and fixed control sealed; evidence ingest authorized).**
+
+### INGEST diagnostic failures — allocation parser attempts 1–2 (`2026-07-15T21:00:48+02:00`)
+
+- Pre-receipt G7_STATE identity was 6,011 lines / 1,226,913 bytes / `c2199a601fee7f8019c41b7cbca2093ec5debb9de670c8a8901438900d7b5517`.
+- Allocation parser attempt 1 matched three non-allocation table rows in addition to the 58 round rows, producing 61 rows and an internally inconsistent active count. It receives zero arithmetic credit.
+- Attempt 2 was blocked before execution because its duplicate-report branch used a shell redirection token. It returned no allocation result, changed no file, and receives zero credit. The corrected rerun will contain no redirection and will admit only rows whose model cell matches one of the two allocation families.
+- No Round, Convergence, allocation, reviewer control, packet, anchor, process, or path outside this owner checkpoint changed during either failed diagnostic.
+
+**G7 R10 sealed-control construction FSM state: `INGEST` (two allocation diagnostics zero-credited; corrected rerun required).**
+
+### INGEST credited result (`2026-07-15T21:03:38+02:00`)
+
+- The corrected allocation parser admits only model-family allocation rows and returns 58 unique rows, zero duplicates, 22 Sol / 36 Opus; 27 failed at 6/21; 31 active at 16/15; 18 valid filed at 9/9 with A=118/B=64/C=22; 13 active-unfiled at 7/6; and no bound row. The three excluded matches are historical evidence-table rows, not allocations.
+- R10 remains one raw row / 114 bytes / `5470c4970ce3fa869c48fc1d6320e89220d3d31a7b4acc360c5db32dd08719d0`, byte-equal to fixed base and `PRECOMMITTED`. No R10 reviewer-control heading or R10 final anchor exists.
+- Protected R58 evidence reproduces: reconstructed control 137 lines / 20,392 bytes / `2965cdcafbfc578d9915d148bea67ea8919fdc49eed423c77e94b21a6151b686`; packet 28 / 9,512 / `34315629dfaeb7a55fe12b52908711e212be84fbc050186311df000d5c2ce64b`; separator-inclusive packet 29 / 9,513 / `f8769203156e39824a8153737d614556b46ce920cea3882165bd5fc4aa1e7b47`. Its literal anchor occurs once and is the current physical EOF. Appending later history may make that EOF claim historical but may not alter any protected byte.
+- Directly relevant G7 instructions were read from `ledger/prompts/OWNER_MARCHING_ORDERS.md`. Its referenced orientation chain was then satisfied through EOF: `INDEX.md`, `MONKEYBEE_CAMPAIGN_CHARTER_v1.md`, `CYCLE_0_WORK_ORDER.md`, and `AUDIT_FINDINGS_LEDGER.md`; the dependency-relevant reasoning selection was also read. The unavailable `ALIEN_ARTIFACT.md` and `PROJECT_OVERVIEW.md` inputs are unrelated to this control construction and are neither reconstructed nor used.
+- The dependency-soundness premise is local and one-lens: the submitted plan declares a closed prerequisite grammar, catalog, dependency spine, workflow matrix, product/campaign gate split, decision prerequisites, and later-cycle exclusions. The eventual reviewer may derive and test a semantic dependency graph, its separately typed assurance-target and guarded-state-transition relations, SCCs/self-loops, unresolved endpoints, orphans, unsatisfied prerequisites, layer direction, workflow/gate consumers, and envelope dependencies without creating an execution graph or changing the plan.
+- The existing sub-capacity map is retained after independent relevance review: 34 primary Reads tile the declared Goal, Charter, Work Order, Reasoning, Rev 7, and all 3,655 plan lines; the same 34 windows form a distinct post-draft replay. The map includes Rev 7 line 2,431 and the plan's dependency grammar, every contract block, workflows, gates, and handoff. Requests alone earn no coverage; each returned interval, both primary union gates, and the post-draft union must pass.
+- The control architecture is admissible under AGENTS, the protocol, and the goal: a short direct human-authorized bootstrap reaches only the sealed R10 control; startup permits at most exact action-only host narration; PID checks remain exact-PID scoped; identity output is content-silent; the entire candidate packet is assembled with its pre-write clock before final freeze; every source-attributed proposition in every field is post-draft rechecked; natural-language literal quotation claims are barred; any candidate change discards the closure and reruns the full post-draft phase; one structured Round patch and standalone terminal response are the only filing path.
+- Current partial identities before transition are Round 6,946 / 1,230,872 / `ad365627d03f10e4cc7c9b658b389529980db2ee3ea5551eca5437e1434723db`; Convergence 1,094 / 160,499 / `01451d2171df4f7f3c960e29de0eacd5f2a340f81eaf97132fda05072a10902b`; pre-result G7_STATE 6,020 / 1,227,961 / `571e4c3d0d20cb0b8030ac1e630254ae927969e3472d2c2260ba46386e4a0c21`. Only G7_STATE is dirty; index and untracked sets remain empty. No process was inspected or contacted.
+
+**G7 R10 sealed-control construction FSM state: `INGEST` (premises pass; DRAFT transition may be persisted).**
+
+## R10 sealed-control construction follow-up — DRAFT (`2026-07-15T21:03:38+02:00`)
+
+- Crash-safe transition is persisted before construction work: `INGEST -> DRAFT`.
+- DRAFT may append one owner construction receipt, one sealed R10 reviewer control with a unique physical-EOF anchor, and one minimum pre-bind Convergence record. The operational R10 row must remain byte-identical `PRECOMMITTED` throughout DRAFT, SELF-CHECK, and submission review.
+- R10 may advance to `BOUND-UNSENT` only after the sealed control passes fresh SELF-CHECK, independent SUBMIT-FOR-REVIEW, mandatory REVISE hardening, and the fresh dependent terminal gate. No bootstrap may be instantiated and no reviewer/process input or contact is authorized.
+
+**G7 R10 sealed-control construction FSM state: `DRAFT` (sealed candidate construction authorized; operational bind deferred).**
+
+### DRAFT partial-output receipt (`2026-07-15T21:07:29+02:00`)
+
+- The sealed candidate is on disk before SELF-CHECK begins. Current identities are Round 7,092 lines / 1,253,216 bytes / `168d7cf92bd637b0f4f5716c69dd7288bd1c1d856f3c86940476886fcd48bde7`; Convergence 1,102 / 161,695 / `dd7d565be693336508ed10b154318b6fa302d5f81a5e444a854a4b7332de9e72`; pre-receipt G7_STATE 6,041 / 1,232,736 / `e7a40977d8a7ab5dc7db8fd2103299455d526738ff634a8a1410bb3a7b1959b8`.
+- The R10 control heading through the unique physical-EOF anchor is Round lines 6,954-7,092, byte interval `[1,231,726,1,253,216)`: 139 lines / 21,490 bytes / `f3fa04beb9ecc69c84a56fe89c884f15db82bb63bb79c422f89bf26aa7248bcd`. Its separator-inclusive slice is lines 6,953-7,092: 140 / 21,491 / `05ae53fb526ee56c558870b65c2eb606b10d56db5237e3bf1d4d7fd2443cc028`.
+- The placeholder-only detached-bootstrap grammar is Round lines 6,963-6,985, byte interval `[1,232,788,1,234,838)`: 23 / 2,050 / `d19e68cc81b00987376e8c1f77317559eb22f3933a5f891a832821ac2e516f77`. It is a construction template only; no live payload was instantiated or sent.
+- The entire append after the fixed Round prefix is lines 6,947-7,092: 146 / 22,344 / `29fc38f7cbdc90ba9f7e07267410abeb6ea5709676f12e3846b7b38599326a36`. Prefix lines 1-6,946 remain 6,946 / 1,230,872 / `ad365627d03f10e4cc7c9b658b389529980db2ee3ea5551eca5437e1434723db`.
+- The R10 control heading, construction heading, and final literal anchor each occur once; the anchor is the physical final line. The protected R58 slices retain their recorded roots. R10 remains the one raw 114-byte `PRECOMMITTED` row with root `5470c4970ce3fa869c48fc1d6320e89220d3d31a7b4acc360c5db32dd08719d0`.
+- Pre-bind allocation remains 58 unique rows at 22 Sol / 36 Opus; 27 failed at 6/21; 31 active at 16/15; 18 valid filed at 9/9 with A=118/B=64/C=22; 13 active-unfiled at 7/6; no bound row. Convergence remains `NOT ESTABLISHED` and the candidate has no review or evidence credit.
+- Exactly the three authorized paths differ from fixed base; index and untracked sets are empty; the path-scoped whitespace check passes. No reviewer/process inspection, contact, activation, or external action occurred.
+
+**G7 R10 sealed-control construction FSM state: `DRAFT` (partial outputs sealed; SELF-CHECK transition pending).**
+
+## R10 sealed-control construction follow-up — SELF-CHECK (`2026-07-15T21:07:29+02:00`)
+
+- Crash-safe transition persisted before any self-check work: `DRAFT -> SELF-CHECK`.
+- SELF-CHECK authorizes a fresh disk replay of fixed control, exact diff scope, protected history, allocation, control/grammar structure, dependency-lens obligations, startup and process boundaries, coverage and post-draft verification, sole-write and terminal laws, format and clean-room guards, and the supplied no-contact reservation boundary.
+- R10 remains `PRECOMMITTED` during this state. No correction, operational bind, bootstrap instantiation, reviewer contact, or dispatch is authorized until the result is persisted and the mandatory submission and REVISE states have run.
+
+**G7 R10 sealed-control construction FSM state: `SELF-CHECK` (fresh gate authorized; R10 remains PRECOMMITTED).**
+
+### SELF-CHECK diagnostic failure 1 — structural script quoting
+
+- The first combined structural-check command receives zero credit. Its shell wrapper used double-quoted inline Python, so control-text backticks were interpreted as command substitutions before Python started; the program ended with a syntax error and produced no structural result.
+- The failed command changed no repository file. The unexpected command tokens produced only command-not-found messages and the patch utility's usage text; no patch input was supplied and no mutation occurred.
+- The corrected rerun must use a literal-safe single-quoted Python argument, rerun the entire structural check from disk, and stand on its own. No value from the failed attempt may contribute to SELF-CHECK.
+
+**G7 R10 sealed-control construction FSM state: `SELF-CHECK` (diagnostic failure 1 zero-credited; corrected full structural rerun required).**
+
+### SELF-CHECK diagnostic failure 2 — guard-scan wrapper
+
+- The first added-content guard scan receives zero credit. A fence-token pattern prematurely ended the orchestration string, so no repository command ran and no scan result exists.
+- The wrapper failure changed no file and contacted no process or external service. The corrected scan must avoid literal fence delimiters in its wrapper, rerun all intended classes from disk, and use none of this failed attempt.
+
+**G7 R10 sealed-control construction FSM state: `SELF-CHECK` (diagnostic failure 2 zero-credited; corrected guard scan required).**
+
+### SELF-CHECK credited result (`2026-07-15T21:11:32+02:00`)
+
+- Corrected structural replay passes from disk. Round remains 7,092 / 1,253,216 / `168d7cf92bd637b0f4f5716c69dd7288bd1c1d856f3c86940476886fcd48bde7`; Convergence remains 1,102 / 161,695 / `dd7d565be693336508ed10b154318b6fa302d5f81a5e444a854a4b7332de9e72`; pre-result G7_STATE is 6,076 / 1,237,428 / `e16d51a4312bba1591af66ee68cc3efeb056310c814ced508be6542f4c466b65`.
+- Fixed control passes: branch `main`; HEAD == `origin/main` == `1d00bb8e0347ca37a79244a693f9f1791a5a1f81`; fixed-base ancestry holds. Exactly the three authorized paths differ; index and untracked sets are empty. The full pre-result diff was read as 256 lines / 39,020 bytes / `b7f1896bc475cfef9a754eb1094dd37f859bff81dc7f55f898934c2eab127bfa`; the path-scoped whitespace check passes.
+- The fixed Round prefix remains 6,946 / 1,230,872 / `ad365627d03f10e4cc7c9b658b389529980db2ee3ea5551eca5437e1434723db`. Protected R58 control, packet, and separator-inclusive packet reproduce at 137 / 20,392 / `2965cdcafbfc578d9915d148bea67ea8919fdc49eed423c77e94b21a6151b686`; 28 / 9,512 / `34315629dfaeb7a55fe12b52908711e212be84fbc050186311df000d5c2ce64b`; and 29 / 9,513 / `f8769203156e39824a8153737d614556b46ce920cea3882165bd5fc4aa1e7b47`.
+- R10 control lines 6,954-7,092 remain 139 / 21,490 / `f3fa04beb9ecc69c84a56fe89c884f15db82bb63bb79c422f89bf26aa7248bcd` at byte interval `[1,231,726,1,253,216)`; its separator-inclusive root is `05ae53fb526ee56c558870b65c2eb606b10d56db5237e3bf1d4d7fd2443cc028`. Grammar lines 6,963-6,985 remain 23 / 2,050 / `d19e68cc81b00987376e8c1f77317559eb22f3933a5f891a832821ac2e516f77` at `[1,232,788,1,234,838)`. Both headings and the physical-EOF anchor are individually unique.
+- The prescribed map contains exactly 34 individually represented windows. Its deterministic unions reproduce Goal 44 lines, Charter 144, Work Order 39, Reasoning 46, Rev 7 4,585 including line 2,431, and the submitted plan [1,3655]. All ranges are within current source bounds. The distinct same-map post-draft phase, both primary union gates, all-field coordinate subset law, checked-paraphrase law, quotation/backtick boundary, full-restart-on-candidate-change law, and no-recovery-on-read-failure law are explicit.
+- Startup ordering, narrow action-only narration, exact child/parent PID scoping, fixed-identity output whitelist, model/effort/live/tier identity, blind input boundary, sole `dependency soundness` lens, canonical prerequisite orientation, separately typed target/transition/external ledgers, graph tests, pre-write clock before final freeze, packet schema/grades, one structured patch, preserved anchor, no later tool, and exact standalone terminal response all pass adversarial premise checks.
+- Allocation independently returns 58 unique rows at 22 Sol / 36 Opus; 27 failed at 6/21; 31 active at 16/15; 18 valid filed at 9/9 with A=118/B=64/C=22; 13 active-unfiled at 7/6; and no bound row. R10 remains the fixed 114-byte `PRECOMMITTED` row with root `5470c4970ce3fa869c48fc1d6320e89220d3d31a7b4acc360c5db32dd08719d0`; the submitted plan root remains `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`.
+- Encoding, terminal newline, carriage-return, merge-marker, whitespace, owner-claim, local-source, external-location, implementation-content, task-inventory, normative-card-content, no-action, and scope classifiers pass. Added owner prose is evidence-boundary and control language only. No process, pane, reviewer, owner, or external service was inspected or contacted.
+- SELF-CHECK diagnostic failures 1 and 2 remain zero credit. Their corrected reruns stand independently; neither failed output contributes. No content defect is found in the sealed candidate, but mandatory submission review and REVISE hardening remain required before bind.
+
+**G7 R10 sealed-control construction FSM state: `SELF-CHECK` (fresh gate passed; R10 remains PRECOMMITTED).**
+
+## R10 sealed-control construction follow-up — SUBMIT-FOR-REVIEW (`2026-07-15T21:11:32+02:00`)
+
+- Crash-safe transition persisted before independent submission review: `SELF-CHECK -> SUBMIT-FOR-REVIEW`.
+- This owner-local review must reread the full bounded diff and adversarially challenge startup chronology, bootstrap directness, identity-output silence, PID scope, 34-window coverage, dependency-graph typing, post-draft coordinate and paraphrase closure, candidate-freeze timing, sole-lens/no-action boundaries, packet schema, sole patch, exact terminal response, protected history, and allocation truth.
+- Any defect found here must be persisted before correction. R10 remains `PRECOMMITTED`; no bind, activation, reviewer contact, or dispatch is authorized in this state.
+
+**G7 R10 sealed-control construction FSM state: `SUBMIT-FOR-REVIEW` (adversarial review authorized; R10 remains PRECOMMITTED).**
+
+### SUBMIT-FOR-REVIEW diagnostic failure 1 — capped full-diff read
+
+- The first submission-review diff read receives zero credit because the tool capped its output before EOF. Partial visibility cannot establish a full-diff review.
+- The read changed no file and is not used for any submission conclusion. The corrected review must sample the updated diff identity and read it from line 1 through EOF in explicit non-overlapping bounded slices.
+
+**G7 R10 sealed-control construction FSM state: `SUBMIT-FOR-REVIEW` (capped read zero-credited; bounded full-diff replay required).**
+
+### SUBMIT-FOR-REVIEW diagnostic failure 2 — combined slice cap
+
+- The first bounded replay also receives zero credit: three requested slices were combined into one tool result, and that aggregate result was capped. The slice requests do not prove that every returned line reached the reviewer context.
+- No file changed. The next rerun must resample the now-updated diff identity and issue smaller non-overlapping ranges as separate tool results, one range per call, through exact EOF.
+
+**G7 R10 sealed-control construction FSM state: `SUBMIT-FOR-REVIEW` (combined replay zero-credited; separate bounded reads required).**
+
+### SUBMIT-FOR-REVIEW credited result (`2026-07-15T21:13:19+02:00`)
+
+- The updated pre-result diff reproduces as 292 lines / 45,109 bytes / `c72b766cfca85ad1bd56b3e21f31ed47bf236c65e5c2f86bb0abfeb32204d533`. It was read through exact EOF in six separate non-overlapping results: lines 1-50, 51-100, 101-150, 151-200, 201-250, and 251-292. Neither prior capped attempt contributes.
+- Pre-result identities are Round 7,092 / 1,253,216 / `168d7cf92bd637b0f4f5716c69dd7288bd1c1d856f3c86940476886fcd48bde7`; Convergence 1,102 / 161,695 / `dd7d565be693336508ed10b154318b6fa302d5f81a5e444a854a4b7332de9e72`; G7_STATE 6,112 / 1,243,480 / `1a15897718971395934c506bb3b4c14fc650a90d913e1351d6fdd93d483175a3`.
+- Independent review confirms the fixed roots, three-path scope, protected history, map/unions, dependency-graph typing, PID/output boundaries, candidate clock/freeze order, all-field post-draft closure, one-lens/no-action law, packet schema, sole structured patch, exact terminal response, allocation arithmetic, and no-contact boundary.
+- One control defect is found. The optional startup-narration rule requires every action-only sentence to be disclosed verbatim in the candidate, while the candidate integrity rule categorically bars natural-language literal quotation claims. Host-required narration can therefore make two sealed requirements conflict even when its content stays procedural.
+- The narrow repair is to require the candidate to disclose narration presence/absence, sentence count, and boundary result without reproducing narration prose; transcript qualification remains responsible for comparing the actual event text. The final method-disclosure list must use the same narrowed formulation. No other control, construction, Convergence, allocation, or protected-history content needs correction.
+- Submission diagnostic failures 1 and 2 remain zero credit. No correction has yet occurred; R10 remains the fixed `PRECOMMITTED` row and no bootstrap or process contact exists.
+
+**G7 R10 sealed-control construction FSM state: `SUBMIT-FOR-REVIEW` (one bounded control defect found; correction sequenced behind REVISE).**
+
+## R10 sealed-control construction follow-up — REVISE (`2026-07-15T21:13:19+02:00`)
+
+- Mandatory crash-safe transition persisted before correction: `SUBMIT-FOR-REVIEW -> REVISE`.
+- REVISE is authorized to narrow exactly the two startup-narration disclosure clauses identified above, then rerun every dependent structural, coverage, semantic, format, scope, allocation, and protected-history gate fresh from disk.
+- After the corrected control passes the fresh gate, REVISE may update the sole R10 allocation row to `BOUND-UNSENT` and append the minimum final Convergence bind record. It may not change any reviewer packet, historical control, canon, plan, root ledger, other row, process, or path outside the three authorized files.
+
+**G7 R10 sealed-control construction FSM state: `REVISE` (bounded narration-disclosure repair authorized; R10 still PRECOMMITTED).**
+
+### REVISE terminal-gate failure — unauthorized untracked path
+
+- The fresh post-correction scope gate fails and receives zero terminal credit. Repository status now reports an untracked path named `dependent` in addition to the three authorized modified paths; index remains empty.
+- The cause is the earlier SELF-CHECK diagnostic failure 1: double-quoted inline control text exposed the token sequence `prerequisite -> dependent` to the shell, and the redirection target created the untracked path before Python began. The earlier statement that this failed command changed no repository file is superseded and incorrect.
+- G7 has not read, edited, staged, or deleted the unauthorized path. Deletion is forbidden without explicit human permission, and the task's writable scope excludes it. No output from the failed scope gate contributes to construction credit.
+- Current authorized-path identities are Round 7,092 / 1,253,442 / `fdb862e862cf80fbb73a9c3b8c76905592e751f73e945d6abdcbd463792cd0c3`; Convergence 1,102 / 161,695 / `dd7d565be693336508ed10b154318b6fa302d5f81a5e444a854a4b7332de9e72`; pre-failure-record G7_STATE 6,131 / 1,246,488 / `518bb4bb5e30698ecc4205642b5de62db9426e8d6b02167400fff3d1e23827da`.
+- The narration-disclosure repair itself passes its structural replay and yields corrected R10 control root `6d854a3bd9748714c2d6a6aded4d5c2be2ac0648fee87dcf9c8b460c33f3edf4`, but no bind is permitted while scope is invalid. R10 remains the fixed `PRECOMMITTED` row; Convergence remains at its pre-bind checkpoint; no bootstrap was instantiated and no process was contacted.
+- Clearing the blocker requires new authority to delete the accidentally created untracked path, followed by a wholly fresh dependent terminal gate from disk. G7 will not infer that authority from the construction objective.
+
+**G7 R10 sealed-control construction FSM state: `REVISE` (scope blocker persisted; R10 PRECOMMITTED; explicit deletion authority required).**
+
+## R10 replacement-owner reconstruction — INGEST (`2026-07-15T21:21:01+02:00`)
+
+- A fresh replacement-owner FSM starts at `INGEST`. The prior process's `REVISE` is preserved only as historical failed state; no prior R10 construction result, diagnostic output, correction, or gate receives replacement-owner credit until independently reproduced from disk.
+- Supplied starting identities are quarantined as untrusted premises: fixed base `1d00bb8e0347ca37a79244a693f9f1791a5a1f81`; Round 7,092 lines / 1,253,442 bytes / `fdb862e862cf80fbb73a9c3b8c76905592e751f73e945d6abdcbd463792cd0c3`; Convergence 1,102 / 161,695 / `dd7d565be693336508ed10b154318b6fa302d5f81a5e444a854a4b7332de9e72`; pre-transition G7_STATE 6,142 / 1,248,449 / `b9ca84a82f5d2ff029780cc5f60fc320a1af260d00badbff08e0d12bccb56341`; submitted plan 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`. Supplied scope says exactly the three authorized paths are modified, with empty index and untracked sets; all require independent replay.
+- Required orientation was read through EOF: `AGENTS.md`; `OVERNIGHT_GOAL.md`; the 743-line running-the-gauntlet skill; `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md`; the shared and G7-specific owner marching orders; `INDEX.md`; the Charter; the Work Order; the Audit Findings Ledger; the precommitted allocation; and the current R10 suffix. The unavailable inputs recorded by `INDEX.md` do not affect this control task and were neither reconstructed nor used.
+- Writable scope is exactly `gauntlet/ROUND_LOG.md`, `gauntlet/CONVERGENCE_REPORT.md`, and `ledger/owners/G7_STATE.md`, with mutations only through structured patch application. Canon, plan, root ledger, reviewer state, every process, and every other path are read-only and no-contact.
+- The supplied redirect-creation chronology and root's later quarantine handling are history to reproduce only from authorized campaign files plus the human instruction. The quarantined local-control inode will not be read, cited, edited, moved, deleted, or used as evidence.
+- INGEST must independently read the entire updated three-path fixed-base diff in bounded non-overlapping results and reproduce fixed base, clean scope, protected R58 history, the current R10 row/candidate/control/grammar coordinates and roots, allocation arithmetic, and the failure chronology. No candidate adoption decision, correction, bind, bootstrap instantiation, reviewer contact, dispatch, staging, commit, push, or process inspection is authorized in INGEST.
+
+**G7 R10 replacement-owner FSM state: `INGEST` (fresh state persisted; all supplied R10 construction claims remain untrusted pending independent replay).**
+
+### INGEST diagnostic failure 1 — forbidden input-redirection token (`2026-07-15T21:23:44+02:00`)
+
+- A combined format probe used a shell input-redirection token while counting carriage returns. The token was read-only and the command created or changed no path, but the human forbade shell redirection without exception. The entire combined probe receives zero INGEST credit, including subchecks that printed plausible results.
+- Repository status sampled before the failed probe showed only the three authorized modified paths, with empty index and untracked sets. That earlier result is not evidence that the forbidden command was harmless; scope, diff, newline, carriage-return, and whitespace checks must all rerun independently from disk without redirection.
+- The failure receipt is the only mutation caused by handling this diagnostic. Because it changes the owner checkpoint, the earlier 333-line full-diff read is now historical and cannot close INGEST; the updated three-path diff must be resampled and reread through exact EOF in fresh bounded non-overlapping results.
+- The initial replacement checkpoint also uses the claim-sensitive word `complete` for orientation. DRAFT must narrow that phrase to the directly observed through-EOF reading statement before SELF-CHECK; no silent correction is permitted in INGEST.
+
+**G7 R10 replacement-owner FSM state: `INGEST` (diagnostic failure 1 zero-credited; redirection-free reruns and updated full-diff replay required).**
