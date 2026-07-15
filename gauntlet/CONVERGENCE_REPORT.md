@@ -812,3 +812,27 @@ Fresh R51 replaces R16 one-for-one without enlarging planned coverage. It preser
 Filed evidence remains 17 valid rounds at 9 Sol / 8 Opus with A=118/B=64/C=22. Immutable allocation is now 51 rows at 22 Sol / 29 Opus; 19 failed IDs leave 32 active planned slots at 16/16. Fifteen active-unfiled slots consist of sole bound R51 plus 14 unbound.
 
 R51 adds no five-pass-B point before a valid filing. Existing valid five-pass-B points remain R14 A+B=15 and R15 A+B=21, both non-marginal. R50 owner disposition remains pending and unpromoted; concurrent G3 work is neither read nor inferred. C1 and overall convergence remain **NOT ESTABLISHED**.
+
+## R51 chain-qualified filing and G1 premise-first route correction — `2026-07-15T12:34:55+02:00`
+
+This append supersedes only the prior R51 bound-unsent wording immediately above. It preserves every prior report and reviewer byte and changes no reviewer grade, finding body, loss guard, artifact verdict, owner disposition, or substantive conclusion. It is authored by the replacement G7 owner (exact `claude-opus-4-8` / `xhigh`) after the usage-capped Sol predecessor made no G7 write.
+
+### R51 filing and qualification
+
+R51 filed one immutable 28-line packet under the sole `oversimplification-and-feature-loss` lens (PDF-normative-fact loss focus) for Constitution five-pass-B position 3/5, as the one-for-one replacement for zero-credit R16. Independently reproduced identity, schema, one-lens chain, full declared-authority and full four-artifact coverage, blind sole-append boundary, and clean termination qualify the filing as `FILED · CHAIN-QUALIFIED · TERMINATED`; qualification establishes the truth of no allegation and promotes no grade. The packet records A=0, B=0, C=0 and marginal-only YES. Five method variances (generic structured Edit vs `apply_patch`; non-recompute of the self-referential sealed control root; read-only post-start-law Bash; the FIX_APPLICATION 1–406 end-of-file display coordinate; the two-file constitution wildcard) were premise-tested and disclosed; none is disqualifying and none changed a reviewer grade.
+
+### R16 zero-credit and G1 route
+
+Immutable R16 remains `NOT-RUN · METHOD-CONTROL-SEQUENCING-VIOLATION · TERMINATED` with zero evidence, coverage, curve point, verdict, route, disposition, or conclusion, and is never reused. R51 carries zero findings; it routes to root for independent G1 premise-first disposition before R17, which is gated behind that disposition. The one reviewer-disclosed out-of-scope candidate (§34.4 versus §34.9 dependency-binding asymmetry) is handed to G1 as informational only, not a finding. G7 has not accepted, narrowed, rejected, regraded, repaired, or contacted G1.
+
+### Evidence, allocation, and convergence
+
+Valid filed evidence is now 18 rounds at 9 Sol / 9 Opus with aggregate A=118/B=64/C=22 — unchanged grade totals, because R51 is A0/B0/C0. Immutable allocation remains 51 rows at 22 Sol / 29 Opus; 19 failed IDs leave 32 active planned slots at 16/16. Fourteen active-unfiled slots remain, all unbound; no round is bound-unsent.
+
+The Constitution five-pass-B A+B sequence now has three valid points: R14=15 -> R15=21 -> R51=0. R14 and R15 are non-marginal; R51 is the first marginal-only pass in the block. A single marginal point with a non-marginal predecessor is not a consecutive-marginal condition, so it neither establishes convergence nor triggers reallocation. R17 (pass 4/5) and R18 (pass 5/5) remain pending; owner revision/disposition is required before R17. R50's 24 C1 allegations remain routed to G3, pending and unpromoted. C1 and overall convergence remain **NOT ESTABLISHED**.
+
+## R51 timestamp-field supersession — `2026-07-15T12:52:44+02:00`
+
+This append supersedes only the preceding R51 paragraph's five-variance count and any reliance on the packet's authored start/file times. The control-heading time `11:42:54+02:00` is not activation receipt; transcript activation is `11:50:35.675+02:00`. The pre-write clock sample `12:05:37+02:00` is not filing; the successful structured Edit is bounded to `12:08:38.262+02:00` through `12:08:38.386+02:00`, followed by exact terminal text at `12:08:40.150+02:00` and no later reviewer tool.
+
+The immutable packet, A=0/B=0/C=0, marginal-only YES, six attached method/metadata variances, allocation arithmetic, G1 premise-first route, and `FILED · CHAIN-QUALIFIED · TERMINATED` classification remain unchanged. The correction supplies no new curve point and promotes no grade. The Constitution sequence remains R14=15 non-marginal -> R15=21 non-marginal -> R51=0 marginal-only; convergence remains **NOT ESTABLISHED**.
