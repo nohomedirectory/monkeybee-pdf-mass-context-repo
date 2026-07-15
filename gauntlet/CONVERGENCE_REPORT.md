@@ -898,3 +898,31 @@ This append supersedes only the two provisional R52 control roots immediately ab
 No process, artifact, authority, lens, route, schema, grade, write boundary, termination law, allocation count, or convergence conclusion changed. The corrected R52 control is heading-to-EOF `[1003884,1014945)`, 96 lines / 11,061 bytes / `58ef7ce7367765954c4f4c765fdf27aad6e943bdd70f851f666062ee9cd98a93`; separator-inclusive `[1003883,1014945)` is 97 / 11,062 / `e1043024009b097d2a1b4d641f5223d51a0a0b0e84459e9335d73a6d4fc6c2a7`. The anchor remains unique at actual EOF.
 
 The earlier 10,659/10,660-byte roots remain historical pre-correction DRAFT seals and carry no terminal control status. Post-correction R52 reattestation still reproduces the exact untouched session, pane, PIDs, cwd, command, Opus 4.8/xhigh TUI, default placeholder, and no task history. Nothing was sent; R52 remains sole `BOUND-UNSENT`; convergence remains **NOT ESTABLISHED**.
+
+## R52 zero-credit method-control termination — `2026-07-15T14:07:56+02:00`
+
+This append supersedes only the R52 bound-unsent activation wording immediately above. Every reviewer packet/control byte, reviewer grade, finding body, loss guard, curve point, owner disposition, and substantive conclusion remains unchanged.
+
+R52 is immutable `NOT-RUN · METHOD-CONTROL-SEQUENCING-VIOLATION · TERMINATED`. At the exact Opus 4.8/xhigh dispatch roots, three Bash identity/existence/hash tools preceded mandatory Tool 1 full `AGENTS.md` and Tool 2 full reviewer protocol. Root interrupted before analysis or write. The stable transcript contains three tool uses and three results, two empty file-history snapshots, zero repository write, and no valid packet. Root calls the calls parallel; transcript timestamps serialize them. That wording variance changes no evidence boundary.
+
+R52 contributes no finding, grade, authority/artifact coverage, marginal result, verdict, route, curve point, owner disposition, cross-model credit, or convergence evidence. Its session, pane, shell, and child are absent; host zombies are zero. The unchanged historical control remains 11,061 bytes / `58ef7ce7367765954c4f4c765fdf27aad6e943bdd70f851f666062ee9cd98a93` through its literal anchor.
+
+Before replacement allocation, the ledger has 52 rows at 22 Sol / 30 Opus; 21 failed at 6/15; 31 active at 16/15; 18 filed at 9/9 with A=118/B=64/C=22; 13 active-unfiled at 7/6; and zero bound. R52 adds no point. The C1 five-pass-A and Constitution sequences are unchanged, so convergence remains **NOT ESTABLISHED**.
+
+## R53 one-for-one allocation-only state — `2026-07-15T14:09:10+02:00`
+
+This append restores the original planned-slot balance without treating failed R52 or R09 as another planned slot. R53 is one fresh Opus row for the same C1 delta plan, sole `obscure-section self-containment` lens, exact `claude-opus-4-8` / `xhigh`, G3 premise-first route, and plan `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`.
+
+R53 is only `ALLOCATED · UNSENT` at this checkpoint. No control exists, no task was sent, and no finding, grade, coverage, marginal result, verdict, route, owner disposition, cross-model credit, or curve point is added. R10 remains untouched `PRECOMMITTED`.
+
+Allocation is 53 unique rows at 22 Sol / 31 Opus; 21 failed at 6/15; 32 active at 16/16; 18 filed at 9/9 with A=118/B=64/C=22; and 14 active-unfiled at 7/7. No round is bound-unsent yet. Prior C1 and Constitution sequences are unchanged, so convergence remains **NOT ESTABLISHED**.
+
+## R53 sealed minimal-bootstrap `BOUND-UNSENT` state — `2026-07-15T14:10:26+02:00`
+
+This append supersedes only the R53 allocation-only/no-bound wording immediately above. The construction patch advanced R53 alone from `ALLOCATED · UNSENT` to `BOUND-UNSENT` and placed one self-contained control at actual Round EOF. R10 remains untouched `PRECOMMITTED`.
+
+R53 binds only the committed C1 delta plan 3,655 lines / 531,012 bytes / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`, sole `obscure-section self-containment` lens, exact `claude-opus-4-8` / `xhigh`, G3 premise-first route, and reserved session `monkeybee-pdf-mass-context-repo--r53`, pane `%150` index 1, shell 2605148, child 2605396, exact lowercase cwd. Pre-construction live census and direct inspection reproduced every coordinate, the Opus 4.8/xhigh welcome TUI, default placeholder, and no task history.
+
+The control replaces the failed long embedded-control activation architecture with a short direct bootstrap. Root later supplies only exact commit/Round/control identities, exact line/byte bounds, and mandatory Tool 1 full `AGENTS.md`, Tool 2 full protocol, Tool 3 sealed-control-only read. The bootstrap expressly identifies itself as the direct human-authorized task. Prior Round semantics cannot be returned through the bounded Tool 3 read. No live payload is constructed or sent here.
+
+Allocation remains 53 unique rows at 22 Sol / 31 Opus; 21 failed at 6/15; 32 active at 16/16; 18 filed at 9/9 with A=118/B=64/C=22; and 14 active-unfiled at 7/7. R53 is the sole bound-unsent row and supplies no finding, grade, coverage, marginal result, verdict, route, owner disposition, cross-model credit, or curve point before filing. The earlier sequences remain unchanged; convergence remains **NOT ESTABLISHED**.
