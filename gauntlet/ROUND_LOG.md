@@ -87,7 +87,7 @@ Hash, status, counts, and disposition are slots. They are filled only from filed
 | R03 | C1 delta plan | clean-room contamination | Opus | — | `fc0a2cdc97590310982d13d1fb1cb4c5db10b30b58a7de2267ffe8ee15fd2234` | FILED · VALIDATED · TERMINATED | 1 | 1 | 1 | NO | ROUTED → G3 (premise-first; A01/B01/C01 grades preserved and unpromoted). Process-provenance correction and bounded admissibility recorded below. |
 | R04 | C1 delta plan | oversimplification-and-feature-loss | Sol (fast) | 5-pass A (1/5) | `41a89dd9d9ed788cb8657e69a2984d993cb244fa6e3d282a50060aab6557faae` | FILED · VALIDATED · TERMINATED | 11 | 5 | 1 | NO | ROUTED → G3 through root (premise-first; grades and loss guards unpromoted). R05 blocked pending a new G3 `SUBMIT-FOR-REVIEW` hash. |
 | R05 | C1 delta plan | oversimplification-and-feature-loss | `claude-opus-4-8`, effort `xhigh` | 5-pass A (2/5) | `dffc35aad993d60476ee548ceab32701303cc2edb7fb4fd5d7c32f3d901be8ec` | FILED · VALIDATED · TERMINATED | 12 | 20 | 9 | NO | ROUTED → G3 through root (premise-first; all 41 grades and loss guards preserved and unpromoted). Timestamp and terminal-marker variances recorded below; R06 blocked pending G3 revision and a new submitted hash. |
-| R06 | C1 delta plan | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | 5-pass A (3/5) | `e0cb3ea2947604447444558f40dae5e57fd61edd53c47ed46e787266faf3501b` | BOUND-UNSENT | — | — | — | — | Bound to the pushed G3 plan at `fb3ab420`; no task sent and zero findings, grades, coverage, or conclusion before a valid filing. |
+| R06 | C1 delta plan | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | 5-pass A (3/5) | `e0cb3ea2947604447444558f40dae5e57fd61edd53c47ed46e787266faf3501b` | NOT-RUN · METHOD-VIOLATION · TERMINATED | — | — | — | — | First and second tools were unlisted skill reads before AGENTS or reviewer protocol; root interrupted before any authorized read or write. No packet, findings, grades, coverage, or conclusion; process and session absent; immutable ID not reused. |
 | R07 | C1 delta plan | oversimplification-and-feature-loss | Opus | 5-pass A (4/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R08 | C1 delta plan | oversimplification-and-feature-loss | Sol | 5-pass A (5/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R09 | C1 delta plan | obscure-section self-containment | Opus | — | PENDING | PRECOMMITTED | — | — | — | — | — |
@@ -189,6 +189,14 @@ R38 replaces immutable failed round R37 under the standing new-ID law. It preser
 | Round | Artifact | Declared lens (exactly one) | Model | Precondition to admit | Artifact hash | Status | A | B | C | Marginal-only | Owner disposition |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | R38 | Traceability + cycle briefs (R37 replacement) | dependency soundness | `claude-opus-4-8`, effort `xhigh` | R37 closed `NOT-RUN · METHOD-VIOLATION · TERMINATED`; unchanged seven-file manifest; G4 checkpoint declares `SUBMIT-FOR-REVIEW` | `22749762089e2a68b9897a09031b19fbdff6aa1108e2fd8071b7743d0df602c6` | FILED · VALIDATED · TERMINATED | 1 | 0 | 1 | NO | ROUTED → G4 through root: premise-test R38-A01 and, only if accepted, apply its bounded row/tally repair; premise-test R38-C01 as a judgment-level cross-cycle dependency note. Grades and loss guards are preserved; no G4 disposition exists yet. |
+
+### Failed-round replacement allocation R39
+
+R39 is the sole replacement for immutable failed round R06 under the standing new-ID law. It preserves the original R06 C1 delta-plan artifact, sole `oversimplification-and-feature-loss` lens, Sol family, `5-pass A (3/5)` position, G3 owner route, and pushed artifact identity. It adds no planned lens, review pass, filed evidence, or coverage. `ALLOCATED · UNSENT` reserves allocation identity only: no process is bound and no task, authority, artifact, finding body, recovery context, or Round Log write anchor is delivered by this transition.
+
+| Round | Artifact | Declared lens (exactly one) | Model | Precondition to admit | Artifact hash | Status | A | B | C | Marginal-only | Owner disposition |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| R39 | C1 delta plan (R06 replacement) | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | R06 closed `NOT-RUN · METHOD-VIOLATION · TERMINATED`; pushed G3 plan and checkpoint declare `SUBMIT-FOR-REVIEW`; original pass 3/5 payload unchanged | `e0cb3ea2947604447444558f40dae5e57fd61edd53c47ed46e787266faf3501b` | BOUND-UNSENT | — | — | — | — | Bound only to the untouched R39 identity below; one-for-one R06 replacement with zero findings, grades, coverage, or conclusion; no task sent. |
 
 ### R31 — notes on admission and reading
 
@@ -3422,3 +3430,122 @@ Each finding heading must be monotonic `R06-A01`, `R06-B01`, or `R06-C01` within
 **Accounting and route boundary.** R06 remains zero findings, zero grades, zero coverage, and no conclusion while bound-unsent. Filed totals remain 14 rounds at A=94/B=56/C=19 and 7 Sol / 7 Opus. No eventual allegation routes anywhere until a valid packet terminates and G7 mechanically integrates it. G7 does not review, predict, repair, or pre-empt a finding.
 
 **R06 BOUND-UNSENT EOF write law.** Owner FSM remains `DRAFT`. R06 is the sole `BOUND-UNSENT` row; every prior reviewer packet and G7 closure is sealed; no other round is allocated or bound. **No task has been sent to R06. Root may commit and push this control group; only after the pushed control and unchanged artifact/process identities are revalidated may root dispatch R06.**
+
+## R06 failure closure — `2026-07-15T02:30:21+02:00`
+
+**Immutable terminal classification.** R06 is closed `NOT-RUN · METHOD-VIOLATION · TERMINATED`. Its original C1 delta-plan payload, sole `oversimplification-and-feature-loss` lens, Sol family, `5-pass A (3/5)` position, G3 route, and pushed artifact SHA-256 `e0cb3ea2947604447444558f40dae5e57fd61edd53c47ed46e787266faf3501b` remain immutable. R06 is not reused.
+
+**Exact method boundary.** The committed assignment required a full read of `AGENTS.md` and then a full read of `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` before any other action. Instead, R06's first tool read `/home/joseph/.codex/skills/ntm/SKILL.md`, and its second tool read `/home/joseph/.codex/skills/vibing-with-ntm/SKILL.md`; neither access was listed in the declared authority or permitted schedule. Root interrupted before any AGENTS, reviewer-protocol, canon, artifact, G3-state, or Round-Log read and before any repository write.
+
+**Quarantined transcript control.** `/home/joseph/.codex/sessions/2026/07/14/rollout-2026-07-14T18-23-41-019f6170-f709-75a3-a350-770fae19479b.jsonl` is 26 lines / 175,450 bytes / SHA-256 `610403d603bd98fac2a3964c468b13d43fa4c60a1184b752c58ba009e348353f`. Mechanical event parsing finds exactly those two tool calls in that order, zero authorized reads, zero write markers, and an `interrupted` turn at `2026-07-15T00:21:05.932Z`. No message body, reasoning, unfiled thought, task-local result, or finding is admitted or reconstructed.
+
+**Zero-credit closure.** R06 filed no reviewer packet, finding, grade, marginal flag, verdict, lens coverage, owner route, or convergence conclusion. The allocation row's A, B, C, and marginal-only slots remain em dashes. This failure adds no filed round and changes no evidence or curve arithmetic.
+
+**Process and repository boundary.** Pane shell 3262063, reviewer child 3262280, monitor 3262166, pane `%88`, and session `monkeybee-pdf-mass-context-repo--r06` are absent; host zombies were zero at closure. The Round Log remained byte-identical to the pushed pre-event identity of 3,424 lines / 654,923 bytes / SHA-256 `cff90bfdcebfa7457601b1c22d7a609c7e1a499307b64a1424383989ff5c7f03` until this owner append. In the pushed bytes the prior R06 assignment/control occupied `[645177,654923)`; after the unique allocation-row expansion it freshly relocates to `[645322,655068)`, still 45 lines / 9,746 bytes / SHA-256 `a6de26d4c806885b187587637f68a2e953d118076ab8045a9a3b1961265b6734`. This closure follows its unique true-EOF paragraph and changes no earlier reviewer or control byte except the unique allocation-row status/disposition authorized above.
+
+**Replacement boundary.** Any replacement must take a fresh round ID while preserving the failed slot rather than enlarging planned coverage. No replacement is allocated, bound, or dispatched by this closure.
+
+## R39 replacement assignment/control — `2026-07-15T02:32:20+02:00`
+
+**R39 is a stateless reviewer. It is not root, G7, an orchestrator, controller, owner, or operator. It must not bind, finalize, dispatch, monitor, tend, coordinate, contact another process, or load any skill. Session and process coordinates in this control are immutable identity evidence only; they authorize no operation.**
+
+**Control provenance and dispatch gate.** Generated by the G7 gauntlet/convergence owner from authorized recovery base `9360d874121c5ae39a345167b57787810e30e8b6`, the committed G3 submission, the quarantined R06 failure boundary, and direct read-only R39 checks. Status remains `DRAFT`; evidence status remains `provisional-pending-substrate`; overarching owner FSM remains `DRAFT`. During ingest, `HEAD` and `origin/main` advanced together to `31f7959f4b1ac4dee7ad46a2ee2a83d7a3bc0c50` through four concurrent G4-owned paths; the G7-owned baseline, G3 plan, and G3 checkpoint are byte-identical across that advance. This control is not yet pushed. Root may dispatch only after a later commit containing this exact control is pushed and its commit ID, artifact identity, authority identities, process identity, model, effort, mode, tier, freshness, and EOF anchor are revalidated and supplied literally. R39 performs no commit, push, bind, dispatch, or process check.
+
+**One-artifact binding and excluded checkpoint.** R39 binds only `9360d874:plans/CYCLE_1_DELTA_PLAN.md`: 3,542 lines / 479,366 bytes / SHA-256 `e0cb3ea2947604447444558f40dae5e57fd61edd53c47ed46e787266faf3501b`, with plan `owner-fsm: SUBMIT-FOR-REVIEW`. The excluded owner checkpoint `9360d874:ledger/owners/G3_STATE.md` is 978 / 171,616 / `041a6ba46050ee60a8a093f82993575f17a50cedfa36b477786d337aa0d07311`, declares `SUBMIT-FOR-REVIEW`, and named R06 eligible but unbound/unrouted before the failed bind. R39 must not open that checkpoint or substitute any live dirty artifact.
+
+**Immutable slot and sole lens.** This is the one-for-one replacement for original R06: C1 delta plan, Sol family, `5-pass A (3/5)`, G3 owner route, and exactly one lens, `oversimplification-and-feature-loss`. Apply that lens only to locally evidenced feature loss, collapsed distinctions, silent simplification, missing fallback or partial-outcome paths, lost evidence interfaces, and plan self-containment. Do not import, reconstruct, confirm, reject, search for, or use any prior finding, packet, disposition, convergence statement, owner decision, or recovery event as an allegation or lead. Adjacent lenses are out of scope.
+
+**Bound identity, not an operation.** The only admissible reviewer identity is session `monkeybee-pdf-mass-context-repo--r39`, pane `%131`, pane shell PID 689369, reviewer child PID 689595, monitor PID 689471, and exact cwd `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`. Root's direct pre-bind checks found `pane_dead=0`, exact `gpt-5.6-sol`, reasoning effort `ultra`, live `fast`, priority service, and the untouched default placeholder after the recorded default-then-priority pre-bind toggle. No task, authority, artifact, prior conversation, recovery context, finding, or write anchor had been delivered. R39 may carry these coordinates as task-bound provenance but must not inspect, signal, manage, or invoke them.
+
+**Automatic first/second-tool law.** R39's first tool call must be one read-only shell call whose exact command is `cat AGENTS.md`. Its second tool call must be one read-only shell call whose exact command is `cat ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md`. Any other first tool, any other second tool, any skill read or activation, any bundled command, or any tool call between those two is an automatic method violation: stop analysis, perform no artifact or Round Log access, write nothing, and await root interruption. Commentary before either tool does not change their required order.
+
+**Bounded authority chain.** After the mandatory first two full reads, only these committed source selections may be opened, in the order and chunks scheduled below; all other lines and files are forbidden. Identities retain each selected source newline.
+
+1. `AGENTS.md` — full, 81 lines / 8,055 bytes / SHA-256 `5591f13d75685e52158a9aecfd7f90a2ecf42275d18e3ca5f7fc1550dadad939`.
+2. `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` — full, 90 / 4,942 / `e525a0e35fb703152d44d63d5f6874d48907d2b87e528e3f9f99dbd93baa33c3`.
+3. `OVERNIGHT_GOAL.md` — §1 lines 23–36 and §§3–4 lines 58–87 only; 44 / 10,462 / `a1a78b6703411080d3a650091ef7d597b6aff5783cc88bbcaab4b9f893b238ea`.
+4. `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` — §1 lines 28–41, §§3–6 lines 54–150, and §§8–11 lines 174–206 only; 144 / 18,098 / `e1456643fd3b950d832ccbe8fb90928ecb165ae6d7af4ad8b2c0d6dd13015468`.
+5. `CYCLE_0_WORK_ORDER.md` — §0 lines 10–20, §3 lines 67–79, and §§6–8 lines 112–126 only; 39 / 4,217 / `6f998d4004382adbe9555f3b4df8ce603dffc034da84e1663e8518ebfcadbf51`.
+6. `CAMPAIGN_CHARTER_REASONING.md` — §§3–8 lines 34–79 only; 46 / 7,850 / `b3912b3e92f10100f9b1a4f9339c3282fc879b72b74c79d27fb54e30d534a0dd`.
+7. `MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md` — §§3–6 lines 353–1003, §§10–16.6 lines 1651–3213, §§25–30.11 lines 5164–6202, and §§33–35 lines 6674–8005 only; 4,585 / 314,144 / `10a3557c4d6d363d2810eb5819985481a124a1cc652eb8e094c1c4f442ac47ea`.
+8. `plans/CYCLE_1_DELTA_PLAN.md` — the sole review artifact, full, only after its live identity reproduces 3,542 / 479,366 / `e0cb3ea2947604447444558f40dae5e57fd61edd53c47ed46e787266faf3501b`.
+
+The ordered pre-artifact authority selection is 5,029 lines / 367,768 bytes / SHA-256 `43fcef3e66a396dee590299d22afa24fbdd047795f90e51d1734404b04dcb64a`. These task-bound selection identities do not authorize broader reads or improvised aggregate commands.
+
+**Exhaustive permitted-tool schedule.** Every read-only shell command below is one separate tool call with output capacity sufficient to show its whole selected range. No other tool or command is permitted. Do not combine calls; use no command separator, pipe, redirection, command substitution, wrapper, `echo`, `printf`, display helper, search command, or repository-wide operation.
+
+1. `cat AGENTS.md`
+2. `cat ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md`
+3. `date --iso-8601=seconds`
+4. `git rev-parse HEAD`
+5. `sed -n '23,36p' OVERNIGHT_GOAL.md`
+6. `sed -n '58,87p' OVERNIGHT_GOAL.md`
+7. `sed -n '28,41p' MONKEYBEE_CAMPAIGN_CHARTER_v1.md`
+8. `sed -n '54,150p' MONKEYBEE_CAMPAIGN_CHARTER_v1.md`
+9. `sed -n '174,206p' MONKEYBEE_CAMPAIGN_CHARTER_v1.md`
+10. `sed -n '10,20p' CYCLE_0_WORK_ORDER.md`
+11. `sed -n '67,79p' CYCLE_0_WORK_ORDER.md`
+12. `sed -n '112,126p' CYCLE_0_WORK_ORDER.md`
+13. `sed -n '34,79p' CAMPAIGN_CHARTER_REASONING.md`
+14. `sed -n '353,652p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+15. `sed -n '653,952p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+16. `sed -n '953,1003p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+17. `sed -n '1651,1950p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+18. `sed -n '1951,2250p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+19. `sed -n '2251,2550p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+20. `sed -n '2551,2850p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+21. `sed -n '2851,3150p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+22. `sed -n '3151,3213p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+23. `sed -n '5164,5463p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+24. `sed -n '5464,5763p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+25. `sed -n '5764,6063p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+26. `sed -n '6064,6202p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+27. `sed -n '6674,6973p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+28. `sed -n '6974,7273p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+29. `sed -n '7274,7573p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+30. `sed -n '7574,7873p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+31. `sed -n '7874,8005p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+32. `sha256sum plans/CYCLE_1_DELTA_PLAN.md`
+33. `wc -l -c plans/CYCLE_1_DELTA_PLAN.md`
+34. `sed -n '1,200p' plans/CYCLE_1_DELTA_PLAN.md`
+35. `sed -n '201,400p' plans/CYCLE_1_DELTA_PLAN.md`
+36. `sed -n '401,600p' plans/CYCLE_1_DELTA_PLAN.md`
+37. `sed -n '601,800p' plans/CYCLE_1_DELTA_PLAN.md`
+38. `sed -n '801,1000p' plans/CYCLE_1_DELTA_PLAN.md`
+39. `sed -n '1001,1200p' plans/CYCLE_1_DELTA_PLAN.md`
+40. `sed -n '1201,1400p' plans/CYCLE_1_DELTA_PLAN.md`
+41. `sed -n '1401,1600p' plans/CYCLE_1_DELTA_PLAN.md`
+42. `sed -n '1601,1800p' plans/CYCLE_1_DELTA_PLAN.md`
+43. `sed -n '1801,2000p' plans/CYCLE_1_DELTA_PLAN.md`
+44. `sed -n '2001,2200p' plans/CYCLE_1_DELTA_PLAN.md`
+45. `sed -n '2201,2400p' plans/CYCLE_1_DELTA_PLAN.md`
+46. `sed -n '2401,2600p' plans/CYCLE_1_DELTA_PLAN.md`
+47. `sed -n '2601,2800p' plans/CYCLE_1_DELTA_PLAN.md`
+48. `sed -n '2801,3000p' plans/CYCLE_1_DELTA_PLAN.md`
+49. `sed -n '3001,3200p' plans/CYCLE_1_DELTA_PLAN.md`
+50. `sed -n '3201,3400p' plans/CYCLE_1_DELTA_PLAN.md`
+51. `sed -n '3401,3542p' plans/CYCLE_1_DELTA_PLAN.md`
+52. `date --iso-8601=seconds`
+53. Exactly one structured `apply_patch` call appending the reviewer packet to `gauntlet/ROUND_LOG.md` through the supplied full EOF paragraph; this is the sole write and final tool call.
+
+If any scheduled output is truncated, any range or identity differs, the dispatch commit is absent or differs from the root-supplied value, or an unscheduled tool would be needed, stop without analysis or write and await root. Do not improvise a continuation, search, helper, or alternate read.
+
+**Fresh-context and plan-space exclusions.** R39 must not read, search, hash, or infer from `gauntlet/ROUND_LOG.md`, this convergence report, any owner checkpoint, root ledger, orchestration state, decision file, prior reviewer material, finding, disposition, G6 successor, recovery transcript, session history, or unrelated artifact. It must not access external sources, the web, competitor material, or prohibited PDF-processor source or documentation; perform measurement or comparison; create a SpecCard semantic body; use CASS/recovery context; create a scratch, temporary, todo, or task path; invoke subagents; contact any owner; edit an artifact; or take external action. Plan-space, clean-room, claim-vocabulary, and no-claim-strengthening laws remain in force.
+
+**Exact immutable five-pass prompt.** After the scheduled authority and artifact reads, apply only this text byte-for-byte:
+
+```text
+Find every concrete place this artifact oversimplifies, loses a required feature, collapses an envelope without preserving dependencies, or makes an implementation-relevant assertion without its required evidence interface. DO NOT LOSE FEATURES. I am positive you missed at least 80 elements. Report only evidence-backed findings under this lens; do not rewrite the artifact.
+```
+
+R39 may not reword, shorten, expand, interpret as a quota, or add an allegation to this prompt. Evidence controls grade and count; rhetorical overshoot does not.
+
+**Reviewer FSM and mismatch aborts.** The exact reviewer FSM is `SPAWNED -> INGEST-DECLARED-CHAIN -> APPLY-ONE-LENS -> FILE-GRADED-FINDINGS -> TERMINATED`. Before artifact reads, the root-supplied dispatch commit must equal the separately observed `git rev-parse HEAD`; the artifact identity must match; and task-bound identity must remain exact `gpt-5.6-sol` / `ultra` / live `fast` / priority service. Artifact or dispatch drift requires `STALE-ASSIGNMENT`; model drift requires `MODEL-MISMATCH`; missing live `fast` or priority requires `MODE-MISMATCH`. Any mismatch files no allegation: use the same sole-write boundary only if root expressly permits the zero-finding protocol packet after observing the mismatch. No fallback model, effort, mode, tier, artifact, authority, process, or round is authorized.
+
+**Required valid-filing packet schema.** A valid append contains exactly one section headed `R39 — plans/CYCLE_1_DELTA_PLAN.md — oversimplification-and-feature-loss`, followed by: the bound session/pane/shell/child/monitor identity carried as provenance only; exact model, effort, live `fast`, and priority disclosures; started/filed ISO timestamps; dispatch commit and artifact SHA-256; exact authority files/sections read; explicit freshness/exclusion and no-action disclosures; exact five-state reviewer FSM; numeric A, B, and C counts; and `marginal-only: YES | NO`. Use `YES` only when A=0 and B=0; otherwise use `NO`. Omit empty grade subsections but never omit counts.
+
+Each finding heading is monotonic `R39-A01`, `R39-B01`, or `R39-C01` within its grade and contains exactly one each of `evidence`, `requirement`, `consequence`, `repair boundary`, and `loss guard`. Evidence names a stable artifact section and minimal local text; the repair boundary gives the smallest adequate G3-owner repair without performing it; the loss guard states what a later repair must preserve. End with one `Round verdict` stating whether owner revision is warranted, what remains uncertain, and why this lens is or is not marginal-only, followed by exactly one packet line `- termination state: TERMINATED`. Allegations remain pending G7 mechanical integration and G3 premise testing.
+
+**Blind sole-write and exit law.** `gauntlet/ROUND_LOG.md` is closed. R39 may not read, search, hash, count, or otherwise ingest any prior Round Log byte. Root must supply the then-current full EOF paragraph literally. R39 may make no repository write except the scheduled final structured `apply_patch` append to this Round Log using that paragraph unchanged. No shell redirection, `tee`, scratch path, Edit/Write operation, artifact mutation, or second write is permitted. After the append flushes, the reviewer response must be the exact standalone token `TERMINATED`, with no punctuation, style, prefix, suffix, or later tool call; the model process and idle pane shell must then exit. Root handles process verification separately.
+
+**R39 BOUND-UNSENT EOF write law.** Owner FSM remains `DRAFT`. R39 is the sole `BOUND-UNSENT` row, is zero findings/grades/coverage/conclusion before filing, and is bound only to the exact identity, artifact, sole lens, authority, schedule, freshness, and blind-write controls above. Every earlier reviewer packet and owner closure is sealed; no other round is allocated or bound. **No task has been sent to R39. Root may commit and push this three-file control group; only after the pushed dispatch commit and every bound identity are revalidated may root deliver this control and this full paragraph as the unique true-EOF anchor.**

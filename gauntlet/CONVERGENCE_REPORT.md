@@ -451,3 +451,29 @@ Binding supplies no finding, grade, lens coverage, curve point, artifact verdict
 The reserved R06 process is exact `gpt-5.6-sol` / `ultra` with live `fast` and priority service at the repository cwd. Its full blind-write law excludes prior findings and context, permits one later structured Round Log append as its sole write, and requires exact standalone `TERMINATED` followed by process and pane-shell exit. This report records the bind only. No task has been sent.
 
 Root may commit and push the three-file G7 control group. Only after the pushed control, unchanged artifact, exact process/model/mode/tier, and actual EOF anchor are revalidated may root dispatch R06. G7 does not dispatch, bind another round, contact an owner, or strengthen a claim; owner FSM remains `DRAFT`.
+
+## R06 failure / R39 replacement bound-unsent correction — `2026-07-15T02:34:35+02:00`
+
+This append-only correction supersedes the preceding R06 bound-unsent section only where that section treats R06 as active or bound, reports 38 immutable rows, or names R06 as the pending pass. It changes no prior report byte, filed packet, finding grade, owner disposition, artifact, curve, or convergence statement. R06 is now immutable `NOT-RUN · METHOD-VIOLATION · TERMINATED`; R39 alone carries its original planned slot and remains `BOUND-UNSENT` with no task sent.
+
+### Filed evidence and curve remain unchanged
+
+- Filed rounds remain exactly 14.
+- Aggregate grades remain A=94, B=56, C=19.
+- Filed model-family split remains 7 Sol / 7 Opus.
+- R06 filed no packet, finding, grade, marginal flag, verdict, lens coverage, curve point, or conclusion. Its first and second tools were out-of-schedule skill reads before AGENTS or the reviewer protocol; root interrupted before any authorized read or repository write.
+- R39 has filed nothing. Its A/B/C and marginal slots remain em dashes, and binding contributes no evidence or conclusion.
+
+Historical R04 and R05 remain their own filed points against earlier revised plan identities. Neither failed R06 nor bound-unsent R39 creates a new `oversimplification-and-feature-loss` point against the current C1 plan. No convergence inference, artifact verdict, or owner disposition follows from this control transition.
+
+### Allocation, failure, and active-slot accounting
+
+The immutable allocation ledger now has 39 rows: 30 baseline + 2 supplemental + replacements R33, R34, R35, R36, R37, R38, and R39. Counting every immutable row, including failed IDs, yields 18 Sol / 21 Opus. Failed terminal IDs are R06, R23, R24, R34, R35, R36, and R37. Excluding those seven failures leaves 32 active planned slots at 16 Sol / 16 Opus; 14 are filed and 18 remain active-unfiled. R39 is the sole bound-unsent row. The replacement preserves the original R06 pass and does not add planned coverage.
+
+### R39 bind and no-dispatch boundary
+
+R39 preserves the C1 delta-plan `5-pass A (3/5)` slot, Sol family, G3 route, and sole `oversimplification-and-feature-loss` lens. It binds only the pushed 3,542-line / 479,366-byte plan at SHA-256 `e0cb3ea2947604447444558f40dae5e57fd61edd53c47ed46e787266faf3501b`; the G3 checkpoint remains excluded reviewer context. The authorized recovery base is `9360d874121c5ae39a345167b57787810e30e8b6`; root must later supply the distinct pushed dispatch commit that contains the exact R39 control.
+
+The bound reviewer identity is exact `gpt-5.6-sol` / effort `ultra` / live `fast` / priority service at repository cwd. The control declares R39 a stateless reviewer, forbids orchestration and skill loading, requires full AGENTS as its first tool and the full reviewer protocol as its second, and limits every later tool to an exhaustive ordered schedule. Its only possible write is one final structured `apply_patch` append through the supplied full Round Log EOF paragraph, followed by exact standalone `TERMINATED` and process exit. It may not read any prior Round Log byte.
+
+No task has been sent to R39. Root may commit and push the three-file G7 control group; only after dispatch-commit, artifact, authority, process/model/mode/tier, freshness, and EOF-anchor revalidation may root deliver the control. G7 does not dispatch, bind another round, contact an owner, or strengthen a claim; owner FSM remains `DRAFT`.
