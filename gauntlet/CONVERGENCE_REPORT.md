@@ -990,3 +990,29 @@ R55 binds only the submitted C1 plan 3,655 lines / 531,012 bytes / `db0bbb1df5bb
 The placeholder-only bootstrap requires exact sequential Tools 1–4: full `AGENTS.md`, full reviewer protocol, exact sealed-control-only Read, then exact ISO start clock. The control preserves 34 gap-free primary windows, adds two union gates and whole-candidate citation closure, limits process checks to exact PIDs, permits one anchored Round Edit only, preserves its literal anchor at physical EOF, and requires the exact standalone terminal response. No live bootstrap was instantiated or sent.
 
 Allocation remains 55 unique rows at 22 Sol / 33 Opus; 23 failed at 6/17; 32 active planned at 16/16; 18 valid filed at 9/9 with A=118/B=64/C=22; and 14 active-unfiled at 7/7. R55 is the sole bound-unsent row and supplies no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model credit, or convergence evidence before qualification. Prior sequences are unchanged; convergence remains **NOT ESTABLISHED**.
+
+## R55 immutable zero-credit qualification closure — `2026-07-15T17:08:43+02:00`
+
+Independent replay of the sealed control, dispatched bootstrap, and stable transcript establishes that assistant text preceded Tool 1 and intervened between Tools 1 and 2. R55's immutable startup law permits no preface; the later text also interprets repository rules. The returned second Read and root interrupt do not reorder or cure those events.
+
+R55 is `NOT-RUN · METHOD-CONTROL-STARTUP-PREFACE-VIOLATION · TERMINATED`, with no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model credit, or convergence evidence. No G3 route exists.
+
+Allocation is 55 unique rows at 22 Sol / 33 Opus; 24 failed at 6/18; 31 active planned at 16/15; 18 valid filed at 9/9 with A=118/B=64/C=22; and 13 active-unfiled at 7/6. No row is bound-unsent. R10 remains untouched `PRECOMMITTED`; established sequences do not change, and convergence remains **NOT ESTABLISHED**.
+
+## R56 one-for-one allocation-only state — `2026-07-15T17:11:17+02:00`
+
+R56 is one fresh Opus row for the original R09 planned slot after immutable zero-credit R09, R52, R53, R54, and R55. It binds the unchanged submitted C1 plan identity `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`, sole `obscure-section self-containment` lens, exact `claude-opus-4-8` / `xhigh`, and eventual G3 premise-first route only after a chain-qualified filing.
+
+R56 is `ALLOCATED-UNSENT`. No control or live bootstrap exists for R56 at this checkpoint, nothing was sent, and no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model credit, or convergence evidence is added. R10 remains untouched `PRECOMMITTED`.
+
+Allocation is 56 unique rows at 22 Sol / 34 Opus; 24 failed at 6/18; 32 active planned at 16/16; 18 valid filed at 9/9 with A=118/B=64/C=22; and 14 active-unfiled at 7/7. No row is bound-unsent yet. Established sequences are unchanged, so convergence remains **NOT ESTABLISHED**.
+
+## R56 sealed `BOUND-UNSENT` construction state — `2026-07-15T17:13:05+02:00`
+
+This append supersedes only the R56 allocation-only/no-bound wording immediately above. R56 alone advances to `BOUND-UNSENT`, and one self-contained control occupies actual Round EOF. Every failed row and historical control/packet remains preserved; R10 remains untouched `PRECOMMITTED`.
+
+R56 binds only the submitted C1 plan 3,655 lines / 531,012 bytes / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`, sole `obscure-section self-containment` lens, exact `claude-opus-4-8` / `xhigh`, eventual G3 premise-first route only after a chain-qualified filing, and reserved session `monkeybee-pdf-mass-context-repo--r56`, pane `%153` index 1, shell 2975675, child 2976878, exact lowercase cwd. Both allocation and pre-construction reattestations reproduced the untouched Opus 4.8/xhigh TUI and default placeholder.
+
+The placeholder-only bootstrap requires exact sequential Tools 1-4, with only narrowly defined action-only narration tolerated at zero credit. The control preserves 34 gap-free primary windows, two union gates, whole-candidate citation closure, exact PID scoping, one anchored Round Edit, the literal EOF anchor, and the exact standalone terminal response. No live bootstrap was instantiated or sent.
+
+Allocation remains 56 unique rows at 22 Sol / 34 Opus; 24 failed at 6/18; 32 active planned at 16/16; 18 valid filed at 9/9 with A=118/B=64/C=22; and 14 active-unfiled at 7/7. R56 is the sole bound-unsent row and supplies no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model credit, or convergence evidence before qualification. Established sequences are unchanged; convergence remains **NOT ESTABLISHED**.

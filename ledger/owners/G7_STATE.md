@@ -4721,3 +4721,225 @@ No correction is required. The FSM may advance directly from mandatory REVISE to
 - G7 performed no stage, commit, push, fetch, browse, task dispatch, bootstrap instantiation, reviewer/owner/process contact, pane input, artifact/canon/plan/root-ledger mutation, or external action. Only the three authorized paths are dirty. Terminal G7_STATE identity is sampled after this self-containing marker for the handoff report.
 
 **G7 R55 replacement construction FSM state: `DONE/HANDOFF` (sealed `BOUND-UNSENT`; idle for root validation, commit/push, and later activation).**
+
+## R55 qualification and R56 replacement follow-up — INGEST (`2026-07-15T17:03:49+02:00`)
+
+- Crash-safe fresh-turn transition persisted: prior `DONE/HANDOFF -> INGEST` before opening the R55 transcript/control, inspecting R56, deciding qualification, changing an allocation row, or drafting replacement content.
+- `AGENTS.md` was reread in full as the first repository action. The named running-the-gauntlet skill was then reread through EOF. An initially combined skill output was truncated in its middle and received no full-read credit; the missing ranges were subsequently returned separately through EOF before this transition.
+- Fixed control reproduces on branch `main`: HEAD == local `origin/main` == `5424da2ac0bbaffd54d0c97caeca084b04a82fd7`; worktree, index, and untracked sets are empty.
+- Starting identities reproduce exactly: Round Log 6,243 lines / 1,106,976 bytes / `b6de19ab54add3c244b136fd4e1c9fa664ef99713a46cdf3ad84c7991e85d000`; Convergence Report 992 / 145,255 / `b766fd062e8a96a972b419bbd12d2209e6e15870e7aa6394a3fa2cc3774304e8`; G7_STATE 4,723 / 1,013,471 / `24206d013570ee051d1988397348bca335645dba0bd73298609a2b5a1df8b4b0`; submitted plan 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`.
+- Writable scope is exactly `gauntlet/ROUND_LOG.md`, `gauntlet/CONVERGENCE_REPORT.md`, and `ledger/owners/G7_STATE.md`, with every mutation through `apply_patch`. No stage, commit, push, fetch, browse, file creation/deletion, process input, reviewer/owner contact, dispatch, artifact/canon/plan/root-ledger mutation, or external action is authorized.
+- INGEST authorizes only read-only replay of the sealed R55 control, bootstrap and transcript evidence, process retirement, current allocation/protected slices, reviewer protocol, and the exact untouched R56 reservation. It authorizes no qualification mutation, R56 row/control, bootstrap instantiation, or evidence credit.
+
+**G7 R55 qualification and R56 replacement FSM state: `INGEST` (fixed control receipt persisted; evidence replay authorized).**
+
+### INGEST evidence replay (`2026-07-15T17:05:51+02:00`)
+
+- Pre-partial identities are Round Log 6,243 lines / 1,106,976 bytes / `b6de19ab54add3c244b136fd4e1c9fa664ef99713a46cdf3ad84c7991e85d000`; Convergence Report 992 / 145,255 / `b766fd062e8a96a972b419bbd12d2209e6e15870e7aa6394a3fa2cc3774304e8`; and G7_STATE 4,734 / 1,015,530 / `6641ac1b314b198bb0edaf7eda75dbe17d3c7db3a686f9ed1be84d2e71e6af90`.
+- Immutable R55 control reproduces at lines 6,108-6,243, bytes `[1087037,1106976)`, 136 / 19,939 / `f7531c4c1648eee27711368a518e98a89f609e15620ef540536aa4775999e32d`; its unique literal anchor is still physical Round EOF.
+- The dispatched bootstrap extracted from the transcript reproduces at 20 lines / 1,855 bytes / `b0d6084552e5a9c055d9c66da4df222e023b1eeeaa18ad096949e2a5baa9ebf3`. It binds pushed commit `f4bbc92ad7ddf1984751478b832b208d44337252`, Round root `b6de19ab54add3c244b136fd4e1c9fa664ef99713a46cdf3ad84c7991e85d000`, control root/range, and the exact R55 process coordinates. That commit is an ancestor of current HEAD; the committed path delta is only the root ledger. Its Round and plan roots match the bootstrap/control.
+- Stable transcript reproduces at 25 lines / 94,072 bytes / `d211adea29040fac3502d6e87963ad59d29d06a40dc11e52643a58b1d08a893b`. Correct slurped parsing yields 25 records, two assistant text blocks, two Read uses, two matched successful results, and no Bash, Edit, Write, or other write-capable use. A non-slurped aggregate receives no count credit.
+- Exact chronology is: assistant action-only text at `2026-07-15T14:57:44.800Z`; AGENTS Read request `14:57:45.298Z` and successful result `14:57:45.331Z`; assistant semantic summary at `14:57:57.275Z`; protocol Read request `14:57:58.192Z` and successful result `14:57:58.216Z`; root interrupt `14:58:02.361Z`. Tool-result normalization diffed silently against all 81 AGENTS lines and all 90 protocol lines.
+- The first text says it will read AGENTS. The second says AGENTS was read, summarizes the repository as documents-only with several rules, and announces the protocol action. Thus one text is neutral action-only narration and the other contains factual interpretation; both occur before or between Tools 1-4.
+- No Tool 3 control Read, Tool 4 start clock, identity gate, authority/artifact Read, analysis, packet, or write occurred. Round remained byte-identical. R55 session, shell 2896298, and child 2897445 are absent; host zombies are zero.
+- Current allocation is 55 unique rows at 22 Sol / 33 Opus; 23 failed at 6/17; 32 active at 16/16; 18 valid filed at 9/9 with A=118/B=64/C=22; 14 active-unfiled at 7/7; and R55 alone bound-unsent. R10 row hash remains `5470c4970ce3fa869c48fc1d6320e89220d3d31a7b4acc360c5db32dd08719d0`; no R56 row exists.
+- Read-only R56-only attestation reproduces session `monkeybee-pdf-mass-context-repo--r56`, pane `%153` index 1, shell 2975675, sole child 2976878, `pane_dead=0`, exact lowercase cwd, exact Opus 4.8/xhigh command and TUI, and untouched placeholder `Try "create a util logging.py that..."`. Retired uppercase-cwd child 2975908 is absent. No input was sent.
+- Only this G7_STATE append is dirty; index and untracked sets are empty. No reviewer, owner, process, artifact, canon, plan, root ledger, or external system was contacted or mutated.
+
+INGEST evidence is sealed. Qualification and cure analysis, zero-credit classification, R55 row/closure mutation, and R56 construction remain sequenced behind a persisted `INGEST -> DRAFT` transition.
+
+**G7 R55 qualification and R56 replacement FSM state remains: `INGEST` (evidence replay sealed; DRAFT transition required).**
+
+## R55 qualification and R56 replacement follow-up — DRAFT (`2026-07-15T17:06:20+02:00`)
+
+- Crash-safe transition persisted: `INGEST -> DRAFT` before qualification reasoning, R55 row/closure mutation, R56 allocation, Convergence change, or replacement-control construction.
+- Transition preimage identities are Round Log 6,243 lines / 1,106,976 bytes / `b6de19ab54add3c244b136fd4e1c9fa664ef99713a46cdf3ad84c7991e85d000`; Convergence Report 992 / 145,255 / `b766fd062e8a96a972b419bbd12d2209e6e15870e7aa6394a3fa2cc3774304e8`; and G7_STATE 4,751 / 1,019,147 / `0412f2a6fd6f9e81928615a6698ec29fabb305b40577826c9cc7d84c7369dddc`.
+- DRAFT first authorizes a premise-tested immutable R55 qualification decision. Only after that decision is persisted may the operational R55 row leave `BOUND-UNSENT`, minimum zero-credit closures be appended, and one allocation-only R56 checkpoint be created.
+- R56 control construction remains further sequenced behind the allocation-only checkpoint and a fresh exact reservation reattestation. No live bootstrap, process input, dispatch, or contact is authorized.
+
+**G7 R55 qualification and R56 replacement FSM state: `DRAFT` (qualification decision first; semantic mutation remains sequenced).**
+
+### DRAFT qualification decision — R55 zero credit (`2026-07-15T17:06:45+02:00`)
+
+- Pre-decision identities are Round Log 6,243 lines / 1,106,976 bytes / `b6de19ab54add3c244b136fd4e1c9fa664ef99713a46cdf3ad84c7991e85d000`; Convergence Report 992 / 145,255 / `b766fd062e8a96a972b419bbd12d2209e6e15870e7aa6394a3fa2cc3774304e8`; and G7_STATE 4,760 / 1,020,376 / `91b8c4d20b958703f0ed3c6b389ab6dbe7f1659dda69db06357d4db5c7e6f093`.
+- Immutable R55 bootstrap/control require Tool 1 to be the first assistant action, forbid any assistant preface before or between Tools 1-4, and fail closed on a prefaced action. The `14:57:44.800Z` text precedes Tool 1; the `14:57:57.275Z` text lies between Tools 1 and 2. Each independently violates the sealed startup boundary.
+- The first text is neutral action-only narration, but R55's immutable rule admits no content-based exception. The prospective R56 distinction cannot be applied retroactively. The second text summarizes repository purpose/rules and is semantic interpretation, so it would also be fatal under the narrower prospective R56 tolerance.
+- The second Read was already issued and returned the full protocol, but a correct result cannot change the preceding event order or cure an already-triggered fail-closed branch. It earns no authority-chain coverage because Tool 2 was reached through a disallowed sequence.
+- Root interrupted after the second result. That action successfully contained the run before Tool 3, Tool 4, identity/authority/artifact work, or any write, but it cannot erase prior transcript events or restore startup compliance.
+- R55 is therefore immutable `NOT-RUN · METHOD-CONTROL-STARTUP-PREFACE-VIOLATION · TERMINATED`. It receives no finding, grade, startup/authority/artifact coverage, marginal result, verdict, route, owner disposition, curve point, cross-model credit, or convergence evidence. No G3 route exists.
+- Authorized mutation is limited to changing only the operational R55 allocation row out of `BOUND-UNSENT`; appending minimum zero-credit Round and Convergence closures; preserving the sealed control, historical anchor, bootstrap, and transcript bytes; and then allocating one fresh R56 row for the same original planned slot. No replacement control is authorized until that allocation-only checkpoint is sealed.
+
+**G7 R55 qualification and R56 replacement FSM state remains: `DRAFT` (R55 immutable zero-credit decision persisted; closure mutation authorized).**
+
+### DRAFT partial — R55 operational closure (`2026-07-15T17:09:41+02:00`)
+
+- Pre-partial identities were Round Log 6,243 lines / 1,106,976 bytes / `b6de19ab54add3c244b136fd4e1c9fa664ef99713a46cdf3ad84c7991e85d000`; Convergence Report 992 / 145,255 / `b766fd062e8a96a972b419bbd12d2209e6e15870e7aa6394a3fa2cc3774304e8`; and G7_STATE 4,772 / 1,022,834 / `05c008af901a1ba3a2e6e8f5a907de6a294a7603b818297d4de7579478532cb9`.
+- Only the operational R55 row changed to `NOT-RUN · METHOD-CONTROL-STARTUP-PREFACE-VIOLATION · TERMINATED`. Minimum Round and Convergence zero-credit closures were appended. R55 gains no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model credit, or convergence evidence; no G3 route exists.
+- Current partial identities are Round Log 6,261 lines / 1,109,241 bytes / `663ed244c5b139669215695150592035b6fcf52dd314121924187f880f92ae60`; Convergence Report 1,000 / 146,247 / `aa716cbb5315bee0b7c72e239df4d843656406b960fc8d1e9a7b1ab9db03352c`; and pre-append G7_STATE as stated above.
+- The line-bounded protected R55 control rerun reproduces 136 lines / 19,939 bytes / `f7531c4c1648eee27711368a518e98a89f609e15620ef540536aa4775999e32d`. One byte-range diagnostic incorrectly passed the documented one-based start directly to a zero-based reader and receives no seal credit; a corrected offset rerun is required.
+- The first allocation diagnostic counted an overbroad row set and did not normalize legacy model labels, producing figures inconsistent with the already sealed table accounting. It receives no arithmetic credit; a corrected unique-ID parser is required before R56 allocation.
+- No R56 row or control exists yet. Round and Convergence content is frozen until both corrected diagnostics reproduce the R55-only checkpoint.
+
+**G7 R55 qualification and R56 replacement FSM state remains: `DRAFT` (R55 closure persisted; failed diagnostics logged at zero credit; corrected reruns required before R56 allocation).**
+
+### DRAFT diagnostic correction — protected R55 control and allocation (`2026-07-15T17:10:41+02:00`)
+
+- Pre-correction G7_STATE is 4,783 lines / 1,024,829 bytes / `fb9bcc664f8880d377c2ca528a06a65df0ce183091973166bd4cd028ff930acd`.
+- The prior explanation of the byte-range mismatch was itself incorrect and receives no credit. The reader's offset convention was not the cause. Changing the operational R55 row before the control increased the preceding prefix by 198 bytes, so the immutable control moved from bytes `[1087037,1106976)` to current bytes `[1087235,1107174)` while retaining lines 6,108-6,243 and every control byte.
+- A marker-derived rerun computes the current start and end from the line boundaries, then returns 136 lines / 19,939 bytes / `f7531c4c1648eee27711368a518e98a89f609e15620ef540536aa4775999e32d`. This matches the sealed content root; both old and new coordinate records are explicit.
+- The corrected exact-ID parser accepts only fields matching one R-number plus two digits and normalizes all historical Sol/Opus label forms. It returns 55 unique rows at 22 Sol / 33 Opus; 24 failed at 6/18; 31 active at 16/15; 18 filed at 9/9 with A=118/B=64/C=22; 13 active-unfiled at 7/6; and no bound-unsent row.
+- R55 closure content is therefore retained. R56 allocation remains sequenced behind one fresh untouched-reservation reattestation.
+
+**G7 R55 qualification and R56 replacement FSM state remains: `DRAFT` (corrected R55-only checkpoint passes; fresh R56 reattestation required before allocation).**
+
+### DRAFT partial — R56 allocation-only checkpoint (`2026-07-15T17:12:12+02:00`)
+
+- Pre-allocation identities were Round Log 6,261 lines / 1,109,241 bytes / `663ed244c5b139669215695150592035b6fcf52dd314121924187f880f92ae60`; Convergence Report 1,000 / 146,247 / `aa716cbb5315bee0b7c72e239df4d843656406b960fc8d1e9a7b1ab9db03352c`; and G7_STATE 4,793 / 1,026,359 / `b24588a8d48f4a48bec1102d070822b255ca258753cc902911ba8ccb470c4dab`.
+- Fresh pre-allocation reattestation reproduced session `monkeybee-pdf-mass-context-repo--r56`, pane `%153` index 1, shell 2975675, sole child 2976878, `pane_dead=0`, exact lowercase cwd, exact Opus 4.8/xhigh command and TUI, and untouched default placeholder. Retired child 2975908 is absent; no input was sent.
+- One R56 row was appended as `ALLOCATED-UNSENT` for the same original R09 planned slot, unchanged submitted plan, sole obscure-section self-containment lens, exact `claude-opus-4-8` / `xhigh`, and eventual G3 premise-first route only after a chain-qualified filing. No control or live bootstrap exists yet.
+- Current partial identities are Round Log 6,281 lines / 1,111,463 bytes / `93740d385eab7a0297bea6a62dfd15c70bb129da42ac5f4d4911e6689cacee2c`; Convergence Report 1,008 / 147,292 / `eda83c96c439505a6b4ce62c50e938c0e97627fc204f4509bed4ded732ccef52`; and pre-append G7_STATE as stated above.
+- The exact-ID parser returns 56 unique rows at 22 Sol / 34 Opus; 24 failed at 6/18; 32 active at 16/16; 18 filed at 9/9 with A=118/B=64/C=22; 14 active-unfiled at 7/7; and no bound-unsent row. The R55 control still hashes `f7531c4c1648eee27711368a518e98a89f609e15620ef540536aa4775999e32d`.
+- An initial R10 probe included a display line-number prefix and receives no identity credit. The corrected raw line is 1 line / 114 bytes / `5470c4970ce3fa869c48fc1d6320e89220d3d31a7b4acc360c5db32dd08719d0`, matching the same raw line at fixed base.
+- R56 control construction is authorized only after another fresh untouched-reservation reattestation. The row may then advance alone to `BOUND-UNSENT`; no task may be instantiated or sent.
+
+**G7 R55 qualification and R56 replacement FSM state remains: `DRAFT` (R56 allocation-only checkpoint sealed; fresh pre-construction reattestation required).**
+
+### DRAFT partial — R56 sealed `BOUND-UNSENT` construction (`2026-07-15T17:17:22+02:00`)
+
+- Pre-construction identities were Round Log 6,281 lines / 1,111,463 bytes / `93740d385eab7a0297bea6a62dfd15c70bb129da42ac5f4d4911e6689cacee2c`; Convergence Report 1,008 / 147,292 / `eda83c96c439505a6b4ce62c50e938c0e97627fc204f4509bed4ded732ccef52`; and G7_STATE 4,805 / 1,028,596 bytes / `f937def3049d4c2e1c48d07ec92f60a86e5486fcb8f9b4c2eadd08346c3eb497`.
+- Fresh pre-construction and post-construction attestations reproduce session `monkeybee-pdf-mass-context-repo--r56`, pane `%153` index 1, shell 2975675, sole child 2976878, `pane_dead=0`, exact lowercase cwd, exact Opus 4.8/xhigh command and live TUI, and untouched default placeholder. Retired child 2975908 is absent. No input was sent.
+- R56 alone advanced to `BOUND-UNSENT`. Current partial identities are Round Log 6,427 lines / 1,133,571 bytes / `7b80c2f8e454c86d8a781439eabe91ba3009d72fcc25efdedd717df03450bceb`; Convergence Report 1,018 / 149,065 / `213a60d28acd87cb40f2116c0c27753947093c96e4a7bf4edbec24f69b78ed0f`; and pre-append G7_STATE as stated above.
+- R56 control is lines 6,289-6,427, bytes `[1112121,1133571)`, 139 lines / 21,450 bytes / `9dbcf74c2e970059ec8cdc99748571b36617fdde58cafe2686c944ca78f5b888`; separator-inclusive lines 6,288-6,427, bytes `[1112120,1133571)`, 140 / 21,451 / `5122e9f6977a0439ab3458dd3c45fdbc2beb0a809f6e6204d462816cbd0b9a72`. Its heading and literal anchor are unique, the anchor is physical EOF, and the file ends with LF.
+- Placeholder grammar content is lines 6,304-6,324, 21 lines / 2,452 bytes / `e29e758758cae6fecef22716b78910329f5a6b94421eff2be434e529e27b1db5`. It contains 12 ordered identity placeholders, exactly one empty separator, four ordered tools, one action-only narration boundary, one fail-closed instruction, and one post-Tool-4 instruction. It is not instantiated or sent.
+- The first interval parser failed to decode the range separator and returned no records; it receives no coverage-map credit. The corrected parser returns 34 records, no malformed endpoint/count, maximum window 350, and exactly one primary interval containing Rev 7 line 2431. It merges to the six required sets and counts, including plan [1,3655].
+- One broad R55/R56 map-block comparison receives no preservation credit because it included an immaterial article difference in the explanatory sentence; an earlier provisional comparison to an empty stream also receives no credit. The corrected declared-record-only comparison is silent and passes: all six authority/artifact selection rows are unchanged from R55.
+- Exact-ID allocation parsing returns 56 unique rows at 22 Sol / 34 Opus; 24 failed at 6/18; 32 active at 16/16; 18 filed at 9/9 with A=118/B=64/C=22; 14 active-unfiled at 7/7; and R56 alone bound-unsent. The raw R10 row and marker-bounded R55 control remain byte-identical to their sealed roots.
+- Startup narration is admissible only when action-only, immediately sequenced, non-semantic, non-questioning, and disclosed at zero credit. Semantic authority interpretation remains fatal. PID checks are exact-target only; the control retains dual primary-union gates, whole-candidate citation extraction/reread/subset/quote closure, sole lens, one anchored Edit, no later tool, and exact standalone `TERMINATED`.
+- Branch and HEAD/origin equality remain at fixed base; plan identity remains 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`. Only the three owned paths are dirty; index and untracked sets are empty.
+
+DRAFT construction is sealed. No reviewer task, live bootstrap, control body, process input, contact, route, finding, grade, or evidence credit exists. A persisted `DRAFT -> SELF-CHECK` transition is required before the independent gate.
+
+**G7 R55 qualification and R56 replacement FSM state remains: `DRAFT` (construction sealed; ready for `SELF-CHECK` transition).**
+
+## R55 qualification and R56 replacement follow-up — SELF-CHECK (`2026-07-15T17:17:49+02:00`)
+
+- Crash-safe transition persisted: `DRAFT -> SELF-CHECK` before running the independent construction/qualification gate.
+- Transition preimage identities are Round Log 6,427 lines / 1,133,571 bytes / `7b80c2f8e454c86d8a781439eabe91ba3009d72fcc25efdedd717df03450bceb`; Convergence Report 1,018 / 149,065 / `213a60d28acd87cb40f2116c0c27753947093c96e4a7bf4edbec24f69b78ed0f`; and G7_STATE 4,822 / 1,032,524 / `2d062e31b29809dde2c81205a7049339579f96d8680e89669dbb0c3f75b3baec`.
+- SELF-CHECK will run fixed-base/three-path scope, protected slices, qualification, allocation, control/grammar/map/citation/startup/PID/write/terminal laws, format/guard checks, and fresh exact process/TUI reattestation from disk. No DRAFT diagnostic is substituted for this gate.
+- Any content defect found now requires a persisted `SELF-CHECK -> REVISE` transition before correction. If this gate passes, it must be sealed before `SUBMIT-FOR-REVIEW`.
+
+**G7 R55 qualification and R56 replacement FSM state: `SELF-CHECK` (fresh gate authorized; no result yet).**
+
+### SELF-CHECK result — one owner-coordinate defect (`2026-07-15T17:20:16+02:00`)
+
+- Gate preimage identities are Round Log 6,427 lines / 1,133,571 bytes / `7b80c2f8e454c86d8a781439eabe91ba3009d72fcc25efdedd717df03450bceb`; Convergence Report 1,018 / 149,065 / `213a60d28acd87cb40f2116c0c27753947093c96e4a7bf4edbec24f69b78ed0f`; and G7_STATE 4,831 / 1,033,660 / `6a1c1a1a062fa4b4f7c2aba94aacf7fe95be71d0ad56fd94984745f3063db5b8`.
+- Fixed base, main branch, HEAD/origin equality, ancestry, exact three-path worktree scope, empty index/untracked sets, and path-scoped whitespace pass. Fixed-base Round comparison is identical through line 6,095 and from 6,097 through historical EOF; only the operational R55 row differs inside the old file.
+- Protected R55 control and separator-inclusive slices reproduce 136 / 19,939 / `f7531c4c1648eee27711368a518e98a89f609e15620ef540536aa4775999e32d` and 137 / 19,940 / `37a879a56a1c463f599f1bfb6524f810d27cb746af41e04e7ce251f6289fa2b1`. Stable transcript and extracted bootstrap reproduce 25 / 94,072 / `d211adea29040fac3502d6e87963ad59d29d06a40dc11e52643a58b1d08a893b` and 20 / 1,855 / `b0d6084552e5a9c055d9c66da4df222e023b1eeeaa18ad096949e2a5baa9ebf3`.
+- R55 status is the exact immutable startup-preface zero-credit classification; its row and closure add no route or evidence credit. R10 remains 1 / 114 / `5470c4970ce3fa869c48fc1d6320e89220d3d31a7b4acc360c5db32dd08719d0` and `PRECOMMITTED`.
+- R56 control and separator-inclusive roots reproduce lines 6,289-6,427 / bytes `[1112121,1133571)` / 139 / 21,450 / `9dbcf74c2e970059ec8cdc99748571b36617fdde58cafe2686c944ca78f5b888` and lines 6,288-6,427 / `[1112120,1133571)` / 140 / 21,451 / `5122e9f6977a0439ab3458dd3c45fdbc2beb0a809f6e6204d462816cbd0b9a72`. Heading/anchor are unique; the anchor is physical EOF.
+- Placeholder grammar reproduces lines 6,304-6,324 / 21 / 2,452 / `e29e758758cae6fecef22716b78910329f5a6b94421eff2be434e529e27b1db5`, with 12 fields, one empty separator, four ordered tools, one narration boundary, one fail-closed rule, and one post-Tool-4 instruction.
+- Fresh interval parsing returns 34 well-formed windows, maximum 350 lines, exactly one interval containing Rev 7 line 2431, and the six required merged sets/counts; declared map records match R55. Whole-candidate coordinate extraction, numbered reread union/subset/quote comparison, restart-on-change, dual primary unions, strict startup narration boundary, exact PID scoping, one lens, one anchored Edit, and exact no-narration terminal laws are present.
+- Allocation parses as 56 unique rows at 22 Sol / 34 Opus; 24 failed at 6/18; 32 active at 16/16; 18 filed at 9/9 with A=118/B=64/C=22; 14 active-unfiled at 7/7; R56 alone bound-unsent. Plan identity reproduces 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`; convergence remains `NOT ESTABLISHED`.
+- UTF-8, terminal LF, CR, conflict-marker, whitespace, and classified added-prose guards pass. Added owner/control prose remains operational review scaffolding and supplies no normative card body, registry/slot semantics, external location, prohibited reference material, or campaign-strengthening assertion.
+- Fresh process gate reproduces exact R56 session, pane, shell, sole child, live command, lowercase cwd, Opus 4.8/xhigh TUI, and untouched placeholder. The retired child and all R55 process/session coordinates are absent; host zombies are zero. Nothing was sent or typed.
+- Defect: Round line 6,253 reports R55's original pre-row byte coordinates `[1087037,1106976)` as current replay coordinates. The permitted R55 row edit increased the preceding prefix by 198 bytes; marker-derived current coordinates are `[1087235,1107174)`. The content hash, lines, and length are correct. Both ranges have equal textual width, so an exact coordinate-only substitution can repair the owner prose without shifting R56 or touching reviewer/control bytes.
+
+No content was changed during SELF-CHECK. The gate is not terminal-creditable until the known coordinate defect is reviewed, a mandatory `REVISE` state is entered, the exact correction is made, and all dependent gates rerun fresh.
+
+**G7 R55 qualification and R56 replacement FSM state remains: `SELF-CHECK` (one owner-coordinate defect sealed; `SUBMIT-FOR-REVIEW` required before mandatory `REVISE`).**
+
+## R55 qualification and R56 replacement follow-up — SUBMIT-FOR-REVIEW (`2026-07-15T17:20:42+02:00`)
+
+- Crash-safe transition persisted: `SELF-CHECK -> SUBMIT-FOR-REVIEW` before the independent submission review. No correction has been made.
+- Transition preimage identities are Round Log 6,427 lines / 1,133,571 bytes / `7b80c2f8e454c86d8a781439eabe91ba3009d72fcc25efdedd717df03450bceb`; Convergence Report 1,018 / 149,065 / `213a60d28acd87cb40f2116c0c27753947093c96e4a7bf4edbec24f69b78ed0f`; and G7_STATE 4,849 / 1,037,983 / `0cf2d0513d455b0fd6ffd0b023802b8da6d75355affc7d3e00a6debe3ee1a7dc`.
+- Submission review will independently inspect the exact three-path diff, the known R55 coordinate defect and proposed equal-width repair, R55 classification, R56 control/grammar, allocation/convergence, protected slices, and no-contact boundary. It may identify additional defects but may not correct any content.
+- `REVISE` is mandatory after this review regardless of result. Any accepted correction remains blocked until that transition is persisted.
+
+**G7 R55 qualification and R56 replacement FSM state: `SUBMIT-FOR-REVIEW` (independent review authorized; mutation forbidden).**
+
+### SUBMIT-FOR-REVIEW diagnostic note (`2026-07-15T17:21:10+02:00`)
+
+- Pre-note G7_STATE is 4,858 lines / 1,039,166 bytes / `0977c8a2acd84709454f7d3128b813dbbc1ebaaf720dd21f4f6b7a5062cbf695`.
+- The first combined submission diff display was truncated by the output boundary and receives no whole-diff review credit. The underlying diff was not changed.
+- Corrected review will read the 235-line Round/Convergence diff and 143-line pre-note State diff in bounded, non-overlapping chunks before a submission result is persisted. The known coordinate defect remains uncorrected.
+
+**G7 R55 qualification and R56 replacement FSM state remains: `SUBMIT-FOR-REVIEW` (truncated diagnostic logged at zero credit; bounded rerun required).**
+
+### SUBMIT-FOR-REVIEW result — correction accepted (`2026-07-15T17:21:35+02:00`)
+
+- Review preimage identities are Round Log 6,427 lines / 1,133,571 bytes / `7b80c2f8e454c86d8a781439eabe91ba3009d72fcc25efdedd717df03450bceb`; Convergence Report 1,018 / 149,065 / `213a60d28acd87cb40f2116c0c27753947093c96e4a7bf4edbec24f69b78ed0f`; and G7_STATE 4,866 / 1,039,898 / `22f57a2570b3d385b6c778d525692fb353f134b2d625ea8211973444ed830604`.
+- The corrected bounded review returned all 235 Round/Convergence diff lines and every current State diff line in non-overlapping chunks. It independently confirms the R55 zero-credit classification, no G3 route, R56 one-for-one allocation, control/grammar/map/citation/startup/process/write/terminal laws, exact arithmetic, and convergence boundary.
+- The only accepted defect is the stale byte range in Round line 6,253. Replace `[1087037,1106976)` with current marker-derived `[1087235,1107174)` and change no other Round or Convergence content. Equal textual width preserves every later coordinate and all reviewer/control roots.
+- No additional content defect was found. No correction occurred during submission review; R56 remains untouched and unsent.
+
+Submission review is sealed. Mandatory `SUBMIT-FOR-REVIEW -> REVISE` must be persisted before the accepted repair.
+
+**G7 R55 qualification and R56 replacement FSM state remains: `SUBMIT-FOR-REVIEW` (one exact repair accepted; mandatory `REVISE` transition required).**
+
+## R55 qualification and R56 replacement follow-up — REVISE (`2026-07-15T17:21:47+02:00`)
+
+- Crash-safe mandatory transition persisted: `SUBMIT-FOR-REVIEW -> REVISE` before correction.
+- Transition preimage identities are Round Log 6,427 lines / 1,133,571 bytes / `7b80c2f8e454c86d8a781439eabe91ba3009d72fcc25efdedd717df03450bceb`; Convergence Report 1,018 / 149,065 / `213a60d28acd87cb40f2116c0c27753947093c96e4a7bf4edbec24f69b78ed0f`; and G7_STATE 4,877 / 1,041,361 / `f51df3cfe93897bf4f3bc7c07674d904dae3cfa8705302e63f656d06c07788fb`.
+- Authorized repair is exactly one equal-width substitution in Round owner prose: original R55 control byte coordinates to current marker-derived coordinates. Round line count/length, R56 offsets/root, every reviewer/control byte, and all Convergence content must remain unchanged.
+- After repair, all dependent fixed-base, scope, protected-slice, qualification, allocation, control/grammar/map/citation/startup/PID/write/terminal, format/guard, and live-process gates must rerun fresh. No prior SELF-CHECK or submission result alone authorizes DONE.
+
+**G7 R55 qualification and R56 replacement FSM state: `REVISE` (one exact owner-coordinate repair authorized; fresh terminal gate required afterward).**
+
+### REVISE repair receipt (`2026-07-15T17:22:15+02:00`)
+
+- Pre-receipt G7_STATE is 4,886 lines / 1,042,607 bytes / `8bc523929cf25e71484fc4a927e697a4c23d136e6578febf9612b8c96fd969bf`.
+- The sole accepted repair changed Round line 6,253 from the original pre-row R55 byte range to current marker-derived bytes `[1087235,1107174)`. It changed no line count or file length; Convergence was not mutated.
+- Immediate post-repair identities are Round Log 6,427 lines / 1,133,571 bytes / `1fdd22e4d9a21ef2cbc41c65d9f5d90275d6431a600665e4a5faa9ebdd80977c`; Convergence Report 1,018 / 149,065 / `213a60d28acd87cb40f2116c0c27753947093c96e4a7bf4edbec24f69b78ed0f`; and pre-receipt G7_STATE as stated above.
+- Marker-bounded R55 and R56 controls retain roots `f7531c4c1648eee27711368a518e98a89f609e15620ef540536aa4775999e32d` and `9dbcf74c2e970059ec8cdc99748571b36617fdde58cafe2686c944ca78f5b888`. R56 ranges therefore remain unchanged.
+- One post-repair absence probe emitted an empty display field for a no-match result and receives no absence credit. The corrected explicit branch returns old-coordinate count zero and current-coordinate line match one.
+- No other Round, Convergence, control, row, grammar, allocation, or process content changed. No task was instantiated or sent.
+
+The full post-REVISE terminal gate now restarts from disk. Earlier SELF-CHECK/submission results cannot substitute for it.
+
+**G7 R55 qualification and R56 replacement FSM state remains: `REVISE` (repair sealed; fresh terminal gate required).**
+
+### REVISE terminal-gate diagnostic note (`2026-07-15T17:23:03+02:00`)
+
+- Pre-note identities are Round Log 6,427 lines / 1,133,571 bytes / `1fdd22e4d9a21ef2cbc41c65d9f5d90275d6431a600665e4a5faa9ebdd80977c`; Convergence Report 1,018 / 149,065 / `213a60d28acd87cb40f2116c0c27753947093c96e4a7bf4edbec24f69b78ed0f`; and G7_STATE 4,899 / 1,044,125 / `0c83d5ec65c768551238f61e3cf868321762d36f63e02fd5915127c2b88c7f01`.
+- The fresh gate's first closure-coordinate assertion used a malformed literal pattern and falsely reported failure despite deriving the correct current range. It receives no closure-coordinate credit.
+- The exact Round line will be matched directly against current marker-derived coordinates before that gate component is credited. Other results from the same read-only batch remain independently reproducible, but the terminal gate cannot pass until the corrected assertion and every remaining component run from disk.
+
+**G7 R55 qualification and R56 replacement FSM state remains: `REVISE` (failed diagnostic logged at zero credit; corrected fresh gate required).**
+
+### REVISE fresh terminal-gate result (`2026-07-15T17:24:30+02:00`)
+
+- Gate preimage identities are Round Log 6,427 lines / 1,133,571 bytes / `1fdd22e4d9a21ef2cbc41c65d9f5d90275d6431a600665e4a5faa9ebdd80977c`; Convergence Report 1,018 / 149,065 / `213a60d28acd87cb40f2116c0c27753947093c96e4a7bf4edbec24f69b78ed0f`; and G7_STATE 4,907 / 1,045,209 / `b6d9261e8fed31b69a8ca51a8265a3b9b4754af2ec6430f81985f0488f20e2e4`.
+- Corrected fixed-base gate passes: branch `main`; HEAD == `origin/main` == `5424da2ac0bbaffd54d0c97caeca084b04a82fd7`; ancestry passes; worktree diff contains exactly the three owned paths; index and untracked sets are empty; path-scoped whitespace passes.
+- Fixed-base Round bytes through line 6,095 and lines 6,097-6,243 are identical. The sole old-file mutation is the operational R55 row. Marker-derived current R55 control coordinates `[1087235,1107174)` now match Round line 6,253.
+- Protected R55 control and separator-inclusive slices reproduce 136 / 19,939 / `f7531c4c1648eee27711368a518e98a89f609e15620ef540536aa4775999e32d` and 137 / 19,940 / `37a879a56a1c463f599f1bfb6524f810d27cb746af41e04e7ce251f6289fa2b1`. Transcript and extracted bootstrap reproduce 25 / 94,072 / `d211adea29040fac3502d6e87963ad59d29d06a40dc11e52643a58b1d08a893b` and 20 / 1,855 / `b0d6084552e5a9c055d9c66da4df222e023b1eeeaa18ad096949e2a5baa9ebf3`.
+- R55 remains exactly `NOT-RUN · METHOD-CONTROL-STARTUP-PREFACE-VIOLATION · TERMINATED`, with zero evidence/route credit and no G3 route. R10 remains 1 / 114 / `5470c4970ce3fa869c48fc1d6320e89220d3d31a7b4acc360c5db32dd08719d0` and `PRECOMMITTED`.
+- R56 control is lines 6,289-6,427 / bytes `[1112121,1133571)` / 139 / 21,450 / `9dbcf74c2e970059ec8cdc99748571b36617fdde58cafe2686c944ca78f5b888`; separator-inclusive lines 6,288-6,427 / `[1112120,1133571)` / 140 / 21,451 / `5122e9f6977a0439ab3458dd3c45fdbc2beb0a809f6e6204d462816cbd0b9a72`. Heading/anchor are unique; the anchor is physical EOF.
+- Placeholder grammar remains lines 6,304-6,324 / 21 / 2,452 / `e29e758758cae6fecef22716b78910329f5a6b94421eff2be434e529e27b1db5`, with 12 fields, one blank separator, four ordered tools, one narration boundary, one fail-closed instruction, and one post-Tool-4 instruction.
+- Fresh map parser returns 34 valid windows, maximum 350, exactly one containing Rev 7 line 2431, the six expected unions/counts, and a silent declared-record comparison to R55. Dual primary union gates and whole-candidate citation extraction, numbered reread union/subset/quote closure, and restart-on-candidate-change are explicit.
+- Startup action-only narration boundary, semantic-text failure boundary, compaction replay, exact PID scoping, sole lens, blind plan-space/no-action law, one generic anchored Edit, no later tool, and exact standalone terminal response all pass review.
+- Allocation is 56 unique rows at 22 Sol / 34 Opus; 24 failed at 6/18; 32 active at 16/16; 18 filed at 9/9 with A=118/B=64/C=22; 14 active-unfiled at 7/7; and R56 alone `BOUND-UNSENT`. R56 has no finding, grade, coverage, route, cross-model, or convergence credit. Convergence remains `NOT ESTABLISHED`.
+- UTF-8, terminal LF, CR, conflict-marker, fixed-path whitespace, and classified added-prose guards pass. Added owner/control prose remains operational review scaffolding and adds no normative card body, registry/slot semantics, external location, prohibited reference material, or campaign-strengthening assertion.
+- Fresh terminal process gate reproduces exact session `monkeybee-pdf-mass-context-repo--r56`, pane `%153` index 1, shell 2975675, sole child 2976878, `pane_dead=0`, lowercase cwd, exact Opus command/effort, live Opus 4.8/xhigh TUI, and untouched default placeholder. Retired R56 child and all R55 coordinates are absent; host zombies are zero.
+- No task/bootstrap was instantiated or sent. No reviewer/owner/process contact, pane input, artifact/canon/plan/root-ledger mutation, stage, commit, push, fetch, browse, file creation/deletion, measurement, comparison, or external action occurred.
+
+The mandatory REVISE gate passes. The FSM may advance to `DONE/HANDOFF`; that transition has not yet been written.
+
+**G7 R55 qualification and R56 replacement FSM state remains: `REVISE` (fresh terminal gate passed; ready for `DONE/HANDOFF`).**
+
+## R55 qualification and R56 replacement follow-up — DONE/HANDOFF (`2026-07-15T17:25:00+02:00`)
+
+- Crash-safe terminal transition persisted: `REVISE -> DONE/HANDOFF` after the corrected fresh terminal gate and final untouched-reservation snapshot passed.
+- Transition preimage identities are Round Log 6,427 lines / 1,133,571 bytes / `1fdd22e4d9a21ef2cbc41c65d9f5d90275d6431a600665e4a5faa9ebdd80977c`; Convergence Report 1,018 / 149,065 / `213a60d28acd87cb40f2116c0c27753947093c96e4a7bf4edbec24f69b78ed0f`; and G7_STATE 4,927 / 1,049,478 / `cfea3d7489e4fd35d3c9ca863a0541d5833609eef1be47e346bbeb338b803d9a`.
+- R55 is immutably closed `NOT-RUN · METHOD-CONTROL-STARTUP-PREFACE-VIOLATION · TERMINATED`. Both prefacing events violate its strict sealed startup law; successful Read content and root interruption do not cure event order. R55 has zero finding, grade, coverage, marginal, verdict, route, owner, curve, cross-model, or convergence credit; no G3 route exists.
+- Protected R55 control is current lines 6,108-6,243 / bytes `[1087235,1107174)` / 136 / 19,939 / `f7531c4c1648eee27711368a518e98a89f609e15620ef540536aa4775999e32d`; separator-inclusive slice is lines 6,107-6,243 / `[1087234,1107174)` / 137 / 19,940 / `37a879a56a1c463f599f1bfb6524f810d27cb746af41e04e7ce251f6289fa2b1`. Stable transcript and detached bootstrap are 25 / 94,072 / `d211adea29040fac3502d6e87963ad59d29d06a40dc11e52643a58b1d08a893b` and 20 / 1,855 / `b0d6084552e5a9c055d9c66da4df222e023b1eeeaa18ad096949e2a5baa9ebf3`.
+- R56 is the fresh one-for-one Opus replacement for the same original R09 planned slot. It binds only plan `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`, sole `obscure-section self-containment` lens, exact `claude-opus-4-8` / `xhigh`, and eventual premise-first root route to G3 only after a chain-qualified filing. It remains `BOUND-UNSENT` with no evidence credit.
+- R56 control is lines 6,289-6,427 / bytes `[1112121,1133571)` / 139 / 21,450 / `9dbcf74c2e970059ec8cdc99748571b36617fdde58cafe2686c944ca78f5b888`; separator-inclusive lines 6,288-6,427 / `[1112120,1133571)` / 140 / 21,451 / `5122e9f6977a0439ab3458dd3c45fdbc2beb0a809f6e6204d462816cbd0b9a72`. Placeholder grammar is lines 6,304-6,324 / 21 / 2,452 / `e29e758758cae6fecef22716b78910329f5a6b94421eff2be434e529e27b1db5`. The unique R56 anchor is physical Round EOF.
+- Terminal allocation is 56 unique rows at 22 Sol / 34 Opus; 24 failed at 6/18; 32 active planned at 16/16; 18 valid filed at 9/9 with A=118/B=64/C=22; 14 active-unfiled at 7/7; and R56 alone bound-unsent. R10 remains untouched `PRECOMMITTED`; convergence is `NOT ESTABLISHED`.
+- Terminal reservation attestation is session `monkeybee-pdf-mass-context-repo--r56`, pane `%153` index 1, shell 2975675, sole child 2976878, `pane_dead=0`, cwd `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`, exact child command `/home/joseph/.local/bin/claude --dangerously-skip-permissions --model claude-opus-4-8 --effort xhigh`, live Opus 4.8/xhigh TUI, and untouched default placeholder. No input or task history exists.
+- Root-only later recipe: reproduce fixed-base ancestry, exact three-path diff, empty index/untracked sets, terminal file identities, protected R55 slices/transcript/bootstrap, R10 identity, allocation, R56 control/grammar ranges and roots, and current process/TUI. Commit and push only the three G7 paths. Reproduce the pushed commit, whole-Round root, control/grammar roots and ranges, then record the root-ledger receipt in a separately authorized step.
+- Immediately before later activation, root must reattest the same untouched R56 session/pane/index/shell/child/cwd/command/model/effort/TUI/placeholder; any mismatch fails closed. Root then instantiates only the 21-line placeholder grammar with pushed commit, whole-Round root, exact control root/ranges, exact process fields, exactly one empty separator, and terminal LF. Root adds no control body or commentary, records the detached bootstrap identity under its authority, and sends only that bootstrap in a separately authorized dispatch turn. Tool 3 reaches the sealed control. Root must not bind R10 in this handoff.
+- G7 performed no task dispatch, bootstrap instantiation, pane input, reviewer/owner/process contact, artifact/canon/plan/root-ledger mutation, file creation/deletion, stage, commit, push, fetch, browse, measurement, comparison, or external action. Only the three authorized paths are dirty; index and untracked sets are empty.
+
+The terminal G7_STATE identity is sampled after this self-containing marker for the handoff report.
+
+**G7 R55 qualification and R56 replacement FSM state: `DONE/HANDOFF` (R55 immutable zero credit; R56 sealed `BOUND-UNSENT`; idle for root-only later actions).**
