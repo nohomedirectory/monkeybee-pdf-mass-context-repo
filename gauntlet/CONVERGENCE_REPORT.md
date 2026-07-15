@@ -636,3 +636,25 @@ R45 binds only pushed plan `fc4cf43598e788cacea1ffabce7110d23ba3aea66a7d89afa33b
 The R45 control fixes only full AGENTS and protocol as the first two tools, then permits flexible read-only ingestion within bounded authority/artifact scope. It retains one lens, exact prompt, fresh exclusions, schema, detached whole-file blind seal, sole append, standalone termination token, and process exit without constraining reviewer judgment through a giant ordinal script.
 
 No task has been sent to R45. Overarching G7 remains `DRAFT`; root may commit/push the three G7 documents, reproduce all identities and the untouched reviewer process, compute the detached Round Log hash, then deliver only the exact activation envelope and sealed control. G7 does not dispatch, contact an owner/reviewer, edit an artifact/root ledger, or bind another round.
+
+## R45 zero-credit failure and R46 bound-unsent correction — 2026-07-15
+
+This append-only correction supersedes only stale R45-bound wording above. It preserves every earlier report and reviewer byte and changes no filed finding, grade, loss guard, curve point, artifact verdict, owner disposition, or convergence conclusion.
+
+### R45 terminal control
+
+R45 is immutable `NOT-RUN · AUTHORITY-COVERAGE/FRESHNESS-FAILURE · TERMINATED`. One declared authority Read exceeded the output ceiling; recovery Reads stopped at Rev 7 line 7353, leaving required lines 7354–8005 unread. R45 nevertheless began three partial artifact Reads before root termination. Every call was read-only; there was no Round Log contact or write. Transcript prose is quarantined. R45 supplies zero finding, grade, lens coverage, verdict, route, curve point, disposition, or conclusion; its ID is not reused.
+
+### Filed evidence and convergence remain fixed
+
+Valid filed evidence remains exactly 15 rounds, A=98/B=59/C=19, with an 8 Sol / 7 Opus filed-family split. The same-lens five-pass-A curve remains R04 A+B=16 → R05 A+B=32 → R41 A+B=7, all non-marginal. R45 adds no point. Zero consecutive marginal-only points means convergence remains **NOT ESTABLISHED** before a valid pass-4/5 filing.
+
+### Allocation and R46 control state
+
+Immutable allocation is now 46 rows at 20 Sol / 26 Opus. Failed IDs are R06, R07, R23, R24, R34, R35, R36, R37, R39, R40, R42, R43, R44, and R45. Excluding those 14 leaves 32 active planned slots at 16 Sol / 16 Opus; 15 are filed and 17 are active-unfiled. R46 is the sole `BOUND-UNSENT` row and 16 remain unbound. The one-for-one replacement adds no planned lens or coverage.
+
+R46 binds only pushed plan `fc4cf43598e788cacea1ffabce7110d23ba3aea66a7d89afa33bbf60cba72260`, sole `oversimplification-and-feature-loss` lens, Opus 4.8/xhigh, and original pass 4/5. Exact untouched identity is session `monkeybee-pdf-mass-context-repo--r46`, target `1.1`, pane `%138`, shell 1505585, child 1505806, monitor 1505681, and lowercase repository cwd. Sealed Round Log control is `[832289,842098)`, 44 lines / 9,809 bytes / SHA-256 `e813298061b2906d98607af371511a50770c7730d4bef2a89cf72e6038a8f9ba`; heading-to-EOF is 9,808 / `fc7dbe80d6a25039307998b53d921ed3e9381300f3577b0e89543baa8ebb89a3`.
+
+The concise deterministic capacity law yields exactly 57 authority Reads over 4,858 selected lines and 36 artifact Reads over all 3,543 plan lines, each at most 100 lines. Authority must pass before artifact access; any error, truncation, out-of-range result, or coverage mismatch fail-closes with no compensating Read or write. The control otherwise retains fresh context, one artifact/lens, exact prompt, blind whole-file seal, sole structured append, standalone termination token, and process exit without constraining one-lens judgment.
+
+No task has been sent to R46. Overarching G7 remains `DRAFT`; root may commit/push the three G7 documents, reproduce all identities and the untouched reviewer process, compute the detached Round Log hash, then deliver only the exact activation envelope and sealed control. G7 does not dispatch, contact an owner/reviewer, edit an artifact/root ledger, or bind another round.
