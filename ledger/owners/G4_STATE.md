@@ -1,6 +1,6 @@
 ---
 generated-by: Claude G4 owner (NTM session `monkeybee-pdf-mass-context-repo--g4`, `claude-opus-4-8`)
-continued-by: Codex replacement G4 owner (`gpt-5.6-sol`, effort `ultra`, live priority/fast)
+continued-by: Codex replacement G4 owner (exact session `g4b`; `gpt-5.6-sol`, effort `ultra`, live priority/fast)
 date: 2026-07-14
 inputs:
   - AGENTS.md
@@ -15,6 +15,7 @@ inputs:
   - ledger/owners/G0_STATE.md
   - DISPUTES.md
   - committed blob `77c694e:gauntlet/ROUND_LOG.md` (bounded R33 packet and integration only; lines 2209–2289)
+  - committed blob `fb3ab420aad833f1842fb6ca81121fda9aaee18b:gauntlet/ROUND_LOG.md` (bounded R38 packet and mechanical closure only; lines 3329–3379)
   - MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md (§0.2, §3, §4.6–4.7, §10.10, §11.9, §13.9–13.10, §24.12–24.16, §26.2–26.3, §27–27.4, §28.3, §30.5–30.10, §31.4–31.10, §33, §35)
 status: PROPOSED
 evidence-status: provisional-pending-substrate
@@ -49,6 +50,56 @@ evidence-status: provisional-pending-substrate
 | `REVISE` (self-check restart 4) | 2026-07-14T22:43:31+02:00 | Restarted byte-hygiene check found `SC-4`: `reports/TRACEABILITY_MATRIX.md` lacked a final newline; validation stopped and returned to `REVISE` before repair. The same batch's frontmatter AWK failed because `close` collided with an AWK built-in; no frontmatter conclusion was drawn and the corrected diagnostic must rerun |
 | `SELF-CHECK` (restart 4) | 2026-07-14T22:43:59+02:00 | `SC-4` repaired by adding the final newline with no lasting prose change; full suite restarts again from canonical-byte integrity, and the corrected frontmatter diagnostic remains mandatory |
 | `SUBMIT-FOR-REVIEW` | 2026-07-14T22:47:57+02:00 | `SELF-CHECK → SUBMIT-FOR-REVIEW`: the restarted full suite is green; every diagnostic and correction is recorded below; seven artifact component identities and the bytewise-sorted manifest were fixed before this transition; no reviewer was spawned or routed |
+| `INGEST-VERIFIED` (continuing session `g4b`; phase remains `SUBMIT-FOR-REVIEW`) | 2026-07-15T02:10:38+02:00 | Reread the required authority chain; reproduced `HEAD`, `main`, and `origin/main` at `fb3ab420aad833f1842fb6ca81121fda9aaee18b`; reproduced the eight supplied package identities, clean exclusive-scope status/diff, and sorted seven-file manifest; read only committed R38 lines 3329–3379; reproduced the sealed packet by prepending its declared one-byte separator convention to lines 3329–3366, yielding 39 lines / 12,150 bytes / SHA-256 `fe3e5aacfec181a5f631997631eb3ae8e1e11e5f18293e3e68286c2c544edab4`; both allegations remain mechanically admitted and unpromoted |
+| `REVISE` (R38) | 2026-07-15T02:11:06+02:00 | Persisted `SUBMIT-FOR-REVIEW → REVISE` after verified R38 admission and before any artifact change; `R38-A01` and `R38-C01` remain unaccepted allegations pending independent exact-evidence tests and a separately persisted disposition record |
+| `REVISE` (R38 premise dispositions) | 2026-07-15T02:12:10+02:00 | Independently tested both premises against the admitted artifacts and bounded canon; `R38-A01 = ACCEPT — REGRADE`; `R38-C01 = QUALIFY — CONDITIONAL NOTE`; exact evidence, repair limits, and loss guards are persisted below before any artifact repair |
+| `SELF-CHECK` (R38) | 2026-07-15T02:13:29+02:00 | Persisted `REVISE → SELF-CHECK` after the surgical diff matched the authorized boundaries: matrix row `Q3-DIS-5` plus its two tallies only, one conditional sentence in C4 §5, and one conditional sentence in C6 §3; C2/C3/C5/C7 and every other matrix row remain unchanged; the entire validation suite restarts after this checkpoint |
+| `REVISE` (R38 self-check restart 1) | 2026-07-15T02:17:27+02:00 | Restarted cross-state tally check found `SC-R38-1`: the checkpoint's prior terminal evidence still displayed pre-R38 `PARTIAL=8` / `GAP=16` without labeling that section and its identities historical; validation stopped and persisted `SELF-CHECK → REVISE` before the owner-state-only clarification |
+| `SELF-CHECK` (R38 restart 1) | 2026-07-15T02:17:50+02:00 | `SC-R38-1` repaired in owner state only by labeling the old evidence and identities as admitted pre-R38 history; the full suite restarts from canonical-byte integrity, and no earlier passing check is carried forward as current evidence |
+| `SUBMIT-FOR-REVIEW` (R38) | 2026-07-15T02:19:49+02:00 | Persisted `SELF-CHECK → SUBMIT-FOR-REVIEW` only after the entire restarted suite passed; final seven-artifact identities and sorted manifest are recorded below; the exact pre-transition checkpoint identity is recorded to avoid self-referential hashing; no R25/R26 review was routed |
+| `REVISE` (terminal-diagnostic restart 2) | 2026-07-15T02:21:05+02:00 | The first post-transition confirmation wrapper failed at JavaScript parse time before launching a nested command; because the terminal diagnostic record counted only the three earlier wrapper failures, persisted `SUBMIT-FOR-REVIEW → REVISE` before correcting that accounting; no artifact or check result changed |
+| `SELF-CHECK` (R38 restart 2) | 2026-07-15T02:21:31+02:00 | `SC-R38-2` repaired in owner state only; persisted `REVISE → SELF-CHECK`; the entire suite restarts again, and post-transition checks will be decomposed into simple commands |
+| `SUBMIT-FOR-REVIEW` (R38 restart 2) | 2026-07-15T02:23:12+02:00 | Persisted `SELF-CHECK → SUBMIT-FOR-REVIEW` after the entire restart-2 suite passed; artifact identities and manifest remained unchanged; the 294-line state preimage is recorded below; final postimage checks are decomposed standalone commands and no R25/R26 review is routed |
+
+## R38 continuing-owner intake — exact session `g4b`
+
+- owner footer: `gpt-5.6-sol` / effort `ultra` / live priority `fast`
+- admission phase: owner phase remains `SUBMIT-FOR-REVIEW` until the separately persisted transition to `REVISE`
+- control identity: `HEAD = main = origin/main = fb3ab420aad833f1842fb6ca81121fda9aaee18b`
+- exclusive scope: the seven artifacts and this checkpoint only; restricted status and baseline diff were empty before this intake write
+- R38 status: sole lens `dependency soundness`; `claude-opus-4-8` / `xhigh`; `FILED · VALIDATED · TERMINATED`; A=1/B=0/C=1; marginal-only `NO`; mechanical admission does not accept a premise or grade
+- committed-read boundary: only `git show fb3ab420aad833f1842fb6ca81121fda9aaee18b:gauntlet/ROUND_LOG.md` lines 3329–3379; no mutable Round Log byte was read
+- packet convention: literal lines 3329–3366 are 38 lines / 12,149 bytes; the sealed identity includes the declared preceding one-byte newline separator, reproduced in memory as 39 lines / 12,150 bytes / SHA-256 `fe3e5aacfec181a5f631997631eb3ae8e1e11e5f18293e3e68286c2c544edab4`
+- unavailable inputs remain `ALIEN_ARTIFACT.md` and `PROJECT_OVERVIEW.md`; neither is load-bearing for R38
+
+| Admitted G4 path | Lines | Bytes | SHA-256 |
+|---|---:|---:|---|
+| `reports/TRACEABILITY_MATRIX.md` | 403 | 71,345 | `390998bdb308d76e9bce92fbd921c6282a2827844a640d82611e159671b185aa` |
+| `plans/cycle_briefs/C2.md` | 109 | 11,216 | `eb406a51c0c489d6fe0380c293f96bd84e045affb97c481ea8e07798af212c52` |
+| `plans/cycle_briefs/C3.md` | 107 | 10,688 | `20c48dd5f0128dc0407084e1a97dbe0d62af3a41c4be1ab7d5e942b904be6434` |
+| `plans/cycle_briefs/C4.md` | 137 | 12,896 | `d8e9241f3cdcc61a2a2999aca51a631c28f7eca1b09e0b54eab04d878ec7b388` |
+| `plans/cycle_briefs/C5.md` | 109 | 10,365 | `d97aaf8689d08bc9b2e6f5a907e27eab1cf9c936e182f673a1fca8af9d9ba161` |
+| `plans/cycle_briefs/C6.md` | 111 | 11,220 | `35d06257c6100f236e38d7b893f46da5a388e1cf99b16c79d62f4c0707e49b90` |
+| `plans/cycle_briefs/C7.md` | 113 | 13,377 | `224b848ba6470cf2304842c4cb9cdee98f9d79496d0fd3bf74f3bd51cc1926c0` |
+| `ledger/owners/G4_STATE.md` (pre-intake checkpoint) | 198 | 30,505 | `992b63dfeb24051a36eba8ebff5518a2a69e0c612ea9d046f9c44d4bf53ada23` |
+
+Admitted bytewise-sorted seven-file manifest SHA-256: `22749762089e2a68b9897a09031b19fbdff6aa1108e2fd8071b7743d0df602c6`.
+
+## R38 premise-first dispositions — continuing owner
+
+These are G4 owner dispositions, not promotions of R38's filed grades. Coordinates identify the admitted pre-R38 package; stable section and requirement IDs govern after repair.
+
+| R38 item | Disposition | Independent local / canonical evidence | Authorized repair boundary | Preserved loss guard |
+|---|---|---|---|---|
+| `R38-A01` | `ACCEPT — REGRADE` | Matrix status law (supporting coordinate 24) says `PARTIAL` requires an existing producer and `GAP` means canon requires the item while no cycle/day-zero item/gate produces it. `Q3-DIS-5` (96) says `none named` yet ends `PARTIAL`; the C7 reverse row (230) says maturity classification has no named producer; F-5 (301–311) and the reality check (377) repeat that absence. Rev 7 §33.13 (6797–6805) requires the three maturity classes reported separately; §33.16 (6829) merely requires that classification inside the public bundle. Charter §5/C7 and C7 §3 authorize assembling that bundle but name no upstream maturity-classification producer; C7 §3 itself records six unsourced contents. A container slot is therefore not an evidence-backed producer under this matrix's convention. | Change only `Q3-DIS-5` from `PARTIAL` to `GAP`; add its ID to the §4 forward-orphan tally and change 16 to 17; remove it from the reverse-ledger `PARTIAL` enumeration and change 8 to 7. Do not reconcile by inventing a C7 producer. | Preserve the full structural/empirical/adaptive requirement, §33.13's honest empirical-duration boundary, §33.16's bundle-content link, and `LIN-EVO-1` as bounded input to adaptive rehearsal only. Preserve every other row and finding. |
+| `R38-C01` | `QUALIFY — CONDITIONAL NOTE` | Rev 7 §3.2 (396–413) locates the optional extra serialization profile inside the writer-version envelope; §35 open-decision row 8 (6960; restated at 7174) keeps the narrower-profile and widen-envelope branches human-open. Work Order §4 (93) defers that choice to C6. Locally, C4 §1 (27) authors the canonical/preservation serializers; C5 §1 (26) consumes canonical rewrite; C6 §3 (58) carries the unresolved branch but does not expose its backward edge. The dependency exists only if the human chooses widening, so this is a useful conditional record, not an established violation or a new deliverable. | Add one bounded sentence to C6 §3's existing decision note and one bounded sentence to C4 §5. Name the C4 producer, C5 consumer, and rework/interoperability tradeoff; add no scope and author no future delta plan. | Preserve human authority, C6 deferral, the `may not do both silently` constraint, both open branches, and the C4/C5 deliverables. State expressly that a writer-envelope extension is L5 rework and not a kernel touch. |
+
+## R38 bounded repair application
+
+- `reports/TRACEABILITY_MATRIX.md`: changed `Q3-DIS-5` from `PARTIAL` to `GAP`, inserted its ID into the forward-orphan list, changed that tally from 16 to 17, removed its ID from the `PARTIAL` enumeration, and changed that tally from 8 to 7; no other matrix row or finding changed.
+- `plans/cycle_briefs/C4.md`: added one conditional backward-dependency sentence in §5 only.
+- `plans/cycle_briefs/C6.md`: added one conditional backward-dependency sentence to the open-decision-8 note in §3 only.
+- `plans/cycle_briefs/C2.md`, `C3.md`, `C5.md`, and `C7.md`: unchanged.
 
 ## Replacement-owner takeover
 
@@ -96,8 +147,12 @@ Premise testing finished at `2026-07-14T22:30:05+02:00`. `QUALIFY` and `QUALIFY-
 | `SC-2` | Full vocabulary scan found two unscoped process uses of `completed` in this checkpoint: the historical ingest action and the replacement premise-test timestamp. They were not Q2/§24 terms, required ledger field names, canonical quotations, or historical evidence of a repaired violation. | `CONFIRMED — REPAIRED` | Replaced only those two process verbs with `finished`; no phase, time, evidence, or meaning changed. | Preserve all scoped Q2/§24 vocabulary, required `best` field names, canonical quotations, and the historical vocabulary-disposition record. |
 | `SC-3` | Cross-file meaning check found the checkpoint's current owner-finding summary still described the pre-R33 collapsed lane set, four-item F-5 list, pre-handoff F-7, and pre-register F-9. The matrix and briefs had already changed. | `CONFIRMED — REPAIRED` | Synchronized only the four one-line summaries, reality-check paragraph, and review-limitation note; labeled the admitted 50-ID self-check evidence historical. All nine findings and detailed premise dispositions remain. | R33 grades stay unpromoted; canon is unchanged; no task was routed; no gap was weakened. |
 | `SC-4` | UTF-8/final-newline diagnostic stopped at the first file because `reports/TRACEABILITY_MATRIX.md` lacked a final newline. The subsequent frontmatter AWK invocation had a diagnostic syntax failure and supplied no evidence. | `CONFIRMED — REPAIRED` | Added exactly one final newline to the matrix using structured patching; the entire suite, including a corrected frontmatter check, must rerun. | No lasting prose, ID, status, requirement, or evidence relation changed. |
+| `SC-R38-1` | Cross-state tally check found the prior terminal evidence still presented pre-R38 `PARTIAL=8` / `GAP=16` and its manifest identities without a historical label after R38 changed the current arithmetic to 7/17. | `CONFIRMED — REPAIRED` | Retitled that frozen section and its identity table as admitted pre-R38 historical evidence and added an explicit supersession sentence; no prior evidence byte, artifact, count, or disposition was rewritten. | Preserve the admitted pre-R38 identities and validation record while making the current R38 suite the sole current tally source. |
+| `SC-R38-2` | The first post-transition confirmation wrapper failed at JavaScript parse time before any nested command ran, while the terminal diagnostic section counted only the three earlier wrapper parse failures. | `CONFIRMED — REPAIRED` | Reopened the owner FSM, changed the wrapper-failure count to four, recorded the fourth failure without inferring a cause beyond the parser result, and requires the suite plus decomposed postimage checks to rerun. | Preserve every prior passing result as historical evidence only; do not change an artifact to cure an orchestration-script defect. |
 
-## Replacement final self-check evidence
+## Replacement final self-check evidence at the admitted pre-R38 manifest (historical)
+
+This frozen section records the package admitted to R38 under manifest `22749762089e2a68b9897a09031b19fbdff6aa1108e2fd8071b7743d0df602c6`; its 8/16 lifecycle arithmetic is historical and is superseded for current-state purposes by the R38 terminal suite recorded later in this checkpoint.
 
 The terminal suite ran from canonical-byte integrity after `SC-1` through `SC-4` were repaired. Its evidence is:
 
@@ -110,7 +165,7 @@ The terminal suite ran from canonical-byte integrity after `SC-1` through `SC-4`
 - **Byte and repository hygiene:** corrected UTF-8/final-newline/NUL checks passed all eight owned Markdown files; fence parity was even; corrected frontmatter errors `0`; trailing-whitespace hits `0`; conflict-marker hits `0`; path-scoped `git diff --check` was green. Every changed path is inside the exclusive write set; `C3.md` is unchanged.
 - **Diagnostic failures, not hidden:** the first frontmatter AWK used `close` as a variable and failed syntactically, so it supplied no evidence; the corrected form passed. The first Perl UTF-8 checker destructively decoded its input scalar and falsely reported a missing final newline; copying the scalar before decode made the raw-byte and decoded checks agree, and all eight passed. The first C2 held-out-probe regex was narrower than the artifact phrase `held-out extension probe`; the corrected regex found it. None of these three diagnostic defects authorized an artifact repair.
 
-### Terminal seven-artifact identities
+### Pre-R38 seven-artifact identities (historical)
 
 | Artifact | SHA-256 |
 |---|---|
@@ -193,6 +248,50 @@ Nine graded findings against the **campaign layer**, not against Rev 7's domain 
 - All nine findings began as one owner's judgment from one model family. R33 supplied one fresh-context zero-orphan audit; the replacement owner premise-tested its six allegations without promoting their grades. Every surviving campaign finding remains falsifiable by exhibiting the missing producer.
 - Two named inputs remain `SOURCE-UNAVAILABLE` (D-002). Neither is load-bearing for any G4 row.
 
+## R38 terminal self-check evidence
+
+The latest entire suite restarted after `SC-R38-2`; no result from either interrupted pass was counted as terminal evidence.
+
+- **Canonical integrity:** all 9 hashes in `ledger/CANONICAL_HASHES.md` matched their named inputs.
+- **Requirement arithmetic:** 56 unique Q2/Q3 definitions, duplicate definitions `0`; `OWNED=25`, `PARTIAL=7`, `GAP=17`, `EXTERNAL=2`, `UNSELECTED=5`; 17 GAP rows equal the 17 explicit forward-orphan IDs; the seven-row PARTIAL enumeration equals the seven PARTIAL definitions.
+- **Forward/reverse closure:** all 56 requirements have a reverse or explicitly delegated forward-orphan disposition; missing `0`. The two non-target-object IDs remain separately registered. Brief citations use 27 of 58 defined target/non-target IDs with undefined IDs `0`; all 9 finding IDs are defined and cited.
+- **Cycle and dependency parity:** all expected C2–C7 scope, contract-or-no-new-capability, decision, evidence, risk, gate, kernel-touch, and uncertainty elements are present. `Q3-DIS-5` is a GAP and appears only in the 17-item orphan tally, not the seven-item PARTIAL tally. The conditional writer-envelope edge appears only in C4 §5 and C6 §3 and preserves human choice, C6 deferral, both branches, C4/C5 ownership, and the L5/non-kernel boundary.
+- **Q2/Q3 handoffs:** both questions retain explicit no-self-award rules, external adjudication/receipt paths, pending states, absent-custodian gaps, and honest no-verdict outcomes.
+- **Provenance and claim vocabulary:** all eight owned Markdown files passed frontmatter checks. Existing claim-vocabulary occurrences remain the previously dispositioned scoped Q2/§24 terms, required §33 ledger fields, canonical quotations, negative gap statements, or historical audit evidence: artifacts 28 lines / 45 tokens; owner state 20 lines / 35 tokens. Added-line hits `0`.
+- **Clean-room and action boundary:** prohibited-name hits across the seven artifacts `0`; URL hits across all eight owned files `0`; bead/source-code/scaffolding hits `0`; no added line records performed measurement, comparison, fetch, publication, contact, purchase, or dispatch. Existing execution-word hits are future gate language, prohibitions, negative conditions, or historical audit evidence. Every SpecCard occurrence is a registry, slot-citation, coverage-gate, pipeline, or no-semantic-body statement; no semantic body exists.
+- **Byte and repository hygiene:** all eight files are valid UTF-8, contain no NUL, and end in newline; odd fences `0`; trailing whitespace `0`; conflict markers `0`; path-scoped `git diff --check` passed. Exactly four paths differ from the pushed control and all are authorized: the matrix, C4, C6, and this checkpoint.
+
+### Diagnostics and restart accounting
+
+- Four JavaScript orchestration wrappers failed before launching any nested diagnostic. The first structural wrapper contained a literal Markdown backtick delimiter; the first hygiene and policy wrappers each contained a literal fence delimiter; the first post-transition confirmation wrapper returned parser error `Unexpected string`, with no narrower cause inferred. Each supplied no evidence and changed no file; the first three passed after byte-escaped correction, and the fourth passed as decomposed standalone checks after restart 2.
+- The first reverse-closure checker returned 11 false omissions because it ignored §3's explicit delegation of GAP enumeration to §4. The corrected checker followed that relation and passed 56/56.
+- `SC-R38-1` was a real owner-state defect: prior 8/16 evidence lacked a historical label after the current arithmetic changed to 7/17. The persisted `SELF-CHECK → REVISE → SELF-CHECK` restart repaired only that labeling; the restarted suite then passed.
+
+### R38 terminal dispositions and review limits
+
+- `R38-A01`: `ACCEPT — REGRADE`; repaired only `Q3-DIS-5` and its two dependent tallies.
+- `R38-C01`: `QUALIFY — CONDITIONAL NOTE`; repaired only C4 §5 and C6 §3; the note does not establish a violated requirement or resolve the human decision.
+- R38 was one dependency-soundness lens from one reviewer context. Its grades remain reviewer grades, not owner promotions. This owner performed premise tests and self-checks, not a fresh review. R25/R26 remain unrouted and receive no credit from this turn.
+- `ALIEN_ARTIFACT.md` and `PROJECT_OVERVIEW.md` remain `SOURCE-UNAVAILABLE` and non-load-bearing here.
+
+### Final seven-artifact identities
+
+| Artifact | Lines | Bytes | SHA-256 |
+|---|---:|---:|---|
+| `reports/TRACEABILITY_MATRIX.md` | 403 | 71,345 | `3dac29b224ddd07f3345c9933156dbbcb3fc0861fa0fac4d95d6ea1ccf81ce0b` |
+| `plans/cycle_briefs/C2.md` | 109 | 11,216 | `eb406a51c0c489d6fe0380c293f96bd84e045affb97c481ea8e07798af212c52` |
+| `plans/cycle_briefs/C3.md` | 107 | 10,688 | `20c48dd5f0128dc0407084e1a97dbe0d62af3a41c4be1ab7d5e942b904be6434` |
+| `plans/cycle_briefs/C4.md` | 139 | 13,233 | `f58aa7bf2c456008db6454e02d91e31c1f8568cbbfcf3eb7243c72ad49066e1b` |
+| `plans/cycle_briefs/C5.md` | 109 | 10,365 | `d97aaf8689d08bc9b2e6f5a907e27eab1cf9c936e182f673a1fca8af9d9ba161` |
+| `plans/cycle_briefs/C6.md` | 111 | 11,472 | `3e7b7ee094b4af2b30b96e7a52a9cbfa6a70659bb284f46e7bdd8790306049a9` |
+| `plans/cycle_briefs/C7.md` | 113 | 13,377 | `224b848ba6470cf2304842c4cb9cdee98f9d79496d0fd3bf74f3bd51cc1926c0` |
+
+Bytewise-sorted seven-file manifest SHA-256: `0e72a420f3e49d2c5f2673d30ef1531190291081753ecb75fe4b80925915d87a`.
+
+First terminal-transition checkpoint preimage, superseded by diagnostic restart 2: `ledger/owners/G4_STATE.md`, 248 lines / 39,709 bytes / SHA-256 `a3be7b168b2164d6e17d946fc7d81308323b38734678cdf5edf561d918b00cdb`.
+
+Final terminal-transition checkpoint preimage after restart 2: `ledger/owners/G4_STATE.md`, 294 lines / 47,028 bytes / SHA-256 `48c6d8384febf92f45f9413db1fdc9ed7aca1b39a15a69bf11a13b3e797cdf29`. The post-transition identity is computed after this write and reported in the terminal handoff; embedding that postimage inside this file would change it.
+
 ## Next transition condition
 
-Remain idle at `SUBMIT-FOR-REVIEW`. The only next transition is `SUBMIT-FOR-REVIEW → REVISE` on receipt of a fresh-context finding packet. No review, binding, spawn, routing, commit, or push is authorized or performed by this owner.
+Remain idle at `SUBMIT-FOR-REVIEW`. The only next transition is `SUBMIT-FOR-REVIEW → REVISE` on receipt of a fresh-context finding packet explicitly routed by root. Do not self-route R25 or R26. No review, binding, spawn, routing, contact, commit, push, or external action is authorized or performed by this owner.
