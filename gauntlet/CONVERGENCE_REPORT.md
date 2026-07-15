@@ -568,3 +568,27 @@ Immutable allocation remains 41 rows at 20 Sol / 21 Opus. Failed IDs remain R06,
 R07 binds only pushed plan `fc4cf435…72260`, exact sole lens `oversimplification-and-feature-loss`, Opus 4.8/xhigh, and original `5-pass A (4/5)`. Its exact untouched identity is session `monkeybee-pdf-mass-context-repo--r07`, target `1.1`, pane `%89`, shell 3265654, child 3265870, and exact repository cwd. The sealed control is Round Log `[740432,754762)`, 63 lines / 14,330 bytes / SHA-256 `9313769efdbf823e24be0fc4613f7266d8438ec7bff7d3ab312cb274b1936a86`, ending in the literal blind-append certificate. No task has been sent.
 
 Overarching G7 owner FSM remains `DRAFT`. Root may commit and push the three G7 control documents, revalidate the exact file and reviewer identities, and only then deliver the sealed control to R07. G7 does not dispatch, contact an owner/reviewer, edit the artifact or root ledger, or bind another round.
+
+## R07/R42 zero-credit failures and R43 bound-unsent correction — 2026-07-15
+
+This append-only correction supersedes only stale R07-bound wording above. It preserves every earlier report and reviewer byte and changes no filed finding, grade, loss guard, curve point, artifact verdict, owner disposition, or convergence conclusion.
+
+### Zero-credit terminal controls
+
+R07 is immutable `NOT-RUN · METHOD/CONTROL-SELECTION-VIOLATION · TERMINATED`. Its first tool was forbidden AskUserQuestion rather than full AGENTS; root's intended full-protocol selection misregistered as the chat-only option; two subsequent unlisted Bash calls used compound/`echo` and pipe/early-artifact access before root interruption. No Round Log or repository write occurred. R07 supplies zero finding, grade, lens coverage, verdict, route, curve point, owner disposition, or conclusion. Root selection error is part of the recorded terminal cause; transcript reasoning is not admitted.
+
+R42 is immutable `NOT-RUN · WRONG-WORKSPACE-LAUNCH · TERMINATED`. Its control-plane launch selected distinct uppercase `/home/joseph/ntm_Dev` and stopped at workspace trust before any task, read, or write. It supplies the same zero-credit set and is not a review result. Neither failed ID is reused.
+
+### Filed evidence and convergence remain fixed
+
+Valid filed evidence remains exactly 15 rounds, A=98/B=59/C=19, with an 8 Sol / 7 Opus filed-family split. The same-lens five-pass-A curve remains R04 A+B=16 → R05 A+B=32 → R41 A+B=7, all non-marginal. R07 and R42 add no point. Zero consecutive marginal-only points means convergence remains **NOT ESTABLISHED** before a valid pass-4/5 filing.
+
+### Allocation and R43 control state
+
+Immutable allocation is now 43 rows at 20 Sol / 23 Opus. Failed IDs are R06, R07, R23, R24, R34, R35, R36, R37, R39, R40, and R42. Excluding those 11 leaves 32 active planned slots at 16 Sol / 16 Opus; 15 are filed and 17 are active-unfiled. R43 is the sole `BOUND-UNSENT` row and 16 remain unbound. The one-for-one replacement adds no planned lens or coverage.
+
+R43 binds only pushed plan `fc4cf43598e788cacea1ffabce7110d23ba3aea66a7d89afa33bbf60cba72260`, sole `oversimplification-and-feature-loss` lens, Opus 4.8/xhigh, and original pass 4/5. Exact untouched identity is session `monkeybee-pdf-mass-context-repo--r43`, target `1.1`, pane `%135`, shell 1285230, child 1285452, monitor 1285330, and lowercase repository cwd. Sealed Round Log control is `[762040,778553)`, 67 lines / 16,513 bytes / SHA-256 `1694e99841e94a1ddf612430024e14fae17a0769e5fb8ef992d33bb99b72f0bf`; heading-to-EOF is 16,512 / `eda07d80bf97b0fc9218933ec30ed8d5344e7c5c9c6d87c050e84bd6186df9a9`.
+
+The activation repair states at the opening and EOF that on-disk bound/no-task text is construction-time only. After root push, exactly one dispatch-commit line with 40 lowercase hex characters, one blank line, and sealed R43 heading through EOF means `THIS TASK IS LIVE AND SENT`; AskUserQuestion and chat-only alternatives are forbidden, and matching gates proceed immediately to full AGENTS then full reviewer protocol. Artifact/lens/method remain unchanged.
+
+No task has been sent to R43. Overarching G7 remains `DRAFT`; root may commit/push the three G7 documents, reproduce all identities and the untouched reviewer process, then deliver only the exact activation envelope and sealed control. G7 does not dispatch, contact an owner/reviewer, edit an artifact/root ledger, or bind another round.
