@@ -940,3 +940,21 @@ Independent G7 premise probes find local support for the 15-versus-17 field-coun
 Allocation is now 53 unique rows at 22 Sol / 31 Opus; 22 failed at 6/16; 31 active planned at 16/15; 18 valid filed at 9/9 with A=118/B=64/C=22; and 13 active-unfiled at 7/6. No round is bound-unsent. No replacement ID or planned slot is created; R10 remains untouched `PRECOMMITTED`.
 
 The C1 five-pass-A sequence remains R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24, all non-marginal. The Constitution sequence remains R14=15 non-marginal -> R15=21 non-marginal -> R51=0 marginal-only. R53 adds no point, and convergence remains **NOT ESTABLISHED**.
+
+## R54 one-for-one allocation-only state — `2026-07-15T15:21:54+02:00`
+
+R54 is one fresh Opus row for the original R09 planned slot after immutable zero-credit R09, R52, and R53. It binds the unchanged C1 plan identity `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`, sole `obscure-section self-containment` lens, exact `claude-opus-4-8` / `xhigh`, and eventual G3 premise-first route. No prior ID, row, control, or packet is changed.
+
+R54 is only `ALLOCATED · UNSENT`. No reviewer control or live bootstrap exists for R54 at this checkpoint, nothing was sent, and no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model credit, or convergence evidence is added. R10 remains untouched `PRECOMMITTED`.
+
+Allocation is 54 unique rows at 22 Sol / 32 Opus; 22 failed at 6/16; 32 active planned at 16/16; 18 valid filed at 9/9 with A=118/B=64/C=22; and 14 active-unfiled at 7/7. No round is bound-unsent yet. The C1 and Constitution sequences are unchanged, so convergence remains **NOT ESTABLISHED**.
+
+## R54 sealed coverage-hardened `BOUND-UNSENT` state — `2026-07-15T15:23:11+02:00`
+
+This append supersedes only the R54 allocation-only/no-bound wording immediately above. R54 alone advances from `ALLOCATED · UNSENT` to `BOUND-UNSENT`, and one self-contained control now occupies actual Round EOF. No historical row, control, packet, finding, grade, or disposition changes; R10 remains untouched `PRECOMMITTED`.
+
+R54 binds only the committed C1 plan 3,655 lines / 531,012 bytes / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`, sole `obscure-section self-containment` lens, exact `claude-opus-4-8` / `xhigh`, eventual G3 premise-first route, and fresh session `monkeybee-pdf-mass-context-repo--r54`, pane `%151` index 1, shell 2756616, child 2758537, exact lowercase cwd. The earlier capitalized-cwd child 2756859 remains absent and zero-credit.
+
+The placeholder-only minimal bootstrap requires first Tool 1 full `AGENTS.md`, Tool 2 full protocol, and Tool 3 exact sealed-control-only Read. The control prescribes sub-capacity gap-free authority/artifact windows, two mechanical union gates, zero-credit failed Reads with explicit retry disclosure, numbered citation checks, exact start and pre-write clock labels, one generic Round Edit, no Write tool, no post-Edit tool, and standalone `TERMINATED`. No live bootstrap is instantiated or sent here.
+
+Allocation remains 54 unique rows at 22 Sol / 32 Opus; 22 failed at 6/16; 32 active planned at 16/16; 18 valid filed at 9/9 with A=118/B=64/C=22; and 14 active-unfiled at 7/7. R54 is the sole bound-unsent row and supplies no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model credit, or convergence evidence before a valid filing. The prior sequences are unchanged, so convergence remains **NOT ESTABLISHED**.

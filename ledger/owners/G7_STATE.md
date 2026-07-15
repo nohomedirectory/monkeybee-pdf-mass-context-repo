@@ -4283,3 +4283,142 @@ No handoff defect was found. The FSM may advance to `DONE`; that transition has 
 - Root may inspect and commit the three owned paths. G7 assigns no next reviewer in this turn. The self-containing G7_STATE terminal identity is sampled only after this marker and belongs in the read-only handoff report.
 
 **G7 R53 packet qualification FSM state: `DONE` (bounded qualification resolved; idle for root).**
+
+## R54 replacement construction follow-up — INGEST (`2026-07-15T15:19:33+02:00`)
+
+- Crash-safe new-turn transition persisted: prior R53 `DONE -> INGEST` before opening R54 construction evidence or changing allocation/control artifacts.
+- `AGENTS.md` was read in full as the first repository action after compaction. The running-the-gauntlet skill was then read through EOF; its evidence-first, negative-ledger, and convergence discipline is bounded here by the human's plan-space, no-measurement, no-comparison, no-external-action, and three-path write laws.
+- Control gate passes on branch `main`: HEAD == local `origin/main` == `c7c3240dfdd2a2b66909edc2899ad67485b2e0ad`. The commit names only `ledger/RUN_LEDGER.md`, has parent `b6f722c23bbf6f34bd5d3c92ec73084f9d159d61`, and leaves all G7-owned paths at the pushed R53 identities.
+- Starting identities reproduce Round Log 5,859 lines / 1,050,187 bytes / `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`; Convergence Report 942 / 137,152 / `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`; G7_STATE 4,285 / 928,432 / `011539bf3ff4ec5320a834ac5ea32d9a6c48fe24cbaf0acd9628dc9eff0bb181`; bound plan 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`; reviewer protocol 90 / 4,942 / `e525a0e35fb703152d44d63d5f6874d48907d2b87e528e3f9f99dbd93baa33c3`.
+- Worktree, index, and untracked sets are empty. Only the three named G7 files are writable. R53 remains immutable zero-credit, no G3 route exists, R10 remains untouched, and no R54 input has been sent or inspected through its TUI.
+- INGEST authorizes read-only inspection of the existing R53 control/protocol, current allocation/convergence, pushed reservation evidence, and R54's named pane/process only. Allocation or control mutation remains blocked until `DRAFT` is persisted.
+
+**G7 R54 replacement construction FSM state: `INGEST` (control receipt persisted; evidence inspection authorized).**
+
+## R54 replacement construction follow-up — DRAFT (`2026-07-15T15:21:28+02:00`)
+
+- Crash-safe transition persisted: `INGEST -> DRAFT` before any R54 allocation row, convergence prose, or reviewer-control mutation.
+- The current protocol and sealed R53 control were read from disk. R54 preserves the same declared authority selections, sole `obscure-section self-containment` lens, committed C1 plan, exact Opus model/effort, blind route, one-write law, and no-action boundary while hardening coverage, retry, citation, and clock semantics.
+- The proposed bounded schedule was mechanically merged before drafting. It reproduces authority unions `OVERNIGHT_GOAL.md` [23,36] and [58,87] (44 lines); Charter [28,41], [54,150], [174,206] (144); Work Order [10,20], [67,79], [112,126] (39); Charter Reasoning [34,79] (46); Rev 7 [353,1003], [1651,3213], [5164,6202], [6674,8005] (4,585); and plan [1,3655] (3,655). Every prescribed long-window call is at most 350 lines, below the observed R53 failure sizes; `Read` semantics are 1-based offset plus line-count limit.
+- Fresh pre-allocation attestation reproduces session `monkeybee-pdf-mass-context-repo--r54`, window 1, pane `%151` index 1, shell 2756616, sole child 2758537, `pane_dead=0`, exact lowercase cwd, and exact child command `/home/joseph/.local/bin/claude --dangerously-skip-permissions --model claude-opus-4-8 --effort xhigh`. The live TUI shows Opus 4.8, xhigh effort, the lowercase cwd, and only the default placeholder.
+- Earlier child 2756859 is absent and remains zero-credit under the pushed root record: it inherited the capitalized alias, received only `/exit`, wrote no repository path, and is not the reserved reviewer child.
+- Protected R53 control and packet reproduce 102 lines / 12,212 bytes / `6844dad0b0202035a42498f6eb2c72f8dd6319c95ffd9cc9968c8223db32cd30` and 34 / 9,131 / `3b31399fa3862ced3fc627a6aa23f7dc2b2ac40cd9ef4c4476348333b7b369d6`. DRAFT preimage identities are Round 5,859 / 1,050,187 / `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`; Convergence 942 / 137,152 / `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`; G7_STATE 4,296 / 930,406 / `71eb9b85ece58f7f56fd9c3a080596db4ee12e885858d3b172120cd7a179c70f`.
+- DRAFT authorizes an `ALLOCATED-UNSENT` checkpoint for exactly one new immutable row R54, followed only after that partial output by construction and sealing of one EOF control. It authorizes no reviewer input, live bootstrap, R10 mutation, evidence credit, or external action.
+
+**G7 R54 replacement construction FSM state: `DRAFT` (allocation-only partial authorized; no control mutation yet).**
+
+### DRAFT partial — R54 `ALLOCATED-UNSENT` checkpoint (`2026-07-15T15:22:25+02:00`)
+
+- Exactly one immutable row R54 is now recorded. Round Log is 5,877 lines / 1,052,034 bytes / `387aee1acd92d06250ccd837a9f6c924308f7f48807d0a8046595fefd7de4e8a`; Convergence Report is 950 / 138,221 / `be95f9c9fa3b6735ccfee4a4e5f632e1e955ffd65e8a173616f08e158c9cd363`; pre-checkpoint G7_STATE is 4,308 / 933,041 / `db9bbb9dcee300c4932da70cdf22b2ec4e13c24562e2c1b8bab51c3d4c4e1c5d`.
+- The prior Round and Convergence byte prefixes replay exactly at `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568` and `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`. No historical row, packet, control, or closure changed.
+- Fresh parser output is 54 rows at 22 Sol / 32 Opus; 22 failed at 6/16; 32 active at 16/16; 18 valid filed at 9/9 with A=118/B=64/C=22; 14 active-unfiled at 7/7; and no bound row. R54 alone is `ALLOCATED · UNSENT`; R10 remains `PRECOMMITTED`; convergence is `NOT ESTABLISHED`.
+- Diff check is silent and the worktree names only the three G7 paths. No control or bootstrap has been appended, and nothing has been sent to R54.
+
+**G7 R54 replacement construction FSM state remains: `DRAFT` (allocation checkpoint persisted; control construction is next).**
+
+### DRAFT partial — R54 sealed `BOUND-UNSENT` construction (`2026-07-15T15:25:02+02:00`)
+
+- The operational R54 row now reads `BOUND-UNSENT`; the allocation-only paragraph remains preserved as historical checkpoint prose and is explicitly superseded by the appended transition. One control occupies actual Round EOF.
+- Round Log is 6,004 lines / 1,068,161 bytes / `ca2c60ca38873a7773c92eabf4c3e43985643c8ff29d86bb750b0191f1e67ef2`; Convergence Report is 960 / 140,058 / `40f12a810a7b300df0ea9947c7b03bb49f2f81a0761b137cf2aec5d1d300d38a`; pre-checkpoint G7_STATE is 4,317 / 934,327 / `48a4cf18212ba3690803c80e5af22077d388b38f63a3ca441048fcd7938916cb`.
+- Exact R54 control slice is Round lines 5,885–6,004 inclusive, 120 lines / 15,402 bytes, byte range `[1052759,1068161)`, SHA-256 `ebaecd36ed6ed1e60c347df2c37a05f79343deebc04a17cb7751eee6609a050a`. Its heading and final anchor are unique.
+- Exact on-disk placeholder bootstrap text is lines 5,900–5,910 inclusive, 11 lines / 1,142 bytes, byte range `[1054004,1055146)`, SHA-256 `495b9c8f58d1402d4b5a79321be433a4e5225b36281902bbe6bba2b117119bd4`. It contains placeholders only; no pushed identity was instantiated and no payload was sent.
+- Post-construction attestation still reproduces session `monkeybee-pdf-mass-context-repo--r54`, pane `%151` index 1, shell 2756616, sole child 2758537, `pane_dead=0`, exact lowercase cwd, and exact Opus 4.8/xhigh process. Retired child 2756859 remains absent.
+- Allocation parser yields 54 rows at 22 Sol / 32 Opus; 22 failed at 6/16; 32 active at 16/16; 18 valid filed at 9/9 and A=118/B=64/C=22; 14 active-unfiled at 7/7; R54 sole bound-unsent. R10 is unchanged and convergence remains `NOT ESTABLISHED`.
+- The starting Round prefix and protected R53 control/packet replay at `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`, `6844dad0b0202035a42498f6eb2c72f8dd6319c95ffd9cc9968c8223db32cd30`, and `3b31399fa3862ced3fc627a6aa23f7dc2b2ac40cd9ef4c4476348333b7b369d6`. Initial vocabulary, URL, and diff-format probes are silent; they receive no SELF-CHECK credit.
+
+**G7 R54 replacement construction FSM state remains: `DRAFT` (construction partial sealed; fresh SELF-CHECK required).**
+
+## R54 replacement construction follow-up — SELF-CHECK (`2026-07-15T15:25:27+02:00`)
+
+- Crash-safe transition persisted: `DRAFT -> SELF-CHECK` before any terminal construction review.
+- Transition preimage identities are Round Log 6,004 lines / 1,068,161 bytes / `ca2c60ca38873a7773c92eabf4c3e43985643c8ff29d86bb750b0191f1e67ef2`; Convergence Report 960 / 140,058 / `40f12a810a7b300df0ea9947c7b03bb49f2f81a0761b137cf2aec5d1d300d38a`; and G7_STATE 4,329 / 936,527 / `b08456778a1b4ab1400b8aa97aae8623982b0091d5d1282608cefc159c598c94`.
+- The fresh gate will review fixed-base scope, protected history, unique allocation, process/TUI identity, control/bootstrap slices, exact window unions, retry and timing law, packet/write/termination schema, claim/source guards, encoding/line endings/whitespace, index/untracked state, convergence arithmetic, and the no-contact boundary.
+- Any defect found requires a persisted `SELF-CHECK -> REVISE` transition before correction. No pre-transition diagnostic receives terminal credit.
+
+**G7 R54 replacement construction FSM state: `SELF-CHECK` (fresh construction gate in progress; submission blocked).**
+
+## R54 replacement construction follow-up — REVISE (`2026-07-15T15:30:34+02:00`)
+
+- Crash-safe transition persisted: `SELF-CHECK -> REVISE` before correcting a defect found in the fresh construction gate.
+- Transition preimage identities are Round Log 6,004 lines / 1,068,161 bytes / `ca2c60ca38873a7773c92eabf4c3e43985643c8ff29d86bb750b0191f1e67ef2`; Convergence Report 960 / 140,058 / `40f12a810a7b300df0ea9947c7b03bb49f2f81a0761b137cf2aec5d1d300d38a`; and G7_STATE 4,338 / 937,671 / `93093453fb4a92db04daad9987243a66df34b0601604bb59cf52a547696e1de6`.
+- The fixed-base, protected-history, allocation, format, and reservation checks pass. A corrected mechanical parser extracts all 34 prescribed windows, validates each offset/count/end coordinate, and reproduces the six declared unions and their line totals without a gap.
+- One control defect blocks credit: the placeholder bootstrap directly excludes interruption before Tool 1 and between Tools 1 and 2, but its Tool 3 line does not directly exclude a tool or question between Tools 2 and 3. Later sealed-control prose would detect that deviation only after Tool 3, which is weaker than the required bootstrap law.
+- The only authorized correction is to narrow that Tool 3 bootstrap line so it directly bars any intervening tool or question between Tools 2 and 3. No allocation, authority interval, artifact, lens, route, packet schema, historical byte, or Convergence prose may change. The corrected control and whole-file roots must be resealed before a wholly fresh SELF-CHECK.
+- R54 still reproduces the reserved session, pane, shell, child, lowercase cwd, exact Opus 4.8/xhigh command, default untouched TUI, and absent retired child. No input, task, bootstrap, control byte, or prompt was sent.
+
+**G7 R54 replacement construction FSM state: `REVISE` (bootstrap sequencing correction authorized; prior SELF-CHECK has no terminal credit).**
+
+### REVISE partial — R54 bootstrap sequencing correction (`2026-07-15T15:31:07+02:00`)
+
+- The authorized correction changed only the Tool 3 line inside the on-disk placeholder grammar. It now directly bars any other tool or question between Tools 2 and 3. The control remains 120 lines at Round lines 5,885–6,004 and byte range `[1052759,1068220)`.
+- Corrected Round Log is 6,004 lines / 1,068,220 bytes / `0e4f9e8c659af16320ad652d41a2f4776efb3bc8d87bb9bde564c645fd13ee83`. Corrected R54 control is 120 / 15,461 / `30b644c6f5e33ff2af71a1b28ca048b84c4f487375ac82dfb6278d1e03b2040b`; corrected placeholder text is lines 5,900–5,910, byte range `[1054004,1055205)`, 11 / 1,201 / `6770f8604ed8e4f67d17f3d7950a8ab4259f384984e1535060e40202f393dd00`.
+- Convergence Report remains frozen at 960 / 140,058 / `40f12a810a7b300df0ea9947c7b03bb49f2f81a0761b137cf2aec5d1d300d38a`. Before this checkpoint, G7_STATE is 4,349 / 939,575 / `a5eaaa8d34d87031ba5e56a82e0102a42ee7563db35e956016ff429570d04a17`.
+- The starting Round and Convergence prefixes and protected R53 control/packet still replay at `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`, `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`, `6844dad0b0202035a42498f6eb2c72f8dd6319c95ffd9cc9968c8223db32cd30`, and `3b31399fa3862ced3fc627a6aa23f7dc2b2ac40cd9ef4c4476348333b7b369d6`.
+- No allocation, artifact, authority interval, reviewer schema, historical packet/control, or Convergence content changed. No bootstrap was instantiated and nothing was sent to R54.
+
+**G7 R54 replacement construction FSM state remains: `REVISE` (correction sealed; fresh SELF-CHECK transition required).**
+
+## R54 replacement construction follow-up — SELF-CHECK restart (`2026-07-15T15:31:21+02:00`)
+
+- Crash-safe transition persisted: `REVISE -> SELF-CHECK` before rerunning any corrected-control gate.
+- Transition preimage identities are Round Log 6,004 lines / 1,068,220 bytes / `0e4f9e8c659af16320ad652d41a2f4776efb3bc8d87bb9bde564c645fd13ee83`; Convergence Report 960 / 140,058 / `40f12a810a7b300df0ea9947c7b03bb49f2f81a0761b137cf2aec5d1d300d38a`; and G7_STATE 4,359 / 941,248 / `1786f186ba3f7e4b97ea7dbd12dde81b852883923dbc939b47abdd2eabaf2783`.
+- This restart grants no credit to the superseded pass. It will independently rerun fixed-base scope, protected history, allocation, corrected control/bootstrap seals, all interval unions, process/TUI identity, control schema, format and classified prose boundaries, convergence, and the no-contact boundary from current disk state.
+- Any defect found requires another persisted `SELF-CHECK -> REVISE` transition before correction. Submission remains blocked.
+
+**G7 R54 replacement construction FSM state: `SELF-CHECK` (corrected-control restart in progress; submission blocked).**
+
+## R54 replacement construction follow-up — SELF-CHECK-RESULT (`2026-07-15T15:33:28+02:00`)
+
+- The corrected-control restart passes. Pre-result identities are Round Log 6,004 lines / 1,068,220 bytes / `0e4f9e8c659af16320ad652d41a2f4776efb3bc8d87bb9bde564c645fd13ee83`; Convergence Report 960 / 140,058 / `40f12a810a7b300df0ea9947c7b03bb49f2f81a0761b137cf2aec5d1d300d38a`; and G7_STATE 4,368 / 942,379 / `192f1fb574b0bd735e8b952f0a5f666adc5873a4c38e5deccead6b5b8e6310d4`.
+- Fixed control remains branch `main` with HEAD == local `origin/main` == `c7c3240dfdd2a2b66909edc2899ad67485b2e0ad`; that commit names only the root-ledger path. The fixed-base diff names exactly the three G7-owned files, has append-only hunks after their starting EOFs, and reports 145/0 Round, 18/0 Convergence, and 83/0 pre-result state lines. Index and untracked sets are empty.
+- Starting prefixes replay exactly: Round `[0,1050187)` at `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`; Convergence `[0,137152)` at `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`; and starting G7 state `[0,928432)` at `011539bf3ff4ec5320a834ac5ea32d9a6c48fe24cbaf0acd9628dc9eff0bb181`. Protected R53 control and packet remain 102 / 12,212 / `6844dad0b0202035a42498f6eb2c72f8dd6319c95ffd9cc9968c8223db32cd30` and 34 / 9,131 / `3b31399fa3862ced3fc627a6aa23f7dc2b2ac40cd9ef4c4476348333b7b369d6`.
+- Corrected R54 control is actual Round EOF at lines 5,885–6,004, byte range `[1052759,1068220)`, 120 lines / 15,461 bytes / `30b644c6f5e33ff2af71a1b28ca048b84c4f487375ac82dfb6278d1e03b2040b`. Its heading, placeholder section, and final anchor are each unique, and the anchor is the terminal Round line.
+- Placeholder bootstrap text is lines 5,900–5,910, byte range `[1054004,1055205)`, 11 lines / 1,201 bytes / `6770f8604ed8e4f67d17f3d7950a8ab4259f384984e1535060e40202f393dd00`. It remains an uninstantiated grammar with no pushed identity or control body. It directly requires the first three ordered Reads and excludes every intervening tool or question, including between Tools 2 and 3.
+- A fresh parser extracts 34 prescribed windows. Coordinate and maximum-window checks pass; merged sets reproduce Goal 44 lines, Charter 144, Work Order 39, Reasoning 46, Rev 7 4,585, and the bound plan 3,655 with no skipped line. The control gives failed/truncated calls no coverage, requires explicit missing-interval retries and disclosure, and runs the union gate both before analysis and before filing.
+- Control review passes for direct human authorization, post-bootstrap ISO start sampling, immediate pre-Edit ISO filing sampling labeled `PRE-WRITE`, later transcript chronology binding, one lens, numbered current-plan citation checks, unpromoted grades, stable packet schema, precise no-action scope, one generic Round Edit, no alternate write surface, no post-Edit tool, and standalone `TERMINATED`.
+- Allocation independently reruns at 54 unique rows, 22 Sol / 32 Opus; 22 failed at 6/16; 32 active at 16/16; 18 valid filed at 9/9 with A=118/B=64/C=22; and 14 active-unfiled at 7/7. R54 alone is `BOUND-UNSENT`; R10 remains byte-identical to HEAD and `PRECOMMITTED`; convergence remains `NOT ESTABLISHED`.
+- The bound plan remains 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`; the reviewer protocol remains 90 / 4,942 / `e525a0e35fb703152d44d63d5f6874d48907d2b87e528e3f9f99dbd93baa33c3`.
+- Fresh reservation attestation reproduces session `monkeybee-pdf-mass-context-repo--r54`, window 1, pane `%151` index 1, shell 2756616, sole child 2758537, `pane_dead=0`, exact lowercase cwd, exact `claude-opus-4-8` / `xhigh` command, live Opus 4.8/xhigh display, and untouched default placeholder. Retired child 2756859 remains absent.
+- UTF-8, terminal LF, CR, conflict-marker, whitespace, and diff-health gates pass. The classified owner-prose check passes at the campaign boundary: additions are allocation, control, convergence, and state evidence only and add no normative card body or registry/slot content.
+- No live bootstrap was instantiated; no task, prefix, prompt, authority byte, artifact byte, control byte, anchor, or other input was sent to R54. No reviewer, owner, or other process was contacted or inspected.
+
+No corrected-control defect remains. The FSM may advance to `SUBMIT-FOR-REVIEW`; that transition has not yet been written.
+
+**G7 R54 replacement construction FSM state: `SELF-CHECK` (corrected restart passed; ready for `SUBMIT-FOR-REVIEW`).**
+
+## R54 replacement construction follow-up — SUBMIT-FOR-REVIEW (`2026-07-15T15:33:55+02:00`)
+
+- Crash-safe transition persisted: `SELF-CHECK -> SUBMIT-FOR-REVIEW` before the independent bounded handoff review.
+- Transition preimage identities are Round Log 6,004 lines / 1,068,220 bytes / `0e4f9e8c659af16320ad652d41a2f4776efb3bc8d87bb9bde564c645fd13ee83`; Convergence Report 960 / 140,058 / `40f12a810a7b300df0ea9947c7b03bb49f2f81a0761b137cf2aec5d1d300d38a`; and G7_STATE 4,387 / 946,881 / `0f90eec484858a0ad225994bd5a7e763e7a134c925eee6f5e648d6b0fa5f30e2`.
+- This state authorizes only a new read-only review of construction scope, immutable seals, bootstrap/control law, allocation, convergence, reservation identity, format health, terminal handoff recipe, and the no-contact boundary. It authorizes no Round or Convergence mutation and no reviewer action.
+- Any defect found requires a persisted `SUBMIT-FOR-REVIEW -> REVISE` transition before correction. No submission result is credited until the handoff gate is rerun from current disk bytes and persisted.
+
+**G7 R54 replacement construction FSM state: `SUBMIT-FOR-REVIEW` (independent handoff review in progress; external contact forbidden).**
+
+## R54 replacement construction follow-up — SUBMIT-FOR-REVIEW-RESULT (`2026-07-15T15:34:54+02:00`)
+
+- The independent handoff review passes. Pre-result identities are Round Log 6,004 lines / 1,068,220 bytes / `0e4f9e8c659af16320ad652d41a2f4776efb3bc8d87bb9bde564c645fd13ee83`; Convergence Report 960 / 140,058 / `40f12a810a7b300df0ea9947c7b03bb49f2f81a0761b137cf2aec5d1d300d38a`; and G7_STATE 4,396 / 948,086 / `30f17529a3275a46c8e7233e3bb55306c55561b96e2a258989d59635c2ae6156`.
+- Fixed-base scope remains exactly three append-only owned-path hunks, with 145/0 Round, 18/0 Convergence, and 111/0 pre-result state lines; index and untracked sets remain empty. Starting prefixes and protected R53 slices reproduce their recorded roots.
+- R54 control and placeholder reproduce lines 5,885–6,004 / `[1052759,1068220)` / 120 / 15,461 / `30b644c6f5e33ff2af71a1b28ca048b84c4f487375ac82dfb6278d1e03b2040b` and lines 5,900–5,910 / `[1054004,1055205)` / 11 / 1,201 / `6770f8604ed8e4f67d17f3d7950a8ab4259f384984e1535060e40202f393dd00`. The three boundary markers remain unique; the final anchor remains actual EOF; the placeholder remains uninstantiated.
+- The second interval parser again validates all 34 coordinates and all six declared unions. Bootstrap ordering, failure/retry bookkeeping, both mechanical union gates, clock labels, citation verification, packet schema, sole-Edit law, post-Edit stop, and exact terminal response remain internally consistent.
+- Allocation again yields 54 rows at 22 Sol / 32 Opus; 22 failed at 6/16; 32 active at 16/16; 18 filed at 9/9 with A=118/B=64/C=22; 14 active-unfiled at 7/7; and R54 as the sole bound-unsent row. R10 remains `PRECOMMITTED`; convergence remains `NOT ESTABLISHED`.
+- Exact R54 session, pane, shell, child, lowercase cwd, process command, Opus 4.8/xhigh TUI, and default placeholder reproduce; the retired child remains absent. Encoding, line-ending, conflict, whitespace, diff-health, and classified campaign-boundary checks pass.
+- No live activation was created or sent, no R54 input occurred, and no reviewer, owner, or other process was contacted or inspected. No handoff defect was found.
+
+The FSM may advance to `DONE/HANDOFF`; that transition has not yet been written.
+
+**G7 R54 replacement construction FSM state: `SUBMIT-FOR-REVIEW` (handoff review passed; ready for `DONE/HANDOFF`).**
+
+## R54 replacement construction follow-up — DONE/HANDOFF (`2026-07-15T15:35:11+02:00`)
+
+- Crash-safe terminal transition persisted: `SUBMIT-FOR-REVIEW -> DONE/HANDOFF` after the successful independent handoff review.
+- Transition preimage identities are Round Log 6,004 lines / 1,068,220 bytes / `0e4f9e8c659af16320ad652d41a2f4776efb3bc8d87bb9bde564c645fd13ee83`; Convergence Report 960 / 140,058 / `40f12a810a7b300df0ea9947c7b03bb49f2f81a0761b137cf2aec5d1d300d38a`; and G7_STATE 4,410 / 950,440 / `a29c32e469a15e1a3316ebf003be37cd7c2a85ef414d51a7efb2cc7a6296dfb4`.
+- R54 is the one-for-one Opus 4.8/xhigh replacement for the original R09 planned slot and terminates this owner turn as the sole `BOUND-UNSENT` row. It has no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model credit, or convergence evidence. R10 remains untouched `PRECOMMITTED`.
+- Terminal accounting is 54 immutable rows at 22 Sol / 32 Opus; 22 failed at 6/16; 32 active at 16/16; 18 valid filed at 9/9 with A=118/B=64/C=22; and 14 active-unfiled at 7/7. Convergence remains `NOT ESTABLISHED`.
+- Frozen R54 construction seals are control lines 5,885–6,004, byte range `[1052759,1068220)`, 120 / 15,461 / `30b644c6f5e33ff2af71a1b28ca048b84c4f487375ac82dfb6278d1e03b2040b`; and placeholder text lines 5,900–5,910, byte range `[1054004,1055205)`, 11 / 1,201 / `6770f8604ed8e4f67d17f3d7950a8ab4259f384984e1535060e40202f393dd00`.
+- Root-only later recipe: after committing and pushing the three G7 files and reproducing every seal, replace only the five fields in the existing 11-line placeholder grammar with the pushed 40-character commit identity, committed whole-Round root `0e4f9e8c659af16320ad652d41a2f4776efb3bc8d87bb9bde564c645fd13ee83`, control root `30b644c6f5e33ff2af71a1b28ca048b84c4f487375ac82dfb6278d1e03b2040b`, byte range `1052759-1068220`, and line range `5885-6004 (120 lines)`. Preserve every other grammar byte and its one terminal LF. This is a substitution recipe only; no live payload exists in G7 output.
+- Root must freshly reattest the same R54 session, pane `%151` index 1, shell 2756616, child 2758537, lowercase cwd, exact process command, Opus 4.8/xhigh TUI, default placeholder, and absent retired child before any later activation. Any drift fails closed; no substitute pane is authorized.
+- G7 performed no task send, pane input, reviewer dispatch, commit, push, stage, fetch, browse, or external action. No owner or reviewer was contacted, no other reviewer was inspected, and no next round was bound.
+- Round and Convergence are frozen at the transition identities above. The self-containing terminal G7_STATE identity is sampled after this marker and belongs in the read-only handoff report.
+
+**G7 R54 replacement construction FSM state: `DONE/HANDOFF` (construction sealed; idle for root commit/push and separate activation).**
