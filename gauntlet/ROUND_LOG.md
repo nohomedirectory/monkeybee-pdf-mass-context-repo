@@ -276,7 +276,15 @@ R49 is the fresh one-for-one replacement for immutable failed R08. It preserves 
 
 | Round | Artifact | Declared lens (exactly one) | Model | Precondition to admit | Artifact hash | Status | A | B | C | Marginal-only | Owner disposition |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| R49 | C1 delta plan (R08 replacement) | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | R08 closed `NOT-RUN · AUTHORITY-SCOPE/FRESH-CONTEXT-CONTROL-VIOLATION · TERMINATED`; original pass 5/5 payload unchanged; exact fresh process reattested | `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0` | BOUND-UNSENT | — | — | — | — | Bound to untouched session `monkeybee-pdf-mass-context-repo--r49`, target `1.1`, pane `%141`, shell 1929789, child 1930040, exact lowercase cwd and model/mode/tier; zero task, finding, grade, coverage, verdict, route, or conclusion. |
+| R49 | C1 delta plan (R08 replacement) | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | R08 closed `NOT-RUN · AUTHORITY-SCOPE/FRESH-CONTEXT-CONTROL-VIOLATION · TERMINATED`; original pass 5/5 payload unchanged; exact fresh process reattested | `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0` | NOT-RUN · CONTEXT-CAPACITY/RECOVERY-REPLAY-LOOP · TERMINATED | — | — | — | — | Two context compactions triggered deterministic replay of already observed authority/artifact ranges; second replay restarted after Call 82 and root interrupted. Zero write, packet, finding, grade, coverage, verdict, route, or conclusion; partial reasoning quarantined; immutable ID not reused. |
+
+### Failed-round replacement allocation R50
+
+R50 is the fresh one-for-one replacement for immutable failed R49, which replaced failed R08. It preserves exactly the submitted C1 delta plan, sole `oversimplification-and-feature-loss` lens, Sol family, `5-pass A (5/5)` position, G3 route, pushed plan identity, exact 375-byte repeated prompt, and planned coverage. It adds no lens, pass, evidence, or active-slot count. `ALLOCATED · UNSENT` reserves identity only; process binding and reviewer delivery are separate gates.
+
+| Round | Artifact | Declared lens (exactly one) | Model | Precondition to admit | Artifact hash | Status | A | B | C | Marginal-only | Owner disposition |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| R50 | C1 delta plan (R49/R08 replacement) | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | R49 closed `NOT-RUN · CONTEXT-CAPACITY/RECOVERY-REPLAY-LOOP · TERMINATED`; original pass 5/5 payload unchanged; exact untouched session `monkeybee-pdf-mass-context-repo--r50`, pane `%142`, shell 2008272, child 2008528 bound | `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0` | BOUND-UNSENT | — | — | — | — | Zero findings, grades, coverage, verdict, route, curve point, disposition, cross-model credit, or conclusion; control sealed at true EOF and no task delivered. |
 
 ### R31 — notes on admission and reading
 
@@ -4762,3 +4770,41 @@ This is not a quota. Local evidence controls finding count and grade.
 **Root handoff.** Root alone may commit/push the three G7 documents, reproduce identities and the untouched R49 process, then send only the two pushed identity lines, one blank line, and this heading through EOF. G7 does not dispatch or contact R49.
 
 **R49 FINAL LITERAL ANCHOR — APPEND PACKET HERE AFTER ROOT ACTIVATION.**
+
+## R49 zero-credit failure closure — `2026-07-15T10:14:24+02:00`
+
+**Terminal classification.** R49 is immutable `NOT-RUN · CONTEXT-CAPACITY/RECOVERY-REPLAY-LOOP · TERMINATED`. Its historical payload remains submitted plan `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0`, sole `oversimplification-and-feature-loss` lens, Sol ultra/live-fast/priority family, original five-pass-A position 5/5, and G3 route. R49 is never reused.
+
+**Structured transcript boundary.** Quarantined transcript 456 lines / 2,798,513 bytes / `dab3f4ee3a804d69c132bcc11f0ea05f30a3e2687210bb9eb6747096f8e7eeb1` contains 88 calls / 88 outputs, two compactions after Calls 40 and 82, three task-local user messages, one abort, zero `apply_patch`, and zero repository write. Calls 1/2 read all AGENTS and reviewer protocol. Call 3 used a non-bold anchor and failed its match; Call 4 corrected to the exact bold anchor before authority ingest.
+
+**Capacity/recovery loop.** Initial bounded authority and artifact ingest remained inside declared scope, followed by artifact-only searches. After first compaction, Calls 41/42 and reminder-driven Calls 43/44 reread AGENTS/protocol, then replayed already observed authority/artifact ranges. Replay reached artifact line 3000 at Call 82 and compacted again. Calls 83/84 reread AGENTS/protocol, Calls 85–87 restarted authority, and reminder-driven Call 88 reread AGENTS. Root interrupted the deterministic replay loop.
+
+**Zero-credit boundary.** R49 shell 1929789, child 1930040, and session are absent; host zombies are zero. Round Log remained the exact pushed 4,764-line / 901,887-byte preimage at `c6a1d745fba0ca59d5e5939ea87a6bbb90e1c51a4f48cc34bf3624bbb07aacc6` until this owner closure. No packet or finding exists. Partial reasoning is quarantined; R49 supplies zero findings, grades, lens coverage, marginal result, verdict, route, curve point, owner disposition, cross-model credit, or conclusion.
+
+## R50 assignment/control — `2026-07-15T10:17:21+02:00`
+
+**Activation and bound identity.** This block records construction and binding only; G7 has not sent a task. Root may activate R50 only after commit and push by sending `ROOT-SUPPLIED DISPATCH COMMIT: <40 lowercase hex>`, then `ROOT-SUPPLIED ROUND LOG SHA-256: <64 lowercase hex>`, one blank line, and this R50 heading through true EOF. Receipt of that exact envelope means the review is live and fully specified. Bound identity is session `monkeybee-pdf-mass-context-repo--r50`, target `1.1`, pane `%142`, shell 2008272, child 2008528, cwd `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`, model `gpt-5.6-sol`, effort `ultra`, live mode `fast`, and priority service. Spawn metadata is `2026-07-15T08:08:23.15880195Z`. Any envelope, process, model, mode, tier, cwd, or artifact mismatch requires no review and no write; no fallback is authorized.
+
+**Fresh ingest and bounded authority.** The first repository read must be all of `AGENTS.md`; the second must be all of `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md`. Confirm HEAD equals the root-supplied commit and reproduce the artifact identity below. Then read only these authority selections: `OVERNIGHT_GOAL.md` lines 23–36 and 58–87; `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` lines 28–41, 54–150, and 174–206; `CYCLE_0_WORK_ORDER.md` lines 10–20, 67–79, and 112–126; `CAMPAIGN_CHARTER_REASONING.md` lines 34–79; and `MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md` lines 353–1003, 1651–3213, 5164–6202, and 6674–8005. Every authority read or search is confined to those selections; no command may display or return authority bytes outside them. Artifact-only searches are allowed. Initial ingest must cover every selected authority line and the entire artifact using bounded reads that avoid truncation.
+
+**Compaction-safe coverage law.** Maintain an explicit in-memory coverage manifest for each authority selection and artifact range, marking it `observed`, `unread`, or `retry-required`. After any context compaction, the first next repository read is all of `AGENTS.md`; root may send the exact reminder `Reread AGENTS.md`. Do not restart or replay authority or artifact ranges merely because compaction occurred. Rely on the compaction summary for ranges already observed, resume only manifest-marked unread ranges, and disclose compaction uncertainty. Reread a range only when its prior tool output failed or truncated, or when a bounded evidence anchor needs recheck; record the reason. A retry may not widen authority scope. Never claim an unread range was ingested.
+
+**Exact repeated blunder-hunt prompt.** Apply the following protocol paragraph byte-for-byte after the authority chain:
+
+```text
+Find every concrete place this artifact oversimplifies, loses a required feature, collapses an envelope without preserving dependencies, or makes an implementation-relevant assertion without its required evidence interface. DO NOT LOSE FEATURES. I am positive you missed at least 80 elements. Report only evidence-backed findings under this lens; do not rewrite the artifact.
+```
+
+This is not a quota. Local evidence controls finding count and grade.
+
+**One artifact and one lens.** Review only `plans/CYCLE_1_DELTA_PLAN.md`, exactly 3,566 lines / 495,395 bytes / SHA-256 `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0`, at G3 `SUBMIT-FOR-REVIEW`. Apply exactly one lens, `oversimplification-and-feature-loss`, as repeated five-pass-A position 5/5. Judgment over evidence, grades, uncertainty, marginal status, and verdict is unrestricted within that lens. Findings remain allegations pending G7 validation and independent G3 premise testing.
+
+**Fresh-context and plan-space boundary.** Root supplies no prior finding, packet, owner disposition, convergence text, checkpoint body, decision, route result, recovery narrative, or earlier outcome. Do not read Round Log semantics, Convergence Report, G3 checkpoint body, another artifact, root ledger, author context, external source, competitor material, or prohibited PDF-processor source/docs. Do not edit the artifact or canon, create source/scaffolding/Beads/pseudo-Beads, supply SpecCard semantic bodies, measure or compare, commit/push, contact an owner, or take external action.
+
+**Reviewer FSM and packet schema.** Use `INGEST -> REVIEW -> SELF-CHECK -> FILE -> TERMINATE`, with no revision loop or owner consultation. Apply reviewer-protocol A/B/C grades exactly. The sole packet heading is `## R50 — plans/CYCLE_1_DELTA_PLAN.md — oversimplification-and-feature-loss`. Disclose process/model/mode/tier, timestamps, pushed identities, authority/artifact coverage, retries, compaction uncertainty, freshness/no-action boundary, and FSM. State `A=<n>; B=<n>; C=<n>` and `marginal-only: YES | NO`; YES requires A=0 and B=0. Each monotonic `R50-A01`, `R50-B01`, or `R50-C01` finding contains exactly one `evidence`, `requirement`, `consequence`, `repair boundary`, and `loss guard`, with stable plan anchors and the feature-loss mechanism. End with one round verdict and `- termination state: TERMINATED`; grades remain unpromoted.
+
+**Sole write and finish.** Do not read prior Round Log semantics. Construct the packet in memory, then make exactly one repository write: one structured `apply_patch` append to `gauntlet/ROUND_LOG.md` through the exact unique final literal below, preserving every preceding byte. Mechanical whole-file hash and final-literal checks may not display prior content. Do not write any other path or use a shell-write method. After a successful append, respond with the standalone word `TERMINATED` and perform no later tool call or work. If filing cannot be completed, leave the repository unchanged and state the concrete boundary without substituting another artifact, lens, or method.
+
+**Root handoff.** Root alone may commit and push the three G7 documents, reproduce their identities and the untouched R50 process, then send only the two pushed identity lines, one blank line, and this heading through EOF. G7 does not dispatch or contact R50.
+
+**R50 FINAL LITERAL ANCHOR — APPEND PACKET HERE AFTER ROOT ACTIVATION.**
