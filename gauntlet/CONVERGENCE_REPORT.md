@@ -402,3 +402,30 @@ For Traceability + cycle briefs specifically, ten immutable IDs now exist: basel
 The preceding `dependency-soundness | R10, R24 | Allocated` summary and later corrections must now be read with this supersession: R10 remains allocated and unfiled; R24, R34, R35, R36, and R37 are terminal `NOT-RUN` with zero coverage; R38 is the Opus replacement and remains `BOUND-UNSENT` with zero coverage. The `dependency soundness` lens has filed zero times across these allocations. Allocated, bound, failed, and filed are not interchangeable states.
 
 The exact R38 control requires full AGENTS and reviewer-protocol reads first, then literal task-inline bounded authority excerpts whose ordered identity is `ac75a392496c7c4580451d3dc6df61a69da1198e8fbcc6e1c577d35b09f06514`; those four source files must not be opened, and the seven G4 artifacts are the only later file reads. Each permitted Bash primitive must be its own tool call: no separators, display helpers, `echo`, `printf`, compound command, extra utility, write, or unstated argument. The Round Log remains closed; exactly one later structured `apply_patch` packet may be appended at the then-current true EOF without reading prior log bytes, followed by exact standalone token `TERMINATED` and process exit. This report records the control; it does not dispatch R38 or strengthen any claim.
+
+## R38 filed validation and G4 route correction — `2026-07-15T01:58:55+02:00`
+
+This append-only correction supersedes the preceding R37/R38 control correction only where that section describes R38 as bound-unsent, gives pre-filing evidence totals, or says the `dependency soundness` lens has filed zero times. It changes no earlier reviewer packet, finding grade, owner premise disposition, or artifact. Its source Round Log is 3,379 lines / 644,935 bytes / SHA-256 `c9ad009c16e135f1e0cba1035185e90224cce6c181811d61fe6f4cf391ac6ef8`; the sealed R38 packet is 39 lines / 12,150 bytes / SHA-256 `fe3e5aacfec181a5f631997631eb3ae8e1e11e5f18293e3e68286c2c544edab4`.
+
+### Filed evidence and grade arithmetic
+
+- Filed rounds: exactly 14.
+- Aggregate grades: A=94, B=56, C=19.
+- Filed model-family split: 7 Sol / 7 Opus.
+- R38 is `FILED · VALIDATED · TERMINATED` under the sole `dependency soundness` lens with A=1/B=0/C=1 and marginal-only `NO`. Validation admits identity, schema, method, and termination only; neither finding premise has been accepted or regraded by G7.
+- No allocation row remains bound or unsent, and no replacement or next round is allocated.
+
+R33 remains the valid Traceability + cycle briefs point at A=4/B=2/C=0 under `Q2/Q3 zero-orphan audit`; R38 is a second valid point for the same artifact family at A=1/B=0/C=1 under `dependency soundness`. Because the lenses differ, these two points are not a same-lens convergence series and do not establish convergence. The `dependency soundness` lens has now filed once. R38's reviewer verdict and residual statements remain reviewer evidence, not an owner-strengthened artifact claim.
+
+### Allocation, failure, and active-slot accounting
+
+The immutable allocation ledger remains 38 rows: 30 baseline + 2 supplemental + replacements R33, R34, R35, R36, R37, and R38. Its family split is 17 Sol / 21 Opus. Failed terminal IDs remain R23, R24, R34, R35, R36, and R37. Excluding those six failures leaves 32 active planned slots at 16 Sol / 16 Opus; 14 are filed and 18 remain active-unfiled. Replacement IDs preserve the original coverage plan rather than enlarge it.
+
+For Traceability + cycle briefs, the ten immutable IDs remain baseline R23–R26 plus replacements R33–R38. Six are failed terminal records; the four active planned slots are filed R33, filed R38 carrying the original R24 slot, and unfiled R25/R26. R38 filing satisfies the replacement slot's planned `dependency soundness` coverage without erasing the failed identities.
+
+### Guarded owner route and release boundary
+
+- R38-A01 is designated through root to G4 for a producer-meaning premise test. If G4 accepts it, the repair remains bounded to the `Q3-DIS-5` row and its two dependent tallies, or to explicit reconciliation of the alternate producer interpretation; the filed grade and loss guard remain intact.
+- R38-C01 is designated through root to G4 as a judgment-level cross-cycle dependency note. If accepted, its bounded note remains at C6 §3 and C4 §5 while preserving the human decision, the C6 deferral, and the L5/kernel boundary. It is not promoted here into an established violated requirement.
+- G7 has not sent a route, edited a G4 artifact, or made a G4 disposition. Root may route G4 owner disposition next. R06 remains eligible but unrouted.
+- The G7 owner FSM remains `DRAFT`; this correction allocates or dispatches no reviewer and strengthens no campaign claim.
