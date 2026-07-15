@@ -6,7 +6,7 @@ inputs:
   - OVERNIGHT_GOAL.md
 status: DRAFT
 evidence-status: provisional-pending-substrate
-updated-at: 2026-07-15T09:31:13+02:00
+updated-at: 2026-07-15T09:52:07+02:00
 timestamp-correction: the initially written literal 2026-07-14T19:26:00+02:00 was a future, unmeasured value and is preserved here as invalid; the exact update second is not inferred
 ---
 
@@ -14,14 +14,14 @@ timestamp-correction: the initially written literal 2026-07-14T19:26:00+02:00 wa
 
 ## Global state
 
-- Active subgoal: dispatch and validate sealed R08 against the pushed G3 C1 submission, then route any chain-qualified allegations through G7 and G3. G1, G2, G3, G4, and G5 remain at `SUBMIT-FOR-REVIEW` after bounded owner gates; R08 is the sole `BOUND-UNSENT` round and remains untouched pending the post-ledger pushed gate.
-- Current phase: `G0/G6 DONE; G1 SUBMIT-FOR-REVIEW after R15; G2/G5 SUBMIT-FOR-REVIEW with exact Sol ultra/fast owner panes retained; G3 SUBMIT-FOR-REVIEW after pushed R48 accept=2/narrow=2 repairs; G4 SUBMIT-FOR-REVIEW after bounded R38 repairs; G7 DRAFT / R08 BOUND-UNSENT at pushed control commit 4c03f6e; G8 INGEST with a live exact-model owner and disk checkpoint`
+- Active subgoal: dispatch and validate sealed R49, the one-for-one replacement for zero-credit R08, against the pushed G3 C1 submission; then route any chain-qualified allegations through G7 and G3. G1, G2, G3, G4, and G5 remain at `SUBMIT-FOR-REVIEW`; R49 is the sole `BOUND-UNSENT` round and remains untouched pending the post-ledger pushed gate.
+- Current phase: `G0/G6 DONE; G1 SUBMIT-FOR-REVIEW after R15; G2/G5 SUBMIT-FOR-REVIEW with exact Sol ultra/fast owner panes retained; G3 SUBMIT-FOR-REVIEW after pushed R48 repairs; G4 SUBMIT-FOR-REVIEW after R38 repairs; G7 DRAFT / R08 zero-credit / R49 BOUND-UNSENT at pushed control commit ec14acf; G8 INGEST with a live exact-model owner and disk checkpoint`
 - Priority rule: preserve G0, ledger, G3, G3 gauntlet, G1, and `MORNING_REPORT.md`; shed work only from the bottom of the governing ladder.
 - Canonical-input mutation allowance: none.
 - Bead/code allowance: none.
 - External human-bound actions: drafts only.
 - Review artifacts: findings only; reviewers never edit owner artifacts.
-- Live NTM retention census: 23 intentional MonkeyBee sessions, comprising seven owner/control panes plus sixteen still-needed reviewer panes; 15 Codex and eight Claude; zero dead panes, missing model children, cwd mismatches, or host zombies at `2026-07-15T09:31:13+02:00`. Every retained Codex is exact `gpt-5.6-sol` / `ultra` with live `fast`; every retained Claude is exact Opus 4.8/xhigh. The separate live `agents` root-orchestrator pane is not one of the 23 named NTM sessions. No retained session was removed.
+- Live NTM retention census: 23 intentional MonkeyBee sessions, comprising seven owner/control panes plus sixteen still-needed reviewer panes; 15 Codex and eight Claude; zero dead panes, missing model children, cwd mismatches, or host zombies at `2026-07-15T09:52:07+02:00`. Every retained Codex is exact `gpt-5.6-sol` / `ultra` with live `fast`; every retained Claude is exact Opus 4.8/xhigh. Terminal R08 was removed and fresh R49 occupies its explicit replacement role. The separate live `agents` root-orchestrator pane is not one of the 23 named NTM sessions.
 - R48 route checkpoint: valid Opus/xhigh R48 is filed `CHAIN-QUALIFIED` at A=0/B=1/C=3; G3 independently dispositioned it accept=2/narrow=2/reject=0 and returned the repaired plan to `SUBMIT-FOR-REVIEW`. Commit `b38aa4db7374227f741efaf4ecaf0e0a7d495c4b` is pushed and is the fixed control base for the R08 bind.
 
 ## Owner finite-state machines
@@ -39,7 +39,7 @@ Each owner must persist a checkpoint below and in its partial output at every tr
 | G4 owner | traceability matrix and C2-C7 briefs | `reports/TRACEABILITY_MATRIX.md`, `plans/cycle_briefs/**`, `ledger/owners/G4_STATE.md` | SUBMIT-FOR-REVIEW | R38-A01 accepted with bounded Q3-DIS-5/tally regrade; R38-C01 qualified with conditional C4/C6 dependency notes. Full suite passed after two disclosed state-only restarts; seven-artifact manifest `0e72a420…5d87a`, checkpoint `f1b4e789…759dc` | Root commits the bounded owner group; R25 and R26 then become eligible after higher-priority G3 routing permits |
 | G5 owner | human-action packages | `human_actions/**`, `ledger/owners/G5_STATE.md` | SUBMIT-FOR-REVIEW | P1-P8, tracker, and index persisted; no-action/source checks passed. Fresh `g5b` is preattested exact Sol ultra/fast with no task/context | Fresh R32 source-scope/no-action packet, then REVISE |
 | G6 owner | conditional charter successors | qualifying `*_v1.1.md` files and `ledger/owners/G6_STATE.md` only | DONE | R19–R22 incorporated; root review repair applied; four successors remain PROPOSED; exact 83-row §35 schedule and v1.0 hashes preserved; commit `03285ba` pushed | None; owner process terminated normally |
-| G7 control owner | gauntlet records and convergence | `gauntlet/**`, `ledger/owners/G7_STATE.md` | DRAFT / R08-BOUND-UNSENT | R48 disposition integrated; terminal Round/Convergence/G7 identities are pushed at `4c03f6e…2e8c`; untouched R08 is exact Sol/ultra/live-fast at pane `%90` | Root commits/pushes this ledger update, revalidates the untouched R08 process and exact Round hash, then dispatches only the sealed control |
+| G7 control owner | gauntlet records and convergence | `gauntlet/**`, `ledger/owners/G7_STATE.md` | DRAFT / R49-BOUND-UNSENT | R08 is immutable zero-credit; R49 replacement control and terminal identities are pushed at `ec14acf…bbb45`; untouched R49 is exact Sol/ultra/live-fast at pane `%141` | Root commits/pushes this ledger update, revalidates untouched R49 and exact Round hash, then dispatches only the sealed control |
 | G8 owner | integrity gate and morning handoff | `MORNING_REPORT.md`, `ledger/owners/G8_STATE.md` only; root retains final `INDEX.md` and ledger seal | INGEST | Session `g8` attested `gpt-5.6-sol`/`ultra`/live `fast`; first disk checkpoint SHA-256 `be635034…f94e2`; every terminal input marked expected-not-yet-terminal; `MORNING_REPORT.md` absent by design | Root supplies the bounded terminal evidence packet after all reviews/revisions; G8 rereads `AGENTS.md`, enters `DRAFT`, and writes the nine-part report |
 
 ## Reviewer finite-state machine
