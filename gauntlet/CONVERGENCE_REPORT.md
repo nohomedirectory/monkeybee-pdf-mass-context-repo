@@ -926,3 +926,17 @@ R53 binds only the committed C1 delta plan 3,655 lines / 531,012 bytes / `db0bbb
 The control replaces the failed long embedded-control activation architecture with a short direct bootstrap. Root later supplies only exact commit/Round/control identities, exact line/byte bounds, and mandatory Tool 1 full `AGENTS.md`, Tool 2 full protocol, Tool 3 sealed-control-only read. The bootstrap expressly identifies itself as the direct human-authorized task. Prior Round semantics cannot be returned through the bounded Tool 3 read. No live payload is constructed or sent here.
 
 Allocation remains 53 unique rows at 22 Sol / 31 Opus; 21 failed at 6/15; 32 active at 16/16; 18 filed at 9/9 with A=118/B=64/C=22; and 14 active-unfiled at 7/7. R53 is the sole bound-unsent row and supplies no finding, grade, coverage, marginal result, verdict, route, owner disposition, cross-model credit, or curve point before filing. The earlier sequences remain unchanged; convergence remains **NOT ESTABLISHED**.
+
+## R53 authority-coverage disqualification and zero-credit closure — `2026-07-15T14:53:43+02:00`
+
+This append supersedes only the R53 bound-unsent and prospective-route wording immediately above. It preserves the sealed control and physical reviewer packet byte-for-byte and promotes no reviewer allegation, grade, verdict, or prose.
+
+Stable transcript qualification found that successful declared-authority reads cover Rev 7 lines 1651–2430 and then 2432–3213. Required line 2431, `- object-stream members;`, was never returned. The sealed control requires every declared authority line and forbids inference of an unread interval. The packet's assertion that every interval was observed is therefore contradicted by its transcript, so R53 is immutable `NOT-RUN · AUTHORITY-COVERAGE-VIOLATION · TERMINATED` with zero evidence credit.
+
+The transcript otherwise reproduces the exact three-tool bootstrap, dispatch identities, one-lens artifact, one structured Round Edit, exact terminal response, and no later reviewer tool. The packet's date-only start and pre-write filed clock are superseded by activation `2026-07-15T14:22:38.638+02:00`, Edit `14:37:39.327+02:00`, success result `14:37:39.425+02:00`, and terminal `14:37:41.203+02:00`. Three output-capacity Read failures were later retried within declared scope; all plan lines were observed, but the packet failed to disclose those retry-required states and none of those retries filled Rev 7 line 2431.
+
+Independent G7 premise probes find local support for the 15-versus-17 field-count concern in `R53-B01` and for the stand-alone-claim wording concern in `R53-C01`; the B01 packet coordinate is also off by one because `Each block supplies these fields:` is plan line 193, not 194. These probes are non-routable checks of quarantined allegations, not owner dispositions. No G3 route is created.
+
+Allocation is now 53 unique rows at 22 Sol / 31 Opus; 22 failed at 6/16; 31 active planned at 16/15; 18 valid filed at 9/9 with A=118/B=64/C=22; and 13 active-unfiled at 7/6. No round is bound-unsent. No replacement ID or planned slot is created; R10 remains untouched `PRECOMMITTED`.
+
+The C1 five-pass-A sequence remains R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24, all non-marginal. The Constitution sequence remains R14=15 non-marginal -> R15=21 non-marginal -> R51=0 marginal-only. R53 adds no point, and convergence remains **NOT ESTABLISHED**.

@@ -4037,3 +4037,249 @@ No task, bootstrap, prompt, prefix, context, authority, artifact, control, findi
 **Integration-control state: `BOUND-UNSENT`.**
 
 **G7 R52/R53 follow-up FSM state: `DONE/HANDOFF` (terminal disk state persisted; R53 unsent).**
+
+## R53 packet qualification follow-up — INGEST (`2026-07-15T14:43:42+02:00`)
+
+- Crash-safe transition persisted from the prior bounded handoff into a fresh `INGEST` before any R53 packet, transcript, root-record, protocol, or plan-allegation evidence read in this follow-up.
+- The mandatory full `AGENTS.md` read and the full `running-the-gauntlet-on-your-rust-port` skill read preceded this marker. Their observed disk identities are respectively 81 lines / 8,055 bytes / `5591f13d75685e52158a9aecfd7f90a2ecf42275d18e3ca5f7fc1550dadad939` and 743 lines / 82,420 bytes / `bdc81cddf2bfe0554bbad38d5bf66f18c1c3f24c33527868afcd5ac1f8137a32`.
+- Human path correction received before any write: the only writable files are `gauntlet/ROUND_LOG.md`, `gauntlet/CONVERGENCE_REPORT.md`, and `ledger/owners/G7_STATE.md`. The earlier labels `convergence/CONVERGENCE_LEDGER.md` and `state/G7_GAUNTLET_STATE.md` are superseded root path-label errors; neither path was opened, created, nor mutated.
+- Control refs reproduce branch `main` and HEAD == local `origin/main` == `b27914476a52db8613f4ba290b78f1b340cd76a5`. Starting identities are Round Log 5,817 lines / 1,042,377 bytes / `6e6fbd813f1509cfbba7a0a79b36d9f4804a2ae5c078bc161e83f0eecba2919e`; Convergence Report 928 / 134,738 / `3ded263d7d371a36a41b3889c86a5f92e031613d6d85d7fcb282409941ee1536`; and pre-INGEST G7_STATE 4,039 / 883,844 / `14d48cf4594d83de6619662ce8ed63b07a4f513ccf93e3ab0fa94e800f4c23ed`.
+- Corrected-path status shows only the provisional Round Log modification. The corrected-path index and untracked sets are empty. No whole-worktree cleanliness premise is used; all other paths remain concurrent read-only inputs.
+- The only post-orientation repository read before this transition was the tail of the existing G7 checkpoint to reproduce its prior `DONE/HANDOFF` marker. No R53 packet body, failure record, stable transcript, reviewer-protocol body, or allegation premise has been inspected, and no quarantined or reviewer-authored byte has changed.
+- `INGEST` authorizes the bounded evidence reads and reproducible gate construction only. It does not authorize allocation-row mutation, owner routing, convergence mutation, reviewer contact, or any next-reviewer action; those remain gated behind a persisted `DRAFT` transition.
+
+**G7 R53 packet qualification FSM state: `INGEST` (control receipt and corrected path scope persisted; evidence reads next).**
+
+### INGEST addendum — bounded root-ledger movement (`2026-07-15T14:45:30+02:00`)
+
+- During INGEST, root advanced HEAD and local `origin/main` together to `6b60515e3cfb48fffaea03315da6b1b62efe5e1c`. Git ancestry proves qualification base `b27914476a52db8613f4ba290b78f1b340cd76a5` is an ancestor.
+- `git diff-tree` names exactly `ledger/RUN_LEDGER.md` in the descendant commit. Fixed-path name and numstat comparisons from `b27914476a52db8613f4ba290b78f1b340cd76a5` through `6b60515e3cfb48fffaea03315da6b1b62efe5e1c` are empty for all three corrected G7 paths; no excluded body was opened for this continuity check.
+- Current Round and Convergence identities remain 5,817 lines / 1,042,377 bytes / `6e6fbd813f1509cfbba7a0a79b36d9f4804a2ae5c078bc161e83f0eecba2919e` and 928 / 134,738 / `3ded263d7d371a36a41b3889c86a5f92e031613d6d85d7fcb282409941ee1536`. Pre-addendum G7_STATE is 4,051 / 886,267 / `ce30d9ab8d96680dbea1c885dc1deb5617c4128680c24b78dbc53ac398b32215`.
+- Corrected-path status shows only the provisional Round append and G7's INGEST evidence; corrected-path index and untracked sets remain empty. The fixed qualification base remains `b27914476a52db8613f4ba290b78f1b340cd76a5`; the root-ledger-only descendant neither restarts nor broadens this gate.
+
+**G7 R53 packet qualification FSM state remains: `INGEST` (authorized concurrent movement recorded; bounded evidence analysis resumes).**
+
+## R53 packet qualification follow-up — DRAFT (`2026-07-15T14:49:32+02:00`)
+
+- Crash-safe transition persisted: `INGEST -> DRAFT` before any allocation-row, owner-route, convergence, or post-packet Round mutation.
+- Pre-transition identities are Round Log 5,817 lines / 1,042,377 bytes / `6e6fbd813f1509cfbba7a0a79b36d9f4804a2ae5c078bc161e83f0eecba2919e`; Convergence Report 928 / 134,738 / `3ded263d7d371a36a41b3889c86a5f92e031613d6d85d7fcb282409941ee1536`; and G7_STATE 4,060 / 887,670 / `b35e3df5f5961284655670d9b180d0c315ffa6dd73bb7a66928ec3b893d1a049`.
+- Immutable-byte gates reproduce the committed Round prefix at 5,782 lines / 1,033,245 bytes / `6dde7df3920df93713f680521ce58d9b3f696b0d2c48355d1666d1720033cdb6`, the separator-inclusive R53 append at 35 / 9,132 / `b97934ee705b3e8f8f9323f6eb39bbe9e9e20dd23bee058ec9681e845d6c08ee`, and the packet heading through terminal state at 34 / 9,131 / `3b31399fa3862ced3fc627a6aa23f7dc2b2ac40cd9ef4c4476348333b7b369d6`. The prior R53 control remains 102 / 12,212 / `6844dad0b0202035a42498f6eb2c72f8dd6319c95ffd9cc9968c8223db32cd30`.
+- Stable transcript identity reproduces 234 lines / 2,315,834 bytes / `138883e47af50049a01807df227aac7a3de1396972aa61e2a5bd857381180bf6`. Its first three tools are sequential successful Reads of full `AGENTS.md`, full reviewer protocol, and only Round lines 5681–5782; no tool or question intervenes.
+- Fatal authority-chain defect: successful Rev 7 reads cover 1651–2430 and then 2432–3213. Declared line 2431, `- object-stream members;`, was never returned. The sealed control requires every declared authority line, forbids inference of an unread interval, and requires any retry interval to be tracked. The packet nevertheless states that every declared interval was observed. This is an authority-coverage violation, not a correctable timestamp-only variance.
+- DRAFT disposition is therefore zero-credit `NOT-RUN · AUTHORITY-COVERAGE-VIOLATION · TERMINATED`. The physical packet remains immutable reviewer evidence, but its A=0/B=1/C=1, marginal-only NO, lens coverage, verdict, and allegations cannot enter allocation evidence, an owner route, a curve, or convergence.
+- Draft mutation scope is limited to replacing the single R53 operational allocation row, appending one G7-authored failure/variance closure after the immutable packet, and appending the corresponding zero-credit Convergence entry. No allegation is promoted or routed to G3; no replacement ID or planned slot is created; R10 and every next reviewer remain untouched.
+- The closure will also preserve the exact activation/Edit/terminal times and disclose the three later read-capacity errors and successful bounded retries. Generic structured `Edit` was the control-prescribed sole reviewer write surface; the three post-bootstrap compound Bash commands are assessed only for their returned read-only identity/process/time scope. Any owner-authored defect found after DRAFT requires a persisted `REVISE` transition before correction.
+
+**G7 R53 packet qualification FSM state: `DRAFT` (chain-disqualifying authority gap established; zero-credit integration authorized).**
+
+### DRAFT checkpoint — Round zero-credit integration persisted (`2026-07-15T14:53:26+02:00`)
+
+- The R53 operational row alone now records `NOT-RUN · AUTHORITY-COVERAGE-VIOLATION · TERMINATED` with em-dash A/B/C/marginal slots and no G3 route. One append-only G7 closure follows the immutable packet and records the authority gap, timing/retry corrections, tool-surface assessment, schema result, non-routable premise probes, allocation, convergence, and absent-process boundary.
+- Post-Round identity is 5,859 lines / 1,049,874 bytes / `7d0b105898b4ada905dee8032a5e4fc229eb4adbf5177c7d4b79a33366ef0f45`. Convergence remains untouched at 928 / 134,738 / `3ded263d7d371a36a41b3889c86a5f92e031613d6d85d7fcb282409941ee1536`. Pre-checkpoint G7_STATE is 4,073 / 890,810 / `2857291e70efc31ff4dacc331d54ae7b4b2b248a122c8658517783dbcd53d39e`.
+- The row replacement is 603 -> 784 bytes, relocating later content by +181 without changing its bytes or line numbers. Fixed-base prefix `[0,1019935)` matches at `bd03489cee25f062562275c3bbd0dc5e25d2081560826fee2111dd70ae94fcca`; the entire 12,707-byte old suffix after the replaced row through prior EOF matches at `037c2036ca8f85a6be6b542b764b1a301104050870ef9ce3f8a2dbe0041ac8bf`.
+- Relocated R53 control is `[1021214,1033426)`, lines 5681–5782, 102 lines / 12,212 bytes / `6844dad0b0202035a42498f6eb2c72f8dd6319c95ffd9cc9968c8223db32cd30`. Immutable packet is `[1033427,1042558)`, lines 5784–5817, 34 / 9,131 / `3b31399fa3862ced3fc627a6aa23f7dc2b2ac40cd9ef4c4476348333b7b369d6`; separator-inclusive `[1033426,1042558)` is 35 / 9,132 / `b97934ee705b3e8f8f9323f6eb39bbe9e9e20dd23bee058ec9681e845d6c08ee`.
+- The failed old-offset byte probe is zero-credited; every seal above comes from the later marker/line-bounded rerun and fixed-base replay. `git diff --check` is silent. The Convergence mutation remains next under DRAFT; no other mutation is authorized by this checkpoint.
+
+**G7 R53 packet qualification FSM state remains: `DRAFT` (Round partial output sealed; Convergence zero-credit append next).**
+
+## R53 packet qualification follow-up — REVISE (`2026-07-15T14:54:13+02:00`)
+
+- Crash-safe transition persisted: `DRAFT -> REVISE` before correcting one owner-authored Round sentence found by the post-Convergence seal review.
+- DRAFT outputs currently reproduce Round Log 5,859 lines / 1,049,874 bytes / `7d0b105898b4ada905dee8032a5e4fc229eb4adbf5177c7d4b79a33366ef0f45`; Convergence Report 942 / 137,152 / `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`; and pre-REVISE G7_STATE 4,083 / 892,862 / `e288de0aa2ecabbfa642ba8daab5b5d4d0b99238384d41afbaab7e287569ddb6`.
+- Mechanical allocation rerun returns 53 rows at 22 Sol / 31 Opus; 22 failed at 6/16; 31 active at 16/15; 18 filed at 9/9 with A=118/B=64/C=22; 13 active-unfiled at 7/6; zero bound; R10 `PRECOMMITTED`; R53 zero-credit authority failure.
+- Exact defect: the G7 closure says the prior 5,782-line / 1,033,245-byte committed Round prefix `remains`. That historical identity is correct, but the present prefix intentionally contains the R53 row replacement and therefore does not retain the old whole-prefix root. The sentence must say it is the pre-qualification identity and point preservation to the fixed-base prefix/replacement/suffix proof.
+- Correction scope is one G7-authored sentence. It changes no reviewer packet/control byte, row status, failure basis, timing/retry evidence, premise probe, allocation, route, or convergence result. All post-DRAFT diagnostics so far receive zero terminal credit; after correction, the entire bounded gate restarts from disk.
+
+**G7 R53 packet qualification FSM state: `REVISE` (one historical-prefix wording correction authorized; terminal checks invalidated).**
+
+### REVISE checkpoint — historical-prefix wording corrected (`2026-07-15T14:55:02+02:00`)
+
+- The authorized correction changes only the G7-authored historical-prefix sentence. It now distinguishes pre-qualification Round identity from current preservation and cites the exact fixed-base prefix, sole row replacement, and old-suffix replay roots.
+- Corrected Round identity is 5,859 lines / 1,050,187 bytes / `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`. Convergence remains 942 / 137,152 / `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`. Pre-checkpoint G7_STATE is 4,093 / 894,554 / `2b558bf075b74320a37756d5714d1940a41fd3a34b68d19bf56961d3a802fe43`.
+- Immutable R53 packet and relocated control still reproduce `3b31399fa3862ced3fc627a6aa23f7dc2b2ac40cd9ef4c4476348333b7b369d6` and `6844dad0b0202035a42498f6eb2c72f8dd6319c95ffd9cc9968c8223db32cd30`. Fixed-base prefix and old suffix still reproduce `bd03489cee25f062562275c3bbd0dc5e25d2081560826fee2111dd70ae94fcca` and `037c2036ca8f85a6be6b542b764b1a301104050870ef9ce3f8a2dbe0041ac8bf`. Diff check is silent.
+- No classification, route, allocation, convergence, reviewer packet, or process boundary changed. All diagnostics before this correction remain zero-credit. The next valid action is a persisted `REVISE -> SELF-CHECK` transition followed by a wholly new gate from disk.
+
+**G7 R53 packet qualification FSM state remains: `REVISE` (correction persisted; fresh SELF-CHECK not yet started).**
+
+## R53 packet qualification follow-up — SELF-CHECK restart (`2026-07-15T14:55:18+02:00`)
+
+- Crash-safe transition persisted: `REVISE -> SELF-CHECK` after the sole owner-authored correction and its narrow preservation check.
+- Corrected pre-transition identities are Round Log 5,859 lines / 1,050,187 bytes / `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`; Convergence Report 942 / 137,152 / `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`; and G7_STATE 4,102 / 896,049 / `0f184c6ae99a3e42e9519cb40fb69b6d8db5ba56b960dd731757a7e221a94935`.
+- This gate reruns from current disk bytes every ref/ancestry/path-continuity, transcript/tool chronology, bootstrap/identity, authority/artifact coverage, retry, packet/schema/anchor, immutable-slice, allegation-premise, allocation, convergence, process absence, format, vocabulary/source, diff, index/untracked, and no-contact check. It carries no result from the pre-correction diagnostics.
+- Any defect found from this marker requires a persisted `SELF-CHECK -> REVISE` transition before correction and another fresh gate.
+
+**G7 R53 packet qualification FSM state: `SELF-CHECK` (fresh post-REVISE gate started).**
+
+## R53 packet qualification follow-up — SELF-CHECK-RESULT (`2026-07-15T14:58:24+02:00`)
+
+- The wholly new post-REVISE gate passes from current disk bytes. Pre-result identities are Round Log 5,859 lines / 1,050,187 bytes / `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`; Convergence Report 942 / 137,152 / `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`; and G7_STATE 4,111 / 897,248 / `ff09c83a3faaf9a9c8fa690a090b8df0373581ffe5d0da323473058ad6750a05`.
+- Ref/scope gate passes: branch `main`; HEAD == local `origin/main` == `6b60515e3cfb48fffaea03315da6b1b62efe5e1c`; fixed qualification base `b27914476a52db8613f4ba290b78f1b340cd76a5` is an ancestor. The descendant commit names only `ledger/RUN_LEDGER.md`, and its diff is empty for all three G7 paths. Dispatch commit `8d86601e08519761140028d5b4fcbf4ad7a60e7b` is an ancestor of the fixed base.
+- Transcript/activation gate passes for evidence identity: transcript 234 / 2,315,834 / `138883e47af50049a01807df227aac7a3de1396972aa61e2a5bd857381180bf6`; newline-terminated bootstrap 11 / 1,101 / `bf8a23c97b27ce5c86dc608c6508e54db1706a181f06258522f77d2e9af8e688`. Tool counts are 32 Read, three Bash, one Edit. The first three tools are successful sequential Reads of full `AGENTS.md`, full protocol, and exact Round lines 5681–5782; no tool or question intervenes.
+- Dispatch identities reproduce Round 5,782 / 1,033,245 / `6dde7df3920df93713f680521ce58d9b3f696b0d2c48355d1666d1720033cdb6`, plan 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`, and control `6844dad0b0202035a42498f6eb2c72f8dd6319c95ffd9cc9968c8223db32cd30`. Transcript process arguments and root pre-dispatch TUI record reproduce exact `claude-opus-4-8` / `xhigh`.
+- Authority gate correctly fails R53: successful Rev 7 results end at 2430 and restart at 2432, omitting required line 2431, `- object-stream members;`. The packet's all-interval assertion is false. Three separate capacity-error Reads receive zero coverage credit; later bounded retries cover Rev 7 lines 6674–8005 and plan lines 1–3655 but never supply line 2431. No G7 read can cure the terminated reviewer's gap.
+- Packet schema/chronology gate reproduces one packet heading, zero A headings, one B, one C, two sets of required finding fields, one verdict, and one terminal line. A=0/B=1/C=1 agrees with marginal-only NO. The date-only start, pre-write filed clock, and false retry/coverage disclosure bar chain admission. Exact times remain activation `14:22:38.638+02:00`, Edit `14:37:39.327+02:00`, success result `14:37:39.425+02:00`, terminal `14:37:41.203+02:00`; no tool follows the Edit.
+- Tool-surface gate reproduces one generic structured Edit to Round only, zero Write tool, exact anchor old string, 9,132-byte net append, and one Round file-history delta. All three compound Bash command bodies occur after bootstrap and return only permitted identity/process/time facts; tool-runner cwd bookkeeping is outside the repository and supplies no evidence. The narrowed no-action interpretation records no benchmark, comparison, external action, prohibited-source contact, or SpecCard semantic body.
+- Immutable-slice gate passes after the owner-row relocation: control lines 5681–5782 are 102 / 12,212 / `6844dad0b0202035a42498f6eb2c72f8dd6319c95ffd9cc9968c8223db32cd30`; packet lines 5784–5817 are 34 / 9,131 / `3b31399fa3862ced3fc627a6aa23f7dc2b2ac40cd9ef4c4476348333b7b369d6`; separator-inclusive lines 5783–5817 are 35 / 9,132 / `b97934ee705b3e8f8f9323f6eb39bbe9e9e20dd23bee058ec9681e845d6c08ee`. The control heading and anchor are unique; the packet heading occurs twice globally only because the control contains its schema example.
+- Fixed-base replay passes: prefix `[0,1019935)` is `bd03489cee25f062562275c3bbd0dc5e25d2081560826fee2111dd70ae94fcca`; after the sole 603 -> 784-byte row replacement, the 12,707-byte old suffix is `037c2036ca8f85a6be6b542b764b1a301104050870ef9ce3f8a2dbe0041ac8bf`. R10's row hash matches the fixed base.
+- Premise probes rerun: §5 has 15 bullets while the sample §8 block has 17 dash fields and line 211 names 17; packet B01 points to line 194 although the introductory text is line 193. §9.6 line 3361 makes the stand-alone claim while the slice invokes externally defined contract/decision behavior. The Grade-B and Grade-C shapes are conservative, but both allegations remain quarantined and non-routable because the reviewer chain failed.
+- Allocation rerun returns 53 unique rows at 22 Sol / 31 Opus; 22 failed at 6/16; 31 active at 16/15; 18 valid filed at 9/9 with A=118/B=64/C=22; 13 active-unfiled at 7/6; zero bound. R53 has em-dash evidence slots and exact zero-credit status; R10 remains `PRECOMMITTED`.
+- Curve rerun remains R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24, all non-marginal; Constitution remains R14=15 non-marginal -> R15=21 non-marginal -> R51=0 marginal-only. R53 adds no point. Convergence remains `NOT ESTABLISHED`.
+- Terminal-process gate passes: R53 session, pane, shell 2605148, and child 2605396 are absent; host zombies are zero. No owner/reviewer/process was contacted, and no next reviewer was started, bound, prompted, or inspected.
+- Path/format gate passes: only the three corrected G7 paths are modified; fixed-base numstat is Round 78 additions / 1 deletion, Convergence 14 / 0, and G7_STATE 72 / 0 before this result. Index and untracked sets are empty. All three files are UTF-8, end in LF, and have no CR, conflict marker, or trailing horizontal whitespace. Owner-added lines outside the immutable packet have zero guarded-vocabulary, URL, or prohibited-source-name hit; a separate read confirms that no SpecCard semantic body was added. Diff check is silent.
+- Two diagnostics remain explicitly zero-credit: the first post-row fixed-offset packet probe ignored the +181 relocation, and the first CR/conflict/whitespace loop tested pipeline status incorrectly. Later marker/line-bounded and direct-boolean reruns produced every cited result without a mutation.
+
+No G7 content or state defect remains. `REVISE` is not re-entered; the bounded result is ready for `SUBMIT-FOR-REVIEW`.
+
+**G7 R53 packet qualification FSM state: `SELF-CHECK` (fresh post-REVISE pass succeeded; ready for `SUBMIT-FOR-REVIEW`).**
+
+## R53 packet qualification follow-up — REVISE 2 (`2026-07-15T14:59:06+02:00`)
+
+- Crash-safe transition persisted: `SELF-CHECK -> REVISE` before correcting one self-referential guard statement introduced by the SELF-CHECK result itself.
+- Pre-transition identities are Round Log 5,859 lines / 1,050,187 bytes / `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`; Convergence Report 942 / 137,152 / `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`; and G7_STATE 4,133 / 903,476 / `268af9248f9207c52b6ddf4cec32468b552ef609bf7eb604c586f24ca8859580`.
+- Exact defect: the result says owner-added lines have zero `SpecCard` token hits while that sentence itself contains the token. The relevant law forbids a SpecCard semantic body; it does not forbid naming that boundary. The sentence must instead record zero guarded-vocabulary, URL, and prohibited-source-name hits, plus a separate no-semantic-body check.
+- Correction scope is that one G7_STATE sentence. Round, Convergence, reviewer packet/control, classification, route, allocation, and convergence remain unchanged. Every terminal diagnostic from the prior SELF-CHECK result is invalidated and will be rerun from disk after correction.
+
+**G7 R53 packet qualification FSM state: `REVISE` (one guard-statement correction authorized; submission blocked).**
+
+### REVISE 2 checkpoint — guard statement corrected (`2026-07-15T14:59:27+02:00`)
+
+- The corrected sentence now states the actual checks: zero guarded-vocabulary, URL, or prohibited-source-name hit in owner-added lines outside the immutable packet, and a separate confirmation that no SpecCard semantic body was added.
+- Round remains 5,859 / 1,050,187 / `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`; Convergence remains 942 / 137,152 / `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`; pre-checkpoint G7_STATE is 4,142 / 904,874 / `0cf6f43fdd32304afc5c3dd74b0aaa18e3e1e5450be5599d45e85a8b879ec8c4`.
+- Control and packet roots remain `6844dad0b0202035a42498f6eb2c72f8dd6319c95ffd9cc9968c8223db32cd30` and `3b31399fa3862ced3fc627a6aa23f7dc2b2ac40cd9ef4c4476348333b7b369d6`; diff check is silent. No substantive result changed.
+
+**G7 R53 packet qualification FSM state remains: `REVISE` (correction persisted; fresh SELF-CHECK required).**
+
+## R53 packet qualification follow-up — SELF-CHECK restart 2 (`2026-07-15T14:59:39+02:00`)
+
+- Crash-safe transition persisted: `REVISE -> SELF-CHECK` after the guard-statement correction.
+- Pre-transition identities are Round Log 5,859 / 1,050,187 / `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`; Convergence Report 942 / 137,152 / `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`; and G7_STATE 4,150 / 905,855 / `4544df405534f0bb2a89b6ae161f7307a108e45fa857bc2817a9688eecf6e2bf`.
+- The full bounded gate restarts again from current disk bytes. Every earlier terminal result remains zero-credit. A new defect requires another persisted `REVISE` transition before correction.
+
+**G7 R53 packet qualification FSM state: `SELF-CHECK` (second fresh post-REVISE gate started).**
+
+## R53 packet qualification follow-up — SELF-CHECK-RESULT 2 (`2026-07-15T15:00:50+02:00`)
+
+- The second wholly fresh post-REVISE gate passes. Pre-result identities are Round Log 5,859 lines / 1,050,187 bytes / `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`; Convergence Report 942 / 137,152 / `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`; and G7_STATE 4,158 / 906,670 / `b43fa635e8c93a4c871f858cc419103295fe4daec7d17da7c6525f637db72b4d`.
+- Refs remain branch `main`, HEAD == local `origin/main` == `6b60515e3cfb48fffaea03315da6b1b62efe5e1c`, fixed base `b27914476a52db8613f4ba290b78f1b340cd76a5` an ancestor, and dispatch commit `8d86601e08519761140028d5b4fcbf4ad7a60e7b` an ancestor of that base. The concurrent descendant names only `ledger/RUN_LEDGER.md` and changes no G7 path.
+- Immutable inputs rerun at AGENTS 81 / 8,055 / `5591f13d75685e52158a9aecfd7f90a2ecf42275d18e3ca5f7fc1550dadad939`; protocol 90 / 4,942 / `e525a0e35fb703152d44d63d5f6874d48907d2b87e528e3f9f99dbd93baa33c3`; plan 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`; transcript 234 / 2,315,834 / `138883e47af50049a01807df227aac7a3de1396972aa61e2a5bd857381180bf6`; activation 11 / 1,101 / `bf8a23c97b27ce5c86dc608c6508e54db1706a181f06258522f77d2e9af8e688`.
+- Transcript rerun again yields first three sequential successful Reads with no intervening tool/question; 32 Read / three Bash / one Edit; exactly three capacity errors; no tool after the sole Round Edit; exact terminal response. Successful Rev 7 intervals still omit line 2431, so R53 remains zero-credit `NOT-RUN · AUTHORITY-COVERAGE-VIOLATION · TERMINATED` and no G3 route exists.
+- Seals rerun at control 102 / 12,212 / `6844dad0b0202035a42498f6eb2c72f8dd6319c95ffd9cc9968c8223db32cd30`; separator-inclusive packet 35 / 9,132 / `b97934ee705b3e8f8f9323f6eb39bbe9e9e20dd23bee058ec9681e845d6c08ee`; packet 34 / 9,131 / `3b31399fa3862ced3fc627a6aa23f7dc2b2ac40cd9ef4c4476348333b7b369d6`; fixed-base prefix `bd03489cee25f062562275c3bbd0dc5e25d2081560826fee2111dd70ae94fcca`; old suffix `037c2036ca8f85a6be6b542b764b1a301104050870ef9ce3f8a2dbe0041ac8bf`. Packet schema counts remain 0/1/1 with two full finding-field sets, one verdict, and one terminal line.
+- Premise, allocation, and curve reruns reproduce the recorded results: B01 local count 15 versus 17 with its line-193/194 coordinate defect; C01 a Grade-C stand-alone-claim concern; 53 rows at 22/31; 22 failed at 6/16; 31 active at 16/15; 18 filed at 9/9 with A=118/B=64/C=22; 13 active-unfiled at 7/6; zero bound; unchanged C1 and Constitution sequences; convergence `NOT ESTABLISHED`; R10 unchanged `PRECOMMITTED`.
+- R53 session and PIDs remain absent and host zombies remain zero. No reviewer, owner, or process contact and no next-reviewer action occurred.
+- Path/format rerun passes with only the three G7 worktree paths, Round 78/1, Convergence 14/0, and pre-result G7_STATE 119/0 against the fixed base; empty index/untracked sets; silent diff check; valid UTF-8; terminal LF; no CR, conflict marker, or trailing horizontal whitespace. Owner-added lines outside the packet have zero guarded-vocabulary, URL, or prohibited-source-name hit. Four `SpecCard` mentions are only boundary/check prose; no semantic registry identifier or pending-source slot record was added.
+
+No defect remains after this second fresh gate. The work may advance to `SUBMIT-FOR-REVIEW` without another `REVISE`.
+
+**G7 R53 packet qualification FSM state: `SELF-CHECK` (second fresh pass succeeded; ready for `SUBMIT-FOR-REVIEW`).**
+
+## R53 packet qualification follow-up — REVISE 3 (`2026-07-15T15:01:34+02:00`)
+
+- Crash-safe transition persisted: `SELF-CHECK -> REVISE` before correcting one more self-referential guard phrase in RESULT 2.
+- Pre-transition identities are Round Log 5,859 / 1,050,187 / `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`; Convergence Report 942 / 137,152 / `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`; and G7_STATE 4,173 / 910,249 / `9362e787d489e4a7365684e9d0462904f3ee8c206c6f693db729395d7a8068d9`.
+- Exact defect: RESULT 2 says no registry/body marker was added while naming two literal marker strings in that sentence. The correction will describe the semantic boundary without reproducing either literal. No semantic body exists and no Round or Convergence result changes.
+- All prior terminal checks are invalidated again. Correction scope is one G7_STATE sentence, followed by another fresh full gate.
+
+**G7 R53 packet qualification FSM state: `REVISE` (one marker-statement correction authorized; submission blocked).**
+
+### REVISE 3 checkpoint — marker statement corrected (`2026-07-15T15:01:56+02:00`)
+
+- The corrected RESULT-2 sentence now states that no semantic registry identifier or pending-source slot record was added, without reproducing the scanned literals. The fresh owner-added-line marker scan is empty.
+- Round remains 5,859 / 1,050,187 / `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`; Convergence remains 942 / 137,152 / `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`; pre-checkpoint G7_STATE is 4,182 / 911,327 / `59355ed045b72c2acbe711dae31433cfd82744a8186a9a0835cc870d444ef7ed`.
+- Control and packet roots remain `6844dad0b0202035a42498f6eb2c72f8dd6319c95ffd9cc9968c8223db32cd30` and `3b31399fa3862ced3fc627a6aa23f7dc2b2ac40cd9ef4c4476348333b7b369d6`; diff check is silent.
+
+**G7 R53 packet qualification FSM state remains: `REVISE` (correction persisted; fresh SELF-CHECK required).**
+
+## R53 packet qualification follow-up — SELF-CHECK restart 3 (`2026-07-15T15:03:37+02:00`)
+
+- Crash-safe transition persisted: `REVISE -> SELF-CHECK` before rerunning any qualification gate after the REVISE-3 correction.
+- Transition preimage identities are Round Log 5,859 lines / 1,050,187 bytes / `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`; Convergence Report 942 / 137,152 / `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`; and G7_STATE 4,190 / 912,256 / `8bdcea898f431bc689f0af9f0fe2e4187801a06c3fcdc57f5455b511ca9094f4`.
+- The human's current steer is controlling: the fresh gate remains full-strength, while its terminal owner-prose guard result will state only classified semantic boundaries and will not enumerate the probe vocabulary. Round and Convergence are frozen for this restart.
+- Every diagnostic predating this transition remains non-creditable. Submission remains blocked until the fresh disk gate succeeds and its result is persisted.
+
+**G7 R53 packet qualification FSM state: `SELF-CHECK` (fresh disk gate in progress; submission blocked).**
+
+## R53 packet qualification follow-up — REVISE 4 (`2026-07-15T15:04:16+02:00`)
+
+- Crash-safe transition persisted: the active `SELF-CHECK -> REVISE` before any ordering repair.
+- Disk inspection shows the restart-3 block at lines 4,152–4,159, ahead of restart 2, its result, and REVISE 3. The patch after compaction matched an earlier duplicate state marker rather than actual EOF, so the active gate and all diagnostics run beneath it receive no credit.
+- Pre-transition identities are Round Log 5,859 lines / 1,050,187 bytes / `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`; Convergence Report 942 / 137,152 / `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`; and G7_STATE 4,199 / 913,366 / `d773b6d644a664bfb7eba658d00615c69f8767b847b161fa01b98a3413d688b7`.
+- Authorized correction scope is only to move the nine-line restart-3 block, byte-for-byte, from its misplaced location to actual EOF after this REVISE checkpoint. Round and Convergence remain frozen. Subsequent appends must use an EOF-unique anchor.
+
+**G7 R53 packet qualification FSM state: `REVISE` (chronology repair authorized; submission blocked).**
+
+## R53 packet qualification follow-up — SELF-CHECK restart 4 (`2026-07-15T15:05:03+02:00`)
+
+- The chronology repair is recorded: the unchanged restart-3 block now follows REVISE 3 and precedes REVISE 4. No other historical owner-state prose changed, and Round and Convergence retain their pre-repair identities.
+- Crash-safe transition persisted: `REVISE -> SELF-CHECK` before any fresh diagnostic. Transition preimage identities are Round Log 5,859 lines / 1,050,187 bytes / `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`; Convergence Report 942 / 137,152 / `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`; and G7_STATE 4,208 / 914,526 / `6668a17fa5fcaedd76b023f852faf3dcec950ecfcf0c8bfb670fb0b6b61cd2ce`.
+- Every earlier diagnostic remains non-creditable. The full fixed-base, evidence, transcript, protected-slice, schema, premise, allocation, convergence, process, path, format, and classified owner-prose gates restart from current disk bytes.
+- Terminal guard prose will record only semantic boundary outcomes and the classified-check result, without enumerating probe vocabulary. Submission remains blocked until this new result is persisted.
+
+**G7 R53 packet qualification FSM state: `SELF-CHECK` (fourth fresh pass in progress; submission blocked).**
+
+## R53 packet qualification follow-up — REVISE 5 (`2026-07-15T15:08:45+02:00`)
+
+- Crash-safe transition persisted: `SELF-CHECK -> REVISE` before correcting the defect found by the fourth fresh gate.
+- G7_STATE line 4,212 makes an unscoped terminal-state assertion using reserved claim vocabulary. That sentence is owner-authored operational prose, not a scoped campaign claim, so it violates the repository vocabulary boundary.
+- Pre-transition identities are Round Log 5,859 lines / 1,050,187 bytes / `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`; Convergence Report 942 / 137,152 / `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`; and G7_STATE 4,217 / 915,828 / `8bbd87cd4eaf8badaed420c9286cb0afbacc99156e54a9eb8e8f11216d64e5c3`.
+- Correction scope is one sentence in restart 4. All fourth-pass diagnostics receive no credit. Round, Convergence, reviewer packet/control, classification, route, allocation, and convergence remain frozen.
+
+**G7 R53 packet qualification FSM state: `REVISE` (one owner-state vocabulary correction authorized; submission blocked).**
+
+### REVISE 5 checkpoint and SELF-CHECK restart 5 (`2026-07-15T15:09:15+02:00`)
+
+- The one authorized sentence now records the chronology repair as an operational fact without an unscoped campaign-quality assertion. Section order remains append-chronological, and Round and Convergence remain unchanged.
+- Crash-safe transition persisted: `REVISE -> SELF-CHECK` before any new diagnostic. Transition preimage identities are Round Log 5,859 lines / 1,050,187 bytes / `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`; Convergence Report 942 / 137,152 / `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`; and G7_STATE 4,226 / 916,935 / `053e3ef9b0c4f5018cb63b8f1bb508ff83251d3efdfc02ec5977183fee77b106`.
+- The fifth pass restarts every required fixed-base, evidence, transcript, protected-slice, schema, premise, allocation, convergence, process, path, format, and classified owner-prose check from disk. All earlier diagnostics remain non-creditable.
+- The terminal classified-check prose will report semantic boundaries only and will not enumerate probe vocabulary. Submission remains blocked pending the persisted fresh result.
+
+**G7 R53 packet qualification FSM state: `SELF-CHECK` (fifth fresh pass in progress; submission blocked).**
+
+## R53 packet qualification follow-up — SELF-CHECK-RESULT 5 (`2026-07-15T15:11:34+02:00`)
+
+- The fifth fresh disk gate passes. Pre-result identities are Round Log 5,859 lines / 1,050,187 bytes / `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`; Convergence Report 942 / 137,152 / `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`; and G7_STATE 4,235 / 918,207 / `79b76701c3347b9688d27f33b20a53654c78a73e4301ba7b64a551516a475549`.
+- Repository control passes on branch `main`: HEAD and local `origin/main` are `6b60515e3cfb48fffaea03315da6b1b62efe5e1c`; qualification base `b27914476a52db8613f4ba290b78f1b340cd76a5` and dispatch commit `8d86601e08519761140028d5b4fcbf4ad7a60e7b` are ancestors; the concurrent descendant names only `ledger/RUN_LEDGER.md`; and all three owned paths are byte-identical between the qualification base and that descendant.
+- Immutable inputs reproduce AGENTS 81 lines / 8,055 bytes / `5591f13d75685e52158a9aecfd7f90a2ecf42275d18e3ca5f7fc1550dadad939`; protocol 90 / 4,942 / `e525a0e35fb703152d44d63d5f6874d48907d2b87e528e3f9f99dbd93baa33c3`; plan 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`; transcript 234 / 2,315,834 / `138883e47af50049a01807df227aac7a3de1396972aa61e2a5bd857381180bf6`; and newline-terminated activation 11 / 1,101 / `bf8a23c97b27ce5c86dc608c6508e54db1706a181f06258522f77d2e9af8e688`.
+- Transcript replay yields the exact first three successful sequential Reads at `12:23:34.751Z`, `12:23:51.981Z`, and `12:24:23.726Z`, with no intervening tool or question. Three short status messages are not questions; the reviewer's initial reservation predates the activation's post-Tool-3 instruction trigger and did not alter its subsequent behavior. The run has 32 Reads, three read-only compound Bash calls after bootstrap, one generic structured Edit to Round, three disclosed capacity failures, and no tool after the Edit. The exact terminal response is at `12:37:41.203Z`.
+- Successful authority reads still cover Rev 7 lines 1,651–2,430 and then 2,432–3,213, leaving required line 2,431 unread. Artifact retries cover all 3,655 plan lines, but the immutable packet's authority and retry assertions remain false. The date-only start, pre-write clock sample, generic write surface, compound read-only probes, and narrowed no-action wording are all resolved exactly in the owner closure; none cures the authority gap.
+- Dispatch and protection seals pass: committed pre-packet Round 5,782 / 1,033,245 / `6dde7df3920df93713f680521ce58d9b3f696b0d2c48355d1666d1720033cdb6`; fixed-base prefix `bd03489cee25f062562275c3bbd0dc5e25d2081560826fee2111dd70ae94fcca`; preserved old suffix 107 lines / 12,707 bytes / `037c2036ca8f85a6be6b542b764b1a301104050870ef9ce3f8a2dbe0041ac8bf`; control 102 / 12,212 / `6844dad0b0202035a42498f6eb2c72f8dd6319c95ffd9cc9968c8223db32cd30`; packet 34 / 9,131 / `3b31399fa3862ced3fc627a6aa23f7dc2b2ac40cd9ef4c4476348333b7b369d6`; separator-inclusive packet 35 / 9,132 / `b97934ee705b3e8f8f9323f6eb39bbe9e9e20dd23bee058ec9681e845d6c08ee`. The control heading and final anchor are each unique.
+- Packet schema rerun yields one packet heading, A/B/C finding headings 0/1/1, two full finding-field sets, one verdict, one terminal-state field, counts A=0/B=1/C=1, and marginal-only NO. Independent premise probes again support the local 15-versus-17 count concern, its line-193 rather than line-194 coordinate correction, and the Grade-C stand-alone-claim concern. Both allegations remain quarantined and non-routable.
+- Canonical allocation parsing yields 53 rows at 22 Sol / 31 Opus; 22 failed at 6/16; 31 active at 16/15; 18 valid filed at 9/9 with A=118/B=64/C=22; 13 active-unfiled at 7/6; and no bound row. R10 remains `PRECOMMITTED`. The C1 non-marginal sequence is 16, 32, 7, 1, 24; the Constitution sequence is 15 non-marginal, 21 non-marginal, then 0 marginal-only. R53 adds no point, no G3 route exists, and convergence remains `NOT ESTABLISHED`.
+- Fixed-base diff is exactly Round 78 additions / one deletion, Convergence 14 / 0, and pre-result G7_STATE 196 / 0. The only worktree paths are the three G7-owned files; index and untracked sets are empty; diff check is silent; all three files are valid UTF-8 with terminal LF and no CR, conflict marker, or trailing horizontal whitespace. Classified check C2 passes: owner prose adds evidentiary and boundary classifications only and adds no normative card body or registry/slot content.
+- R53 session and both recorded PIDs remain absent, host zombies remain absent, chronology is append-ordered, and no reviewer, owner, or process was contacted. No next reviewer was started, bound, inspected, prompted, or dispatched.
+
+No defect remains after this fresh pass. The work may advance to `SUBMIT-FOR-REVIEW`; no submission review has yet received credit.
+
+**G7 R53 packet qualification FSM state: `SELF-CHECK` (fifth fresh pass succeeded; ready for `SUBMIT-FOR-REVIEW`).**
+
+## R53 packet qualification follow-up — SUBMIT-FOR-REVIEW (`2026-07-15T15:12:25+02:00`)
+
+- Crash-safe transition persisted: `SELF-CHECK -> SUBMIT-FOR-REVIEW` before the independent handoff review.
+- Transition preimage identities are Round Log 5,859 lines / 1,050,187 bytes / `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`; Convergence Report 942 / 137,152 / `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`; and G7_STATE 4,252 / 923,179 / `56bb4109395d7c35d9ab0842d86f0006e618556fa22cc868e9573046a2b18dec`.
+- This state authorizes only a fresh read-only review of the bounded handoff: classification, immutable seals, arithmetic, route, convergence, path/format health, process retirement, and exact terminal identities. It authorizes no Round or Convergence mutation, no next-reviewer action, and no contact.
+- Any defect found here requires a persisted `SUBMIT-FOR-REVIEW -> REVISE` transition before correction. No submission result is credited until the gate is rerun from current disk bytes and persisted.
+
+**G7 R53 packet qualification FSM state: `SUBMIT-FOR-REVIEW` (fresh handoff review in progress; external contact forbidden).**
+
+## R53 packet qualification follow-up — SUBMIT-FOR-REVIEW-RESULT (`2026-07-15T15:13:10+02:00`)
+
+- The independent handoff review passes. Pre-result identities are Round Log 5,859 lines / 1,050,187 bytes / `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`; Convergence Report 942 / 137,152 / `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`; and G7_STATE 4,261 / 924,360 / `a659d9d5daf6c5aaff1092dd88cd2f166d6e76e439dae163722c4b2df2639b07`.
+- Control, packet, separator-inclusive packet, fixed-base prefix, and preserved historical suffix reproduce `6844dad0b0202035a42498f6eb2c72f8dd6319c95ffd9cc9968c8223db32cd30`, `3b31399fa3862ced3fc627a6aa23f7dc2b2ac40cd9ef4c4476348333b7b369d6`, `b97934ee705b3e8f8f9323f6eb39bbe9e9e20dd23bee058ec9681e845d6c08ee`, `bd03489cee25f062562275c3bbd0dc5e25d2081560826fee2111dd70ae94fcca`, and `037c2036ca8f85a6be6b542b764b1a301104050870ef9ce3f8a2dbe0041ac8bf`. Packet schema remains one heading, 0/1/1 allegation headings, one verdict, and one terminal-state field.
+- R53 remains immutable `NOT-RUN · AUTHORITY-COVERAGE-VIOLATION · TERMINATED` with no evidence or convergence credit and no G3 route. The two locally supported allegation premises remain quarantined rather than promoted.
+- Allocation reruns at 53 rows, 22 Sol / 31 Opus; 22 failed at 6/16; 31 active at 16/15; 18 valid filed at 9/9 and A=118/B=64/C=22; 13 active-unfiled at 7/6; and no bound row. R10 remains `PRECOMMITTED`; both precommitted convergence sequences are unchanged; convergence remains `NOT ESTABLISHED`.
+- Path and format review passes at exactly three owned worktree paths, fixed-base numstat Round 78/1, Convergence 14/0, and pre-result G7_STATE 222/0; index and untracked sets are empty; diff check is silent; encoding, line endings, conflict, and whitespace gates pass. The classified prose check remains clean at the semantic boundary: owner material is evidentiary classification only and adds no normative card body or registry/slot content.
+- R53 session and recorded processes remain absent, and host zombies remain absent. No owner, reviewer, or process contact occurred; no next reviewer was inspected or changed; no task was sent.
+
+No handoff defect was found. The FSM may advance to `DONE`; that transition has not yet been written.
+
+**G7 R53 packet qualification FSM state: `SUBMIT-FOR-REVIEW` (handoff review passed; ready for `DONE`).**
+
+## R53 packet qualification follow-up — DONE (`2026-07-15T15:13:37+02:00`)
+
+- Crash-safe terminal transition persisted: `SUBMIT-FOR-REVIEW -> DONE` after the successful independent handoff review.
+- Transition preimage identities are Round Log 5,859 lines / 1,050,187 bytes / `c2e25945c2e02096cd12bfa24882879d08e3bfa241d9d7cf1657ec66c197e568`; Convergence Report 942 / 137,152 / `cad3fb3585d64c56cf3b3b1a5ca868755ae7b1803fd7120101900a95b3e0e478`; and G7_STATE 4,274 / 926,765 / `d6ca22cfc569892887b2fe2e8c27a6553387413cd98b85e1d073b380f0e566e8`.
+- Final qualification verdict: R53 is immutable `NOT-RUN · AUTHORITY-COVERAGE-VIOLATION · TERMINATED`; its physical packet and grades receive no filing, route, owner-disposition, curve, cross-model, or convergence credit. The two independently supported allegation premises remain quarantined and are not sent to G3.
+- Final accounting is 53 rows at 22 Sol / 31 Opus; 22 failed at 6/16; 31 active at 16/15; 18 valid filed at 9/9 with A=118/B=64/C=22; 13 active-unfiled at 7/6; and no bound row. R10 remains untouched `PRECOMMITTED`; convergence remains `NOT ESTABLISHED`.
+- Round and Convergence are frozen at the identities above. No reviewer, owner, or process was contacted; no external action, commit, push, fetch, stage, task send, next-reviewer bind, or next-reviewer inspection occurred.
+- Root may inspect and commit the three owned paths. G7 assigns no next reviewer in this turn. The self-containing G7_STATE terminal identity is sampled only after this marker and belongs in the read-only handoff report.
+
+**G7 R53 packet qualification FSM state: `DONE` (bounded qualification resolved; idle for root).**
