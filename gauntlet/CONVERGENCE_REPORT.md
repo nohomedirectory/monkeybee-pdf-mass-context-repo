@@ -658,3 +658,25 @@ R46 binds only pushed plan `fc4cf43598e788cacea1ffabce7110d23ba3aea66a7d89afa33b
 The concise deterministic capacity law yields exactly 57 authority Reads over 4,858 selected lines and 36 artifact Reads over all 3,543 plan lines, each at most 100 lines. Authority must pass before artifact access; any error, truncation, out-of-range result, or coverage mismatch fail-closes with no compensating Read or write. The control otherwise retains fresh context, one artifact/lens, exact prompt, blind whole-file seal, sole structured append, standalone termination token, and process exit without constraining one-lens judgment.
 
 No task has been sent to R46. Overarching G7 remains `DRAFT`; root may commit/push the three G7 documents, reproduce all identities and the untouched reviewer process, compute the detached Round Log hash, then deliver only the exact activation envelope and sealed control. G7 does not dispatch, contact an owner/reviewer, edit an artifact/root ledger, or bind another round.
+
+## R46 zero-credit failure and R47 bound-unsent correction — 2026-07-15
+
+This append-only correction supersedes only stale R46-bound wording above. It preserves every earlier report and reviewer byte and changes no filed finding, grade, loss guard, curve point, artifact verdict, owner disposition, or convergence conclusion.
+
+### R46 terminal control
+
+R46 is immutable `NOT-RUN · METHOD/AUTHORITY-SEQUENCING-AND-READ-CAPACITY-VIOLATION · TERMINATED`. It correctly read AGENTS/protocol and ran five identity calls, then skipped all 57 authority Reads, accessed the plan early with limit 2000, and made compensating 500-line Reads after the first error. Root terminated after the second error. Every call was read-only; there was no Round Log contact or write. Transcript prose is quarantined. R46 supplies zero finding, grade, lens coverage, verdict, route, curve point, disposition, or conclusion; its ID is not reused.
+
+### Filed evidence and convergence remain fixed
+
+Valid filed evidence remains exactly 15 rounds, A=98/B=59/C=19, with an 8 Sol / 7 Opus filed-family split. The same-lens five-pass-A curve remains R04 A+B=16 → R05 A+B=32 → R41 A+B=7, all non-marginal. R46 adds no point. Zero consecutive marginal-only points means convergence remains **NOT ESTABLISHED** before a valid pass-4/5 filing.
+
+### Allocation and R47 control state
+
+Immutable allocation is now 47 rows at 20 Sol / 27 Opus. Failed IDs are R06, R07, R23, R24, R34, R35, R36, R37, R39, R40, R42, R43, R44, R45, and R46. Excluding those 15 leaves 32 active planned slots at 16 Sol / 16 Opus; 15 are filed and 17 are active-unfiled. R47 is the sole `BOUND-UNSENT` row and 16 remain unbound. The one-for-one replacement adds no planned lens or coverage.
+
+R47 binds only pushed plan `fc4cf43598e788cacea1ffabce7110d23ba3aea66a7d89afa33bbf60cba72260`, sole `oversimplification-and-feature-loss` lens, Opus 4.8/xhigh, and original pass 4/5. Exact untouched identity is session `monkeybee-pdf-mass-context-repo--r47`, target `1.1`, pane `%139`, shell 1551246, child 1551482, monitor 1551391, and lowercase repository cwd. Sealed Round Log control is `[845677,856128)`, 46 lines / 10,451 bytes / SHA-256 `6dae93b2b3015eb786577ad4fe29841df59f3d3fc492c2dd81d7d979790ea756`; heading-to-EOF is 10,450 / `42feb49d6c71b4335d5174084e339b4e0d225451f183e4c2f6a56d6ecaaaa9ac`.
+
+The call-stage law makes Calls 8–64 authority-only and Calls 65–100 artifact-only, using the exact 57/36 at-most-100-line manifests. Any early artifact access, bad result, range/capacity error, or recovery attempt fail-closes with no write. Calls 101–104 alone measure filed time, verify blind whole-file/final-literal integrity, and append. The control retains fresh context, one artifact/lens, exact prompt, standalone termination token, and process exit without constraining judgment after Call 100.
+
+No task has been sent to R47. Overarching G7 remains `DRAFT`; root may commit/push the three G7 documents, reproduce all identities and the untouched reviewer process, compute the detached Round Log hash, then deliver only the exact activation envelope and sealed control. G7 does not dispatch, contact an owner/reviewer, edit an artifact/root ledger, or bind another round.
