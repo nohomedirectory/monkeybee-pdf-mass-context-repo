@@ -1144,3 +1144,15 @@ R60 is the one-for-one Sol replacement against the same submitted plan root `db0
 Allocation is 60 rows at 24 Sol / 36 Opus; 29 failed at 8/21; 31 active at 16/15; 18 filed at 9/9; and 13 active-unfiled at 7/6. R60 is the sole bound row and supplies no review credit before a later transcript-qualified filing.
 
 Established sequences remain unchanged. R59 adds no point and R60 has not run, so convergence remains **NOT ESTABLISHED**. All R60 reservation/process/model/mode/tier/placeholder/history facts are `ROOT-REPRODUCTION-REQUIRED`. No bootstrap was instantiated or sent, and no reviewer/process/PID/pane/session/service was inspected or contacted.
+
+## R60 transcript-qualified zero-credit closure / R61 allocation-only replacement — `2026-07-16`
+
+Stable transcript replay closes R60 narrowly as `NOT-RUN · CONTROL-ARITHMETIC-MISMATCH · INCOMPLETE-TYPED-LEDGER · TERMINATED`. All seven declared fixed source Reads and the structural extraction returned, but the individual Read counts sum to 851 rather than the sealed control's stated 837. Two typed-ledger helper attempts failed observably. No typed ledger, graph test, target Read, analysis closure, pre-write clock, citation replay, packet, patch, or filing exists. Physical packet count is zero. The transcript states no cause, so none is inferred.
+
+R60 contributes no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model point, or convergence evidence. Its immutable control, grammar, anchor, and ID remain failed-chain history. Supplied retirement/process-absence and host-zombie facts remain `ROOT-REPRODUCTION-REQUIRED`.
+
+R61 is the one-for-one Sol replacement for the original R10 dependency-soundness slot against submitted plan root `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`. It is artifact/lens-bound but process-unbound at `ALLOCATED-UNSENT`. Its sealed structural-first control uses exactly 12 source Reads, a 36,866-byte extraction, a self-verifying 1,943-byte content-silent graph result, at most 12 citation-replay intervals / 64 nonblank lines / 12,000 bytes, and a 30,000-byte packet cap. Declared returned content is at most 197,391 bytes. Structural graph coverage is not whole-plan semantic coverage.
+
+Allocation is 61 rows at 25 Sol / 36 Opus; 30 failed at 9/21; 31 active at 16/15; 18 filed at 9/9; and 13 active-unfiled at 7/6. R61 alone is allocated-unsent; no row is bound-unsent. It supplies no review credit before a later chain-qualified filing. A separate root reservation/bind commit is required before activation.
+
+Established C1 and Constitution sequences remain unchanged. R60 adds no point and R61 has not run, so convergence remains **NOT ESTABLISHED**. No process was reserved, inspected, contacted, or dispatched; no bootstrap was instantiated or sent.

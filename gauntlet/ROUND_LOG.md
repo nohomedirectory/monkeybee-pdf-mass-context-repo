@@ -7289,7 +7289,7 @@ R59 is therefore closed only as `NOT-RUN · INCOMPLETE-PRIMARY-UNION · TERMINAT
 
 | Round | Artifact | Declared lens (exactly one) | Model | Precondition to admit | Artifact hash | Status | A | B | C | Marginal-only | Owner disposition |
 |---|---|---|---|---|---|---|---:|---:|---:|---|---|
-| R60 | C1 delta plan (one-for-one replacement for failed R59) | dependency soundness | `gpt-5.6-sol`, effort `ultra`, supplied live `fast`, supplied priority service | Transcript-qualified immutable R59 zero-credit closure; later root reattestation of the pristine reserved process | `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59` | BOUND-UNSENT | — | — | — | — | One-for-one replacement against the same submitted plan and sole lens. Seven fixed source Reads, one closed structural extraction, at most five targeted whole-block Reads, and citation-only replay are globally bounded. Every reservation/process fact is `ROOT-REPRODUCTION-REQUIRED`. No bootstrap instantiated or sent; no review or convergence credit. |
+| R60 | C1 delta plan (one-for-one replacement for failed R59) | dependency soundness | `gpt-5.6-sol`, effort `ultra`, supplied live `fast`, supplied priority service | Transcript-qualified immutable R59 zero-credit closure; later root reattestation of the pristine reserved process | `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59` | NOT-RUN · CONTROL-ARITHMETIC-MISMATCH · INCOMPLETE-TYPED-LEDGER · TERMINATED | — | — | — | — | Stable transcript replay establishes all seven declared fixed Reads and the structural extraction, two failed typed-ledger helper attempts, no typed ledger/test/target/replay/packet/write, and exact terminal response. The control's individual Read counts sum to 851 rather than its stated 837. Neither observable defect is asserted as the unstated cause. Immutable zero credit. |
 
 Allocation is now 60 unique rows at 24 Sol / 36 Opus; 29 failed at 8/21; 31 active at 16/15; 18 filed at 9/9; and 13 active-unfiled at 7/6. R60 is the sole `BOUND-UNSENT` row. The replacement adds no second planned slot.
 
@@ -7427,3 +7427,408 @@ After final freeze, reconfirm artifact/commit/Round/control/anchor identities us
 If any gate failed, do not patch. After a successful patch result, make no later tool call; the next and entire assistant response is exactly `TERMINATED`, without prefix, suffix, punctuation, fence, or success narration. If patch fails, do not retry and respond with that same exact token. Root later qualifies the transcript and retirement.
 
 **R60 FINAL LITERAL ANCHOR — KEEP AS PHYSICAL EOF; APPEND ONLY THE ASSIGNED R60 PACKET IMMEDIATELY BEFORE THIS LINE.**
+
+## R60 transcript-qualified zero-credit closure — `2026-07-16`
+
+The stable retired transcript at the human-supplied path independently reproduces as 156 newline-terminated JSONL records / 460,105 bytes / `f502522191076c84ce3d8e7357abbb46187d21798bfc429ecacd8bc2bbe10749`. Record-by-record replay pairs all 28 exec calls to 28 uniquely adjacent results, finds no compaction record, and observes no `apply_patch` or other write.
+
+Startup Tools 1-4 were sequential and successful: AGENTS through EOF, reviewer protocol through EOF, only the sealed R60 control, and the exact start-clock command. Fixed identities passed. Seven fixed source Reads returned the listed individual counts 47, 15, 218, 168, 159, 157, and 87 and 103,257 bytes; those counts sum to 851, while the immutable control states 837. The 284-record / 36,866-byte extraction also passed. Helper attempt one failed in its wrapper; helper attempt two emitted one no-match and two parse errors. No typed ledger, graph test, target Read, analysis closure, pre-write clock, citation replay, packet, patch, or filing followed. The final assistant event and task-end value are exactly standalone `TERMINATED`.
+
+The transcript states no causal reason, so none is inferred. R60 is closed narrowly as `NOT-RUN · CONTROL-ARITHMETIC-MISMATCH · INCOMPLETE-TYPED-LEDGER · TERMINATED`, physical packet count zero. It earns no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve, cross-model, or convergence credit. Its sealed control, grammar, historical anchor, and ID remain immutable failed-chain evidence. Supplied retirement/process-absence and host-zombie statements remain `ROOT-REPRODUCTION-REQUIRED`; G7 did not inspect a process.
+
+## R61 one-for-one process-unbound allocation — `2026-07-16`
+
+| Round | Artifact | Declared lens (exactly one) | Model class | Precondition to admit | Artifact hash | Status | A | B | C | Marginal-only | Owner disposition |
+|---|---|---|---|---|---|---|---:|---:|---:|---|---|
+| R61 | C1 delta plan (one-for-one replacement for failed R60 in the original R10 slot) | dependency soundness | exact `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service required at later bind | Immutable R10/R59/R60 zero-credit history; later root reservation, helper reattestation, bind commit, and pushed identities | `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59` | ALLOCATED-UNSENT | — | — | — | — | Artifact/lens-bound and process-unbound. Exact process coordinates and untouched placeholder are deliberately absent. The sealed structural-first control and detached grammar authorize no activation until root supplies and pushes a separate bind receipt. No review or convergence credit. |
+
+Allocation is 61 unique rows at 25 Sol / 36 Opus; 30 failed at 9/21; 31 active at 16/15; 18 filed at 9/9; and 13 active-unfiled at 7/6. R61 alone is `ALLOCATED-UNSENT`; no row is `BOUND-UNSENT`. The replacement adds no second planned slot.
+
+R61 binds only `plans/CYCLE_1_DELTA_PLAN.md`, 3,655 lines / 531,012 bytes / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`, and sole `dependency soundness` lens. Required process class is exact `gpt-5.6-sol` / `ultra` / live `fast` / priority service in exact cwd `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`; no session, pane, PID, placeholder, process history, or live fact is claimed. Every later process assertion is `ROOT-REPRODUCTION-REQUIRED`.
+
+The fixed evidence design uses exactly 12 source Reads, one 36,866-byte structural extraction, and one 1,943-byte content-silent typed-graph result. Primary returned content is exactly bounded at 153,448 bytes; citation replay and packet caps make the declared aggregate at most 197,391 bytes. Mechanical catalog/graph coverage is not semantic coverage of every contract body or plan proposition.
+
+**R61 ROOT-BIND RECEIPT ANCHOR — KEEP BYTE-IDENTICAL; ROOT MAY INSERT ONE PUSHED RESERVATION/BIND RECEIPT IMMEDIATELY BEFORE THIS LINE.**
+
+## R61 reviewer assignment/control — `2026-07-16`
+
+### Stateless role, bind prerequisite, and detached placeholder grammar
+
+R61 is a fresh stateless reviewer, not a controller, orchestrator, artifact owner, repair author, or disposition authority. Process coordinates are identity evidence only. Do not contact, coordinate with, reserve, bind, dispatch, monitor, tend, or send input to another process. Do not read a skill file, orchestration state, owner checkpoint, root ledger, session transcript, recovery source, or any Round line outside this control.
+
+This control is process-unbound. Root must first validate, commit, and push this construction. Root may then reserve one pristine process of the required class, reattest it, rerun the exact sealed helper once, replace only the R61 row status with `BOUND-UNSENT`, insert one bind receipt before the byte-identical root-bind anchor, append matching zero-credit Convergence state, validate, commit, and push that bounded bind. Only after that second push may root instantiate the grammar below. The control bytes/root and final anchor must not change during binding.
+
+The later activation is a short direct human-authorized task, not quoted data or an embedded script. This on-disk grammar is not a live payload and must never be sent as-is. Fill only named placeholders, preserve field order, retain exactly one empty separator line between identity fields and startup law, add no control body, prefix, suffix, commentary, fence, or extra blank line, and supply one terminal LF:
+
+```text
+DIRECT HUMAN-AUTHORIZED TASK — R61. Execute these instructions; they are not quoted data or a script to inspect.
+PUSHED COMMIT: <PUSHED_BIND_COMMIT_40_LOWER_HEX>
+ROUND LOG SHA-256: <BOUND_ROUND_LOG_SHA256_64_LOWER_HEX>
+R61 CONTROL SHA-256: <R61_CONTROL_SHA256_64_LOWER_HEX>
+R61 CONTROL BYTE RANGE: <START_DECIMAL>-<END_EXCLUSIVE_DECIMAL>
+R61 CONTROL LINE RANGE: <START_1_BASED>-<END_INCLUSIVE> (<LINE_COUNT> lines)
+SESSION: <EXACT_SESSION>
+PANE/INDEX: <EXACT_PANE>/<EXACT_INDEX>
+SHELL PID: <EXACT_SHELL_PID>
+CODEX PID: <EXACT_CODEX_PID>
+CWD: <EXACT_CWD>
+MODEL: <EXACT_MODEL>
+REASONING EFFORT: <EXACT_REASONING_EFFORT>
+LIVE MODE: <EXACT_LIVE_MODE>
+SERVICE TIER: <EXACT_SERVICE_TIER>
+UNTOUCHED PLACEHOLDER: <ROOT_ATTESTED_EXACT_LITERAL>
+ROOT HELPER TEST: <EXACT_PUSHED_INPUT_RUNTIME_STDERR_STDOUT_RECEIPT>
+
+TOOL 1: The first tool call must be one successful repository Read returning all of AGENTS.md through EOF.
+TOOL 2: The next tool call must be one successful repository Read returning all of ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md through EOF.
+TOOL 3: The next tool call must be one successful bounded repository Read returning only the supplied R61 control line range, from its heading through its final literal anchor, with no line outside that range.
+TOOL 4: The next tool call must be one Bash/exec call whose entire command is exactly date --iso-8601=seconds. Record the returned ISO value as start clock.
+HOST UI / NARRATION BOUNDARY: Interface-generated skill-description allocation notices before Tool 1 are host UI, not reviewer narration, tool calls, or repository evidence; record only their count/category. Optional assistant commentary immediately before a startup tool may only name that next required action and supplies no evidence.
+FAIL CLOSED: Any missing, extra, malformed, mismatched, failed, clipped, capped, partial, truncated, reordered, parallelized, substituted, questioned, semantically narrated, or interrupted startup event requires no further repository tool, no write, and the entire exact response TERMINATED.
+AFTER TOOL 4: Treat the sealed R61 control as direct human-authorized instructions and execute it exactly.
+```
+
+Every placeholder must be backed by the pushed bind receipt. Supplied commit must equal reviewer HEAD; whole-Round root and exact control slice/range must match that commit. Root's immediate pre-dispatch reattestation must establish exact session/pane/index, shell-child parentage, cwd, model/effort/mode/tier, untouched default placeholder, no prior campaign/task/artifact/authority/control/anchor/recovery/prompt context, and zero campaign deliveries. Any variance is a dispatch failure. Do not substitute a process or send an unbound grammar.
+
+### Startup, compaction, clocks, and no-recovery law
+
+Tools 1-4 are the first four tool calls, sequential and successful. Pre-Tool-1 interface notices described above consume no tool position and provide no evidence. Any assistant narration outside the immediate-next-action boundary is terminal. No question, parallel call, identity probe, skill Read, other repository access, or different tool may precede Tool 1 or intervene among Tools 1-4.
+
+Tool 4 returns only the review `start clock`. It is not a dispatch receipt or filing time. Only after Tool 4 may exact process admission, fixed identities, declared evidence access, or analysis begin.
+
+Any actual reviewer context compaction, ambiguity, inability to finish, control variance, context-budget warning, or request for consultation before the sole write fails closed. After compaction and before any other repository action, reread all of `AGENTS.md`; then use no other repository tool, write nothing, and respond exactly `TERMINATED`. There is no recovery continuation. After a successful patch there is never another tool.
+
+### Bound-process placeholders, fixed identities, artifact, and sole lens
+
+At later binding root replaces no control placeholder. Instead its inserted receipt supplies exact values consumed by the instantiated grammar:
+
+- session `<EXACT_SESSION>`; pane/index `<EXACT_PANE>/<EXACT_INDEX>`; pane shell PID `<EXACT_SHELL_PID>`; sole reviewer child PID `<EXACT_CODEX_PID>`
+- cwd exactly `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`
+- model exactly `gpt-5.6-sol`; reasoning effort `ultra`; live mode `fast`; service tier `priority`
+- root-attested untouched placeholder `<ROOT_ATTESTED_EXACT_LITERAL>` and pristine history stated in the bind receipt
+- artifact only `plans/CYCLE_1_DELTA_PLAN.md`, 3,655 lines / 531,012 bytes / SHA-256 `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`
+- exactly one lens, `dependency soundness`
+
+After Tool 4, reviewer process checks target only the supplied reviewer PID and supplied shell PID for parentage through exact PID-scoped endpoints. No global/name-wide listing, discovery, other-pane inspection, loop, input, or contact is admissible. Exact model arguments, cwd, and parentage must match. A mismatch is `NON-EVIDENCE-INTEGRITY-FAILURE`: no artifact analysis, no write, exact `TERMINATED`.
+
+Then verify only these fixed identities: reviewer HEAD equals supplied pushed bind commit; whole Round root equals supplied root; supplied R61 control slice equals supplied control root; control end offset equals whole-Round byte size; exact R61 final-anchor count is one; artifact path/lines/bytes/root equal this control; and the root-bind receipt immediately precedes the byte-identical bind anchor. Every command is individually bounded and content-silent. Standard output contains only the requested commit, root, decimal size, or exact-anchor count; standard error is empty. Do not display another Round byte. Any mismatch is `NON-EVIDENCE-INTEGRITY-FAILURE`.
+
+### Exact primary source ledger and structural extraction
+
+Primary source Reads are exactly the 12 Reads below, once each, sequentially, with no optional Read or second wave:
+
+1. `OVERNIGHT_GOAL.md` 23/14 -> lines 23-36, exactly 14 lines / 3,596 bytes.
+2. `OVERNIGHT_GOAL.md` 66/1 -> line 66, exactly 1 line / 1,189 bytes.
+3. `OVERNIGHT_GOAL.md` 78/10 -> lines 78-87, exactly 10 lines / 2,102 bytes.
+4. `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` 54/47 -> lines 54-100, exactly 47 lines / 6,492 bytes.
+5. `CYCLE_0_WORK_ORDER.md` 112/15 -> lines 112-126, exactly 15 lines / 1,611 bytes.
+6. `plans/CYCLE_1_DELTA_PLAN.md` 1/218 -> lines 1-218, exactly 218 lines / 26,764 bytes.
+7. `plans/CYCLE_1_DELTA_PLAN.md` 219/168 -> lines 219-386, exactly 168 lines / 11,439 bytes.
+8. `plans/CYCLE_1_DELTA_PLAN.md` 3253/159 -> lines 3,253-3,411, exactly 159 lines / 19,336 bytes.
+9. `plans/CYCLE_1_DELTA_PLAN.md` 3412/157 -> lines 3,412-3,568, exactly 157 lines / 27,592 bytes.
+10. `plans/CYCLE_1_DELTA_PLAN.md` 3569/87 -> lines 3,569-3,655, exactly 87 lines / 10,023 bytes.
+11. `plans/CYCLE_1_DELTA_PLAN.md` 1117/20 -> whole `C1.CC.REV.006@1` block at lines 1,117-1,136, exactly 20 lines / 3,048 bytes.
+12. `plans/CYCLE_1_DELTA_PLAN.md` 2709/22 -> whole `C1.CC.IMM.022@1` block at lines 2,709-2,730, exactly 22 lines / 3,390 bytes.
+
+Reads 1-10 are the fixed authority/cross-section ledger: 876 lines / 110,144 bytes. Reads 11-12 are the predeclared anomaly-meaning ledger: 42 lines / 6,438 bytes. Each result exposes requested/observed first/last/count/bytes and must be successful, uncapped, and untruncated. Any retry, repeat, widening, mismatch, warning, clipping, or failure is `PRIMARY-EVIDENCE-FAILURE`: stop without helper, replay, or write and respond exactly `TERMINATED`.
+
+After Read 10 and before Reads 11-12, run exactly one content-bearing structural extraction whose entire command is:
+
+```text
+rg -n '^#### `C1\.CC\.[A-Z]{3}\.[0-9]{3}@1`|^- Dependencies and consumers:' plans/CYCLE_1_DELTA_PLAN.md
+```
+
+It must return exactly 284 newline-terminated records / 36,866 bytes / SHA-256 `444895625ba399dc89708e23a88edc59dd78876fdb583e117f5a0aead8489fc3`: 142 headings and 142 dependency clauses. Bounded content-silent identity rechecks add no semantic coverage. A mismatch, warning, clipping, or unsafe proof is `PRIMARY-EVIDENCE-FAILURE`.
+
+Fixed Reads + extraction + target Reads return exactly 153,448 bytes. The extraction and helper mechanically cover the closed catalog/dependency-clause surface only. They do not establish semantic coverage of every contract body, all plan lines, any source outside this declared surface, or the meaning of a residual phrase.
+
+### Exact content-safe typed-graph helper
+
+After the extraction identity passes and before target Reads 11-12, invoke exactly once the command below from repository root. Do not assemble it with JavaScript, copy-edit it, wrap it, redirect it, pipe it, retry it, or use another interpreter. Its Python source contains no single quote, shell-active backtick, repository write, temporary path, subprocess, network action, or emitted source prose:
+
+```text
+/usr/bin/python3 -c '
+import hashlib
+import json
+import os
+import re
+import sys
+
+PLAN = "plans/CYCLE_1_DELTA_PLAN.md"
+PLAN_ROOT = "db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59"
+EXTRACTION_ROOT = "444895625ba399dc89708e23a88edc59dd78876fdb583e117f5a0aead8489fc3"
+PYTHON_ROOT = "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118"
+OUTPUT_BYTES = 1943
+OUTPUT_ROOT = "c7af03c30f58e652a7554d8e7aab7ffb72de052889a5cfaa77ca99de5c3512f5"
+
+def digest_bytes(value):
+    return hashlib.sha256(value).hexdigest()
+
+def digest_lines(values):
+    if not values:
+        return digest_bytes(b"")
+    return digest_bytes(("\n".join(values) + "\n").encode("utf-8"))
+
+if sys.version.split()[0] != "3.12.3":
+    raise SystemExit("runtime-version")
+if os.path.realpath(sys.executable) != "/usr/bin/python3.12":
+    raise SystemExit("runtime-path")
+if digest_bytes(open("/usr/bin/python3", "rb").read()) != PYTHON_ROOT:
+    raise SystemExit("runtime-root")
+
+raw = open(PLAN, "rb").read()
+if digest_bytes(raw) != PLAN_ROOT:
+    raise SystemExit("plan-root")
+text = raw.decode("utf-8")
+heading_re = re.compile(r"^#### \u0060(C1\.CC\.([A-Z]{3})\.(\d{3})@1)\u0060")
+dependency_prefix = "- Dependencies and consumers:"
+records = []
+catalog = []
+clauses = []
+current = None
+for line_number, line in enumerate(text.splitlines(), 1):
+    heading = heading_re.match(line)
+    if heading:
+        current = heading.group(1)
+        catalog.append(current)
+        records.append(f"{line_number}:{line}")
+    elif line.startswith(dependency_prefix):
+        if current is None:
+            raise SystemExit("clause-without-heading")
+        records.append(f"{line_number}:{line}")
+        clauses.append((current, line[len(dependency_prefix):].strip()))
+
+extraction = ("\n".join(records) + "\n").encode("utf-8")
+if len(records) != 284 or len(extraction) != 36866 or digest_bytes(extraction) != EXTRACTION_ROOT:
+    raise SystemExit("extraction-identity")
+if len(catalog) != 142 or len(set(catalog)) != 142 or len(clauses) != 142:
+    raise SystemExit("catalog-cardinality")
+
+short_to_full = {}
+for full in catalog:
+    match = re.fullmatch(r"C1\.CC\.([A-Z]{3})\.(\d{3})@1", full)
+    short_to_full[f"{match.group(1)}.{match.group(2)}"] = full
+
+token_re = re.compile(r"([A-Z]{3})\.(\d{3})(?:\s*[–-]\s*(?:([A-Z]{3})\.)?(\d{3}))?")
+
+def expand(segment):
+    values = []
+    unknown = []
+    invalid = []
+    for match in token_re.finditer(segment):
+        prefix = match.group(1)
+        start = int(match.group(2))
+        end_text = match.group(4)
+        if end_text is None:
+            shorts = [f"{prefix}.{start:03d}"]
+        else:
+            end_prefix = match.group(3) or prefix
+            end = int(end_text)
+            if end_prefix != prefix or end < start:
+                invalid.append(match.group(0))
+                continue
+            shorts = [f"{prefix}.{number:03d}" for number in range(start, end + 1)]
+        for short in shorts:
+            full = short_to_full.get(short)
+            if full is None:
+                unknown.append(short)
+            else:
+                values.append(full)
+    return values, unknown, invalid
+
+prerequisite_edges = []
+target_edges = []
+transition_edges = []
+transition_declarations = []
+unknowns = []
+invalids = []
+prerequisite_residuals = []
+target_residuals = []
+
+def residual_receipt(owner, segment, kind):
+    residue = token_re.sub(" ", segment)
+    residue = re.sub(r"[\s,/()]+", " ", residue).strip(" .;:-")
+    residue = re.sub(r"\b(and|or|only|conditionally|the|exact|versioned)\b", " ", residue)
+    residue = re.sub(r"\s+", " ", residue).strip()
+    if residue:
+        return f"{owner}|{kind}|{digest_bytes(residue.encode("utf-8"))}"
+    return None
+
+for owner, clause in clauses:
+    if "depends on " in clause:
+        segment = clause.split("depends on ", 1)[1].split(";", 1)[0]
+        values, found_unknowns, found_invalids = expand(segment)
+        prerequisite_edges.extend((value, owner) for value in values)
+        unknowns.extend(f"{owner}|prerequisite|{value}" for value in found_unknowns)
+        invalids.extend(f"{owner}|prerequisite|{value}" for value in found_invalids)
+        receipt = residual_receipt(owner, segment, "prerequisite")
+        if receipt:
+            prerequisite_residuals.append(receipt)
+    if "targets " in clause:
+        segment = clause.split("targets ", 1)[1].split(";", 1)[0]
+        values, found_unknowns, found_invalids = expand(segment)
+        target_edges.extend((value, owner) for value in values)
+        unknowns.extend(f"{owner}|target|{value}" for value in found_unknowns)
+        invalids.extend(f"{owner}|target|{value}" for value in found_invalids)
+        receipt = residual_receipt(owner, segment, "target")
+        if receipt:
+            target_residuals.append(receipt)
+    for match in re.finditer(r"in state transition \u0060([^\u0060]+)\u0060, additionally consumes (.*?)(?= only\b)", clause):
+        transition = match.group(1)
+        segment = match.group(2)
+        values, found_unknowns, found_invalids = expand(segment)
+        transition_declarations.append(f"{owner}|{transition}")
+        transition_edges.extend((value, owner, transition) for value in values)
+        unknowns.extend(f"{owner}|transition|{value}" for value in found_unknowns)
+        invalids.extend(f"{owner}|transition|{value}" for value in found_invalids)
+
+edge_strings = [f"{source}->{target}" for source, target in prerequisite_edges]
+unique_edge_strings = sorted(set(edge_strings))
+duplicates = sorted(value for value in set(edge_strings) if edge_strings.count(value) > 1)
+target_edge_strings = sorted(set(f"{source}->{target}" for source, target in target_edges))
+transition_edge_strings = sorted(set(f"{source}->{target}|{transition}" for source, target, transition in transition_edges))
+
+nodes = sorted(catalog)
+adjacency = {node: set() for node in nodes}
+reverse = {node: set() for node in nodes}
+for edge in unique_edge_strings:
+    source, target = edge.split("->", 1)
+    adjacency[source].add(target)
+    reverse[target].add(source)
+self_loops = sorted(node for node in nodes if node in adjacency[node])
+roots = sorted(node for node in nodes if not reverse[node])
+leaves = sorted(node for node in nodes if not adjacency[node])
+isolated = sorted(node for node in nodes if not reverse[node] and not adjacency[node])
+
+seen = set()
+order = []
+def visit(node):
+    if node in seen:
+        return
+    seen.add(node)
+    for next_node in sorted(adjacency[node]):
+        visit(next_node)
+    order.append(node)
+for node in nodes:
+    visit(node)
+
+seen = set()
+components = []
+def reverse_visit(node, component):
+    if node in seen:
+        return
+    seen.add(node)
+    component.append(node)
+    for next_node in sorted(reverse[node]):
+        reverse_visit(next_node, component)
+for node in reversed(order):
+    if node not in seen:
+        component = []
+        reverse_visit(node, component)
+        if len(component) > 1:
+            components.append(sorted(component))
+components.sort()
+
+clause_receipts = [f"{owner}|{digest_bytes(clause.encode("utf-8"))}" for owner, clause in clauses]
+result = {
+    "catalog": {"count": len(nodes), "root": digest_lines(nodes)},
+    "clauses": {"count": len(clauses), "root": digest_lines(clause_receipts)},
+    "duplicate_prerequisites": {"count": len(duplicates), "items": duplicates, "root": digest_lines(duplicates)},
+    "extraction": {"bytes": len(extraction), "records": len(records), "root": digest_bytes(extraction)},
+    "graph": {
+        "edges": len(unique_edge_strings),
+        "edge_root": digest_lines(unique_edge_strings),
+        "isolated": isolated,
+        "isolated_count": len(isolated),
+        "isolated_root": digest_lines(isolated),
+        "leaves": len(leaves),
+        "leaf_root": digest_lines(leaves),
+        "roots": len(roots),
+        "root_root": digest_lines(roots),
+        "scc_nontrivial": len(components),
+        "scc_root": digest_lines(["|".join(component) for component in components]),
+        "self_loops": len(self_loops),
+        "self_loop_root": digest_lines(self_loops)
+    },
+    "invalid_expansions": {"count": len(invalids), "root": digest_lines(sorted(invalids))},
+    "nonedge_residuals": {
+        "prerequisite_count": len(prerequisite_residuals),
+        "prerequisite_root": digest_lines(sorted(prerequisite_residuals)),
+        "target_count": len(target_residuals),
+        "target_root": digest_lines(sorted(target_residuals))
+    },
+    "plan_root": digest_bytes(raw),
+    "targets": {"edges": len(target_edge_strings), "root": digest_lines(target_edge_strings)},
+    "transitions": {
+        "declarations": len(transition_declarations),
+        "declaration_root": digest_lines(sorted(transition_declarations)),
+        "edges": len(transition_edge_strings),
+        "edge_root": digest_lines(transition_edge_strings)
+    },
+    "unknown_endpoints": {"count": len(unknowns), "root": digest_lines(sorted(unknowns))},
+    "version": "r61-typed-graph-v1"
+}
+payload = (json.dumps(result, ensure_ascii=False, separators=(",", ":"), sort_keys=True) + "\n").encode("utf-8")
+if len(payload) != OUTPUT_BYTES or digest_bytes(payload) != OUTPUT_ROOT:
+    raise SystemExit("output-identity")
+sys.stdout.buffer.write(payload)
+'
+```
+
+Success is exit zero, empty stderr, and exactly one newline-terminated stdout line / 1,943 bytes / `c7af03c30f58e652a7554d8e7aab7ffb72de052889a5cfaa77ca99de5c3512f5`, exactly:
+
+```text
+{"catalog":{"count":142,"root":"16335a8dca09230b4b898f3c2944e16035a078ccf149047cf4c20293a344a8d8"},"clauses":{"count":142,"root":"4996a66d52481d3a45d8892831bad5a0f329124a1491adaa4f51b75f1eb54983"},"duplicate_prerequisites":{"count":1,"items":["C1.CC.SEC.008@1->C1.CC.REV.006@1"],"root":"c127ca6f4a0e9c075e69972ae361bc71b8a81f0c33c6a3b38343e229f39ec6ce"},"extraction":{"bytes":36866,"records":284,"root":"444895625ba399dc89708e23a88edc59dd78876fdb583e117f5a0aead8489fc3"},"graph":{"edge_root":"782913cdebb0ea4ff65c9a6d2f98bbb9dacf08748a91332b684dacdeaccffb11","edges":1571,"isolated":["C1.CC.IMM.022@1"],"isolated_count":1,"isolated_root":"40aa9983383592afc794538e0564f5119cfdcea65a84571a366c9ebeb6c978ee","leaf_root":"f9a187fba1f6f82d63796a87bb98b4c32565070094295a834663fa08cd385b07","leaves":9,"root_root":"ea40b75512f0e7c784088ca8d90b61ada3b2ac6119b937837e875fd95716ce97","roots":5,"scc_nontrivial":0,"scc_root":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","self_loop_root":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","self_loops":0},"invalid_expansions":{"count":0,"root":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"},"nonedge_residuals":{"prerequisite_count":48,"prerequisite_root":"36f2f2708b828618928eb750857e2a99ce913e0e7f38da48ade150d57f2f9ec1","target_count":2,"target_root":"d6e93b4252b0b889ceb012b83c4897db0df2f9b870d358f83f900493f53a7aa4"},"plan_root":"db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59","targets":{"edges":151,"root":"5e1c187e3f43f9e036f4a59bcb0b0873512988fc572b7041fe34f806dd960d44"},"transitions":{"declaration_root":"04734ce19af32acbdba86d236e2c38269f22be2c8b86c9942775570c54d258a4","declarations":7,"edge_root":"f86df867a21dfa537cbd4c4defdf9c390e51e919d4564c3655e84d719cb951c0","edges":10},"unknown_endpoints":{"count":0,"root":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"},"version":"r61-typed-graph-v1"}
+```
+
+The helper's mechanical whole-plan scan is admitted solely to verify the plan/extraction identities and derive content-silent typed ledgers. It emits no source line or contract body and grants no semantic coverage. A runtime/input/stderr/stdout/identity mismatch, exception, or need to edit/retry is `NON-EVIDENCE-INTEGRITY-FAILURE`: retain prior successful source receipts as history, but file no packet and respond exactly `TERMINATED`.
+
+### Sole dependency-soundness lens and graph adjudication
+
+Use the closed 142-ID catalog as node universe. Canonical prerequisite edges orient `prerequisite -> dependent`. Keep assurance `targets`, guarded transition `consumes`, and non-contract/human/external residuals in separate typed ledgers. The helper reports structural signals, not findings or semantic truth.
+
+Reproduce and record every sealed count/root. Test unknown/duplicate endpoints, invalid ranges, self-loops, nontrivial SCCs, roots/leaves/isolated nodes, producer/consumer orphans, pre-mint consumption, non-advancing transitions, later-layer/policy imports, security/filter/object-resolution ownership cycles, dependency-clause disagreement with the fixed spine/workflow/decision/product/campaign/handoff cross-sections, ordinary-R0 stranding, and campaign-gate bypass. The one duplicate expression and isolated node require the two exact target blocks; no other target is allowed.
+
+Every allegation requires an applicable fixed cross-section and one of those whole target blocks. The target blocks may establish meaning only for their own cited propositions. If another body, residual meaning, source, premise, or lens is needed, or any material graph proposition remains unsafe, file nothing. Report only locally evidenced missing, contradictory, cyclic, premature, unresolved, or unowned dependencies under this lens. Do not turn structural zero counts into a pass verdict, create an implementation schedule/task graph, select a decision, repair the artifact, or broaden scope.
+
+### Output/context ledger and failure taxonomy
+
+Maintain an exact process-local ledger of every source access, returned bytes, stderr, warning, failure, retry, context warning, and compaction. Primary source/extraction output is exactly 153,448 bytes. Helper output is exactly 1,943 bytes. Citation replay is capped at 12 intervals / 64 distinct nonblank lines / 12,000 raw bytes. Final packet is capped at 30,000 bytes. Declared primary + helper + replay + packet returned content is at most 197,391 bytes. Startup/control and analysis must still fit the single 258,400-token no-compaction turn.
+
+`PRIMARY-EVIDENCE-FAILURE` means a failure, mismatch, warning, clipping, cap, repeat, or widening in a source Read, structural extraction, target block, or citation replay. Do not retry; stop no-write. `NON-EVIDENCE-INTEGRITY-FAILURE` means a fixed identity, process admission, helper runtime/input/output, or other content-silent integrity gate failed. It does not relabel prior source receipts, but it likewise allows no retry or packet. A context warning, cap breach, or compaction is terminal under the compaction law. These distinctions never weaken fail-closed behavior or create partial review credit.
+
+### Pre-write clock, semantic freeze, citation-only replay, and final freeze
+
+After primary analysis, draft every source-bearing packet field. Invoke one exec whose entire command is exactly `date --iso-8601=seconds`; label its value `PRE-WRITE filing-clock sample` and insert it before freezing. It is not actual filing time.
+
+Freeze every source-bearing byte and every explicit file coordinate. Extract and normalize that exact coordinate set. Post-draft replay rereads only those frozen citations, at most 12 bounded intervals / 64 distinct nonblank source lines / 12,000 raw bytes across the turn. No uncited line, fixed window, extraction, target block, or helper input is replayed for reassurance. Primary results never substitute for replay.
+
+Compare every source-attributed proposition directly with replayed lines. Each begins `checked paraphrase —`, names the correct local file and stable section, and cites its verified nonblank coordinate/range. Natural-language quotation claims are forbidden. Backticks may mark only exact stable identifiers, field names, local paths, hashes, process coordinates, commands, or fixed status tokens.
+
+Any replay failure, clipping, mismatch, blank citation, cap breach, need to widen, or source-bearing change after freeze is `PRIMARY-EVIDENCE-FAILURE`. There is no candidate restart. After replay passes, render only source-free mechanical receipts, freeze the entire packet, prove final all-field coordinates equal the replayed frozen set, and change no byte. Retain final packet bytes/root for transcript qualification.
+
+### Blind freshness, plan space, and no-action law
+
+Read only startup files, this exact R61 control, the 12 fixed Reads, exact structural extraction, exact helper output, citation replay, and exact PID-scoped identity endpoints. Do not read any Round line outside this control; owner/root/convergence/orchestration state, prior packet/finding/disposition, transcript, other artifact, external source, competitor material, or prohibited processor material.
+
+Remain in plan space. Do not edit the artifact or canon; create source, scaffolding, a semantic card body, Bead, pseudo-Bead, task/todo/scratch/temp artifact, benchmark, measurement, comparison, or external action; inspect or contact another process; or fetch, browse, stage, commit, push, publish, purchase, or send anything. Do not strengthen, certify, accept, reject, repair, route, or disposition an allegation or artifact claim. The reviewer files allegations only.
+
+### Reviewer FSM, packet schema, sole patch, and exact finish
+
+Use assignment FSM `INGEST -> REVIEW -> SELF-CHECK -> FILE -> TERMINATE` and protocol FSM `SPAWNED -> INGEST-DECLARED-CHAIN -> APPLY-ONE-LENS -> FILE-GRADED-FINDINGS -> TERMINATED`. Apply protocol grades exactly. Never alter a grade to move a curve.
+
+The sole heading is:
+
+```text
+## R61 — plans/CYCLE_1_DELTA_PLAN.md — dependency soundness
+```
+
+Include once each: `reviewer process and startup/UI-narration treatment`; `model identity`; `started / pre-write clock`; `pushed identity`; `artifact hash`; `authority and primary source ledger`; `structural extraction, typed ledgers, helper, and tests`; `targeted meaning Reads`; `citation replay and all-field integrity`; `context/retries/compaction`; `reviewer FSM`; `counts`; `marginal-only`; and `no-action statement`.
+
+The clock field states `start clock=<Tool-4 ISO>; pre-write filing-clock sample=<later ISO> PRE-WRITE; actual patch/result/terminal chronology pending transcript qualification`. State `A=<n>; B=<n>; C=<n>` and `marginal-only: YES | NO`; YES is legal only when A=0 and B=0. Each monotone allegation has exactly one `evidence`, `requirement`, `consequence`, `repair boundary`, and `loss guard`. Omit empty grade subsections; never omit counts. End with one bounded `### Round verdict` and last packet line exactly `- termination state: TERMINATED`.
+
+After final freeze, reconfirm artifact/commit/Round/control/anchor identities using only the content-silent whitelist. The only write is one structured `apply_patch` against `gauntlet/ROUND_LOG.md`, replacing the exact final R61 anchor with the frozen packet, one blank separator line, and the unchanged anchor. Preserve every earlier byte. No other path, write method, or retry is legal.
+
+If any gate failed, do not patch. After a successful patch result, make no later tool call; the next and entire assistant response is exactly `TERMINATED`, without prefix, suffix, punctuation, fence, or success narration. If patch fails, do not retry and respond with that same exact token. Root later qualifies the transcript and retirement boundary before assigning any credit.
+
+**R61 FINAL LITERAL ANCHOR — KEEP AS PHYSICAL EOF; APPEND ONLY THE ASSIGNED R61 PACKET IMMEDIATELY BEFORE THIS LINE.**
