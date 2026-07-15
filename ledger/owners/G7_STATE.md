@@ -6312,3 +6312,15 @@ G7 performs none of the root-only recipe. The owner FSM is terminal and idle.
 5. Dispatch is a distinct later gate. Before any bootstrap is instantiated, root must safely reattest every sealed model/mode/tier, reservation, pristine-context, exact-PID, cwd, and activation condition using an authorized mechanism. If any condition or fixed identity differs, retain `BOUND-UNSENT` and send nothing. Only a passed later root gate may instantiate the byte-preserved sealed bootstrap and deliver it once to the exact reserved reviewer; reviewer filing and terminal response remain governed by the sealed control and are not anticipated as evidence here.
 
 **G7 R10 corrected-base owner FSM state: `DONE/HANDOFF` (terminal record persisted; R10 BOUND-UNSENT; root validation/commit/push/dispatch remain pending).**
+
+## R10 qualification / R59 construction FSM — INGEST (`2026-07-15T22:17:07+02:00`)
+
+- Fresh crash-safe transition persisted solely to record the pre-mutation gate: historical `DONE/HANDOFF -> INGEST`. No work is credited to DRAFT or any later state.
+- `AGENTS.md` was reread through EOF before any repository action. The applicable `running-the-gauntlet-on-your-rust-port` skill was then read through EOF in four independently bounded, non-overlapping reads. An earlier combined skill read was output-truncated and receives no credit.
+- Required pushed base from the task: `5d748e632556bf6d289d503fd472d030f8569fba`. Personally reproduced branch is `main`, but both HEAD and local `origin/main` are instead `5d748e606ba27786a33c9d3850679ba5990db4f5`. These are distinct 40-hex identities; the supplied base therefore fails the exact pre-mutation gate.
+- Before this receipt, tracked worktree and index diffs were empty. The pre-receipt G7_STATE identity was 6,314 lines / 1,283,281 bytes / `cd48cbc99aec391738646e25501962435bacce1a379052f074574113e53b1d86`.
+- Evidentiary-integrity disposition: fail closed at INGEST. The stable R10 transcript was not opened or replayed; no transcript fact was qualified; no Round or Convergence byte was read for construction or changed; no R10 closure, R59 row, control, grammar, allocation, or convergence receipt was drafted. All supplied reviewer/process and R59 reservation facts remain premises only and `ROOT-REPRODUCTION-REQUIRED`.
+- This turn inspected or contacted no reviewer, process, PID, pane, session, service, `.ntm`, quarantine, external source, connector, app, MCP, or network endpoint. It created no file, deleted no file, and performed no stage, commit, push, bootstrap, or dispatch. The only mutation is this bounded allowed-path failure receipt via structured `apply_patch`.
+- Resume condition: a later owner turn must begin again from AGENTS orientation and a freshly supplied base that exactly equals locally reproduced HEAD and local `origin/main`. This receipt does not guess which of the two commit identities was intended and does not silently substitute the observed commit.
+
+**G7 R10 qualification / R59 construction FSM state: `INGEST` (`BASE-IDENTITY-MISMATCH`; fail-closed before transcript qualification or construction).**
