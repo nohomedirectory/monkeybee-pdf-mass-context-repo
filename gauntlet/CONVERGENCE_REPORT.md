@@ -544,3 +544,27 @@ The immutable allocation ledger remains 41 rows: 30 baseline + 2 supplemental + 
 R41-A01–A04 and R41-B01–B03 are routed to G3 for independent premise testing against the pushed C1 plan. G7 does not accept, reject, narrow, or regrade them and has not contacted G3. The reviewer verdict remains evidence that revision is warranted under the filed lens, not an owner-adjudicated artifact verdict.
 
 R07 remains blocked until G3 revises the C1 delta plan and exposes a new pushed `SUBMIT-FOR-REVIEW` hash. Overarching G7 owner FSM remains `DRAFT`; this correction binds no round, edits no artifact or root ledger, dispatches no reviewer, and strengthens no claim.
+
+## R41 final G3 owner disposition and R07 bound-unsent correction — 2026-07-15
+
+This append-only correction supersedes only the stale pending-G3 and blocked-R07 wording above. It changes no prior report byte, R41 reviewer byte, grade, finding, loss guard, curve point, artifact verdict, or convergence conclusion.
+
+### Final pushed G3 owner layer
+
+At pushed commit `fb6943c8d9e251d9974746adaeb5f9f97defccb9`, `plans/CYCLE_1_DELTA_PLAN.md` is 3,543 lines / 487,507 bytes / SHA-256 `fc4cf43598e788cacea1ffabce7110d23ba3aea66a7d89afa33bbf60cba72260`; `ledger/owners/G3_STATE.md` is 1,186 / 210,496 / `b79a1dbda35dc9c1140cd8a42c7b4c217ea3643d737c9094231c3d11ce490ae1`; both declare `SUBMIT-FOR-REVIEW`.
+
+G3 independently accepts R41-A01, A03, A04, B01, and B03; narrows R41-A02 and B02; rejects zero; and regrades zero. Reviewer labels remain A=4/B=3/C=0 and unpromoted. The owner repair boundaries are terminal-outcome separation; graph-neutral overlay frontier plus intent-free history projection; pre-source versus post-bootstrap gate; general owning-contract partials; raw checker decoupling from producer; card-gated virtual-signature coverage; and dependency-advisory/duplicate-version outcome. B02 remains `PENDING-LICENSED-SOURCE`.
+
+The G3-reported retention suite remains 137 catalog/spec/card rows with all 17 fields, 277 fully qualified references, 1,414 shorthand references, 1,533 acyclic prerequisite edges, 148 target edges, six transitions, 156 contract-local links, 157 pending markers, 43 cards, 42/42 surface, and prior guard sets 10/10, 5/5, 4/4, 17/17, and 41/41, with no feature loss. This closes the owner route only; it does not promote a reviewer grade, establish convergence, or strengthen a campaign claim.
+
+### Filed evidence and curve remain fixed
+
+Valid filed evidence remains exactly 15 rounds, A=98/B=59/C=19, with an 8 Sol / 7 Opus filed-family split. The same-lens five-pass-A curve remains R04 A+B=16 → R05 A+B=32 → R41 A+B=7; every point is non-marginal. Zero consecutive marginal-only points means convergence remains **NOT ESTABLISHED** before R07. The new owner disposition and R07 control add no filed evidence, grade, coverage, curve point, verdict, or conclusion.
+
+### Allocation and R07 control state
+
+Immutable allocation remains 41 rows at 20 Sol / 21 Opus. Failed IDs remain R06, R23, R24, R34, R35, R36, R37, R39, and R40. Excluding failures leaves 32 active planned slots at 16 Sol / 16 Opus; 15 are filed. Active-unfiled remains 17 in total: R07 is now the sole `BOUND-UNSENT` row and 16 remain unbound. This bind preserves the precommitted pass rather than adding planned coverage.
+
+R07 binds only pushed plan `fc4cf435…72260`, exact sole lens `oversimplification-and-feature-loss`, Opus 4.8/xhigh, and original `5-pass A (4/5)`. Its exact untouched identity is session `monkeybee-pdf-mass-context-repo--r07`, target `1.1`, pane `%89`, shell 3265654, child 3265870, and exact repository cwd. The sealed control is Round Log `[740432,754762)`, 63 lines / 14,330 bytes / SHA-256 `9313769efdbf823e24be0fc4613f7266d8438ec7bff7d3ab312cb274b1936a86`, ending in the literal blind-append certificate. No task has been sent.
+
+Overarching G7 owner FSM remains `DRAFT`. Root may commit and push the three G7 control documents, revalidate the exact file and reviewer identities, and only then deliver the sealed control to R07. G7 does not dispatch, contact an owner/reviewer, edit the artifact or root ledger, or bind another round.
