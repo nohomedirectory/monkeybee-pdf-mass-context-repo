@@ -1062,3 +1062,21 @@ R57 is immutable `NOT-RUN · METHOD-CONTROL-CITATION-INTEGRITY-VIOLATION · TERM
 Allocation is 57 unique rows at 22 Sol / 35 Opus; 26 failed at 6/20; 31 active planned at 16/15; 18 valid filed at 9/9 with A=118/B=64/C=22; and 13 active-unfiled at 7/6. No row is bound-unsent. R10 remains untouched `PRECOMMITTED`.
 
 The C1 five-pass-A sequence remains R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24, all non-marginal. The Constitution sequence remains R14=15 non-marginal -> R15=21 non-marginal -> R51=0 marginal-only. R57 adds no point; convergence remains **NOT ESTABLISHED**.
+
+## R58 one-for-one allocation-only checkpoint — `2026-07-15T19:35:19+02:00`
+
+R58 is one fresh Opus row for the original R09 planned slot after the immutable zero-credit predecessors. It retains the submitted C1 plan identity `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`, sole `obscure-section self-containment` lens, exact `claude-opus-4-8` / `xhigh`, and a possible later G3 premise-first route only after a chain-qualified filing.
+
+R58 is `ALLOCATED-UNSENT`. No sealed control or live bootstrap exists at this checkpoint, nothing was sent, and no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model credit, or convergence evidence is added. R10 remains untouched `PRECOMMITTED`.
+
+Allocation is 58 unique rows at 22 Sol / 36 Opus; 26 failed at 6/20; 32 active planned at 16/16; 18 valid filed at 9/9 with A=118/B=64/C=22; and 14 active-unfiled at 7/7. No row is bound-unsent yet. Established sequences are unchanged, so convergence remains **NOT ESTABLISHED**.
+
+## R58 sealed `BOUND-UNSENT` construction checkpoint — `2026-07-15T19:37:16+02:00`
+
+This append supersedes only the R58 allocation-only/no-bound wording immediately above. R58 alone advances to `BOUND-UNSENT`; one blind sealed control occupies Round EOF. Historical bytes remain preserved, and R10 remains untouched `PRECOMMITTED`.
+
+R58 binds the submitted C1 plan identity `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`, sole `obscure-section self-containment` lens, exact `claude-opus-4-8` / `xhigh`, and a possible later G3 premise-first route only after a chain-qualified filing. The control requires text-free ordered startup Tools 1-4, 34 bounded primary windows, two primary unions, a distinct all-34 post-freeze replay over the full eligible coordinate union, checked paraphrase attribution, content-silent identity output, exact PID scoping, one anchored Edit, no later tool, and exact terminal text.
+
+Allocation remains 58 unique rows at 22 Sol / 36 Opus; 26 failed at 6/20; 32 active planned at 16/16; 18 valid filed at 9/9 with A=118/B=64/C=22; and 14 active-unfiled at 7/7. R58 is the sole bound-unsent row and supplies no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model credit, or convergence evidence before qualification.
+
+The established C1 and Constitution sequences are unchanged. R58 adds no point; convergence remains **NOT ESTABLISHED**. No G3 route, bootstrap instantiation, reviewer contact, or dispatch occurred.
