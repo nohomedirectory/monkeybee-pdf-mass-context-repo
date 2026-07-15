@@ -477,3 +477,29 @@ R39 preserves the C1 delta-plan `5-pass A (3/5)` slot, Sol family, G3 route, and
 The bound reviewer identity is exact `gpt-5.6-sol` / effort `ultra` / live `fast` / priority service at repository cwd. The control declares R39 a stateless reviewer, forbids orchestration and skill loading, requires full AGENTS as its first tool and the full reviewer protocol as its second, and limits every later tool to an exhaustive ordered schedule. Its only possible write is one final structured `apply_patch` append through the supplied full Round Log EOF paragraph, followed by exact standalone `TERMINATED` and process exit. It may not read any prior Round Log byte.
 
 No task has been sent to R39. Root may commit and push the three-file G7 control group; only after dispatch-commit, artifact, authority, process/model/mode/tier, freshness, and EOF-anchor revalidation may root deliver the control. G7 does not dispatch, bind another round, contact an owner, or strengthen a claim; owner FSM remains `DRAFT`.
+
+## R39 control-capacity failure / R40 replacement bound-unsent correction — `2026-07-15T03:03:57+02:00`
+
+This append-only correction supersedes the preceding R06/R39 section only where it treats R39 as active or bound, reports 39 immutable rows, omits R39 from failed IDs, or names R39 as the pending pass. It changes no prior report byte, filed packet, finding grade, owner disposition, artifact, curve, or convergence statement. R39 is now immutable `NOT-RUN · CONTROL-CAPACITY-FAILURE · STALE-ASSIGNMENT · TERMINATED`; R40 alone carries the original R06 planned slot and is `BOUND-UNSENT` with no task sent.
+
+### Filed evidence and curve remain unchanged
+
+- Filed rounds remain exactly 14.
+- Aggregate grades remain A=94, B=56, C=19.
+- Filed model-family split remains 7 Sol / 7 Opus.
+- R39 filed no packet, finding, grade, marginal flag, verdict, lens coverage, owner route, curve point, or conclusion. Scheduled call 28 returned truncated output; R39 fail-closed before artifact analysis, artifact or Round Log access, or any write. This is a control-capacity failure, not reviewer method drift.
+- R40 has filed nothing. Its A/B/C and marginal slots remain em dashes, and binding contributes no evidence or conclusion.
+
+Historical R04 and R05 remain their own filed points against earlier revised plan identities. Neither failed R39 nor bound-unsent R40 creates a new `oversimplification-and-feature-loss` point against the current C1 plan. No convergence inference, artifact verdict, or owner disposition follows from this control transition.
+
+### Allocation, failure, and active-slot accounting
+
+The immutable allocation ledger now has 40 rows: 30 baseline + 2 supplemental + replacements R33, R34, R35, R36, R37, R38, R39, and R40. Counting every immutable row, including failed IDs, yields 19 Sol / 21 Opus. Failed terminal IDs are R06, R23, R24, R34, R35, R36, R37, and R39. Excluding those eight failures leaves 32 active planned slots at 16 Sol / 16 Opus; 14 are filed and 18 remain active-unfiled. R40 is the sole bound-unsent row. The replacement preserves the original R06 pass and does not add planned coverage.
+
+### R40 bind and no-dispatch boundary
+
+R40 preserves the C1 delta-plan `5-pass A (3/5)` slot, Sol family, G3 route, and sole `oversimplification-and-feature-loss` lens. It binds only the pushed 3,542-line / 479,366-byte plan at SHA-256 `e0cb3ea2947604447444558f40dae5e57fd61edd53c47ed46e787266faf3501b`; the G3 checkpoint remains excluded reviewer context. Pushed recovery base is `461633a6317c225d199c86d69352d2ffc1d58877`; root must later supply the distinct pushed dispatch commit containing the exact R40 control.
+
+The bound reviewer identity is exact `gpt-5.6-sol` / effort `ultra` / live `fast` / priority service at repository cwd. The control declares R40 a stateless reviewer, forbids process/control work and skill loading, requires full AGENTS as its first tool and full reviewer protocol as its second, and limits later tools to an exact 101-call schedule. Every source range is at most 100 lines; each read-only wrapper requires 30,000 output tokens at both layers. Its only possible write is one final structured `apply_patch` append through the supplied full Round Log EOF paragraph, followed by exact standalone `TERMINATED` and process/shell exit. It may not read any prior Round Log byte.
+
+No task has been sent to R40. Root may commit and push the three-file G7 control group; only after dispatch-commit, artifact, authority, process/model/mode/tier, freshness, wrapper-capacity, and EOF-anchor revalidation may root deliver the control. G7 does not dispatch, bind another round, contact an owner, or strengthen a claim; owner FSM remains `DRAFT`.
