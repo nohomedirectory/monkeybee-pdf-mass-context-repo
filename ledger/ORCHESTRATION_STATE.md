@@ -96,3 +96,12 @@ Total planned rounds: 32. Planned cross-model count: 16 Opus, 16 Sol. These are 
 ## Stop conditions
 
 The run reaches `DONE` only after the wake-up test passes, required artifacts and gauntlet records exist, integrity scans have dispositions, the ledger is sealed provisionally, `MORNING_REPORT.md` names every ratification and omission, changes are committed and pushed, and `git status --short` is empty on `main`.
+
+## Current orchestration checkpoint — `2026-07-15T23:47:55+02:00`
+
+- Pushed base: `320e3251f111930476e16cd7c9cfa11e6db6beae`; branch `main`; local/remote parity; clean worktree before this root-owned checkpoint.
+- G0 and G6 are terminal. G1, G2, G3, G4, and G5 remain at `SUBMIT-FOR-REVIEW` pending their named remaining rounds and later mandatory revision/terminal transitions. G8 remains idle in `INGEST` pending a bounded final evidence packet. G7 has a terminal construction handoff with R60 as the sole `BOUND-UNSENT` row.
+- Gauntlet accounting: 60 allocation rows; 29 immutable failed chains; 31 active planned slots; 18 valid filed at 9 Sol / 9 Opus with A=118/B=64/C=22; 13 active-unfiled at 7 Sol / 6 Opus. Convergence remains `NOT ESTABLISHED`.
+- Immediate priority sequence: activate and qualify R60 dependency soundness; disposition any admitted result through G3; run R11 Opus security/DoS, R12 Sol claim/de-slop, then R31 Sol kernel-touch with G3 revision between admitted rounds. Continue with R17/R18 Constitution, R25/R26 traceability, R27/R28 decisions, R32 human-actions, and R29/R30 whole-repository rounds. This preserves the priority ladder and cross-model floor.
+- Live NTM map: seven owner/control panes plus thirteen unfinished reviewer panes; fourteen exact Sol/ultra/live-`fast`, six exact Opus 4.8/xhigh, zero bad panes, zero dead panes, and zero zombies. R60 is pane `%161`, shell 4004254, child 4004498, exact cwd, live-fast priority, and campaign-pristine apart from two disclosed UI-only `/fast` toggles.
+- No beads, code, pseudo-bead inventory, SpecCard semantic body, measurement, comparison, prohibited-source contact, human-bound action, or reviewer bootstrap outside the sealed one-shot process has been created or executed. Canonical inputs remain unchanged.
