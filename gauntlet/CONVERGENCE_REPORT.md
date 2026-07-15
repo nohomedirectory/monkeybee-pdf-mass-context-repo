@@ -700,3 +700,23 @@ Immutable allocation is now 48 rows at 20 Sol / 28 Opus. Failed IDs are R06, R07
 R48 binds only untouched session `monkeybee-pdf-mass-context-repo--r48`, target `1.1`, pane `%140`, shell 1611038, child 1611276, monitor 1611186, exact lowercase repository cwd, and Opus 4.8/xhigh. Sealed compact Round Log control is separator-inclusive `[859644,865916)`, 30 lines / 6,272 bytes / `358a6adf13ab3c5e28b6686354ec33861b2713452e22dd213d799a4820cc0f75`; heading-to-EOF is 6,271 bytes / `5a2bd969813047e4b4ead2181e9fdee2a49d548fcde58ffe2a8fd9a9d15ccdd2`.
 
 No task has been sent to R48. Overarching G7 remains `DRAFT`; G7 does not dispatch, contact an owner/reviewer, edit an artifact/root ledger, commit, or push.
+
+## R48 filed chain-qualified evidence and pending-owner route correction — `2026-07-15T08:18:37+02:00`
+
+This append supersedes only the stale bound-unsent construction state immediately above. It preserves all prior report and reviewer bytes and does not create an owner disposition or promote a reviewer allegation.
+
+### Filing and qualification
+
+R48 filed one immutable schema-valid packet: A=0, B=1, C=3, marginal-only NO, with unique R48-B01 and R48-C01/C02/C03. G7 classifies the filing `FILED · CHAIN-QUALIFIED · TERMINATED`, not unqualified validated. Transcript coverage omitted Rev 7 lines 5684–6202; those 519 lines receive no authority credit, and packet metadata claiming full authority coverage is superseded by the append-only G7 correction.
+
+Every filed requirement anchor is outside that gap and was observed, and every plan line 1–3543 was observed. The four findings therefore route as unpromoted allegations to G3 for independent full-authority premise-first triage. There is no accept, narrow, reject, regrade, implementation, artifact verdict, or G3 owner disposition yet.
+
+Method variances remain attached to provenance: identity calls preceded AGENTS/protocol; two control-only Round Log tail Reads varied the no-content law without exposing prior findings/dispositions/convergence semantics; the packet chronology is superseded by transcript timestamps; and the sole structured write used Claude Edit rather than a tool named apply_patch. These variances change no grade and add no evidence.
+
+### Filed totals, allocation, and curve
+
+Filed evidence is now 16 rounds at 8 Sol / 8 Opus with aggregate A=98, B=60, C=22. Immutable allocation remains 48 rows at 20 Sol / 28 Opus; 16 failed IDs remain unchanged; excluding failures leaves 32 active planned slots at 16/16. Sixteen active-unfiled slots remain, all unbound, and there is no bound-unsent row.
+
+The five-pass-A A+B curve is R04=16 -> R05=32 -> R41=7 -> R48=1. Every point is non-marginal, including R48 because B=1. No consecutive marginal-only condition exists, so convergence remains **NOT ESTABLISHED** pending G3 premise testing and later eligible review work.
+
+The bound plan remains 3,543 lines / 487,507 bytes / `fc4cf43598e788cacea1ffabce7110d23ba3aea66a7d89afa33bbf60cba72260`; G3 checkpoint remains 1,186 / 210,496 / `b79a1dbda35dc9c1140cd8a42c7b4c217ea3643d737c9094231c3d11ce490ae1`. Root alone may commit/push this evidence group and route the immutable packet plus G7 qualification to G3.
