@@ -429,3 +429,25 @@ For Traceability + cycle briefs, the ten immutable IDs remain baseline R23–R26
 - R38-C01 is designated through root to G4 as a judgment-level cross-cycle dependency note. If accepted, its bounded note remains at C6 §3 and C4 §5 while preserving the human decision, the C6 deferral, and the L5/kernel boundary. It is not promoted here into an established violated requirement.
 - G7 has not sent a route, edited a G4 artifact, or made a G4 disposition. Root may route G4 owner disposition next. R06 remains eligible but unrouted.
 - The G7 owner FSM remains `DRAFT`; this correction allocates or dispatches no reviewer and strengthens no campaign claim.
+
+## R06 bound-unsent control correction — `2026-07-15T02:15:15+02:00`
+
+This append-only correction supersedes the preceding R38 release boundary only where it describes R06 as eligible but unrouted with no bound reviewer. It changes no prior report byte, filed packet, finding grade, owner disposition, curve, artifact, or convergence statement. Its source Round Log is 3,424 lines / 654,923 bytes / SHA-256 `cff90bfdcebfa7457601b1c22d7a609c7e1a499307b64a1424383989ff5c7f03`; the R06 assignment/control is 45 / 9,746 / `a6de26d4c806885b187587637f68a2e953d118076ab8045a9a3b1961265b6734`.
+
+### Filed evidence and allocation arithmetic remain unchanged
+
+- Filed rounds remain exactly 14.
+- Aggregate grades remain A=94, B=56, C=19.
+- Filed model-family split remains 7 Sol / 7 Opus.
+- The immutable allocation ledger remains 38 rows at 17 Sol / 21 Opus. Failed IDs remain R23, R24, R34, R35, R36, and R37. Excluding them leaves 32 active planned slots at 16 Sol / 16 Opus; 14 are filed and 18 are active-unfiled.
+- R06 is now the sole `BOUND-UNSENT` row. Its A/B/C, marginal, finding, coverage, and conclusion slots remain empty; no other row changed.
+
+### R06 bind and no-conclusion boundary
+
+R06 preserves the original C1 delta-plan `5-pass A (3/5)` slot, Sol family, and sole `oversimplification-and-feature-loss` lens. It binds one pushed artifact only: `plans/CYCLE_1_DELTA_PLAN.md`, 3,542 lines / 479,366 bytes / SHA-256 `e0cb3ea2947604447444558f40dae5e57fd61edd53c47ed46e787266faf3501b` at commit `fb3ab420aad833f1842fb6ca81121fda9aaee18b`. The excluded G3 checkpoint is at `SUBMIT-FOR-REVIEW` and names R06 eligible; its body is not reviewer context.
+
+Binding supplies no finding, grade, lens coverage, curve point, artifact verdict, or convergence evidence. Historical R04 and R05 filings remain their own points against earlier revised artifact identities; R06 creates no additional point until a valid packet files and is mechanically integrated. No conclusion under this lens or about the current artifact is recorded before filing.
+
+The reserved R06 process is exact `gpt-5.6-sol` / `ultra` with live `fast` and priority service at the repository cwd. Its full blind-write law excludes prior findings and context, permits one later structured Round Log append as its sole write, and requires exact standalone `TERMINATED` followed by process and pane-shell exit. This report records the bind only. No task has been sent.
+
+Root may commit and push the three-file G7 control group. Only after the pushed control, unchanged artifact, exact process/model/mode/tier, and actual EOF anchor are revalidated may root dispatch R06. G7 does not dispatch, bind another round, contact an owner, or strengthen a claim; owner FSM remains `DRAFT`.
