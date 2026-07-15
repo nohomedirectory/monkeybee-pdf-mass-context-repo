@@ -204,7 +204,15 @@ R40 is the sole one-for-one replacement for immutable failed round R39, which re
 
 | Round | Artifact | Declared lens (exactly one) | Model | Precondition to admit | Artifact hash | Status | A | B | C | Marginal-only | Owner disposition |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| R40 | C1 delta plan (R39 replacement for R06) | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | R39 closed `NOT-RUN · CONTROL-CAPACITY-FAILURE · STALE-ASSIGNMENT · TERMINATED`; pushed G3 plan and checkpoint declare `SUBMIT-FOR-REVIEW`; original pass 3/5 payload unchanged | `e0cb3ea2947604447444558f40dae5e57fd61edd53c47ed46e787266faf3501b` | BOUND-UNSENT | — | — | — | — | Bound only to the untouched R40 identity and capacity-repaired control below; one-for-one R39/R06 replacement with zero findings, grades, coverage, verdict, or conclusion; no task sent. |
+| R40 | C1 delta plan (R39 replacement for R06) | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | R39 closed `NOT-RUN · CONTROL-CAPACITY-FAILURE · STALE-ASSIGNMENT · TERMINATED`; pushed G3 plan and checkpoint declare `SUBMIT-FOR-REVIEW`; original pass 3/5 payload unchanged | `e0cb3ea2947604447444558f40dae5e57fd61edd53c47ed46e787266faf3501b` | NOT-RUN · WRAPPER-SYNTAX-FAILURE · TERMINATED | — | — | — | — | Scheduled call 94 had malformed wrapper syntax and failed before its command executed; reviewer correctly fail-closed with no compensating call, Round Log access, or write. No packet, findings, grades, coverage, verdict, route, or conclusion; immutable ID not reused. |
+
+### Failed-round replacement allocation R41
+
+R41 is the sole one-for-one replacement for immutable failed round R40, which replaced R39 and original R06, under the standing new-ID law. It preserves exactly the original R06 C1 delta-plan payload: sole `oversimplification-and-feature-loss` lens, Sol family, `5-pass A (3/5)` position, G3 owner route, excluded G3 checkpoint, and pushed artifact identity. It repairs only the failed wrapper construction and adds no planned lens, review pass, filed evidence, or coverage. `ALLOCATED · UNSENT` reserves allocation identity only: no process is bound and no task, authority, artifact content, finding body, recovery context, or Round Log write anchor is delivered by this transition.
+
+| Round | Artifact | Declared lens (exactly one) | Model | Precondition to admit | Artifact hash | Status | A | B | C | Marginal-only | Owner disposition |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| R41 | C1 delta plan (R40 replacement for R39/R06) | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | R40 closed `NOT-RUN · WRAPPER-SYNTAX-FAILURE · TERMINATED`; pushed G3 plan and checkpoint declare `SUBMIT-FOR-REVIEW`; original pass 3/5 payload unchanged | `e0cb3ea2947604447444558f40dae5e57fd61edd53c47ed46e787266faf3501b` | BOUND-UNSENT | — | — | — | — | Bound only to the untouched R41 identity and exact wrapper-repaired control below; one-for-one R40/R39/R06 replacement with zero findings, grades, coverage, verdict, route, or conclusion; no task sent. |
 
 ### R31 — notes on admission and reading
 
@@ -3726,3 +3734,174 @@ Each finding heading is monotonic `R40-A01`, `R40-B01`, or `R40-C01` within its 
 **Blind sole-write and exit law.** `gauntlet/ROUND_LOG.md` is closed. R40 may not read, search, hash, count, or otherwise ingest any prior Round Log byte. Root must supply the then-current full EOF paragraph literally. R40 may make no repository write except scheduled call 101's structured `apply_patch` append to this Round Log using that paragraph unchanged. No shell redirection, `tee`, scratch path, Edit/Write operation, artifact mutation, or second write is permitted. After the append flushes, the reviewer response must be the exact standalone token `TERMINATED`, with no punctuation, style, prefix, suffix, or later tool call; the model process and idle pane shell must then exit. Root handles process verification separately.
 
 **R40 BOUND-UNSENT EOF write law.** Owner FSM remains `DRAFT`. R40 is the sole `BOUND-UNSENT` row, is zero findings/grades/coverage/verdict/conclusion before filing, and is bound only to the exact identity, artifact, sole lens, authority, 101-call schedule, freshness, output-capacity, and blind-write controls above. Every earlier reviewer packet and owner closure is sealed; no other round is allocated or bound. **No task has been sent to R40. Root may commit and push this three-file control group; only after the pushed dispatch commit and every bound identity are revalidated may root deliver this control and this full paragraph as the unique true-EOF anchor.**
+
+## R40 wrapper-syntax failure closure — `2026-07-15T03:26:35+02:00`
+
+**Immutable terminal classification.** R40 is closed `NOT-RUN · WRAPPER-SYNTAX-FAILURE · TERMINATED`. Its original R06 replacement payload remains immutable: pushed C1 delta plan, sole `oversimplification-and-feature-loss` lens, Sol family, `5-pass A (3/5)`, G3 route, and artifact SHA-256 `e0cb3ea2947604447444558f40dae5e57fd61edd53c47ed46e787266faf3501b`. R40 is not reused.
+
+**Exact wrapper-syntax boundary.** R40 issued sealed read-only calls 1–93 with exact commands and wrapper bytes, including outer and nested 30,000-token capacity. Call 94 intended sealed command `sed -n '3001,3100p' plans/CYCLE_1_DELTA_PLAN.md`, but its wrapper contained malformed fragment `max_output_tokens":30000`. The wrapper returned `SyntaxError: Invalid or unexpected token` before executing that command. R40 correctly stopped because a compensating call would be unscheduled; there is no call 95.
+
+**Quarantined transcript control.** `/home/joseph/.codex/sessions/2026/07/15/rollout-2026-07-15T02-45-19-019f633c-394b-7eb3-994c-1787be12097e.jsonl` is 349 lines / 1,113,607 bytes / SHA-256 `c1ea361766ccadb58d719a71875c0ce64d6b174f01972e8be1073f19798879ae`. Structured events contain exactly 94 calls and outputs, 93 exact successful wrapper/command pairs, the one malformed call and syntax output, zero later call, one task-complete event, zero Round Log command, zero `apply_patch`, and no repository write. Delivered task identity is 18,611 bytes / `ecdeecabd4c2c726ee76c185523e595738c65a61c5513f4415fb530953cc9922`. Root's interrupt reached the already fail-closed terminal boundary. No reasoning, assistant message, unfiled allegation, or substantive task result is admitted or reconstructed.
+
+**Zero-credit closure.** R40 filed no reviewer packet, finding, grade, marginal flag, verdict, lens coverage, owner route, curve point, owner disposition, or convergence conclusion. The allocation row's A, B, C, and marginal-only slots remain em dashes. Its compliant fail-close changes no filed-evidence arithmetic.
+
+**Process and repository boundary.** Pane shell 761466, reviewer child 761693, monitor 761583, pane `%132`, and session `monkeybee-pdf-mass-context-repo--r40` are absent; host zombies were zero at closure. The Round Log remained byte-identical to pushed 3,728-line / 697,001-byte / SHA-256 `fc5b3dde950a133af37566e4ebecc06d2382a6ababab76ee87f57d6d0310bd1b` until this owner write. In pushed bytes the R40 assignment/control occupied `[678462,697001)`, 155 lines / 18,539 bytes / SHA-256 `504dcb0fdc72d4de1e72ef987dc34c3114dbc68a5a086d8a615f28c52dea06f5`. The unique row mutation shifts its coordinates but changes no control byte; this closure follows its exact former EOF paragraph.
+
+**Replacement boundary.** A one-for-one replacement must use a fresh round ID and preserve the original R06 planned slot without adding coverage. No replacement is allocated, bound, or dispatched by this closure.
+
+## R41 replacement assignment/control — `2026-07-15T03:28:18+02:00`
+
+**R41 is a stateless reviewer. It is not root, G7, a controller, owner, or operator. It must not bind, finalize, dispatch, monitor, tend, coordinate, contact another process, or load, read, invoke, or activate any skill. Session and process coordinates are immutable identity evidence only; they authorize no operation.**
+
+**Control provenance and dispatch gate.** Generated by the G7 gauntlet/convergence owner from pushed recovery base `e84e372a7db0b40fcab81ab303e35df91855c55a`, the committed G3 submission, the quarantined R40 wrapper-syntax boundary, and direct read-only R41 checks. Status remains `DRAFT`; evidence status remains `provisional-pending-substrate`; overarching owner FSM remains `DRAFT`. This control is not yet pushed. Root may dispatch only after a later commit containing these exact control bytes is pushed and its commit ID, artifact identity, authority identities, process identity, model, effort, mode, tier, freshness, and EOF anchor are revalidated and supplied literally. R41 performs no commit, push, bind, dispatch, process check, or process action.
+
+**One-artifact binding and excluded checkpoint.** R41 binds only `e84e372a:plans/CYCLE_1_DELTA_PLAN.md`: 3,542 lines / 479,366 bytes / SHA-256 `e0cb3ea2947604447444558f40dae5e57fd61edd53c47ed46e787266faf3501b`, with plan `owner-fsm: SUBMIT-FOR-REVIEW`. The excluded owner checkpoint `e84e372a:ledger/owners/G3_STATE.md` is 978 / 171,616 / `041a6ba46050ee60a8a093f82993575f17a50cedfa36b477786d337aa0d07311`, declares `SUBMIT-FOR-REVIEW`, and named original R06 eligible but unbound/unrouted before the failed replacements. R41 must not open that checkpoint or substitute any live dirty artifact.
+
+**Immutable slot and sole lens.** This is the one-for-one wrapper-repaired replacement for R40, R39, and original R06: C1 delta plan, Sol family, `5-pass A (3/5)`, G3 owner route, and exactly one lens, `oversimplification-and-feature-loss`. Apply that lens only to locally evidenced feature loss, collapsed distinctions, silent simplification, missing fallback or partial-outcome paths, lost evidence interfaces, and plan self-containment. Do not import, reconstruct, confirm, reject, search for, or use any prior finding, packet, disposition, convergence statement, owner decision, or recovery event as an allegation or lead. Adjacent lenses are out of scope.
+
+**Bound identity, not an operation.** The only admissible reviewer identity is session `monkeybee-pdf-mass-context-repo--r41`, pane `%133`, pane shell PID 864387, reviewer child PID 864611, monitor PID 864483, and exact cwd `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`. Immediate pre-bind checks found `pane_dead=0`, exact `gpt-5.6-sol`, reasoning effort `ultra`, live `fast`, priority service, and the untouched default placeholder after the explicit default-then-priority control cycle. No task, authority, artifact, prior conversation, recovery context, finding, or write anchor had been delivered. R41 may carry these coordinates as task-bound provenance but must not inspect, signal, manage, or invoke them.
+
+**Automatic first/second-tool law.** R41's first tool call must be one read-only shell call whose exact command is `cat AGENTS.md`. Its second tool call must be one read-only shell call whose exact command is `cat ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md`. Any other first tool, any other second tool, any skill read or activation, any bundled command, or any tool call between those two is an automatic method violation: stop analysis, perform no artifact or Round Log access, write nothing, and await root interruption. Commentary before either tool does not change their required order.
+
+**Bounded authority chain.** After the mandatory first two full reads, only these committed source selections may be opened, in the exact order and chunks scheduled below; all other lines and files are forbidden. Identities retain each selected source newline.
+
+1. `AGENTS.md` — full, 81 lines / 8,055 bytes / SHA-256 `5591f13d75685e52158a9aecfd7f90a2ecf42275d18e3ca5f7fc1550dadad939`.
+2. `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` — full, 90 / 4,942 / `e525a0e35fb703152d44d63d5f6874d48907d2b87e528e3f9f99dbd93baa33c3`.
+3. `OVERNIGHT_GOAL.md` — §1 lines 23–36 and §§3–4 lines 58–87 only; 44 / 10,462 / `a1a78b6703411080d3a650091ef7d597b6aff5783cc88bbcaab4b9f893b238ea`.
+4. `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` — §1 lines 28–41, §§3–6 lines 54–150, and §§8–11 lines 174–206 only; 144 / 18,098 / `e1456643fd3b950d832ccbe8fb90928ecb165ae6d7af4ad8b2c0d6dd13015468`.
+5. `CYCLE_0_WORK_ORDER.md` — §0 lines 10–20, §3 lines 67–79, and §§6–8 lines 112–126 only; 39 / 4,217 / `6f998d4004382adbe9555f3b4df8ce603dffc034da84e1663e8518ebfcadbf51`.
+6. `CAMPAIGN_CHARTER_REASONING.md` — §§3–8 lines 34–79 only; 46 / 7,850 / `b3912b3e92f10100f9b1a4f9339c3282fc879b72b74c79d27fb54e30d534a0dd`.
+7. `MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md` — §§3–6 lines 353–1003, §§10–16.6 lines 1651–3213, §§25–30.11 lines 5164–6202, and §§33–35 lines 6674–8005 only; 4,585 / 314,144 / `10a3557c4d6d363d2810eb5819985481a124a1cc652eb8e094c1c4f442ac47ea`.
+8. `plans/CYCLE_1_DELTA_PLAN.md` — the sole review artifact, full, only after its live identity reproduces 3,542 / 479,366 / `e0cb3ea2947604447444558f40dae5e57fd61edd53c47ed46e787266faf3501b`.
+
+The ordered pre-artifact authority selection is 5,029 lines / 367,768 bytes / SHA-256 `43fcef3e66a396dee590299d22afa24fbdd047795f90e51d1734404b04dcb64a`. These task-bound identities do not authorize broader reads or improvised aggregate commands.
+
+**Exact output-capacity wrapper grammar.** Every scheduled read-only item 1–100 is one separate `functions.exec` tool call using exactly three source lines. Line 1 is exact `// @exec: {"yield_time_ms": 10000, "max_output_tokens": 30000}`. Line 2 is exact prefix `const r = await tools.exec_command({cmd:` followed immediately by the JSON string encoding of that item's listed command and exact suffix `,yield_time_ms:10000,max_output_tokens:30000});`. Line 3 is exact `text(r.output);`. There are exactly two newline separators and no extra source byte. The nested key is exact `max_output_tokens` with no quote after the key; both outer and nested values are 30,000. The decoded nested `cmd` must equal the listed command byte-for-byte.
+
+Any missing, extra, malformed, or unparsable wrapper byte is `WRAPPER-SYNTAX-FAILURE`: stop immediately, make no compensating or retry call, perform no further analysis, access, or write, and await root. Such a failure earns zero evidence, grade, coverage, verdict, route, disposition, or conclusion. A lower capacity, changed command, or changed wrapper shape is also a stop-before-analysis mismatch and may not be repaired in-session.
+
+**Exhaustive permitted-tool schedule.** The schedule is exactly 101 calls. Calls 1–100 are the separately wrapped read-only shell commands below; call 101 is the sole write and final tool call. No other tool or command is permitted. Do not combine calls; use no command separator, pipe, redirection, command substitution, display helper, `echo`, `printf`, `tee`, search command, helper script, repository-wide operation, or improvised command. Every source-read range is at most 100 lines.
+
+1. `cat AGENTS.md`
+2. `cat ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md`
+3. `date --iso-8601=seconds`
+4. `git rev-parse HEAD`
+5. `sed -n '23,36p' OVERNIGHT_GOAL.md`
+6. `sed -n '58,87p' OVERNIGHT_GOAL.md`
+7. `sed -n '28,41p' MONKEYBEE_CAMPAIGN_CHARTER_v1.md`
+8. `sed -n '54,150p' MONKEYBEE_CAMPAIGN_CHARTER_v1.md`
+9. `sed -n '174,206p' MONKEYBEE_CAMPAIGN_CHARTER_v1.md`
+10. `sed -n '10,20p' CYCLE_0_WORK_ORDER.md`
+11. `sed -n '67,79p' CYCLE_0_WORK_ORDER.md`
+12. `sed -n '112,126p' CYCLE_0_WORK_ORDER.md`
+13. `sed -n '34,79p' CAMPAIGN_CHARTER_REASONING.md`
+14. `sed -n '353,452p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+15. `sed -n '453,552p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+16. `sed -n '553,652p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+17. `sed -n '653,752p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+18. `sed -n '753,852p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+19. `sed -n '853,952p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+20. `sed -n '953,1003p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+21. `sed -n '1651,1750p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+22. `sed -n '1751,1850p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+23. `sed -n '1851,1950p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+24. `sed -n '1951,2050p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+25. `sed -n '2051,2150p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+26. `sed -n '2151,2250p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+27. `sed -n '2251,2350p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+28. `sed -n '2351,2450p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+29. `sed -n '2451,2550p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+30. `sed -n '2551,2650p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+31. `sed -n '2651,2750p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+32. `sed -n '2751,2850p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+33. `sed -n '2851,2950p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+34. `sed -n '2951,3050p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+35. `sed -n '3051,3150p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+36. `sed -n '3151,3213p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+37. `sed -n '5164,5263p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+38. `sed -n '5264,5363p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+39. `sed -n '5364,5463p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+40. `sed -n '5464,5563p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+41. `sed -n '5564,5663p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+42. `sed -n '5664,5763p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+43. `sed -n '5764,5863p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+44. `sed -n '5864,5963p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+45. `sed -n '5964,6063p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+46. `sed -n '6064,6163p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+47. `sed -n '6164,6202p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+48. `sed -n '6674,6773p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+49. `sed -n '6774,6873p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+50. `sed -n '6874,6973p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+51. `sed -n '6974,7073p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+52. `sed -n '7074,7173p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+53. `sed -n '7174,7273p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+54. `sed -n '7274,7373p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+55. `sed -n '7374,7473p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+56. `sed -n '7474,7573p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+57. `sed -n '7574,7673p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+58. `sed -n '7674,7773p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+59. `sed -n '7774,7873p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+60. `sed -n '7874,7973p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+61. `sed -n '7974,8005p' MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`
+62. `sha256sum plans/CYCLE_1_DELTA_PLAN.md`
+63. `wc -l -c plans/CYCLE_1_DELTA_PLAN.md`
+64. `sed -n '1,100p' plans/CYCLE_1_DELTA_PLAN.md`
+65. `sed -n '101,200p' plans/CYCLE_1_DELTA_PLAN.md`
+66. `sed -n '201,300p' plans/CYCLE_1_DELTA_PLAN.md`
+67. `sed -n '301,400p' plans/CYCLE_1_DELTA_PLAN.md`
+68. `sed -n '401,500p' plans/CYCLE_1_DELTA_PLAN.md`
+69. `sed -n '501,600p' plans/CYCLE_1_DELTA_PLAN.md`
+70. `sed -n '601,700p' plans/CYCLE_1_DELTA_PLAN.md`
+71. `sed -n '701,800p' plans/CYCLE_1_DELTA_PLAN.md`
+72. `sed -n '801,900p' plans/CYCLE_1_DELTA_PLAN.md`
+73. `sed -n '901,1000p' plans/CYCLE_1_DELTA_PLAN.md`
+74. `sed -n '1001,1100p' plans/CYCLE_1_DELTA_PLAN.md`
+75. `sed -n '1101,1200p' plans/CYCLE_1_DELTA_PLAN.md`
+76. `sed -n '1201,1300p' plans/CYCLE_1_DELTA_PLAN.md`
+77. `sed -n '1301,1400p' plans/CYCLE_1_DELTA_PLAN.md`
+78. `sed -n '1401,1500p' plans/CYCLE_1_DELTA_PLAN.md`
+79. `sed -n '1501,1600p' plans/CYCLE_1_DELTA_PLAN.md`
+80. `sed -n '1601,1700p' plans/CYCLE_1_DELTA_PLAN.md`
+81. `sed -n '1701,1800p' plans/CYCLE_1_DELTA_PLAN.md`
+82. `sed -n '1801,1900p' plans/CYCLE_1_DELTA_PLAN.md`
+83. `sed -n '1901,2000p' plans/CYCLE_1_DELTA_PLAN.md`
+84. `sed -n '2001,2100p' plans/CYCLE_1_DELTA_PLAN.md`
+85. `sed -n '2101,2200p' plans/CYCLE_1_DELTA_PLAN.md`
+86. `sed -n '2201,2300p' plans/CYCLE_1_DELTA_PLAN.md`
+87. `sed -n '2301,2400p' plans/CYCLE_1_DELTA_PLAN.md`
+88. `sed -n '2401,2500p' plans/CYCLE_1_DELTA_PLAN.md`
+89. `sed -n '2501,2600p' plans/CYCLE_1_DELTA_PLAN.md`
+90. `sed -n '2601,2700p' plans/CYCLE_1_DELTA_PLAN.md`
+91. `sed -n '2701,2800p' plans/CYCLE_1_DELTA_PLAN.md`
+92. `sed -n '2801,2900p' plans/CYCLE_1_DELTA_PLAN.md`
+93. `sed -n '2901,3000p' plans/CYCLE_1_DELTA_PLAN.md`
+94. `sed -n '3001,3100p' plans/CYCLE_1_DELTA_PLAN.md`
+95. `sed -n '3101,3200p' plans/CYCLE_1_DELTA_PLAN.md`
+96. `sed -n '3201,3300p' plans/CYCLE_1_DELTA_PLAN.md`
+97. `sed -n '3301,3400p' plans/CYCLE_1_DELTA_PLAN.md`
+98. `sed -n '3401,3500p' plans/CYCLE_1_DELTA_PLAN.md`
+99. `sed -n '3501,3542p' plans/CYCLE_1_DELTA_PLAN.md`
+100. `date --iso-8601=seconds`
+101. Exactly one `functions.exec` call whose sole nested operation is one structured `tools.apply_patch` append of the reviewer packet to `gauntlet/ROUND_LOG.md` through the root-supplied full EOF paragraph; this is the sole write and final tool call.
+
+If any scheduled output is truncated, any range or identity differs, the root-supplied pushed dispatch commit is absent or differs from item 4, any wrapper byte or capacity differs, or an unscheduled tool would be needed, stop without artifact analysis or write and await root. Do not improvise a continuation, retry, search, helper, alternate read, or smaller follow-up command.
+
+**Fresh-context and plan-space exclusions.** R41 must not read, search, hash, count, or infer from `gauntlet/ROUND_LOG.md`, this convergence report, any owner checkpoint, root ledger, control state, decision file, prior reviewer material, finding, disposition, G6 successor, recovery transcript, session history, or unrelated artifact. It must not access external sources, the web, competitor material, or prohibited PDF-processor source or documentation; perform measurement or comparison; create a SpecCard semantic body; use recovery context; create a scratch, temporary, todo, or task path; invoke subagents; contact any owner; edit an artifact; or take external action. Plan-space, clean-room, claim-vocabulary, and no-claim-strengthening laws remain in force.
+
+**Exact immutable five-pass prompt.** After the scheduled authority and artifact reads, apply only this text byte-for-byte:
+
+```text
+Find every concrete place this artifact oversimplifies, loses a required feature, collapses an envelope without preserving dependencies, or makes an implementation-relevant assertion without its required evidence interface. DO NOT LOSE FEATURES. I am positive you missed at least 80 elements. Report only evidence-backed findings under this lens; do not rewrite the artifact.
+```
+
+R41 may not reword, shorten, expand, interpret as a quota, or add an allegation to this prompt. Evidence controls grade and count; rhetorical overshoot does not.
+
+**Reviewer FSM and mismatch aborts.** The exact reviewer FSM is `SPAWNED -> INGEST-DECLARED-CHAIN -> APPLY-ONE-LENS -> FILE-GRADED-FINDINGS -> TERMINATED`. Before artifact reads, the root-supplied pushed dispatch commit must equal the separately observed item-4 `git rev-parse HEAD`; the artifact identity must match; and task-bound identity must remain exact `gpt-5.6-sol` / `ultra` / live `fast` / priority service. Artifact or dispatch drift requires `STALE-ASSIGNMENT`; model drift requires `MODEL-MISMATCH`; missing live `fast` or priority requires `MODE-MISMATCH`; malformed wrapper requires `WRAPPER-SYNTAX-FAILURE`. Any mismatch files no allegation. No fallback model, effort, mode, tier, artifact, authority, process, round, retry, or compensating tool call is authorized.
+
+**Required valid-filing packet schema.** A valid append contains exactly one section headed `R41 — plans/CYCLE_1_DELTA_PLAN.md — oversimplification-and-feature-loss`, followed by: the bound session/pane/shell/child/monitor identity carried as provenance only; exact model, effort, live `fast`, and priority disclosures; started/filed ISO timestamps; dispatch commit and artifact SHA-256; exact authority files/sections read; explicit freshness/exclusion and no-action disclosures; exact five-state reviewer FSM; numeric A, B, and C counts; and `marginal-only: YES | NO`. Use `YES` only when A=0 and B=0; otherwise use `NO`. Omit empty grade subsections but never omit counts.
+
+Each finding heading is monotonic `R41-A01`, `R41-B01`, or `R41-C01` within its grade and contains exactly one each of `evidence`, `requirement`, `consequence`, `repair boundary`, and `loss guard`. Evidence names a stable artifact section and minimal local text; the repair boundary gives the smallest adequate G3-owner repair without performing it; the loss guard states what a later repair must preserve. End with one `Round verdict` stating whether owner revision is warranted, what remains uncertain, and why this lens is or is not marginal-only, followed by exactly one packet line `- termination state: TERMINATED`. Allegations remain pending G7 mechanical integration and G3 premise testing.
+
+**Blind sole-write and exit law.** `gauntlet/ROUND_LOG.md` is closed. R41 may not read, search, hash, count, or otherwise ingest any prior Round Log byte. Root must supply the then-current full EOF paragraph literally. R41 may make no repository write except scheduled call 101's structured `apply_patch` append to this Round Log using that paragraph unchanged. No shell redirection, `tee`, scratch path, Edit/Write operation, artifact mutation, or second write is permitted. After the append flushes, the reviewer response must be the exact standalone token `TERMINATED`, with no punctuation, style, prefix, suffix, or later tool call; the model process and idle pane shell must then exit. Root handles process verification separately.
+
+**R41 BOUND-UNSENT EOF write law.** Owner FSM remains `DRAFT`. R41 is the sole `BOUND-UNSENT` row, is zero findings/grades/coverage/verdict/conclusion before filing, and is bound only to the exact identity, artifact, sole lens, authority, exact wrapper grammar, 101-call schedule, freshness, output-capacity, and blind-write controls above. Every earlier reviewer packet and owner closure is sealed; no other round is allocated or bound. **No task has been sent to R41. Root may commit and push this three-file control group; only after the pushed dispatch commit and every bound identity are revalidated may root deliver this control and this full paragraph as the unique true-EOF anchor.**
