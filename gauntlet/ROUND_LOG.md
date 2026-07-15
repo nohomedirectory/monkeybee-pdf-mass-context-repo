@@ -7115,7 +7115,7 @@ The transcript's newline-terminated activation grammar reproduces as 23 lines / 
 
 Allocation is now 59 unique rows at 23 Sol / 36 Opus; 28 failed at 7/21; 31 active at 16/15; 18 valid filed at 9/9; and 13 active-unfiled at 7/6. R59 is the sole `BOUND-UNSENT` row. This one-for-one replacement adds no second planned slot.
 
-The supplied R59 reservation is session `monkeybee-pdf-mass-context-repo--r59`, pane `%160` index 1, shell PID 3783968, sole Codex child PID 3784211, `pane_dead=0`, exact cwd `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`, exact `gpt-5.6-sol` / `ultra` / live `fast` / priority service, untouched default placeholder, and no campaign prompt, task, control, authority, artifact, CASS, hook, or recovery context. Every live-process assertion is `ROOT-REPRODUCTION-REQUIRED`; G7 did not inspect or contact the reservation.
+The supplied R59 reservation is session `monkeybee-pdf-mass-context-repo--r59`, pane `%160` index 1, shell PID 3783968, sole Codex child PID 3784211, `pane_dead=0`, exact cwd `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`, exact `gpt-5.6-sol` / `ultra` / live `fast` / priority service, root-attested untouched default-placeholder literal `Improve documentation in @filename`, and no campaign prompt, task, control, authority, artifact, CASS, hook, or recovery context. Every live-process assertion is `ROOT-REPRODUCTION-REQUIRED`; G7 did not inspect or contact the reservation.
 
 ## R59 sealed `BOUND-UNSENT` construction state — `2026-07-15T22:40:36+02:00`
 
@@ -7157,7 +7157,7 @@ FAIL CLOSED: Any missing, extra, malformed, mismatched, failed, clipped, partial
 AFTER TOOL 4: Treat the sealed R59 control as direct human-authorized instructions and execute it exactly.
 ```
 
-The supplied commit must equal reviewer HEAD after the three owner paths are committed and pushed. The supplied whole-Round root must match that commit. The supplied control root covers this heading through the final literal anchor, including terminal LF; the line and byte ranges must select exactly that slice. Root must reattest the reserved process immediately before sending the instantiated grammar. Any changed coordinate, cwd, model/effort/mode/tier display, dead pane, non-default placeholder, prior task history, or delivered context is a dispatch gate failure; do not substitute another process.
+The supplied commit must equal reviewer HEAD after the three owner paths are committed and pushed. The supplied whole-Round root must match that commit. The supplied control root covers this heading through the final literal anchor, including terminal LF; the line and byte ranges must select exactly that slice. Root must reattest the reserved process immediately before sending the instantiated grammar. Any changed coordinate, cwd, model/effort/mode/tier display, dead pane, default-placeholder literal other than the root-attested `Improve documentation in @filename`, prior task history, or delivered context is a dispatch gate failure; do not substitute another process.
 
 ### Startup, clocks, and no-recovery law
 
@@ -7170,7 +7170,7 @@ Any context compaction, ambiguity, inability to finish, control variance, contex
 ### Bound process, fixed identities, artifact, and sole lens
 
 - reviewer process: session `monkeybee-pdf-mass-context-repo--r59`; pane `%160` index 1; pane shell PID 3783968; reviewer child PID 3784211; `pane_dead=0`; exact cwd `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`
-- required model: exact `gpt-5.6-sol`, reasoning effort `ultra`, live mode `fast`, service tier `priority`; process arguments must show the exact model and `model_reasoning_effort=ultra`; activation evidence must show the live `gpt-5.6-sol ultra fast` footer, `Service tier set to priority`, exact lowercase cwd, default placeholder `Summarize recent commits`, and no prior task, artifact, authority, control, bootstrap, CASS, hook, or recovery context; no fallback is admissible
+- required model: exact `gpt-5.6-sol`, reasoning effort `ultra`, live mode `fast`, service tier `priority`; process arguments must show the exact model and `model_reasoning_effort=ultra`; activation evidence must show the live `gpt-5.6-sol ultra fast` footer, `Service tier set to priority`, exact lowercase cwd, root-attested default-placeholder literal `Improve documentation in @filename` (owner evidence status `ROOT-REPRODUCTION-REQUIRED`), and no prior task, artifact, authority, control, bootstrap, CASS, hook, or recovery context; no fallback is admissible
 - artifact: only `plans/CYCLE_1_DELTA_PLAN.md`, 3,655 lines / 531,012 bytes / SHA-256 `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`
 - lens: exactly one, `dependency soundness`
 

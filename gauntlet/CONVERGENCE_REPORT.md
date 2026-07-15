@@ -1122,3 +1122,13 @@ R59 is the one-for-one Sol replacement against the same submitted plan identity 
 Allocation is 59 rows at 23 Sol / 36 Opus; 28 failed at 7/21; 31 active at 16/15; 18 valid filed at 9/9; and 13 active-unfiled at 7/6. R59 is the sole bound row and supplies no review credit before a later transcript-qualified filing.
 
 The established C1 and Constitution sequences are unchanged. R10 adds no point and R59 has not run, so convergence remains **NOT ESTABLISHED**. Exact reservation/process/model/mode/tier/context facts are `ROOT-REPRODUCTION-REQUIRED`. No bootstrap was instantiated or sent, and no reviewer/process/PID/pane/session/service was inspected or contacted.
+
+## R59 root-attested placeholder correction — `2026-07-15T22:59:40+02:00`
+
+Root's post-push reattestation supplies the pristine R59 default-placeholder literal `Improve documentation in @filename`; this literal and every process/reservation/model/mode/tier/cwd/context assertion remain `ROOT-REPRODUCTION-REQUIRED`. G7 did not inspect or contact the reservation.
+
+The sealed R59 control now requires that exact literal, directly labels its owner evidence status, and makes any other process-screen literal a dispatch failure. The related allocation receipt now names the same root-attested literal. The detached 23-line / 2,215-byte grammar remains byte-identical at root `5483c61015e2c4915bcf6b96cd04a5596f18f980d1e09c2e1f3acf112840e483`; no grammar, row, artifact, lens, model, evidence-surface, replay, packet, or terminal law changed.
+
+Corrected Round is 7,272 lines / 1,280,889 bytes / `c1c3d7cce0d2a9ac941750053c0537e7fabfbb7aadd44e15e9734104843b48a8`. R59 control is lines 7,126-7,272, bytes `[1,258,645,1,280,889)`, 147 / 22,244 / `2734b4767f9562c99ae495bc45d03af44babee769c147664a5c7c1c0aed37b94`. R10 remains immutable zero-credit; R59 remains sole `BOUND-UNSENT`; protected R58/R10 history is unchanged.
+
+Allocation remains 59 rows at 23 Sol / 36 Opus; 28 failed at 7/21; 31 active at 16/15; 18 valid filed at 9/9; and 13 active-unfiled at 7/6. This correction supplies no review, finding, grade, coverage, route, curve, cross-model, or convergence credit. Convergence remains **NOT ESTABLISHED**. No bootstrap was instantiated or sent.
