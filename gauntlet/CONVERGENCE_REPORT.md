@@ -792,3 +792,13 @@ All 24 allegations, R50-A01 through R50-A20 and R50-B01 through R50-B04, remain 
 Filed evidence is now 17 rounds at 9 Sol / 8 Opus with A=118/B=64/C=22. Immutable allocation remains 50 rows at 22 Sol / 28 Opus; 18 failed IDs leave 32 active planned slots at 16 Sol / 16 Opus. Fifteen active-unfiled slots remain, all unbound, and no round is bound-unsent.
 
 The five-pass-A A+B curve is R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24, with every point non-marginal. The fifth planned pass is now represented by a valid filing, but owner revision is required before any later C1 round. No consecutive marginal-only condition exists; convergence remains **NOT ESTABLISHED**.
+
+## R16 bound-unsent accounting correction — `2026-07-15T11:24:53+02:00`
+
+This append changes only mechanical allocation/control state. It preserves every prior report and reviewer byte and adds no finding, grade, coverage, curve point, artifact verdict, owner disposition, or convergence evidence.
+
+R16 is the precommitted Constitution + fix-map five-pass-B position 3/5 under the sole `oversimplification-and-feature-loss` lens and exact Opus family. It is now `BOUND-UNSENT` against submitted G1 manifest `24327520e55a7324f69f12244d7ea05a6d0f9997da68fd19c111659740c60292`. No task has been sent; all grade and marginal slots remain em dash.
+
+Filed evidence remains 17 rounds at 9 Sol / 8 Opus with A=118/B=64/C=22. Immutable allocation remains 50 rows at 22 Sol / 28 Opus; 18 failed IDs leave 32 active planned slots at 16/16. Fifteen active-unfiled slots remain: R16 is the sole bound-unsent round and 14 are unbound.
+
+R16 adds no five-pass-B point until a valid packet files and is mechanically integrated. Existing valid five-pass-B points remain R14 A+B=15 and R15 A+B=21, both non-marginal. R50 owner disposition remains pending and unpromoted; no in-progress G3 state is integrated or inferred. C1 and overall convergence remain **NOT ESTABLISHED**.

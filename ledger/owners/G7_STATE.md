@@ -3237,3 +3237,102 @@ I did not revalidate, re-grade, confirm, refute, promote, demote, or rewrite any
 - G7 allocated and dispatched no next round, contacted no owner or reviewer, and took no external action. Root alone may commit/push the three owned documents and route the immutable R50 packet plus G7 qualification to G3.
 
 **Integration-control state: `RELEASED`.**
+
+## R16 bind-only control — INGEST-VERIFIED (`2026-07-15T11:21:34+02:00`)
+
+- Overarching G7 owner FSM remains `DRAFT`. Crash-safe transition persisted separately: `RELEASED -> INGEST-VERIFIED`.
+- Pre-transition G7 checkpoint was exactly 3,239 lines / 718,309 bytes / SHA-256 `9438f92c5f280b7617827f5bece172838c828d16135bfe4bce08b1bb2cfd87ee`; its full R50 `RELEASED` section immediately above was actual EOF.
+- Pushed gate passes: branch `main`; HEAD and `origin/main` both `077d1dc5f77fa7e139e94f049081dec243adf6ee`. Intake owned identities are Round Log 5,053 lines / 943,874 bytes / `36945b3229b08648256e80b05de928279ef7bc30752a829c44864fea196228c6`, Convergence Report 794 / 114,193 / `18c35c0b560e05fb2b37ff55d16edc75b850006f26f55c0a6eb053e232425c21`, and this checkpoint 3,239 / 718,309 / `9438f92c5f280b7617827f5bece172838c828d16135bfe4bce08b1bb2cfd87ee`.
+- Intake status names only concurrent `plans/CYCLE_1_DELTA_PLAN.md` and `ledger/owners/G3_STATE.md`; neither body was opened, interpreted, altered, stashed, reverted, or reconciled. The three G7-owned paths and all G1 inputs equal the pushed gate.
+- G1 component identities reproduce: Constitution 2,009 lines / 187,151 bytes / `2d3828110ae9d525003a19ee5340141a1f347be44be275520fe4c8253be789fe`; SpecCard pipeline 204 / 19,387 / `6a15a6ac957bfe3f700acc383313c8945770578b19a1f549bd41816169a0bfb1`; shell corpus 6,645 / 457,434 / `158679c21172682e33c0e30ca6c670bf079602394170d5478000e5e3b8032315`; fix report 405 / 66,729 / `06faddd7deef40524056b86ea192c85a5f0822cc3f5a7768b3d27a991922f602`.
+- Bytewise sorting the ordinary four `sha256sum` lines with final newline yields 402 bytes / manifest `24327520e55a7324f69f12244d7ea05a6d0f9997da68fd19c111659740c60292`. G1 checkpoint is 554 lines / 110,948 bytes / `48951eb4e2e2c470fc7b9da1af26dd8d0cf948d8cf586eda66e2dae97a69b408`; its live state field declares `SUBMIT-FOR-REVIEW`. The checkpoint body is excluded from reviewer delivery.
+- R16 intake is one immutable baseline row only: Constitution + fix map, sole `oversimplification-and-feature-loss` lens, Opus family, five-pass B position 3/5, `PENDING` / `PRECOMMITTED`, em-dash grade and marginal slots, G1 route. No R16 packet or R16 finding heading exists.
+- Normalized accounting is 50 unique allocation rows at 22 Sol / 28 Opus; 18 failures leave 32 active slots at 16/16; 17 filed at 9 Sol / 8 Opus with A=118/B=64/C=22; 15 active-unfiled; zero bound.
+- Immutable R50 packet `[911591,941132)` remains 29,541 bytes / `9b4eae3e9dc80d3cdcbb04b612ad602a933667a8d6f704c6690c28aab3d29cbf`; its G7 closure `[941132,943874)` remains 2,742 bytes / `00365c0e6bbd0ddd3eee3b6756a27666b678f77273f377750e767b42ff4df8ef` at Round EOF. R50 allegations remain concurrently routed and unpromoted; no G3 disposition was read or inferred.
+- Read-only process attestation passes: session `monkeybee-pdf-mass-context-repo--r16`, target `1.1`, pane `%98`, `pane_dead=0`, shell 3378167, child 3378430, both cwd `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`; child arguments are exact `claude-opus-4-8` / `xhigh`; live pane shows Opus 4.8 with xhigh effort and untouched default welcome placeholder with no task/history.
+- Rejected diagnostics, zero evidence credit: the first full skill display truncated and was replaced by bounded reads covering lines 1–743; the first allocation parser had a Python syntax error and was replaced by the normalized passing parser above. Neither event changed a repository byte, reviewer process, allocation, evidence, route, or conclusion. The skill's benchmark/reference workflow is outside this bind-only task and was not used.
+- Next transition allocates only immutable baseline R16; it adds no round, lens, or planned coverage and sends no task.
+
+**Integration-control state: `INGEST-VERIFIED`.**
+
+## R16 bind-only control — R16-ALLOCATED (`2026-07-15T11:22:16+02:00`)
+
+- Overarching G7 owner FSM remains `DRAFT`. Crash-safe transition persisted separately: `INGEST-VERIFIED -> R16-ALLOCATED`.
+- Pre-transition G7 checkpoint was exactly 3,256 lines / 722,101 bytes / SHA-256 `abb87b65e888f339453f575f5873dcad06e279826545ac54a55599ff12e33bc6`; its full `INGEST-VERIFIED` section immediately above was actual EOF.
+- Round Log preimage was exactly 5,053 lines / 943,874 bytes / `36945b3229b08648256e80b05de928279ef7bc30752a829c44864fea196228c6`; its R50 G7 closure ended at actual EOF.
+- Only the unique immutable baseline R16 row changed. It now preserves Constitution + fix map, sole `oversimplification-and-feature-loss` lens, exact `claude-opus-4-8` / `xhigh`, five-pass B position 3/5, G1 route, and submitted manifest `24327520e55a7324f69f12244d7ea05a6d0f9997da68fd19c111659740c60292` at `ALLOCATED · UNSENT`; all grade and marginal slots remain em dash.
+- Post-row Round Log is 5,053 lines / 944,164 bytes / `120470b2b1250dc98cf3d1ff32a62b90dfc722217f9cf47a5ad62b5e96971b35`. No R16 packet or finding heading exists, and the pre-existing final R50 closure paragraph remains actual EOF.
+- The 290-byte row-length shift semantically relocates immutable R50 packet to `[911881,941422)`, retaining 29,541 bytes / `9b4eae3e9dc80d3cdcbb04b612ad602a933667a8d6f704c6690c28aab3d29cbf`; its following G7 closure relocates to `[941422,944164)` at its unchanged seal.
+- Allocation count, family split, active-slot parity, filed totals, grades, and convergence are unchanged. R16 is allocated but not bound; zero round is bound-unsent and no task has been sent.
+- Next transition reattests the untouched R16 process and, only if every live gate still passes, binds R16 and appends its fresh-context control at true Round EOF.
+
+**Integration-control state: `R16-ALLOCATED`.**
+
+## R16 bind-only control — R16-BOUND-UNSENT (`2026-07-15T11:24:33+02:00`)
+
+- Overarching G7 owner FSM remains `DRAFT`. Crash-safe transition persisted separately: `R16-ALLOCATED -> R16-BOUND-UNSENT`.
+- Pre-transition G7 checkpoint was exactly 3,269 lines / 723,973 bytes / SHA-256 `d70ca05ae6e411b80978a119797598a3ad617106703956095690545269ae09ea`; its full `R16-ALLOCATED` section immediately above was actual EOF.
+- Pre-bind Round Log was 5,053 lines / 944,164 bytes / `120470b2b1250dc98cf3d1ff32a62b90dfc722217f9cf47a5ad62b5e96971b35`, with R16 `ALLOCATED · UNSENT` and the prior R50 closure at actual EOF.
+- Immediate read-only reattestation passed without drift: session `monkeybee-pdf-mass-context-repo--r16`, target `1.1`, pane `%98`, `pane_dead=0`, shell 3378167, child 3378430, exact lowercase cwd, exact `claude-opus-4-8` / `xhigh` arguments and TUI, untouched default placeholder, no task/history.
+- All four G1 component identities, their 402-byte sorted manifest, and excluded G1 checkpoint identity/state reproduced again immediately before binding.
+- Only the unique R16 row advanced to `BOUND-UNSENT`; artifact, sole lens, Opus family, pass 3/5, G1 route, and em-dash grade/marginal slots remain unchanged. No allocation row or coverage slot was added.
+- The row update produces the pre-control prefix `[0,944245)`. One self-contained control was appended at true EOF: separator-inclusive `[944245,955666)`, 129 lines / 11,421 bytes / `b27c8de57eda7f66dcdc8e80e5b32388bd8cb89e77f9dd15744c12ff9f0951dd`; heading-to-EOF `[944246,955666)`, 128 lines / 11,420 bytes / `1a064c04ecb560a6e1b60991d52b429cfc1d95426d2fafc6cd6871c57e6a851b`.
+- Resulting Round Log is 5,182 lines / 955,666 bytes / `25cf625f9cbf2f712a02ec6bbeea12d04804ec922627cad27aa96180f28aed43`; its exact R16 final literal anchor is actual EOF. The packet-heading example occurs only inside the sealed schema code block; no reviewer packet or finding exists.
+- Immutable R50 packet semantically relocates to `[911962,941503)`, retaining 29,541 bytes / `9b4eae3e9dc80d3cdcbb04b612ad602a933667a8d6f704c6690c28aab3d29cbf`; G7 closure relocates to `[941503,944245)`, retaining 2,742 bytes / `00365c0e6bbd0ddd3eee3b6756a27666b678f77273f377750e767b42ff4df8ef`.
+- The control binds exact activation, process, pushed four-file manifest, one lens, bounded authority, compaction-resume law, prompt, schema, plan/clean-room/no-measurement/no-action boundaries, blind sole `apply_patch`, and exact `TERMINATED`. It exposes no prior finding, disposition, convergence result, or G3 work.
+- Construction remains unsent. G7 did not contact the pane, deliver a task, invoke orchestration, allocate another round, or take external action.
+- Next transition appends an evidence-neutral R16 bound-state correction to Convergence Report; filed totals and curve remain unchanged.
+
+**Integration-control state: `R16-BOUND-UNSENT`.**
+
+## R16 bind-only control — CONVERGENCE-UPDATED (`2026-07-15T11:25:12+02:00`)
+
+- Overarching G7 owner FSM remains `DRAFT`. Crash-safe transition persisted separately: `R16-BOUND-UNSENT -> CONVERGENCE-UPDATED`.
+- Pre-transition G7 checkpoint was exactly 3,286 lines / 726,863 bytes / SHA-256 `5fb734a57e1b46f2b4f04e33a6967b8ff4d59d9fb0ec1025486f6066146e3bdf`; its full `R16-BOUND-UNSENT` section immediately above was actual EOF.
+- Convergence Report preimage was 794 lines / 114,193 bytes / `18c35c0b560e05fb2b37ff55d16edc75b850006f26f55c0a6eb053e232425c21`. One evidence-neutral append occupies `[114193,115454)`, 10 lines / 1,261 bytes / `1633641b4a675951d94a11ceb341ea41c48a19011a95bc791cbe74d435224fdf`; resulting report is 804 / 115,454 / `d3d1294510772776dac2ebe0781244021676e0d2f6f69fb97a255e38eea33f1c`.
+- The report records only R16 mechanical `BOUND-UNSENT` state against the submitted G1 manifest. Filed evidence remains 17 rounds at 9 Sol / 8 Opus with A=118/B=64/C=22; allocation remains 50 rows at 22 Sol / 28 Opus; 18 failures leave 32 active at 16/16; 15 active-unfiled consist of sole bound R16 plus 14 unbound.
+- R16 adds no finding, grade, coverage, five-pass-B curve point, verdict, owner disposition, or conclusion before filing. R50 owner disposition remains pending and unpromoted; no concurrent G3 work was read or inferred. C1 and overall convergence remain `NOT ESTABLISHED`.
+- Round Log and its sealed R16 control remain unchanged at 5,182 lines / 955,666 bytes / `25cf625f9cbf2f712a02ec6bbeea12d04804ec922627cad27aa96180f28aed43`.
+- Next transition runs the full bounded self-check and reattests the still-untouched, unsent R16 process.
+
+**Integration-control state: `CONVERGENCE-UPDATED`.**
+
+## R16 bind-only control — SELF-CHECKED (`2026-07-15T11:28:35+02:00`)
+
+- Overarching G7 owner FSM remains `DRAFT`. Crash-safe transition persisted separately: `CONVERGENCE-UPDATED -> SELF-CHECKED`.
+- Pre-transition G7 checkpoint was exactly 3,298 lines / 728,585 bytes / SHA-256 `8ee01a1adf5a40e793e0787df8ff6e4474ba51d48d48be604d7a4c4504af102e`; its full `CONVERGENCE-UPDATED` section immediately above was actual EOF. After the context compaction, root's exact reminder caused a full `AGENTS.md` reread before any continuation or write.
+- Provenance gate passes: branch `main`; HEAD and `origin/main` both `077d1dc5f77fa7e139e94f049081dec243adf6ee`; index empty. The owned paths are the only G7 modifications. The only concurrent non-owned modifications are `plans/CYCLE_1_DELTA_PLAN.md` and `ledger/owners/G3_STATE.md`; their live bodies were not opened, interpreted, reconciled, or changed.
+- Current owned identities reproduce: Round Log 5,182 lines / 955,666 bytes / `25cf625f9cbf2f712a02ec6bbeea12d04804ec922627cad27aa96180f28aed43`; Convergence Report 804 / 115,454 / `d3d1294510772776dac2ebe0781244021676e0d2f6f69fb97a255e38eea33f1c`; this G7 preimage as stated above. `git diff --check` is clean and the staged diff is empty.
+- G1 gate reproduces Constitution `2d3828110ae9d525003a19ee5340141a1f347be44be275520fe4c8253be789fe`, SpecCard pipeline `6a15a6ac957bfe3f700acc383313c8945770578b19a1f549bd41816169a0bfb1`, shell corpus `158679c21172682e33c0e30ca6c670bf079602394170d5478000e5e3b8032315`, and fix report `06faddd7deef40524056b86ea192c85a5f0822cc3f5a7768b3d27a991922f602`. Their 402-byte ordinary sorted manifest with final newline hashes to `24327520e55a7324f69f12244d7ea05a6d0f9997da68fd19c111659740c60292`; G1 checkpoint remains 554 lines / 110,948 bytes / `48951eb4e2e2c470fc7b9da1af26dd8d0cf948d8cf586eda66e2dae97a69b408` with exactly one live `SUBMIT-FOR-REVIEW` phase marker.
+- R16 allocation/control gate passes: one immutable R16 row, one assignment/control heading, one schema example inside its code fence, zero reviewer packet heading outside that fence, and zero R16 finding heading. The row retains sole `oversimplification-and-feature-loss`, Opus, pass 3/5, G1 route, manifest, em-dash grade slots, and `BOUND-UNSENT`.
+- The exact R16 control remains the actual Round EOF: separator-inclusive `[944245,955666)`, 129 lines / 11,421 bytes / `b27c8de57eda7f66dcdc8e80e5b32388bd8cb89e77f9dd15744c12ff9f0951dd`; heading-to-EOF `[944246,955666)`, 128 / 11,420 / `1a064c04ecb560a6e1b60991d52b429cfc1d95426d2fafc6cd6871c57e6a851b`. Its final literal anchor occurs once and is the last file line.
+- Control-schema gates pass: exact immutable reviewer prompt occurs once in the control and once in the protocol, 376 bytes including final newline / `82a6ee845ffd14027a0e5f523d671736f51fde9fb2c127dc4aeb32f7459e806b`; one lens, declared authority, four components, manifest, model/process, freshness, compaction-resume, loss guards, blind sole `apply_patch`, exact `TERMINATED`, and no-action laws are present. The control contains no prohibited processor name or URL.
+- Protected reviewer packets were semantically relocated from their headings and sealed boundaries and reproduce exactly: R03 `[291973,309867)` / `d42c1989b354ca100dbdbd876b83cde0f7f0f13f12c35356209d5004d166af7a`; R13 `[317162,326751)` / `18eb5b573f833f92cdc7aaafab37bbc2688a9c9f83aa33c80da91b0a3ccc4f5c`; R04 `[334502,360596)` / `df313c958971724d0c59eae7302cc4d89475cd0f66d1e5f22e044e92dd435145`; R14 `[370291,426395)` / `4567275fbaba4e3e04d433ec4757897ed6ae4aee183ada2c552a28785794a122`; R33 `[446308,457213)` / `f932428fcf0f4b114e3574ed9119b29f4491f82e23d76b31416d023cdd5d858a`; R05 `[466499,560291)` / `602f25a0f8750f93a8dfcc23c7f32a960c4e50bcaad6d19f0b4cbabf3f5fbbe9`; R15 `[570812,599872)` / `610bc2ec58c899cad9b14da7097ebacca457c0987f237edfd5d45737f2d84595`; R38 `[648629,660779)` / `fe3e5aacfec181a5f631997631eb3ae8e1e11e5f18293e3e68286c2c544edab4`; R41 `[734368,747848)` / `87b9329963836d19059f28e7b4597cf399ae70d6dd442fdbee99b4c74812e03d`; R48 `[869676,885214)` / `6102ff0e3c64414444657ad8d6e69bec2bde6a97ece2cb62e941bbe28e7bea9a`; R50 `[911962,941503)` / `9b4eae3e9dc80d3cdcbb04b612ad602a933667a8d6f704c6690c28aab3d29cbf`. All ranges are unique; no reviewer byte or grade changed.
+- Normalized allocation/accounting passes: 50 immutable rows at 22 Sol / 28 Opus; 18 failures; 32 active planned slots at 16/16; 17 filed at 9/8 and A=118/B=64/C=22; 15 active-unfiled, with R16 the sole bound round and 14 unbound. R16 supplies zero filed evidence and no curve point.
+- Format and vocabulary gates pass: all three owned files decode as UTF-8, end in one newline, have zero trailing whitespace or conflict marker, and the owned added-line guarded-vocabulary scan has zero unscoped hit.
+- Live reattestation passes after all document writes so far: session `monkeybee-pdf-mass-context-repo--r16`, target `1.1`, pane `%98`, `pane_dead=0`, shell 3378167, child 3378430, exact lowercase cwd, exact `claude-opus-4-8` / `xhigh` arguments, and untouched welcome/default placeholder. No task, authority, artifact, finding, or anchor was delivered.
+- Rejected diagnostics, all zero-credit and without repository/process consequence: the first skill display truncated and was replaced by bounded full-file reads; the first intake allocation parser raised a syntax error and was replaced by the normalized parser; a control-schema Python probe raised a literal-newline syntax error; its next shell wrapper failed with an unmatched quote; a G1 phase probe allowed Markdown backticks to invoke a nonexistent `SUBMIT-FOR-REVIEW` command, so that phase result was discarded and rerun quote-safe; and an unquoted tmux format made `list-panes -F` report a missing argument, so it was discarded and rerun with a quoted format. No hook-presence or hook-absence inference is made.
+- No forbidden write method, artifact/canon/root-ledger edit, dispatch, pane contact, process action, commit, push, or external action occurred. The next transition may only seal terminal `BOUND-UNSENT` at actual G7 EOF.
+
+**Integration-control state: `SELF-CHECKED`.**
+
+## R16 bind-only control — terminal BOUND-UNSENT (`2026-07-15T11:29:51+02:00`)
+
+- Overarching G7 owner FSM remains `DRAFT`. Crash-safe transition persisted separately: `SELF-CHECKED -> BOUND-UNSENT`.
+- Pre-transition G7 checkpoint was exactly 3,317 lines / 734,712 bytes / SHA-256 `88e5a5da7b2a8472c0ea0733d45eed82a7b0b020f83d9e7354a38222cf37e4d0`; the 19-line / 6,127-byte `SELF-CHECKED` append has SHA-256 `d37370497b436808d3532592df73a5eacab430a17dc42ad15f76715d3f0010f1` and was actual EOF.
+- Post-check gates pass: the prior G7 preimage is an exact prefix; Round Log and Convergence identities are unchanged; `git diff --check`, owned-plus-concurrent path scope, empty index, guarded-vocabulary scan, and actual-EOF checks all pass.
+- R16 remains the unique `BOUND-UNSENT` row and unique live binding. Its control remains sealed at separator-inclusive `[944245,955666)` / `b27c8de57eda7f66dcdc8e80e5b32388bd8cb89e77f9dd15744c12ff9f0951dd` and heading-to-EOF `[944246,955666)` / `1a064c04ecb560a6e1b60991d52b429cfc1d95426d2fafc6cd6871c57e6a851b`, with its literal anchor at Round EOF.
+- Final live gate still shows session `monkeybee-pdf-mass-context-repo--r16`, pane `%98`, shell 3378167, child 3378430, exact lowercase cwd, exact Opus 4.8 / `xhigh`, and untouched default prompt. G7 sent nothing and changed no process.
+- Filed evidence stays 17 rounds, 9 Sol / 8 Opus, A=118/B=64/C=22. Allocation stays 50 rows; 18 failures leave 32 active at 16/16; R16 is sole bound among 15 active-unfiled. R50 owner disposition stays pending and unpromoted; convergence remains `NOT ESTABLISHED`.
+- Root handoff only: commit and push the three owned control documents, revalidate their identities and R16 process, compute the detached whole-Round hash, then send only the activation envelope plus the sealed R16 heading through EOF. G7 does not commit, push, dispatch, or contact the reviewer.
+
+**Integration-control state: `BOUND-UNSENT`.**
+
+## R16 post-terminal diagnostic supersession — BOUND-UNSENT (`2026-07-15T11:30:34+02:00`)
+
+- Pre-supersession G7 checkpoint was exactly 3,329 lines / 736,651 bytes / SHA-256 `432801752a2df0bbf759b87b7ed2f77c8f867c953f25b42f4dcba0db5e3a283b`; its 12-line / 1,939-byte terminal append hashes to `e28140d815baf85c95ad6ee0d6225ef4e7686b274f3dcf235f622308a9cd0dfb` and was actual EOF.
+- One post-terminal read-only control-seal probe failed at Python parse time because a non-ASCII character appeared directly in a bytes literal. It produced no gate result, read or wrote no repository byte, changed no process, and receives zero evidence credit.
+- The corrected quote-safe probe encoded the anchor explicitly as UTF-8 and passed: Round Log 955,666 bytes / `25cf625f9cbf2f712a02ec6bbeea12d04804ec922627cad27aa96180f28aed43`; separator-inclusive R16 control 11,421 bytes / `b27c8de57eda7f66dcdc8e80e5b32388bd8cb89e77f9dd15744c12ff9f0951dd`; heading-to-EOF 11,420 bytes / `1a064c04ecb560a6e1b60991d52b429cfc1d95426d2fafc6cd6871c57e6a851b`; exact final anchor at EOF.
+- All earlier terminal gates and accounting remain unchanged. R16 remains untouched and unsent; no task, dispatch, process action, commit, push, or external action occurred. This supersession changes only the diagnostic record and preserves the effective terminal state.
+
+**Integration-control state: `BOUND-UNSENT`.**

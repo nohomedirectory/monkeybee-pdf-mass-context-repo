@@ -97,7 +97,7 @@ Hash, status, counts, and disposition are slots. They are filled only from filed
 | R13 | Constitution + fix map | identity-law consistency | Sol (fast) | — | `9e81eaaa03c1368335b8aaff260af0ff918d7a6a76ca45bed85a00d4313743ec` | FILED · VALIDATED · TERMINATED | 3 | 2 | 0 | NO | ROUTED → G1 (independent premise-first triage; grades preserved and unpromoted). Freshness and start-time corrections recorded below. |
 | R14 | Constitution + fix map | oversimplification-and-feature-loss | claude-opus-4-8 (xhigh) | 5-pass B (1/5) | `dd86aaf319ecc87d0526d90b56b1993e8023925eeec4467ffd7807f89f92efb4` | FILED · VALIDATED · TERMINATED | 5 | 10 | 4 | NO | METHOD-NONCOMPLIANT / PROCESS-QUARANTINED; mechanically admissible for routing → G1 through root; all grades and loss guards unpromoted. R15 blocked pending a new G1 `SUBMIT-FOR-REVIEW` manifest. |
 | R15 | Constitution + fix map | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | 5-pass B (2/5) | `dd5266aa80bd0ecdef7780fa670689427e70faee63d279efa1561e0c4e24d8e9` | FILED · CHAIN-QUALIFIED · TERMINATED | 14 | 7 | 0 | NO | ROUTED → G1 through root (premise-first; all 21 grades and loss guards preserved and unpromoted). Bounded chain exposure and start-time correction recorded below; R16 blocked pending G1 revision and a new manifest. |
-| R16 | Constitution + fix map | oversimplification-and-feature-loss | Opus | 5-pass B (3/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
+| R16 | Constitution + fix map | oversimplification-and-feature-loss | `claude-opus-4-8`, effort `xhigh` | 5-pass B (3/5) | `24327520e55a7324f69f12244d7ea05a6d0f9997da68fd19c111659740c60292` | BOUND-UNSENT | — | — | — | — | Baseline R16 only; sole lens, Opus family, pass 3/5, and G1 route preserved. Bound to untouched session `monkeybee-pdf-mass-context-repo--r16`, pane `%98`, shell 3378167, child 3378430, exact lowercase cwd and submitted manifest. No task, finding, grade, coverage, or conclusion exists. |
 | R17 | Constitution + fix map | oversimplification-and-feature-loss | Sol | 5-pass B (4/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R18 | Constitution + fix map | oversimplification-and-feature-loss | Opus | 5-pass B (5/5) | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R19 | Charter-set cross-consistency | envelope-dependency | Sol | — | `718928bb101e00881191d8e9f536cab73b82e80fb955e99867dbe95135570c4a` | FILED · VALIDATED · TERMINATED | 7 | 1 | 0 | NO | ROUTED → G6. **G6 triage returned: A01–A07 all QUALIFY** (bounded repairs, named targets). B01 premise-bounded, both branches preserved, unpromoted. No v1.0 in-place edit. G6 `DRAFT`; successors `PROPOSED — awaiting human ratification`. |
@@ -5051,3 +5051,132 @@ All 24 allegations—R50-A01 through R50-A20 and R50-B01 through R50-B04—route
 Valid filed evidence is 17 rounds at 9 Sol / 8 Opus with aggregate A=118/B=64/C=22. Immutable allocation remains 50 rows at 22 Sol / 28 Opus; 18 failed IDs leave 32 active planned slots at 16/16. Fifteen active slots remain unfiled and unbound; no round is bound-unsent.
 
 The five-pass-A A+B sequence now has five valid points: R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24. Every point is non-marginal, including R50. No consecutive marginal-only condition exists; convergence remains **NOT ESTABLISHED**. Owner revision and disposition are required before any next C1 review round.
+
+## R16 reviewer assignment/control — `2026-07-15T11:23:27+02:00`
+
+- generated-by: G7 gauntlet/convergence owner
+- date: 2026-07-15
+- inputs: pushed G1 four-artifact submission, reviewer protocol, declared bounded authority, untouched R16 process
+- status: DRAFT
+- evidence-status: provisional-pending-substrate
+
+### Stateless role and live activation
+
+R16 is a fresh stateless reviewer, not root, G1, G7, an artifact owner, a controller, or an orchestrator. Session, pane, shell, and child coordinates below are immutable identity evidence only; R16 must not bind, dispatch, monitor, tend, coordinate, or contact another process. No task has been sent at construction time.
+
+The only live activation envelope is exactly:
+
+```text
+ROOT-SUPPLIED DISPATCH COMMIT: <exactly 40 lowercase hexadecimal characters>
+ROOT-SUPPLIED ROUND LOG SHA-256: <exactly 64 lowercase hexadecimal characters>
+
+<this sealed R16 heading through its final literal anchor>
+```
+
+Receipt of that envelope after root commits and pushes the control means this assignment is live and sent. It overrides only the historical construction-time no-task wording; it changes no artifact, lens, method, or exclusion. If the envelope grammar or any identity gate differs, stop before artifact analysis or repository write and return the exact terminal response required below. Do not ask whether to proceed and do not offer a chat-only alternative.
+
+### Bound identity and one-lens scope
+
+- pushed control baseline: commit `077d1dc5f77fa7e139e94f049081dec243adf6ee`; the root-supplied dispatch commit must equal reviewer HEAD and must contain this baseline.
+- reviewer process: session `monkeybee-pdf-mass-context-repo--r16`; target `1.1`; pane `%98`; pane shell PID 3378167; reviewer child PID 3378430; `pane_dead=0`; exact cwd `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`.
+- required model: exact `claude-opus-4-8`, effort `xhigh`; process arguments and live TUI must both attest Opus 4.8 with xhigh effort. No fallback model or effort is admissible.
+- artifact: exactly the four submitted G1 files and no other artifact.
+- lens: exactly `oversimplification-and-feature-loss`; repeated five-pass B position 3/5. No adjacent lens may be imported.
+- owner route after a valid filing: root to G1 for independent premise-first disposition. Reviewer grades remain allegations and are never owner dispositions.
+- excluded owner checkpoint: `ledger/owners/G1_STATE.md`, 554 lines / 110,948 bytes / SHA-256 `48951eb4e2e2c470fc7b9da1af26dd8d0cf948d8cf586eda66e2dae97a69b408`, state `SUBMIT-FOR-REVIEW`; its body must not be opened or delivered.
+
+### Exact four-file artifact and manifest
+
+- `constitution/MONKEYBEE_CONSTITUTION_v8.md` — 2,009 lines / 187,151 bytes / SHA-256 `2d3828110ae9d525003a19ee5340141a1f347be44be275520fe4c8253be789fe`.
+- `constitution/SPECCARD_PIPELINE.md` — 204 lines / 19,387 bytes / SHA-256 `6a15a6ac957bfe3f700acc383313c8945770578b19a1f549bd41816169a0bfb1`.
+- `shell/MONKEYBEE_SHELL_CORPUS_v8.md` — 6,645 lines / 457,434 bytes / SHA-256 `158679c21172682e33c0e30ca6c670bf079602394170d5478000e5e3b8032315`.
+- `reports/FIX_APPLICATION.md` — 405 lines / 66,729 bytes / SHA-256 `06faddd7deef40524056b86ea192c85a5f0822cc3f5a7768b3d27a991922f602`.
+
+The manifest is SHA-256 over these bytewise-sorted ordinary `sha256sum` lines, retaining the final newline:
+
+```text
+06faddd7deef40524056b86ea192c85a5f0822cc3f5a7768b3d27a991922f602  reports/FIX_APPLICATION.md
+158679c21172682e33c0e30ca6c670bf079602394170d5478000e5e3b8032315  shell/MONKEYBEE_SHELL_CORPUS_v8.md
+2d3828110ae9d525003a19ee5340141a1f347be44be275520fe4c8253be789fe  constitution/MONKEYBEE_CONSTITUTION_v8.md
+6a15a6ac957bfe3f700acc383313c8945770578b19a1f549bd41816169a0bfb1  constitution/SPECCARD_PIPELINE.md
+```
+
+Bound manifest SHA-256: `24327520e55a7324f69f12244d7ea05a6d0f9997da68fd19c111659740c60292`.
+
+### Declared authority chain and coverage law
+
+The first repository tool must read all of `AGENTS.md`. The second repository tool must read all of `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md`. Any different first or second repository read invalidates the method. Then read only this declared authority, in order, before the artifacts:
+
+1. `OVERNIGHT_GOAL.md` lines 23–36, line 62, and lines 78–87: §1, §3/G1, and §4.
+2. `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` lines 11–41 and 86–150: §§0–1, §5/C0–C1, and §6.
+3. `CYCLE_0_WORK_ORDER.md` lines 10–79: §§0–3.
+4. `AUDIT_FINDINGS_LEDGER.md` exact lines 16, 19, 37, and 38: R1-1, R1-4, R2-N4, and R2-N5 only.
+5. The four bound artifact files above, in full, using bounded sequential or parallel read chunks that do not truncate.
+
+Maintain an explicit in-memory coverage manifest for every declared range and every artifact line. A transparent bounded retry is allowed only when a read failed or its display truncated; disclose the retry and give the failed output no evidence credit. Authority reads and authority searches may expose only the declared lines above. Searches across the four bound artifacts are allowed within the sole lens after their initial full ingest.
+
+After any context compaction, the first next repository read must again be all of `AGENTS.md`; root may send exact `Reread AGENTS.md`. Do not restart or replay already observed authority or artifact ranges merely because compaction occurred. Resume only unread coverage from the manifest. Reread a prior range only if its earlier output failed/truncated or a bounded evidence anchor needs recheck, and disclose the reason. Preserve compaction uncertainty in the packet; do not silently convert summary memory into newly observed evidence.
+
+Before analysis, mechanically verify the activation commit, baseline ancestry, all component hashes/counts, and the sorted manifest. If any identity, model, effort, cwd, one-lens, or freshness gate differs, do not analyze the artifact and do not write. The reviewer may use ordinary read-only identity commands, but must not inspect git history, unrelated status, or repository-wide content.
+
+### Exact immutable repeated prompt
+
+The following paragraph is the assigned review instruction and must remain byte-for-byte unchanged:
+
+```text
+Find every concrete place this artifact oversimplifies, loses a required feature, collapses an envelope without preserving dependencies, or makes an implementation-relevant assertion without its required evidence interface. DO NOT LOSE FEATURES. I am positive you missed at least 80 elements. Report only evidence-backed findings under this lens; do not rewrite the artifact.
+```
+
+This is a hunt instruction, not a finding quota. Reviewer judgment over local evidence, grades, marginality, and verdict is unrestricted within the sole lens. Do not import model recollection as evidence. Every finding must identify a stable local artifact anchor, the governing local requirement, the feature-loss mechanism or consequence, the smallest repair boundary, and a loss guard that prevents the repair from deleting or collapsing retained behavior, identity, evidence, fallback, partial-outcome, or clean-room boundaries.
+
+### Fresh-context and absolute exclusions
+
+Do not receive, open, search, or infer any prior reviewer packet or finding, owner disposition, convergence result, decision outcome, G3 work, G6 successor, G1 checkpoint body, other Round Log semantic byte, or recovery narrative. Do not open another artifact or canonical source. Do not contact an external source, competitor material, or prohibited processor source/documentation.
+
+Remain in plan space. Do not create source, scaffolding, Beads, pseudo-Beads, task/todo/scratch/temp files, or SpecCard semantic bodies. Do not measure or compare processors. Do not edit an artifact, canon, checkpoint, root ledger, convergence report, or any other path. Do not commit, push, publish, purchase, send, or take any external action. Do not strengthen a campaign claim; local reviewer grades remain unpromoted allegations.
+
+Reviewer FSM is exactly:
+
+`SPAWNED -> INGEST-DECLARED-CHAIN -> APPLY-ONE-LENS -> FILE-GRADED-FINDINGS -> TERMINATED`
+
+### Required reviewer packet schema
+
+The sole filed packet must begin exactly:
+
+```text
+## R16 — Constitution + fix map — oversimplification-and-feature-loss
+```
+
+It must then contain exactly one of each process-level field:
+
+- `reviewer process`: exact session, pane, shell, child, and cwd.
+- `model identity`: exact model/effort with process and TUI attestations.
+- `started / filed`: measured ISO timestamps.
+- `artifact manifest`: bound manifest plus all four component identities.
+- `authority chain read`: every declared range, artifact coverage, any retry, and any compaction uncertainty.
+- `reviewer FSM`: the exact five-state chain above.
+- `counts`: `A=<n>; B=<n>; C=<n>`.
+- `marginal-only`: `YES` only when A=0 and B=0; otherwise `NO`.
+- `no-action statement`: explicit confirmation of every absolute exclusion above.
+
+Each allegation uses a unique monotone ID `R16-A01`, `R16-B01`, or `R16-C01` within its grade and contains exactly one each of:
+
+- `evidence`: stable local artifact anchor and minimal quotation or faithful paraphrase.
+- `requirement`: governing declared local authority.
+- `consequence`: concrete feature-loss mechanism or implementation effect.
+- `repair boundary`: smallest adequate plan-space repair, never the repair itself.
+- `loss guard`: retained feature/evidence/fallback/partial-outcome/clean-room boundary the owner must preserve.
+
+Omit empty grade subsections, never omit counts, and end with exactly one `### Round verdict` plus exactly one line `- termination state: TERMINATED`. The verdict states whether owner revision is required, what premises remain unresolved, and why the one lens is or is not marginal-only. No allegation is phrased as an owner disposition or campaign claim.
+
+### Blind sole-write and termination law
+
+The root-supplied Round Log hash is detached activation metadata and must equal the whole `gauntlet/ROUND_LOG.md` hash at reviewer start. Mechanically verify whole-file hash, total byte count, and the exact final literal anchor below without reading prior Round Log semantics. The task supplies this control text, so no semantic Round Log read or search is needed or allowed.
+
+The only repository write is one final structured `apply_patch` append to `gauntlet/ROUND_LOG.md`, replacing the exact final literal anchor with itself plus the schema-valid R16 packet. Preserve every preceding byte. No shell write, redirection, pipe-to-write, `tee`, generic Edit/Write operation, scratch file, or other repository write is allowed. If the final append fails, do not switch methods or write elsewhere.
+
+After the successful append, make no later tool call. The final assistant response must be exactly the standalone token `TERMINATED`, with no punctuation, styling, prefix, or suffix. Root, not the reviewer, verifies the packet/process boundary and exits the model and idle shell. No commit or push is allowed.
+
+Construction-time state remains `BOUND-UNSENT`: G7 has delivered no task, authority content, artifact content, prior context, or write anchor to the process. Root alone may commit/push this three-document control group, compute the detached whole-Round hash, reattest the untouched process, and then send only the exact activation envelope plus this sealed heading through EOF.
+
+**R16 FINAL LITERAL ANCHOR — APPEND REVIEWER PACKET HERE AFTER ROOT ACTIVATION.**
