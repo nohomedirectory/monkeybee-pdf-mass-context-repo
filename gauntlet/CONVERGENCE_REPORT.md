@@ -1080,3 +1080,15 @@ R58 binds the submitted C1 plan identity `db0bbb1df5bb317d3bd2cdf313708fa8a10af8
 Allocation remains 58 unique rows at 22 Sol / 36 Opus; 26 failed at 6/20; 32 active planned at 16/16; 18 valid filed at 9/9 with A=118/B=64/C=22; and 14 active-unfiled at 7/7. R58 is the sole bound-unsent row and supplies no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model credit, or convergence evidence before qualification.
 
 The established C1 and Constitution sequences are unchanged. R58 adds no point; convergence remains **NOT ESTABLISHED**. No G3 route, bootstrap instantiation, reviewer contact, or dispatch occurred.
+
+## R58 candidate-integrity disqualification — `2026-07-15T20:41:29+02:00`
+
+This append supersedes only the R58 bound-unsent and prospective-route wording immediately above. The sealed control and physical reviewer packet remain byte-identical; the physical A=0/B=1/C=0, marginal-only NO allegation, grade, verdict, and method prose are not promoted or dispositioned.
+
+Record-by-record transcript replay reproduces exact startup, process/model admission, 34 primary Reads, both primary unions, 34 distinct post-freeze Reads, sole generic Round Edit, preserved anchor, no later tool, exact terminal response, and supplied retirement boundary. It also establishes three terminal sealed failures: the packet contains the exact pre-write clock sampled after the asserted entire-candidate freeze, with no restart/replay or dynamic-field exception; a natural-language section title is placed inside quotation marks despite the categorical bar; and the verdict's seven-axis materiality proposition omits its defining coordinate. Passing coverage and terminal mechanics cannot cure those pre-write integrity failures.
+
+R58 is immutable `NOT-RUN · METHOD-CONTROL-CANDIDATE-FREEZE-QUOTATION-AND-CITATION-INTEGRITY-VIOLATION · TERMINATED`, with no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model credit, or convergence evidence. No G3 route or replacement is created.
+
+Allocation is 58 unique rows at 22 Sol / 36 Opus; 27 failed at 6/21; 31 active planned at 16/15; 18 valid filed at 9/9 with A=118/B=64/C=22; and 13 active-unfiled at 7/6. No row is bound-unsent. R10 remains untouched `PRECOMMITTED`.
+
+The C1 five-pass-A sequence remains R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24, all non-marginal. The Constitution sequence remains R14=15 non-marginal -> R15=21 non-marginal -> R51=0 marginal-only. R58 adds no point; convergence remains **NOT ESTABLISHED**.
