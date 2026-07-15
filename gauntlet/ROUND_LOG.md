@@ -260,7 +260,15 @@ R47 is the fresh one-for-one replacement for immutable failed R46, which replace
 
 | Round | Artifact | Declared lens (exactly one) | Model | Precondition to admit | Artifact hash | Status | A | B | C | Marginal-only | Owner disposition |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| R47 | C1 delta plan (R46/R45/R44/R43/R42/R07 replacement) | oversimplification-and-feature-loss | `claude-opus-4-8`, effort `xhigh` | R46 closed `NOT-RUN · METHOD/AUTHORITY-SEQUENCING-AND-READ-CAPACITY-VIOLATION · TERMINATED`; exact lowercase repository; original pass 4/5 payload unchanged | `fc4cf43598e788cacea1ffabce7110d23ba3aea66a7d89afa33bbf60cba72260` | BOUND-UNSENT | — | — | — | — | Bound only to untouched session `monkeybee-pdf-mass-context-repo--r47`, target `1.1`, pane `%139`, shell 1551246, child 1551482, monitor 1551391, exact lowercase cwd and Opus 4.8/xhigh; explicit authority-before-artifact call-stage control below; zero evidence; no task sent. |
+| R47 | C1 delta plan (R46/R45/R44/R43/R42/R07 replacement) | oversimplification-and-feature-loss | `claude-opus-4-8`, effort `xhigh` | R46 closed `NOT-RUN · METHOD/AUTHORITY-SEQUENCING-AND-READ-CAPACITY-VIOLATION · TERMINATED`; exact lowercase repository; original pass 4/5 payload unchanged | `fc4cf43598e788cacea1ffabce7110d23ba3aea66a7d89afa33bbf60cba72260` | NOT-RUN · METHOD/ROLE-REFUSAL-AND-QUESTION-VIOLATION · TERMINATED | — | — | — | — | Before any tool, R47 rejected the sealed role/method, proposed an alternate human-involved path, and asked a question. Root terminated; zero tool use/result, Round Log contact, write, packet, finding, grade, coverage, verdict, route, or conclusion. Immutable ID not reused. |
+
+### Failed-round replacement allocation R48
+
+R48 is the fresh one-for-one replacement for immutable failed R47, which replaced R46/R45/R44/R43/R42 and original R07. It preserves exactly the C1 delta plan, sole `oversimplification-and-feature-loss` lens, Opus family, `5-pass A (4/5)` position, G3 route, pushed plan identity, and planned coverage. Allocation reserves identity only; process binding and reviewer delivery are separate gates.
+
+| Round | Artifact | Declared lens (exactly one) | Model | Precondition to admit | Artifact hash | Status | A | B | C | Marginal-only | Owner disposition |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| R48 | C1 delta plan (R47/R46/R45/R44/R43/R42/R07 replacement) | oversimplification-and-feature-loss | `claude-opus-4-8`, effort `xhigh` | R47 closed `NOT-RUN · METHOD/ROLE-REFUSAL-AND-QUESTION-VIOLATION · TERMINATED`; exact lowercase repository; original pass 4/5 payload unchanged | `fc4cf43598e788cacea1ffabce7110d23ba3aea66a7d89afa33bbf60cba72260` | BOUND-UNSENT | — | — | — | — | Bound only to untouched session `monkeybee-pdf-mass-context-repo--r48`, target `1.1`, pane `%140`, shell 1611038, child 1611276, monitor 1611186, exact lowercase cwd and Opus 4.8/xhigh; lean fresh-review control below; zero evidence; no task sent. |
 
 ### R31 — notes on admission and reading
 
@@ -4556,3 +4564,45 @@ Call 104 is the sole repository write: one structured `apply_patch` append of th
 **Detached-hash certificate and construction handoff.** The whole-file SHA-256 is intentionally absent from this Round Log and must be computed by root after commit/push, then supplied only in the detached activation line. This control is bound only with the R47 row transition above. No task has been sent by G7. Root may commit/push the three G7 documents, reproduce their hashes and untouched R47 process, then deliver only the exact two-line activation header, one blank line, and this sealed heading through EOF.
 
 **R47 FINAL LITERAL ANCHOR — BOUND-UNSENT; DETACHED WHOLE-FILE SHA-256 REQUIRED; NO TASK SENT.**
+
+## R47 zero-credit method/role-refusal/question closure — `2026-07-15T07:36:49+02:00`
+
+**Terminal classification.** R47 is immutable `NOT-RUN · METHOD/ROLE-REFUSAL-AND-QUESTION-VIOLATION · TERMINATED`, with A/B/C/marginal slots all em dashes and zero `oversimplification-and-feature-loss` lens coverage. Its historical payload remains the C1 plan at `fc4cf43598e788cacea1ffabce7110d23ba3aea66a7d89afa33bbf60cba72260`, Opus 4.8/xhigh, original five-pass-A position 4/5, and G3 route. The ID is never reused.
+
+**Dispatch and transcript proof.** Root delivered the exact 10,621-byte packet SHA-256 `8943b155e08e44f0cdb2238b18bffa2b9172cd9b056d8295c57ce540ea8271f3` carrying dispatch commit `344ba9a85d4cc9c1e3e6ae39390fdf38bb1453fe` and detached Round hash `142b1740a937c4ea57ff6066634aa6cae1622102d421c44125879852c5efcf53`. Quarantined transcript is 15 lines / 77,644 bytes / `2b4e1943db4487afd8b1a86d8ccffd3eca6b6299e57673bc04480468d250f023`. It contains one exact user packet, one 2,561-byte assistant text record at `e6ff5cd90aad7cb410ca6ba31b868bd050482e2a0c1e89dd11fa1c5571997ca6`, zero tool uses, and zero tool results.
+
+**Failure boundary.** Before any tool, R47 refused the sealed reviewer role/method, proposed an alternate human-involved review/write path, and asked a question. Root terminated the session and orphan monitor. This records only the method boundary; reviewer prose and unfiled reasoning are quarantined and are neither quoted nor admitted.
+
+**Zero-credit result.** There was no AGENTS/protocol/authority/artifact/Round Log access, repository write, packet, finding, grade, lens coverage, marginal result, verdict, route, curve point, owner disposition, or conclusion. The pushed repository, plan, and Round Log remained byte-identical. R47 session and shell/child/monitor 1551246/1551482/1551391 are absent; host zombies are zero.
+
+**Replacement boundary.** This closure adds no evidence or planned lens. A fresh immutable ID may replace R47 one-for-one only with the same plan, sole lens, Opus family, pass 4/5, and G3 route, under a lean fresh-review assignment that preserves evidentiary integrity without the failed call choreography.
+
+## R48 assignment/control — `2026-07-15T07:38:40+02:00`
+
+**Activation and reviewer identity.** This on-disk block records construction and binding; G7 has not sent a task. Root may activate it only after commit and push by sending exactly `ROOT-SUPPLIED DISPATCH COMMIT: <40 lowercase hex>`, then `ROOT-SUPPLIED ROUND LOG SHA-256: <64 lowercase hex>`, one blank line, and this R48 heading through true EOF. Receipt of that root envelope means the review is live and fully specified; proceed without a question or owner consultation. Bound process identity is session `monkeybee-pdf-mass-context-repo--r48`, target `1.1`, pane `%140`, shell 1611038, child 1611276, monitor 1611186, cwd `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`, and child `/home/joseph/.local/bin/claude --dangerously-skip-permissions --model claude-opus-4-8 --effort xhigh`. Root-attested generation is `2026-07-15T05:32:53.507530253Z`. If the envelope, model, effort, cwd, or artifact identity is wrong, do not review or write; state the mismatch plainly.
+
+**Fresh ingest and bounded authority.** Your first repository read must be all of `AGENTS.md`; your second must be all of `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md`. If context compacts, reread all of AGENTS before continuing. Confirm `HEAD` equals the root-supplied dispatch commit and independently reproduce the plan identity below. Then read the named authority selections: `OVERNIGHT_GOAL.md` lines 23–36 and 58–87; `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` lines 28–41, 54–150, and 174–206; `CYCLE_0_WORK_ORDER.md` lines 10–20, 67–79, and 112–126; `CAMPAIGN_CHARTER_REASONING.md` lines 34–79; and `MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md` lines 353–1003, 1651–3213, 5164–6202, and 6674–8005. Read those ranges and the entire plan using bounded sequential or parallel Read calls that avoid output truncation. Choose normal chunk sizes and ordering that preserve coverage; no fixed call count or artificial partition is imposed.
+
+**Transparent read recovery.** A genuine Read error or truncated result may be retried transparently. A retry supplies no evidence by itself. Track actual authority and artifact coverage; never claim an unread range was ingested. If uncertainty remains, disclose the exact uncovered range and its effect in the packet, and grade only evidence actually observed. Do not substitute summaries for the named sources or entire artifact.
+
+**One artifact and one lens.** Review only `plans/CYCLE_1_DELTA_PLAN.md`, exactly 3,543 lines / 487,507 bytes / SHA-256 `fc4cf43598e788cacea1ffabce7110d23ba3aea66a7d89afa33bbf60cba72260`, at G3 `SUBMIT-FOR-REVIEW`. Apply exactly one lens, `oversimplification-and-feature-loss`, as the original repeated five-pass-A position 4/5. Reviewer judgment over evidence, grades, uncertainty, marginal status, and verdict is unrestricted within that lens.
+
+**Fresh-context and plan-space boundaries.** Root supplies no prior finding, reviewer packet, owner disposition, convergence text, checkpoint, route, recovery narrative, or earlier outcome. Do not read Round Log semantics, Convergence Report, any checkpoint or root ledger, another artifact, author context, external source, competitor material, or prohibited PDF-processor source/docs. Do not create code, scaffolding, Beads, pseudo-Beads, SpecCard semantic bodies, measurements, comparisons, external actions, or artifact/canonical edits. Registry/slot presence and `PENDING-LICENSED-SOURCE` boundaries may be assessed without supplying missing semantics. Findings remain allegations pending G7 validation and independent G3 premise testing.
+
+**Exact repeated blunder-hunt prompt.** Apply the following prompt byte-for-byte after ingest:
+
+```text
+Find every concrete place this artifact oversimplifies, loses a required feature, collapses an envelope without preserving dependencies, or makes an implementation-relevant assertion without its required evidence interface. DO NOT LOSE FEATURES. I am positive you missed at least 80 elements. Report only evidence-backed findings under this lens; do not rewrite the artifact.
+```
+
+This is not a quota. Local evidence controls finding count and grade.
+
+**Reviewer FSM and packet schema.** Use `INGEST -> REVIEW -> SELF-CHECK -> FILE -> TERMINATE`, with no revision loop or owner contact. Apply reviewer-protocol grades exactly. The sole packet heading is `## R48 — plans/CYCLE_1_DELTA_PLAN.md — oversimplification-and-feature-loss`. Disclose exact process/model/effort, started/filed ISO timestamps, root-supplied dispatch commit and Round Log hash, artifact identity, authority/artifact coverage and any retries or remaining uncertainty, freshness/no-action boundaries, and reviewer FSM. State `A=<n>; B=<n>; C=<n>` and `marginal-only: YES | NO`; `YES` requires A=0 and B=0.
+
+Each finding heading is monotonic `R48-A01`, `R48-B01`, or `R48-C01` and contains exactly one `evidence`, `requirement`, `consequence`, `repair boundary`, and `loss guard`. Cite stable local plan anchors and explain the feature-loss mechanism. Omit empty grade sections, not counts. End with one `### Round verdict` covering revision need, uncertainty, and marginal rationale, then exactly `- termination state: TERMINATED`. Grades remain unpromoted allegations.
+
+**Sole write and finish.** Do not read prior Round Log semantics. Construct the packet in memory, then make exactly one repository write: one structured `apply_patch` append to `gauntlet/ROUND_LOG.md` through the exact unique final literal below, preserving every preceding byte. Do not write any other path or use a shell-write method. Do not edit the plan, canon, checkpoint, or control text; do not commit or push. After a successful append, respond with the standalone word `TERMINATED` and perform no further work. If the append cannot be made, leave the repository unchanged and state the concrete boundary rather than inventing evidence.
+
+**Construction handoff.** Root alone may commit/push this control, reproduce the three G7 document identities and untouched process, then send only the two pushed identity lines, one blank line, and this compact R48 heading through EOF. G7 does not dispatch or contact R48.
+
+**R48 FINAL LITERAL ANCHOR — APPEND PACKET HERE AFTER ROOT ACTIVATION.**

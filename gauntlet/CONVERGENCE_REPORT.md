@@ -680,3 +680,23 @@ R47 binds only pushed plan `fc4cf43598e788cacea1ffabce7110d23ba3aea66a7d89afa33b
 The call-stage law makes Calls 8–64 authority-only and Calls 65–100 artifact-only, using the exact 57/36 at-most-100-line manifests. Any early artifact access, bad result, range/capacity error, or recovery attempt fail-closes with no write. Calls 101–104 alone measure filed time, verify blind whole-file/final-literal integrity, and append. The control retains fresh context, one artifact/lens, exact prompt, standalone termination token, and process exit without constraining judgment after Call 100.
 
 No task has been sent to R47. Overarching G7 remains `DRAFT`; root may commit/push the three G7 documents, reproduce all identities and the untouched reviewer process, compute the detached Round Log hash, then deliver only the exact activation envelope and sealed control. G7 does not dispatch, contact an owner/reviewer, edit an artifact/root ledger, or bind another round.
+
+## R47 zero-credit closure and R48 bound-unsent replacement correction — `2026-07-15T07:40:15+02:00`
+
+This append supersedes only the live R47-bound construction wording above. R47 is immutable `NOT-RUN · METHOD/ROLE-REFUSAL-AND-QUESTION-VIOLATION · TERMINATED`: before any tool it rejected the sealed role/method, proposed an alternate human-involved path, and asked a question. Root terminated it. The quarantined transcript has zero tool uses/results and no artifact, Round Log, or write contact; reviewer prose is not admitted. R47 contributes no finding, grade, lens coverage, marginal result, route, curve point, artifact verdict, owner disposition, or conclusion.
+
+R48 is the one-for-one replacement for the same pushed C1 plan, sole `oversimplification-and-feature-loss` lens, Opus family, original pass 4/5, and G3 route. It adds no planned lens. R48 is `BOUND-UNSENT` with zero grades/findings/coverage and no task delivered. Its compact control replaces rigid call choreography with full fresh authority, bounded flexible reading, transparent retry and uncertainty disclosure, unrestricted one-lens judgment, schema-valid evidence, one structured Round Log append, and successful termination behavior.
+
+### Evidence and curve remain unchanged
+
+Valid filed evidence remains exactly 15 rounds, A=98/B=59/C=19, with an 8 Sol / 7 Opus filed-family split. The same-lens five-pass-A curve remains R04 A+B=16 → R05 A+B=32 → R41 A+B=7, all non-marginal. R47 and unfiled R48 add no point. Zero consecutive marginal-only points means convergence remains **NOT ESTABLISHED** before a valid pass-4/5 filing.
+
+No finding, grade, artifact verdict, owner disposition, route decision, or G3 premise result changed. The bound artifact remains plan 3,543 lines / 487,507 bytes / `fc4cf43598e788cacea1ffabce7110d23ba3aea66a7d89afa33bbf60cba72260` at `SUBMIT-FOR-REVIEW`.
+
+### Allocation and R48 control state
+
+Immutable allocation is now 48 rows at 20 Sol / 28 Opus. Failed IDs are R06, R07, R23, R24, R34, R35, R36, R37, R39, R40, R42, R43, R44, R45, R46, and R47. Excluding those 16 leaves 32 active planned slots at 16 Sol / 16 Opus; 15 are filed and 17 are active-unfiled. R48 is the sole `BOUND-UNSENT` row and 16 remain unbound.
+
+R48 binds only untouched session `monkeybee-pdf-mass-context-repo--r48`, target `1.1`, pane `%140`, shell 1611038, child 1611276, monitor 1611186, exact lowercase repository cwd, and Opus 4.8/xhigh. Sealed compact Round Log control is separator-inclusive `[859644,865916)`, 30 lines / 6,272 bytes / `358a6adf13ab3c5e28b6686354ec33861b2713452e22dd213d799a4820cc0f75`; heading-to-EOF is 6,271 bytes / `5a2bd969813047e4b4ead2181e9fdee2a49d548fcde58ffe2a8fd9a9d15ccdd2`.
+
+No task has been sent to R48. Overarching G7 remains `DRAFT`; G7 does not dispatch, contact an owner/reviewer, edit an artifact/root ledger, commit, or push.
