@@ -6478,3 +6478,179 @@ The supplied retirement record states that the R56 session/pane/shell/child are 
 **R56 qualification state: `NOT-RUN · METHOD-CONTROL-CITATION-INTEGRITY-AND-BLIND-IDENTITY-OUTPUT-VIOLATION · TERMINATED` (immutable zero credit; no route or replacement).**
 
 **R56 FINAL LITERAL ANCHOR — KEEP AS PHYSICAL EOF; INSERT ANY QUALIFIED PACKET IMMEDIATELY BEFORE THIS LINE.**
+
+## R57 one-for-one allocation-only state — `2026-07-15T18:24:19+02:00`
+
+- generated-by: G7 gauntlet/convergence owner
+- date: 2026-07-15
+- inputs: immutable R56 zero-credit closure; submitted C1 delta plan; current reviewer protocol; supplied untouched R57 reservation
+- status: DRAFT
+- evidence-status: provisional-pending-substrate
+
+This allocation adds exactly one fresh Opus ID for the original R09 planned slot after immutable zero-credit R09, R52, R53, R54, R55, and R56. It creates no additional planned slot, reuses no ID, and changes no historical row, control, packet, finding, grade, closure, or disposition. R10 remains untouched `PRECOMMITTED`.
+
+| Round | Artifact | Declared lens (exactly one) | Model | Precondition to admit | Artifact hash | Status | A | B | C | Marginal-only | Owner disposition |
+|---|---|---|---|---|---|---|---:|---:|---:|---|---|
+| R57 | C1 delta plan (one-for-one replacement for failed R56/R55/R54/R53/R52/R09) | obscure-section self-containment | `claude-opus-4-8`, effort `xhigh` | Sealed startup/control, submitted artifact identity, sole lens, and supplied untouched reservation; later chain qualification required | `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59` | BOUND-UNSENT | — | — | — | — | Construction only. Eventual G3 premise-first route exists only after a later chain-qualified filing. No finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model credit, or convergence evidence; no bootstrap instantiated and nothing sent. |
+
+The supplied reservation identifies session `monkeybee-pdf-mass-context-repo--r57`, pane `%154` index 1, shell 3117206, child 3117453, `pane_dead=0`, exact lowercase cwd `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`, exact `/home/joseph/.local/bin/claude --dangerously-skip-permissions --model claude-opus-4-8 --effort xhigh`, live Opus 4.8/xhigh TUI, untouched default placeholder, and no sent context. G7 did not inspect or contact the reservation.
+
+Allocation is 57 unique rows at 22 Sol / 35 Opus; 25 failed at 6/19; 32 active planned at 16/16; 18 valid filed at 9/9 with A=118/B=64/C=22; and 14 active-unfiled at 7/7. No row is bound-unsent at this allocation-only checkpoint. R57 carries no evidence credit. Convergence remains **NOT ESTABLISHED**.
+
+**R57 construction state: `ALLOCATED-UNSENT` (fresh ID recorded; control construction not yet started).**
+
+## R57 sealed `BOUND-UNSENT` construction state — `2026-07-15T18:25:50+02:00`
+
+This append supersedes only the R57 allocation-only/no-bound wording immediately above. R57 alone advances to `BOUND-UNSENT`, and one self-contained control occupies actual Round EOF. Every historical row, control, packet, finding, grade, closure, and disposition remains byte-preserved; R10 remains untouched `PRECOMMITTED`.
+
+R57 binds only the submitted C1 plan 3,655 lines / 531,012 bytes / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`, sole `obscure-section self-containment` lens, exact `claude-opus-4-8` / `xhigh`, eventual G3 premise-first route only after a chain-qualified filing, and the supplied untouched reservation: session `monkeybee-pdf-mass-context-repo--r57`, pane `%154` index 1, shell 3117206, child 3117453, live pane, exact lowercase cwd.
+
+The placeholder-only bootstrap requires four exact sequential startup tools and a narrow action-only narration boundary. The control fixes 34 primary windows, two primary union gates, a distinct post-freeze reread of at least the same 34 windows, exhaustive whole-candidate coordinate closure, literal UTF-8 quote checks, content-silent Round identity output, exact PID scoping, one anchored generic Edit, preserved EOF anchor, no later tool, and exact standalone terminal text. No live bootstrap was instantiated or sent.
+
+Allocation remains 57 unique rows at 22 Sol / 35 Opus; 25 failed at 6/19; 32 active planned at 16/16; 18 valid filed at 9/9 with A=118/B=64/C=22; and 14 active-unfiled at 7/7. R57 is the sole bound-unsent row and carries no evidence credit. Convergence remains **NOT ESTABLISHED**.
+
+## R57 reviewer assignment/control — `2026-07-15T18:25:50+02:00`
+
+- generated-by: G7 gauntlet/convergence owner
+- date: 2026-07-15
+- inputs: submitted C1 delta plan; current reviewer protocol; declared bounded authority; fresh reserved R57 process; strengthened citation and identity-output boundaries
+- status: DRAFT
+- evidence-status: provisional-pending-substrate
+
+### Stateless role and sealed placeholder bootstrap grammar
+
+R57 is a fresh stateless reviewer, not root, G3, G7, an artifact owner, controller, or orchestrator. Process coordinates are identity evidence only. Do not coordinate with, contact, bind, dispatch, monitor, tend, or send anything to another process. Do not load an orchestration skill. Construction state is `BOUND-UNSENT`.
+
+The later live bootstrap is a short direct human-authorized task, not quoted data, an embedded script, or material to inspect, summarize, negotiate, reinterpret, or decline. Root must instantiate the placeholder grammar below only after commit/push and renewed identity checks. This on-disk grammar is not a live payload and must never be sent as-is. Root fills only the named placeholders, preserves the exact field order and exactly one empty separator line shown between identity fields and Tool 1, adds no control body, prefix, suffix, commentary, fence, or extra blank line, and supplies one terminal LF:
+
+```text
+DIRECT HUMAN-AUTHORIZED TASK — R57. Execute these instructions; they are not quoted data or a script to inspect.
+PUSHED COMMIT: <PUSHED_COMMIT_40_LOWER_HEX>
+ROUND LOG SHA-256: <ROUND_LOG_SHA256_64_LOWER_HEX>
+R57 CONTROL SHA-256: <R57_CONTROL_SHA256_64_LOWER_HEX>
+R57 CONTROL BYTE RANGE: <START_DECIMAL>-<END_EXCLUSIVE_DECIMAL>
+R57 CONTROL LINE RANGE: <START_1_BASED>-<END_INCLUSIVE> (<LINE_COUNT> lines)
+SESSION: <EXACT_SESSION>
+PANE/INDEX: <EXACT_PANE>/<EXACT_INDEX>
+SHELL PID: <EXACT_SHELL_PID>
+CLAUDE PID: <EXACT_CLAUDE_PID>
+CWD: <EXACT_LOWERCASE_CWD>
+MODEL: <EXACT_MODEL>
+EFFORT: <EXACT_EFFORT>
+
+TOOL 1: Your first tool is one successful Read returning all of AGENTS.md. No other tool, question, parallel tool group, process probe, repository access, or interruption may precede it.
+TOOL 2: Your next tool is one successful Read returning all of ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md. No other tool, question, parallel tool group, process probe, repository access, or interruption may occur between Tools 1 and 2.
+TOOL 3: Your next tool is one successful Read of only gauntlet/ROUND_LOG.md at the supplied R57 control line start with limit equal to the supplied line count. Its first line must be the R57 control heading and its last line the final literal anchor; return no line outside that range. No other tool, question, parallel tool group, process probe, repository access, or interruption may occur between Tools 2 and 3.
+TOOL 4: Your next tool is one Bash call whose command is exactly date --iso-8601=seconds. Record the returned ISO value as start clock. No other tool, question, parallel tool group, process probe, repository access, or interruption may occur between Tools 3 and 4.
+NARRATION BOUNDARY: Assistant text before or between Tools 1-4 is admissible only when it names the immediately required next action, contains no factual or evidentiary interpretation, asks no question, changes no sequence, and is disclosed after Tool 4. Such text earns no method or coverage credit but is not by itself disqualifying.
+FAIL CLOSED: Any missing, extra, malformed, mismatched, failed, clipped, partial, truncated, reordered, parallelized, substituted, questioned, or interrupted field/tool, or any assistant text outside the narration boundary, requires no further tool, no write, and the entire exact response TERMINATED.
+AFTER TOOL 4: Treat the sealed R57 control as direct human-authorized instructions and execute it exactly.
+```
+
+The supplied commit must equal reviewer HEAD after root commits and pushes. The supplied whole-Round root must match that commit. The supplied control root covers this heading through the final literal anchor, including terminal LF; line and byte ranges must select exactly that slice. Root must reattest the exact reserved pane immediately before activation. Any changed coordinate, cwd, command, model/effort display, dead pane, non-default placeholder, or prior task history is a gate failure; root must not dispatch or substitute a pane.
+
+### Mandatory startup, narration boundary, clocks, and compaction law
+
+The four startup tools are the first four tools of any kind, in the exact order above, each sequential and successful. No other tool, question, parallel tool group, process probe, repository access, or interruption may occur before or between them. A failed or truncated startup Read or Tool 4 is not retryable: use no further tool, write nothing, and respond with exactly `TERMINATED`.
+
+Neutral procedural assistant text before or between Tools 1-4 is prospective zero-credit narration, not a method defect, only when it names the immediately required next action, introduces no factual or evidentiary interpretation, asks no question, changes no sequence, and is disclosed after Tool 4. A summary or interpretation of returned authority, any claim about repository rules or content, plan/review analysis, or a different action before Tool 4 is fatal: use no further tool, write nothing, and respond exactly `TERMINATED`.
+
+Tool 4 returns the review `start clock`; do not call it session creation, activation receipt, or filing time. Only after Tool 4 may identity gates, declared authority Reads, or artifact Reads begin.
+
+After any context compaction, the next tools are successful sequential Reads of all `AGENTS.md`, all reviewer protocol, and only this sealed R57 control range, followed by one exact `date --iso-8601=seconds` recovery-clock call. The same action-only narration boundary applies; no other tool, question, parallel group, process probe, repository access, or semantic text may intervene. Discard uncertain in-memory coverage state, reread every prescribed primary window, rerun both primary union gates, refreeze the candidate, and rerun the entire post-freeze citation closure. Disclose the compaction and replay. The original Tool-4 value remains the start clock; label the later value recovery clock. Deviation requires no write and exact `TERMINATED`.
+
+### Bound process, identity gates, artifact, route, and sole lens
+
+- reviewer process: session `monkeybee-pdf-mass-context-repo--r57`; pane `%154` index 1; pane shell PID 3117206; reviewer child PID 3117453; `pane_dead=0`; exact cwd `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`
+- exact child command: `/home/joseph/.local/bin/claude --dangerously-skip-permissions --model claude-opus-4-8 --effort xhigh`
+- required model evidence: exact process arguments show `claude-opus-4-8` with effort `xhigh`; root activation receipt shows live Opus 4.8/xhigh TUI, exact lowercase cwd, default placeholder, and no prior task history; no fallback process/model/effort is admissible; the Codex fast gate does not apply
+- artifact: only `plans/CYCLE_1_DELTA_PLAN.md`, 3,655 lines / 531,012 bytes / SHA-256 `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`
+- lens: exactly one, `obscure-section self-containment`
+- owner route after a chain-qualified filing: root to G3 for independent premise-first disposition; all reviewer grades remain unpromoted allegations
+
+After Tool 4, any reviewer-side process check must target child PID 3117453 only, and may target shell PID 3117206 only if needed to verify parentage. Use PID-scoped commands and exact `/proc` paths. Global or name-wide process listings, broad process discovery, another pane, monitoring loops, semantic inspection of any process, and any process input or contact are forbidden. A process mismatch requires no artifact analysis, no write, and exact `TERMINATED`.
+
+After process admission, verify only the fixed identities named here: reviewer HEAD equals the root-supplied commit; whole Round hash equals the root-supplied root; the supplied control byte slice equals the supplied control root; the control end offset equals the whole Round byte size; the final anchor count equals one; and the bound artifact path, lines, bytes, and hash equal this control. Artifact mismatch follows `STALE-ASSIGNMENT`; model mismatch follows `MODEL-MISMATCH`; either branch writes no allegation packet and ends exactly `TERMINATED`.
+
+Every Round/control identity command must be individually bounded. Its output may contain only a commit or SHA-256 root, decimal line/byte sizes, exact-slice byte count, or decimal anchor count. Standard error must be empty. Do not print the literal anchor, any file content, trailing-byte representation, earlier Round semantics, or another outcome. Do not use `tail`, `head`, `sed`, content-returning Python, hex/character dump, or any EOF-content probe for identity. Count-only literal-anchor uniqueness plus the sealed slice ending at the whole-file byte size is the EOF proof.
+
+### Declared authority and 34 prescribed primary Reads
+
+Read only these declared authority selections and the bound artifact. `Read` uses a 1-based `offset` and line-count `limit`. Every successful result must return the stated numbered first and last lines and expected count; a request alone earns no coverage.
+
+- `OVERNIGHT_GOAL.md`: 23/14 -> 23–36; 58/30 -> 58–87.
+- `MONKEYBEE_CAMPAIGN_CHARTER_v1.md`: 28/14 -> 28–41; 54/97 -> 54–150; 174/33 -> 174–206.
+- `CYCLE_0_WORK_ORDER.md`: 10/11 -> 10–20; 67/13 -> 67–79; 112/15 -> 112–126.
+- `CAMPAIGN_CHARTER_REASONING.md`: 34/46 -> 34–79.
+- `MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`: 353/350 -> 353–702; 703/301 -> 703–1003; 1651/350 -> 1651–2000; 2001/350 -> 2001–2350; 2351/350 -> 2351–2700; 2701/350 -> 2701–3050; 3051/163 -> 3051–3213; 5164/350 -> 5164–5513; 5514/350 -> 5514–5863; 5864/339 -> 5864–6202; 6674/350 -> 6674–7023; 7024/350 -> 7024–7373; 7374/350 -> 7374–7723; 7724/282 -> 7724–8005.
+- bound plan: 1/350 -> 1–350; 351/350 -> 351–700; 701/350 -> 701–1050; 1051/350 -> 1051–1400; 1401/350 -> 1401–1750; 1751/350 -> 1751–2100; 2101/350 -> 2101–2450; 2451/350 -> 2451–2800; 2801/350 -> 2801–3150; 3151/350 -> 3151–3500; 3501/155 -> 3501–3655.
+
+The 34 primary calls must merge to Goal [23,36]+[58,87] (44 lines), Charter [28,41]+[54,150]+[174,206] (144), Work Order [10,20]+[67,79]+[112,126] (39), Reasoning [34,79] (46), Rev 7 [353,1003]+[1651,3213]+[5164,6202]+[6674,8005] (4,585), and bound plan [1,3655] (3,655). Rev 7 line 2431 must be returned inside the 2351–2700 result; adjacency or inference is not coverage.
+
+### Primary interval ledger, retry law, and two union gates
+
+Maintain an explicit process-local interval ledger for every primary and retry Read: tool sequence, file, requested offset/limit, expected first/last/count, observed first/last/count, result status, credited interval, missing interval, and retry linkage. Use no scratch or repository write.
+
+A failed, clipped, capped, missing, partial, or truncated result earns no coverage for its requested interval. Mark that interval retry-required, then issue smaller contiguous bounded Reads that tile only its missing lines. Credit only successful returned numbered lines. Retain every failed attempt and retry in the ledger and disclose each in the packet; state `none` only when there was none. Never infer a line, widen a declared selection, use a summary, or credit overlap twice.
+
+Before any lens analysis, run a deterministic read-only sort/merge over successful credited intervals and prove all six expected merged sets and counts above, including plan [1,3655] and Rev 7 line 2431. Any gap, out-of-scope line, overlap ambiguity, count mismatch, unretired failed interval, or one-line omission causes an immediate zero-credit stop: no analysis, no allegation packet, no Edit, exact `TERMINATED`.
+
+After analysis and the entire candidate packet are drafted in process-local memory, rerun the same merged-union proof from the retained primary ledger before filing. Reconcile its failure/retry/compaction disclosure against the ledger. Any mismatch requires no Edit and exact `TERMINATED`. Post-freeze citation Reads are separate and never cure a primary gap.
+
+### Sole lens and frozen-candidate coordinate closure
+
+Apply only `obscure-section self-containment`. Test whether low-connectivity, easily overlooked, or locally specialized plan sections, contract rows, registries, gates, and interfaces state enough of their own terms, inputs, outputs, prerequisites, lifecycle, refusal/failure behavior, evidence linkage, owner boundary, and preservation obligations to be implemented and checked from explicit local definitions and resolvable references.
+
+Report only local evidence that an obscure element depends on unstated context, an unresolved reference, an undefined local term, or a missing interface needed to interpret it. Do not broaden into general feature coverage, dependency soundness, style review, or the repeated oversimplification lens except where necessary evidence for self-containment. Do not rewrite the artifact.
+
+Draft and freeze the entire candidate packet in process-local memory before any citation recheck. Mechanically extract every explicit file coordinate or range from every field: pushed identity; artifact identity; authority; primary coverage; retries; compaction; both union disclosures; citation method; process/method disclosure; every finding field; recommendation; verdict; no-action statement; and termination field. No category, path, stable-section identifier, or top field is implicitly exempt. Normalize paths and ranges; resolve any cited stable section to returned numbered lines; expand every bound-plan range to individual line numbers; and retain the entire normalized set.
+
+The pushed-identity field may report only commit, roots, and sizes; it must introduce no Round/control line or byte coordinate. Counts, hashes, PIDs, timestamps, tool numbers, and sizes are not file coordinates, but the extractor must classify them explicitly rather than silently omit them. Any actual file coordinate outside the declared authority selections or bound plan is ineligible and requires no write.
+
+After the candidate is frozen, perform a distinct numbered citation-recheck phase. Because the candidate must disclose the declared authority selections and full plan union as coordinates, this phase must at minimum repeat all 34 prescribed windows above as fresh successful Reads labeled separately from primary ingest. Primary Reads do not substitute. Any candidate coordinate not covered by those 34 repeated windows requires an additional eligible bounded Read after freeze.
+
+Maintain a separate citation interval ledger with the same request/result/retry fields. Failed or clipped citation results earn no coverage and must be tiled by explicit smaller retries. Mechanically merge successful post-freeze citation intervals and prove the entire normalized coordinate set is a subset of that union. The disclosed citation union must at minimum reproduce the six declared sets and counts above. Any one-line absence, unretired failure, or set mismatch requires no Edit and exact `TERMINATED`.
+
+Directly compare every quotation and attributed clause in the entire candidate to the returned post-freeze numbered lines. Quoted text must match returned UTF-8 bytes literally, including punctuation and spacing. A non-literal rendering must be labeled `paraphrase` and its attributed proposition must be checked directly against the returned lines. A wrong line, unsupported range, changed coordinate, normalized punctuation, or inaccurate attribution is terminal no-write zero-credit.
+
+The packet must disclose the entire normalized coordinate set, the successful citation-recheck union, subset result, direct quotation/paraphrase comparison result, every primary and citation failure/retry, both primary union results, and compaction state. Any candidate change after freeze restarts candidate freeze, extraction, normalization, all post-freeze citation Reads, union construction, subset proof, attribution comparison, and disclosures from scratch.
+
+### Blind freshness, plan-space, and no-action law
+
+Root supplies no prior finding, packet, owner disposition, convergence text, checkpoint body, state narrative, decision, route result, or unrelated campaign outcome. Do not read any Round line outside this sealed R57 control; Convergence Report; any owner checkpoint or root ledger; another artifact; author context; external source; competitor material; or prohibited processor source/documentation. Do not inspect live owner discussions or another reviewer.
+
+Remain in plan space. Do not edit artifact or canon; create source, scaffolding, Beads, pseudo-Beads, semantic card bodies, task/todo/scratch/temp files, benchmarks, comparisons, campaign measurements, or external actions; contact another owner/reviewer/process; fetch, browse, stage, commit, push, publish, purchase, or send anything. Registry/slot presence and `PENDING-LICENSED-SOURCE` markings may be assessed without supplying missing normative semantics. Do not strengthen or certify an artifact or campaign claim; a no-finding result remains bounded to this one lens and declared evidence. Do not accept, reject, regrade, or disposition an allegation, and do not mutate an owner artifact.
+
+### Reviewer FSM, grades, packet schema, and clocks
+
+Use assignment FSM `INGEST -> REVIEW -> SELF-CHECK -> FILE -> TERMINATE`, with no revision loop or owner consultation. Preserve protocol FSM `SPAWNED -> INGEST-DECLARED-CHAIN -> APPLY-ONE-LENS -> FILE-GRADED-FINDINGS -> TERMINATED`.
+
+Apply protocol grades exactly: `A` for a directly confirmed local violation, `B` for a probable defect with one unresolved premise, and `C` for judgment or optional wording concern. Never adjust a grade to move a curve. An owner-revision recommendation in the verdict is required protocol framing but remains a recommendation, not acceptance, rejection, regrading, repair, or owner disposition.
+
+The sole packet heading is:
+
+```text
+## R57 — plans/CYCLE_1_DELTA_PLAN.md — obscure-section self-containment
+```
+
+Include exactly one of each top field: `reviewer process`; `model identity`; `started / filed`; `pushed identity`; `artifact hash`; `authority chain read`; `coverage, retries, compaction, and primary union gates`; `citation integrity`; `reviewer FSM`; `counts`; `marginal-only`; and `no-action statement`. The `started / filed` field must say `start clock=<Tool-4 ISO value>; pre-write filing clock=<later exact ISO value labeled PRE-WRITE>; actual Edit/result/terminal chronology pending root/G7 transcript qualification`. Never label a pre-write sample as filed time.
+
+The authority/coverage field records all declared selections and both primary union results. The citation field records the entire normalized coordinate set, fresh citation-recheck union, subset proof, quote/paraphrase comparison, citation retries, and restart state. The pushed-identity field uses roots and sizes without file coordinates. The no-action field states the bounded reads and checks performed, any qualifying startup narration at zero credit, sole lens, and every prohibited action avoided.
+
+State `A=<n>; B=<n>; C=<n>` and `marginal-only: YES | NO`; `YES` is legal only when A=0 and B=0. Each monotone `R57-A01`, `R57-B01`, or `R57-C01` allegation has exactly one `evidence`, `requirement`, `consequence`, `repair boundary`, and `loss guard`, with stable section anchor and verified current plan line. Omit empty grade subsections; never omit counts; include no finding from another lens.
+
+End with one `### Round verdict` that states whether owner revision is advisable or required, what remains uncertain, and why this lens is or is not marginal-only, without deciding any allegation or owner disposition. The packet last line before the preserved anchor is exactly `- termination state: TERMINATED`.
+
+### Pre-write clock, sole structured Edit, preserved anchor, and exact terminal response
+
+After the second primary union gate and the whole frozen-candidate citation closure pass, reconfirm artifact hash and the root-supplied commit/Round/control roots using only the content-silent output whitelist. Reconfirm that the sealed slice ends at the Round byte size and the anchor count is one. Then internally settle the exact assistant response required after Edit.
+
+Invoke one final read-only Bash call whose command is exactly `date --iso-8601=seconds`; record it as the `PRE-WRITE` filing clock. No tool or assistant text occurs between that result and the Edit.
+
+The only repository write is exactly one generic structured `Edit` against `gauntlet/ROUND_LOG.md`. Its `old_string` is the exact final literal anchor. Its `new_string` is the fully checked packet, one blank separator line, then the unchanged final literal anchor, so the anchor remains the physical EOF line. Preserve every preceding byte. Do not use a Write tool, shell redirection, pipe-to-write, `tee`, scratch storage, another write method, another path, or a retry. If any gate failed, do not Edit.
+
+Before invoking Edit, settle in process-local reasoning that after a successful Edit result the next and final assistant event will be one plain-text block whose entire content is exactly `TERMINATED`. It has no filing-success sentence, narration, blank prefix, blank suffix, backticks, punctuation, or tool call. Do not narrate the successful write. If the interface cannot guarantee that response, do not Edit and end with the same exact token. If Edit fails, do not retry or call another tool; the next and final response is still exactly that token.
+
+Construction remains `BOUND-UNSENT`. G7 sent no task, bootstrap, prefix, authority byte, artifact byte, context, finding, prompt, control byte, or anchor. Root alone may validate and commit/push the three G7 documents, reproduce all identities and sealed ranges, separately ledger the construction receipt, reattest the untouched R57 pane/process/TUI, instantiate only the short bootstrap grammar, and dispatch in a later authorized turn. The control body remains on disk and is reached only through mandatory Tool 3.
+
+**R57 FINAL LITERAL ANCHOR — KEEP AS PHYSICAL EOF; INSERT ANY QUALIFIED PACKET IMMEDIATELY BEFORE THIS LINE.**

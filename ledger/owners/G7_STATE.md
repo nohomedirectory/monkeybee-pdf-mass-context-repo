@@ -5164,3 +5164,191 @@ The mandatory post-REVISE gate passes. The FSM may advance to `DONE/HANDOFF`; th
 The exact terminal G7_STATE identity is sampled after this self-containing marker for the handoff report.
 
 **G7 R56 qualification FSM state: `DONE/HANDOFF` (immutable zero credit; no route or replacement; idle for root-only actions).**
+
+## R57 construction follow-up — INGEST (`2026-07-15T18:21:21+02:00`)
+
+- Crash-safe transition persisted before R57 evidence work: prior `DONE/HANDOFF -> INGEST`.
+- Corrected fixed control passes from disk: branch `main`; HEAD == `origin/main` == `595d4b895a5e1e247a7d29581f6a3627531e701b`. This is the sole authorized base for this follow-up.
+- The superseded prompt value `595d4b83f08272a27738e23fa07a304c72a29bfd` is a nonexistent mistyped identifier. It receives zero control credit and is not a valid or authorized commit identity.
+- No mutation occurred before the correction: Round Log remains 6,480 lines / 1,147,784 bytes / `a5c6d1589679ccdde7dda4b57644e2fd77cc210490cb5530c7a019d45f2a5d89`; Convergence Report remains 1,032 / 151,377 / `83b15870b42d0be2f29f4c1251732b132c49e3d5816de16bd24a83e0699d1c80`; and the G7_STATE pre-transition identity is 5,166 / 1,091,687 / `ca616f49697aec007a1c780de5a275b4cb2002df6c994ac61eb529f7cb0e7b11`.
+- The bound plan reproduces as 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`. The three owned paths have no fixed-base delta; index and untracked sets are empty.
+- Orientation was read through EOF before entry: `AGENTS.md` 81 / 8,055 / `5591f13d75685e52158a9aecfd7f90a2ecf42275d18e3ca5f7fc1550dadad939`; `OVERNIGHT_GOAL.md` 107 / 14,923 / `84d6bfb04d5405933037e2e2718e4b46e556689728c17c045c8d9f2dd0bc8937`; and the gauntlet skill 743 / 82,420 / `bdc81cddf2bfe0554bbad38d5bf66f18c1c3f24c33527868afcd5ac1f8137a32`.
+- Writable scope is fixed to `gauntlet/ROUND_LOG.md`, `gauntlet/CONVERGENCE_REPORT.md`, and `ledger/owners/G7_STATE.md`, with `apply_patch` as the only mutation surface. No reviewer/process contact, dispatch, stage, commit, push, fetch, browse, file creation/deletion, or other-path mutation occurred.
+- Partial output at entry: no R57 allocation, control, anchor, route, reviewer evidence, or convergence credit exists. The supplied R57 reservation facts remain unprobed and untouched; R10 remains outside this turn's mutation boundary.
+
+**G7 R57 construction FSM state: `INGEST` (fixed control valid; evidence ingest authorized).**
+
+### INGEST evidence receipt (`2026-07-15T18:22:57+02:00`)
+
+- The reviewer protocol was read through EOF and reproduces as 90 lines / 4,942 bytes / `e525a0e35fb703152d44d63d5f6874d48907d2b87e528e3f9f99dbd93baa33c3`.
+- Exact-ID allocation parsing returns 56 unique rows, no duplicate, 22 Sol / 34 Opus; 25 failed at 6/19; 31 active planned at 16/15; 18 valid filed at 9/9 with A=118/B=64/C=22; 13 active-unfiled at 7/6; and no bound-unsent row. This matches the required R57 preimage.
+- R56 remains immutable zero-credit and unrouteable. Its marker-reconstructed control is 139 lines / 21,450 bytes / `9dbcf74c2e970059ec8cdc99748571b36617fdde58cafe2686c944ca78f5b888`; its physical packet is 36 / 10,457 / `304d583dccf3fe5357666da9ab8fcf352499bb43f86c91170fcb24de001da038`. The R56 anchor occurs once and is the current physical EOF line.
+- The current whole Round is the protected R57 construction prefix: 6,480 / 1,147,784 / `a5c6d1589679ccdde7dda4b57644e2fd77cc210490cb5530c7a019d45f2a5d89`. Convergence remains 1,032 / 151,377 / `83b15870b42d0be2f29f4c1251732b132c49e3d5816de16bd24a83e0699d1c80` and `NOT ESTABLISHED`.
+- R10's raw allocation row reproduces as 1 line / 114 bytes / `5470c4970ce3fa869c48fc1d6320e89220d3d31a7b4acc360c5db32dd08719d0`, status `PRECOMMITTED`. It is not an R57 mutation target.
+- The R56 control supplies the retained structural baseline: four ordered startup tools; 34 sub-capacity primary windows; retry ledger; pre-analysis and pre-filing primary unions; one lens; PID-scoped admission; blind plan-space boundaries; one anchored generic Edit; preserved EOF anchor; no later tool; and exact terminal text.
+- R57 must strengthen that baseline by applying coordinate extraction to every packet field, running a distinct post-freeze reread union over every normalized coordinate, matching quoted UTF-8 bytes literally or labeling a checked paraphrase, and restricting Round/control identity output to hashes, sizes, byte counts, and an anchor count. Primary ingest cannot substitute for the post-freeze citation union.
+- Supplied reservation evidence is held as a construction premise, not newly observed process evidence: session `monkeybee-pdf-mass-context-repo--r57`, pane `%154` index 1, shell 3117206, child 3117453, live pane, exact lowercase cwd, exact `claude-opus-4-8` / `xhigh`, matching TUI, default placeholder, and no sent context. This turn has not inspected or contacted R57.
+- No R57 row, control, placeholder grammar, anchor, G3 route, reviewer packet, or evidence credit exists yet. Round and Convergence remain byte-identical to the corrected fixed base; only this owner checkpoint has changed.
+
+INGEST is sealed. Allocation reasoning and any owner-document mutation remain sequenced behind a persisted `INGEST -> DRAFT` transition.
+
+**G7 R57 construction FSM state remains: `INGEST` (evidence receipt sealed; DRAFT not entered).**
+
+## R57 construction follow-up — DRAFT (`2026-07-15T18:23:14+02:00`)
+
+- Crash-safe transition persisted before allocation reasoning or artifact mutation: `INGEST -> DRAFT`.
+- Transition preimages are Round Log 6,480 / 1,147,784 / `a5c6d1589679ccdde7dda4b57644e2fd77cc210490cb5530c7a019d45f2a5d89`; Convergence Report 1,032 / 151,377 / `83b15870b42d0be2f29f4c1251732b132c49e3d5816de16bd24a83e0699d1c80`; and G7_STATE 5,195 / 1,096,702 / `4add3dc21c938723efd57d26e155fb35715d4d748183224a6fc494b6611f79d6`.
+- DRAFT is authorized to append one R57 allocation row, minimum owner/convergence construction records, and one sealed R57 control at Round EOF; it may advance only R57 from `ALLOCATED-UNSENT` to `BOUND-UNSENT`.
+- Historical R56 bytes, R10, reviewer packets/findings/grades, prior controls/anchors/closures, canon, plan, root ledger, and every other path remain immutable in this turn. No reviewer evidence, owner route, cross-model point, or convergence point may attach to R57 before qualification.
+- Process coordinates remain supplied fixed premises only. DRAFT does not authorize probing, contacting, typing into, dispatching, or otherwise touching R57.
+
+**G7 R57 construction FSM state: `DRAFT` (allocation and sealed-control construction authorized).**
+
+### DRAFT retention and construction decision (`2026-07-15T18:24:04+02:00`)
+
+- Every quarantined R56 mutation is historical evidence and remains byte-preserved. R56 is not reopened, repaired, routed, or reused.
+- R57 is retainable only as one new row for the original R09 slot, same submitted plan, sole obscure-section self-containment lens, exact `claude-opus-4-8` / `xhigh`, and eventual G3 premise-first route only after a later chain-qualified filing. Construction itself admits no route or evidence.
+- The crash-safe construction is split into two durable DRAFT checkpoints: first append R57 as `ALLOCATED-UNSENT`; then, after allocation arithmetic and protected-prefix replay, append the sealed control and advance only that row to `BOUND-UNSENT`.
+- The control will retain R56's 34 primary windows and add a separate post-freeze citation phase that repeats, at minimum, those same 34 windows because the packet must disclose their coordinates. Every other eligible coordinate extracted from any candidate field must also be re-read after freeze. A candidate change restarts extraction, rereads, union, subset, and attribution checks.
+- Round/control identity probes will be content-silent: hashes, line/byte sizes, exact-slice hash, and literal-anchor count only. No EOF-content display, trailing-byte representation, earlier Round semantics, or broad process listing is admissible.
+- Direct quotations must match returned UTF-8 bytes exactly. A non-literal rendering is labeled a paraphrase and its attributed proposition is compared directly to returned numbered lines.
+- The startup narration boundary remains narrow: action-only text naming the immediately required next tool may be disclosed at zero credit; any interpretation, summary, question, sequence change, or evidentiary statement before Tool 4 fails closed.
+- No correction to existing Round or Convergence content is warranted. All DRAFT mutations are append-only except the later operational status change on the new R57 row.
+
+**G7 R57 construction FSM state remains: `DRAFT` (allocation-only checkpoint next).**
+
+### DRAFT allocation-only checkpoint (`2026-07-15T18:24:56+02:00`)
+
+- R57 was appended once as `ALLOCATED-UNSENT`; no existing row or historical Round byte changed. Round is now 6,500 lines / 1,150,160 bytes / `b680b56a252c46fed0c6245de146a4eefc9dd3ab649a9b5ee0f81a07902bc32c`.
+- Convergence received the matching allocation-only checkpoint and is now 1,040 / 152,429 / `55c549f64b01caab2f69f5203075d76f7b50f8744fe5554beb2c8b011de8b23e`. It remains `NOT ESTABLISHED`.
+- Exact-ID parsing returns 57 unique rows, no duplicate, 22 Sol / 35 Opus; 25 failed at 6/19; 32 active planned at 16/16; 18 valid filed at 9/9 and A=118/B=64/C=22; 14 active-unfiled at 7/7; no bound-unsent row.
+- The original 1,147,784-byte Round prefix retains `a5c6d1589679ccdde7dda4b57644e2fd77cc210490cb5530c7a019d45f2a5d89`; the original 151,377-byte Convergence prefix retains `83b15870b42d0be2f29f4c1251732b132c49e3d5816de16bd24a83e0699d1c80`. R10 remains `5470c4970ce3fa869c48fc1d6320e89220d3d31a7b4acc360c5db32dd08719d0`.
+- Fixed-path whitespace passes; index and untracked sets remain empty. G7_STATE pre-receipt was 5,218 / 1,100,056 / `ae8441b8a48281d3a3d3a58874409e0558c9c84daf594e744819600250abfb3b`.
+- No control, placeholder grammar, R57 anchor, live bootstrap, process input, dispatch, route, finding, or evidence credit exists at this checkpoint.
+
+The allocation-only partial is durable. Sealed-control construction may now proceed in DRAFT without process contact.
+
+**G7 R57 construction FSM state remains: `DRAFT` (`ALLOCATED-UNSENT`; sealed control next).**
+
+### DRAFT sealed-control checkpoint (`2026-07-15T18:28:38+02:00`)
+
+- Only the new R57 operational row advanced from `ALLOCATED-UNSENT` to `BOUND-UNSENT`; matching Round/Convergence bind prose and one R57 control were appended. No historical byte was edited.
+- Round is 6,656 lines / 1,174,248 bytes / `7bf8deb3fc105f49e5850f755afd8839e57064186b4b29fad9fe214d4b358bb4`. Convergence is 1,050 / 153,973 / `19dea53102e957b2958e46cca985e5bbbe859cd3b8caabe4b9f2bbe005d4c843`. G7_STATE pre-receipt is 5,231 / 1,101,605 / `c332335159b6448fb9ab4949d5397458f33df2d97cec81a64c1bed26e30e1bf1`.
+- R57 control is lines 6,512-6,656, bytes `[1151887,1174248)`, 145 lines / 22,361 bytes / `070a9a2e007a9be0ff93ff7425d1d98976da96a30c9b6c06f0737f049ec7df0e`; separator-inclusive lines 6,511-6,656, bytes `[1151886,1174248)`, 146 / 22,362 / `88f1b98a348dffc317b9a955ff492863a4db5ffa298e73d3d341ea3611631560`.
+- Placeholder grammar content is lines 6,527-6,547, bytes `[1153262,1155714)`, 21 / 2,452 / `5cbe796d08238e3bfff6acc7a1fb3fe56dd6764e5bec54c9800655caa89da8c3`. It has 12 identity field lines, exactly one empty separator, four tool lines in order 1/2/3/4, the narrow narration boundary, fail-closed instruction, and post-Tool-4 instruction. It is not instantiated or sent.
+- The R57 heading and literal anchor each occur once; the anchor is the physical EOF line and the file ends with LF.
+- Fresh map parsing returns 34 records, no malformed offset/count relation, maximum limit 350, exactly one interval containing Rev 7 line 2431, and the expected six unions: Goal 44; Charter 144; Work Order 39; Reasoning 46; Rev 7 4,585; bound plan 3,655.
+- Control replay finds one explicit all-field coordinate-extraction law, one minimum second-34-window post-freeze law, one primary-non-substitution law, one content-silent identity-output law, and one exact standalone-terminal law. Candidate changes restart the post-freeze closure; literal UTF-8 quotations and labeled paraphrases have distinct checks.
+- Exact-ID allocation parsing returns 57 unique rows at 22 Sol / 35 Opus; 25 failed at 6/19; 32 active planned at 16/16; 18 valid filed at 9/9 and A=118/B=64/C=22; 14 active-unfiled at 7/7; R57 alone bound-unsent.
+- The original Round and Convergence prefixes retain their fixed roots, and R10 remains 1 / 114 / `5470c4970ce3fa869c48fc1d6320e89220d3d31a7b4acc360c5db32dd08719d0`.
+- Fixed-path whitespace, added owner/control claim vocabulary, and source/location guards pass; index and untracked sets are empty. No process was inspected or contacted and no bootstrap/task byte was instantiated or sent.
+
+DRAFT construction is sealed. No DRAFT correction is indicated. Fresh dependent checks remain sequenced behind a persisted `DRAFT -> SELF-CHECK` transition.
+
+**G7 R57 construction FSM state remains: `DRAFT` (sealed partial ready for SELF-CHECK).**
+
+## R57 construction follow-up — SELF-CHECK (`2026-07-15T18:29:06+02:00`)
+
+- Crash-safe transition persisted before any self-check diagnostic: `DRAFT -> SELF-CHECK`.
+- Transition preimages are Round Log 6,656 / 1,174,248 / `7bf8deb3fc105f49e5850f755afd8839e57064186b4b29fad9fe214d4b358bb4`; Convergence Report 1,050 / 153,973 / `19dea53102e957b2958e46cca985e5bbbe859cd3b8caabe4b9f2bbe005d4c843`; and G7_STATE 5,248 / 1,104,445 / `cf776f5efebfc931096285b50bec97b0158eb6710590cf49469ec3958a327ca1`.
+- SELF-CHECK will independently replay fixed control, exact three-path scope, protected history, R10, allocation/family arithmetic, R57 control/grammar/map/citation/startup/process/write/terminal laws, encoding/format/whitespace, claim/source/card-body/no-action guards, and the supplied untouched-reservation mapping.
+- A failing diagnostic receives no gate credit and will be persisted before any corrected rerun or content repair. No correction is authorized while this transition is the latest receipt.
+
+**G7 R57 construction FSM state: `SELF-CHECK` (fresh gate in progress; no result yet).**
+
+### SELF-CHECK diagnostic failure receipt (`2026-07-15T18:30:42+02:00`)
+
+- The first format/scope diagnostic batch aborted at its dirty-status assignment because zsh reserves the variable name `status`; the shell reported `read-only variable: status`.
+- The failed batch receives zero SELF-CHECK credit, including outputs printed before the abort. It found no content defect and changed no repository byte.
+- The corrected batch will use a non-reserved variable and rerun UTF-8, terminal LF, CR, conflict-marker, whitespace, added-prose, blind-history, dirty-path, index, untracked, and diff-stat checks from disk.
+- G7_STATE pre-receipt is 5,257 / 1,105,541 / `8ea728acccda262a48e7b67a49b073fefb71a2fb5618551376dbc1e0af8270c3`; Round and Convergence remain at their sealed DRAFT identities.
+
+**G7 R57 construction FSM state remains: `SELF-CHECK` (failed diagnostic logged; corrected full batch required).**
+
+### SELF-CHECK fresh result (`2026-07-15T18:31:54+02:00`)
+
+- The corrected format/scope batch reran every invalidated subcheck from disk and passes. The earlier reserved-variable batch remains zero credit.
+- Fixed control passes: branch `main`; HEAD == `origin/main` == authorized base `595d4b895a5e1e247a7d29581f6a3627531e701b`; ancestry holds; exactly the three owned paths differ; index and untracked sets are empty.
+- Fixed prefixes reproduce exactly: Round first 1,147,784 bytes / `a5c6d1589679ccdde7dda4b57644e2fd77cc210490cb5530c7a019d45f2a5d89`; Convergence first 151,377 / `83b15870b42d0be2f29f4c1251732b132c49e3d5816de16bd24a83e0699d1c80`; G7_STATE first 1,091,687 / `ca616f49697aec007a1c780de5a275b4cb2002df6c994ac61eb529f7cb0e7b11`.
+- Protected R56 control reconstructs to `9dbcf74c2e970059ec8cdc99748571b36617fdde58cafe2686c944ca78f5b888`; its packet remains `304d583dccf3fe5357666da9ab8fcf352499bb43f86c91170fcb24de001da038`; its historical anchor occurs once. R10 remains `5470c4970ce3fa869c48fc1d6320e89220d3d31a7b4acc360c5db32dd08719d0` and `PRECOMMITTED`.
+- R57 control and separator roots reproduce as `070a9a2e007a9be0ff93ff7425d1d98976da96a30c9b6c06f0737f049ec7df0e` and `88f1b98a348dffc317b9a955ff492863a4db5ffa298e73d3d341ea3611631560`; grammar root is `5cbe796d08238e3bfff6acc7a1fb3fe56dd6764e5bec54c9800655caa89da8c3`. Heading and anchor are unique; R57 anchor is physical EOF.
+- Independent allocation parsing returns 57 unique rows, no duplicate, 22 Sol / 35 Opus; 25 failed at 6/19; 32 active at 16/16; 18 filed at 9/9 with A=118/B=64/C=22; 14 active-unfiled at 7/7; R57 alone bound-unsent.
+- Independent primary-map parsing returns 34 windows, no malformed relation, maximum 350, one line-2431 hit, and the six expected unions/counts. Grammar parsing returns one empty separator and Tool order 1/2/3/4; every required placeholder field occurs once and no live identity value appears in the grammar.
+- Full control reread confirms exact startup chronology; narrow narration; compaction replay; PID-only admission; content-silent fixed identities; two primary union gates; all-field coordinate extraction; distinct minimum 34-window post-freeze rereads; citation subset and literal UTF-8 attribution laws; sole lens; blind plan-space boundaries; one generic anchored Edit; no later tool; and exact standalone `TERMINATED`.
+- UTF-8, terminal LF, CR, conflict-marker, fixed-path whitespace, added-prose claim/source/location/card-body classification, and blind-history guards pass. Added prose supplies only operational allocation/control boundaries and no artifact semantics, measurement, comparison result, external action, or prior reviewer outcome.
+- The supplied R57 session/pane/shell/child/cwd/model/effort/TUI/placeholder mapping is reproduced in the control and absent from the placeholder grammar. Per the human boundary, G7 performed no process probe or contact; root must reattest later.
+- Gate identities before this receipt are Round 6,656 / 1,174,248 / `7bf8deb3fc105f49e5850f755afd8839e57064186b4b29fad9fe214d4b358bb4`; Convergence 1,050 / 153,973 / `19dea53102e957b2958e46cca985e5bbbe859cd3b8caabe4b9f2bbe005d4c843`; G7_STATE 5,266 / 1,106,450 / `5d43f0f3f3f45f1f87aae001f21b3461a4afa1c8ef7124f4620800822c6596fe`.
+
+SELF-CHECK passes. No content correction is authorized before independent submission review. `SUBMIT-FOR-REVIEW` has not yet been entered.
+
+**G7 R57 construction FSM state remains: `SELF-CHECK` (fresh gate passed; ready for submission review).**
+
+## R57 construction follow-up — SUBMIT-FOR-REVIEW (`2026-07-15T18:32:19+02:00`)
+
+- Crash-safe transition persisted before submission-review inspection: `SELF-CHECK -> SUBMIT-FOR-REVIEW`.
+- Transition preimages are Round Log 6,656 / 1,174,248 / `7bf8deb3fc105f49e5850f755afd8839e57064186b4b29fad9fe214d4b358bb4`; Convergence Report 1,050 / 153,973 / `19dea53102e957b2958e46cca985e5bbbe859cd3b8caabe4b9f2bbe005d4c843`; and G7_STATE 5,284 / 1,109,954 / `32feadd401c7eb8826f874ef803bf769de4f3354029281e62218277f2d911715`.
+- The independent owner-local review will read the full bounded three-path diff from disk and adversarially test coordinate closure, literal/paraphrase bytes, fixed-identity output whitelist, startup chronology, process scope, blind history, sole lens, write/anchor law, exact terminal response, accounting, and handoff boundary.
+- This state authorizes inspection only. Any defect must be described before correction and correction remains sequenced behind the mandatory persisted `SUBMIT-FOR-REVIEW -> REVISE` transition. No external reviewer, owner, or process will be contacted.
+
+**G7 R57 construction FSM state: `SUBMIT-FOR-REVIEW` (independent bounded review in progress).**
+
+### SUBMIT-FOR-REVIEW independent result (`2026-07-15T18:33:36+02:00`)
+
+- The fixed-base three-path diff is 345 lines / 50,684 bytes at three lines of context. It was read from line 1 through line 345 in three non-overlapping bounded chunks; no diff line was omitted.
+- Chronology is append-ordered: INGEST, DRAFT, SELF-CHECK, and SUBMIT-FOR-REVIEW headings occur in increasing line order. The logged SELF-CHECK diagnostic failure precedes its corrected rerun.
+- Allocation and convergence prose are consistent: one new R57 row, no new planned slot, no evidence point, R57 sole bound-unsent, R10 unchanged, and no G3 route before a later chain-qualified filing.
+- Startup adversarial test passes: four grammar tool lines in order 1/2/3/4; no live value in the placeholder grammar; exact full AGENTS/protocol/control-only/start-clock sequence; fail-closed interruption and narrow action-only narration boundary.
+- Coordinate adversarial test passes: every candidate field is in scope, no category/path/top-field exemption exists, the separate post-freeze phase repeats at least all 34 windows, primary results cannot substitute, every extra eligible coordinate must be read, and any candidate change restarts the closure.
+- Attribution adversarial test passes: literal text is byte-sensitive UTF-8; paraphrase is explicitly labeled and directly checked; normalized punctuation or changed coordinates fail closed.
+- Identity/process adversarial test passes: output whitelist is limited to roots/sizes/byte counts/anchor count; anchor/trailing/file content probes are barred; child 3117453 and optional parent 3117206 are the only process targets; broad listings and other-process inspection are barred.
+- Lens/write/terminal adversarial test passes: one lens, one generic anchored Round Edit, no text/tool between final clock and Edit, no later tool, and the entire final assistant event exactly `TERMINATED` without narration.
+- Control blind-history, fixed-path whitespace, index, and untracked guards pass. No prior-round ID or outcome is exposed inside the sealed R57 control.
+- Review preimage identities are Round 6,656 / 1,174,248 / `7bf8deb3fc105f49e5850f755afd8839e57064186b4b29fad9fe214d4b358bb4`; Convergence 1,050 / 153,973 / `19dea53102e957b2958e46cca985e5bbbe859cd3b8caabe4b9f2bbe005d4c843`; G7_STATE 5,293 / 1,111,156 / `9a287b3888d0a65c3ba779687b776c0743e51230816af67544e5ef70c4f3fb83`.
+
+Independent submission review finds no content defect. Per the mandatory construction FSM, a no-content-change hardening pass remains required under a persisted REVISE state before terminal credit.
+
+**G7 R57 construction FSM state remains: `SUBMIT-FOR-REVIEW` (review passed; mandatory REVISE next).**
+
+## R57 construction follow-up — REVISE (`2026-07-15T18:33:54+02:00`)
+
+- Mandatory crash-safe transition persisted before hardening work: `SUBMIT-FOR-REVIEW -> REVISE`.
+- Transition preimages are Round Log 6,656 / 1,174,248 / `7bf8deb3fc105f49e5850f755afd8839e57064186b4b29fad9fe214d4b358bb4`; Convergence Report 1,050 / 153,973 / `19dea53102e957b2958e46cca985e5bbbe859cd3b8caabe4b9f2bbe005d4c843`; and G7_STATE 5,310 / 1,113,861 / `05bb9c651db5b2bcb3d3962e682e84b0855bc56e109aea73e8249874340d7a7b`.
+- Submission review found no content defect. REVISE therefore authorizes a no-content-change hardening review only: Round and Convergence must remain byte-identical while every terminal dependency is rerun fresh from disk.
+- The fresh gate must reprove fixed control/scope, protected prefixes and R56 slices, R10, R57 seals/anchor/grammar/map/laws, allocation, format, added-prose boundaries, convergence, and no-contact state. A newly found defect must be persisted before any correction.
+
+**G7 R57 construction FSM state: `REVISE` (mandatory no-content-change hardening gate in progress).**
+
+### REVISE no-content-change hardening result (`2026-07-15T18:35:00+02:00`)
+
+- Round and Convergence remained byte-identical throughout REVISE. No content correction was made or needed.
+- Fresh fixed control passes: branch/main refs and authorized ancestry; exact three-path diff; empty index and untracked sets.
+- Fresh protected replay passes: fixed Round/Convergence/State prefixes; marker-reconstructed R56 control; immutable R56 packet; unchanged R10 row and plan identity.
+- R57 control again reproduces at lines 6,512-6,656 / bytes `[1151887,1174248)` / 145 / 22,361 / `070a9a2e007a9be0ff93ff7425d1d98976da96a30c9b6c06f0737f049ec7df0e`; separator root `88f1b98a348dffc317b9a955ff492863a4db5ffa298e73d3d341ea3611631560`; grammar root `5cbe796d08238e3bfff6acc7a1fb3fe56dd6764e5bec54c9800655caa89da8c3`. Heading/anchor are unique and the anchor is physical EOF.
+- Fresh allocation parsing returns 57 unique rows at 22 Sol / 35 Opus; 25 failed at 6/19; 32 active at 16/16; 18 filed at 9/9 with A=118/B=64/C=22; 14 active-unfiled at 7/7; R57 alone bound-unsent.
+- Fresh map/grammar replay returns 34 well-formed windows, maximum 350, one line-2431 inclusion, expected six unions, one grammar separator, and Tool order 1/2/3/4. All-field extraction, minimum second-34-window citation pass, primary non-substitution, literal UTF-8 attribution, output whitelist, exact PID, sole lens, sole Edit, and exact terminal laws each remain present.
+- UTF-8, terminal LF, CR, conflict-marker, whitespace, owner-prose claim/source/location/card-body classification, blind-history, and exact dirty-scope checks pass. Current pre-receipt identities are Round 6,656 / 1,174,248 / `7bf8deb3fc105f49e5850f755afd8839e57064186b4b29fad9fe214d4b358bb4`; Convergence 1,050 / 153,973 / `19dea53102e957b2958e46cca985e5bbbe859cd3b8caabe4b9f2bbe005d4c843`; G7_STATE 5,319 / 1,114,956 / `d41c0d8156c8a61ac60fa6d92bc4f64cd917386ce53f7b3e60179633d07f565b`.
+- The control records the supplied R57 identity exactly; the grammar retains placeholders only. G7 did not inspect, contact, type into, or dispatch R57. Root must independently reattest the reservation before any later activation.
+
+The mandatory REVISE gate passes. The FSM may advance to `DONE/HANDOFF`; that transition has not yet been written.
+
+**G7 R57 construction FSM state remains: `REVISE` (fresh terminal gate passed; ready for DONE/HANDOFF).**
+
+## R57 construction follow-up — DONE/HANDOFF (`2026-07-15T18:35:23+02:00`)
+
+- Crash-safe terminal transition persisted after the mandatory hardening gate: `REVISE -> DONE/HANDOFF`.
+- Transition preimages are Round Log 6,656 / 1,174,248 / `7bf8deb3fc105f49e5850f755afd8839e57064186b4b29fad9fe214d4b358bb4`; Convergence Report 1,050 / 153,973 / `19dea53102e957b2958e46cca985e5bbbe859cd3b8caabe4b9f2bbe005d4c843`; and G7_STATE 5,334 / 1,117,340 / `73dadf5f7a091c4fe331c4c8175fea9f6377086c7674a464c75d0b7e1ed4a579`.
+- R57 is the sole `BOUND-UNSENT` row for the original R09 planned slot: submitted plan `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`; sole obscure-section self-containment lens; exact `claude-opus-4-8` / `xhigh`; eventual G3 premise-first route only after later chain qualification. R57 currently has no finding, grade, route, cross-model point, or convergence credit.
+- Terminal allocation is 57 unique rows, 22 Sol / 35 Opus; 25 failed at 6/19; 32 active planned at 16/16; 18 valid filed at 9/9 with A=118/B=64/C=22; 14 active-unfiled at 7/7; R57 alone bound-unsent. Convergence remains `NOT ESTABLISHED`.
+- R57 control is lines 6,512-6,656, bytes `[1151887,1174248)`, 145 / 22,361 / `070a9a2e007a9be0ff93ff7425d1d98976da96a30c9b6c06f0737f049ec7df0e`; separator-inclusive lines 6,511-6,656, bytes `[1151886,1174248)`, 146 / 22,362 / `88f1b98a348dffc317b9a955ff492863a4db5ffa298e73d3d341ea3611631560`.
+- Placeholder grammar is lines 6,527-6,547, bytes `[1153262,1155714)`, 21 / 2,452 / `5cbe796d08238e3bfff6acc7a1fb3fe56dd6764e5bec54c9800655caa89da8c3`. The unique R57 literal anchor is the physical Round EOF line; grammar remains placeholders only.
+- Protected fixed prefixes and historical R56/R10 roots reproduce. Exactly `gauntlet/ROUND_LOG.md`, `gauntlet/CONVERGENCE_REPORT.md`, and `ledger/owners/G7_STATE.md` are dirty; index and untracked sets are empty.
+- Supplied reservation mapping retained without owner probe/contact: session `monkeybee-pdf-mass-context-repo--r57`, pane `%154` index 1, shell 3117206, child 3117453, live pane, lowercase cwd `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`, exact Opus command/effort, matching TUI, default placeholder, and no sent context. These are supplied construction facts, not a terminal live reattestation.
+- Root-only later recipe, validation stage: reproduce pushed base and ancestry, exact three-path diff, empty index/untracked sets, terminal file identities, fixed prefixes, R56 control/packet, R10, allocation, R57 control/grammar ranges and roots, unique physical-EOF anchor, and all format/claim/source/no-action guards. Stop on any mismatch.
+- Root-only later recipe, repository stage: commit and push only the three G7 paths. In a separately authorized root-ledger step, record the pushed receipt; do not fold a root-ledger edit into the G7 commit.
+- Root-only later recipe, activation stage: reattest the exact untouched R57 session/pane/index/shell/child/cwd/command/model/effort/TUI/placeholder. If it differs or has task history, do not dispatch and do not substitute a pane.
+- Root then instantiates only the 21-line placeholder grammar with the pushed commit, whole-Round root, exact control root/byte/line ranges, exact process fields, exactly one empty separator, and terminal LF. Add no control body or commentary. Record the detached bootstrap identity under root authority and dispatch only in a later separately authorized turn. Tool 3 reaches the sealed control. Do not bind R10.
+- G7 performed no reviewer/process/owner contact, task dispatch, bootstrap instantiation, stage, commit, push, fetch, browse, other-path mutation, file creation/deletion, measurement, comparison, or external action.
+
+The exact terminal G7_STATE identity is sampled after this self-containing marker for the handoff report.
+
+**G7 R57 construction FSM state: `DONE/HANDOFF` (R57 sealed and unsent; idle for root-only actions).**
