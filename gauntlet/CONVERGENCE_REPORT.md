@@ -1110,3 +1110,15 @@ R10 binds the submitted plan identity `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6
 Allocation remains 58 rows at 22 Sol / 36 Opus; 27 failed at 6/21; 31 active at 16/15; 18 valid filed at 9/9; and 13 active-unfiled at 7/6. R10 is the sole `BOUND-UNSENT` row. It adds no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model point, or convergence evidence. Convergence remains **NOT ESTABLISHED**.
 
 No bootstrap was instantiated or sent, and no reviewer, process, PID, pane, owner, session, service, `.ntm`, quarantine, external source, or prohibited source was inspected or contacted.
+
+## R10 transcript-qualified zero-credit closure / R59 `BOUND-UNSENT` replacement — `2026-07-15T22:40:36+02:00`
+
+Stable transcript replay closes R10 only as `NOT-RUN · INCOMPLETE-PRIMARY-UNION · TERMINATED`. Exactly 25 primary Reads succeeded, ending with plan lines 1-700; no twenty-sixth primary Read, dependency analysis, post-draft replay, structured filing, or reviewer packet exists. The transcript does not state why it stopped, so no cause is inferred.
+
+R10 contributes no finding, grade, coverage, marginal result, verdict, route, owner disposition, curve point, cross-model point, or convergence evidence. Its control and historical anchor remain byte-preserved. Its immutable ID is not reused.
+
+R59 is the one-for-one Sol replacement against the same submitted plan identity `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59` and sole `dependency soundness` lens. It is `BOUND-UNSENT` under a sealed bounded-evidence control: 26 fixed Reads, one 142-clause structural extraction, at most 20 targeted contract-block Reads, typed graph tests, and globally bounded citation-only replay. The declared surface makes no whole-plan semantic-coverage claim.
+
+Allocation is 59 rows at 23 Sol / 36 Opus; 28 failed at 7/21; 31 active at 16/15; 18 valid filed at 9/9; and 13 active-unfiled at 7/6. R59 is the sole bound row and supplies no review credit before a later transcript-qualified filing.
+
+The established C1 and Constitution sequences are unchanged. R10 adds no point and R59 has not run, so convergence remains **NOT ESTABLISHED**. Exact reservation/process/model/mode/tier/context facts are `ROOT-REPRODUCTION-REQUIRED`. No bootstrap was instantiated or sent, and no reviewer/process/PID/pane/session/service was inspected or contacted.
