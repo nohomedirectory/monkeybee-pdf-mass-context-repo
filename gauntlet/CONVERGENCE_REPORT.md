@@ -1200,3 +1200,13 @@ G7 directly reproduced one-pane session `monkeybee-pdf-mass-context-repo--r63`, 
 Preserved construction prose remains earlier state; the later bind receipt governs current operation and consumes its one-receipt allowance. No packet exists and no activation was instantiated or delivered. This bind grants no finding, review, grade, coverage, marginal, model-family, accepted-review, route, disposition, curve, cross-model, or convergence credit.
 
 Allocation remains 62 rows at 25 Sol / 37 Opus; failed 32 at 10/22; filed 18 at 9/9; active-unfiled 12 at 6/6. R63 alone is bound-unsent; no row is allocated-unsent or assigned; R62 remains absent. Convergence remains **NOT ESTABLISHED**.
+
+## R63 zero-credit qualification / R64 allocation-only replacement — 2026-07-16
+
+Independent transcript replay closes R63 narrowly as `NOT-RUN · ADMISSION-IDENTITY-REPRODUCTION-FAILURE · TERMINATED`. Mandatory row/control/sentinel, launcher-root, and model-process admission reproductions are absent. Independently, successful plan Reads overlap at line 2,510, exact post-freeze citation replay is absent, and the only write used Claude Code Edit rather than the sealed apply_patch mechanism. The exact final response and no-tool-after-write gates pass but do not cure the earlier failures. No hidden cause is inferred.
+
+The physical R63 packet remains immutable unqualified evidence. Its C allegation and marginal text receive no finding, grade, coverage, marginal, route, disposition, family, curve, cross-model, accepted-review, or convergence credit. Governing R63 counts are A=0/B=0/C=0. Retirement is recorded without causal inference.
+
+R64 is allocated one-for-one for the same submitted plan root and sole security/DoS lens, future exact `claude-opus-4-8` at effort `xhigh`. R64 is process-unbound `ALLOCATED-UNSENT`; no reservation, bind, activation, delivery, packet, or review credit exists. Its sealed control uses exactly one Claude Code Edit, fixed non-overlapping plan reads, deterministic post-freeze citation replay, and exact later launcher/cwd/process gates. Root must push construction before creating any reservation.
+
+Allocation becomes 63 rows at 25 Sol / 38 Opus; failed 33 at 10/23; filed 18 at 9/9; active-unfiled 12 at 6/6. R64 alone is allocated-unsent; no row is assigned or bound-unsent. R62 remains absent. R63/R64 add no established point, so Convergence remains **NOT ESTABLISHED**.
