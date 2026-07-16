@@ -1190,3 +1190,13 @@ R63 is the one-for-one Opus replacement for the same plan root and sole `securit
 The old unique physical-EOF literal was exact `**R61 FINAL LITERAL ANCHOR — KEEP AS PHYSICAL EOF; APPEND ONLY THE ASSIGNED R61 PACKET IMMEDIATELY BEFORE THIS LINE.**`, 121 bytes / `9e28b10723a0736cb2cbdc868b341f7748a37e49c5a5b4d8058307507d61763e`. It is intentionally replaced, with disclosed provenance, by the generic 289-byte fail-closed sentinel rooted `b54cfd6d3ff27c94a5ee819b8e03b175b770211c5cb32775fd02a1c605072c3c`; the new sentinel remains unique physical EOF and grants no predecessor-read authority.
 
 Allocation becomes 62 rows at 25 Sol / 37 Opus; 32 failed at 10/22; 18 filed at 9/9; and 12 active-unfiled at 6/6. R63 alone is allocated-unsent; no row is assigned or bound-unsent; R62 remains absent. R11/R63 add no established point, so Convergence remains **NOT ESTABLISHED**.
+
+## R63 zero-credit post-construction process bind — `2026-07-16`
+
+R63 changes only from `ALLOCATED-UNSENT` to `BOUND-UNSENT` for pushed construction `715d3a451409b41d3ccda9f76fe16fe233fc9952`, submitted plan root `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`, sole lens `security/DoS`, and exact future reviewer `claude-opus-4-8` / effort `xhigh`. The matching Round receipt binds the one fresh post-construction reservation and preserves the sealed control, bind anchor, and generic sentinel byte-for-byte.
+
+G7 directly reproduced one-pane session `monkeybee-pdf-mass-context-repo--r63`, pane `%166` index 1, shell `318264`, sole model child `318516`, exact cwd and command, non-zombie topology, zero pane history, visible model/effort/subscription label, untouched placeholder `Try "how do I log an error?"`, launcher environment, welcome state, and zero visible task/activation at `2026-07-16T02:26:45+02:00`. Root supplies zero campaign delivery. G7 used read-only admission checks and sent no input. Root must freshly reattest every volatile fact immediately before later activation.
+
+Preserved construction prose remains earlier state; the later bind receipt governs current operation and consumes its one-receipt allowance. No packet exists and no activation was instantiated or delivered. This bind grants no finding, review, grade, coverage, marginal, model-family, accepted-review, route, disposition, curve, cross-model, or convergence credit.
+
+Allocation remains 62 rows at 25 Sol / 37 Opus; failed 32 at 10/22; filed 18 at 9/9; active-unfiled 12 at 6/6. R63 alone is bound-unsent; no row is allocated-unsent or assigned; R62 remains absent. Convergence remains **NOT ESTABLISHED**.
