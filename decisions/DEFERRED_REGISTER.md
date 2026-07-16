@@ -1,10 +1,14 @@
 ---
 generated-by: Claude G2 owner (claude-opus-4-8, effort xhigh)
 date: 2026-07-14
+revised-by: Codex G2 owner
+revised-date: 2026-07-16
 inputs:
   - CYCLE_0_WORK_ORDER.md §4 (defer list), §8
   - MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md §3.2, §7 (Bets 25, 16), §15.9, §16.1, §20.12, §24.15, §26.2–26.3, §30.1, §34.5.1, §35
   - MONKEYBEE_CAMPAIGN_CHARTER_v1.md §4 (cycle map), §5
+  - ledger/owners/G6_STATE.md dispositions R19-A04 and R21-A08 (operational disposition evidence only)
+  - CYCLE_0_WORK_ORDER_v1.1.md §4.1 (PROPOSED routing overlay; not governing canon)
 status: PROPOSED
 evidence-status: provisional-pending-substrate
 ratification: PROPOSED — awaiting human ratification
@@ -13,6 +17,12 @@ ratification: PROPOSED — awaiting human ratification
 # Deferred Decision Register
 
 The five decisions the Work Order §4 defers, each with an owner cycle, a trigger, the evidence required, and the harm of resolving early. Plus a **guard** for each — see immediately below, because the guard is the part that makes a deferral safe.
+
+## Post-submission routing boundary
+
+This register is exhaustive only for the five deferrals named by Work Order v1.0 plus the two gaps G2 identified at submission. It is **not** an exhaustive routing of Rev 7 §35.
+
+Admitted Charter-set review dispositions R19-A04 and R21-A08 establish that Work Order v1.0 routes only 12 of Rev 7 §35's 83 rows. G6's `CYCLE_0_WORK_ORDER_v1.1.md` proposes a row-exhaustive 83-row owner-cycle and must-resolve-before overlay while leaving every default provisional. That successor remains `PROPOSED — awaiting human ratification`; it does not supersede v1.0, expand G2's seven-brief mandate, or resolve any row. The MORNING_REPORT ratification/omission disclosure must therefore carry both facts: these five named deferrals remain proposed, and the broader 83-row routing proposal remains unresolved.
 
 ## Why every deferral carries a guard
 
@@ -50,7 +60,7 @@ So each entry below names what may **not** be assumed while the decision is open
 - **Current disposition:** open. "Preview ABI may ship earlier; first compatibility commitment only through the explicit public-compatibility freeze after the advanced capability envelope stabilizes."
 - **Trigger:** the public-compatibility freeze, once the advanced envelope (R4) has stabilized.
 - **Evidence needed:** API/ABI review; a migration rehearsal; evidence that the semantic core has stopped moving.
-- **Why premature resolution is harmful:** freezing an ABI before the semantic core stabilizes locks in a boundary drawn around an immature model. Every subsequent kernel or semantic change then pays compatibility rent forever, and the kernel-touch protocol (§34.9 item 2) makes that cost explicit rather than absorbing it — meaning an early freeze converts ordinary evolution into a version-bump-plus-migration-plus-claim-lapse event, repeatedly.
+- **Why premature resolution is harmful:** freezing an ABI before the semantic core stabilizes locks in a boundary drawn around an immature model. Later kernel or semantic changes then carry compatibility cost, and the kernel-touch protocol (§34.9 item 2) makes that cost explicit rather than absorbing it — meaning an early freeze can convert ordinary evolution into repeated version-bump, migration, and claim-lapse events.
 - **Guard — what may not be assumed before the freeze:** the C5 preview ABI is explicitly **not** a compatibility commitment and must be documented as such at its surface, not only in a plan. No public Rust type may be shaped for FFI convenience ahead of the freeze — §25.4's C ABI is an adapter over the core, and the core does not bend to it. No external consumer may be told the preview is stable.
 
 ---
@@ -68,12 +78,12 @@ So each entry below names what may **not** be assumed while the decision is open
 
 ## DEF-5 — S6 performance-per-fidelity metric
 
-- **Owner cycle:** C7 protocol finalization — and the metric must be **committed before C7 begins**, not defined during it.
+- **Owner cycle:** unresolved branch requiring human disposition. Work Order v1.0 assigns C7 protocol finalization. The proposed v1.1 successor preserves R19-B01 as unpromoted and carries two branches: a distinct internal C2–C6 engineering instrument fixed before C2 tracking plus an S6 field protocol after discovery-report freeze and before measurement; or, if one S6 instrument gates C6, a valid earlier report/commitment or removal of that gate dependency.
 - **Current disposition (Rev 7 §35 decision 9, §34.5.1 row 9):** open; current §26.3 competitive posture retained. "Parity alone is not a supremacy claim."
-- **Trigger:** the C7 measurement-design step, which precedes measurement.
+- **Trigger:** human selection of the branch, then the selected instrument's pre-measurement boundary. No performance data may choose the branch.
 - **Evidence needed:** profile-aligned benchmark evidence; the overhead of determinism and evidence machinery, quantified; proof that the safety contracts are not bypassed to obtain the number.
-- **Why premature resolution is harmful, and this is the sharpest one in the register:** a performance metric defined *after* seeing performance data is a post-hoc metric, and §33.4 forbids precisely that — "the evaluation commitment predates measurement," and "post hoc discoveries are hypotheses until replicated under a new committed protocol." Defining S6 early is equally harmful for the opposite reason: canon warns that "superiority may distort safety/evidence architecture," meaning a metric adopted before the architecture is stable will bend the architecture toward the metric. The decision must land in a narrow window: after the architecture stabilizes, before any measurement.
-- **Guard — what may not be assumed before C7:** no optimization may bypass a safety contract, a budget, or an evidence obligation in pursuit of an unspecified future metric. No performance claim of any kind is published before the metric is committed. Benchmark *tracking* begins at C2 (Charter §4) and is for regression detection — it is **not** a supremacy measurement and must never be reported as one.
+- **Why premature resolution is harmful:** a performance metric defined *after* seeing performance data is post hoc, and §33.4 requires the evaluation commitment to predate measurement. Defining the field-facing S6 protocol before the discovery-report freeze would invert the committed order. The internal-engineering-instrument branch, if human-ratified as distinct from S6, has a different boundary and cannot silently become a public comparative claim.
+- **Guard — what may not be assumed while the branch is unresolved:** no optimization may bypass a safety contract, a budget, or an evidence obligation. No internal regression instrument is treated as S6 or as a comparative result. No field-facing performance claim is published before the discovery report and evaluation protocol required by the selected branch are committed. Work Order v1.0's C7 assignment and proposed v1.1's conditional branch both remain visible until the human resolves them.
 
 ---
 
@@ -99,14 +109,16 @@ These are **not** in the Work Order's five. They are recorded because they fall 
 
 ## Standing law for this register
 
-1. **A deferral is not a silent default.** If C1–C5 work makes a deferred decision moot by assuming an answer, that is a Grade-A finding at the next cycle-close drift audit, not a fait accompli.
+1. **A deferral is not a silent default.** If C1–C5 work makes a deferred decision moot by assuming an answer, that is a candidate defect for the governing review protocol, not a fait accompli. This register does not self-assign a grade.
 2. **Every deferral has an owner cycle and a trigger.** An item with neither is not deferred; it is forgotten.
 3. **Deferred items are re-read at each cycle boundary** as part of the §34.9 archaeology step, and their guards are checked against repository reality.
 4. **Resolving a deferred item early is permitted** — but only through the same ratification path as a resolve-now item: a brief with options, recommendation, rationale, reversibility, dependencies, and blast radius, ratified by a human. Not by an implementer's convenience.
 
 ## Human ratification
 
-- [ ] **Ratify** the five deferrals with their owner cycles, triggers, and guards as stated
+- [ ] **Ratify DEF-1 through DEF-4** with their owner cycles, triggers, and guards
+- [ ] **Resolve DEF-5's branch** — [ ] distinct internal C2 instrument plus post-discovery S6 protocol  ·  [ ] one instrument resolved before any consuming C6 gate  ·  [ ] other
+- [ ] **Ratify or decline the proposed 83-row v1.1 routing overlay** separately; this register does not stand in for that decision
 - [ ] **Route GAP-1** (MSRV) — [ ] accept as deferred to C1-close  ·  [ ] other
 - [ ] **Route GAP-2** (dependency allowlist / crypto crates) — [ ] ratify the policy now and defer crate selection to C1  ·  [ ] add to the resolve-now set  ·  [ ] other
 - [ ] **Amend** (record the variant and rationale)

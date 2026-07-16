@@ -1,10 +1,13 @@
 ---
 generated-by: Claude G2 owner (claude-opus-4-8, effort xhigh)
 date: 2026-07-14
+revised-by: Codex G2 owner
+revised-date: 2026-07-16
 inputs:
   - CYCLE_0_WORK_ORDER.md §4 resolve-now item 7
   - MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md §11.6, §11.7, §11.9, §25.7, §26.9, §26.10, §27 (G5, G6.1), §30.1, §35
   - MONKEYBEE_CAMPAIGN_CHARTER_v1.md §5 (C1 gate: zero reachable panics under the fuzz corpus; C4 release engineering)
+  - ledger/owners/G3_STATE.md accepted R41-A03 disposition (operational disposition evidence only)
 status: PROPOSED
 evidence-status: provisional-pending-substrate
 decision-id: D7
@@ -30,60 +33,61 @@ Rev 7 §35 adds: "Rust toolchain — Pinned stable or dated nightly only if esse
 
 So the shape is given. The decision is the part canon leaves open, and it turns out to have a wrinkle that the one-line row hides.
 
-## The wrinkle: C1's own gate requires nightly
+## The wrinkle: some C1 assurance tools may require nightly
 
 Charter §5/C1 and the Work Order both make **coverage-guided fuzzing operate from hour one**, with a C1 close gate of "**zero reachable panics under the fuzz corpus**." Rev 7's G5 lane requires fuzzing, and G6.1 requires "Miri or equivalent interpreter checks" and "sanitizers."
 
-The standard Rust tooling for those lanes — `cargo-fuzz`/libFuzzer, Miri, and the sanitizers — requires a **nightly** toolchain `[UNVERIFIED as of 2026-07; this has been true historically and should be confirmed against current tooling at C1 rather than assumed]`. Meanwhile, §26.9/§26.10's determinism classes and G6.1's "reproducible-build comparison" require a **pinned, stable, reproducible** build for anything the project ships or makes determinism claims about.
+Whether the selected `cargo-fuzz`/libFuzzer, Miri, and sanitizer lanes require **nightly** is `[UNVERIFIED as of 2026-07]` and must be checked locally at C1 before a nightly is admitted. Separately, project policy can require a pinned stable toolchain for release artifacts and determinism-bearing product receipts. A stable pin is an input to reproducibility; it does not prove a reproducible build by itself.
 
-A single-toolchain answer cannot satisfy both. Reading §35's "pinned stable **or** dated nightly" as an exclusive choice would force either giving up reproducible release builds or giving up the C1 fuzz gate — and both are non-negotiable. The resolution is that these are **two different toolchains for two different package roles**, which §30.1's role taxonomy already gives us the vocabulary to express.
+The proposal therefore separates the release-build toolchain from any assurance-only nightly that current tool evidence proves necessary. This is an output/invocation boundary, not a claim that only `lab-tool` packages are compiled under nightly: Miri, fuzzing, or sanitizer invocations may compile runtime code for analysis, but they do not produce the admitted release binary.
 
 ## Options
 
-### Option A — Pinned stable for everything
+### Option A — Pinned stable, with no nightly admitted
 
-- **Against:** Cannot run the C1 fuzz gate, Miri, or the sanitizers. Fails Charter §5/C1 on its face. Rejected.
+- **For:** Keeps one toolchain identity if all selected assurance lanes support it.
+- **Against:** Insufficient if a required selected lane is locally proven to require nightly. The current brief does not establish that premise, so this option is conditional rather than rejected.
 
 ### Option B — Nightly for everything
 
-- **For:** All tooling available.
-- **Against:** Destroys reproducible builds and semver stability; makes the shipped wedge depend on an unstable compiler; §35 explicitly permits nightly "only if essential." Rejected.
+- **For:** May support assurance tools that require nightly, subject to local verification.
+- **Against:** Expands the release surface exposed to an unstable compiler channel without evidence that release artifacts need it. A pinned nightly can still be a recorded build input; no claim that nightly inherently prevents reproducibility is made. Not proposed for release artifacts.
 
 ### Option C — Track latest stable, unpinned
 
 - **Against:** Build identity varies silently. §11.9's D0, D1, and D2 classes *all* condition on pinned dependencies and "deterministic build identity" — an unpinned compiler means a receipt cannot be replayed, and the reproducible-build comparison lane cannot pass. This is not a style preference; it directly voids determinism claims. Rejected.
 
-### Option D — Two pinned toolchains, split by package role — **recommended**
+### Option D — Pinned stable release toolchain plus a conditional pinned assurance nightly — **recommended**
 
 | | Toolchain | Applies to | Why |
 |---|---|---|---|
-| **Release/build** | Pinned **stable**, exact version, via `rust-toolchain.toml`; edition 2024 (§30.1); `Cargo.lock` committed | `runtime`, `adapter`, `release-tool` — everything shipped, and everything making a D-class claim | Reproducibility, determinism receipts, semver stability, enterprise adoption of the G1 wedge |
-| **Assurance** | Pinned **nightly, by date**, recorded in the assurance manifest | `lab-tool` — the fuzz, Miri, and sanitizer lanes only | These lanes need nightly features; they never produce a shipped artifact or a determinism claim |
+| **Release/build** | Pinned **stable**, exact version, via `rust-toolchain.toml`; edition 2024 (§30.1); `Cargo.lock` committed | `runtime`, `adapter`, `release-tool` — everything shipped, and everything making a D-class claim | Recorded build identity, replay inputs, and release-policy stability |
+| **Assurance** | Pinned **nightly, by date**, only for a locally verified lane that requires it; recorded in the assurance manifest | Assurance invocations, which may compile runtime code but never supply the admitted release binary | Preserve exact tool identity while confining unneeded nightly exposure |
 
-Both are *pinned*. Neither floats. The nightly is confined to lanes whose output is a *finding*, never a binary or a receipt.
+Every admitted toolchain is pinned. The assurance nightly may emit assurance evidence and findings, but it never supplies the shipped binary or a product-output determinism receipt. Its own evidence records the exact nightly identity.
 
 ## Recommendation
 
 **PROPOSED — awaiting human ratification. Adopt Option D.**
 
-1. **`rust-toolchain.toml` pins an exact stable version**, with `rustfmt`, `clippy`, and `rust-src` components. **This brief deliberately does not name the version number.** G2 cannot verify which stable release is current on 2026-07-14 without a fetch that would not improve the decision, and inventing a plausible-looking version number is exactly the "no invented versions" failure the honesty rules forbid. The pin is set to the then-current stable at C1 start, by a human or by CI, and recorded. `[UNVERIFIED — version to be filled at C1 start.]`
+1. **`rust-toolchain.toml` pins an exact stable version.** Required components are selected from locally admitted tool evidence; `rustfmt`, `clippy`, and `rust-src` are candidates, not preverified availability claims. **This brief deliberately does not name the version number.** G2 cannot verify which stable release is current on 2026-07-14 without a fetch, and inventing a plausible-looking version number would violate the honesty rule. The human fills and records the exact pin before C1 source work. `[UNVERIFIED — version and components remain human inputs.]`
 2. **Edition 2024** (§30.1, already canon).
 3. **`Cargo.lock` committed** (§30.1, already canon).
-4. **A separate, date-pinned nightly** for the fuzz / Miri / sanitizer lanes, recorded in the assurance manifest alongside the lane results. Nightly output is findings only — never a shipped artifact, never a determinism receipt.
+4. **A separate, date-pinned nightly only where a required lane is locally shown to need it**, recorded in the assurance manifest alongside the lane results. If every selected lane works under the stable pin, no nightly is admitted merely because this brief lists one.
 5. **Workspace lints deny unsafe** (§30.1/§11.7); unsafe capsules follow §11.7's protocol and the machine-checked capsule registry.
 6. **The toolchain version is part of the determinism contract, and a bump is a versioned event.** This is the substantive addition and it is easy to overlook:
 
-> §11.9 defines **D1 Serialized** as "byte-identical under a declared mode **and pinned dependencies**," and **D2 Same-target pixels** as requiring a "**deterministic build identity**." The compiler is a dependency and it is part of the build identity. A toolchain bump can change codegen, and a codegen change can change floating-point evaluation, iteration order in optimized code, and therefore raster output. **A toolchain bump can silently break a D1 or D2 claim.**
+> §11.9 defines **D1 Serialized** as "byte-identical under a declared mode **and pinned dependencies**," and **D2 Same-target pixels** as requiring a "**deterministic build identity**." The compiler is a dependency and part of the build identity. A toolchain bump changes that declared input; whether output changes is unknown until the relevant lanes rerun. **A toolchain bump can invalidate an unretested determinism-class D1 or D2 claim.**
 
-Therefore: the toolchain identity is recorded in every determinism-bearing receipt; a toolchain bump triggers a re-run of the determinism lanes (D1 byte-identity, D2 pixel-identity, reproducible-build comparison) before the bump lands; and a bump that changes any D-class output is a finding to be dispositioned, not a diff to be accepted. Toolchain bumps are never silent, and never "just a version bump."
+Therefore: the toolchain identity is recorded in every determinism-bearing receipt; a toolchain bump triggers a re-run of the determinism lanes (D1 byte-identity, D2 pixel-identity, reproducible-build comparison) before the bump lands; and a changed D-class output is routed under the governing review protocol rather than silently accepted. Toolchain bumps are never silent.
 
 7. **MSRV stays deferred**, per Rev 7 §35 ("deferred until the dependency set stabilizes"). Registered in `DEFERRED_REGISTER.md` with owner cycle C1-close and a stated guard, because it is *not* among the Work Order's five named deferrals and would otherwise fall between the two lists.
 
 ## Rationale
 
-The one-line canon row ("pinned stable or dated nightly only if essential") reads as a choice and is actually a role split. Once you notice that the C1 fuzz gate *requires* nightly and the C1 determinism claims *require* pinned stable, the exclusive reading is impossible, and the inclusive reading is not a compromise — it is the correct decomposition, and §30.1's package-role taxonomy already exists to express it. Nightly is admitted precisely where it cannot contaminate a claim: in lanes that emit findings rather than artifacts.
+The one-line canon row ("pinned stable or dated nightly only if essential") permits a conditional split. The release path uses the exact stable pin proposed here; an assurance nightly is admitted only after a selected lane proves it necessary. §30.1's package-role taxonomy helps record why a tool exists, but the controlling boundary is which invocation produced the release artifact or assurance evidence.
 
-The determinism coupling (item 6) is the part most likely to be lost in implementation, because a toolchain bump looks like maintenance. It is not: it is a change to an input of every D1 and D2 receipt the project has issued.
+The determinism coupling (item 6) is easy to lose in implementation because a toolchain bump looks like maintenance. It is instead a change to an input of every D1 and D2 receipt the project has issued.
 
 ## Reversibility and migration path
 
@@ -96,7 +100,7 @@ The asymmetry is in the receipts, not the code:
 - Determinism receipts issued **before** a pin exists cannot be replayed, because the build identity they depended on was never recorded. Those receipts are not retroactively repairable — you cannot go back and learn which compiler produced them.
 - Determinism receipts issued **after** a pin, and superseded by a bump, remain replayable *if* the old toolchain is still obtainable. This is a real constraint on toolchain retention: the project must be able to reconstruct the exact toolchain for any receipt it still stands behind.
 
-So the decision is cheap to change and expensive to have delayed. Pinning early costs nothing; pinning late costs every receipt issued in the interim.
+The configuration is straightforward to change, but delaying the pin leaves intervening receipts without a reproducible compiler identity. Exact migration and retention costs remain `[UNVERIFIED]` until the toolchain policy is exercised.
 
 ## Dependencies
 
@@ -107,7 +111,7 @@ So the decision is cheap to change and expensive to have delayed. Pinning early 
 
 ## Evidence still needed before ratification
 
-1. **Confirmation that the fuzz/Miri/sanitizer lanes still require nightly** with current tooling. `[UNVERIFIED]` — historically true; check at C1 rather than assume. If some lane has stabilized, the nightly surface shrinks, which is strictly good.
+1. **Confirmation of which selected fuzz/Miri/sanitizer lanes require nightly** with the locally admitted tool versions. `[UNVERIFIED]` — check at C1 rather than assume. Admit no nightly for a lane that does not require it.
 2. **The current stable version number**, to be filled at C1 start. Deliberately not guessed here.
 3. **A toolchain-retention policy** — how the project reconstructs an old toolchain to replay an old receipt. This falls out of the reversibility analysis and does not exist yet.
 4. **A determinism-lane baseline** so that the first toolchain bump has something to compare against. Without a baseline, "the bump changed nothing" is an assertion.
@@ -117,8 +121,8 @@ So the decision is cheap to change and expensive to have delayed. Pinning early 
 | Failure | Consequence | Severity |
 |---|---|---|
 | Unpinned or floating toolchain | D0/D1/D2 claims are unreplayable; the reproducible-build lane cannot pass; the C4 release-engineering gate fails; Q3's provenance column weakens because receipts cannot be reproduced. | **High, and it silently degrades evidence** rather than breaking the build — which is what makes it dangerous. |
-| Nightly in the shipped runtime | The wedge depends on an unstable compiler; enterprise adoption stalls; reproducibility is fragile. | High, and loud. |
-| Stable-only, no nightly lane | The C1 fuzz gate cannot run; "zero reachable panics under the fuzz corpus" is unverifiable; a Charter §5/C1 gate fails. | High, and loud. |
+| Nightly produces the shipped release without a ratified need | The release build uses a broader compiler channel than the proposed policy permits; replay and support expectations may diverge. Adoption effects are `[UNVERIFIED]`. | High and visible in the build identity. |
+| A required assurance lane is proven nightly-only but no pinned nightly is available | That lane cannot emit its required result; the affected C1 gate is unavailable rather than silently passed. | High and visible. |
 | Toolchain bumped without re-running determinism lanes | A D1 or D2 claim silently becomes false. Receipts assert byte- or pixel-identity that no longer holds. | **High and silent.** The failure mode item 6 exists to prevent. |
 | Pin set late | Receipts issued before the pin are unreplayable, permanently. | Moderate, unrecoverable, and entirely avoidable by pinning on day one. |
 
@@ -126,8 +130,8 @@ So the decision is cheap to change and expensive to have delayed. Pinning early 
 
 This brief proposes; it does not decide (Rev 7 §29.9).
 
-- [ ] **Ratify Option D** — pinned stable (release/runtime) + date-pinned nightly (assurance lanes only), with the toolchain-as-determinism-input law (recommended)
-- [ ] **Ratify** a single-toolchain variant (recording which Charter gate is thereby given up)
+- [ ] **Ratify Option D** — pinned stable for release artifacts + date-pinned nightly only for locally verified assurance needs, with the toolchain-as-determinism-input law (recommended)
+- [ ] **Ratify** a single-toolchain variant (recording the local tool evidence and any affected Charter gate)
 - [ ] **Amend** (record the variant and rationale)
 - [ ] **Confirm** that MSRV remains deferred to C1-close per Rev 7 §35
 

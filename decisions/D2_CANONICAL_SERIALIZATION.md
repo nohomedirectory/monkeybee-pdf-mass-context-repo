@@ -1,6 +1,8 @@
 ---
 generated-by: Claude G2 owner (claude-opus-4-8, effort xhigh)
 date: 2026-07-14
+revised-by: Codex G2 owner
+revised-date: 2026-07-16
 inputs:
   - CYCLE_0_WORK_ORDER.md §4 resolve-now item 2
   - MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md §9.2, §9.6, §22.3, §22.4, §22.5, §11.9, §35
@@ -21,7 +23,7 @@ What exact byte grammar turns a structured project value — an identity, a mani
 
 ## First, a distinction that must not blur
 
-Rev 7 contains **two** canonical serialization problems. They share a word and nothing else. Conflating them is the single most likely way this brief gets misread, and duplication drift of exactly this kind produced two of the three Grade-A defects in this project's history (R1-1, R2-N7).
+Rev 7 contains **two** canonical serialization problems. They share a word and nothing else. Conflating them is a foreseeable way this brief could be misread, and duplication drift produced the Grade-A defects R1-1 and R2-N7.
 
 | | **(a) Identity/commitment serialization** | **(b) PDF canonical output serialization** |
 |---|---|---|
@@ -52,7 +54,7 @@ Exactly one property is load-bearing, and it is worth stating precisely because 
 
 The two failure directions are not symmetric, and the asymmetry should drive the design:
 
-- **Ambiguity** (different values → identical bytes → identical digest) is a **security** failure. It manufactures false identity equality. Under §9.6, semantic equality authorizes cache reuse; under §9.2, a `SemanticStateId` may be shared across roots of equal admitted meaning. A collision *manufactured by a grammar ambiguity* would therefore let an attacker induce reuse of the wrong derived artifact — a silent, correct-looking wrong answer. This is the worst class of bug this system can have, and no amount of hash strength prevents it, because the hash is doing exactly what it was asked to do.
+- **Ambiguity** (different values → identical bytes → identical digest) is a **security** failure. It manufactures false identity equality. Under §9.6, semantic equality authorizes cache reuse; under §9.2, a `SemanticStateId` may be shared across roots of equal admitted meaning. A collision *manufactured by a grammar ambiguity* would therefore let an attacker induce reuse of the wrong derived artifact — a silent, correct-looking wrong answer. This is a severe bug class, and no amount of hash strength prevents it, because the hash is doing exactly what it was asked to do.
 - **Over-strictness** (equal values → different bytes) is a **performance and determinism** failure: cache misses, and D0 claims that fail to replay. Bad, visible, fixable.
 
 Therefore the design bias is explicit: **when the grammar is unsure, it refuses; it never guesses.** Any construct whose canonical form is not uniquely determined is rejected at encode time rather than encoded on a best-effort basis.
@@ -63,7 +65,7 @@ Therefore the design bias is explicit: **when the grammar is unsure, it refuses;
 
 A hand-rolled canonical encoding: a domain prefix carrying class ID and protocol version, then for each field a type tag, a fixed-width big-endian length, and the value bytes; recursively for nested structures.
 
-- **For:** Trivially injective if specified correctly. Minimal, no dependency, easy to reimplement independently (which the checker must do).
+- **For:** Can be specified as a small explicit grammar and offers a dependency-free implementation path. Injectivity still requires proof/tests, and independent reimplementation cost is `[UNVERIFIED]`.
 - **Against:** Hand-rolled. Every hand-rolled encoding is a small specification that nobody has attacked, and this project's threat model includes a red team paid to attack exactly this. It is not self-describing, so debugging and third-party audit are harder.
 
 ### Option B — Deterministic CBOR profile (RFC 8949 core deterministic encoding), hashed with SHA-256 — **recommended**
@@ -73,19 +75,19 @@ Adopt CBOR's deterministic encoding requirements as the byte grammar, pinned by 
 - indefinite-length items forbidden;
 - **floating-point forbidden entirely** in identity encodings (see the float law below);
 - shortest-form integer encoding required;
-- map keys sorted bytewise on their encoded form; duplicate keys forbidden (encode-time rejection, not last-wins);
+- map-key ordering copied exactly from the human-ratified first-party deterministic-CBOR profile; duplicate keys forbidden (encode-time rejection, not last-wins). **No ordering summary in this brief is normative; the exact rule remains `[UNVERIFIED]` until evidence-needed item 3 is closed.**
 - tags restricted to an explicit allowlist;
 - every hashed value wrapped in a domain-separation prefix carrying `(class ID, protocol version)` with explicit top-level length framing.
 
-- **For:** A real specification with existing review, existing test vectors, and multiple independent implementations in multiple languages — which is precisely what an *independently implemented* checker and an external adjudicator need. Self-describing, so a hostile reviewer can decode and inspect what was hashed rather than taking our word for the field order. Deterministic-encoding rules are a standardized answer to the injectivity problem. The project still owns the profile, which is where the remaining risk sits, and that risk is small and reviewable.
-- **Against:** "Canonical CBOR" has historically meant more than one thing across specifications and libraries; picking the wrong library or leaving the profile loose reintroduces exactly the ambiguity we are trying to eliminate. The mitigation is that the profile is *pinned and machine-checked*, and that the checker uses a **different** CBOR implementation, so a library-specific canonicalization bug shows up as a differential-test failure instead of a shared premise. Also: a dependency, where Option A has none.
+- **For:** RFC 8949 is the proposed first-party specification target for a deterministic profile; its exact rule set and applicability remain `[UNVERIFIED]` until evidence-needed item 3 is closed. Availability of suitable test vectors and independent implementations, and the adequacy of any Rust implementation for this project profile, are also `[UNVERIFIED]`. A self-describing representation can aid inspection, but it does not prove injectivity by itself.
+- **Against:** The exact deterministic profile and implementation behavior are not established by the phrase "canonical CBOR." The specification history and current library behavior are `[UNVERIFIED]`; a pinned first-party rule set plus a separately implemented differential check is the proposed mitigation. Option B also introduces dependencies whose availability and licensing remain unresolved.
 
-### Option C — TupleHash (NIST SP 800-185), paired with SHA-3/SHAKE
+### Option C — A TupleHash profile plus a separate structured-value encoding
 
-Per NIST, TupleHash is "designed to hash tuples of input strings unambiguously" — the standardized form of §9.2's length-framing law. The framing stops being a project artifact and becomes a cited standard.
+Per NIST's page, TupleHash is "designed to hash tuples of input strings unambiguously." It is a candidate tuple-hash construction for §9.2; it does not replace the structured-value grammar this decision must supply.
 
-- **For:** The strongest answer to "who reviewed your framing?" — the answer is NIST, not us. Removes the hand-rolled-grammar attack surface at the framing layer.
-- **Against:** Couples the grammar to the Keccak family, so it is only coherent alongside D1 Option C (SHA-3/SHAKE), with SHA-256's ubiquity advantages given up. TupleHash handles the *tuple framing*; it does not by itself canonicalize a nested, typed value graph — a structured-value encoding still has to sit above it, so this option reduces the hand-rolled surface without eliminating it. Rust ecosystem support for TupleHash specifically is thinner than for SHA-3 `[UNVERIFIED]`, and a thin dependency is one the independent checker must also obtain or write.
+- **For:** Moves the tuple-boundary construction to a named NIST publication rather than leaving that layer entirely project-defined.
+- **Against:** TupleHash is itself the hash construction, not a wrapper to pair with SHA-3, SHAKE, or SHA-256. It handles tuples of byte strings; it does not canonically encode a nested typed graph. The exact function/parameter profile and implementation availability are `[UNVERIFIED]`. Option C therefore still consumes a separately ratified structured-value encoding and cannot be presented as a stand-alone D2 answer.
 
 ### Option D — Canonical JSON (e.g. JCS) or Protobuf — **rejected**
 
@@ -99,18 +101,18 @@ Both are recorded so the rejection is explicit rather than an omission a later r
 **PROPOSED — awaiting human ratification.**
 
 **Package 1 (recommended): SHA-256 (D1 Option A) + deterministic-CBOR profile (D2 Option B) + explicit domain/length framing.**
-**Package 2 (coherent alternative): SHA3-256/SHAKE256 (D1 Option C) + TupleHash framing (D2 Option C).**
+**Package 2 (alternative candidate): an exact 256-bit SP 800-185 TupleHash profile (D1 Option C) + a separately specified structured-value encoding under D2.**
 
-Ratify a package, not a pair of independent knobs. Package 1 buys stock-tool verifiability and ecosystem depth at the cost of a project-owned profile. Package 2 buys standard-native framing at the cost of ubiquity. Both are defensible; they are not mixable.
+Ratify a package, not a pair of independent knobs. Package 1 has a locally demonstrated SHA-256 verification path and a project-owned CBOR profile. Package 2 remains `[UNVERIFIED]` until its exact TupleHash parameters and structured-value encoding are recorded. TupleHash is not mixed with another hash as a framing wrapper.
 
 Under either package, the following are **laws, not defaults**, and should be machine-checked:
 
-1. **The float law.** No IEEE-754 value ever enters an identity encoding. PDF numbers, coordinates, and any real-valued quantity are encoded either as exact integers or as a bounded decimal *string* under a declared grammar. Rationale: float canonicalization is a swamp (negative zero, NaN payloads, subnormals, and the shortest-round-trip formatting problem), and §22.5 already refuses to delegate PDF number formatting to "a generic shortest-float formatter". Identity encoding must be at least as strict as the writer, and it costs nothing to forbid floats outright here.
+1. **The float law.** No IEEE-754 value ever enters an identity encoding. PDF numbers, coordinates, and any real-valued quantity are encoded either as exact integers or as a bounded decimal *string* under a declared grammar. Rationale: float canonicalization introduces negative-zero, NaN-payload, subnormal, and formatting cases, and §22.5 refuses to delegate PDF number formatting to "a generic shortest-float formatter". The profile avoids those cases; its expressiveness and implementation cost remain part of C1 validation.
 2. **Domain separation is mandatory and typed.** Every hashed value carries its class ID and protocol version *inside* the hashed bytes. A `DocumentViewId`'s preimage can never be reinterpreted as a `DerivationId`'s preimage. §9.2 requires this; it is restated as a law because it is the kind of thing an optimizing implementer removes.
 3. **Length framing is mandatory.** No unframed concatenation, ever, at any nesting level.
 4. **Refuse, never guess.** A value whose canonical form is not uniquely determined by the profile is rejected at encode time.
 5. **The grammar is versioned** through the protocol IDs canon already defines (`SemanticValueProtocolId`, `RealityCommitmentProtocolId`, `ExpectedStateProtocolId`, `DraftIntentProtocolId`, §9.2). v1 is what this brief specifies; the version travels inside the hashed bytes.
-6. **The canonical encoder is dual-implemented, and its differential test is an acceptance criterion.** See below — this is the most important sentence in the brief.
+6. **The canonical encoder is dual-implemented, and its differential test is an acceptance criterion.** This is a load-bearing control because shared encoding logic would preserve a shared ambiguity.
 
 ## The dual-implementation requirement (why this is not optional)
 
@@ -118,13 +120,13 @@ Rev 7 §35's checker-isolation row already demands "dual-implementation collisio
 
 > **If the producer and the checker share one canonical-encoding implementation, an ambiguity bug in that encoder is invisible to the checker.** The checker would encode the attacker's value the same wrong way, compute the same digest, and confirm the producer's claim. The two agree, and they are both wrong — which is precisely the F-01 pattern the FrankenSim re-audit documents and Charter risk #7 names: the whole ecology agreeing on a wrong certificate.
 
-Therefore the canonical encoder is **the single most important component in the system to dual-implement**, ahead of the package parser. D4 (checker isolation) admits sharing exactly one thing — the audited hash primitive — and this is the reason the encoder is not on that list. The differential test between the two implementations, run over an adversarial encoding corpus, is a C1 acceptance criterion and a standing falsifier.
+Therefore this proposal requires a separately implemented canonical encoder rather than sharing the producer's encoder with the checker. D4's proposed sharing boundary admits a narrow hash-primitive exception; the encoder is outside that exception. The differential test between the two implementations, run over an adversarial encoding corpus, is a C1 acceptance criterion and a standing falsifier.
 
 ## Rationale
 
 The property that matters is injectivity, and injectivity is a property of the *grammar*, not of the hash. Once that is seen clearly, the hash-family debate (D1) and the grammar debate (D2) separate cleanly, and the grammar debate resolves on a single question: whose reviewed specification is the injectivity resting on?
 
-Option A rests it on ours. Option C rests the framing layer on NIST's. Option B rests it on a widely implemented deterministic-encoding specification *plus* a small project profile, and then — critically — cross-checks that profile with a second independent implementation, converting the residual project-owned risk into a testable differential rather than a shared premise. That combination is the most defensible against a red team, which is the standard this campaign is actually held to.
+Option A rests it on a project grammar. Option C moves only the tuple-hash layer to SP 800-185 and still needs a typed-value grammar. Option B rests it on RFC 8949 plus a project profile, then cross-checks that profile with a second implementation. That turns some project-owned risk into a testable differential rather than a shared premise; the availability and adequacy of both implementations remain `[UNVERIFIED]` until checked.
 
 ## Reversibility and migration path
 
@@ -134,7 +136,7 @@ The grammar is versioned (§9.2), so a v2 can be introduced. But the grammar det
 
 Worse than D1 in one respect: a hash-algorithm migration is mechanical and total (re-hash everything with the new function). A grammar migration additionally requires proving that the *new* grammar is injective and that the *mapping* from old values to new encodings is faithful — a semantic obligation, not a mechanical one. Any value whose v1 encoding was ambiguous cannot be safely migrated at all; it must be quarantined, because you cannot know which value it was.
 
-Practical consequence: **an ambiguity discovered after the substrate commitment is not fully repairable.** This is the strongest argument for the adversarial encoding corpus and the dual implementation landing in C1, before the grammar has hashed anything anyone relies on.
+Practical consequence: **an ambiguity discovered after the substrate commitment is not fully repairable.** This supports landing the adversarial encoding corpus and dual implementation in C1, before the grammar has hashed anything anyone relies on.
 
 ## Dependencies
 
@@ -166,7 +168,7 @@ Practical consequence: **an ambiguity discovered after the substrate commitment 
 This brief proposes; it does not decide (Rev 7 §29.9).
 
 - [ ] **Ratify Package 1** — SHA-256 + deterministic-CBOR profile + domain/length framing (recommended)
-- [ ] **Ratify Package 2** — SHA3-256/SHAKE256 + TupleHash framing
+- [ ] **Ratify Package 2** — exact 256-bit SP 800-185 TupleHash profile + separately specified D2 structured-value encoding, after the named evidence is supplied
 - [ ] **Ratify Option A** — project-defined strict TLV (accepting the hand-rolled-grammar surface)
 - [ ] **Amend** (record the variant and rationale)
 - [ ] **Defer** — noting that C1 cannot build `SemanticStateId` or the dependency manifest without an answer

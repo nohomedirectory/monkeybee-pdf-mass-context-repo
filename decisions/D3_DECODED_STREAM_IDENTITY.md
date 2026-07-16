@@ -1,6 +1,8 @@
 ---
 generated-by: Claude G2 owner (claude-opus-4-8, effort xhigh)
 date: 2026-07-14
+revised-by: Codex G2 owner
+revised-date: 2026-07-16
 inputs:
   - CYCLE_0_WORK_ORDER.md §4 resolve-now item 3 ("DecodedStreamId cost/availability model")
   - MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md §9.1.1, §9.2, §9.5, §9.6, §11.2, §11.2.2, §11.9, §12.1, §12.9, §26.4, §26.6, Appendix A.6
@@ -51,8 +53,8 @@ So the question is not cosmetic. It is: *is a decoded container named by what it
 
 ### Option A — Content identity (eager): `DecodedContainerId` = hash of the full decoded bytes
 
-- **For:** The strongest identity. Content-addressed, so cross-run durable caching is sound by construction; two identical decoded artifacts share one identity regardless of how they were produced.
-- **Against:** The identity is unavailable until the artifact is fully decoded, which makes it useless for the exact purpose an identity is needed for — *deciding whether to decode*. It forces full materialization of a 400 MB decoded stream when the consumer wants 200 bytes of it. It converts naming into decode work, so it amplifies decode-bomb pressure rather than bounding it. It is uncomputable for streaming and `Ephemeral` sources. **Rejected on all three counts.**
+- **For:** A content-derived identity directly commits to the decoded bytes; two identical decoded artifacts can share one identity regardless of how they were produced.
+- **Against:** The identity is unavailable until the artifact is fully decoded, which makes it unavailable for deciding whether to decode. It forces full materialization when a consumer requests only a bounded range. It converts naming into decode work, so it amplifies decode-bomb pressure rather than bounding it. It is unavailable as a whole-artifact content identity for incomplete streaming and `Ephemeral` sources. **Rejected on those stated constraints.**
 
 ### Option B — Derivational identity (recipe): `DecodedContainerId` = hash of how it is made
 
@@ -61,7 +63,7 @@ The identity is the canonical encoding (D2) of the derivation tuple, which §9.2
 `(SourceRootId, ObjectVersionId, source byte span, filter chain + decode params, cryptographic context, decoder algorithm + version, outcome-sensitive limits, profile)`
 
 - **For:** Available *before* decoding, at metadata cost. Enables lazy decode, partial reads, streaming, and cheap budget decisions. Qualifies virtual spans (§9.5 needs to say *which container* an offset is inside, and a recipe identity does that perfectly well). Costs no decode work to mint.
-- **Against:** It names the recipe, not the bytes. Two different recipes that happen to produce identical bytes get different identities — which is harmless (no false equality; only a missed sharing opportunity). But the dangerous direction is real: **the same recipe under a buggy, nondeterministic, or silently-updated decoder can name different bytes.** A durable cross-run cache keyed on recipe alone could therefore serve the wrong bytes under a valid-looking identity. That is silent evidence corruption, the worst failure class.
+- **Against:** It names the recipe, not the bytes. Two different recipes that happen to produce identical bytes get different identities — no false equality, but a missed sharing opportunity. The dangerous direction is real: **the same recipe under a buggy, nondeterministic, or silently-updated decoder can name different bytes.** A durable cross-run cache keyed on recipe alone could therefore serve the wrong bytes under a valid-looking identity. That is a severe, silent evidence-corruption failure.
 
 ### Option C — Hybrid: two typed, distinct identities — **recommended**
 
@@ -95,32 +97,34 @@ A claim that needs a content digest and finds one absent **degrades or refuses; 
 
 ### The cost model
 
-1. **Minting a `DecodedContainerId` costs metadata work only** — one canonical encoding and one hash of a small tuple. Naming a container is never decode work, so referencing a container is not an attack.
-2. **The content digest is computed incrementally, in-line with the decode**, as bytes flow through `DecodeWriteTxn::write` (Appendix A.6). It is one streaming pass with constant memory. It does **not** require buffering the artifact, and it does **not** require a second pass. This removes most of Option A's cost objection while keeping its evidentiary value — the objection to eager content identity was never the hash, it was the forced *decode*.
+1. **Minting a `DecodedContainerId` is classified as metadata work** — one canonical encoding and one hash of the bounded recipe tuple. The exact cost is `[UNVERIFIED]`, but the operation performs no decoded-byte production.
+2. **The content digest is computed incrementally, in-line with the decode**, as bytes flow through `DecodeWriteTxn::write` (Appendix A.6). The hash adds bounded state and does not itself require buffering the whole artifact or a second decoded-byte pass. Its measured overhead remains evidence-needed item 2. This narrows Option A's cost objection while keeping its evidentiary value — the objection to eager content identity was the forced *decode*.
 3. **Charging follows §11.2.2 exactly:** the physical decode (and its hash) is charged once, to the operation that produced it; logical consumers get attribution without re-charging the physical counter. Cache hits still charge bounded lookup and materialization work and cannot reset global allowances.
 4. **Hashing is mandatory whenever the artifact is retained, cached, or referenced by evidence.** It is skippable only under an explicit transient profile, which lands the container in `Materialized { digest: NotComputed }` and forfeits every durable claim. The default is to hash; skipping is opt-in and costs capability, not correctness.
-5. **Reuse is validated, never assumed.** §9.6's two-stage law governs: the recipe identity may locate a *candidate* cache entry, but it never authorizes reuse. Reuse requires validating the complete dependency-and-selection manifest — and, under this recommendation, **verifying the content digest of the reused artifact**. This is the concrete defence against Option B's dangerous direction: a recipe match is a hypothesis; the digest is the proof.
+5. **Reuse is validated, never assumed.** §9.6's two-stage law governs: the recipe identity may locate a *candidate* cache entry, but it never authorizes reuse. Reuse requires validating canon's dependency-and-selection manifest and, under this recommendation, **verifying the content digest of the reused artifact**. A recipe match is a hypothesis; the digest supplies a byte-integrity check rather than authority or semantic equivalence.
 6. **`Ephemeral` sources (§9.1.1) never produce durably reusable containers.** Their decoded containers are operation-local by inheritance. This falls out of canon and is restated so no implementer re-derives it wrongly.
 
 ### One security law worth stating explicitly
 
-The recipe tuple includes the **cryptographic context**. Two containers decoded from the same bytes under different encryption keys must never share an identity, and a decoded container derived from an encrypted stream must never be cached into a context authorized to see only the encrypted form. §9.6 already partitions the candidate index "by tenant, security context, sensitivity/disclosure class, and cache-isolation domain"; this decision inherits that partitioning rather than restating it, and the recipe identity must carry enough of the security context that a cross-context collision is impossible by construction rather than by policy.
+The recipe tuple includes a **non-secret cryptographic-context identity**. It never contains a credential, raw key, password, or decrypted content. Two containers decoded from the same source occurrence under different authorized contexts must not share a recipe identity, and a decoded container derived from an encrypted stream must never be cached into a context authorized to see only the encrypted form. §9.6 partitions the candidate index "by tenant, security context, sensitivity/disclosure class, and cache-isolation domain"; this decision inherits that partitioning. The exact non-secret context fields and their disclosure properties require the threat model named below.
+
+The post-commit content digest also inherits the decoded artifact's sensitivity. It is not public metadata by default: exporting it across a tenant, disclosure class, or cache-isolation boundary requires explicit authority because a digest can act as a confirmation oracle for guessed content. This control does not change the digest algorithm or the recipe identity; it constrains storage and disclosure.
 
 Related, from R2-N2 (the hasher law): the cache index keyed by these identities is an **attacker-keyed map**. It requires DoS-resistant hashing or ordered structures. That is a distinct concern from the content-hash choice (D1) — the identity digest is cryptographic; the *hash-map hasher* over those digests is a separate mechanism, and a performance-motivated swap of it requires an explicit contract note. Naming this here because a cache index is exactly where the R2-N2 defect would land.
 
 ## Rationale
 
-The decisive observation is that a recipe identity and a content identity answer different questions, and the system needs both answers at different times. "Which container is this span inside?" must be answerable before decoding — a content identity cannot answer it. "Are these bytes the bytes I think they are?" must be answerable before durable reuse — a recipe identity cannot answer it, because it assumes decoder determinism rather than proving it.
+The key distinction is that a recipe identity and a content identity answer different questions at different times. "Which container is this span inside?" must be answerable before decoding — a content identity cannot answer it. "Are these bytes the bytes I think they are?" must be answerable before durable reuse — a recipe identity cannot answer it, because it assumes decoder determinism rather than proving it.
 
 Collapsing the two, in either direction, produces a specific and predictable bug. Content-only (A) makes naming expensive and defeats laziness. Recipe-only (B) makes durable cache reuse rest on an *assumption* of decoder determinism, and assumptions of determinism are exactly what the D-class discipline (§11.9) exists to convert into verified claims. The hybrid costs one 32-byte field per container and one streaming hash pass, and it converts that assumption into a check.
 
 ## Reversibility and migration path
 
-**High — the highest of the identity-adjacent decisions.**
+**High, subject to the exception below.**
 
 Adding a content digest later to a recipe-only design is straightforward: it is a new field in the receipt and a new precondition on durable reuse. Removing it later is likewise easy. The identity grammar is versioned (§9.2), and decoded containers are derived artifacts, not committed evidence roots — they can be recomputed from their recipe.
 
-The one path that is *not* cheaply reversible: shipping recipe-only durable cross-run caching in C1, and discovering a nondeterministic decoder in C2 or later. At that point every artifact reused from cache under the old law is suspect, and every receipt that depended on one has to be re-derived. This is avoidable now for near-zero cost, which is the argument for landing the hybrid in C1 rather than deferring the digest.
+The path-dependent case is shipping recipe-only durable cross-run caching in C1 and discovering a nondeterministic decoder in C2 or later. At that point every artifact reused from cache under the old law is suspect, and every receipt that depended on one has to be re-derived. Landing the hybrid before durable caching exists avoids that retrospective invalidation; its actual runtime cost remains evidence-needed item 2.
 
 ## Dependencies
 
@@ -133,7 +137,7 @@ The one path that is *not* cheaply reversible: shipping recipe-only durable cros
 
 1. **A decoder-determinism audit.** The hybrid's value depends on decoders being deterministic (D0). Each C1 decoder needs its determinism class declared and tested — this is a C1 acceptance criterion, and it is the thing the content digest is there to *catch* if it is ever untrue.
 2. **A measurement of incremental-hash cost as a fraction of decode cost**, taken in C1 when benchmarking is legal. The claim that streaming hashing is cheap relative to inflate is highly plausible and is `[UNVERIFIED]` until measured. If it proved false, the transient-profile escape hatch is the mitigation, not a redesign.
-3. **A cache-isolation threat model** covering the security-context partitioning above — specifically, whether the recipe tuple carries enough context to make cross-tenant or cross-key collisions structurally impossible.
+3. **A cache-isolation and digest-disclosure threat model** covering the security-context partitioning above — specifically, whether the recipe tuple carries enough non-secret context to prevent cross-tenant or cross-key reuse, and when a decoded-content digest may be stored or disclosed without becoming a confirmation oracle.
 4. **Confirmation of the naming reconciliation** (`DecodedContainerId` vs `DecodedStreamId`) once root routes F-G2-1 into `DISPUTES.md`.
 
 ## Blast radius if wrong

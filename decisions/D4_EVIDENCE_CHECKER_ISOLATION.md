@@ -1,11 +1,15 @@
 ---
 generated-by: Claude G2 owner (claude-opus-4-8, effort xhigh)
 date: 2026-07-14
+revised-by: Codex G2 owner
+revised-date: 2026-07-16
 inputs:
   - CYCLE_0_WORK_ORDER.md §4 resolve-now item 4
   - MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md §10.2.1, §10.10, §33.5, §33.6, §33.15, §35 (checker-isolation row), Appendix A.13, P13
   - AUDIT_FINDINGS_LEDGER.md R1-9, and the F-01 pattern in frankensim_alienartifactness_reaudit.md
   - MONKEYBEE_CAMPAIGN_CHARTER_v1.md §7, §8 (risk 7)
+  - ledger/owners/G3_STATE.md accepted R01-B02 disposition (operational disposition evidence only)
+  - ledger/owners/G6_STATE.md disposition R21-A03 (operational disposition evidence only)
 status: PROPOSED
 evidence-status: provisional-pending-substrate
 decision-id: D4
@@ -24,7 +28,7 @@ Rev 7 §35's current default is code isolation:
 
 > Separate `mb-checker` with independently implemented package parser/canonical-root verification; only narrow crypto/schema constants may be shared.
 
-Audit row **R1-9** says that is not enough, and it is the most conceptually important finding in the ledger:
+Audit row **R1-9** says that is not enough:
 
 > mb-checker "independence" is intra-ecology; shared premise (the F-01 killer) not countered by shared-code prohibition alone.
 
@@ -52,7 +56,7 @@ Independence is not one property. It is at least five, and they can be bought se
 | 4 | **Human adversarial review** — humans, not only models, review the checker against the spec | Correlated failure across *all* model families | High. Human-bound, and slow — Charter risk #2's shape. |
 | 5 | **Measured detection rate** — seeded-defect trials quantify what the checker actually catches | Everything above being *asserted rather than true* | Moderate, and it is the only axis that produces evidence. |
 
-Axis 5 is the one that converts this decision from a claim into a lane that emits evidence. It deserves emphasis: **every other axis is an input; only axis 5 is an observation.** A project can do 1–4 perfectly and still not know whether the checker works. A project that does 5 finds out.
+Axis 5 converts this decision from a claim into a lane that emits evidence: **every other axis is an input; only axis 5 is an observation.** Axes 1–4 alone do not establish the checker's detection behavior.
 
 ## Options
 
@@ -70,7 +74,7 @@ Axis 5 is the one that converts this decision from a claim into a lane that emit
 ### Option C — Code + authorship + specification isolation
 
 - Axes 1–3. The checker author's entire input is the normative specification: the package-format protocol, the canonical-encoding grammar (D2), and the relevant SpecCards. No producer source. No producer rationale. No producer test fixtures.
-- **For:** Directly attacks the shared-premise mechanism. This is the strongest *structural* answer available without human cost.
+- **For:** Directly addresses the shared-premise mechanism without relying on code separation alone.
 - **Against:** Still an assertion. Nobody has measured whether the resulting checker catches anything.
 
 ### Option D — C + measured detection rate + hostile corpus + human adversarial review — **recommended, staged**
@@ -81,13 +85,25 @@ Axis 5 is the one that converts this decision from a claim into a lane that emit
 
 **PROPOSED — awaiting human ratification. Adopt Option D, staged as follows.**
 
-### C1 floor (mandatory, blocking the C1 close gate)
+### C1 floor (mandatory for checker-backed evidence admission)
 
 1. **Code isolation** (axis 1) — as Rev 7 already requires: separate `mb-checker`; its own package parser, structural walk, canonical-root verification, availability/materialization checks, and coverage accounting. Per Appendix A.13, it accepts **raw hostile package bytes** and "never receives a producer-parsed `EvidencePackage` as trusted input."
-2. **Authorship isolation** (axis 2) — the checker is authored by a **different model family** than the producer, and the model identities of both are recorded in the production ledger. The campaign already demonstrates this is operationally feasible: this run routes `gpt-5.6-sol` and `claude-opus-4-8` as distinct families and records which produced what.
-3. **Specification isolation** (axis 3) — the checker author's context contains the normative package-format specification, the D2 canonical-encoding grammar, and SpecCards. It does **not** contain producer source, producer rationale prose, or producer-authored fixtures. This is a hard constraint on the authoring harness, and it should be enforced by the task's allowed-source manifest (§4.2.2 already provides "task-local allowed-source manifests" as the mechanism).
+2. **Authorship isolation** (axis 2) — the checker is authored by a **different, human-accepted model-family class** than the producer, and the identities and known correlation of both are recorded in the production ledger. This run's model labels do not, by themselves, ratify a family-independence classification; operational enforceability remains evidence-needed item 3.
+3. **Specification isolation** (axis 3) — the checker author's context contains the normative package-format specification, the ratified D2 canonical-encoding grammar, and only rights-vetted SpecCards. Every unavailable card remains `PENDING-LICENSED-SOURCE`. The context does **not** contain producer source, producer rationale prose, or producer-authored fixtures. This is a hard constraint on the authoring harness, enforced by the task's allowed-source manifest (§4.2.2).
 4. **The seeded-defect detection-rate trial** (axis 5) — the checker's own falsifier, run at **every cycle close gate**, not once. See the trial design below.
 5. **Lineage recording** (§10.2.1) — the checker carries an `OracleLineage` record exactly as §10.2.1 requires of any corroborating observation: producer, implementation family, shared dependencies and data where known, protocol author, environment, and adjudication relationship. Its correlation with the producer is recorded as *data*. Per that same section, **"unknown lineage is explicit uncertainty, not assumed independence"** — so an unrecorded axis degrades the claim rather than defaulting to independent. The checker's independence is a measured, disclosed quantity with an honest degradation path, never a badge.
+
+The blocking boundary is typed. A missing or failed checker blocks only the evidence, receipt, or Q3 admission that requires checker support; it does not silently block the unconditional G1 product wedge. Product-integrity gates remain binding on their own terms. This preserves Charter §2's graceful-degradation law and the admitted G6 disposition for R21-A03 without treating the proposed Charter-set successor as ratified canon.
+
+### Lifecycle separation required by admitted R01-B02 disposition
+
+The C1 plan's owner accepted R01-B02 as an explicitness defect: pre-run isolation admission and post-trial assessment cannot be one circular state. This brief therefore requires three distinct records:
+
+1. **Pre-run admission:** records allowed sources, authorship/model identity, shared components, known correlation, and whether the checker may run. It contains no seeded-trial result.
+2. **Trial execution:** records the exact checker build, corpus, seeded defect set, observations, misses, and indeterminate outcomes.
+3. **Post-trial assessment:** binds the pre-run admission to the trial record and states only the checker-backed claim scope supported by those observations.
+
+No pre-run record self-awards a detection result, and no post-trial assessment rewrites the pre-run lineage. This is an admitted owner-contract repair, not a fresh reviewer grade for D4.
 
 ### Scale-up by C4 (the Q3 checkpoint)
 
@@ -98,10 +114,10 @@ Axis 5 is the one that converts this decision from a claim into a lane that emit
 
 Only two things may be shared with the producer, and the boundary should be machine-checked, not honoured by convention:
 
-- **The audited cryptographic primitive** (the SHA-256 implementation, D1). Rationale, stated honestly because it cuts against the grain of this brief: reimplementing a hash function is *more* dangerous than sharing an audited one, and a hash implementation bug is detectable by published standard test vectors in a way that a semantic misunderstanding is not. The shared primitive is therefore a controlled risk with an external oracle. If the human prefers, the checker may instead take a *different* audited SHA-256 crate, which strictly dominates and costs little; this is offered as evidence-needed item 4 in D1.
+- **The audited cryptographic primitive** (the SHA-256 implementation, D1). This proposal treats sharing an admitted implementation as a controlled risk because standard vectors can test it independently; whether a second implementation reduces net risk depends on the dependency audit and is `[UNVERIFIED]`. No crate or audit status is selected here.
 - **Generated schema constants and identity class IDs** — allowlisted, machine-checked, containing no logic.
 
-**What may explicitly NOT be shared: the canonical encoder (D2).** This is the most important line in this brief, and it follows directly from D2's analysis: if the producer and checker share one canonical-encoding implementation, an ambiguity bug in that encoder is *invisible to the checker* — it encodes the attacker's value the same wrong way, computes the same digest, and confirms the claim. The encoder is dual-implemented, and the differential test between the two implementations, over an adversarial encoding corpus, is a C1 acceptance criterion. Sharing the encoder would reintroduce the exact shared-premise failure this decision exists to prevent, at the one place where it does the most damage.
+**What may explicitly NOT be shared: the canonical encoder (D2).** If the producer and checker share one canonical-encoding implementation, an ambiguity bug in that encoder is *invisible to the checker* — it encodes the attacker's value the same wrong way, computes the same digest, and confirms the claim. The encoder is dual-implemented, and the differential test between the two implementations, over an adversarial encoding corpus, is a C1 acceptance criterion.
 
 ### The seeded-defect trial (this is the evidence-producing part)
 
@@ -116,7 +132,7 @@ Independence becomes a *measurement* by injecting known producer-side defects an
 - an equivocating identity (same ID, different content — §9.2's quarantine trigger);
 - a package that is internally consistent but whose root does not bind what it claims to bind.
 
-**A miss is a Grade-A finding.** The detection rate, per class, is recorded in the cycle trial record and travels into the Q3 package as evidence about the checker itself. Note what this buys beyond assurance: §33 asks for grounding that survives attack, and a checker with a *published, measured* detection rate against seeded defects is a far stronger artifact to hand an adjudicator than a checker with an architecture diagram.
+**Under a human-ratified seeded-trial profile, a known seeded miss is routed as Grade A.** Before that profile exists, this brief does not self-assign a grade or threshold. Per-class detections, misses, and indeterminate outcomes are recorded in the cycle trial record and may travel into the Q3 package as evidence about the checker itself. Architecture alone earns no detection-rate credit.
 
 ## Rationale
 
@@ -126,7 +142,7 @@ The staging reflects cost honestly. Axes 1–3 and 5 are affordable in C1 and ar
 
 ## Reversibility and migration path
 
-**Structurally reversible. Evidentially, largely not — this is the least reversible decision in the set, and the reason is worth being precise about.**
+**Structurally reversible. Evidentially, largely not.**
 
 A checker can be rewritten at any time; that is easy. What cannot be undone is the *evidence produced under a compromised checker*. If the checker is later found to have shared the producer's premise:
 
@@ -149,8 +165,8 @@ Sealed cycle trial records are the campaign's foundry evidence (§34.9: "a cycle
 
 1. **A written threat model for the checker** — Rev 7 §35's own row demands "threat model, dual-implementation prototype, and adversarial package corpus." None exists yet.
 2. **The seeded-defect taxonomy**, expanded and reviewed. The eight classes above are a starting set proposed by G2, not a validated taxonomy; a red-team review should attack the *list* before it attacks the checker.
-3. **Confirmation that specification isolation is enforceable in the authoring harness** — that a checker-authoring task can be given an allowed-source manifest that provably excludes producer source and rationale. If it cannot be enforced, say so and downgrade the claim rather than asserting isolation that the harness does not deliver.
-4. **A decision on whether the shared SHA-256 primitive becomes a second independent implementation** (see D1, evidence item 4). Cheap; strictly stronger; offered rather than assumed.
+3. **Confirmation that authorship and specification isolation are enforceable in the authoring harness** — including a human-accepted model-family classification and an allowed-source manifest that provably excludes producer source and rationale. If either cannot be enforced, say so and downgrade the claim rather than asserting isolation that the harness does not deliver.
+4. **A decision on whether the shared SHA-256 primitive becomes a second implementation** (see D1, evidence item 4). Cost, audit status, and net correlation reduction are `[UNVERIFIED]`; no benefit is assumed merely from duplication.
 
 ## Blast radius if wrong
 
@@ -165,7 +181,7 @@ Sealed cycle trial records are the campaign's foundry evidence (§34.9: "a cycle
 
 - The harness cannot enforce specification isolation → keep axes 1, 2, 5; **log the axis-3 gap honestly** and cap the independence claim accordingly. Do not describe the checker as premise-isolated when it is not.
 - A second model family becomes unavailable → axis 2 fails; the seeded-defect trial (axis 5) becomes the *only* remaining independence evidence, and the claim degrades. This is survivable and must be stated, not hidden.
-- The seeded-defect trial shows a high detection rate across all classes → the independence claim strengthens on evidence rather than architecture, which is the outcome this design is aiming for.
+- The seeded-defect trial meets a human-ratified, predeclared per-class acceptance rule → the supportable checker claim may strengthen within that rule; no threshold or result is pre-awarded here.
 
 ## Human ratification
 
