@@ -270,3 +270,18 @@ The final checkpoint SHA-256 is computed after this receipt and emitted external
 - Index identity after the G8 transition remains 149 lines / 13,373 bytes / SHA-256 `73c4d3e8566f77eb8bd651ad6806f6f94f633dfff9bbe710eb873683ae3e19ce`; G8 did not edit it.
 - Final owned-path `git diff --check` and full-file no-index whitespace checks passed before this freeze append. The checkpoint identity is recomputed after the append; no self-hash is embedded.
 - Outstanding root work remains unchanged: whole-repository post-Index reruns, ledger seal, session retirement, commit, push, and clean-status proof.
+
+## Root post-DONE reporting correction — 2026-07-16T11:24:38+02:00
+
+- A root post-push audit found that the report omitted two root `/tmp` deletion deviations already recorded in `ledger/RUN_LEDGER.md`. One of those ledger records explicitly required morning-report disclosure. The omission is a root handoff defect; it does not alter G8's historical six-state FSM or retroactively attribute the correction to the retired G8 owner.
+- Root added one `corrected-by` provenance field, ratification row 21, and one known-risk paragraph to `MORNING_REPORT.md`. Corrected identity: 196 lines / 26,182 bytes / SHA-256 `c0455f96e24949b77c087ecfba38a8675493b74b15efa221d45d57e131e0bbd2`.
+- The report now states that both diagnostic invocations receive zero evidentiary credit, their write-free replacements passed, no repository or pre-existing file was affected, and human adjudication remains required for AGENTS Rule 1's unqualified scope.
+- The earlier report/checkpoint identities and 20-row receipts remain historical evidence of the pre-correction freeze. Root must rerun the affected structure, link, policy, repository, Git, and session gates before a successor landing.
+
+## Root successor validation receipt — 2026-07-16T11:29:10+02:00
+
+- Final corrected report candidate: 198 lines / 26,681 bytes / SHA-256 `8c77e21f40d21880b62a8c7bccc96118c1da8d4c592861b9a7faeebdc8e8b772`; nine ordered sections, 21 ratification rows, one root correction provenance field, one deletion-risk disclosure, and one root-close chronology note.
+- The repository-wide link rerun found 232 Markdown destinations: 171 local and 61 external, with zero missing local targets. The Index remained exact at 68 manifest rows / 68 unique paths / 68 inventory files with zero missing, extra, or duplicate path.
+- All nine canonical hashes matched. Ten of ten human-action files remained `DRAFT`. Nine of nine owner files had terminal markers. One syntax-failed marker validator and one incomplete-regex false negative receive zero credit; the corrected third predicate passed all nine.
+- The four-path added-line scan found 25 added lines, zero Rule-13 claim-word hits, and zero prohibited-name hits; diff hygiene passed. Plan, Round, Convergence, and Index identities remained unchanged. No MonkeyBee-prefixed overnight session remained; every retained tmux pane reported `pane_dead=0`; the `agents` repository pane was this live root/operator process; host zombies were zero.
+- This receipt is root-authored after G8 retirement. It does not alter the historical G8 FSM or review accounting. Its landing commit and post-push parity remain external Git evidence.

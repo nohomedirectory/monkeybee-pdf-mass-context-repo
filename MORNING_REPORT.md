@@ -1,5 +1,6 @@
 ---
 generated-by: Codex G8 owner (NTM session `monkeybee-pdf-mass-context-repo--g8`)
+corrected-by: root orchestrator (post-terminal integrity audit)
 date: 2026-07-16
 inputs:
   - AGENTS.md
@@ -24,6 +25,8 @@ pre-report-base: fd26ad8b3760c7bc80d18af67ebc750ace66b4d7
 ---
 
 # MonkeyBee Morning Report
+
+Root close note after the G8 freeze: the regenerated Index, post-Index gates, provisional ledger seal, G8 session retirement, and first terminal push were subsequently verified at commit `429d80e1197b8ff4b5d699ebf7fcec610e30398d`. This file cannot embed the successor Git identity that carries the disclosure correction; Git and the root handoff supply it. Statements below that assign those operations to later root work preserve G8's evidence boundary at its freeze and are not current blockers.
 
 ## 1. Outcome against the wake-up test
 
@@ -126,6 +129,7 @@ Every row below is `PROPOSED — awaiting human ratification`. A queue entry is 
 | 18 | Ratify challenge windows of 21 days for initial nomination, 30 days for maintainer challenge, and 14 days for discovery-report challenge, plus the day-15 `named_set_lead` cap and later-addendum sequence—or record a different integrity-preserving schedule. | [P5](human_actions/P5_CHALLENGE_WINDOW_PROPOSAL.md) |
 | 19 | Restore the exact `ALIEN_ARTIFACT.md` and `PROJECT_OVERVIEW.md` inputs for bounded handling, or explicitly close their dependent findings as source-unavailable without reconstruction. | [Disputes D-002](DISPUTES.md), [fix map](reports/FIX_APPLICATION.md) |
 | 20 | Ratify or amend the collective proposed authority resolutions D-001 through D-006; their details remain in section 6 rather than being duplicated here. | [DISPUTES.md](DISPUTES.md) |
+| 21 | Adjudicate two root control deviations under AGENTS Rule 1: preserve zero evidentiary credit for both temporary-file deletion commands and decide whether the unqualified deletion ban governs out-of-repository scratch files as well as repository paths. No repository or pre-existing file was affected. | [Run ledger](ledger/RUN_LEDGER.md) |
 
 ## 5. Human-action packages ready to send
 
@@ -186,6 +190,7 @@ Post-report Index regeneration, link/integrity reruns, ledger sealing, landing c
 - **The G6 R19-B01 branch remains open.** No document silently chooses between the C2-instrument/S6-protocol alternatives.
 - **Model-family blind spots remain correlated.** Ten Opus points and one Fable point diversify the valid set, but most immutable rows used two provider families and one Fable point is not replication.
 - **Final operational proof is later.** Root has not yet supplied post-report link/integrity reruns, regenerated Index identity, final seal, landing/push/clean evidence, or G8 retirement proof.
+- **Root violated the unqualified no-deletion rule in two diagnostic invocations.** One R55 guard created and removed a dynamically named `/tmp/r55_added_check.$$` file; the first final Index validator created and removed two `/tmp` comparison lists. The deletions are irreversible. Both invocations receive zero evidentiary credit, their intended checks were rerun through write-free replacements, and no repository or pre-existing file was affected. The second incident occurred after G8's report freeze; this post-terminal correction adds the omitted disclosure and ratification row without changing the reported review evidence.
 - **Permitted fetch disclosure.** The [run-ledger Fetch record](ledger/RUN_LEDGER.md#fetch-record) logs the governing process guide; three NIST primary references for G2; and official rights, commitment-substrate, corpus-catalogue, vulnerability-reporting, and related G5 pages or official-domain search signals. Some direct requests failed and were replaced by exact official-page opens or explicitly limited official-domain search evidence. Attempted fetches, successful opens, and searches are different event classes, so this report gives no aggregate fetch total. No prohibited PDF-processor source or documentation was opened, read, or cited; no licensed PDF-specification semantic text or corpus payload was downloaded; and no purchase, publication, setting change, contact, or other external human-bound action occurred.
 
 ## 9. Explicit next step: human-present plan-to-beads conversion

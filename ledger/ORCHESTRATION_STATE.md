@@ -468,3 +468,16 @@ Correction at `2026-07-16T02:01:16+02:00`: the fifth Bash result succeeded and r
 - Final disk gate passed: nine canonical hashes, exact 68-file Markdown inventory, 231-link scan with zero missing local target, nine terminal owner markers, final plan/review identities, claim/clean-room/no-action boundaries, selected single-normative-home anchors, and diff hygiene. The earlier temporary-file validator remains zero-credit and disclosed; its no-temp/no-deletion replacement passed.
 - Terminal evidence remains 22 accepted rounds overall / 12 C1 at A=124/B=68/C=23, including ten Opus 4.8 and one Fable 5/high points. `Convergence: NOT ESTABLISHED`. Run-wide token/cost telemetry remains unavailable.
 - No orchestration work remains after root stages exactly `INDEX.md`, `MORNING_REPORT.md`, `ledger/ORCHESTRATION_STATE.md`, `ledger/RUN_LEDGER.md`, and `ledger/owners/G8_STATE.md`; reproduces the cached path set/diff hygiene; commits on `main`; pushes without force; and verifies clean local/remote parity. The Git landing identity is external to this pre-commit seal.
+
+## Post-terminal correction checkpoint — `2026-07-16T11:24:38+02:00`
+
+- The first terminal landing reached `429d80e1197b8ff4b5d699ebf7fcec610e30398d` with clean local/tracking/direct-remote parity. A later root read-through found that `MORNING_REPORT.md` omitted both root temporary-file deletion deviations, despite the R55 ledger entry requiring morning disclosure.
+- Root reopened only generated handoff records. The report now carries explicit root correction provenance, a 21st ratification row, and a known-risk paragraph covering both zero-credit invocations. Corrected report identity before ledger reconciliation is 196/26,182/`c0455f96...bbd2`.
+- Immediate route is a bounded post-correction validation, append-only root/G8 receipts, exact-path commit and non-force push, final local/tracking/direct-remote parity, and session/zombie proof. Accepted review accounting remains 22 overall / 12 C1; Convergence remains `NOT ESTABLISHED`.
+
+## Successor pre-commit seal — `2026-07-16T11:29:10+02:00`
+
+- Corrected Morning Report is 198/26,681/`8c77e21f...b772`. The replacement gate passed nine-section/21-row structure, 232-link resolution with zero missing local target, 68-row Index equality, nine canonical hashes, ten DRAFT human-action files, nine terminal owner markers, zero added-line claim/prohibited-name hit, and diff hygiene.
+- The first owner-marker validator aborted on syntax and the second under-matched G0's backticked phase marker; both receive zero credit. A corrected third predicate reproduced 9/9 terminal markers.
+- No MonkeyBee-prefixed overnight session remains. All retained panes are live; the repository-cwd pane in `agents` is this root/operator process, not an overnight worker; `clean-reps` is unrelated and untouched; host zombies are zero.
+- Exact successor stage scope is the four generated paths `MORNING_REPORT.md`, `ledger/owners/G8_STATE.md`, `ledger/ORCHESTRATION_STATE.md`, and `ledger/RUN_LEDGER.md`. Next is cached-scope and diff validation, commit on `main`, non-force push, then clean local/tracking/direct-remote and final process proof.
