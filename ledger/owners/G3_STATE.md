@@ -31,21 +31,21 @@ inputs:
 status: DRAFT
 evidence-status: provisional-pending-substrate
 owner: G3
-owner-fsm: SUBMIT-FOR-REVIEW
+owner-fsm: DONE/HANDOFF
 ---
 
 # G3 Owner Checkpoint
 
 ## Current checkpoint
 
-- Timestamp: `2026-07-15T12:56:46+02:00`
-- Phase: `SUBMIT-FOR-REVIEW`
-- Active goal: the final R50 submission identity is already bound; G3 is idle awaiting root commit/push. R09 remains unallocated.
+- Timestamp: `2026-07-16T05:57:24+02:00`
+- Phase: `DONE/HANDOFF`
+- Active goal: the independently narrowed R66-C01 disposition and exact repaired plan identity are bound for root handoff; G3 is idle and performs no routing, contact, commit, or push.
 - Exclusive writable paths for this round: `plans/CYCLE_1_DELTA_PLAN.md` and `ledger/owners/G3_STATE.md`, exclusively through structured `apply_patch`.
-- Current plan: final R50 submission is exactly 3,655 lines / 531,012 bytes / SHA-256 `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`.
+- Current plan: narrowed R66 repair is exactly 3,655 lines / 531,951 bytes / SHA-256 `9778e1b4d95ddaae52b6ca75abe593dc2b09d63676fd3546f4b431c81c5655fa`; its plan frontmatter remains the pushed `SUBMIT-FOR-REVIEW` value because the owner FSM is checkpoint-local for this bounded handoff.
 - Checkpoint navigation: this is the sole live current-state surface. Dated historical identities, goals, phases, and next-round statements remain historical evidence only and do not govern present routing.
-- Round condition: every R50 allegation has an independent owner disposition (`ACCEPT=22`, `NARROW=2`, `REJECT=0`, `REGRADE=0`) and every credited gate is green. G3 remains idle; R09 remains unallocated and root-owned.
-- Branch observation: before the first R50 write, branch=`main`; repository `HEAD` and local `origin/main` both exactly equaled dispatch commit `077d1dc5f77fa7e139e94f049081dec243adf6ee`; the worktree was clean.
+- Round condition: R66-C01 terminal disposition is `NARROW`; the smallest supported FDN.005 repair is checked and no additional defect or repair is warranted. Reviewer grade/verdict remain unpromoted evidence.
+- Branch observation: before the first R66 write, branch=`main`; repository `HEAD` and local `origin/main` both exactly equal pushed base `21560c13bd011bf3bfbbf20663209f36ffc400ca`; the two G3-owned paths match the pushed blobs, while 22 concurrent modified path facts remain out of scope and untouched.
 - External fetches: none.
 - Sub-agent activity: none; G3 remains the sole owner and will not route its own review.
 
@@ -2077,3 +2077,64 @@ Reviewer grades and loss guards remain immutable packet evidence. The dispositio
 - Unresolved licensed/human gates remain: every normative card body and the pre-C1 reviewed-card snapshot/link-resolution manifest; human ratification of D1/D2, D3, D-004, D4, D5, D6, D7, and both D-005 runtime/crypto routes; human/steward custody for IMM.018/IMM.021 and the held-out seal/probe protocol; authenticated IMM.022 adoption before customer availability; candidate-Constitution ratification; and explicit human plan-to-execution conversion. None is inferred or activated here.
 - Exact changed-file manifest is only `plans/CYCLE_1_DELTA_PLAN.md` and `ledger/owners/G3_STATE.md`. Four concurrent out-of-scope path facts remain untouched. Pre-binding checkpoint identity was 2,069 lines / 356,790 bytes / SHA-256 `5b8e9e5151c456140d488bbf8779d1f1ce1db94da29f02be83a73ebacfacfc3b`.
 - G3 is idle at `SUBMIT-FOR-REVIEW`, awaiting root commit/push. R09 remains unallocated; no review, bind, dispatch, owner contact, commit, push, fetch, or external action occurred.
+
+## R66 owner intake: prior submission -> `INGEST` — `2026-07-16T05:51:20+02:00`
+
+- Pushed control reproduces exactly: branch `main`; `HEAD` and local `origin/main` both `21560c13bd011bf3bfbbf20663209f36ffc400ca`; plan 3,655 lines / 531,012 bytes / SHA-256 `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`; prior checkpoint 2,079 lines / 359,226 bytes / SHA-256 `4bc8f1a61ca6f5ecd9b096ad51d78cf2135179496f701b60fc36556f45821525`.
+- The prior R50 submission is historical routing state. The new R66 owner sequence begins at `INGEST`; only the checkpoint FSM changes unless independent R66 premise testing requires a plan repair. The plan remains byte-identical and retains its pushed `SUBMIT-FOR-REVIEW` header.
+- `AGENTS.md` and the planning-workflow skill were read through EOF. The skill contributes evidence-first plan review only; live no-Beads, no-code, no-external-action, clean-room, and exclusive-write laws control this task.
+- The live INGEST surface was persisted first at checkpoint identity 2,079 lines / 359,507 bytes / SHA-256 `02d93a26a484575f5fe4fff231bea3a820ef03f5516414e5faeddf69df173bf8`. Twenty-two concurrent modified paths are path facts only and remain untouched.
+- Next gate: read only the immutable R66 packet at pushed Round Log lines 8384–8407 and its qualification at pushed Convergence Report lines 1262–1284, then identify and read only the exact cited plan/Rev 7 ranges needed for premise testing. No reviewer verdict or root opinion is inherited.
+
+## R66 independent disposition: `INGEST -> DRAFT` — `2026-07-16T05:52:51+02:00`
+
+- Immutable input receipt: pushed R66 packet lines 8384–8407 reproduce as 24 lines / 6,729 bytes / SHA-256 `05c10ec0d95702783df1fffee8d24b3021d3a6a8fd0fb73fe9fcedbcdced5762`; pushed qualification lines 1262–1284 reproduce as 23 lines / 4,016 bytes / SHA-256 `7dfc229e88f533ab4c9d3e2e28f6d3459e434b6b453871b670879a9cffde3262`. Qualification is process/chain evidence only.
+- Authority read: exact pushed plan windows 458–495, 526–550, 645–670, and 1215–1235; exact pushed Rev 7 windows 2091–2188 and 2188–2205. A whole-plan bounded vocabulary scan for aggregate/live/resident/committed memory, memory budget, and `FallibleAllocationLease` returned only FDN.005's lease at line 480 and FUZ.010's lease input at line 3116; it found no existing operation-wide live-memory dimension.
+- **Disposition: `NARROW`.** Rev 7 §11.1 requires every project-controlled potentially large allocation to be charged through the operation context and states that recursion, retry, worker replacement, and parallel fan-out cannot multiply the caller's memory budget. Rev 7 §11.4 requires large allocations to reserve through budget-aware helpers while retaining honest platform no-claims.
+- Premise proof: FDN.005's active-dimension list omits any aggregate memory class. Its generic `global counters`, component meters, worst-case private-work reservation, and `FallibleAllocationLease` do not state that heterogeneous simultaneously live allocations share one operation ceiling. FDN.008 meters protected memory only; FDN.014 meters canonicalization memory only; FLT.002 meters allocations/private spool only.
+- Consequence: project-controlled source-cache pages, decoded containers, output buffers, and canonicalization scratch can each remain under their component ceilings while their concurrent live allocation total lacks an explicit shared ceiling and high-water receipt. Fallible allocation alone is not the Rev 7 operation memory budget.
+- Narrowing reason and smallest repair boundary: the reviewer's proposed physical `peak resident/committed memory` label would exceed FDN.004/FDN.005's compiler/allocator/OS/dependency no-claim boundary. Repair only FDN.005 by adding an active `project-accounted concurrent live memory bytes` ceiling; charge reservation before project-controlled allocation, hold the charge until linear release or retention-owner transfer, inherit/narrow it across children, and record current/monotone-high-water evidence. Do not claim physical RSS, platform commitment, dependency-internal memory, or process-survival control.
+- Loss guard: preserve every existing component cap, `FallibleAllocationLease`, worst-case concurrent private-work reservation, shared-production/retention-owner accounting, typed refusal/degradation, exact covered/missing scope, formal `Complete` prohibition, and the honest no-abort/no-platform-control boundary. The repair adds no code, measurement, hard-abort promise, SpecCard body, card activation, new contract, or new source.
+- Pre-transition checkpoint identity was 2,087 lines / 361,012 bytes / SHA-256 `afbb2187e581411e113a0f37d91a3403887749efe255e173114fa27e298adb3b`; the first persisted DRAFT live surface was 2,087 lines / 360,994 bytes / SHA-256 `532f39b44b71c66d4fba37b7b95e159e3d61584ace30c756743408a352b37448`. The plan remains at its pushed identity.
+- Next gate: use structured `apply_patch` to modify only the five existing FDN.005 fields needed to define the dimension and its receipts/falsifiers, then prove that no other plan line changed before entering `SELF-CHECK`.
+
+### R66 bounded DRAFT repair checkpoint — `2026-07-16T05:54:07+02:00`
+
+- Plan identity after the sole substantive repair is 3,655 lines / 531,951 bytes / SHA-256 `9778e1b4d95ddaae52b6ca75abe593dc2b09d63676fd3546f4b431c81c5655fa`, a five-line replacement / +939-byte delta from the pushed input. The plan frontmatter remains `SUBMIT-FOR-REVIEW`; no process-only header churn was introduced.
+- Exact repair manifest is five FDN.005 fields only: Inputs names the operation-wide ceiling; Budgets defines project-accounted simultaneously live allocation semantics, child inheritance, linear release/retention transfer, monotone high-water, and the physical/dependency-memory exclusion; Outputs couples `FallibleAllocationLease` to the live charge; Evidence records ceiling/current/high-water/release-transfer state; Falsifiers cover heterogeneous concurrency, child multiplication, early/double release, high-water undercount, and retention-transfer conservation.
+- Fully returned DRAFT preflight passes: diff cardinality `5 added / 5 removed`; the five expected field prefixes once each; plan header unchanged; narrowed dimension and platform boundary once each; existing lease and formal degraded-outcome guard retained; pending markers remain 162; added-line Rule-13 vector `[0,0,0,0]`.
+- No other plan contract, card, dependency, capability, component ceiling, refusal, evidence interface, or no-claim boundary changed. Pre-record checkpoint identity was 2,099 lines / 364,630 bytes / SHA-256 `c493ff0a8d53e7dfbf5a081c0c4736a81ddd75dd1c82a666918d877311e67e7c`; owner FSM remains `DRAFT`.
+- Next gate: persist `DRAFT -> SELF-CHECK`, then validate exact hashes, R66 disposition/loss-guard closure, contract/card/reference stability, UTF-8/LF, claim vocabulary, clean-room boundaries, and exact changed-path scope.
+
+## R66 owner transition: `DRAFT -> SELF-CHECK` — `2026-07-16T05:54:23+02:00`
+
+- Pre-transition plan identity was 3,655 lines / 531,951 bytes / SHA-256 `9778e1b4d95ddaae52b6ca75abe593dc2b09d63676fd3546f4b431c81c5655fa`; pre-transition checkpoint identity was 2,107 lines / 366,444 bytes / SHA-256 `df85589f6a28aad7fed79f5ab45d157ae17306154b621fbe545c682229f98342`.
+- Checkpoint frontmatter and the sole live phase now read `SELF-CHECK`. The plan's pushed `SUBMIT-FOR-REVIEW` header remains intentionally unchanged; only the owner checkpoint carries the R66 process FSM, satisfying the instruction to avoid plan mutations unrelated to the premise-supported repair.
+- No SELF-CHECK result is inherited. Next gate is a fresh finite suite over exact input/repair hashes, one disposition and its loss guards, namespace/card/reference invariants, UTF-8/LF and whitespace health, claim/clean-room scans, and owned-path scope.
+
+## R66 credited SELF-CHECK: `SELF-CHECK -> SUBMIT-FOR-REVIEW` — `2026-07-16T05:56:09+02:00`
+
+- Identity/delta/loss gate returned exit 0: pushed plan `db0bbb1...ed59`; repaired plan 3,655 lines / 531,951 bytes / SHA-256 `9778e1b4d95ddaae52b6ca75abe593dc2b09d63676fd3546f4b431c81c5655fa`; exactly five replacements at FDN.005 lines 474/477/480/482/484; plan header unchanged; aggregate ceiling, component caps, allocation lease, private-work reservation, formal degraded-outcome guard, no-abort boundary, and physical/dependency-memory exclusion all present.
+- Structural-stability gate returned exit 0: 142 unique catalog IDs / 142 unique specification IDs / exact parity; all contracts retain 17 fields; namespace and every dependency field byte-equal to pushed input; 161 card-field links / 161 distinct; 166 whole-plan links / 161 distinct; 162 pending markers; zero semantic-body fields.
+- Byte/claim/clean-room gate returned exit 0: both owned files decode as UTF-8, end in decimal byte 10, and have zero NUL, CR, tab, trailing-whitespace, or conflict-marker counts; added-line Rule-13 vector `[0,0,0,0]`; locally derived denied registry 12 with zero owned-file hits; zero owned-file URLs.
+- Scope/FSM gate returned exit 0: `main`; `HEAD == origin/main == 21560c13bd011bf3bfbbf20663209f36ffc400ca`; exact two owned changed paths; 22 original concurrent out-of-scope path facts unchanged; zero untracked and zero owned staged paths; scoped `git diff --check` exit 0; one live Current checkpoint; one explicit R66 disposition, `NARROW`.
+- Immutable packet/qualification receipts remain exact at `05c10ec0...5762` and `7dfc229e...3262`. No diagnostic failed or clipped during credited SELF-CHECK.
+- Pre-transition checkpoint identity was 2,113 lines / 367,346 bytes / SHA-256 `60a1c86be6d86b82df95864a1b448178c431b92433be491ac465cd5e7fd020dc`. Only the checkpoint FSM changed at this transition; the repaired plan bytes remain fixed.
+- Next required transition is `SUBMIT-FOR-REVIEW -> REVISE`: perform a bounded terminal repair-sufficiency check without contacting a reviewer, then either record a newly established defect or preserve the checked repair unchanged for `DONE/HANDOFF`.
+
+## R66 owner transition: `SUBMIT-FOR-REVIEW -> REVISE` — `2026-07-16T05:56:38+02:00`
+
+- The bounded submission-sufficiency gate returned exit 0 at the exact repaired plan identity. It independently confirms a single operation-wide project-accounted ceiling, pre-allocation reservation, child nonmultiplication, linear live-charge lifetime, monotone high-water evidence, physical/dependency-memory exclusion, existing component caps, existing no-abort boundary, five-line delta, and no new contract.
+- No new defect is established. `REVISE` therefore preserves the checked plan bytes rather than rewriting for style or widening the premise. The reviewer remains uncontacted and supplies no terminal decision authority.
+- Pre-transition checkpoint identity was 2,123 lines / 369,550 bytes / SHA-256 `eb1263a1738c6fc62724e842661abd7b651ad2d6609bf2b2663ae446dbb04e9f`; plan identity remains 3,655 lines / 531,951 bytes / SHA-256 `9778e1b4d95ddaae52b6ca75abe593dc2b09d63676fd3546f4b431c81c5655fa`.
+- Next gate: rerun only terminal identity, byte/claim, live-FSM, and exact-scope checks after this checkpoint write; if green, persist `REVISE -> DONE/HANDOFF` with the final plan identity and no further plan edit.
+
+## R66 terminal transition: `REVISE -> DONE/HANDOFF` — `2026-07-16T05:57:24+02:00`
+
+- Terminal state and scope gates returned exit 0 after the REVISE checkpoint write: exact repaired plan identity; UTF-8 and decimal final-byte 10 health; zero NUL/CR/tab/trailing-whitespace/conflict counts; added-line Rule-13 vector `[0,0,0,0]`; one live REVISE surface; pushed plan header preserved; `HEAD == origin/main == 21560c13bd011bf3bfbbf20663209f36ffc400ca`; exact two owned changed paths; 22 concurrent path facts unchanged; zero untracked/owned-staged paths; scoped diff check green.
+- Final disposition is `NARROW`. Authority requires a non-multipliable operation memory budget; the plan lacked an explicit aggregate class. The repair names only project-accounted concurrent live allocation bytes, with pre-allocation reservation, shared child ceiling, linear release/retention transfer, monotone high-water evidence, and explicit exclusion of physical/dependency-internal memory.
+- Every R66 loss guard remains: component ceilings, `FallibleAllocationLease`, worst-case concurrent private-work reservation, shared-production and retention-owner accounting, typed partial/refusal outcomes, formal degraded-outcome guard, and honest allocator/OS/dependency/process-abort no-claims.
+- Final plan identity is 3,655 lines / 531,951 bytes / SHA-256 `9778e1b4d95ddaae52b6ca75abe593dc2b09d63676fd3546f4b431c81c5655fa`. Its only delta from pushed input is five replacements in FDN.005; the plan's pushed `SUBMIT-FOR-REVIEW` header remains intentionally unchanged.
+- Exact changed-file manifest is only `plans/CYCLE_1_DELTA_PLAN.md` and `ledger/owners/G3_STATE.md`. Immutable R66 packet/qualification receipts remain `05c10ec0...5762` / `7dfc229e...3262`; licensed card bodies remain pending and no card was activated.
+- Pre-transition checkpoint identity was 2,130 lines / 370,756 bytes / SHA-256 `987bdda018b5f9eb8cedbb09414cb7e6b3252b026eb034119cc3452c21c5894a`. The exact terminal checkpoint identity is measured after this append and reported in the handoff; no self-hash is embedded.
+- G3 is idle at `DONE/HANDOFF`. No reviewer/process contact, spawn, browser/fetch, prohibited-source access, measurement, comparison, code, Beads/pseudo-Beads, staging, commit, push, or external action occurred.
