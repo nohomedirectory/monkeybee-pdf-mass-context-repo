@@ -1178,3 +1178,15 @@ Baseline R11 is assigned to submitted C1 delta plan root `db0bbb1df5bb317d3bd2cd
 R11 is `ASSIGNED`, root delivery pending, with no packet or reviewer filing. Allocation remains 61 rows at 25 Sol / 36 Opus; 31 failed at 10/21; 18 filed at 9/9; and 12 active-unfiled at 6/6. R11 is the sole assigned row; no row is bound-unsent or allocated-unsent.
 
 This assignment grants no review, finding, grade, coverage, marginal, curve, cross-model, route, owner-disposition, or convergence credit. No activation was instantiated or delivered. Established sequences are unchanged; Convergence remains **NOT ESTABLISHED**.
+
+## R11 transcript-qualified zero-credit closure / R63 allocation-only replacement — `2026-07-16`
+
+Stable transcript replay closes R11 narrowly as `NOT-RUN · AUTHORITY-SCOPE-VIOLATION · ROOT-TERMINATED`. Exactly five matched calls/results occur, with full AGENTS and reviewer-protocol Reads first. The fifth Bash requested and successfully returned Round lines 7,850-7,913, exceeding the exact R11 control interval by predecessor R61-closure lines. Its result is explicitly non-interrupted; a later visible root interruption event follows. There are zero patch calls, zero R11 packets, and no exact reviewer `TERMINATED` response. No hidden cause is inferred.
+
+Mechanical counts are A=0, B=0, C=0, but this is not a filed, clean, or marginal review. R11 receives no finding, grade, coverage, marginal, route, owner-disposition, model-family, curve, cross-model, or convergence credit and is not reused. Current process absence and zero-zombie assertions remain `ROOT-REPRODUCTION-REQUIRED`.
+
+R63 is the one-for-one Opus replacement for the same plan root and sole `security/DoS` lens. It is process-unbound at `ALLOCATED-UNSENT`; no reviewer is reserved, bound, contacted, or dispatched and no activation exists. Root must push construction before creating a fresh reservation, then request a separate G7 bind FSM.
+
+The old unique physical-EOF literal was exact `**R61 FINAL LITERAL ANCHOR — KEEP AS PHYSICAL EOF; APPEND ONLY THE ASSIGNED R61 PACKET IMMEDIATELY BEFORE THIS LINE.**`, 121 bytes / `9e28b10723a0736cb2cbdc868b341f7748a37e49c5a5b4d8058307507d61763e`. It is intentionally replaced, with disclosed provenance, by the generic 289-byte fail-closed sentinel rooted `b54cfd6d3ff27c94a5ee819b8e03b175b770211c5cb32775fd02a1c605072c3c`; the new sentinel remains unique physical EOF and grants no predecessor-read authority.
+
+Allocation becomes 62 rows at 25 Sol / 37 Opus; 32 failed at 10/22; 18 filed at 9/9; and 12 active-unfiled at 6/6. R63 alone is allocated-unsent; no row is assigned or bound-unsent; R62 remains absent. R11/R63 add no established point, so Convergence remains **NOT ESTABLISHED**.

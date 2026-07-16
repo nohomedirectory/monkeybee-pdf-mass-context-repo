@@ -92,7 +92,7 @@ Hash, status, counts, and disposition are slots. They are filled only from filed
 | R08 | C1 delta plan | oversimplification-and-feature-loss | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | 5-pass A (5/5) | `af3f349d20312fb26505570f73e3438d7dee015728d942ee6ea4c7f64d328fd0` | NOT-RUN · AUTHORITY-SCOPE/FRESH-CONTEXT-CONTROL-VIOLATION · TERMINATED | — | — | — | — | Call 42 searched excluded Rev 7 bytes outside the sealed authority ranges; Call 47 also searched whole authority files and returned truncated output. Root terminated before any write. No packet, finding, grade, coverage, verdict, route, or conclusion; partial reasoning quarantined; immutable ID not reused. |
 | R09 | C1 delta plan | obscure-section self-containment | `claude-opus-4-8`, effort `xhigh` | — | `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59` | NOT-RUN · METHOD-CONTROL-SEQUENCING-VIOLATION · TERMINATED | — | — | — | — | Immutable zero-credit closure. The exact dispatched process made forbidden compound Bash its first and only tool instead of reading full `AGENTS.md`, then root interrupted and terminated it. Zero write, packet, finding, grade, coverage, marginal result, verdict, route, curve point, owner disposition, or convergence credit; session/PIDs absent; immutable ID not reused. |
 | R10 | C1 delta plan | dependency soundness | `gpt-5.6-sol`, effort `ultra`, supplied live `fast`, supplied priority service | — | `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59` | NOT-RUN · INCOMPLETE-PRIMARY-UNION · TERMINATED | — | — | — | — | Immutable zero-credit transcript-qualified closure. The stable transcript has 39 paired successful exec calls, zero apply_patch, zero compaction, exactly 25 successful primary Reads ending after plan lines 1-700, no twenty-sixth primary Read, no lens analysis/replay/filing, and one exact `TERMINATED` assistant message. No cause is inferred. No packet, finding, grade, coverage, marginal result, verdict, route, disposition, curve, cross-model, or convergence credit; ID not reused; R59 is the one-for-one replacement. |
-| R11 | C1 delta plan | security/DoS | Opus | — | `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59` | ASSIGNED | — | — | — | — | Root delivery pending after commit/push and fresh reservation reattestation; zero packet, review, finding, grade, coverage, marginal, curve, or convergence credit. |
+| R11 | C1 delta plan | security/DoS | Opus | — | `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59` | NOT-RUN · AUTHORITY-SCOPE-VIOLATION · ROOT-TERMINATED | 0 | 0 | 0 | — | Immutable zero-credit transcript-qualified closure. Five matched calls/results; the fifth Bash requested and successfully returned Round lines 7,850-7,913, exceeding the exact R11 control interval by eight predecessor R61-closure lines. A later visible root interruption occurred; zero apply_patch, zero packet, and no exact standalone reviewer TERMINATED response. No cause is inferred. No review, finding, grade, coverage, marginal, route, disposition, model-family, curve, cross-model, or convergence credit; R11 is not reused; R63 is the one-for-one replacement. |
 | R12 | C1 delta plan | claim vocabulary and de-slopification | Sol | — | PENDING | PRECOMMITTED | — | — | — | — | — |
 | R13 | Constitution + fix map | identity-law consistency | Sol (fast) | — | `9e81eaaa03c1368335b8aaff260af0ff918d7a6a76ca45bed85a00d4313743ec` | FILED · VALIDATED · TERMINATED | 3 | 2 | 0 | NO | ROUTED → G1 (independent premise-first triage; grades preserved and unpromoted). Freshness and start-time corrections recorded below. |
 | R14 | Constitution + fix map | oversimplification-and-feature-loss | claude-opus-4-8 (xhigh) | 5-pass B (1/5) | `dd86aaf319ecc87d0526d90b56b1993e8023925eeec4467ffd7807f89f92efb4` | FILED · VALIDATED · TERMINATED | 5 | 10 | 4 | NO | METHOD-NONCOMPLIANT / PROCESS-QUARANTINED; mechanically admissible for routing → G1 through root; all grades and loss guards unpromoted. R15 blocked pending a new G1 `SUBMIT-FOR-REVIEW` manifest. |
@@ -7910,4 +7910,78 @@ No other write, retry, path, packet, row edit, scratch artifact, or post-patch t
 
 After a separate root validation/commit/push and immediate fresh reattestation, root may instantiate the detached activation once and deliver it exactly once only to the attested R11 reservation. Root must record delivery identity outside G7's scope. After terminal response, root stabilizes the transcript, retires the reviewer and idle shell, independently proves retirement, and sends the stable transcript to G7 for qualification. Until a chain-qualified packet and retirement boundary are independently reproduced, R11 stays zero-credit and Convergence remains `NOT ESTABLISHED`.
 
-**R61 FINAL LITERAL ANCHOR — KEEP AS PHYSICAL EOF; APPEND ONLY THE ASSIGNED R61 PACKET IMMEDIATELY BEFORE THIS LINE.**
+## R11 transcript-qualified zero-credit closure — `2026-07-16`
+
+- **Immutable classification:** `NOT-RUN · AUTHORITY-SCOPE-VIOLATION · ROOT-TERMINATED`. This status names only the observable request boundary and root termination; it does not assign a hidden cause.
+- **Stable transcript:** `/home/joseph/.claude/projects/-home-joseph-ntm-dev-monkeybee-pdf-mass-context-repo/219a1325-a873-4a42-9544-ceb389e0a448.jsonl` is 54 newline-terminated lines / 177,401 bytes / SHA-256 `4925a12420d7be91dd6425ff77653f98a23914cad4bd23f055436a86107c8c37`.
+- **Public chain:** exactly five matched call/result pairs occur as `Read`, `Read`, `Bash`, `Bash`, `Bash`. Tool 1 reads all of `AGENTS.md`; Tool 2 reads all of the reviewer protocol; there are zero `apply_patch` calls.
+- **Authority boundary:** the fifth request contains `sed -n '7850,7913p' gauntlet/ROUND_LOG.md`. It spans predecessor R61 closure lines 7,850-7,857 before the exact R11 control at 7,858-7,912 and its anchor at 7,913, violating the sealed prohibition on reading another packet/control.
+- **Result correction:** the fifth result is recorded as `is_error=false`, `interrupted=false`, empty stderr, and successful returned stdout. Its Round segment exactly matches lines 7,850-7,913 at 64 lines / 10,467 bytes / `8f37f15667f29cc10446c355d2418243bd7ad61588a65ba6ddad1b01cab636ba`. The earlier root premise that no widened bytes returned is not reproduced and is excluded.
+- **Termination and zero credit:** a later public event is exact `[Request interrupted by user]`; there is no exact standalone reviewer `TERMINATED`, patch, or R11 packet. Mechanical filed counts are A=0, B=0, C=0, but this is not a clean or marginal review. R11 receives no finding, grade, coverage, marginal, route, owner-disposition, model-family, curve, cross-model, or convergence credit and is never reused.
+- **Provenance:** current reservation/process absence and zero-zombie assertions are `ROOT-REPRODUCTION-REQUIRED`; G7 did not inspect a process. Historical R11 assignment/control lines 7,858-7,912 remain byte-identical at root `cb009e3f7dfcd9cf578b37bda1a3ed114d415737debbe92e922bdc54cf517388`.
+- **Sentinel correction:** the retired physical-EOF literal was exact `**R61 FINAL LITERAL ANCHOR — KEEP AS PHYSICAL EOF; APPEND ONLY THE ASSIGNED R61 PACKET IMMEDIATELY BEFORE THIS LINE.**`, 121 bytes / `9e28b10723a0736cb2cbdc868b341f7748a37e49c5a5b4d8058307507d61763e`. R61 is immutable failed history. This task intentionally replaces it with the generic sentinel at physical EOF below, 289 bytes / `b54cfd6d3ff27c94a5ee819b8e03b175b770211c5cb32775fd02a1c605072c3c`.
+
+| R63 | C1 delta plan (one-for-one replacement for failed R11) | security/DoS | exact `claude-opus-4-8`, effort `xhigh` required at later bind | Immutable transcript-qualified R11 zero-credit closure; process-unbound construction only | `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59` | ALLOCATED-UNSENT | — | — | — | — | One-for-one Opus replacement for R11. No process is reserved or bound and no activation exists. Root must first push this construction, then create a fresh reservation and return separate process evidence for a new G7 bind FSM. Zero packet or review credit; R62 is absent and unallocated. |
+
+## R63 allocation-only replacement construction — `2026-07-16`
+
+- generated-by: G7 gauntlet/convergence owner
+- date: 2026-07-16
+- inputs: stable R11 transcript, immutable R11 control, submitted C1 delta plan, local campaign authority, reviewer protocol
+- status: DRAFT
+- evidence-status: provisional-pending-substrate
+
+### Allocation and process boundary
+
+R63 is the one-for-one replacement for failed R11 against only `plans/CYCLE_1_DELTA_PLAN.md`, sole lens `security/DoS`, future exact reviewer `claude-opus-4-8` at effort `xhigh`. It is `ALLOCATED-UNSENT`: artifact/lens/model-bound but process-unbound. No session, pane, PID, cwd, TUI, placeholder, reservation, bind, activation, or delivery fact exists in this construction.
+
+Required progression is fail-closed and split across commits: root validates and pushes this construction; only afterward root creates a fresh Opus reservation; a separate G7 bind FSM may then bind root-reproduced process evidence and change only R63 to `BOUND-UNSENT`; root validates and pushes that bind; root freshly reattests immediately before it may instantiate and deliver one detached activation. This construction itself authorizes none of those later actions.
+
+The submitted artifact is exactly 3,655 newline-terminated lines / 531,012 bytes / SHA-256 `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`. R63 receives zero review, finding, grade, coverage, marginal, route, disposition, model-family, curve, cross-model, or convergence credit before a later transcript-qualified filing.
+
+### Generic sentinel correction
+
+The former 121-byte physical-EOF R61 literal rooted `9e28b10723a0736cb2cbdc868b341f7748a37e49c5a5b4d8058307507d61763e` was round-specific and misleading after R61 closure. Its disclosed replacement is the 289-byte generic physical-EOF sentinel rooted `b54cfd6d3ff27c94a5ee819b8e03b175b770211c5cb32775fd02a1c605072c3c`. The new sentinel authorizes only the sole packet named by a sealed current control and explicitly grants no permission to read or change predecessor control/packet bytes.
+
+**R63 ROOT-BIND RECEIPT ANCHOR — KEEP BYTE-IDENTICAL; A LATER G7 BIND FSM MAY INSERT ONE ROOT-REPRODUCED PROCESS RECEIPT IMMEDIATELY BEFORE THIS LINE.**
+
+## R63 sealed future reviewer control — `security/DoS`
+
+### Fixed allocation
+
+- artifact: only `plans/CYCLE_1_DELTA_PLAN.md`, 3,655 newline-terminated lines / 531,012 bytes / SHA-256 `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`
+- lens: exactly `security/DoS`; adjacent observations are out of scope unless directly necessary to prove this lens
+- reviewer: exact `claude-opus-4-8`, effort `xhigh`, from a reservation created only after the pushed construction
+- status before a later bind: `ALLOCATED-UNSENT`; no process coordinate is admitted by this control
+
+### Future startup and admission law
+
+At any later activation, the first model-generated action must be Tool 1 reading all of `AGENTS.md`; the second must be Tool 2 reading all of `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md`. No narration, question, skill, identity probe, repository access, or other tool may precede Tool 1 or occur between those two reads. Host UI notices outside the model response are not reviewer narration or evidence.
+
+Only after Tool 2 may the reviewer verify the pushed commit, exact bound process/model/cwd facts, whole-Round identity, plan identity, sole lens, exact R63 row, exact sealed R63 control, and exact generic sentinel. Each Round identity check must use only its separately supplied exact line interval. Mechanical whole-file `wc`/SHA checks are content-silent; no `tail`, contextual search, adjacent range, predecessor row, packet, closure, control, bind receipt, or other Round byte may be read or returned. Any interval widening, stale hash, missing bind, model/effort/cwd mismatch, extra process, prompt-state variance, or sentinel mismatch fails closed.
+
+An artifact-hash or model-identity mismatch follows reviewer-protocol start law and may consume the sole packet write below as a zero-finding `STALE-ASSIGNMENT` or `MODEL-MISMATCH` R63 status packet. Every other failed admission gate permits no write. No mismatch branch permits lens analysis.
+
+### Declared local authority and evidence boundary
+
+After admission, read only local `OVERNIGHT_GOAL.md` §1 (lines 23-36), §3/G3 (line 66), and §4 (lines 78-87); `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` §5/C1 (lines 93-99); `CYCLE_0_WORK_ORDER.md` §7 (lines 116-119); controlling `MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md` §6 (lines 924-1,003), §10 (lines 1,651-2,090), and §11 (lines 2,091-2,282); then the exact submitted plan in full through EOF using bounded reads. The corresponding generated `constitution/MONKEYBEE_CONSTITUTION_v8.md` status/extraction contract (lines 1-35), §6 (lines 225-305), §10 (lines 839-1,341), and §11 (lines 1,342-1,557) may be read only as optional corroboration. Each authority range is a separate exact bounded read; no adjacent line is authorized. The proposed Constitution cannot supersede controlling authority, independently ground a finding, fill a missing requirement, resolve a conflict, or widen a claim.
+
+Do not read G3/G7 owner state, Convergence, another artifact, another Round row/control/packet/closure, the future bind receipt, any other Constitution section, an external source, competitor material, or prohibited material. Remain in plan space: no code, scaffold, task inventory, measurement, comparison, artifact edit, process contact, external action, stage, commit, push, publication, purchase, reservation, activation, or send.
+
+Under the sole lens, test whether the submitted plan states bounded, terminating, resource-accounted, adversary-aware behavior and evidence interfaces for its declared inputs, state transitions, parsing/decoding/recovery paths, credentials, cancellation, refusal, and failure surfaces. Structural or partial coverage is not semantic coverage. A finding requires exact local plan evidence plus a controlling requirement; model recollection and the proposed Constitution alone are not evidence.
+
+Before writing, freeze the packet and every cited local interval, then replay each cited interval exactly. A clipped, widened, failed, mismatched, or unreplayed citation receives zero evidence credit and cannot support a finding. After any reviewer context compaction, reread all of `AGENTS.md` before any further repository action; compaction does not waive any source, replay, or admission gate.
+
+### Sole packet write and termination
+
+If every admission, one-lens, authority, citation-replay, schema, no-action, and self-check gate passes, make exactly one structured `apply_patch` to `gauntlet/ROUND_LOG.md`: replace only the exact generic physical-EOF sentinel with one R63 packet, one blank separator line, and the byte-identical sentinel. The sole packet heading is `## R63 — plans/CYCLE_1_DELTA_PLAN.md — security/DoS`. Follow the reviewer protocol schema; state A/B/C counts and `marginal-only`; give every allegation evidence, requirement, consequence, repair boundary, and loss guard; end with `- termination state: TERMINATED`.
+
+For the stale/model-mismatch branch, the same single write and heading apply, with status, A=0/B=0/C=0, `marginal-only: YES`, mismatch evidence, no-action statement, no allegation subsection, and termination state. It earns zero review or convergence credit.
+
+No other write, retry, path, row edit, scratch artifact, or post-patch tool is allowed. A failed patch is not retried. Whether no write, failed write, mismatch packet, or graded packet, the entire assistant response after the final allowed tool is exact standalone `TERMINATED`. Root later stabilizes and independently qualifies the transcript before any credit.
+
+### Construction-only root boundary
+
+No activation is instantiated or sent here. A later bind must preserve this control byte-for-byte, bind a freshly reserved process created after the pushed construction, bind the then-pushed Round/control/row/sentinel identities, and retain R63 at zero credit. Any bind/control drift requires a new construction decision rather than silent repair.
+
+**GAUNTLET FINAL SENTINEL — KEEP AS PHYSICAL EOF. ONLY ONE ROUND EXPLICITLY AUTHORIZED BY ITS SEALED CURRENT CONTROL MAY REPLACE THIS LINE WITH ITS ONE PACKET, ONE BLANK LINE, AND THIS BYTE-IDENTICAL SENTINEL; NO PREDECESSOR CONTROL OR PACKET BYTE IS AUTHORIZED FOR READING OR CHANGE.**
