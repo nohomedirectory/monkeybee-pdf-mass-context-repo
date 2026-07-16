@@ -8580,4 +8580,61 @@ Owner revision is required before this artifact can be treated as an initial-ker
 
 - termination state: TERMINATED
 
+## R62 supplemental allocation, zero-credit process bind, and sealed control — `2026-07-16`
+
+This human-required supplemental round is outside the original baseline and preserves every predecessor allocation, receipt, control, packet, separator, and finding byte. It adds no review evidence or convergence weight before a separate stable-transcript qualification.
+
+### R62 supplemental allocation row
+
+| Round | Artifact | Declared lens (exactly one) | Model | Precondition to admit | Artifact hash | Status | A | B | C | Marginal-only | Owner disposition |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| R62 | C1 delta plan (`plans/CYCLE_1_DELTA_PLAN.md`), human-required supplemental round | dependency-soundness | exact Claude Fable 5 (`claude-fable-5`), effort `high` | Human retained one Fable 5/high C1 round after reducing the rough accepted-round target; current process bind and later root push/re-attestation required | `bdd3f908afce51511864790a2e515cd78354ef33c1037b4f69fb04748f5a1f88` | BOUND-UNSENT | — | — | — | — | Zero-credit process bind only. No packet, finding, grade, coverage, marginal result, accepted point, route, disposition, model-family evidence point, curve, or convergence weight exists. Root alone may validate, push, freshly reattest, and later activate once. |
+
+### R62 current process receipt
+
+- bind scope: only the submitted plan above under sole exact lens `dependency-soundness`; R62 is the only `BOUND-UNSENT` row and has zero physical packet
+- observed read-only at `2026-07-16T08:26:34+02:00`: session `monkeybee-pdf-mass-context-repo--r62`; pane `%165` index 1; shell PID 165494; sole model child PID 165732; tmux server PID 1540496; pane live with `pane_dead=0`, `history_size=0`, tty `/dev/pts/7`
+- kernel/process identity: boot `7349fb94-6725-4e24-8a56-f8313aeac869`; shell/model start ticks 755944078/755944107; direct states `S/S`; observed `ps` states `Ss/Sl+`; starts `Thu Jul 16 01:36:23/01:36:24 2026`; server -> shell -> model parentage; shell/model child counts 1/0; zero host zombies
+- exact cwd: pane, shell, and model are `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`
+- shell command: 6 NUL-delimited bytes / `70458f7ab64acaa2f17d502161ce831a64212cf7493447837f259e696b0f6cf1`, exact `-bash` plus NUL
+- model command: 99 NUL-delimited bytes / `7d2122fbe9f3fd41511995e68564524d65c68b942535b5f17531fd62947a5ec5`, exact argv `/home/joseph/.local/bin/claude`, `--dangerously-skip-permissions`, `--model`, `claude-fable-5`, `--effort`, `high`
+- untouched visible boundary: joined plain pane capture 33 newline-terminated lines / 3,843 bytes / `30493b0f2a2e7c163316715ec51a7b5d9e3a1f9fdfe30e210c4c84c9cddfe9bc`; visible `Fable 5 with high effort`, `Claude Max`, repository basename, and exact generic placeholder `Try "refactor <filepath>"`; zero pane history
+- selected launcher environment in actual order: four newline-terminated lines / 209 bytes / `c21eea0ad1461d8cde67966c2341d047054bf47d55733d90915aaf2f24b23ce4`: `CLAUDE_CODE_HOOKS` with the generic Bash `PreToolUse` command `'rch'`; `NTM_SPAWN_ORDER=1`; `NTM_SPAWN_BATCH_ID=spawn-20260716-013624-4cb9eea0`; `NTM_SPAWN_TOTAL=1`; the process is not hook-free
+- provenance boundary: G7 directly reproduced the current pane/process/filesystem/screen/environment facts and sent no input. Reservation creation and lifetime zero-delivery interpretation are human/root-supplied provenance; zero history plus the generic placeholder establishes only the current visible no-task state.
+- activation boundary: root must validate and push this exact bind/control, then immediately reattest the same process, model, cwd, screen/history boundary, launcher, submitted plan, pushed Round, R62 row/receipt/control, and sentinel. Drift fails closed. G7 has not instantiated or delivered an activation.
+
+## R62 sealed reviewer control — `dependency-soundness`
+
+### Role, startup, and identity
+
+You are a fresh-context reviewer, not the artifact owner. Review only `plans/CYCLE_1_DELTA_PLAN.md` under the sole lens `dependency-soundness`. Ordinary brief status narration is permitted but is not repository evidence and may not state a finding before source review.
+
+Tool 1 must be one local Read that returns all of `AGENTS.md` through EOF. Tool 2 must be one local Read that returns all of `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` through EOF. No earlier tool and no tool between them is allowed. No skill, question, substantive campaign claim, or other repository access may precede completion of Tool 2. A failed, partial, capped, reordered, wrong-path, or otherwise non-reproducible mandatory read permits no review or write and requires exact standalone `TERMINATED`.
+
+After Tool 2, verify the activation-supplied exact pushed branch/HEAD/local-origin parity; plan, Round, R62 row/receipt/control/sentinel identities and coordinates; session/pane/PIDs; exact lowercase cwd; `claude-fable-5` with effort `high`; and the root-reproduced pre-send welcome/history/launcher identities. Current process facts may be checked only with bounded local read-only calls and without input. The pre-send zero-history assertion remains root provenance after activation delivery. Read only the activation-bound R62 row, this R62 receipt/control, and the generic sentinel; do not read any predecessor row, receipt, control, packet, adjacent separator, Convergence, owner checkpoint, root ledger, local control-plane state, or unrelated artifact. Any identity, model, source-boundary, or freshness mismatch permits no review or write and requires exact standalone `TERMINATED`.
+
+### Allowed local authority and artifact
+
+After Tool 2, local authority reads are limited to these exact intervals: `OVERNIGHT_GOAL.md` lines 23-35, line 66, and lines 78-86; `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` lines 28-41, 86-99, and 136-149; `CYCLE_0_WORK_ORDER.md` lines 67-79 and 116-119; `constitution/MONKEYBEE_CONSTITUTION_v8.md` lines 20-35, 347-363, 779-790, 1,018-1,137, 1,138-1,257, 1,285-1,340, and 1,982-2,009; and `shell/MONKEYBEE_SHELL_CORPUS_v8.md` lines 4,166-4,305 and 4,306-4,391. Use no more than 18 authority Reads, no authority Read over 200 source lines, and no more than 800 returned authority source lines. The Constitution and shell remain proposed generated authority beneath the Charter set; they cannot silently strengthen higher law.
+
+Read the submitted plan from line 1 through line 3,664 exactly once in nineteen ordered, contiguous, non-overlapping Reads: lines 1-200, consecutive 200-line intervals through 3,401-3,600, then 3,601-3,664. No retry, duplicate, gap, overlap, widening, error, clipping, cap, or unexpected EOF is admissible. Line labels added by the Read mechanism are not source content. Any union failure permits no review or write and requires exact standalone `TERMINATED`.
+
+No other repository path, skill, web search, network fetch, connector, app, MCP, outside source, or prohibited processor source/documentation is allowed. Do not measure, benchmark, compare products, contact an outside party, author a SpecCard semantic body, create code/scaffolding/Beads/pseudo-task inventory, edit the plan or authority, or take any external action.
+
+### Sole-lens adjudication
+
+Apply only `dependency-soundness`. Challenge the exact prerequisite and downstream-consumer closure; layer direction; proper-domain identity dependencies; stale ownership; hidden cycles; missing edges; and whether unavailable evidence is laundered into absence or success. Structural graph coverage is not semantic coverage: every alleged defect needs returned local meaning from the exact contract and governing law.
+
+In particular, test the acyclic strict/recovery composition among DOC.009, REC.002, RPT.001, and RPT.007; RPT.010 validation identity propagation through IMM.004 and CLI.010; the versioned shell §27 bindings to G0-G7, G6.1, §27.1 falsifiers, and §27.4 release rows; gate and surface consumers; and any unauthorized local ontology replacement. Do not broaden into style, implementation design, performance, product comparison, or another lens, and do not preseed a verdict.
+
+Every finding must cite exact plan and governing-authority line intervals physically returned before write. Search output, headings alone, memory, generated summaries, and structural counts cannot prove a semantic finding. Apply the reviewer protocol's A/B/C law without promotion; state exact counts and `marginal-only: YES | NO`; preserve uncertainty and typed unavailability.
+
+### One packet and terminal law
+
+If every gate passes, freeze one packet below 48,000 UTF-8 bytes with heading `## R62 — plans/CYCLE_1_DELTA_PLAN.md — dependency-soundness`; exact process/model evidence; started/filed times; exact artifact hash; exact authority and plan intervals actually returned; reviewer FSM; A/B/C counts; marginal-only value; no-action statement; monotonic R62 finding IDs; one Round verdict; and final line `- termination state: TERMINATED`. Omit empty grade subsections. The packet remains an unpromoted allegation until a separate G7 transcript-qualification FSM admits it.
+
+Immediately before writing, make one local read-only verification of only the activation-bound generic sentinel, proving exact bytes, uniqueness, and physical EOF. Then make exactly one Claude `Edit` call on `gauntlet/ROUND_LOG.md` with the exact sentinel as `old_string`, the frozen packet plus one blank line plus the byte-identical sentinel as `new_string`, and `replace_all: false`. No other write tool, path, row edit, retry, second packet, or predecessor change is allowed.
+
+After the `Edit` result, use no tool and emit only exact standalone `TERMINATED`, with no formatting or extra text. A write failure forbids retry and requires the same response. Any reviewer context compaction is fail-closed: reread all of `AGENTS.md`, use no later tool, write nothing, and emit exact standalone `TERMINATED`.
+
 **GAUNTLET FINAL SENTINEL — KEEP AS PHYSICAL EOF. ONLY ONE ROUND EXPLICITLY AUTHORIZED BY ITS SEALED CURRENT CONTROL MAY REPLACE THIS LINE WITH ITS ONE PACKET, ONE BLANK LINE, AND THIS BYTE-IDENTICAL SENTINEL; NO PREDECESSOR CONTROL OR PACKET BYTE IS AUTHORIZED FOR READING OR CHANGE.**

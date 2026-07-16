@@ -1352,3 +1352,11 @@ R31-A01 through R31-A04 remain immutable, unpromoted reviewer allegations. They 
 ### Allocation and conclusion
 
 Allocation remains 65 unique rows at 25 Sol / 40 Opus. Failed rows remain 35 at 10/25; valid filed evidence becomes 21 at 11/10 with aggregate A=123/B=65/C=23; active-unfiled becomes 9 at 4/5. R17/R18/R25-R30 remain `PRECOMMITTED`, R32 remains `AUTHORIZED`, no row is allocated-unsent, assigned, or bound-unsent, and R62 remains absent. Accepted count becomes 21 and accepted C1 count becomes 11. This is one valid Sol-family review point, not an owner disposition, external adjudication, or convergence claim.
+
+## R62 zero-credit Fable 5/high dependency-soundness bind — `2026-07-16`
+
+The live human reduced the rough accepted-round target from 30 to approximately 20 while separately retaining one Fable 5/high C1 round. The 21 already admitted reviews and 11 admitted C1 reviews remain unchanged; this receipt adds the required supplemental allocation without counting it. R62 binds only `plans/CYCLE_1_DELTA_PLAN.md` at 3,664 newline-terminated lines / 540,389 bytes / `bdd3f908afce51511864790a2e515cd78354ef33c1037b4f69fb04748f5a1f88`, sole lens `dependency-soundness`, exact `claude-fable-5`, effort `high`.
+
+G7 directly reproduced the current session/pane/process/cwd/model/topology/screen/history/launcher/zombie facts and sent no input. Reservation creation and lifetime zero-delivery remain provenance-bounded. The R62 row is `BOUND-UNSENT`; its process receipt and sealed conventional control precede the preserved generic physical-EOF sentinel. Root alone may validate, push, freshly reattest, and later activate once.
+
+Allocation becomes 66 unique rows at 25 Sol / 40 Opus / 1 Fable. Failed remains 35; valid filed remains 21 at 11 Sol / 10 Opus with aggregate A=123/B=65/C=23; active-unfiled becomes 10: eight `PRECOMMITTED`, R32 `AUTHORIZED`, and R62 sole `BOUND-UNSENT`. R62 has zero packet, finding, grade, coverage, marginal result, accepted point, route, disposition, family evidence point, curve, cross-model, or convergence credit. Accepted overall/C1 remain 21/11. Only a later chain-qualified R62 filing could project them to 22/12; that projection is not current evidence and does not establish convergence. Convergence remains **NOT ESTABLISHED**.
