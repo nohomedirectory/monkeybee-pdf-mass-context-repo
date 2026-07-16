@@ -33,7 +33,7 @@ Rev 7 §24.16 makes field comparison a **three-stage, three-commit** process, an
 
 §33.4 states the consequence directly: *one late omnibus document cannot retroactively satisfy all three boundaries.* And §24.16: if the protocol was not prospectively committed or discovery coverage is incomplete, **only `named_set_lead` is permitted** — the weakest scope, covering exactly the artifacts you happened to name.
 
-So the reason a human must do this is not merely that committing is an external act (though it is, and agents are forbidden it). It is that **the first search anyone runs spends the pre-search boundary permanently.** No agent in this campaign has run a comparator search, and none may. OVERNIGHT_GOAL §1.4 puts it plainly: premature measurement poisons the Q2 evidence chain permanently.
+So the reason a human must do this is not merely that committing is an external act (though it is, and agents are forbidden it). It is that **the first search anyone runs without the commitment invalidates the prospective pre-search boundary.** No agent in this campaign has run a comparator search, and none may. OVERNIGHT_GOAL §1.4 puts it plainly: premature measurement poisons the Q2 evidence chain permanently.
 
 **Only stage 1 is committed at day 0.** Stages 2 and 3 come later, in that order. This package deliberately does *not* draft the measurement protocol, because drafting it now and committing it later, as one bundle, would be exactly the omnibus laundering §33.4 forbids.
 
@@ -47,7 +47,7 @@ So the reason a human must do this is not merely that committing is an external 
 
 Rev 7 §24.13 contains a dated register of candidate comparators, observed on 2026-07-14. **That register is a prior observation, not the field.** DC-1 treats it as a *characterization pool* — a set of candidates that must each receive an explicit recorded disposition — and nothing more. Rev 7 §24.13 says so itself ("This prose snapshot is not proof of field completeness"), and §24.16 requires S1's first freeze to characterize every known released path rather than assuming a remembered subset exhausts the field.
 
-The distinction matters because the register was assembled partly from model-visible sources, and a field defined by what a model remembered is a field defined by nothing.
+The distinction matters because the register was assembled partly from model-visible sources; model recall does not establish a field boundary.
 
 ---
 
@@ -86,7 +86,7 @@ A candidate is **eligible** for a field if all of the following hold, and each i
 1. **Released.** A released artifact exists on or before the cutoff — a published release/tag/registry version, not a main-branch state. Main-branch capability is an early-warning record, never a released baseline (§24.13).
 2. **Open**, for the registered-open fields: source and artifact obtainable under terms permitting the measurement described in the bound evaluation protocol.
 3. **Pinnable.** Release identity, digest or immutable authority identity, documented production configuration, optional features, and dependency closure can be recorded (§24.12 rule 7). A candidate that cannot be pinned is `indeterminate`, not absent.
-4. **Implements the exact output contract** of that field. A crate named "render" does not thereby render; advertisement is not capability (§24.13). Conversely — and this is the rule that costs the most work — **documentation silence never establishes capability absence** (§24.12 rule 4). A missing README claim is not an exclusion; it is an unfinished characterization.
+4. **Implements the exact output contract** of that field. A crate named "render" does not thereby render; advertisement is not capability (§24.13). Conversely, the labor-intensive rule is that **documentation silence never establishes capability absence** (§24.12 rule 4). A missing README claim is not an exclusion; it is an unfinished characterization.
 5. **Not excluded** by a recorded exclusion reason from §5 below.
 
 **Cutoff law.** The cutoff date is `[DATE]`, set at commit time. A known eligible release available by the associated claim freeze cannot be hidden behind an older cutoff (§24.16). A challenger released after the cutoff does not invalidate the historical report but **lapses any current-facing field claim until characterized.**
@@ -154,7 +154,7 @@ Per the §33.15 ladder, MonkeyBee precommits to seeking, and submitting to indep
 - **Foundry ladder:** `F1` at most, and only if the baselines in §3 below are actually run at equal resources. If they are not run, **no foundry claim is made at any rung** — not a weaker one, none.
 - **Lineage ladder:** **no claim.** The campaign's elapsed evolution is days, and Rev 7 §33.13 forbids relabeling a synthetic evolution trial as empirical operating history. The Evolution Trial (Flagship F) at C4 is precommitted here as an explicitly **synthetic** extension rehearsal, and will be reported as such.
 
-Declaring the lineage abstention *now*, before any result exists, is the point: it is cheap to abstain from a claim you have not yet been tempted by.
+Declaring the lineage abstention now fixes the boundary before any result can influence it.
 
 ## 2. Reference class, date, and vintages (§33.2)
 
@@ -212,7 +212,7 @@ A material change to this commitment creates a **new** `EvaluationProtocolId` an
 ## Exact steps (for the human)
 
 1. **Fill every `[BRACKET]`** in DC-1 and DC-2: cutoff date, scouts, languages, registries, reference class, baseline YES/NO, and the challenge-window durations from P5. A committed protocol with an unfilled placeholder is not a commitment.
-2. **Decide the baseline commitments honestly** (§3 of DC-2). This is the expensive one, and Charter risk #1 says skipping it silently selects FrankenSim's outcome. Decide it with P8 open in front of you.
+2. **Decide the baseline commitments explicitly** (§3 of DC-2). This is the budget-sensitive item, and Charter risk #1 says skipping it silently selects FrankenSim's outcome. Decide it with P8 open in front of you.
 3. **Commit both documents through P3**, in the day-0 batch, before any search.
 4. **Publish the discovery commitment** where nominations can reach it (P5 names the venue). Publication is a human act.
 5. **Only then** may scouts begin.

@@ -22,16 +22,23 @@ Charter §3.3 requires the durations be predeclared *now* and the windows open *
 
 ## Why a human must do this
 
-Opening a window is publication: the commitment text has to reach the people who might nominate a challenger, or the window is a window nobody can see through. Publication is an external action, forbidden to every agent in this campaign. Choosing the duration is a judgment about credibility that trades directly against the campaign's schedule, and that trade is the human's to make (Rev 7 §29.9).
+Opening a window is publication: the commitment text has to reach the people who might nominate a challenger, or the window does not perform its stated function. Publication is an external action, forbidden to every agent in this campaign. Choosing the duration is a judgment about credibility that trades directly against the campaign's schedule, and that trade is the human's to make (Rev 7 §29.9).
 
 ## What a challenge window is for
 
 Two distinct jobs, often conflated:
 
 1. **Nomination.** Third parties propose comparators the scouts missed. This is what converts "we searched and found these" into "we searched, published our method, and invited the world to tell us what we missed." Without it, discovery coverage rests entirely on the searchers' diligence — and the searchers work for the claimant.
-2. **Maintainer/vendor challenge.** The people who built a measured artifact get to contest its *configuration* and *eligibility* before the result is published (§24.12 rule 8). This is the mechanism that prevents a lead manufactured out of a competitor's badly-wired defaults, which is the most common way honest people produce dishonest benchmarks.
+2. **Maintainer/vendor challenge.** The people who built a measured artifact get to contest its *configuration* and *eligibility* before the result is published (§24.12 rule 8). This prevents a result from being manufactured through an artifact configuration the maintainer would reject.
 
 A window that is open but unannounced does neither job.
+
+## Prerequisites
+
+- P3's human-ratified commitment substrate before the durations are committed or a window is represented as open.
+- P4's DC-1 text, with every human-owned placeholder filled, because the durations and discovery protocol bind together.
+- A human-selected publication venue and contact channel that likely nominators can actually reach.
+- Confirmation that no comparator search has started. The package header records the current local state as not executed; the human must recheck immediately before commitment.
 
 ## Proposal — `PROPOSED, awaiting human ratification`
 
@@ -46,7 +53,7 @@ A window that is open but unannounced does neither job.
 
 ### Why 21 days for nomination
 
-Short enough to fit a fast campaign; long enough that a maintainer who reads a mailing list weekly, or a researcher on holiday for a fortnight, still has a real chance to respond. Below about two weeks, the window is decorative: it excludes anyone not already watching, which is precisely the population whose challengers the scouts most likely missed. Above roughly a month, the marginal nomination rate does not plausibly justify the schedule cost — this is a judgment, not a measurement, and it is offered as one.
+Short enough to fit a fast campaign; long enough that a maintainer who reads a mailing list weekly, or a researcher on holiday for a fortnight, still has a real chance to respond. Below about two weeks, the window excludes anyone not already watching, including people the scouts may have missed. Above roughly a month, the marginal nomination rate does not plausibly justify the schedule cost — this is a judgment, not a measurement, and it is offered as one.
 
 ### Why 30 days for maintainer challenge
 

@@ -26,7 +26,7 @@ This directory holds the sign-and-send drafts for every Work Order §5 / Charter
 | ID | Package | What it unblocks | Human time (est.) | Calendar latency (est.) |
 |---|---|---|---|---|
 | P1 | [Independence-layer outreach](P1_INDEPENDENCE_LAYER_OUTREACH.md) — stewards, red team, reviewers/adjudicators | G2 (Q3 verdict), corpus sealing, commitment custody | 2–4 h to dispatch | Weeks; the binding constraint on Q3 |
-| P2 | [ISO 32000-2 licence + SpecCard pipeline](P2_ISO_LICENCE_AND_SPECCARD_PIPELINE.md) | *Every* cycle's SpecCard coverage gate — the sole legal channel for ISO semantics | 3–6 h + counsel | Days (copy) to weeks (written AI-use determination) |
+| P2 | [ISO 32000-2 licence + SpecCard pipeline](P2_ISO_LICENCE_AND_SPECCARD_PIPELINE.md), including the Work Order §5.9 clause-tagging declaration | *Every* cycle's SpecCard coverage gate — the sole legal channel for ISO semantics | 3–6 h + counsel | Days (copy) to weeks (written AI-use determination) |
 | P3 | [Commitment substrate + ledger opening](P3_COMMITMENT_SUBSTRATE_AND_LEDGER_OPENING.md) | All Q2/Q3 evidence. Nothing below is evidence until this exists | 2–4 h | Hours |
 | P4 | [Discovery-protocol commitment texts](P4_DISCOVERY_PROTOCOL_COMMITMENTS.md) | Q2 field claims; must be committed *before* any comparator search | 1–2 h to review and commit | Immediate once P3 exists |
 | P5 | [Challenge-window proposal](P5_CHALLENGE_WINDOW_PROPOSAL.md) | Q2 field scope; windows must open at day 0 | 30–60 min to ratify | The window durations themselves |
@@ -50,13 +50,13 @@ The order is set by *irreversibility* and *latency*, not by importance.
 
 ## What every package contains
 
-What it is · why a human must do it · prerequisites · exact steps · expected time · evidence returned to the repo · failure and downgrade path · a ready-to-send draft · and its open `[UNVERIFIED]` items with the exact verification step for each.
+What it is · why a human must do it · prerequisites · exact steps · expected time · evidence returned to the repo · failure and downgrade path · ready-to-send or ready-to-ratify text appropriate to the action · and its open `[UNVERIFIED]` items with the exact verification step for each.
 
 ## Sources and their status
 
-Current external facts come from primary official sources only, on 2026-07-14, and each is marked with its evidence class at the point of use. **Root-verified** means the root orchestrator opened the official page (recorded in `ledger/RUN_LEDGER.md`). **Search-derived** means this owner's direct fetch was refused — iso.org, pdfa.org, and cve.org all block automated requests — and the detail exists only in a search result from the official domain, which is *not* primary-page verification and stays `[UNVERIFIED]` with a human recheck step. Every retrieval, success and failure alike, is in `ledger/owners/G5_STATE.md`, reconciled against root's record.
+External facts recorded on 2026-07-14 are either from primary official pages or explicitly labeled official-domain search signals, and each carries its evidence class at the point of use. **Root-verified** means the root orchestrator opened the official page (recorded in `ledger/RUN_LEDGER.md`). **Search-derived** means this owner's direct automated request was refused or returned unusable content and the detail exists only in an official-domain search result; that is *not* primary-page verification and stays `[UNVERIFIED]` with a human recheck step. Every retrieval, success and failure alike, is in `ledger/owners/G5_STATE.md`, reconciled against root's record.
 
-The most consequential external finding, **[ROOT-VERIFIED]**: **ISO's terms require a separate licence for a workflow in which an AI model can see ISO publication text.** A no-cost route to ISO 32000-2 exists (PDF Association, sponsored), and it confers no AI-use rights — the rights question is entirely unresolved and is P2's decisive unknown. No-cost access is a fact about price, not permission; Rev 7 §4.2 says exactly this, and the terms bear it out.
+The load-bearing external finding, **[ROOT-VERIFIED]**: **ISO's terms require a separate licence for a workflow in which an AI model can see ISO publication text.** A no-cost route to ISO 32000-2 exists (PDF Association, sponsored), but the rights attached to that copy for this campaign's AI workflow remain unestablished and are P2's unresolved rights question. No-cost access is a fact about price, not permission; Rev 7 §4.2 makes exactly this distinction.
 
 This does not damage the campaign. The SpecCard pipeline was already designed so that no agent ever sees the specification (Rev 7 §4.2.1's default is deny). What must be obtained is a copy *humans* may read, and two humans to review the cards.
 

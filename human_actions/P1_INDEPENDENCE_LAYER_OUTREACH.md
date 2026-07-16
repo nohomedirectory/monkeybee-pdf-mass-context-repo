@@ -25,7 +25,7 @@ Audit finding R1-5 is the reason this package exists: the evidence machinery in 
 
 ## Why a human must do this
 
-Recruitment is a relationship, not a task. An agent cannot contact a person, cannot make a commitment on the project's behalf, cannot assess a conflict of interest, cannot negotiate compensation, and — decisively — **cannot supply the one property being purchased, which is independence from this project's agents.** An independence layer engaged by the system it is meant to check is not an independence layer. Rev 7 §29.9 reserves this authority to the human; §33.15 forbids the repository from self-awarding any candidate label.
+Recruitment is a relationship, not a task. An agent cannot contact a person, make a commitment on the project's behalf, assess a conflict of interest, negotiate compensation, or **supply the required independence from this project's agents.** Rev 7 §29.9 reserves this authority to the human; §33.15 forbids the repository from self-awarding any candidate label.
 
 ## Prerequisites
 
@@ -53,7 +53,7 @@ Recruitment is a relationship, not a task. An agent cannot contact a person, can
 
 **Independence requirements:** no financial interest in the outcome; not the author of any committed protocol; distinct from the corpus steward where possible (splitting custody from sealing removes a single point of both failure and suspicion).
 
-**Note on scope:** if P3 is executed with a witnessed append-only log (timestamping plus a public transparency log), the custodian's role narrows to attestation of the *reveal* rather than custody of the *bytes*. Both mechanisms are permitted by Rev 7 §33.4; the strongest configuration uses both, because a log proves time and a human proves the log was not swapped.
+**Note on scope:** if P3 is executed with a witnessed append-only log (timestamping plus a public transparency log), the custodian's role narrows to attestation of the *reveal* rather than custody of the *bytes*. Both mechanisms are permitted by Rev 7 §33.4; a defense-in-depth configuration uses both so the mechanism and the custodian provide distinct records.
 
 ### Role C — Red team
 
@@ -67,7 +67,7 @@ Recruitment is a relationship, not a task. An agent cannot contact a person, can
 
 **Does:** receives the Q3 package at the Cycle-4 checkpoint (~day 9) and the Q2 package at C7 (~day 15), and renders a verdict on their own calendar. Rev 7 §33.15: the repository self-awards none of the candidate labels. Charter §8 risk #6 accepts verdict latency as a design property, not a defect — the value of the verdict comes precisely from not controlling it.
 
-**Independence requirements:** no participation in construction; no financial interest; disclosed conflicts; competence in at least one of (a) PDF/document-format engineering, (b) software-assurance methodology, (c) evaluation/measurement design. A panel drawn from all three is stronger than three of any one.
+**Independence requirements:** no participation in construction; no financial interest; disclosed conflicts; competence in at least one of (a) PDF/document-format engineering, (b) software-assurance methodology, (c) evaluation/measurement design. A panel drawn from all three covers more distinct competence areas than three reviewers from one.
 
 **Adjudicator vs reviewer:** an adjudicator additionally rules on contested comparator outcomes (Rev 7 §24.12 rule 12 — `incomparable` and `indeterminate` are real outcomes, and someone who is not the maker must be able to declare them).
 
@@ -94,7 +94,7 @@ Human: 2–4 hours to dispatch all four roles. Calendar: **weeks**, and this is 
 
 | Role not obtained | Immediate consequence | Claim degradation (honest, recorded — never silent) |
 |---|---|---|
-| A — corpus steward | No sealed held-out splits; the C3 wild-tail gate has no independently stewarded sample | Every held-out and wild-tail claim degrades to self-attested. S2 cannot be published as a stewarded ledger. Q3's "grounding that survives attack" row loses its strongest input |
+| A — corpus steward | No sealed held-out splits; the C3 wild-tail gate has no independently stewarded sample | Every held-out and wild-tail claim degrades to self-attested. S2 cannot be published as a stewarded ledger. Q3's "grounding that survives attack" row loses its independently stewarded held-out input |
 | B — commitment custodian | Commitments rest on the timestamping/log mechanism alone | Q3 provenance degrades from independently-custodied to witnessed-log-only. Acceptable if P3's log configuration is in place; **not** acceptable if the only artifact is a git commit (Charter §10 — git alone is decoration) |
 | C — red team | No adversarial grounding from outside the ecology | "Grounding that survives attack" (Charter §7) has no evidence. The F-01 failure mode is unmitigated. Q3 artifact claims cap below `Artifact-alien candidate`, which requires independent judgment |
 | D — reviewers/adjudicators | **No Q3 verdict exists at all** | G2 is dropped under the graceful-degradation law (Charter §2). The campaign terminates as G1 — a shipped, evidenced, sellable product — with no stranded work. This is a designed outcome, not a failure |
@@ -112,10 +112,9 @@ Subject: Independent corpus steward for a PDF-engine evaluation (paid, ~[N] h/mo
 
 Hello [NAME],
 
-I'm building MonkeyBee, a clean-room PDF engine in Rust. The engineering is
-the easy half. The hard half is that I want its claims to be checkable by
-someone who has no stake in them being true, and that requires people who are
-independent of the project by construction.
+I'm building MonkeyBee, a clean-room PDF engine in Rust. I want its claims to
+be checkable by someone who has no stake in them being true, which requires
+people who are independent of the project by construction.
 
 I'd like to ask you to be the corpus steward.
 
@@ -169,8 +168,8 @@ What makes it valuable is exactly what makes it unautomatable: you have no
 financial interest in the outcome, you did not author the protocols, and the
 dates are not mine to control.
 
-Timestamping and a public transparency log will run alongside you — belt and
-braces. A log proves the time; a person proves the log wasn't swapped.
+The human-ratified timestamping/log mechanism will run alongside you. Its
+proof and your independently recorded receipt/reveal provide distinct records.
 
 Compensation: [AMOUNT/TERMS]. Happy to send the one-page custodian charter.
 

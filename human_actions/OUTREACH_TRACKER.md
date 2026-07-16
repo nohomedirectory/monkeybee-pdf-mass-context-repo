@@ -13,7 +13,7 @@ execution-status: EMPTY BY DESIGN — no one has been contacted, screened, short
 
 The honest record of who was asked, who said yes, who said no, and who never replied.
 
-Charter §3.4: **what cannot be obtained is logged honestly, and every claim that needed it degrades to its self-attested tier rather than silently proceeding.** This file is the evidence that a degradation was honest rather than convenient. A tracker with no declines and no silences is a tracker nobody used.
+Charter §3.4: **what cannot be obtained is logged honestly, and every claim that needed it degrades to its self-attested tier rather than silently proceeding.** This file records whether recruitment was actually attempted and how misses affected claim scope. An empty tracker demonstrates no outreach activity.
 
 **No agent may add a name to this file.** Candidate identification, screening, and contact are human acts (P1). The rows below are a template.
 

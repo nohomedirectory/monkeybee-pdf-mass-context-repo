@@ -19,7 +19,7 @@ execution-status: NOT EXECUTED — no corpus downloaded, nothing acquired, nothi
 
 The procedure for acquiring the wild-tail PDF corpus, stratifying it, and — the part with a one-way deadline — having an independent steward **seal the held-out splits before any implementation exists.**
 
-Charter §3.6 states the deadline as a law of nature rather than a preference: *after code exists, nothing new can become held-out.* Once an implementation has been shaped, however indirectly, by knowledge of a document, that document can never again serve as evidence that the implementation generalizes. There is no procedure, no amount of care, and no later apology that restores the property. **This package must finish before the C1 swarm runs.**
+Charter §3.6 defines a hard evidence boundary: *after code exists, nothing new can become held-out.* Once an implementation has been shaped, however indirectly, by knowledge of a document, that document cannot later establish held-out generalization. A later procedure cannot restore that independence. **This package must finish before the C1 swarm runs.**
 
 ## Why a human must do this
 
@@ -35,7 +35,7 @@ Charter §3.6 states the deadline as a law of nature rather than a preference: *
 - Storage that is access-controlled, encrypted at rest, and **isolated** — see the malware warning below, which is not hypothetical.
 - Counsel availability for the Common Crawl AI/ML indemnification question (below).
 
-## Sources, with evidence class and their real conditions
+## Sources, evidence classes, and constraints
 
 **[ROOT-VERIFIED]** — root opened these exact pages and recorded the findings in `ledger/RUN_LEDGER.md`. **Nothing was downloaded by any agent, and nothing may be.**
 
@@ -76,8 +76,8 @@ Charter §3.6 states the deadline as a law of nature rather than a preference: *
 
 ### Phase 5 — Standing discipline (forever)
 
-14. The evaluation service prevents leakage through bytes, summaries, embeddings, caches, dashboards, scorer diagnostics, model-provider retention, and **human side channels** (Rev 7 §28.3). Provider behaviour that cannot be verified is a known unknown and disqualifies the affected set from strong held-out claims — write that down now, while it costs nothing to admit.
-15. **When a held-out set is burned, say so.** Repeated adaptive tuning against a hidden set makes it development data even if the bytes were never revealed. The set is then retired to a regression fixture, the strong claim is withdrawn, and the reserve replaces it. This will feel expensive at the moment it happens; it is precommitted in P4 (DC-2 §5) precisely so that it is not renegotiated then.
+14. The evaluation service prevents leakage through bytes, summaries, embeddings, caches, dashboards, scorer diagnostics, model-provider retention, and **human side channels** (Rev 7 §28.3). Provider behaviour that cannot be verified is a known unknown and disqualifies the affected set from strong held-out claims; record that limit before evaluation begins.
+15. **When a held-out set is burned, say so.** Repeated adaptive tuning against a hidden set makes it development data even if the bytes were never revealed. The set is then retired to a regression fixture, the strong claim is withdrawn, and the reserve replaces it. P4 (DC-2 §5) precommits this treatment so it is not renegotiated after exposure.
 
 ## Expected time
 
@@ -95,9 +95,9 @@ Charter §3.6 states the deadline as a law of nature rather than a preference: *
 
 | Failure | Consequence | Honest response |
 |---|---|---|
-| **Implementation starts before the seal** | **Irreversible.** No held-out claim is available for the whole campaign; the C3 wild-tail gate has no independently stewarded sample | Do not start. This is the one deadline in the campaign that cannot be recovered by working harder afterwards |
+| **Implementation starts before the seal** | **Irreversible.** No held-out claim is available for the whole campaign; the C3 wild-tail gate has no independently stewarded sample | Do not start. Held-out independence cannot be restored after implementation begins |
 | No steward (P1 Role A fails) | The project can still acquire and stratify, but its "held-out" set is self-sealed | Every held-out and wild-tail claim degrades to **self-attested**, explicitly and in public. S2 is published as a ledger over a self-selected sample — which is still useful, and must not be described as anything more |
-| Common Crawl terms unacceptable to counsel | The SafeDocs/CC lineage is unavailable | Fall back to Govdocs1 plus project-generated and conformance corpora, and **declare the coverage loss** — the wild tail is where the interesting failures live, and a corpus without it should say so |
+| Common Crawl terms unacceptable to counsel | The SafeDocs/CC lineage is unavailable | Fall back to Govdocs1 plus project-generated and conformance corpora, and **declare the coverage loss** — the intended wild-tail stratum is then absent |
 | Malware handling defeats the storage plan | Acquisition stalls | Expected. Plan isolation before downloading, not after the first quarantine event |
 | Held-out set burned by adaptive tuning | The strong claim is void | Retire the set, withdraw the claim, deploy the reserve, record it. §33.10: a system that never demotes a claim is epistemically suspect — the demotion is evidence *for* the project's grounding, not against it |
 

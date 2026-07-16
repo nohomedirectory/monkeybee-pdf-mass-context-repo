@@ -19,7 +19,7 @@ execution-status: NOT EXECUTED — no copy obtained, nothing purchased, no permi
 
 ## What this is
 
-The steps to lawfully obtain ISO 32000-2 (and its errata) **under ISO's current AI-use terms**, to classify the resulting rights, and to stand up the human pipeline that converts a licensed specification into agent-consumable `SpecCard`s without contaminating the clean room.
+The steps to lawfully obtain ISO 32000-2 (and its errata) **under ISO's current AI-use terms**, to classify the resulting rights, to stand up the human pipeline that converts a licensed specification into agent-consumable `SpecCard`s without contaminating the clean room, and to ratify Work Order §5.9's prospective clause-tagging discipline.
 
 This is the campaign's **critical path**. Rev 7 §4.2.1 makes rights-vetted SpecCards the *only* legal channel for ISO semantics into implementation. Charter §3.5 makes card coverage a gate on every cycle's swarm start, and Charter §8 ranks SpecCard human latency as risk #2 — the slowest step in a compute-unlimited campaign. Nothing about this can be compressed by adding agents; adding agents to it is precisely the contamination failure.
 
@@ -37,7 +37,7 @@ Two evidence classes appear below and are **not** interchangeable. **Root-verifi
 
 **2. ISO 32000-2 catalogue metadata. [ROOT-VERIFIED]** Root opened `https://www.iso.org/standard/75839.html`: **Edition 2, published/current status, CHF 227 list price.**
 
-**3. A no-cost route exists; its AI-use rights do not. [ROOT-VERIFIED, with the decisive gap open]** Root opened `https://pdfa.org/sponsored-standards/` and confirmed **no-cost public access** to ISO 32000-2. Root also recorded that **rights for this campaign's AI workflow remain unestablished.** The licence terms attached to the no-cost copy are therefore still the single most important thing for the human to read — no-cost access is a fact about price, not about permission (Rev 7 §4.2 makes exactly this distinction).
+**3. A no-cost route exists; its AI-use rights remain unestablished. [ROOT-VERIFIED, with the rights question open]** Root opened `https://pdfa.org/sponsored-standards/` and confirmed **no-cost public access** to ISO 32000-2. Root also recorded that **rights for this campaign's AI workflow remain unestablished.** The human must therefore read the licence terms attached to the no-cost copy — no-cost access is a fact about price, not about permission (Rev 7 §4.2 makes exactly this distinction).
 
 **4. Rev 7 §4.4's errata baseline remains a project-internal claim. `[UNVERIFIED]`** Rev 7 asserts the planning baseline is ISO 32000-2:2020 plus the PDF Association's June 2026 Errata Collection 3. The edition line is now consistent with root's catalogue read (Edition 2), but **the errata collection's identity, version, and publishing authority were not verified by anyone this run.** Confirm at acquisition, and keep ISO amendments/corrigenda distinct from PDF Association errata collections — Rev 7 §4.4 insists they are different authorities and must not both be called "formal ISO errata."
 
@@ -64,13 +64,14 @@ Two evidence classes appear below and are **not** interchangeable. **Root-verifi
 4. **Decide whether to request AI-use permission at all** (15 min). The recommendation is: **do not**, at least not initially. The pipeline is designed to not need it; requesting it invites an audit relationship and a negotiation the project does not require, and a *denial on the record* is worse than a *policy of not asking*. If the human wants the option preserved for a later, narrower purpose (for example, a non-generative extraction tool that parses clause structure without a model), the draft enquiry below is ready — and it deliberately asks about *non-generative machine parsing*, which is a different flag from prompting.
 5. **Staff the two-person meaning review** (60 min to identify and ask). Two humans. Neither authored the card under review. Both have access to the licensed source. Their names and the review dates become each card's rights and technical provenance (Rev 7 §4.3).
 6. **Declare the agent-visible boundary in writing** (30 min) — the table below — and hand it to every human who touches the specification.
-7. **Begin card production for the R0 surface** (ongoing; cards run one cycle ahead of implementation, Charter §3.5). The card *registry, slot map, extraction protocol, and review template* are being produced in-repo by the G1 owner with every slot marked `PENDING-LICENSED-SOURCE`; this package supplies the licensed source and the humans that fill them.
+7. **Ratify the Work Order §5.9 clause-tagging declaration** (10 min): from Cycle 1, every consequence contract cites the applicable `SpecCardId` slots; the later coverage scorer reads those tags and never invents them retrospectively. A missing licensed card stays `PENDING-LICENSED-SOURCE`; tagging does not create a semantic body or waive the coverage gate. Record the human's ratification through P3.
+8. **Begin card production for the R0 surface** (ongoing; cards run one cycle ahead of implementation, Charter §3.5). The card *registry, slot map, extraction protocol, and review template* are being produced in-repo by the G1 owner with every slot marked `PENDING-LICENSED-SOURCE`; this package supplies the licensed source and the humans that fill them.
 
 ## The agent-visible boundary (hand this to every human on the pipeline)
 
 | Artifact | May an implementation agent see it? | Why |
 |---|---|---|
-| ISO 32000-2 text, in any form — file, screenshot, paste, quote, retrieval index, chat log, CI artifact | **Never**, absent a recorded counsel permission basis | Rev 7 §4.2.1(1). ISO's licence bars prompting/embedding without separate authorization |
+| ISO 32000-2 text, in any form — file, screenshot, paste, quote, retrieval index, chat log, CI artifact | **Never**, absent a recorded counsel permission basis | Rev 7 §4.2.1(1). At the root-verified scope, model-visible use requires a separate licence; the exact prompting/embedding wording remains `[UNVERIFIED]` |
 | A project-authored SpecCard that has passed two-person review | Yes | §4.2.1(4) — this is the only legal channel |
 | Public errata material whose terms permit use | Yes, once its terms are recorded | §4.2.1(4); terms are per-source, never inherited |
 | Machine-readable standards models with compatible licences | Yes, once classified | §4.2 |
@@ -94,6 +95,7 @@ The last row is the one that will be violated by accident. It looks like helpful
 - The licence text as captured at acquisition, with its date and hash committed through P3.
 - The two reviewers' names and qualifications (in the ledger; card-level provenance references them).
 - The signed agent-visible boundary declaration.
+- The human-ratified Work Order §5.9 clause-tagging declaration, with its date and P3 commitment proof.
 - **Not** the specification itself, and not any excerpt of it, anywhere in this repository.
 
 ## Failure and downgrade path
@@ -102,7 +104,8 @@ The last row is the one that will be violated by accident. It looks like helpful
 |---|---|---|
 | AI-use permission not obtained | **None.** The pipeline never planned to use it | Record the flag as denied/not-granted and proceed. The default was already deny |
 | No lawful copy obtained at all | Fatal to the SpecCard channel: no cards, so every cycle's coverage gate blocks | The campaign cannot proceed to implementation on ISO semantics. It may not substitute model memory. Escalate to the human; this is a stop-the-line condition |
-| Two-person review cannot be staffed | Cards exist but are not authoritative (§4.3: a card is not authoritative because an agent wrote it) | Cards ship marked single-reviewed; every claim resting on them carries that provenance. Coverage gates report the deficit rather than hiding it. This is a real degradation and must be logged, not smoothed |
+| Two-person review cannot be staffed | Cards may exist as drafts but do not satisfy §4.2.1's two-person meaning-review gate | Keep the affected slots `PENDING-LICENSED-SOURCE` / non-authoritative and block the affected cycle's SpecCard coverage gate. Log the staffing failure; do not substitute model memory or expose a single-reviewed draft as an authoritative card |
+| Clause-tagging declaration not ratified | Work Order §5.9 remains undispatched, and later coverage cannot be treated as prospectively tagged | Keep the item in the human ratification queue. Do not retro-tag at the coverage-scoring stage or infer coverage from untagged prose |
 | Errata authority misattributed | Corpus contradicts itself about what is normative | Rev 7 §4.4's rule stands: an ISO amendment/corrigendum and a PDF Association errata collection are different authorities with different status. Record which is which, per resolution |
 
 ## Ready-to-send drafts
@@ -146,7 +149,7 @@ Thank you,
 [ORGANIZATION]
 ```
 
-*Why this draft is worded this way:* it does not ask for AI-use permission (the project does not need it, and asking creates a record and a relationship it does not want), it distinguishes non-generative parsing from model access — which ISO's own terms treat as separate — and it states the conservative workflow up front so the answer is about the actual practice rather than a hypothetical.
+*Why this draft is worded this way:* it does not ask for AI-use permission (the project does not need it, and asking creates a record and a relationship it does not want), it distinguishes non-generative parsing from model access as Rev 7's rights matrix requires, and it asks ISO to determine the treatment rather than asserting it from unverified wording. It states the conservative workflow up front so the answer is about the actual practice rather than a hypothetical.
 
 ### Draft B — Two-person meaning reviewer ask
 
@@ -181,13 +184,30 @@ almost entirely pedantry.
 [CONTACT]
 ```
 
+### Ready-to-ratify draft — Work Order §5.9 clause-tagging declaration
+
+Nothing below has been ratified or committed.
+
+```text
+From Cycle 1 onward, every MonkeyBee consequence contract cites the applicable
+SpecCardId slots. A slot whose licensed, two-person-reviewed card does not yet
+exist remains PENDING-LICENSED-SOURCE and cannot satisfy a coverage gate. The
+coverage scorer reads the prospectively recorded tags; it does not add or infer
+tags retrospectively.
+
+Ratified by: [HUMAN NAME]
+Date: [DATE]
+P3 commitment identity: [ID / PROOF LOCATION]
+```
+
 ## Open items requiring human verification
 
 | Item | Status | Verification step |
 |---|---|---|
-| ISO terms require a separate licence for model-visible use | **[ROOT-VERIFIED]** — root opened the ISO terms and copyright pages | None needed for the policy. The boundary table below already assumes the strictest reading |
+| ISO terms require a separate licence for model-visible use | **[ROOT-VERIFIED]** — root opened the ISO terms and copyright pages | None needed for the policy. The boundary table above already assumes the strictest reading |
 | Exact clause wording (embedding/prompting/querying; EU Art. 4 TDM opt-out; audit rights) | **`[UNVERIFIED]`** — search-derived only; this owner's fetches were refused (403) | Human opens `https://www.iso.org/terms-conditions-licence-agreement.html` and reads it. **Nothing in this package depends on this detail** |
-| Licence terms of the no-cost PDF Association copy | **`[UNVERIFIED]` — the decisive unknown.** Root confirmed the route exists; the rights did not follow | Human obtains the copy via `https://pdfa.org/sponsored-standards/` and reads the licence attached to it. No agent may download it |
+| Licence terms of the no-cost PDF Association copy | **`[UNVERIFIED]` — the unresolved rights question.** Root confirmed the route exists; the rights did not follow | Human obtains the copy via `https://pdfa.org/sponsored-standards/` and reads the licence attached to it. No agent may download it |
 | ISO 32000-2 edition, status, price | **[ROOT-VERIFIED]** — Edition 2, published/current, CHF 227 | Confirm at purchase if buying |
 | Current errata collection identity and publisher | `[UNVERIFIED]`; Rev 7 §4.4 asserts PDF Association Errata Collection 3, June 2026 | Human confirms at acquisition; record publisher and status **separately** from ISO's (§4.4) |
 | ISO response latency to Draft A | `[UNVERIFIED]` | Only knowable by sending — and step 4 recommends not sending |
+| Work Order §5.9 clause-tagging declaration | `PROPOSED — awaiting human ratification`; nothing adopted by this package | Human ratifies or amends the ready-to-ratify text, then records the exact bytes and date through P3 |
