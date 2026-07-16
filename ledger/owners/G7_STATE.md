@@ -8440,3 +8440,96 @@ The later detached activation must carry, as one contiguous governing block, the
 - Mandatory REVISE is substantive and finished: it applies `R64-Q-SC-01`, performs the three authorized documentary mutations, rereads actual bytes, and reruns every dependent safe gate. Transition is now persisted: `REVISE -> DONE/HANDOFF`.
 
 **G7 R64/R65 owner FSM state: `DONE/HANDOFF` (R64 immutable zero-credit closure and process-unbound R65 allocation construction sealed; root-only validation/push/post-push reservation workflow remains; no reviewer contact or credit).**
+
+## G7 R65 bind-only owner FSM — fresh post-construction process bind (2026-07-16)
+
+### INGEST — entered and crash-safe
+
+- This is a new bind-only FSM; the preceding R64/R65 `DONE/HANDOFF` remains immutable history. The required path is exactly `INGEST -> DRAFT -> SELF-CHECK -> SUBMIT-FOR-REVIEW -> REVISE -> DONE/HANDOFF`. Current persisted state is `INGEST`; no work is yet attributed to `DRAFT`.
+- `AGENTS.md` was reread through physical EOF before the first task action and reread again immediately after context compaction before continuation. The full `running-the-gauntlet-on-your-rust-port` skill and bounded G7 authority chain were read through EOF. Two transport-truncated aggregate skill reads receive zero evidence credit; four independently bounded reads (lines 1-200, 201-400, 401-600, and 601-800 through EOF) supplied the admitted skill read.
+- Bounded local reproduction before mutation establishes branch `main`; HEAD/local `origin/main` both `39b3e77ff5243bb2c68e2662bfeee4c7b0f9c415`; empty index; and no owned-path pre-task diff. Concurrent out-of-scope changes are preserved and are not evidence for this FSM.
+- Pushed inputs reproduced from disk: Round 8,283 newline-terminated lines / 1,413,632 bytes / `96afb85d1d6fc5f3fda91ebab6a7c0131acc5894123cfea70e4a8e5dbdcad0a6`; Convergence 1,232 / 183,210 / `3d4c0075acbb468485ddc52d228ab41b5be008cfde44e1202ccc0a79b292cb56`; pre-FSM G7_STATE 8,442 / 1,748,933 / `844003614536c9178110248738d20d2f7ecaeb566828d9ef910b8eda7551eff8`; submitted plan 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`.
+- R65 construction reproduced from disk: row line 8,164 is 1 / 625 / `f9059d6312823208ec28e867769cc95e74db8cd328a41c5a9dad50dcc0977049` and `ALLOCATED-UNSENT`; construction lines 8,166-8,181 are 16 / 1,574 / `ffbc4aa9bbf2e0ea62e9d6a7602549f4f74ef856a3cc2b0474096e6ba9281a07`; anchor line 8,182 is 1 / 155 / `61664019d51314fa18c9e8360f50d6cd3637feeeb375b859cce51fbb4f51372a`; sealed control lines 8,184-8,282 are 99 / 13,815 / `85ad0a1c20a8a14f569b227fcd5f71242a5e06c99caba4379ca50cdad3223f77`; generic sentinel line 8,283 is 1 / 289 / `b54cfd6d3ff27c94a5ee819b8e03b175b770211c5cb32775fd02a1c605072c3c`, unique at physical EOF.
+- Writable scope is exactly `gauntlet/ROUND_LOG.md`, `gauntlet/CONVERGENCE_REPORT.md`, and `ledger/owners/G7_STATE.md`, with structured `apply_patch` as the sole write mechanism. No activation, delivery, reviewer contact, reservation, stage, commit, push, fetch, branch, stash, deletion, packet, or credit is authorized. Process-visible and allocation gates remain to be reproduced during `INGEST`; root-only creation/delivery assertions will remain explicitly provenance-bounded.
+
+**G7 R65 bind-only FSM state: `INGEST` (orientation/base/construction admitted; process-visible and allocation gates pending).**
+
+### INGEST process-visible gate and fail-closed disposition
+
+- A read-only, target-bounded inspection contacted no reviewer and sent no input. Directly reproduced tmux state is exact session `monkeybee-pdf-mass-context-repo--r65`, pane `%168`, index 1, shell PID 602787, `pane_dead=0`, `history_size=0`, and exact lowercase cwd `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`.
+- The escaped untouched screen snapshot directly reproduces 33 newline-terminated lines / 4,350 bytes / `711c1c85eea5e21f55fc7d14b886f326f7fd82bb83445b678080cfb268851451`, visibly showing Opus 4.8 with `xhigh` effort, Claude Max, the repository cwd, and exact placeholder `Try "write a test for <filepath>"`.
+- `/proc` directly reproduces boot ID `7349fb94-6725-4e24-8a56-f8313aeac869`; shell/model states `S`/`S`; start ticks 756872458 / 756872487; parentage tmux-server 1540496 -> shell 602787 -> model 603010; shell's sole child 603010; no model child; and zero host zombies. Both cwd links match the lowercase repository path.
+- Shell NUL cmdline directly reproduces 6 bytes / `70458f7ab64acaa2f17d502161ce831a64212cf7493447837f259e696b0f6cf1` and exact bytes `-bash` then NUL. Model NUL cmdline directly reproduces 101 bytes / `eacb15c51bf7bfedcbb3654c33e61703b44f23b69f75d963766a8f5abd084258` and exact argv `/home/joseph/.local/bin/claude`, `--dangerously-skip-permissions`, `--model`, `claude-opus-4-8`, `--effort`, `xhigh`.
+- The disclosed `CLAUDE_CODE_HOOKS` line independently reproduces as 1 newline-terminated line / 123 bytes / `831ebba10bc6a876bcb02030cb5276ddc1ae6737dc4ab9a87afc2186722b5677`. It confirms the actual generic Bash PreToolUse hook; this process is not described as hook-free.
+- **Material mismatch `R65-BIND-INGEST-01`:** the same model environment directly contains `NTM_SPAWN_ORDER=1`, `NTM_SPAWN_BATCH_ID=spawn-20260716-041108-25e738d8`, and `NTM_SPAWN_TOTAL=1`. The four selected launcher lines are 4 newline-terminated lines / 209 bytes / `8207f2b7b943e95c8e498547a8b1283690a0b6ada739209a06af94c4b46743c1`, not the supplied one-line selected-set premise. A second narrowly scoped read independently reproduced all three `NTM_SPAWN_*` values. The supplied assertion that no batch/order launcher variables are present therefore fails.
+- Creation timestamp, spawn invocation, pre-task delivery history, and root non-contact remain `ROOT-REPRODUCTION-REQUIRED`; none is strengthened by the process-visible checks. Because every bind gate had to reproduce and this mismatch is material to exact launcher identity, the evidentiary-integrity-preserving candidate is **REJECT BIND / NO ROUND OR CONVERGENCE MUTATION**. R65 must remain `ALLOCATED-UNSENT` and zero-credit.
+- Mechanical allocation reproduction is 64 unique rows at 25 Sol / 39 Opus; failed 34 at 10/24; filed 18 at 9/9; active-unfiled 12 at 6/6; R65 alone allocated-unsent; assigned=0; bound-unsent=0; R62 absent; physical R65 packet-heading count zero. The generic sentinel is unique at line 8,283 and physical EOF; the latest Convergence status remains `NOT ESTABLISHED`.
+- Rejected diagnostic: an initial sentinel/Convergence search used two nonliteral marker phrases and returned zero. It receives no credit. A corrected exact-token rerun found one `GAUNTLET FINAL SENTINEL` at physical EOF line 8,283 and the latest `Convergence remains **NOT ESTABLISHED**` marker at line 1,232.
+
+Transition persisted: `INGEST -> DRAFT`. DRAFT is limited to a no-bind failure candidate in G7_STATE; Round and Convergence remain protected.
+
+**G7 R65 bind-only FSM state: `DRAFT` (material launcher-set mismatch reproduced; fail-closed no-bind candidate active).**
+
+### DRAFT — bounded adopt/narrow/reject candidate
+
+- **ADOPT for failure evidence only:** the pushed construction identities; exact R65 row/construction/anchor/control/sentinel identities; direct tmux screen metadata; direct `/proc` boot/state/start/parent/cwd/cmdline/child/zombie facts; and the exact hook line all reproduce.
+- **NARROW:** creation time, requested spawn flags, campaign-delivery history, and root non-contact are retained only as `ROOT-REPRODUCTION-REQUIRED` premises. The screen establishes an untouched-looking placeholder and zero history, but does not prove the entire delivery-history proposition.
+- **REJECT:** binding R65 on this task's supplied process manifest. The asserted selected launcher set excludes batch/order variables, while the live model environment exposes three. Exact process/environment identity is a mandatory bind gate, so no post hoc widening or reinterpretation is admitted.
+- Authorized documentary candidate is therefore G7-only: preserve the Round row as `ALLOCATED-UNSENT`; insert no process-bind receipt; append no Convergence bind receipt; leave the R65 control, bind anchor, generic sentinel, all predecessor bytes, allocation, packet count, accepted count, and `NOT ESTABLISHED` status unchanged. The only new durable bytes are this crash-safe failure FSM in `ledger/owners/G7_STATE.md`.
+- No bind, activation, delivery, reviewer input, packet, finding, review, grade, coverage, marginal, route, disposition, model-family, accepted-review, curve, cross-model, or convergence credit is created. Root-only recovery is to reconcile or retire the mismatched reservation, establish a fresh exact post-push reservation manifest, and issue a new bind task; this owner neither performs nor authorizes those actions.
+
+Transition persisted: `DRAFT -> SELF-CHECK`. The candidate is frozen as a no-bind failure receipt pending hostile disk checks.
+
+**G7 R65 bind-only FSM state: `SELF-CHECK` (no-bind candidate frozen; hostile checks pending).**
+
+### SELF-CHECK — hostile result
+
+- Volatile rerun still reproduces pane/session/index/PID/liveness/history/cwd; the 33-line / 4,350-byte welcome root; boot ID; states/start ticks/parentage; exact two cmdline roots; shell sole child/model no child; and zero zombies. The selected environment again returns four lines / 209 bytes / `8207f2b7b943e95c8e498547a8b1283690a0b6ada739209a06af94c4b46743c1`, including all three `NTM_SPAWN_*` variables. `R65-BIND-INGEST-01` is stable and remains a binding blocker.
+- Round and Convergence remain byte-identical to the pushed construction at 8,283 / 1,413,632 / `96afb85d1d6fc5f3fda91ebab6a7c0131acc5894123cfea70e4a8e5dbdcad0a6` and 1,232 / 183,210 / `3d4c0075acbb468485ddc52d228ab41b5be008cfde44e1202ccc0a79b292cb56`. R65 row, construction, anchor, control, and sentinel roots remain exactly `f9059d6312823208ec28e867769cc95e74db8cd328a41c5a9dad50dcc0977049`, `ffbc4aa9bbf2e0ea62e9d6a7602549f4f74ef856a3cc2b0474096e6ba9281a07`, `61664019d51314fa18c9e8360f50d6cd3637feeeb375b859cce51fbb4f51372a`, `85ad0a1c20a8a14f569b227fcd5f71242a5e06c99caba4379ca50cdad3223f77`, and `b54cfd6d3ff27c94a5ee819b8e03b175b770211c5cb32775fd02a1c605072c3c`.
+- Scope/format gates pass before correction: only G7_STATE differs among the three authorized paths; index is empty; owned-path `git diff --check` passes; all three paths are UTF-8, LF-only, final-LF, and have zero trailing whitespace. Allocation, zero packet, unique physical-EOF sentinel, accepted count 18, and `NOT ESTABLISHED` remain unchanged.
+- **Defect `R65-BIND-SC-01`:** the DRAFT narrowing sentence used reserved claim-vocabulary token `complete` outside a scoped claim structure. The exact line is persisted above as evidence and must be corrected during mandatory REVISE to `entire`. No other reserved token or URL appeared in the fresh FSM suffix.
+- No process freshness, model/effort, lowercase cwd, sole-child topology, hook disclosure, placeholder, root-only provenance, post-push order, row/anchor/control/sentinel, allocation, packet, scope, encoding, whitespace, clean-room, no-measurement, no-implementation, or no-external-action issue weakens the failure disposition. The surviving vocabulary defect affects only owner prose and does not authorize a bind.
+
+Transition persisted: `SELF-CHECK -> SUBMIT-FOR-REVIEW`. The submission candidate remains no-bind with `R65-BIND-INGEST-01` governing and `R65-BIND-SC-01` queued for REVISE.
+
+**G7 R65 bind-only FSM state: `SUBMIT-FOR-REVIEW` (fresh owner-side audit required; no reviewer contact).**
+
+### SUBMIT-FOR-REVIEW — fresh owner-side audit
+
+- Independently reread every fresh G7 FSM byte, the unchanged R65 row/construction/anchor/control/sentinel boundary, and the current Convergence tail. The owned diff is a single G7_STATE EOF append; Round and Convergence have no diff.
+- A third narrow live selection reproduces the same 4-line / 209-byte launcher set root `8207f2b7b943e95c8e498547a8b1283690a0b6ada739209a06af94c4b46743c1`. The material premise mismatch is not a transient read artifact. No review process was messaged or given input.
+- The audit rejects the requested bind, rejects any Round row/receipt or Convergence mutation, and accepts only the G7 failure FSM. It confirms `R65-BIND-SC-01` as the sole correctable documentary defect: replace `complete delivery-history` with `entire delivery-history`. The diagnostic citation of the reserved token is itself a scoped policy-audit statement and may remain.
+- No further authority-width, anchor, model, effort, hash, packet-write, stale identity, provenance, allocation, clean-room, measurement, implementation, external-action, or credit defect was found. R65 remains process-unbound and zero-credit.
+
+Transition persisted: `SUBMIT-FOR-REVIEW -> REVISE`. Mandatory REVISE must apply the bounded vocabulary correction, reread all changed bytes, and rerun dependent terminal gates; it must not bind R65.
+
+**G7 R65 bind-only FSM state: `REVISE` (no-bind hardening and terminal validation pending).**
+
+### REVISE — mandatory no-bind hardening applied
+
+- Applied `R65-BIND-SC-01` by replacing the unscoped reserved token with `entire` in the DRAFT narrowing sentence. Hardening issue `R65-BIND-REV-01` also corrected the transition's inaccurate byte-length characterization to `bounded vocabulary correction`. Both edits are confined to this fresh G7 FSM.
+- Round and Convergence intentionally remain untouched because the process manifest failed at INGEST. R65 remains `ALLOCATED-UNSENT`; no process receipt, bind state, packet, or credit is admitted.
+- Terminal validation must operate on actual post-correction disk bytes. `DONE/HANDOFF` is not yet entered.
+
+### REVISE terminal validation and DONE/HANDOFF
+
+- Mandatory post-correction disk validation passes for the fail-closed candidate. Branch is `main`; HEAD/local `origin/main` remain `39b3e77ff5243bb2c68e2662bfeee4c7b0f9c415`; index is empty; the owner-attributed diff is only an EOF append to `ledger/owners/G7_STATE.md`; owned-path `git diff --check` passes. No Round or Convergence byte changed.
+- Actual Round remains 8,283 newline-terminated lines / 1,413,632 bytes / `96afb85d1d6fc5f3fda91ebab6a7c0131acc5894123cfea70e4a8e5dbdcad0a6`. Actual Convergence remains 1,232 / 183,210 / `3d4c0075acbb468485ddc52d228ab41b5be008cfde44e1202ccc0a79b292cb56`. The submitted plan remains 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`.
+- Protected R65 coordinates remain byte-identical: row line 8,164 is 1 / 625 / `f9059d6312823208ec28e867769cc95e74db8cd328a41c5a9dad50dcc0977049`; construction lines 8,166-8,181 are 16 / 1,574 / `ffbc4aa9bbf2e0ea62e9d6a7602549f4f74ef856a3cc2b0474096e6ba9281a07`; bind anchor line 8,182 is 1 / 155 / `61664019d51314fa18c9e8360f50d6cd3637feeeb375b859cce51fbb4f51372a`; sealed control lines 8,184-8,282 are 99 / 13,815 / `85ad0a1c20a8a14f569b227fcd5f71242a5e06c99caba4379ca50cdad3223f77`; sentinel line 8,283 is 1 / 289 / `b54cfd6d3ff27c94a5ee819b8e03b175b770211c5cb32775fd02a1c605072c3c`, unique physical EOF.
+- The protected pre-FSM G7 prefix, lines 1-8,442, remains `844003614536c9178110248738d20d2f7ecaeb566828d9ef910b8eda7551eff8`. Immediately before this terminal receipt, G7_STATE was 8,512 / 1,762,070 / `072bfe6907b0bea0a0f2703e7b6b6ff881f5a733fc3a9afc60b0677804926a42`; its then-current fresh suffix was 70 / 13,137 / `9a07d846ede4786084ace25033ca0e498aa7ec8990821087c9df8205e3439639`. This self-appending file does not assert its post-receipt whole hash; root and the terminal owner response must reproduce that final identity from disk.
+- Allocation remains 64 unique rows at 25 Sol / 39 Opus; failed 34 at 10/24; filed 18 at 9/9; active-unfiled 12 at 6/6; R65 alone `ALLOCATED-UNSENT`; assigned=0; bound-unsent=0; R62 absent; accepted count 18; physical R65 packet count zero; Convergence `NOT ESTABLISHED`.
+- UTF-8/LF/final-LF/trailing-whitespace gates pass. The only reserved-word matches in the fresh suffix are scoped policy-audit citations of the corrected defect; URL, clean-room, no-measurement, no-implementation, no-external-action, and zero-credit gates pass.
+- Final volatile read still showed the exact untouched pane metadata and the same four-line / 209-byte selected environment root `8207f2b7b943e95c8e498547a8b1283690a0b6ada739209a06af94c4b46743c1`, with zero zombies. This continues to contradict the supplied one-line selected-set premise. Root-only creation/spawn/delivery/non-contact assertions remain root-only.
+- Governing disposition is **FAIL-CLOSED / NO BIND**. R65 remains untouched and zero-credit. No reviewer was contacted; no input, activation, packet, finding, review, grade, coverage, marginal, route, disposition, model-family, accepted-review, curve, cross-model, or convergence credit was created.
+
+### Root-only recovery and later activation recipe
+
+1. Reproduce the final three owned-path identities and all protected R65 slice roots above; confirm the G7-only diff, empty index, formatting, allocation, zero packet, unique sentinel, and `NOT ESTABLISHED` status. Preserve all concurrent out-of-scope changes.
+2. Do **not** treat this as a pushed bind and do not activate R65. If retaining the failure receipt, root may separately stage only `ledger/owners/G7_STATE.md`, inspect the cached diff, commit on `main`, and push without force; Round and Convergence have no mutation to stage.
+3. Root must reconcile the launcher-set mismatch. Before another bind attempt, freshly reproduce the entire selected environment and either reattest the still-untouched reservation under an exact corrected manifest or retire it and create a fresh post-construction reservation. Then issue a new explicit G7 bind-only task with the exact manifest and current pushed identities.
+4. Only a later successful six-state bind FSM may change R65 to `BOUND-UNSENT`, insert one receipt before the preserved anchor, and append zero-credit Convergence state. Root must then validate, commit, push, and immediately reattest the same untouched process.
+5. Only after pushed-bind parity and immediate reattestation may root instantiate the detached activation from the preserved sealed control and deliver it once. A stable transcript requires a separate qualification FSM before any packet or credit is admitted.
+
+Transition persisted: `REVISE -> DONE/HANDOFF`.
+
+**G7 R65 bind-only FSM state: `DONE/HANDOFF` (fail-closed launcher-set mismatch; R65 remains `ALLOCATED-UNSENT`; no bind, activation, packet, or credit).**
