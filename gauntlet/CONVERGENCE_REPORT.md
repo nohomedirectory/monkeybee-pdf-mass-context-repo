@@ -1210,3 +1210,13 @@ The physical R63 packet remains immutable unqualified evidence. Its C allegation
 R64 is allocated one-for-one for the same submitted plan root and sole security/DoS lens, future exact `claude-opus-4-8` at effort `xhigh`. R64 is process-unbound `ALLOCATED-UNSENT`; no reservation, bind, activation, delivery, packet, or review credit exists. Its sealed control uses exactly one Claude Code Edit, fixed non-overlapping plan reads, deterministic post-freeze citation replay, and exact later launcher/cwd/process gates. Root must push construction before creating any reservation.
 
 Allocation becomes 63 rows at 25 Sol / 38 Opus; failed 33 at 10/23; filed 18 at 9/9; active-unfiled 12 at 6/6. R64 alone is allocated-unsent; no row is assigned or bound-unsent. R62 remains absent. R63/R64 add no established point, so Convergence remains **NOT ESTABLISHED**.
+
+## R64 zero-credit post-construction process bind — `2026-07-16`
+
+R64 changes only from `ALLOCATED-UNSENT` to `BOUND-UNSENT` for pushed construction `fecd3d2472e653eec7112b9943e129fa03d48dd9`, submitted plan root `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`, sole lens `security/DoS`, and exact future reviewer `claude-opus-4-8` / effort `xhigh`. The matching Round receipt binds the one fresh post-construction reservation and preserves the allocation construction, sealed control, bind anchor, and generic sentinel byte-for-byte.
+
+Root supplies, as `ROOT-REPRODUCTION-REQUIRED` premises, the post-push creation, spawn-policy, injection, and zero-delivery boundary. G7 directly reproduced one-pane session `monkeybee-pdf-mass-context-repo--r64`, pane `%167` index 1, shell 442612, sole model child 442832, exact cwd and command, non-zombie topology, zero host zombies, zero pane history, visible model/effort/subscription label, untouched placeholder `Try "how do I log an error?"`, the exact four-line launcher environment, welcome state, and zero visible task/activation. G7 used read-only admission checks, sent no input, and instantiated no activation. Root must freshly reattest every volatile fact immediately before any later activation.
+
+Preserved construction prose remains earlier state; the later bind receipt governs current operation and consumes its one-receipt allowance. No packet exists. This bind grants no finding, review, grade, coverage, marginal, model-family, accepted-review, route, disposition, curve, cross-model, or convergence credit.
+
+Allocation remains 63 rows at 25 Sol / 38 Opus; failed 33 at 10/23; filed 18 at 9/9; active-unfiled 12 at 6/6. R64 alone is bound-unsent; no row is allocated-unsent or assigned; R62 remains absent. Convergence remains **NOT ESTABLISHED**.
