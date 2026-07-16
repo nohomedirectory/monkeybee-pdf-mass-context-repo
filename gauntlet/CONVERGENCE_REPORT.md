@@ -1220,3 +1220,13 @@ Root supplies, as `ROOT-REPRODUCTION-REQUIRED` premises, the post-push creation,
 Preserved construction prose remains earlier state; the later bind receipt governs current operation and consumes its one-receipt allowance. No packet exists. This bind grants no finding, review, grade, coverage, marginal, model-family, accepted-review, route, disposition, curve, cross-model, or convergence credit.
 
 Allocation remains 63 rows at 25 Sol / 38 Opus; failed 33 at 10/23; filed 18 at 9/9; active-unfiled 12 at 6/6. R64 alone is bound-unsent; no row is allocated-unsent or assigned; R62 remains absent. Convergence remains **NOT ESTABLISHED**.
+
+## R64 transcript-qualified zero-credit closure / R65 allocation-only replacement — `2026-07-16`
+
+Independent replay of the 35-record / 105,268-byte / `f62ecc2414eb0982e4edb6e426ca2f136461ada5175066c8b533da41ddcde2db` stable transcript closes R64 narrowly as `NOT-RUN · METHOD-CONTROL-STARTUP-PREFACE-VIOLATION · ROOT-TERMINATED`. Public assistant narration appears before Tool 1 and again between Tool 1 and Tool 2, each violating the sealed startup law. Both full Reads and two later read-only admissions succeeded; admission call 2 is explicitly non-interrupted and the user interruption follows. No hidden cause is inferred.
+
+R64 has zero Edit, packet, repository mutation, exact reviewer terminal response, or chain-admissible finding. Governing counts are A=0/B=0/C=0, not a filed or marginal review. It receives no finding, grade, coverage, marginal, route, owner disposition, model-family, accepted-review, curve, cross-model, or convergence credit. Activation delivery and process retirement remain root-supplied premises.
+
+R65 is the one-for-one Opus replacement for the same submitted-plan root and sole `security/DoS` lens, future exact `claude-opus-4-8` at effort `xhigh`. It is process-unbound `ALLOCATED-UNSENT`; no reservation, bind, activation, delivery, packet, or review credit exists. Its sealed control permits only bounded non-substantive startup status narration, replaces fragile exact shell-source strings with mechanically checkable call outcomes, and preserves the authority, plan-read, citation-replay, sole-Edit, no-action, and terminal laws.
+
+Allocation becomes 64 unique rows at 25 Sol / 39 Opus; failed 34 at 10/24; filed 18 at 9/9; active-unfiled 12 at 6/6. R65 alone is allocated-unsent; no row is assigned or bound-unsent; R62 remains absent. Accepted count remains 18 and Convergence remains **NOT ESTABLISHED**.

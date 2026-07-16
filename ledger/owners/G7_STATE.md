@@ -8173,3 +8173,270 @@ Root-only pushed-bind and activation recipe:
 5. After the exact terminal response, root stabilizes the transcript, retires the reservation, proves the retirement boundary, and returns the stable transcript for a separate G7 qualification FSM. This bind remains zero-credit unless that later chain qualifies a filed packet.
 
 **G7 R64 bind-only FSM state: `DONE/HANDOFF` (terminal zero-credit bind manifest persisted; root-only validation, commit/push, immediate re-attestation, and optional one-time activation remain).**
+
+## Fresh R64 transcript qualification / conditional R65 allocation-only construction FSM — 2026-07-16
+
+### INGEST orientation, pushed-base gate, and initial evidence boundary
+
+- This is a new crash-safe sequence independent of the R64 bind FSM: `INGEST -> DRAFT -> SELF-CHECK -> SUBMIT-FOR-REVIEW -> REVISE -> DONE/HANDOFF`. It may qualify only the immutable R64 chain and, only if that chain fails, construct one process-unbound R65 replacement. It grants zero review or convergence credit before chain admission.
+- `AGENTS.md` was reread through EOF as the first task action. The applicable running-the-gauntlet skill was then reread through EOF; only its exact-identity, hostile-artifact, negative-evidence, and fail-closed disciplines apply. Its implementation, benchmark, comparison, source, bead, external-action, and reviewer-dispatch workflows are excluded.
+- Writable scope is exactly `gauntlet/ROUND_LOG.md`, `gauntlet/CONVERGENCE_REPORT.md`, and `ledger/owners/G7_STATE.md`, through structured `apply_patch` only. Concurrent out-of-scope changes are preserved. No stage, commit, push, fetch, branch, stash, deletion, reviewer reservation, activation, delivery, packet, or credit event is authorized.
+- Pushed-base gate independently reproduces branch `main`; HEAD and local `origin/main` both exact `1ca71f616d4c41fd83ffbcbf25f35cc978602d52`. The index is empty and all three owned paths are clean against that commit. Existing modified paths outside G7 scope are concurrent work and remain untouched.
+- Pushed identities independently reproduce: Round 8,156 newline-terminated lines / 1,394,888 bytes / `3b3a797c909b93bcb92c5db7ac73d272a47b7f89e61c6e5bc0a6bd0f021b7157`; Convergence 1,222 / 181,356 / `50daa24ec6e8ece6bd89f083d40af4c2db561be0b9288a11a317ef1ac76970ae`; pre-FSM G7_STATE 8,175 / 1,698,746 / `f11dfc21b37aece278f900dcfc04551f6eb696a82acd6bd3c15a6981921267af`; submitted plan 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`.
+- Protected R64 identities independently reproduce: row line 8,036, 1 / 573 / `e39d5829bb6a4db99353cf80081d88394ac4bc9cca545222b17f5b21505e3801`; bind receipt lines 8,054-8,065, 12 / 5,634 / `fb1c56d121d44b0fc9a497a736358cd3aed197ab16bdfea6ec6f1d4518c5565f`; anchor line 8,066, 1 / 155 / `f31897af47c7683a7ec58eccaeda1c7dd9dca14ca61f2734a005933d7cdeabdb`; sealed control lines 8,068-8,155, 88 / 10,309 / `3459dbe082a8958ef5b69ce1ec4a930d66478dc872a49a116b01589c5c6a8522`; generic sentinel line 8,156, 1 / 289 / `b54cfd6d3ff27c94a5ee819b8e03b175b770211c5cb32775fd02a1c605072c3c`, unique physical EOF. R64 physical packet count is zero.
+- Stable transcript independently reproduces 35 newline-terminated records / 105,268 bytes / `f62ecc2414eb0982e4edb6e426ca2f136461ada5175066c8b533da41ddcde2db`. Its public record structure, tool-call/result adjacency, narration boundaries, activation, control, write absence, terminal boundary, and retirement premises remain to be mechanically replayed. The supplied failure candidate is not yet admitted.
+- Convergence remains `NOT ESTABLISHED`. Current accepted count remains root-supplied at 18 pending transcript qualification; this FSM cannot increase it.
+
+**G7 R64/R65 owner FSM state: `INGEST` (base, owned preimages, protected R64 identities, transcript identity, packet absence, and scope persisted; authority and event replay active).**
+
+### INGEST authority and full public-transcript replay
+
+- Governing authority was reread from disk: full `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md`; full owner marching orders including the G7 contract; full `OVERNIGHT_GOAL.md`; and the byte-identical R64 sealed control. The direct human task overrides the older owner-order pause at submission and requires all six states in this FSM.
+- The control's mandatory startup law is categorical: the first model-generated action must be Tool 1 reading all of `AGENTS.md`; Tool 2 must read all of the reviewer protocol; no narration may precede Tool 1 or occur between those Reads. Any mandatory-gate failure permits no write and requires exact standalone `TERMINATED`. Host UI notices outside the model response do not count as reviewer narration.
+- Transcript record 4 stores the activation content without its transport terminal LF: 60 embedded newline bytes / 9,144 bytes / `faf918d23eed29a706b9ddb4cf07a1d93b002bf112d82ad49b3e400d77f1ed0b`. Restoring the one terminal LF independently reproduces the dispatched activation as 61 newline-terminated lines / 9,145 bytes / `53507f9bc637b7b345a2c7558962b67f494260131fa20a75babb04094ac49e99`. The claimed one target / one delivery / zero failures remains a root-supplied delivery premise.
+- Records 5-7 are host attachment metadata for deferred tools, agent listings, and skill listings. They precede the first assistant record and are not model narration or repository evidence under the sealed law.
+- Record 12 is a public assistant text event before any tool: exact `I'll start with the mandatory first action as specified.` Record 13 is Tool 1, Claude Code `Read`, targeting only full `AGENTS.md`; record 14 is its matched successful result. The result's underlying file content is byte-identical to disk: 81 newline-terminated lines / 8,055 bytes / `5591f13d75685e52158a9aecfd7f90a2ecf42275d18e3ca5f7fc1550dadad939`.
+- Record 15 is a second public assistant text event between Tool 1 and Tool 2: exact `I've read AGENTS.md in full. Now proceeding to Tool 2 as required.` Record 16 is Tool 2, Claude Code `Read`, targeting only the full reviewer protocol; record 17 is its matched successful result. The underlying content is byte-identical to disk: 90 / 4,942 / `e525a0e35fb703152d44d63d5f6874d48907d2b87e528e3f9f99dbd93baa33c3`.
+- Record 22 contains signed encrypted-thinking metadata with no public thinking text; no hidden cause or proposition is inferred. Record 23 is public status narration after Tool 2. Record 24 is read-only Bash admission call 1; the host hook attachment at record 25 is metadata; record 26 is the matched successful, non-interrupted result with exact output `ADMISSION-ARTIFACT-OK`. Record 27 is post-tool hook metadata.
+- Record 28 is public status narration after admission call 1. Record 29 is read-only Bash admission call 2; record 30 is host hook metadata; record 31 is the matched successful result, explicitly `interrupted: false`, returning the exact R64 row plus 1 / 573 / `e39d5829bb6a4db99353cf80081d88394ac4bc9cca545222b17f5b21505e3801`. Record 32 is post-tool hook metadata. Record 33 is the later user event `[Request interrupted by user]`. No later assistant response exists.
+- This corrects the non-governing root summary narrowly: admission call 2 was not interrupted; it returned successfully before the user interruption. No causal inference follows from the correction.
+- Mechanical inventory is exactly four tool uses and four matched results: two `Read`, then two read-only `Bash`; all four results succeeded. There is zero `Edit`, zero other write tool, zero packet, zero reviewer repository mutation, zero transcript compaction event, and no exact standalone reviewer `TERMINATED` response. Initial and terminal file-history snapshots each have an empty tracked-backup map; the Round whole identity remains unchanged.
+- The first and second narration events each independently violate the sealed startup boundary. Later successful Reads and admissions cannot repair an already failed mandatory gate. The narrow chain classification is therefore `NOT-RUN · METHOD-CONTROL-STARTUP-PREFACE-VIOLATION · ROOT-TERMINATED`, with A=0/B=0/C=0 and no finding, review, grade, coverage, marginal, route, disposition, model-family, accepted-review, curve, cross-model, or convergence credit. No hidden cause is inferred.
+- Root-supplied process retirement—session `monkeybee-pdf-mass-context-repo--r64`, pane `%167`, shell 442612, child 442832 absent and host zombies zero—remains `ROOT-REPRODUCTION-REQUIRED`; G7 does not probe the retired process. Current table arithmetic independently reproduces 63 unique rows, 25 Sol / 38 Opus, 33 failed, 18 filed, and 12 active-unfiled. Accepted count therefore remains 18.
+- INGEST disposition is `CLOSE-R64-ZERO-CREDIT-AND-CONSTRUCT-R65`: preserve the immutable transcript, R64 control/bind history, zero packet, and corrected chronology; allocate one process-unbound Opus replacement only after the closure is represented. No reservation, bind, activation, or credit is authorized.
+
+**Transition persisted: `INGEST -> DRAFT`.**
+
+**G7 R64/R65 owner FSM state: `DRAFT` (transcript-qualified R64 zero-credit closure admitted; exact closure, R65 row/control, Convergence, and sentinel-preserving candidate may now be composed).**
+
+### DRAFT exact R64 closure and R65 allocation-only construction candidate
+
+- **Adopt:** change the unique R64 row from `BOUND-UNSENT` to the transcript-qualified zero-credit status and counts below; insert one immutable R64 qualification followed by one process-unbound R65 row, construction, bind anchor, and sealed control immediately before the byte-identical generic sentinel; append one matching zero-credit Convergence receipt.
+- **Narrow:** preserve every R64 packet/control/bind/history byte and state the transcript correction that admission call 2 succeeded before the user interruption. The only successor-control changes are the expressly requested bounded narration allowance and outcome-based admission calls; artifact, lens, model, authority, plan schedule, citation freeze/replay, sole Edit, no-post-write-tool, exact terminal, clean-room, no-action, and fail-closed laws remain.
+- **Reject:** do not infer why narration occurred or why root interrupted; do not promote later successful admissions; do not reserve, bind, activate, deliver, file a packet, grant credit, alter R62, repair the plan, or create implementation/task material.
+- The exact proposed R64 row is:
+
+```text
+| R64 | C1 delta plan (one-for-one replacement for failed R63) | security/DoS | exact `claude-opus-4-8`, effort `xhigh` required at later bind | Immutable R63 zero-credit closure; process-unbound construction only | `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59` | NOT-RUN · METHOD-CONTROL-STARTUP-PREFACE-VIOLATION · ROOT-TERMINATED | 0 | 0 | 0 | — | Immutable zero-credit transcript-qualified closure. Public assistant text preceded Tool 1 and occurred between Tool 1 and Tool 2, violating the sealed startup law. Both Reads and two read-only admissions later succeeded; admission call 2 was not interrupted, and the user interruption followed. Zero Edit, packet, reviewer terminal response, finding, or credit; no cause inferred. R65 is the one-for-one replacement. |
+```
+
+- Replace only the current generic sentinel occurrence with the exact Round insertion below followed immediately by the byte-identical sentinel:
+
+```text
+## R64 immutable zero-credit transcript qualification — `2026-07-16`
+
+- **Stable evidence:** transcript `/home/joseph/.claude/projects/-home-joseph-ntm-dev-monkeybee-pdf-mass-context-repo/05611fbc-f807-44cc-ae94-29fe68590217.jsonl`, 35 newline-terminated records / 105,268 bytes / `f62ecc2414eb0982e4edb6e426ca2f136461ada5175066c8b533da41ddcde2db`; detached activation 61 newline-terminated lines / 9,145 bytes / `53507f9bc637b7b345a2c7558962b67f494260131fa20a75babb04094ac49e99`. One-target/one-delivery/zero-failure activation and retirement facts remain `ROOT-REPRODUCTION-REQUIRED`.
+- **Mandatory startup failure:** transcript record 12 is public assistant narration before Tool 1. Tool 1 then successfully read full `AGENTS.md`. Record 15 is public assistant narration between Tool 1 and Tool 2. Tool 2 then successfully read the full reviewer protocol. Each narration independently violates the byte-identical R64 control's no-narration startup law; host attachment notices are excluded and do not cure or cause the violation.
+- **Later observable boundary:** after Tool 2, two read-only Bash admission calls each returned successfully. Admission call 1 emitted `ADMISSION-ARTIFACT-OK`. Admission call 2 returned the exact R64 row identity and is explicitly `interrupted: false`; the user interruption record follows. This corrects the root summary without causal inference.
+- **Mechanical inventory:** exactly four tool uses and four matched successful results—two `Read`, then two read-only `Bash`; zero `Edit`, zero packet, zero reviewer repository mutation, zero transcript compaction event, and no exact standalone reviewer `TERMINATED` response. The pre/post Round identity remains 8,156 newline-terminated lines / 1,394,888 bytes / `3b3a797c909b93bcb92c5db7ac73d272a47b7f89e61c6e5bc0a6bd0f021b7157` with zero physical R64 packet.
+- **Governing closure:** R64 is immutable `NOT-RUN · METHOD-CONTROL-STARTUP-PREFACE-VIOLATION · ROOT-TERMINATED`, A=0/B=0/C=0. It earns no finding, review, grade, coverage, marginal, route, owner disposition, model-family, accepted-review, curve, cross-model, or convergence credit and is never reused. Session `monkeybee-pdf-mass-context-repo--r64`, pane `%167`, shell 442612, child 442832 absence and zero host zombies are root-supplied retirement premises. R65 is its sole one-for-one replacement.
+
+| R65 | C1 delta plan (one-for-one replacement for failed R64 in the original R11 slot) | security/DoS | exact `claude-opus-4-8`, effort `xhigh` required at later bind | Immutable transcript-qualified R64 zero-credit closure; process-unbound construction only | `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59` | ALLOCATED-UNSENT | — | — | — | — | One-for-one Opus replacement for failed R64. No process reservation, bind, activation, delivery, packet, or review credit exists. Root must validate and push this construction before creating any fresh reservation, then return a separate bind task. |
+
+## R65 allocation-only replacement construction — `2026-07-16`
+
+- generated-by: G7 gauntlet/convergence owner
+- date: 2026-07-16
+- inputs: stable R64 transcript; preserved R64 bind/control history; submitted C1 delta plan; local campaign authority; reviewer protocol
+- status: DRAFT
+- evidence-status: provisional-pending-substrate
+
+### Allocation and process boundary
+
+R65 is the one-for-one replacement for failed R64 against only `plans/CYCLE_1_DELTA_PLAN.md`, sole lens `security/DoS`, and a future exact `claude-opus-4-8` reviewer at effort `xhigh`. It is `ALLOCATED-UNSENT`: artifact/lens/model-bound and process-unbound. No session, pane, PID, cwd, process, TUI, placeholder, launcher, reservation, bind, activation, or delivery premise exists.
+
+Root must validate, commit, and push this construction before creating a fresh untouched Opus reservation. A later separate G7 bind FSM may bind root-reproduced process evidence, insert exactly one receipt immediately before the anchor below, and change only the R65 row to `BOUND-UNSENT`. Root then validates and pushes the bind and freshly reattests immediately before any detached activation. This construction authorizes none of those later actions.
+
+The submitted artifact remains exactly 3,655 newline-terminated lines / 531,012 bytes / SHA-256 `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`. R65 receives zero review, finding, grade, coverage, marginal, route, disposition, model-family, accepted-review, curve, cross-model, or convergence credit before a later transcript-qualified packet.
+
+**R65 ROOT-BIND RECEIPT ANCHOR — KEEP BYTE-IDENTICAL; A LATER G7 BIND FSM MAY INSERT ONE ROOT-REPRODUCED PROCESS RECEIPT IMMEDIATELY BEFORE THIS LINE.**
+
+## R65 sealed future reviewer control — security/DoS
+
+### Fixed allocation and process sequencing
+
+- artifact: only `plans/CYCLE_1_DELTA_PLAN.md`, 3,655 newline-terminated lines / 531,012 bytes / SHA-256 `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`
+- lens: exactly `security/DoS`; adjacent observations are out of scope unless directly necessary to prove this lens
+- reviewer: exact `claude-opus-4-8`, effort `xhigh`, from one untouched reservation created only after the pushed allocation construction
+- construction status: `ALLOCATED-UNSENT`; no process coordinate or activation is admitted until a later separately pushed bind
+
+Root must push this allocation construction first. Only then may root create a fresh reservation and request a distinct G7 bind FSM. Only after the bind itself is validated and pushed, followed by immediate fresh reattestation, may root instantiate one detached activation. Any pre-push reservation, stale process, prior campaign delivery, or identity drift fails closed.
+
+### Startup narration, tool order, and compaction
+
+Host UI notices and transcript attachment metadata outside assistant-message content are neither reviewer narration nor repository evidence.
+
+Before Tool 1, zero or one public assistant status narration is permitted. If present, it must be one line, at most 160 UTF-8 bytes, and state only that the mandatory AGENTS read is starting. It may contain no question, skill invocation, identity assertion, tool result, source proposition, analysis, decision, or campaign claim. Ignoring permitted host UI metadata and this optional line, the first model-generated action must be Tool 1: Claude Code `Read` of all `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo/AGENTS.md` through EOF, with no offset or limit.
+
+Between Tool 1's successful full result and Tool 2, zero or one public assistant status narration is permitted. If present, it must be one line, at most 160 UTF-8 bytes, and state only that the AGENTS read returned and the mandatory reviewer-protocol read is starting. No tool, skill, question, repository access, identity assertion, source proposition, analysis, decision, or campaign claim may intervene. Tool 2 must be Claude Code `Read` of all `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo/ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` through EOF, with no offset or limit.
+
+Either optional narration window may be unused. A second text event, excess length, substantive content, wrong first or second tool, intervening action, failed/capped/clipped Read, or non-full result is a mandatory startup failure: perform no write and emit exact standalone `TERMINATED`. After Tool 2, public status narration is permitted only when it adds no evidence proposition; the citation-freeze block below is separately mandatory.
+
+Any reviewer-context compaction is terminal: first reread all of AGENTS, perform no write, use no other tool, and emit exact standalone `TERMINATED`.
+
+### Later bound admission: outcome contracts, not fragile shell source
+
+The later detached activation must bind the exact pushed commit, whole-Round identity, submitted-plan identity, R65 row, process receipt, byte-identical bind anchor, sealed control, generic sentinel, and then-current process facts. It must not prescribe or require byte-for-byte shell program source. Instead it supplies the expected coordinates and identities for the bounded outcome contracts below. Transcript qualification later inspects each actual call to prove it computed rather than merely echoed its result.
+
+Admission calls run one at a time in this exact order, with no parallelism, retry, widening, combination, substitution, repository mutation, temporary path, heredoc, `eval`, generated shell program, or output redirection to a file. Each call must exit zero, return no stderr, and emit only its canonical stdout. Any extra observation or output fails closed.
+
+1. **Repository identity:** one read-only Bash call may inspect only branch name, HEAD, local `origin/main`, the assigned-path diff, and line/byte/SHA-256 identities of the whole Round and submitted plan. It must internally compare every later-bound value and emit exactly one line: `R65-REPOSITORY-OK`.
+2. **R65 row:** one read-only Bash call may read only the later-bound exact one-line R65 row and compute its line/byte/SHA-256 identity. It emits exactly `R65-SLICE row <lines> <bytes> <sha256>` using the bound expected values.
+3. **R65 process receipt:** one read-only Bash call may read only the later-bound receipt interval and compute the same identity tuple. It emits exactly `R65-SLICE bind <lines> <bytes> <sha256>`.
+4. **R65 bind anchor:** one read-only Bash call may read only the later-bound one-line anchor and emit exactly `R65-SLICE anchor <lines> <bytes> <sha256>`.
+5. **R65 sealed control:** one read-only Bash call may read only the later-bound control interval and emit exactly `R65-SLICE control <lines> <bytes> <sha256>`.
+6. **Generic sentinel:** one read-only Bash call may read only the later-bound one-line sentinel, verify its line/byte/SHA-256 identity, verify it occurs once, and verify it is physical EOF. It emits exactly `R65-SLICE sentinel <lines> <bytes> <sha256> unique=1 eof=1`.
+7. **Process and launcher:** one bounded read-only Bash call may inspect only the bound shell/model/current-helper `/proc` endpoints, their direct-child rows, the kernel boot ID, host process states needed for the zombie count, and the four named launcher variables. It must mechanically prove exact shell/model PIDs and parentage, non-zombie states, start identities, exact command-line byte counts and roots, both cwd targets equal to the lowercase repository, the shell's sole persistent model child, the model's sole current transient Bash helper during this call, helper parentage, zero host zombies, and exactly four launcher lines with the bound count/root. It emits only two canonical lines: `R65-PROCESS-OK shell=<pid> model=<pid> helper=<pid>` and `R65-LAUNCHER <lines> <bytes> <sha256>`.
+
+The later bind must separately provide root-attested live Opus 4.8/xhigh state, subscription label, untouched placeholder, welcome snapshot, and zero prior campaign delivery as `ROOT-REPRODUCTION-REQUIRED` premises. The reviewer may reproduce process-visible facts but cannot strengthen UI, provenance, or delivery premises. Any mismatch, missing bind, extra persistent child, zombie, cwd/argument/start drift, launcher variance, placeholder/task variance, stale hash, sentinel variance, or interval widening permits no write and requires exact standalone `TERMINATED`.
+
+An artifact-hash mismatch or exact model-identity mismatch follows reviewer-protocol start law and may use the sole Edit below for one zero-finding `STALE-ASSIGNMENT` or `MODEL-MISMATCH` R65 status packet. It performs no lens analysis and earns zero credit. Every other admission failure permits no write.
+
+### Exact local authority Reads
+
+After admission, read only these exact local intervals, in this order, with no retry or widening:
+
+1. `OVERNIGHT_GOAL.md`: offset 23 limit 14; offset 66 limit 1; offset 78 limit 10.
+2. `MONKEYBEE_CAMPAIGN_CHARTER_v1.md`: offset 93 limit 7.
+3. `CYCLE_0_WORK_ORDER.md`: offset 116 limit 4.
+4. `MONKEYBEE_PDF_PLAN_REVISION_7_ALIEN_AUDIT.md`: offset 924 limit 80; 1,651 limit 110; 1,761 limit 110; 1,871 limit 110; 1,981 limit 110; 2,091 limit 96; 2,187 limit 96.
+
+The corresponding proposed Constitution is not authorized. Generated evidence cannot supersede controlling authority, independently ground a finding, fill a missing premise, resolve a conflict, or widen a claim. Do not read G3/G7 state, Convergence, another artifact, another Round interval, or any external source.
+
+### Exact full-plan Read schedule
+
+Read the submitted plan only with these 15 successful, ordered, non-overlapping calls. The listed returned-byte count and root include the final newline of each exact slice:
+
+1. offset 1 limit 250: 28,636 bytes / `2b4b01402cd1e52aed456c16165adb0d293f5f9c9ad8487777218a9822dcf780`
+2. offset 251 limit 250: 27,103 / `cf91c791a804cef3ad3ac0d3a67fe845deafcb3dc6bf359d675d5b4991507b4f`
+3. offset 501 limit 250: 41,255 / `cacb8c3184f645ffff5c6387e97c4bdfbf1702a20a6cd16c0513c4efa67cff6f`
+4. offset 751 limit 250: 30,573 / `068591601440e13348c2ee8f62ff87d5adcb2d7541d0f5d379a29de7536a20a6`
+5. offset 1,001 limit 250: 35,935 / `e81893bb1e7cca3f06eced93d4342fd7a56530f03dae6962976d3fcbebdac295`
+6. offset 1,251 limit 250: 33,242 / `edf0b74d89e3f51e9c55847accbace81f8892c927d179cc0a803d5078589c79f`
+7. offset 1,501 limit 250: 34,335 / `7a8e0fd95b53f4529759902f2769d8a99e148b4298fc3df54a560810028618f4`
+8. offset 1,751 limit 250: 40,263 / `3bcb4551c0c0974816557fae03ccebd6610fb1fee28d86ebebf48c5152e4e9eb`
+9. offset 2,001 limit 250: 42,822 / `8b87469ff82139b45f4270a7cb538ff5c9a159e7dc97344f56d0a7eb028838c5`
+10. offset 2,251 limit 250: 41,143 / `9165d70944ddc6f9b0d1bc68787bfaabc4839e8c258295447ee7bd62acef77cb`
+11. offset 2,501 limit 250: 42,957 / `179db5f10cc67470f2d2b2c27be4580c4fd08a823977e55db0779c8137f56228`
+12. offset 2,751 limit 250: 32,087 / `ca21ff5973307dfe10b18fe24c39e03109f6feaa0e4e94eb4899d6478802f634`
+13. offset 3,001 limit 250: 43,604 / `2074b84280a12bd65e88e98f91b287963c25f153d4ee803d9d18419b46a2e8d1`
+14. offset 3,251 limit 250: 32,170 / `ffde3d2125ef0d62c7975544fb8eadae136bdd7b99f0e6d9c69574413639e96e`
+15. offset 3,501 limit 155: 24,887 / `479891122909222c546f482dee24597b06fac970e79c4ceb5a2a772a4c335bad`
+
+The schedule returns exactly 3,655 lines and 531,012 bytes once each. No plan line may be retried, overlapped, skipped, widened, or read by another discovery call. Any call error, clipping marker, count/root mismatch, or unexpected EOF permits no analysis credit and no write.
+
+### One-lens analysis and deterministic citation replay
+
+Apply only the security/DoS lens. Structural coverage is not semantic coverage. A finding requires a cited local contradiction, omission, broken dependency, or governing-rule violation under the grade law. Do not repair the plan, create source or task inventory, supply a prohibited semantic body, measure or compare products, contact prohibited material, strengthen a claim, or take external action.
+
+Before any replay, freeze the exact packet bytes and a citation manifest containing every source-attributed proposition in every evidence, requirement, consequence, repair-boundary, loss-guard, and verdict sentence. Each manifest entry must be exact `path:start-end`; a proposition may cite only lines already seen in the authorized discovery Reads. The frozen manifest may contain at most 16 intervals; each interval is contiguous, at most 12 lines, and contains no uncited adjacent line. Adjacent citations may merge only when every intervening line is cited.
+
+Immediately before the first replay Read, emit exactly one public narration block beginning `CITATION-MANIFEST-FROZEN`, followed by the ordered manifest entries and no other source proposition. That block is the observable freeze boundary. No entry, citation, packet byte, or source-attributed proposition may be added, removed, reordered, or changed afterward.
+
+After freeze, execute one exact Read per manifest entry, in manifest order, with offset equal to start and limit equal to end-start+1. These are the only repeated source Reads authorized. Every cited interval must be replayed; every returned interval must match the frozen citation and source bytes exactly. No source-attributed proposition may rely only on discovery output. Any missing, failed, clipped, widened, reordered, extra, or mismatched replay permits no write and requires exact standalone `TERMINATED`. After replay, packet bytes and citations are immutable.
+
+### Sole packet write and termination
+
+The only exposed structured file-edit tool authorized is Claude Code `Edit`, called exactly once with:
+
+- `file_path`: exact `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo/gauntlet/ROUND_LOG.md`
+- `old_string`: the exact 288-byte generic sentinel literal, excluding its terminal LF
+- `new_string`: the exact frozen R65 packet, then `\n\n`, then the byte-identical sentinel literal, with no terminal LF
+- `replace_all`: exact boolean `false`
+
+Immediately before Edit, reread only the separately authorized exact sentinel line and prove it remains unique physical EOF and byte-identical. The existing file's final LF remains after replacement. The packet must follow the reviewer-protocol schema, be at most 48,000 UTF-8 bytes, have one `## R65 — plans/CYCLE_1_DELTA_PLAN.md — security/DoS` heading, exact counts, monotonic finding IDs, a no-action statement, Round verdict, and final entry line `- termination state: TERMINATED`. Empty grade sections are omitted. A stale/model mismatch packet has A=0/B=0/C=0, marginal-only NO, names only the mismatch, and grants zero review or convergence credit.
+
+No other write tool, patch method, retry, path, row edit, scratch file, or second packet is authorized. Edit must report one exact replacement. After its result, use no tool and emit only exact standalone `TERMINATED`, with no formatting or extra text. A write error still forbids retry and requires exact standalone `TERMINATED`.
+
+No reservation, bind, activation, or reviewer credit is instantiated here. A later bind must preserve this control and the generic sentinel byte-for-byte, bind a fresh post-construction process and then-pushed identities, and remain zero-credit until a later stable transcript is independently qualified.
+
+```
+
+- Append the exact Convergence receipt below:
+
+```text
+## R64 transcript-qualified zero-credit closure / R65 allocation-only replacement — `2026-07-16`
+
+Independent replay of the 35-record / 105,268-byte / `f62ecc2414eb0982e4edb6e426ca2f136461ada5175066c8b533da41ddcde2db` stable transcript closes R64 narrowly as `NOT-RUN · METHOD-CONTROL-STARTUP-PREFACE-VIOLATION · ROOT-TERMINATED`. Public assistant narration appears before Tool 1 and again between Tool 1 and Tool 2, each violating the sealed startup law. Both full Reads and two later read-only admissions succeeded; admission call 2 is explicitly non-interrupted and the user interruption follows. No hidden cause is inferred.
+
+R64 has zero Edit, packet, repository mutation, exact reviewer terminal response, or chain-admissible finding. Governing counts are A=0/B=0/C=0, not a filed or marginal review. It receives no finding, grade, coverage, marginal, route, owner disposition, model-family, accepted-review, curve, cross-model, or convergence credit. Activation delivery and process retirement remain root-supplied premises.
+
+R65 is the one-for-one Opus replacement for the same submitted-plan root and sole `security/DoS` lens, future exact `claude-opus-4-8` at effort `xhigh`. It is process-unbound `ALLOCATED-UNSENT`; no reservation, bind, activation, delivery, packet, or review credit exists. Its sealed control permits only bounded non-substantive startup status narration, replaces fragile exact shell-source strings with mechanically checkable call outcomes, and preserves the authority, plan-read, citation-replay, sole-Edit, no-action, and terminal laws.
+
+Allocation becomes 64 unique rows at 25 Sol / 39 Opus; failed 34 at 10/24; filed 18 at 9/9; active-unfiled 12 at 6/6. R65 alone is allocated-unsent; no row is assigned or bound-unsent; R62 remains absent. Accepted count remains 18 and Convergence remains **NOT ESTABLISHED**.
+```
+
+- No Round or Convergence mutation occurs in DRAFT. The current generic sentinel remains untouched until mandatory REVISE applies a disk-checked candidate.
+- Transition is persisted before hostile candidate evaluation: `DRAFT -> SELF-CHECK`.
+
+**G7 R64/R65 owner FSM state: `SELF-CHECK` (exact closure/replacement candidate frozen; transcript, startup, admission, model, scope, control, allocation, anchor, and policy challenges active).**
+
+### SELF-CHECK hostile challenge and bounded activation-directness correction
+
+- `AGENTS.md` was reread through EOF immediately after context compaction and again on the direct human reread steer, each before further task work. The disk-backed state remained `SELF-CHECK`; Round and Convergence remained unmodified.
+- Fresh base and protection checks reproduce branch `main`, HEAD/local `origin/main` parity at `1ca71f616d4c41fd83ffbcbf25f35cc978602d52`, and an empty index. The R64 row, bind receipt, anchor, control, and sentinel roots remain `e39d5829bb6a4db99353cf80081d88394ac4bc9cca545222b17f5b21505e3801`, `fb1c56d121d44b0fc9a497a736358cd3aed197ab16bdfea6ec6f1d4518c5565f`, `f31897af47c7683a7ec58eccaeda1c7dd9dca14ca61f2734a005933d7cdeabdb`, `3459dbe082a8958ef5b69ce1ec4a930d66478dc872a49a116b01589c5c6a8522`, and `b54cfd6d3ff27c94a5ee819b8e03b175b770211c5cb32775fd02a1c605072c3c`. Only G7_STATE is changed among the three owned paths at this point; concurrent out-of-scope changes remain untouched.
+- All 15 predeclared plan slices were independently reread from disk. They return exactly 3,655 lines / 531,012 bytes once each, with per-slice byte counts and roots identical to the frozen control; the largest is 43,604 bytes. The 12 authority intervals range from 1 to 110 lines and 914 to 10,668 bytes, so none silently depends on a broad source read.
+- Startup hostility passes the requested correction: the optional pre-Tool-1 and inter-Read status windows are each limited to zero or one public, one-line, 160-byte, non-substantive event; Tool 1 and Tool 2 remain the mandatory full Reads with no intervening tool, skill, question, repository access, evidence proposition, analysis, decision, or claim. Extra or substantive narration still fails closed.
+- Admission hostility rejects exact nested shell-source law and accepts only ordered outcome contracts whose actual calls are later transcript-inspected for computation rather than echo. Repository, row, bind, anchor, control, sentinel, process, launcher, model, cwd, child, start, and zombie gates remain mandatory; root-only UI/provenance/delivery facts cannot be strengthened.
+- **Defect `R64-Q-SC-01` — activation directness:** the DRAFT control binds the future activation's expected identities but does not categorically require the activation to carry the sealed control itself. A paraphrase could therefore satisfy the identity prose while weakening an instruction. The effective candidate replaces the first paragraph under `Later bound admission: outcome contracts, not fragile shell source` with the exact text below; no other candidate byte changes:
+
+```text
+The later detached activation must carry, as one contiguous governing block, the byte-identical sealed-control slice identified by the later-bound control interval and root. The block follows the separately bound identity/process preamble; any paraphrase, omission, reordering, or added authority invalidates the activation. The activation must bind the exact pushed commit, whole-Round identity, submitted-plan identity, R65 row, process receipt, byte-identical bind anchor, sealed control, generic sentinel, and then-current process facts. It must not prescribe or require byte-for-byte shell program source. Instead it supplies the expected coordinates and identities for the bounded outcome contracts below. Transcript qualification later inspects each actual call to prove it computed rather than merely echoed its result.
+```
+
+- The correction does not expand source authority, process authority, write permission, or credit. It makes the preserved control directly load-bearing while retaining outcome-based admission and the single later Claude Code `Edit` boundary.
+
+**G7 R64/R65 owner FSM state: `SELF-CHECK` (R64-Q-SC-01 persisted; corrected projection and dependent policy gates active).**
+
+### SELF-CHECK corrected projection, rejected diagnostics, and transition to SUBMIT-FOR-REVIEW
+
+- Rejected diagnostic `R64-Q-SC-D00`: the first projection wrapper did not parse because a code-fence delimiter terminated its JavaScript template literal. It reached no local command, created no path, and supplied no evidence.
+- Rejected diagnostic `R64-Q-SC-D01`: the next read-only projection invocation transported Python newlines as literal escape sequences and exited at parse time. It created no path and all output receives zero credit.
+- Rejected diagnostic `R64-Q-SC-D02`: the first syntactically successful projection used predicates that recognized only explicit `gpt-`/`claude-` model strings, exact `FILED`, and unanchored packet-heading substrings. Its family, status, and packet counts were therefore mistyped and all output from that diagnostic receives zero credit. A fresh narrower rerun classifies model cells by the established Sol/Opus labels, statuses by their governing prefixes, and physical packets only by exact line-anchored headings.
+- The independent corrected projection reconstructs exactly four disk-frozen candidate fences and applies only `R64-Q-SC-01`. Proposed R64 row: 1 newline-terminated line / 795 bytes / `b2092fe94620f2c49127b86406fa4dd8230e0024666dd9378e4d07e11acd641c`. Corrected Round insertion: 127 / 18,522 / `86eb7415a94caed17dfb85b2a90302bb2c51ff1827b0741372e07512778e165a`. Convergence receipt: 9 / 1,853 / `3007e8ddff4b013e4d189be7c079263e1d3b22a5ffdbf8c185f1ad65bb6b03f9`.
+- Projected Round is 8,283 newline-terminated lines / 1,413,632 bytes / `96afb85d1d6fc5f3fda91ebab6a7c0131acc5894123cfea70e4a8e5dbdcad0a6`. Projected Convergence is 1,232 / 183,210 / `3d4c0075acbb468485ddc52d228ab41b5be008cfde44e1202ccc0a79b292cb56`.
+- Projected coordinates and slice identities are: R64 row line 8,036; R64 closure lines 8,156-8,163, 8 / 2,351 / `45417ca3d8810f4b7a7b47f6e92ef6fe249dc842d2099f3074250c86305ca669`; R65 row line 8,164, 1 / 625 / `f9059d6312823208ec28e867769cc95e74db8cd328a41c5a9dad50dcc0977049`; construction lines 8,166-8,181, 16 / 1,574 / `ffbc4aa9bbf2e0ea62e9d6a7602549f4f74ef856a3cc2b0474096e6ba9281a07`; anchor line 8,182, 1 / 155 / `61664019d51314fa18c9e8360f50d6cd3637feeeb375b859cce51fbb4f51372a`; corrected control lines 8,184-8,282, 99 / 13,815 / `85ad0a1c20a8a14f569b227fcd5f71242a5e06c99caba4379ca50cdad3223f77`; byte-identical sentinel line 8,283, 1 / 289 / `b54cfd6d3ff27c94a5ee819b8e03b175b770211c5cb32775fd02a1c605072c3c` at physical EOF.
+- Corrected allocation independently projects 64 unique rows at 25 Sol / 39 Opus; failed 34 at 10/24; filed 18 at 9/9; active-unfiled 12 at 6/6. R65 alone is `ALLOCATED-UNSENT`; assigned and bound-unsent are zero; R62 is absent. Exact line-anchored R64 and R65 packet headings are both zero.
+- Hostile policy and integrity gates pass: sentinel and R65 anchor each occur once; sentinel is physical EOF; UTF-8/LF and final-LF hold; carriage-return and trailing-whitespace counts are zero; the new operational bytes contain no reserved claim word or URL; clean-room, source-boundary, no semantic-body, no measurement/comparison, no implementation/task, no external-action, sole-lens, sole-Edit, no-post-write-tool, and exact-terminal laws remain unchanged.
+- Current pre-submission G7_STATE is 8,389 newline-terminated lines / 1,734,001 bytes / `50359667c0a96d8da21d6cc53de682c737387ee8df2ae278e8e28e3ba9954c81`. `git diff --check` passes for the three owned paths; the index is empty; Round and Convergence remain at their pushed preimages; only G7_STATE is modified among the owned paths; concurrent out-of-scope work remains untouched.
+- SELF-CHECK disposition is `PASS-WITH-ONE-EXACT-CORRECTION`. The two failed wrappers and one mistyped diagnostic remain zero-credit history. Transition is persisted before fresh submission work: `SELF-CHECK -> SUBMIT-FOR-REVIEW`.
+
+**G7 R64/R65 owner FSM state: `SUBMIT-FOR-REVIEW` (corrected exact candidate frozen; fresh independent disk reread and owner-side gate challenge active; no reviewer contact or credit).**
+
+### SUBMIT-FOR-REVIEW fresh owner audit and transition to REVISE
+
+- Rejected diagnostic `R64-Q-SR-D00`: the first aggregate submission reread exceeded the orchestration result budget and was visibly truncated. It receives zero audit credit. Four independent, non-truncated bounded rereads then covered the entire fresh FSM suffix from its heading through the current state, including all candidate fences and the exact SELF-CHECK overlay. Current R64 row/bind/anchor/control/sentinel and the Convergence tail were separately reread from disk.
+- A fresh public-transcript inventory independently reproduces 35 records / 105,268 bytes / `f62ecc2414eb0982e4edb6e426ca2f136461ada5175066c8b533da41ddcde2db`; assistant text at records 12 and 15 on the two forbidden startup boundaries; tool sequence records 13/16/24/29 as `Read`, `Read`, `Bash`, `Bash`; matched results at 14/17/26/31; and zero write tool. Records 26 and 31 each have empty stderr and `interrupted: false`; record 31 returns the exact bound R64 row identity; record 33 is the later user interruption. No hidden reasoning or cause is inferred.
+- An independent byte-oriented reconstruction, using fresh disk reads and a different candidate-fence parser, finds exactly four frozen fences and exactly one effective overlay occurrence. It reproduces candidate identities 1 / 795 / `b2092fe94620f2c49127b86406fa4dd8230e0024666dd9378e4d07e11acd641c`, 127 / 18,522 / `86eb7415a94caed17dfb85b2a90302bb2c51ff1827b0741372e07512778e165a`, and 9 / 1,853 / `3007e8ddff4b013e4d189be7c079263e1d3b22a5ffdbf8c185f1ad65bb6b03f9`; whole projected roots `96afb85d1d6fc5f3fda91ebab6a7c0131acc5894123cfea70e4a8e5dbdcad0a6` and `3d4c0075acbb468485ddc52d228ab41b5be008cfde44e1202ccc0a79b292cb56`; and every SELF-CHECK coordinate and slice root exactly.
+- Fresh allocation reconstruction returns 64 unique rows, 25 Sol / 39 Opus; failed 34 at 10/24; filed 18 at 9/9; active-unfiled 12 at 6/6; R65 sole allocated-unsent; zero assigned/bound-unsent; R62 absent. Exact physical R64/R65 packet headings are zero; sentinel/anchor uniqueness and physical EOF pass.
+- Hostile submission challenges startup allowance, control carriage, exact model/lens/artifact binding, post-push reservation order, outcome-call computation, source width, plan coverage, citation freeze/replay, sole Claude Code `Edit`, no-post-write-tool, exact terminal response, zero-credit closure, allocation, accepted count, Convergence, claim vocabulary, clean-room, no semantic-body, no measurement/comparison, no implementation/task, no external action, protected R64 history, and exact three-path scope. No new defect survives the challenge.
+- Pre-REVISE G7_STATE is 8,404 newline-terminated lines / 1,738,068 bytes / `a6a49205537938ec1d13ee54f340b5cf2728d4bf2e2f644b6f8da652be472fc6`. The index is empty; owned-path `git diff --check` passes; only G7_STATE is changed among the owned paths; Round and Convergence remain their pushed preimages; concurrent out-of-scope work remains untouched.
+- Submission disposition is `PASS-NO-NEW-DEFECT`. No reviewer was contacted and no review or convergence credit is created. Mandatory REVISE remains required and will apply the one SELF-CHECK correction plus the frozen row/Round/Convergence candidate, then freshly reread every changed byte and rerun dependent gates.
+- Crash-safe transition is persisted before any Round or Convergence mutation: `SUBMIT-FOR-REVIEW -> REVISE`.
+
+**G7 R64/R65 owner FSM state: `REVISE` (authorized three-path candidate application and mandatory post-write hardening active; no reviewer reservation, bind, activation, or credit).**
+
+### REVISE applied bytes, mandatory hardening, and terminal DONE/HANDOFF
+
+- Every mutation used structured `apply_patch`. REVISE changed only the unique R64 row, inserted the corrected R64 closure/R65 construction immediately before the preserved sentinel, appended the matching Convergence receipt, and appended this owner evidence. No other path was written, created, deleted, staged, committed, pushed, fetched, branched, stashed, reserved, activated, or delivered.
+- Actual Round exactly matches the corrected projection at 8,283 newline-terminated lines / 1,413,632 bytes / `96afb85d1d6fc5f3fda91ebab6a7c0131acc5894123cfea70e4a8e5dbdcad0a6`. Actual Convergence exactly matches at 1,232 / 183,210 / `3d4c0075acbb468485ddc52d228ab41b5be008cfde44e1202ccc0a79b292cb56`. The Convergence receipt itself is lines 1,224-1,232, 9 / 1,853 / `3007e8ddff4b013e4d189be7c079263e1d3b22a5ffdbf8c185f1ad65bb6b03f9`.
+- Final Round coordinates and roots are: R64 row line 8,036, 1 / 795 / `b2092fe94620f2c49127b86406fa4dd8230e0024666dd9378e4d07e11acd641c`; preserved R64 bind lines 8,054-8,065, 12 / 5,634 / `fb1c56d121d44b0fc9a497a736358cd3aed197ab16bdfea6ec6f1d4518c5565f`; preserved R64 anchor line 8,066, 1 / 155 / `f31897af47c7683a7ec58eccaeda1c7dd9dca14ca61f2734a005933d7cdeabdb`; preserved R64 control lines 8,068-8,155, 88 / 10,309 / `3459dbe082a8958ef5b69ce1ec4a930d66478dc872a49a116b01589c5c6a8522`.
+- New Round slices are: R64 closure lines 8,156-8,163, 8 / 2,351 / `45417ca3d8810f4b7a7b47f6e92ef6fe249dc842d2099f3074250c86305ca669`; R65 row line 8,164, 1 / 625 / `f9059d6312823208ec28e867769cc95e74db8cd328a41c5a9dad50dcc0977049`; R65 construction lines 8,166-8,181, 16 / 1,574 / `ffbc4aa9bbf2e0ea62e9d6a7602549f4f74ef856a3cc2b0474096e6ba9281a07`; R65 bind anchor line 8,182, 1 / 155 / `61664019d51314fa18c9e8360f50d6cd3637feeeb375b859cce51fbb4f51372a`; corrected sealed control lines 8,184-8,282, 99 / 13,815 / `85ad0a1c20a8a14f569b227fcd5f71242a5e06c99caba4379ca50cdad3223f77`; byte-identical generic sentinel line 8,283, 1 / 289 / `b54cfd6d3ff27c94a5ee819b8e03b175b770211c5cb32775fd02a1c605072c3c`, unique physical EOF.
+- Prefix preservation is independently sealed: current/base Round lines 1-8,035 both root to `eafebc86763a465797e920c3e8ab8e3e4c3ab4cf79ded43f87fa3f6b0f4e15f4`; current/base lines 8,037-8,155 both root to `fc88f44127dd993c9c44c19749ec9d7f306c5f2ee9dd6d3194fd3578333fc5b8`; current Convergence lines 1-1,222 equal the pushed whole root `50daa24ec6e8ece6bd89f083d40af4c2db561be0b9288a11a317ef1ac76970ae`; current G7_STATE lines 1-8,175 equal pushed root `f11dfc21b37aece278f900dcfc04551f6eb696a82acd6bd3c15a6981921267af`. The submitted plan remains 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`.
+- Mandatory post-write rereads covered the changed R64 row, every one of the 127 inserted Round lines, all 10 appended Convergence lines including the separator, and the fresh owner receipts. The effective control contains the byte-identical-control carriage correction; it retains the bounded narration allowance, ordered outcome contracts, fixed authority/plan Reads, citation freeze/replay, sole Claude Code `Edit`, no-post-write-tool, and exact standalone terminal response.
+- Direct allocation arithmetic is 64 unique rows at 25 Sol / 39 Opus; failed 34 at 10/24; filed 18 at 9/9; active-unfiled 12 at 6/6. R64 alone has immutable `NOT-RUN · METHOD-CONTROL-STARTUP-PREFACE-VIOLATION · ROOT-TERMINATED`; R65 alone is `ALLOCATED-UNSENT`; assigned and bound-unsent are zero; R62 is absent. Exact physical R64/R65 packet-heading counts are zero; accepted count remains 18; Convergence remains `NOT ESTABLISHED`.
+- Terminal integrity gates pass: branch `main`; HEAD/local `origin/main` still `1ca71f616d4c41fd83ffbcbf25f35cc978602d52`; empty index; owned diff hunks only at R64 row, pre-sentinel insertion, Convergence append, and owner append; owned-path `git diff --check`; UTF-8/LF/final-LF; zero carriage returns or trailing whitespace; unique sentinel and R65 anchor; exact three owned paths; zero reserved claim word, URL, or prohibited competitor-source name in new operational bytes; and no semantic body, implementation/task inventory, measurement/comparison, or external action.
+- R64 retirement and activation-delivery facts remain root-supplied premises; G7 inspected no retired or live process, pane, PID, session, service, reservation, or external state. No reviewer was contacted. R65 has no process premise, reservation, bind, activation, delivery, packet, finding, review, grade, coverage, marginal, route, disposition, model-family, accepted-review, curve, cross-model, or convergence credit.
+- Pre-terminal-receipt G7_STATE is 8,417 newline-terminated lines / 1,741,681 bytes / `948ce00605751ca60dbc31bf309738afed67b4c6b9f499200e7684e7774d14f2`. This file does not self-assert its post-receipt whole hash; root and the terminal owner response must reproduce it from disk after this final write.
+
+### Root-only pushed-construction and later bind recipe
+
+1. Reproduce the three final whole-file identities and every row/closure/construction/anchor/control/sentinel/Convergence slice above from disk; rerun owned-path `git diff --check`, UTF-8/LF, allocation, packet absence, unique physical EOF, empty-index, and exact-scope gates. Preserve all concurrent out-of-scope paths.
+2. Stage exactly `gauntlet/ROUND_LOG.md`, `gauntlet/CONVERGENCE_REPORT.md`, and `ledger/owners/G7_STATE.md`; inspect the cached three-path set and cached diff; commit once on `main`; push without force. Reproduce new HEAD/local `origin/main` parity and confirm these three paths are clean against the pushed construction.
+3. Only after that validated construction push may root create one fresh untouched exact `claude-opus-4-8` / effort `xhigh` reservation for R65. Before any campaign delivery, root returns a separate bind-only G7 task carrying the pushed commit/whole identities and exact root-reproduced session, pane, PID, parentage, start, cwd, command, model/TUI, placeholder, welcome, launcher, child, zombie, and zero-delivery evidence. Any pre-push reservation or drift fails closed.
+4. A later G7 bind FSM may change only R65 to `BOUND-UNSENT` and insert one process receipt immediately before the byte-identical R65 anchor, preserving the control and sentinel. Root then separately validates, commits, pushes, and immediately freshly reattests the same untouched reservation.
+5. Only after pushed-bind parity and that immediate reattestation may root instantiate one detached activation whose identity/process preamble is followed by the byte-identical sealed-control slice, then deliver it once. A later stable transcript requires a separate G7 qualification FSM before any packet or credit can be admitted.
+
+- Mandatory REVISE is substantive and finished: it applies `R64-Q-SC-01`, performs the three authorized documentary mutations, rereads actual bytes, and reruns every dependent safe gate. Transition is now persisted: `REVISE -> DONE/HANDOFF`.
+
+**G7 R64/R65 owner FSM state: `DONE/HANDOFF` (R64 immutable zero-credit closure and process-unbound R65 allocation construction sealed; root-only validation/push/post-push reservation workflow remains; no reviewer contact or credit).**
