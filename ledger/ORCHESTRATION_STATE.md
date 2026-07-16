@@ -430,3 +430,41 @@ Correction at `2026-07-16T02:01:16+02:00`: the fifth Bash result succeeded and r
 
 - Decision/G2 editorial work is pushed at `7fb4b8a04126cf4a567dbe699cae2a8e66eda5be`; unsent human-action/G5 editorial work at `62b910d22ad4f213952d2c996645d57a19aa369a`; and G1/G4 terminal scope reconciliation at `cc5c32026d71b3cbf53c7c98b639b4155aaef543`. Every landing used an exact cached path set, passed cached diff hygiene, and reached local/remote-ref parity.
 - Only root's run/orchestration ledgers remain dirty. Immediate route is their scoped landing -> terminal packet to retained exact Sol/ultra/live-`fast` G8 -> report/index handshake -> final integrity seal, G8 retirement, and clean pushed `main`.
+
+## Current orchestration checkpoint — `2026-07-16T10:42:15+02:00`
+
+- Root recovered from context compaction by notifying the human and rereading all 81 lines / 8,055 bytes of `AGENTS.md` through physical EOF before further task action. One over-large convergence-report display receives zero credit; any required facts will be reread in smaller gap-free slices.
+- Pushed base is `fd26ad8b3760c7bc80d18af67ebc750ace66b4d7` on `main`. The only intentional repository session is retained exact Sol/ultra/live-`fast` G8; accepted accounting remains 22 overall / 12 C1, including one admitted Fable-family point, and Convergence remains `NOT ESTABLISHED`.
+- Immediate route is the terminal G8 report packet -> root-regenerated `INDEX.md` handshake -> final integrity seal, normal G8 retirement, scoped commit/push, and clean local/remote parity.
+
+## Current orchestration checkpoint — `2026-07-16T10:50:24+02:00`
+
+- Retained exact Sol/ultra/live-`fast` G8 has reread `AGENTS.md`, persisted the bounded terminal packet, and advanced `INGEST -> DRAFT`; it alone owns `MORNING_REPORT.md` and its checkpoint. The packet preserves 22 overall / 12 C1 accepted accounting and `Convergence: NOT ESTABLISHED`.
+- Fresh exact Sol/ultra/live-`fast` session `monkeybee-pdf-mass-context-repo--g8review` is reserved at the lowercase repository cwd for one stateless report review after `SUBMIT-FOR-REVIEW`. It is task-unsent and evidence-neutral. Immediate route is G8 draft/self-check -> one-lens review and normal reviewer retirement -> G8 revise -> root Index handshake -> final seal and retirement.
+
+## Current orchestration checkpoint — `2026-07-16T10:52:09+02:00`
+
+- G8's draft caught and surfaced a false no-fetch sentence in root's terminal packet. Root superseded it through one delivered correction: the run used the permitted public-reference retrievals already enumerated in `ledger/RUN_LEDGER.md`; no prohibited processor material, licensed PDF semantic text, corpus payload, purchase, contact, publication, or setting change occurred.
+- G8 must persist the correction before submission and replace the temporary contradiction risk with the accurate bounded disclosure. Counts, identities, proposal states, and `Convergence: NOT ESTABLISHED` are unchanged.
+
+## Current orchestration checkpoint — `2026-07-16T11:01:58+02:00`
+
+- G8 is frozen at `SUBMIT-FOR-REVIEW`: Morning Report 192/25,049/`1ea248e7...d1bc`, checkpoint 212/22,720/`10c50eb0...1428`. Fresh exact Sol/ultra/live-`fast` review returned zero findings under its sole lens and is normally retired with its session/PIDs absent and zero host zombies.
+- Root adds one Grade-C clarity judgment only: section 9 should narrow “resolves the ratification queue” to “resolves the C1-blocking items in the ratification queue.” This preserves the 20-row queue while preventing future-cycle deferrals from being misread as prerequisites to C1 conversion. Immediate route is G8 `REVISE` and freeze -> root Index regeneration -> Index receipt and G8 `DONE` -> final seal/retirement/landing.
+
+## Current orchestration checkpoint — `2026-07-16T11:09:34+02:00`
+
+- G8 is frozen in `REVISE` at Morning Report 193/25,140/`f2be0fbc...dc02` and checkpoint 244/28,218/`82551caf...27b5`, ready for the Index receipt. Root regenerated `INDEX.md` through `apply_patch` against the 68-file inventory.
+- The first Index manifest validator is zero-credit because it explicitly created and removed two `/tmp` comparison files, contrary to the unqualified no-deletion rule, although it touched no repository or pre-existing path. Root must rerun its entire scope with no temporary file or explicit deletion before sending `INDEX_READY`.
+
+## Current orchestration checkpoint — `2026-07-16T11:10:38+02:00`
+
+- Replacement no-temp/no-deletion Index validation passed exact 68-row inventory equality, 68 resolved unique links, provenance/status/evidence markers, claim/clean-room scans, and diff hygiene. Frozen `INDEX.md` is 149/13,373/`73c4d3e8...19ce`.
+- Exact `INDEX_READY` was delivered to retained G8. Immediate route is G8 full Index read and `REVISE -> DONE` -> normal G8 retirement -> final whole-repository integrity/seal -> scoped commit/push and clean local/remote parity.
+
+## Terminal orchestration checkpoint — `2026-07-16T11:17:18+02:00`
+
+- G0-G8 are terminal. Morning Report is 193/25,138/`2a8a0873...53b4e`; G8 checkpoint 272/32,393/`129fd63f...1531`; Index 149/13,373/`73c4d3e8...19ce`. All intended MonkeyBee NTM sessions and their known shell/model PIDs are absent; unrelated `agents` and `clean-reps` remain untouched; host zombies are zero.
+- Final disk gate passed: nine canonical hashes, exact 68-file Markdown inventory, 231-link scan with zero missing local target, nine terminal owner markers, final plan/review identities, claim/clean-room/no-action boundaries, selected single-normative-home anchors, and diff hygiene. The earlier temporary-file validator remains zero-credit and disclosed; its no-temp/no-deletion replacement passed.
+- Terminal evidence remains 22 accepted rounds overall / 12 C1 at A=124/B=68/C=23, including ten Opus 4.8 and one Fable 5/high points. `Convergence: NOT ESTABLISHED`. Run-wide token/cost telemetry remains unavailable.
+- No orchestration work remains after root stages exactly `INDEX.md`, `MORNING_REPORT.md`, `ledger/ORCHESTRATION_STATE.md`, `ledger/RUN_LEDGER.md`, and `ledger/owners/G8_STATE.md`; reproduces the cached path set/diff hygiene; commits on `main`; pushes without force; and verifies clean local/remote parity. The Git landing identity is external to this pre-commit seal.
