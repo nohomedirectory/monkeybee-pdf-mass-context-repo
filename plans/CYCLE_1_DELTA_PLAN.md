@@ -208,6 +208,8 @@ Every contract block below is normative for this delta only after higher authori
 - expiry, migration, and withdrawal behavior; and
 - a precise no-claim boundary.
 
+These fifteen semantic bullets map to the recurring seventeen presentation headings: `preconditions and card-slot state` is presented as separate `Preconditions` and `Card slots` headings, every contract also carries a `Rationale` heading, and each other bullet maps one-to-one in order.
+
 The canonical IMM.002 record expands those seventeen presentation fields into a typed `ConsequenceAxisRecord`. In addition to the visible field values, every record carries `SemanticScopeId`, applicable `ExpectedStateId` grammar, external/runtime substrate, transactional/publication effects, idempotency/retry law, state-change/signature consequences, performance/benchmark profile, and release-claim row. Each axis is either an exact typed value or `NotApplicable(reason_code, authority)`; an empty value, prose default, or inferred later-owner choice is invalid. The registry projection may derive an axis only from the owning contract's exact field and stores the source-field link, so the projection cannot invent missing semantics. C1 performance/benchmark axes state `NoC1PerformanceEvidence` unless a later lawfully admitted protocol replaces that state; no run or measurement is authorized here.
 
 Surfaces may narrow a contract but may not widen authority, coverage, outcome language, evidence, determinism, or disclosure. Friendly names that differ semantically receive different IDs.
@@ -3356,9 +3358,9 @@ Materiality uses the closed Rev 7 §14.7 axes: effective objects, page order, vi
 
 A task-local selection may enable object inspection. It cannot erase alternatives, widen security claims, or authorize writeback. RPT.003 remains the immutable strict security inventory. If a live recovery alternative changes an attachment, action, hidden revision, signature range, or other security conclusion, RPT.007 records ambiguity/partiality across the live alternatives.
 
-### 9.6 Obscure self-contained slice: encrypted object stream under ambiguous revision history
+### 9.6 Obscure cross-contract slice: encrypted object stream under ambiguous revision history
 
-This slice is deliberately specified so it can be implemented without reading another section of this plan.
+This slice is a workflow orientation and cross-contract example, not a standalone contract specification. Implementation requires the exact definitions and dependencies named by each step—especially REC.010 for its closed seven-axis result schema, cost attribution, availability states, and `RecoveryHypothesisId` minting gate—without restating or widening them here.
 
 Scenario: one immutable source contains conflicting xref evidence. Two admissible revision chains point to different occurrences of an encrypted object stream. The caller supplies a password credential. At least one object-stream header or boundary is malformed.
 

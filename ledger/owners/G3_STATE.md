@@ -38,14 +38,14 @@ owner-fsm: DONE/HANDOFF
 
 ## Current checkpoint
 
-- Timestamp: `2026-07-16T05:57:24+02:00`
+- Timestamp: `2026-07-16T06:49:19+02:00`
 - Phase: `DONE/HANDOFF`
-- Active goal: the independently narrowed R66-C01 disposition and exact repaired plan identity are bound for root handoff; G3 is idle and performs no routing, contact, commit, or push.
+- Active goal: R12 disposition and bounded plan repair are finished; G3 is idle and hands the exact artifacts below to root without staging, commit, push, review dispatch, or external action.
 - Exclusive writable paths for this round: `plans/CYCLE_1_DELTA_PLAN.md` and `ledger/owners/G3_STATE.md`, exclusively through structured `apply_patch`.
-- Current plan: narrowed R66 repair is exactly 3,655 lines / 531,951 bytes / SHA-256 `9778e1b4d95ddaae52b6ca75abe593dc2b09d63676fd3546f4b431c81c5655fa`; its plan frontmatter remains the pushed `SUBMIT-FOR-REVIEW` value because the owner FSM is checkpoint-local for this bounded handoff.
+- Current plan: repaired R12 artifact is exactly 3,657 lines / 532,504 bytes / SHA-256 `4b53fdc7f78653d582da14cd83965bab31cb7a65b9bd20f1d2343b9b3c13cf31`; its plan frontmatter remains the pushed `SUBMIT-FOR-REVIEW` value.
 - Checkpoint navigation: this is the sole live current-state surface. Dated historical identities, goals, phases, and next-round statements remain historical evidence only and do not govern present routing.
-- Round condition: R66-C01 terminal disposition is `NARROW`; the smallest supported FDN.005 repair is checked and no additional defect or repair is warranted. Reviewer grade/verdict remain unpromoted evidence.
-- Branch observation: before the first R66 write, branch=`main`; repository `HEAD` and local `origin/main` both exactly equal pushed base `21560c13bd011bf3bfbbf20663209f36ffc400ca`; the two G3-owned paths match the pushed blobs, while 22 concurrent modified path facts remain out of scope and untouched.
+- Round condition: terminal R12 dispositions are R12-A01=`NARROW` and R12-B02=`NARROW`; reviewer grades and broader wording remain unpromoted, and only the two recorded local omissions were repaired.
+- Branch observation: before the first R12 write, branch=`main`; repository `HEAD` and local `origin/main` both exactly equal pushed base `d8251c12d59a6330e19a863942f206304e915047`; both G3-owned paths match the pushed blobs, while 22 concurrent modified path facts remain out of scope and untouched.
 - External fetches: none.
 - Sub-agent activity: none; G3 remains the sole owner and will not route its own review.
 
@@ -2138,3 +2138,106 @@ Reviewer grades and loss guards remain immutable packet evidence. The dispositio
 - Exact changed-file manifest is only `plans/CYCLE_1_DELTA_PLAN.md` and `ledger/owners/G3_STATE.md`. Immutable R66 packet/qualification receipts remain `05c10ec0...5762` / `7dfc229e...3262`; licensed card bodies remain pending and no card was activated.
 - Pre-transition checkpoint identity was 2,130 lines / 370,756 bytes / SHA-256 `987bdda018b5f9eb8cedbb09414cb7e6b3252b026eb034119cc3452c21c5894a`. The exact terminal checkpoint identity is measured after this append and reported in the handoff; no self-hash is embedded.
 - G3 is idle at `DONE/HANDOFF`. No reviewer/process contact, spawn, browser/fetch, prohibited-source access, measurement, comparison, code, Beads/pseudo-Beads, staging, commit, push, or external action occurred.
+
+## R12 owner intake: prior handoff -> `INGEST` — `2026-07-16T06:37:57+02:00`
+
+- Pushed control reproduces exactly: branch `main`; `HEAD` and local `origin/main` both `d8251c12d59a6330e19a863942f206304e915047`; submitted plan 3,655 lines / 531,951 bytes / SHA-256 `9778e1b4d95ddaae52b6ca75abe593dc2b09d63676fd3546f4b431c81c5655fa`; prior checkpoint 2,140 lines / 373,055 bytes / SHA-256 `ac1fbaa3201c4e371fa1fecef6d17cfcb5ef43109f3a9efe688c0452388f7b88`.
+- The R66 handoff remains historical evidence. The new R12 owner sequence begins at `INGEST`; only the checkpoint FSM changes until premise testing supports a bounded plan repair. The plan remains byte-identical at intake.
+- `AGENTS.md` and the planning-workflow skill were read through EOF. The skill contributes grounded premise testing only; live clean-room, no-measurement/no-comparison, no-code/no-Beads, and exact two-file write laws control.
+- Twenty-two concurrent modified paths are path facts only and remain untouched. No external input, unavailable source, or owner contact is needed at intake.
+- Next gate: locate and read the immutable R12 packet and transcript-qualification receipt from the pushed gauntlet artifacts, reproduce their exact bounded identities, then read only their cited plan/authority intervals and directly necessary stable source-plan intervals.
+
+### R12 immutable packet and qualification receipt — `2026-07-16T06:39:00+02:00`
+
+- Pushed Round Log lines 8447–8479 reproduce as 33 newline-terminated lines / 6,173 bytes / SHA-256 `d2f54fad0a7d6c30ba8c23fecb5d3006f85c99be470e33d4f8238a06f6079a35`, matching the qualification's immutable packet identity.
+- Pushed Convergence Report line 1294 through physical EOF line 1318 reproduces as 25 newline-terminated lines / 5,201 bytes / SHA-256 `35d16120f54b1f927d5498146924eb43f85f739f7d1a3d252952a32b7be482e1`. It admits transcript/process provenance only and expressly leaves both findings unpromoted.
+- R12-A01 alleges a conflict between §9.6's standalone-implementation headline and step 8's REC.010 dependency outside that slice. R12-B02 alleges an unexplained fifteen-bullet/seventeen-field referent in §5. Filed grades, asserted consequences, proposed boundaries, and the round verdict are evidence to test, not owner conclusions.
+- Pre-record checkpoint identity was 2,148 lines / 374,372 bytes / SHA-256 `4eb756007a904a1a52054747e744cfd7e6f4451c913d5c34a4b467cfdb5f86a8`; owner FSM remains `INGEST` and the plan remains byte-identical.
+- Next gate: read cited plan intervals §9.6/REC.010 and §5/first-contract template; read the governing OVERNIGHT_GOAL and Rev 7 claim/de-slopification intervals; then locate only directly necessary stable recovery-schema authority before choosing dispositions.
+
+### R12 combined authority-display truncation — `2026-07-16T06:39:30+02:00`
+
+- The first combined read of eight cited plan/goal/Rev 7 windows emitted a truncation warning at approximately 10,654 original tokens. The entire aggregate receives zero credit; no visible or omitted fragment supports either disposition.
+- No repository or process state changed. Correction boundary: reread every required interval as a standalone or small paired window whose output returns fully, then bind only those fully returned results.
+- Pre-record checkpoint identity was 2,156 lines / 375,784 bytes / SHA-256 `b734aa8411daa133328c403d42a1188348fc13d7b2b95396d00a6b586fbbeae4`; owner FSM remains `INGEST` and the plan remains byte-identical.
+
+### R12 credited authority closure — `2026-07-16T06:42:18+02:00`
+
+- After the clipped aggregate, every needed interval was reread in a standalone or small bounded display that returned fully: submitted plan lines 185–220, 387–413, 2058–2086, and 3348–3393; `OVERNIGHT_GOAL.md` lines 23–35 and 60–70; stable Rev 7 lines 790–830, 1741–1784, 2738–2778, and 4995–5016. `AGENTS.md` was also reread through EOF after context compaction. No fragment from the zero-credit aggregate is reused.
+- Section 5 contains fifteen semantic bullets. Its third bullet combines preconditions with card-slot state; the recurring contract template presents those as separate `Preconditions` and `Card slots` headings, adds `Rationale`, and maps each other bullet one-to-one in order. The seventeen-heading referent is inferable from the plan but is not stated at the sentence that invokes it.
+- The immediate preface to §9.6 already names all seven consequence axes, typed values/evidence or unavailable states, live alternatives, and the security no-claim. Step 8 already orders REC.010 checks before hypothesis minting and excludes an incomplete receipt from ordering. REC.010 nevertheless owns additional implementation obligations outside the slice: initial/reconciled cost vectors, direct/shared/unavailable attribution, exact mandatory checks, typed per-axis result grammar, and the cancellation/minting rules.
+- Stable Rev 7 Workflow H requires each recovery hypothesis to retain evidence, cost, and affected objects/pages while preserving alternatives and separating selection from writeback. Rev 7 §14.7 supplies the seven materiality axes and live-hypothesis ambiguity/security boundary; §10.3 preserves scoped uncertainty and refusal; §24.12 forbids claim strengthening and premature comparison inference. The task needs no licensed normative PDF semantics and no external source.
+- Premise status before disposition: R12-A01 survives only as an overbroad standalone-implementation promise, not as an absence of every REC.010 guard; R12-B02 survives only as a local mapping omission, not as absence of a reproducible seventeen-heading template. Both reviewer formulations therefore require narrowing before any repair decision.
+- Pre-record checkpoint identity was 2,162 lines / 376,515 bytes / SHA-256 `6b2ebaed6f23592858b3b0fded15e782280442d568c28a2687502dd4f7334379`; owner FSM remains `INGEST` and the plan remains exactly 3,655 lines / 531,951 bytes / SHA-256 `9778e1b4d95ddaae52b6ca75abe593dc2b09d63676fd3546f4b431c81c5655fa`.
+- Next gate: persist `INGEST -> DRAFT` with one independent disposition per finding, exact consequence and loss guard, then make only the two bounded prose repairs supported by those dispositions.
+
+### R12 authority-closure timestamp correction — `2026-07-16T06:42:25+02:00`
+
+- The preceding heading literal `2026-07-16T06:42:18+02:00` had already been written when a read-only `date` result returned `2026-07-16T06:42:10+02:00`; it is therefore invalid and non-evidentiary as an event time. The historical literal is preserved, and no intended second is inferred.
+- This correction uses the fresh `date` result in this heading. The authority observations and file identities in the preceding record are unaffected; no plan, repository-control, external, or process state changed. Pre-record checkpoint identity was 2,172 lines / 379,261 bytes / SHA-256 `798d73f3dced0a8e97326e477b4cf533c4e8f95d5e291b1b3332c6aaf186007f`.
+
+## R12 independent dispositions: `INGEST -> DRAFT` — `2026-07-16T06:42:34+02:00`
+
+- **R12-A01 — `NARROW`.** Premise test: submitted-plan §9.6 lines 3348–3393 supplies the seven-axis preface, typed value/evidence-or-unavailable rule, live-alternative/security guards, and check-before-mint ordering. REC.010 lines 2058–2086 separately owns the initial/reconciled cost vector, direct/shared/unavailable attribution, exact result grammar, mandatory checks, cancellation rule, and minting boundary required by step 8. Rev 7 Workflow H lines 790–830 and §14.7 lines 2738–2778 require those hypothesis/evidence/cost/alternative distinctions. Therefore the absolute sentence promising implementation without another section is false, while the allegation that every named guard is absent from the slice is too broad.
+- **R12-A01 consequence and repair.** A fresh implementer could treat the narrative as the full REC.010 contract and omit cost attribution or exact mint prerequisites. The smallest repair boundary is the §9.6 heading and its first sentence only: identify it as a cross-contract slice and state that named contract definitions—especially REC.010's seven-axis result schema, cost attribution, availability states, and minting gate—remain required. No REC.010 schema is duplicated or widened.
+- **R12-A01 loss guard.** Preserve strict-before-recovery ordering; basis/view/final-hypothesis separation; every alternative and unavailable axis; credential secrecy; one-time container decryption; transaction distinctions; all pending-card boundaries; the existing step order; and every uncertainty, refusal, and security no-claim through lines 3365–3390.
+- **R12-B02 — `NARROW`.** Premise test: submitted-plan §5 lines 185–220 lists fifteen semantic bullets, then invokes seventeen presentation fields. The first recurring contract at lines 387–413 and the plan-wide template give a stable seventeen-heading referent: the combined precondition/card-state bullet splits into `Preconditions` and `Card slots`, `Rationale` is additionally present, and the other bullets map one-to-one in order. The referent is reproducible but its local mapping is unstated, so the alleged total absence is too broad while the presentation defect survives.
+- **R12-B02 consequence and repair.** A reader can count fifteen bullets and reasonably question whether two headings or obligations were omitted. The smallest repair is one mapping sentence after the bullet list; it names the one split and the added `Rationale` heading, leaving all recurring contracts untouched.
+- **R12-B02 loss guard.** Preserve all seventeen headings, independent card-slot visibility, `Rationale`, the extra axes already named after the list, `NotApplicable(reason_code, authority)`, and the prohibition on inferred defaults. Add no card semantics, contract, field, source, or execution promise.
+- Disposition arithmetic is exact: `ACCEPT=0`, `NARROW=2`, `REJECT=0`. Neither immutable reviewer grade is promoted. No licensed semantic source or human ruling is needed for these internal presentation repairs.
+- Pre-transition checkpoint identity was 2,177 lines / 379,988 bytes / SHA-256 `99e5312bb587b5918573593df512fe71e9ff9e6c825493ad93ec68830bbd8642`; input plan remains 3,655 lines / 531,951 bytes / SHA-256 `9778e1b4d95ddaae52b6ca75abe593dc2b09d63676fd3546f4b431c81c5655fa`.
+- Next gate: use structured `apply_patch` for exactly the one §5 mapping insertion and two §9.6 replacements, then verify that no other plan line changed before persisting `DRAFT -> SELF-CHECK`.
+
+### R12 bounded DRAFT repair checkpoint — `2026-07-16T06:43:58+02:00`
+
+- The repaired plan is exactly 3,657 lines / 532,504 bytes / SHA-256 `4b53fdc7f78653d582da14cd83965bab31cb7a65b9bd20f1d2343b9b3c13cf31`. Its plan frontmatter remains the submitted `SUBMIT-FOR-REVIEW` value; the owner-process FSM remains checkpoint-local.
+- The fully returned diff is exactly three hunks and `4 added / 2 removed` lines: one §5 mapping sentence plus its separating blank line, one §9.6 heading replacement, and one §9.6 opening-sentence replacement. Each new prose string occurs exactly once; both superseded self-containment strings are absent.
+- No recurring contract block, field heading, REC.010 contract field, dependency, card slot, semantic marker, or existing loss-guard line changed. The added-line lowercase Rule-13 vector is `[0,0,0,0]`.
+- Pre-record checkpoint identity was 2,189 lines / 383,497 bytes / SHA-256 `3475a575460a2e5d659746785131b5953fc9e6da464392676890ee7d70f12e2b`; owner FSM remains `DRAFT`.
+- Next gate: persist `DRAFT -> SELF-CHECK`, then run the full credited R12 suite from disk without inheriting this preflight as terminal evidence.
+
+## R12 owner transition: `DRAFT -> SELF-CHECK` — `2026-07-16T06:44:15+02:00`
+
+- Pre-transition plan identity was 3,657 lines / 532,504 bytes / SHA-256 `4b53fdc7f78653d582da14cd83965bab31cb7a65b9bd20f1d2343b9b3c13cf31`; pre-transition checkpoint identity was 2,197 lines / 384,656 bytes / SHA-256 `7d4332c8187edcd1f500983b35b0592a90db50dd77293b5d7728458a4067070f`.
+- Checkpoint frontmatter and the sole live phase now read `SELF-CHECK`. The plan frontmatter remains `SUBMIT-FOR-REVIEW` because this owner-process loop does not authorize unrelated plan-header churn.
+- No DRAFT preflight result is promoted. The credited suite will independently prove exact R12 delta and disposition closure; catalog/spec parity; the seventeen-heading grammar; card/pending/semantic-body invariants; reference health; loss guards; claim and clean-room boundaries; UTF-8/LF/whitespace; exact changed-path scope; and final plan identity.
+
+### R12 structural-validator construction failure — `2026-07-16T06:45:47+02:00`
+
+- The first SELF-CHECK structural validator exited before reading the plan with a Python `SyntaxError`: its command string over-escaped a quote inside an f-string. The entire diagnostic receives zero credit; none of its intended catalog, specification, field, card, pending-marker, or semantic-body predicates ran.
+- No artifact, repository-control, external, or continuing process state changed. Correction boundary: remove the f-string expression and rerun the same finite predicates with precomputed scalar counts. Pre-record checkpoint identity was 2,203 lines / 385,537 bytes / SHA-256 `15efa215ef007547d2e57318864ffdcac3b0eeec95406da5200ed7f273118730`; owner FSM remains `SELF-CHECK`.
+
+### R12 structural-validator regex failure — `2026-07-16T06:46:19+02:00`
+
+- The corrected-syntax aggregate ran but its catalog/spec regexes remained over-escaped across the shell/Python boundary, parsed zero headings, and exited on assertion. The whole aggregate receives zero credit, including its displayed card and pending-marker scalars.
+- No artifact, repository-control, external, or continuing process state changed. Correction boundary: eliminate regex extraction and use exact line-prefix parsing for IDs and all seventeen headings, while retaining the same expected counts. Pre-record checkpoint identity was 2,208 lines / 386,312 bytes / SHA-256 `a542576a217f6171ca46d7173f1f7056698fe9f3fc317bb116b0dec6f1a43e5a`; owner FSM remains `SELF-CHECK`.
+
+## R12 credited SELF-CHECK: `SELF-CHECK -> SUBMIT-FOR-REVIEW` — `2026-07-16T06:48:04+02:00`
+
+- Corrected structural gate returned exit 0: 142 unique catalog IDs / 142 unique specification IDs / exact parity; all 142 contracts have every one of the seventeen recurring headings exactly once; 142 card-slot fields; 162 `PENDING-LICENSED-SOURCE` markers; zero semantic-body fields.
+- Exact-delta gate returned fully: input plan 3,655 lines / 531,951 bytes / SHA-256 `9778e1b4d95ddaae52b6ca75abe593dc2b09d63676fd3546f4b431c81c5655fa`; repaired plan 3,657 lines / 532,504 bytes / SHA-256 `4b53fdc7f78653d582da14cd83965bab31cb7a65b9bd20f1d2343b9b3c13cf31`; exactly three hunks and `4 added / 2 removed` lines at §5 and §9.6. No catalog, contract field, card slot, or dependency line is in the diff, so no reference or contract identity changed.
+- Disposition/loss gate returned exit 0: exactly one explicit `NARROW` disposition for each R12-A01 and R12-B02; arithmetic `ACCEPT=0`, `NARROW=2`, `REJECT=0`; all twelve selected loss-guard predicates present; all three new prose strings occur exactly once.
+- Claim/clean-room gate returned exit 0: owned-added-line lowercase Rule-13 vector `[0,0,0,0]`; whole-plan vector `[0,8,0,0]`, unchanged because the R12 delta contributes zero; zero local denied-name hits; zero owned-file URLs. No source/doc contact, measurement, comparison, external action, card activation, or semantic-body authorship occurred.
+- Byte/diff gate returned exit 0: both owned files decode as UTF-8, end in decimal byte 10, and contain zero NUL, CR, tab, trailing-whitespace, or conflict-marker counts; scoped and whole-worktree `git diff --check` both exit 0.
+- Scope/navigation gate returned exit 0: branch `main`; `HEAD == origin/main == d8251c12d59a6330e19a863942f206304e915047`; exact two owned changed paths; the 22 intake out-of-scope modified path facts remain 22 and untouched; zero untracked or staged paths; exactly one live Current checkpoint; checkpoint frontmatter/live phase agreement; plan frontmatter preserved at `SUBMIT-FOR-REVIEW`.
+- The two failed structural-validator attempts remain recorded at zero credit and were replaced by the exact-prefix gate above. No other SELF-CHECK diagnostic failed, clipped, or truncated.
+- Pre-transition checkpoint identity was 2,213 lines / 387,072 bytes / SHA-256 `f6432a6c680618130a9c71646a61cf6a35b48ec1e589ddf0fc94c704a3f766b4`; repaired plan bytes remain fixed.
+- Next required transition is `SUBMIT-FOR-REVIEW -> REVISE`: test only whether either local repair is insufficient or wider than its established premise; do not contact a reviewer or rewrite for style.
+
+## R12 owner transition: `SUBMIT-FOR-REVIEW -> REVISE` — `2026-07-16T06:48:37+02:00`
+
+- The bounded submission-sufficiency gate returned exit 0 at the exact repaired plan identity. Section 5 now states the fifteen-to-seventeen mapping, the one split, and the additional `Rationale` heading. Section 9.6 now identifies itself as cross-contract, names REC.010's exact required categories, and contains no former absolute implementation promise.
+- The diff remains exactly `4 added / 2 removed` lines and the plan SHA-256 remains `4b53fdc7f78653d582da14cd83965bab31cb7a65b9bd20f1d2343b9b3c13cf31`. No missing, overbroad, or unsupported repair is established, so `REVISE` preserves the checked plan bytes rather than rewriting for style.
+- Pre-transition checkpoint identity was 2,225 lines / 389,720 bytes / SHA-256 `298cf0002fce3ac0d55b8ec6b17cd9dfc354c93f4cc9d0718712ca280e5bc9f9`.
+- Next gate: rerun terminal identity, byte/claim, exact-scope, and live-navigation checks after this checkpoint write; if green, persist `REVISE -> DONE/HANDOFF` with exact terminal identities.
+
+## R12 terminal transition: `REVISE -> DONE/HANDOFF` — `2026-07-16T06:49:19+02:00`
+
+- Terminal identity/byte/claim gate returned exit 0: plan 3,657 lines / 532,504 bytes / SHA-256 `4b53fdc7f78653d582da14cd83965bab31cb7a65b9bd20f1d2343b9b3c13cf31`; both owned files decode as UTF-8, end in decimal byte 10, and retain green NUL/CR/tab/trailing-whitespace/conflict checks; owned-added-line Rule-13 vector `[0,0,0,0]`.
+- Terminal scope/navigation gate returned exit 0: `main`; `HEAD == origin/main == d8251c12d59a6330e19a863942f206304e915047`; exact two owned changed paths; 22 concurrent out-of-scope path facts unchanged; zero untracked or staged paths; scoped and whole-worktree diff checks green; one live Current checkpoint; checkpoint frontmatter/live phase agreement at `REVISE` before this transition; plan frontmatter preserved at `SUBMIT-FOR-REVIEW`.
+- Final dispositions are R12-A01=`NARROW` and R12-B02=`NARROW`, for exact arithmetic `ACCEPT=0`, `NARROW=2`, `REJECT=0`. A01 repairs only the false standalone-implementation headline while retaining REC.010 as the normative contract. B02 repairs only the unstated fifteen-to-seventeen presentation mapping while retaining every recurring field.
+- Exact plan repair manifest is one §5 mapping sentence plus a separating blank line, one §9.6 heading replacement, and one §9.6 opening-sentence replacement: three hunks, `4 added / 2 removed` lines, no other plan delta.
+- All packet loss guards remain: recovery ordering and identity separation; live alternatives/unavailable axes; credential secrecy and single container decryption; transaction distinctions; pending-card and security/no-claim boundaries; all seventeen headings including separate card visibility and `Rationale`; extra consequence axes; `NotApplicable(reason_code, authority)`; and the ban on inferred defaults.
+- Credited structural totals remain 142 unique catalog IDs / 142 unique specification IDs / exact parity; 142 contracts with all seventeen headings exactly once; 142 card-slot fields; 162 pending markers; zero semantic-body fields. The two failed structural-validator attempts remain zero-credit and their corrected exact-prefix rerun is the credited result.
+- Exact changed-file manifest is only `plans/CYCLE_1_DELTA_PLAN.md` and `ledger/owners/G3_STATE.md`. Pre-transition checkpoint identity was 2,232 lines / 390,797 bytes / SHA-256 `7e2d128d79ec7534c94efd17d46d12dde4706b5213f9753bfbc0e8c26dbf51ce`.
+- G3 is idle at `DONE/HANDOFF`. The exact terminal checkpoint identity is measured after this append and reported to root; no self-hash is embedded. No source/doc access, measurement, comparison, code, Beads/pseudo-task inventory, card body, staging, commit, push, owner contact, reviewer dispatch, or external action occurred.
