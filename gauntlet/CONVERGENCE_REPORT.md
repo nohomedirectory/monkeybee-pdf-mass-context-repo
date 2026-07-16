@@ -1316,3 +1316,13 @@ R12-A01 and R12-B02 remain immutable, unpromoted reviewer allegations. They rout
 ### Allocation and conclusion
 
 Allocation remains 65 unique rows at 25 Sol / 40 Opus. Failed rows remain 35 at 10/25; valid filed evidence becomes 20 at 10/10 with aggregate A=119/B=65/C=23; active-unfiled becomes 10 at 5/5. No row is allocated-unsent, assigned, or bound-unsent; R62 remains absent. Accepted count becomes 20 and accepted C1 count becomes 10. This is one valid Sol-family review point, not an owner disposition, external adjudication, or convergence claim.
+
+## R31 zero-credit process bind and sealed-control receipt — `2026-07-16`
+
+R31 is bound against pushed post-R12 plan 3,657 newline-terminated lines / 532,504 bytes / `4b53fdc7f78653d582da14cd83965bab31cb7a65b9bd20f1d2343b9b3c13cf31` under sole lens `kernel-touch audit`, exact `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service. Its allocation row is `BOUND-UNSENT`; no reviewer packet exists and no activation was instantiated or delivered by G7.
+
+The current reservation/process/cwd/model/capture/launcher/topology facts were reproduced read-only by G7 and are sealed in Round lines 8,481-8,496, 16 lines / 3,258 bytes / `f7a76a6724e1c4a9f0b18da784b748064ecb14bd9baac509daec68a45ed97c8a`. Reservation creation/order and lifetime zero-campaign-delivery interpretation remain `ROOT-REPRODUCTION-REQUIRED`. Root's first stopped broad diagnostic remains zero-credit. Root must validate and push this bind/control, freshly reattest the same untouched process, and only then may instantiate one detached activation.
+
+The conventional sole-lens reviewer control is Round lines 8,497-8,530, 34 lines / 5,959 bytes / `fd28a7ec1d82dc12d689296d9a67ec9d016177fcf84eeb84d9dcd28b09e3a791`. It requires the first two full authority reads, bounded local campaign/kernel law, the exact entire plan in ordered contiguous reads of at most 200 lines, returned-line evidence, one structured sentinel patch, no post-write tool, and exact terminal response. These are future chain gates, not present coverage.
+
+This bind grants no packet, finding, grade, coverage, marginal result, model-family point, accepted-review change, route, disposition, curve, cross-model, or convergence credit. Allocation remains 65 rows at 25 Sol / 40 Opus; failed 35 at 10/25; valid filed 20 at 10/10 with A=119/B=65/C=23; active-unfiled 10 at 5/5. R31 is the sole `BOUND-UNSENT` row; R17/R18/R25-R30 remain `PRECOMMITTED`, R32 remains `AUTHORIZED`, no row is allocated or assigned, and R62 remains absent. Accepted overall/C1 counts remain 20/10. Convergence remains **NOT ESTABLISHED**.

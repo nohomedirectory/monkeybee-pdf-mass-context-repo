@@ -138,7 +138,7 @@ Supplemental rounds are governed by every law that governs a baseline round: the
 
 | Round | Artifact | Declared lens (exactly one) | Model | Precondition to admit | Artifact hash | Status | A | B | C | Marginal-only | Owner disposition |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| R31 | C1 delta plan (`plans/CYCLE_1_DELTA_PLAN.md`) | kernel-touch audit | `gpt-5.6-sol`, effort `ultra` | Runs immediately after R12 **and** the owner's revision of the R12 disposition; a new artifact hash must be bound | PENDING | AUTHORIZED | — | — | — | — | — |
+| R31 | C1 delta plan (`plans/CYCLE_1_DELTA_PLAN.md`) | kernel-touch audit | `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service | Post-R12 owner revision is pushed; the exact untouched reservation and sealed control are bound below; root validation, push, and fresh re-attestation precede activation | `4b53fdc7f78653d582da14cd83965bab31cb7a65b9bd20f1d2343b9b3c13cf31` | BOUND-UNSENT | — | — | — | — | Root-only activation pending; zero packet, review, finding, or credit. |
 | R32 | `human_actions/**` | source-scope-and-no-action integrity | `claude-opus-4-8`, effort `xhigh` | Runs after the R01–R30 priority floor is satisfied; G5 must have reached `SUBMIT-FOR-REVIEW` | PENDING | AUTHORIZED | — | — | — | — | — |
 
 `AUTHORIZED` is a supplemental-round status: allocated by root after initialization, not yet bound to an artifact hash and not yet spawned. It becomes `ASSIGNED` on binding and then follows the ordinary status path.
@@ -8477,5 +8477,55 @@ After the `apply_patch` result, use no tool and emit only exact standalone `TERM
 Owner revision is required before this lens converges. R12-A01 is a confirmed unsupported standalone-implementation claim with a concrete missing obligation; R12-B02 remains probable because the intended seventeen-field convention may be the recurring template, but the text does not say so. The reserved vocabulary is otherwise scoped rather than promotional: the formal `Complete` outcome is bounded at lines 61–63 and 2,851–2,869, and the formal `best_outcomes` aggregation field is expressly narrowed at lines 3,553–3,555. Repeated contract fields and `PENDING-LICENSED-SOURCE` markers were not counted as filler because they preserve local scope and the clean-room boundary. This round is not marginal-only because the standalone slice assurance can misdirect implementation.
 
 - termination state: TERMINATED
+
+## R31 zero-credit process bind and sealed control — `2026-07-16`
+
+This append governs the later R31 operational state without rewriting R12 or any predecessor. It binds the pushed post-R12 plan to one currently untouched reservation and seals one future sole-lens review. It is not reviewer input, a packet, a finding, a grade, a coverage point, an accepted review, or convergence evidence.
+
+### Pushed artifact and current reservation receipt
+
+- pushed construction base: branch `main`; `HEAD` and local `origin/main` `58b761f3e223f30aea90e6766230695f7fdb5fc4`; pre-bind Round 8,481 newline-terminated lines / 1,453,887 bytes / `318f8007772aff9eca9c3dc13faa5cbd1ea519fa380dabcedd54dc36afa64ae5`; submitted plan 3,657 / 532,504 / `4b53fdc7f78653d582da14cd83965bab31cb7a65b9bd20f1d2343b9b3c13cf31`
+- allocation bind: R31 remains the pre-authorized C1 supplemental row with sole exact lens `kernel-touch audit`; it is now `BOUND-UNSENT` against that plan and exact `gpt-5.6-sol`, effort `ultra`, live `fast`, priority service; R31 has zero physical packet and zero evidence credit
+- process coordinates: session `monkeybee-pdf-mass-context-repo--r31`; pane `%109` index 1; shell PID 3432497; sole model child PID 3432722; tmux server PID 1540496; boot ID `7349fb94-6725-4e24-8a56-f8313aeac869`; start ticks 744965871/744965905; observed `ps` states `Ss`/`Sl+`; pane live with `pane_dead=0` and `history_size=0`
+- cwd and model: pane, shell, and model cwd are exact lowercase `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`; model cmdline is 152 NUL-delimited bytes / `e676b07fd2c2958542d6b9475bac6741953a6a27802998bd6bbe85a8b3b6f3fd`, exact argv `codex --dangerously-bypass-approvals-and-sandbox -m gpt-5.6-sol -c model_reasoning_effort=ultra -c model_reasoning_summary_format=experimental --search`; the model has zero children and the host has zero zombies
+- visible identity: plain full capture is 33 newline-terminated lines / 1,697 bytes / `55e6fca33e92b41c733b3dbe9e25c496bb51f3a942caa3f60336ccd436ab2561`; it shows exact `gpt-5.6-sol ultra fast`, retained `Service tier set to priority`, the lowercase repository, and generic placeholder `Write tests for @filename`
+- selected launcher disclosure in actual order: 3 newline-terminated lines / 86 bytes / `c10ef3b189bf3266b64540ca123fa00a58ca609cc81ec5041990a2d7fab44c18`: `NTM_SPAWN_ORDER=1`, `NTM_SPAWN_BATCH_ID=spawn-20260714-190642-9b470d7b`, `NTM_SPAWN_TOTAL=1`
+- provenance boundary: G7 reproduced the current process, filesystem, screen, and environment facts read-only and sent no input. Reservation creation/order and the lifetime zero-campaign-delivery interpretation remain `ROOT-REPRODUCTION-REQUIRED`. Root's first broad diagnostic stopped after the zero-child check because `ps` returned status 1 under `pipefail`; that diagnostic is zero-credit, while the corrected root rerun and G7's independent bounded checks supply the facts above.
+
+Root must validate and push this exact bind/control, then immediately reattest the same reservation, process, model, cwd, live-fast/priority state, placeholder/history boundary, plan, pushed Round, R31 row/control, and sentinel before one detached activation. Any drift fails closed. G7 has not instantiated an activation or contacted R31.
+
+## R31 sealed reviewer control — `kernel-touch audit`
+
+### Role, startup, and identity boundary
+
+You are a fresh-context reviewer, not the artifact owner. Review only `plans/CYCLE_1_DELTA_PLAN.md` under the sole lens `kernel-touch audit`. Ordinary brief status narration is allowed, but it is not evidence and may not state a finding before source review.
+
+Tool 1 must be one local read-only call that reads all of `AGENTS.md` through EOF. Tool 2 must be one local read-only call that reads all of `ledger/prompts/GAUNTLET_REVIEWER_PROTOCOL.md` through EOF. No tool, skill, question, repository access, or substantive campaign claim may precede Tool 1 or intervene between Tools 1 and 2. A later transcript qualification must be able to reproduce both full returned byte streams.
+
+After Tool 2, verify the exact root-supplied activation identity: pushed branch/HEAD/local-origin parity, Round identity, R31 row/control/sentinel coordinates, submitted plan identity, session/pane/PIDs, exact lowercase cwd, exact model/effort, and live `fast` plus priority service. Read only the exact R31 row, this R31 process receipt/control, and the generic sentinel intervals supplied by the activation; do not read a predecessor packet, predecessor control, adjacent separator, Convergence, owner checkpoint, root ledger, or local control-plane state. An identity or source-boundary mismatch permits no review or write; emit exact standalone `TERMINATED`.
+
+### Allowed local authority and artifact reads
+
+Read only these campaign-law intervals after Tool 2: `OVERNIGHT_GOAL.md` lines 23-35, line 66, and lines 78-86; `MONKEYBEE_CAMPAIGN_CHARTER_v1.md` lines 28-41, 86-99, and 136-149; `CYCLE_0_WORK_ORDER.md` lines 67-79 and 116-119; and `constitution/MONKEYBEE_CONSTITUTION_v8.md` lines 20-35 and 1,973-2,009. The Constitution remains a proposed extraction under its own lines 20-35; generated prose does not silently supersede higher authority.
+
+For substantive candidate checks, the closed kernel-law catalog is Constitution §§4, 6, 8, 9, 10, 11, 30, and 33 at lines 36-1,754. You may use local line-number search restricted to that Constitution file and catalog solely to locate candidate terms; its output is locator-only, not finding evidence. Follow every candidate with exact targeted reads inside the catalog. Use no more than twelve targeted Constitution reads, no read larger than 200 source lines, and no more than 1,200 returned source lines total. A finding must cite the exact targeted authority lines actually returned; search output or recollection alone is not evidence.
+
+Read `plans/CYCLE_1_DELTA_PLAN.md` from line 1 through physical EOF in ordered, contiguous, non-overlapping local reads of at most 200 source lines each. The admitted union must be exactly 1-3,657 with no retry, gap, overlap, widening, error, clipping, or unexpected EOF. Line labels added by the read mechanism are not source content. Any integrity failure permits no write and requires exact standalone `TERMINATED`.
+
+No skill, web search, network fetch, connector, app, MCP, outside source, or prohibited processor source/documentation is allowed. Do not read any other repository file. Do not measure, benchmark, compare products, contact an outside party, author a SpecCard semantic body, create code/scaffolding/Beads/pseudo-task inventory, edit the plan or authority, or take an external action.
+
+### Sole-lens adjudication
+
+Apply only `kernel-touch audit`. Determine from returned local evidence whether the C1 plan merely consumes and instantiates the proposed initial kernel or instead changes a frozen identity grammar, canonical encoding, evidence/outcome law, work/budget/capability law, clean-room law, layer direction, crate-boundary budget, report identity, evaluation law, or the versioned Gauntlet-tier dependency. If a provision changes a kernel law, determine whether the plan also carries the required kernel version bump, affected-identity/receipt migration, claim-lapse review, and Charter change-control entry. Do not classify ordinary implementation detail, application of an existing law, or provisional crate grouping as a touch without a cited contradiction.
+
+Every finding must cite exact plan lines returned before write and exact governing local lines returned before write. Apply the reviewer protocol's A/B/C law without promotion. Adjacent observations are out of scope unless necessary evidence for this lens. Do not precommit a verdict, repair the artifact, or strengthen its claims.
+
+### One packet and terminal law
+
+If review and every gate pass, freeze one packet under the reviewer protocol schema with heading `## R31 — plans/CYCLE_1_DELTA_PLAN.md — kernel-touch audit`; exact process/model evidence; start/file times; exact artifact hash; exact authority intervals actually read; reviewer FSM; A/B/C counts; `marginal-only: YES | NO`; no-action statement; monotonic R31 finding IDs; one verdict; and final line `- termination state: TERMINATED`. Omit empty grade subsections, preserve uncertainty, and keep the packet below 48,000 UTF-8 bytes.
+
+Immediately before writing, use one local read-only call to verify only the activation-bound generic sentinel is byte-identical, unique, and physical EOF. Then call structured `apply_patch` exactly once on `gauntlet/ROUND_LOG.md`, replacing only that sentinel line with the frozen R31 packet, one blank line, and the byte-identical sentinel. No other path, row, packet, control, predecessor byte, write mechanism, retry, or second patch is authorized.
+
+After the `apply_patch` result, use no tool and emit only exact standalone `TERMINATED`, with no formatting or extra text. A write failure still forbids retry and requires the same terminal response. The packet remains an unqualified allegation and earns no finding, grade, coverage, model-family, accepted-review, route, curve, cross-model, or convergence credit until a later stable-transcript qualification FSM admits the chain.
 
 **GAUNTLET FINAL SENTINEL — KEEP AS PHYSICAL EOF. ONLY ONE ROUND EXPLICITLY AUTHORIZED BY ITS SEALED CURRENT CONTROL MAY REPLACE THIS LINE WITH ITS ONE PACKET, ONE BLANK LINE, AND THIS BYTE-IDENTICAL SENTINEL; NO PREDECESSOR CONTROL OR PACKET BYTE IS AUTHORIZED FOR READING OR CHANGE.**
