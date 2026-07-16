@@ -24,10 +24,10 @@ evidence-status: provisional-pending-substrate
 # G4 Owner State
 
 - owner: G4 — traceability matrix and C2–C7 cycle briefs
-- phase: `SUBMIT-FOR-REVIEW`
+- phase: `DONE/HANDOFF`
 - exclusive paths: `reports/TRACEABILITY_MATRIX.md`, `plans/cycle_briefs/**`, `ledger/owners/G4_STATE.md`
 - **this file is the single normative home of the G4 owner phase.** No owned artifact's front matter states owner phase; artifact headers carry artifact-local status only (AGENTS rule 18; Rev 7 §29.5 single-source principle).
-- terminal phase for this turn: `SUBMIT-FOR-REVIEW`. A fresh reviewer must file a finding packet before `REVISE`.
+- terminal phase: `DONE/HANDOFF`. The first 2026-07-16 terminal transition, explicit postimage reopening, state-only repair, and restarted suite all remain in history.
 
 ## Transition record
 
@@ -60,6 +60,42 @@ evidence-status: provisional-pending-substrate
 | `REVISE` (terminal-diagnostic restart 2) | 2026-07-15T02:21:05+02:00 | The first post-transition confirmation wrapper failed at JavaScript parse time before launching a nested command; because the terminal diagnostic record counted only the three earlier wrapper failures, persisted `SUBMIT-FOR-REVIEW → REVISE` before correcting that accounting; no artifact or check result changed |
 | `SELF-CHECK` (R38 restart 2) | 2026-07-15T02:21:31+02:00 | `SC-R38-2` repaired in owner state only; persisted `REVISE → SELF-CHECK`; the entire suite restarts again, and post-transition checks will be decomposed into simple commands |
 | `SUBMIT-FOR-REVIEW` (R38 restart 2) | 2026-07-15T02:23:12+02:00 | Persisted `SELF-CHECK → SUBMIT-FOR-REVIEW` after the entire restart-2 suite passed; artifact identities and manifest remained unchanged; the 294-line state preimage is recorded below; final postimage checks are decomposed standalone commands and no R25/R26 review is routed |
+| `REVISE` (mandatory closure hardening) | 2026-07-16T02:04:15+02:00 | Explicitly persisted the actual `SUBMIT-FOR-REVIEW → REVISE` reopening required by the live human instruction before any work attributed to this hardening state. The seven submitted artifact identities and bytewise-sorted manifest were reproduced unchanged; scoped status was empty and scoped `git diff --check` passed. This is a bounded owner hardening pass, not a fresh review and not a claim that the prior checkpoint was nonterminal. R25 and R26 are cut from overnight execution under the reduced review target and remain explicit unreviewed omissions with no pass, finding, grade, convergence, oversimplification-lens, or clean-room-contamination-lens credit. |
+| `REVISE` (hardening disposition) | 2026-07-16T02:08:57+02:00 | Fresh hardening found no evidence-backed defect in any of the seven submitted artifacts, so the preferred state-only closure is retained. `HC-1` was a real checkpoint-only defect: the prior current-condition paragraph still instructed idling at `SUBMIT-FOR-REVIEW` after the live human had explicitly reopened that phase. This write records and repairs only that stale current-condition text, preserves all prior submission history, and records every failed diagnostic and corrected rerun before any transition to `SELF-CHECK`. |
+| `SELF-CHECK` (mandatory closure pass) | 2026-07-16T02:09:45+02:00 | Persisted `REVISE → SELF-CHECK` only after the mandatory hardening evidence and state-only `HC-1` repair were fixed on disk. The exact pre-transition checkpoint was 351 lines / 59,277 bytes / SHA-256 `047002ab311f596615630e2c4dbf5bc9c6938031e575d91b278072fdc0e6c1fc`; scoped `git diff --check` passed. The validation suite restarts from canonical integrity; no REVISE result is carried forward as terminal evidence. |
+| `SELF-CHECK` (green closure candidate) | 2026-07-16T02:11:39+02:00 | The independently restarted full suite passed without a diagnostic failure; exact evidence and identities are fixed below before any terminal transition. No artifact changed, no R25/R26 evidence was created, and the human scope reduction was not counted as a test. The suite-start checkpoint identity before this evidence write was 352 lines / 59,873 bytes / SHA-256 `dd8b9c9a4009f5eb6ed9a27a598ddcf5c5eb4d4c568fd3eca8de38ac44fc0311`. |
+| `DONE/HANDOFF` | 2026-07-16T02:12:39+02:00 | Persisted `SELF-CHECK → DONE/HANDOFF` only after the entire restarted suite and post-evidence confirmation passed. The exact terminal-transition preimage was 384 lines / 65,118 bytes / SHA-256 `b4dc9128f6e5ee66c82fb053212343060485c7fbb13abe5074170b843d228acc`; artifact identities and manifest remained unchanged. G4 closes administratively under the live human scope reduction, not because R25/R26 supplied validation. |
+| `REVISE` (terminal postimage restart) | 2026-07-16T02:13:40+02:00 | Preserved the prior `DONE/HANDOFF` transition and explicitly persisted `DONE/HANDOFF → REVISE` before repair. Postimage check `SC-CLOSE-1` found one unscoped process use of a claim-vocabulary token in the new terminal transition row. The checkpoint pre-reopen postimage was 414 lines / 68,568 bytes / SHA-256 `dfd613f42ca0e0ba442754f1e0451d8f36bcc16f6105c05fbd34db99074beb9b`; all seven artifact identities and the manifest remained unchanged. |
+| `REVISE` (`SC-CLOSE-1` repair) | 2026-07-16T02:13:56+02:00 | Replaced only the unscoped process adjective in the historical terminal row with `entire`; no phase, evidence, identity, artifact, omission, or meaning changed. The claim-vocabulary audit must rerun inside a full restarted suite after a separately persisted transition to `SELF-CHECK`. |
+| `SELF-CHECK` (restart after `SC-CLOSE-1`) | 2026-07-16T02:14:09+02:00 | Persisted `REVISE → SELF-CHECK` after the state-only repair. The exact pre-transition checkpoint was 416 lines / 69,540 bytes / SHA-256 `768ac1a69b2349bea03f88bc98fda5793d546a148270b0f10868111e85bd5948`; scoped `git diff --check` passed. The entire suite restarts from canonical integrity, with every earlier green result treated as historical only. |
+| `SELF-CHECK` (restart green candidate) | 2026-07-16T02:15:27+02:00 | The post-`SC-CLOSE-1` suite passed end to end without a diagnostic failure; the evidence below is fixed before the replacement terminal transition. The suite-start checkpoint before this evidence write was 417 lines / 69,996 bytes / SHA-256 `8bf2f26e95a8e354d2cf9118ac5897d1f2a77fa1ff5afaeb34f51b91281353ee`; the seven artifacts and manifest remained unchanged. |
+| `DONE/HANDOFF` (replacement after `SC-CLOSE-1`) | 2026-07-16T02:16:01+02:00 | Persisted the replacement `SELF-CHECK → DONE/HANDOFF` only after the entire restarted suite and post-evidence confirmation passed. The exact transition preimage was 435 lines / 72,546 bytes / SHA-256 `a60fdfde8483c4702f2a2f0c07c663a320e9467d488bbb8ddc79388f5baf8f15`; artifact identities and manifest remained unchanged, and R25/R26 remain unreviewed omissions. |
+
+## Live human scope-reduction and mandatory hardening reopen
+
+- authority received: 2026-07-16 live human override; accepted-review target is approximately twenty, root's bounded landing is 22 accepted reviews, and the twelve-accepted-C1 floor is preserved
+- exact source state: this turn reopened the on-disk `SUBMIT-FOR-REVIEW` phase; no earlier transition or terminal history is rewritten or treated as if it had been `REVISE`
+- closure route: `SUBMIT-FOR-REVIEW → REVISE → SELF-CHECK → DONE/HANDOFF`; every transition is persisted before work attributed to the next state
+- scope consequence only: R25 and R26 are omitted from overnight execution. The scope reduction authorizes closure without those reviews but supplies no substantive validation, finding disposition, grade, or convergence evidence
+- R25 evidence status: `UNREVIEWED OMISSION`; no oversimplification review was run, so no oversimplification coverage, pass, finding, grade, or convergence credit exists
+- R26 evidence status: `UNREVIEWED OMISSION`; no clean-room-contamination review was run, so no contamination-review coverage, pass, finding, grade, or convergence credit exists. G4's local prohibited-name and source-boundary checks remain owner self-check evidence only and are not R26 evidence
+- disclosure obligation: both omissions require MORNING_REPORT ratification and explicit omission disclosure; G4 does not edit or route that report
+- unavailable inputs preserved: `ALIEN_ARTIFACT.md` and `PROJECT_OVERVIEW.md` remain `SOURCE-UNAVAILABLE`, conditional, and non-load-bearing for this bounded pass
+- pre-reopen checkpoint identity: 297 lines / 47,740 bytes / SHA-256 `f1b4e78941b1ec9e0a5db1a7e83d13d33e8d25d7f7d5433e71738a1ee66759dc`
+- current concurrent repository refs observed read-only: `HEAD = main = origin/main = 6e6771819b4463d11b9d69dce71ef3d23e847da7`; this later repository state is outside the prior R33/R38 admission and is not used to promote or alter either review
+- pre-reopen exclusive-scope evidence: scoped status empty; scoped `git diff --check` passed; no out-of-scope path was read for write or changed
+
+| Submitted artifact | Lines | Bytes | SHA-256 |
+|---|---:|---:|---|
+| `reports/TRACEABILITY_MATRIX.md` | 403 | 71,345 | `3dac29b224ddd07f3345c9933156dbbcb3fc0861fa0fac4d95d6ea1ccf81ce0b` |
+| `plans/cycle_briefs/C2.md` | 109 | 11,216 | `eb406a51c0c489d6fe0380c293f96bd84e045affb97c481ea8e07798af212c52` |
+| `plans/cycle_briefs/C3.md` | 107 | 10,688 | `20c48dd5f0128dc0407084e1a97dbe0d62af3a41c4be1ab7d5e942b904be6434` |
+| `plans/cycle_briefs/C4.md` | 139 | 13,233 | `f58aa7bf2c456008db6454e02d91e31c1f8568cbbfcf3eb7243c72ad49066e1b` |
+| `plans/cycle_briefs/C5.md` | 109 | 10,365 | `d97aaf8689d08bc9b2e6f5a907e27eab1cf9c936e182f673a1fca8af9d9ba161` |
+| `plans/cycle_briefs/C6.md` | 111 | 11,472 | `3e7b7ee094b4af2b30b96e7a52a9cbfa6a70659bb284f46e7bdd8790306049a9` |
+| `plans/cycle_briefs/C7.md` | 113 | 13,377 | `224b848ba6470cf2304842c4cb9cdee98f9d79496d0fd3bf74f3bd51cc1926c0` |
+
+Reproduced bytewise-sorted seven-file manifest SHA-256: `0e72a420f3e49d2c5f2673d30ef1531190291081753ecb75fe4b80925915d87a`.
 
 ## R38 continuing-owner intake — exact session `g4b`
 
@@ -292,6 +328,119 @@ First terminal-transition checkpoint preimage, superseded by diagnostic restart 
 
 Final terminal-transition checkpoint preimage after restart 2: `ledger/owners/G4_STATE.md`, 294 lines / 47,028 bytes / SHA-256 `48c6d8384febf92f45f9413db1fdc9ed7aca1b39a15a69bf11a13b3e797cdf29`. The post-transition identity is computed after this write and reported in the terminal handoff; embedding that postimage inside this file would change it.
 
-## Next transition condition
+## Mandatory closure hardening evidence — current REVISE pass
 
-Remain idle at `SUBMIT-FOR-REVIEW`. The only next transition is `SUBMIT-FOR-REVIEW → REVISE` on receipt of a fresh-context finding packet explicitly routed by root. Do not self-route R25 or R26. No review, binding, spawn, routing, contact, commit, push, or external action is authorized or performed by this owner.
+This evidence is an owner hardening pass over the already-admitted R33/R38 dispositions and the G4 marching-order contract. It is not a fresh-context review, does not use the R25/R26 cut as validation, and does not promote a reviewer premise or grade.
+
+- **Canonical integrity:** the first `sha256sum -c ledger/CANONICAL_HASHES.md` invocation correctly reported that the Markdown table contained no checksum-file records and supplied no integrity result. A table-aware rerun reproduced all 9 named canonical SHA-256 values with mismatches `0`.
+- **Requirement definitions and status arithmetic:** 56 Q2/Q3 definition rows, 56 unique IDs, duplicates `0`; `OWNED=25`, `PARTIAL=7`, `GAP=17`, `EXTERNAL=2`, `UNSELECTED=5`, other statuses `0`. The seven PARTIAL IDs are exactly Q3-SUB-4, Q3-PRV-3, Q3-GRD-5, Q3-BND-1, Q2-FLD-3, Q2-FLD-5, and Q2-CMP-1.
+- **Forward/reverse closure:** the 17 GAP IDs equal the 17 explicitly enumerated forward-orphan IDs with no difference; every one of the 56 definitions appears in the reverse/delegated closure region; reverse orphans remain explicitly zero. `FND-DST-1` and `LIN-EVO-1` remain the two separately registered non-target objects and lend no evidence to Artifact disproportion.
+- **Cross-file ID parity:** the first parity command used `rg -h`, which this installed ripgrep interprets as help; its output was discarded. The corrected `--no-filename` rerun found 25 unique Q2/Q3 IDs cited by C2–C7 and undefined citations `0`. All 9 finding IDs are defined and cited by at least one brief.
+- **Admitted-review hardening:** all six R33 repair dispositions remain present without grade promotion: Q3-GRD-6 remains a forward GAP; C6 performance hardening remains G1 product work rather than Q3-SUB-1 evidence; the atomic S1–S6 register retains S2's owned route and five unselected routes; the Foundry/Lineage objects remain separated; Q3 uses `PENDING-EXTERNAL` plus an unassigned receipt custodian; and Q2 has an explicit no-self-award/external-receipt/no-verdict path. R38-A01 remains `ACCEPT — REGRADE` with Q3-DIS-5 as GAP and only in the 17-item orphan tally; R38-C01 remains `QUALIFY — CONDITIONAL NOTE` only in C4 §5 and C6 §3, preserving human choice, C6 deferral, both branches, C4/C5 ownership, and the L5/non-kernel boundary.
+- **Owner-contract and cycle parity:** an initial literal-pattern scan reported C3 as missing the word `archaeology`; bounded inspection showed the required rule in C3 §8 as surveying what C2 actually built and yielding to repository reality. The corrected semantic scan passes C2–C7 for scope, consequence-contract families or explicit no-new-capability status, decisions, risks, evidence/output, close gate, kernel-touch expectation, dependencies, and archaeology-first/no-imagined-code boundaries. Every title matches its cycle, every brief names the prior close boundary, and every brief has exactly one close-gate section. C2–C6 retain one-cycle-ahead SpecCard coverage; C7 adds no product surface.
+- **Q2/Q3 handoffs and conditionality:** both no-self-award rules, external receipts, no-adjudicator/no-reviewer outcomes, pending states, and unassigned post-submission custodians remain explicit. `ALIEN_ARTIFACT.md` and `PROJECT_OVERVIEW.md` remain `SOURCE-UNAVAILABLE`; no dependent statement was strengthened, and every relevant branch remains conditional.
+- **Provenance/status:** all seven artifacts and this checkpoint have parseable front matter with `generated-by`, `date`, `inputs`, `status: PROPOSED`, and `evidence-status: provisional-pending-substrate`.
+- **Claim vocabulary:** four artifact lines matched the bounded `best|complete|completed|fastest|mogged` scan. Three are required §33.8 trial-distribution fields (`best-of-N` or `best outcomes`); one is Rev 7 §0.2's negative canonical quotation, `Completed a clause-by-clause standards coverage matrix`, describing work not done. No unscoped supremacy claim was found.
+- **Clean room, SpecCards, and action boundary:** prohibited processor-name hits across the seven artifacts `0`; URL hits across the seven artifacts and checkpoint `0`. Fifteen `SpecCard` tokens are registry, tagging, pipeline, or coverage-gate references; semantic bodies `0`. The corrected past-tense scan (after an invalid `rg -E` encoding invocation supplied no evidence) returned 18 lines, all inspected as future gate language, counterfactual/negative conditions, canonical requirement descriptions, or planned-cycle statements; none records an action performed in this pass. Three task/code vocabulary lines are a negative bead-size prohibition, the source-plan's scaffold-information requirement, and a warning not to treat refusal receipts as disposable scaffolding; no bead inventory, source code, or scaffolding was created.
+- **Byte and Markdown hygiene:** a combined wrapper first failed at JavaScript parse time before launching any nested command; it supplied no evidence. The first standalone UTF-8 checker then mutated its own inspected scalar during decode and falsely flagged every file; those results were discarded. The corrected checker passes all eight files for strict UTF-8, no NUL, final newline, balanced fences, no trailing whitespace, no conflict markers, and required front matter. Scoped `git diff --check` passes.
+- **Exact scope:** before reopening, scoped status was empty. After the two structured state writes, scoped status names only `ledger/owners/G4_STATE.md`; none of the seven artifacts changed during this pass. No other path was written, staged, stashed, reverted, routed, committed, pushed, or used for external action.
+- **Seven-artifact identity:** the components remain 1,091 lines / 141,696 bytes in aggregate with the exact per-file identities in the submitted table above. The bytewise-sorted checksum-record manifest remains `0e72a420f3e49d2c5f2673d30ef1531190291081753ecb75fe4b80925915d87a`.
+
+### Hardening disposition
+
+- Artifact correction: `NONE`; no reproduced defect authorizes changing the matrix or any brief.
+- Checkpoint correction `HC-1`: `ACCEPT — STATE-ONLY`; replace the stale prior current-condition paragraph after explicitly recording the actual reopen. This does not alter any prior transition or review evidence.
+- R25: `UNREVIEWED OMISSION`; no oversimplification review evidence exists and none is inferred from this hardening pass.
+- R26: `UNREVIEWED OMISSION`; no clean-room-contamination review evidence exists and none is inferred from the owner clean-room scan.
+- Closure authority: the live human scope reduction permits G4 to proceed to owner closure because root's bounded landing is 22 accepted reviews while preserving the twelve-accepted-C1 floor. This is administrative sufficiency only; it is not evidence that R25/R26 would have passed.
+
+## Mandatory closure SELF-CHECK — green candidate evidence
+
+This suite began only after the 2026-07-16 `REVISE → SELF-CHECK` transition was persisted. It reran every check; no result from the REVISE hardening pass was carried forward as terminal evidence, and no diagnostic in this restarted suite failed.
+
+- **Canonical hashes:** 9/9 table entries reproduced; mismatch `0`.
+- **Definitions/status:** 56 rows / 56 unique / duplicate `0`; `OWNED=25`, `PARTIAL=7`, `GAP=17`, `EXTERNAL=2`, `UNSELECTED=5`, other `0`. The seven PARTIAL IDs remain the exact producer-but-incomplete enumeration fixed above.
+- **Forward/reverse closure:** GAP-to-forward-orphan sorted-set difference `0`; forward orphans `17`; every definition has a reverse/delegated disposition (`56/56`); reverse-orphan declaration `zero`; two non-target objects separately closed.
+- **Cross-file parity:** 25 unique Q2/Q3 IDs cited by C2–C7, undefined `0`; findings defined/cited `9/9`, uncited `0`. The lane register contains five `Q2-LAN-*` rows plus S2's existing `Q2-CMP-2` row, so all six Rev 7 lanes remain explicit without double-defining S2.
+- **Owner contracts/dependencies:** C2–C7 each pass scope, contract-family or explicit no-new-capability, decision, risk, evidence/output, dependency, close-gate, kernel-touch, and archaeology-first/no-imagined-code checks. Titles match C2–C7, each brief names its prior close boundary, and each has one close-gate section. The R38-A01 row/tallies and R38-C01 two-file conditional edge remain exact; all R33 disposition guards remain present.
+- **No-self-award and handoffs:** exactly one Q3 and one Q2 no-self-award definition; C7 retains two `PENDING-EXTERNAL` uses, the no-internal-substitute outcome, and both unassigned post-submission custodians. `SOURCE-UNAVAILABLE` remains explicit in the matrix and checkpoint.
+- **Provenance/status:** all eight owned Markdown files pass required front matter and retain `status: PROPOSED` plus `evidence-status: provisional-pending-substrate`.
+- **Claim/no-claim boundary:** four artifact claim-vocabulary lines, all the previously classified required fields or negative canonical quotation; the one added checkpoint hit is this pass's explicitly scoped vocabulary-audit record. Matrix §8 still claims no capability, comparative fact, or verdict.
+- **Clean-room/no-action boundary:** prohibited-name hits across the seven artifacts `0`; URL hits across all eight owned files `0`; 15 SpecCard tokens inspected as registry, tagging, pipeline, or coverage-gate references with semantic bodies `0`. All 18 past-action-word hits are future-cycle gates, counterfactual/negative cases, or canonical requirement descriptions; performed measurement, comparison, fetch, clone, publication, posting, purchase, dispatch, contact, or send `0`. No code, scaffold, bead, or pseudo-bead inventory was created.
+- **Byte/Markdown hygiene:** all eight files pass strict UTF-8, NUL `0`, final newline, even fences, trailing whitespace `0`, conflict markers `0`, and front matter. Path-scoped `git diff --check` passes.
+- **Exact scope:** the restricted G4 status names only this checkpoint. Whole-tree metadata shows concurrent out-of-scope work; G4 did not inspect its contents, attribute it, modify it, or use it as evidence. The matrix and all six briefs remain byte-identical to the prior submission.
+- **Omission law:** R25 is an unreviewed oversimplification-lens omission and R26 is an unreviewed clean-room-contamination-lens omission. Neither has a pass, finding, grade, or convergence credit. The local owner hardening checks are not substitutes. Both require MORNING_REPORT ratification/omission disclosure.
+
+### Green seven-artifact identities
+
+| Artifact | Lines | Bytes | SHA-256 |
+|---|---:|---:|---|
+| `reports/TRACEABILITY_MATRIX.md` | 403 | 71,345 | `3dac29b224ddd07f3345c9933156dbbcb3fc0861fa0fac4d95d6ea1ccf81ce0b` |
+| `plans/cycle_briefs/C2.md` | 109 | 11,216 | `eb406a51c0c489d6fe0380c293f96bd84e045affb97c481ea8e07798af212c52` |
+| `plans/cycle_briefs/C3.md` | 107 | 10,688 | `20c48dd5f0128dc0407084e1a97dbe0d62af3a41c4be1ab7d5e942b904be6434` |
+| `plans/cycle_briefs/C4.md` | 139 | 13,233 | `f58aa7bf2c456008db6454e02d91e31c1f8568cbbfcf3eb7243c72ad49066e1b` |
+| `plans/cycle_briefs/C5.md` | 109 | 10,365 | `d97aaf8689d08bc9b2e6f5a907e27eab1cf9c936e182f673a1fca8af9d9ba161` |
+| `plans/cycle_briefs/C6.md` | 111 | 11,472 | `3e7b7ee094b4af2b30b96e7a52a9cbfa6a70659bb284f46e7bdd8790306049a9` |
+| `plans/cycle_briefs/C7.md` | 113 | 13,377 | `224b848ba6470cf2304842c4cb9cdee98f9d79496d0fd3bf74f3bd51cc1926c0` |
+
+Aggregate: 1,091 lines / 141,696 bytes. Bytewise-sorted checksum-record manifest SHA-256: `0e72a420f3e49d2c5f2673d30ef1531190291081753ecb75fe4b80925915d87a`.
+
+## DONE/HANDOFF — exact closure statement
+
+### Evidence that exists
+
+- The seven submitted G4 artifacts are byte-identical to the package hardened in this turn; their exact identities and manifest are fixed in the green table immediately above.
+- R33 exists as one admitted fresh-context zero-orphan review packet with six independently premise-tested G4 dispositions: A01 `QUALIFY`, A02 `QUALIFY-NARROW`, A03 `QUALIFY-NARROW`, A04 `QUALIFY`, B01 `QUALIFY`, and B02 `QUALIFY`. Reviewer grades remain unpromoted.
+- R38 exists as one admitted dependency-soundness review packet with G4 dispositions A01 `ACCEPT — REGRADE` and C01 `QUALIFY — CONDITIONAL NOTE`. The exact bounded repairs remain present and reviewer grades remain unpromoted.
+- The mandatory owner hardening and restarted self-check evidence exists: canonical 9/9; exact definition/status arithmetic; forward/reverse closure; brief/finding/cycle/dependency parity; Q2/Q3 no-self-award and external handoffs; provenance/status; claim/no-claim, clean-room, no-action, and SpecCard boundaries; byte/Markdown hygiene; exact scoped diff; seven component identities; and the bytewise-sorted manifest.
+- Two named inputs, `ALIEN_ARTIFACT.md` and `PROJECT_OVERVIEW.md`, remain `SOURCE-UNAVAILABLE`, conditional, and non-load-bearing. Nothing in closure reconstructs or strengthens them.
+
+### Evidence that does not exist
+
+- R25 was not executed. There is no oversimplification-lens review, pass, finding packet, grade, convergence credit, or basis to infer that lens is covered. The owner's feature-preservation and contract checks are not R25.
+- R26 was not executed. There is no clean-room-contamination-lens review, pass, finding packet, grade, convergence credit, or basis to infer that lens is covered. The owner's prohibited-name/source-boundary checks are not R26.
+- The review cut itself supplies no substantive validation and is not included in any finding or convergence arithmetic. Both omissions must be explicitly ratified/disclosed in MORNING_REPORT.
+
+### Why G4 may close
+
+The live human override reduced the accepted-review target to approximately twenty and states that root's bounded landing is 22 accepted reviews while preserving the twelve-accepted-C1 floor. That scope decision removes R25/R26 from the overnight execution requirement and authorizes G4's administrative closure after the mandatory hardening/self-check route. It does not change any artifact premise, review disposition, grade, claim, or evidentiary result.
+
+### Terminal identity and scope
+
+- actual route this turn: `SUBMIT-FOR-REVIEW → REVISE → SELF-CHECK → DONE/HANDOFF`; no prior transition was rewritten
+- artifact writes: `NONE`; no evidence-backed artifact correction was necessary
+- checkpoint writes: `ledger/owners/G4_STATE.md` only, all by structured patch
+- first terminal-transition checkpoint preimage, superseded only by the explicit `SC-CLOSE-1` diagnostic restart: 384 lines / 65,118 bytes / SHA-256 `b4dc9128f6e5ee66c82fb053212343060485c7fbb13abe5074170b843d228acc`
+- replacement terminal-transition checkpoint preimage: 435 lines / 72,546 bytes / SHA-256 `a60fdfde8483c4702f2a2f0c07c663a320e9467d488bbb8ddc79388f5baf8f15`
+- final checkpoint postimage: computed after this transition write and reported in the terminal handoff because embedding it here would change it
+- concurrent out-of-scope work was neither inspected for content nor used as evidence; G4 touched no such path
+
+## Restarted SELF-CHECK evidence after `SC-CLOSE-1`
+
+The first `DONE/HANDOFF` transition remains preserved above as historical evidence. It was explicitly reopened before repair, and none of its earlier green checks is counted here. This replacement suite began after the persisted 2026-07-16T02:14:09+02:00 transition and had no diagnostic failure.
+
+- canonical table: checked `9`, mismatch `0`
+- requirement register: 56 rows / 56 unique / duplicate `0`; status arithmetic `25/7/17/2/5`; other `0`
+- closure: GAP/orphan sorted-set difference `0`; closure missing `0`; reverse orphans `zero`; two non-target objects preserved
+- parity: 25 unique brief-cited Q2/Q3 IDs with undefined `0`; findings 9 with uncited `0`; C2–C7 owner-contract and prior-boundary checks all pass
+- admitted dispositions: R33 guards, R38 Q3-DIS-5 regrade/tallies, and the two-file conditional writer-envelope edge all remain exact
+- handoffs: one Q3 and one Q2 no-self-award definition; `PENDING-EXTERNAL`, no-internal-substitute, and unassigned-custodian paths preserved; unavailable sources remain explicit
+- policy: prohibited names `0`; URLs `0`; the 18 past-action-word lines and three task/code-word lines retain the previously inspected future, counterfactual, canonical, or negative meanings; SpecCard tokens `15`, semantic bodies `0`
+- claim vocabulary: the unscoped process use is absent; the only added-state match is the explicitly scoped audit record enumerating and classifying the vocabulary tokens
+- omissions: R25 pass assignments `0`; R26 pass assignments `0`; both remain `UNREVIEWED OMISSION` and MORNING_REPORT disclosure items
+- hygiene: all eight owned files pass UTF-8, NUL, final-newline, fence, trailing-space, conflict-marker, frontmatter, and path-scoped `git diff --check` checks
+- exact scope: restricted status names only this checkpoint; no artifact or out-of-scope path changed by G4
+- identities: the seven component line/byte/hash values remain exactly those in the green table above; aggregate 1,091 lines / 141,696 bytes; manifest `0e72a420f3e49d2c5f2673d30ef1531190291081753ecb75fe4b80925915d87a`
+
+## Terminal condition
+
+The owner is idle at `DONE/HANDOFF`. The first terminal transition, explicit `DONE/HANDOFF → REVISE` reopening, `SC-CLOSE-1` repair, restarted self-check, and replacement terminal transition are all preserved. No artifact change, review, R25/R26 routing, binding, spawn, dispatch, contact, stage, commit, push, fetch, measurement, comparison, publication, purchase, or external action is authorized or performed.
+
+## Root post-handoff accounting receipt — `2026-07-16T09:44:30+02:00`
+
+`generated-by: root orchestrator`; `inputs: live human target reduction, pushed R62 qualification at 241e63f8465537ed4bc2e204e5814fb84700e208, gauntlet/ROUND_LOG.md, gauntlet/CONVERGENCE_REPORT.md, this checkpoint`; `status: PROPOSED`; `evidence-status: provisional-pending-substrate`.
+
+- This receipt does not reopen or replace G4's persisted owner FSM, dispositions, seven artifacts, or terminal handoff. Pre-receipt checkpoint identity was 437 newline-terminated lines / 73,114 bytes / `d3fae3299d904f4c35927eb1a800d3fb34d05c7597e0085fe630a60fbc5103d7`.
+- The controlling later accounting is 22 accepted filings overall / 12 against the C1 delta plan, reached only after the transcript-qualified R62 filing. The human's later instruction was an approximate-20 accepted target, not a separate requirement to reach 22. Earlier G4 statements describing a bounded 22/12 landing are chronology-bound administrative records; they supply no artifact, premise, lens, or convergence evidence.
+- R25 and R26 remain unexecuted `UNREVIEWED OMISSION` rows. R25 has no oversimplification-lens packet or credit; R26 has no clean-room-contamination-lens packet or credit. G4's owner-side preservation/source-boundary checks and the later R62 dependency-soundness filing do not substitute for either omitted lens.
+- The seven-artifact aggregate remains 1,091 lines / 141,696 bytes with manifest `0e72a420f3e49d2c5f2673d30ef1531190291081753ecb75fe4b80925915d87a`; no G4 artifact byte changed in this post-handoff pass. Morning reporting must preserve both omissions, unavailable-source boundaries, external handoffs, and Convergence `NOT ESTABLISHED`.

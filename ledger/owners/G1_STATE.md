@@ -30,7 +30,7 @@ evidence-status: provisional-pending-substrate
 - owner: `Codex G1 owner`
 - subgoal: `G1 — Constitution v8, shell, and fix application`
 - phase: `DONE/HANDOFF`
-- checkpoint: R51 follow-up is terminal for root handoff. The corrected bounded restart and post-submission guard pass; all four submitted artifacts remain byte-identical at manifest `24327520e55a7324f69f12244d7ea05a6d0f9997da68fd19c111659740c60292`. No reviewer or R17 action occurred or is authorized.
+- checkpoint: Mandatory hardening and final stable gate pass with no artifact repair. The four artifacts remain byte-identical at manifest `24327520e55a7324f69f12244d7ea05a6d0f9997da68fd19c111659740c60292`. R17/R18 remain explicit unreviewed omissions pending morning ratification/disclosure; the scope cut supplies no substantive validation.
 - declared outputs: `constitution/**`, `shell/**`, `reports/FIX_APPLICATION.md`, and `ledger/owners/G1_STATE.md`
 
 ## Transition record
@@ -79,6 +79,9 @@ evidence-status: provisional-pending-substrate
 | `SELF-CHECK` | 2026-07-15T13:25:01+02:00 | Root confirms the original baseline matcher: case-insensitive controlled-token substrings over exactly Constitution, SpecCard pipeline, and shell. Keep the report hash separate; restart the bounded gate once with no speculative diagnostic. |
 | `SUBMIT-FOR-REVIEW` | 2026-07-15T13:26:33+02:00 | The bounded restart passes from a stable control bracket: exact artifact identities/manifest, sealed control/packet identities, zero allegation IDs, phase-neutral navigation, file hygiene, scoped diff, original `163/205` matcher relation, and initialized checkpoint-delta guards all pass. No artifact repair, reviewer action, or R17 action. |
 | `DONE/HANDOFF` | 2026-07-15T13:27:42+02:00 | Post-submission identities, navigation, hygiene, scoped diff, and initialized delta guards pass. Persist terminal root handoff before final read-only hash reporting; all submitted artifacts remain frozen and no reviewer or R17 action is authorized. |
+| `SUBMIT-FOR-REVIEW` | 2026-07-16T02:01:50+02:00 | Live human override reopens the prior disk `DONE/HANDOFF` checkpoint for a mandatory hardening pass. The reported bounded landing is 22 accepted reviews against an overnight target of approximately 20 while preserving the 12-accepted-C1 floor. R17/R18 are cut as unreviewed omissions, not passed evidence. |
+| `REVISE` | 2026-07-16T02:02:17+02:00 | Mandatory hardening begins. Reproduce owner-contract, admitted-disposition, integrity, pending-source, controlled-vocabulary, clean-room, no-action, scope, and manifest relations before deciding whether any artifact correction qualifies. R17/R18 remain explicit unreviewed omissions. |
+| `DONE/HANDOFF` | 2026-07-16T02:07:48+02:00 | Mandatory hardening and post-append stable gate pass with artifact repairs `0`. Existing admitted evidence remains bounded to its recorded reviews; R17/R18 remain unreviewed omissions with no findings, grades, pass state, lens coverage, or convergence credit. Stop idle for root/morning disclosure. |
 
 ## R15 bounded packet receipt — persisted before artifact edits
 
@@ -405,6 +408,66 @@ Submission boundary: R51 remains `CHAIN-QUALIFIED`, `A=0/B=0/C=0`, marginal-only
 - terminal arithmetic: graded allegations `0` (`A=0/B=0/C=0`), finding dispositions `0`, artifact repairs `0`, informational candidate dispositions `1`; human ratification remains required for that non-finding question;
 - terminal boundary: all four submitted artifacts remain byte-identical. No reviewer action, R17 allocation/binding/dispatch/contact/preparation, commit, push, fetch, web action, external action, or excluded-body read occurred. Root receives the idle handoff.
 
+## Overnight scope-reduction hardening record
+
+### Submission reopening — 2026-07-16T02:01:50+02:00
+
+- disk-truth reconciliation: the live checkpoint read at the start of this route was `DONE/HANDOFF`, although the human described the current state as `SUBMIT-FOR-REVIEW`. The prior terminal record is preserved. This explicit human-routed transition reopens it without retroactively changing any earlier phase or result;
+- human-supplied scope control: the overnight accepted-review target is now approximately `20`; root's bounded landing is `22` accepted reviews and preserves the `12`-accepted-C1 floor. G1 does not inspect root ledgers or use these control counts as substantive validation;
+- omitted-review record: R17 and R18 are cut from overnight execution and remain `UNREVIEWED-OMISSION`. No packet, lens application, finding, grade, convergence credit, pass state, or substantive coverage evidence exists for either round in this owner record;
+- disclosure route: the R17/R18 omission and any decision about its acceptability remain pending `MORNING_REPORT` ratification/disclosure outside G1's writable scope. G1 neither writes nor routes that report;
+- hardening law: the cut supplies no premise for an artifact change and does not validate any existing artifact. `REVISE` must independently harden the four submitted artifacts against already-admitted owner contracts and review dispositions;
+- admitted control: branch `main`; `HEAD=origin/main=6e6771819b4463d11b9d69dce71ef3d23e847da7`; the five owned paths were clean at intake;
+- admitted artifacts: Constitution `2009/187151/2d3828110ae9d525003a19ee5340141a1f347be44be275520fe4c8253be789fe`; pipeline `204/19387/6a15a6ac957bfe3f700acc383313c8945770578b19a1f549bd41816169a0bfb1`; shell `6645/457434/158679c21172682e33c0e30ca6c670bf079602394170d5478000e5e3b8032315`; report `405/66729/06faddd7deef40524056b86ea192c85a5f0822cc3f5a7768b3d27a991922f602`;
+- admitted sorted manifest: `24327520e55a7324f69f12244d7ea05a6d0f9997da68fd19c111659740c60292`;
+- admitted checkpoint: `706` lines / `136748` bytes / `042cd6a14142994db125553fe4eefb2563055ef5f34f65ac16f401201a6f9318`;
+- next transition: persist `SUBMIT-FOR-REVIEW -> REVISE` before any hardening read, disposition, or artifact decision. No artifact has changed in this reopening.
+
+### Mandatory REVISE entry — 2026-07-16T02:02:17+02:00
+
+- authority: live human scope override; AGENTS.md through EOF; Owner Marching Orders shared contract and G1 section; current disk checkpoint and its already-admitted disposition/loss-guard records;
+- artifact boundary: Constitution, SpecCard pipeline, shell, and fix report may change only if fresh local evidence establishes a bounded defect. State-only closure is preferred when every admitted relation remains satisfied;
+- hardening boundary: test disposition traceability, owner-contract homes, identity/lifecycle and refusal/no-claim guards, feature/loss preservation, pending-source registry and empty-slot law, report evidence limits, controlled vocabulary, clean-room, formatting, path scope, and the sorted manifest;
+- omission boundary: R17 and R18 have no review evidence. They may not be represented as passed, covered, graded, converged, or equivalent to an applied lens. Their only permitted disposition here is explicit unreviewed omission pending morning ratification/disclosure;
+- unavailable human inputs: final morning acceptance of the two omitted rounds; any ratification of the informational Constitution §34.4/§34.9 dependency-binding question; and pending D1/D2/D3 or other recorded human choices remain unavailable. No resolution will be invented;
+- action boundary: no round or convergence file, root ledger, orchestration state, other owner path, canonical input, external system, or excluded body may be opened or changed. No reviewer or round is routed;
+- next transition condition: persist the fresh hardening evidence and artifact-repair decision under `REVISE`; then reproduce the final stable gate and enter `DONE/HANDOFF` under the governing shared contract and live route.
+
+### REVISE hardening evidence and repair decision — 2026-07-16T02:06:34+02:00
+
+- bounded reads: AGENTS.md through EOF; Owner Marching Orders shared/G1 contract; current checkpoint; report §§11, 12, 12.1, 15, and 16; the R51 non-finding/informational record; the full 204-line SpecCard pipeline; exact owned Constitution/shell disposition homes and schema-example loci. No round, convergence, canonical, root-ledger, orchestration, other-owner, or external body was opened;
+- report traceability: R13 rows `5` with Grade-B nonpromotion `2`; R14 rows `19` with Grade-B/C nonpromotion `14`; R15 rows `21` with `QUALIFY=17`, `QUALIFY-NARROW=4`, and Grade-B nonpromotion `7`. Exact monotone ID sets pass; report mentions of R17/R18 are `0/0`;
+- owner-contract homes: `12` required Constitution/shell headings occur once at their expected homes; seven Constitution and seven shell identity/lifecycle/refusal/no-claim/loss-guard sentinels pass. The shell retains `13` pending D1/D2 identity markers. The §34.4/§34.9 dependency question remains informational and human-ratification gated rather than silently repaired;
+- SpecCard boundary: registry rows `43`, exact sequence `001–043`, marker cells `129/129`, bad rows `0`; empty-template rows `34`, all exact pending-source markers; semantic bodies `0`; slot 043 remains absent from caller-credential decryption;
+- schema examples: exactly five JSON values decode; common identity/outcome/coverage/diagnostic/evidence/no-claim envelopes `5/5`; one-way backlinks and telemetry exclusions `5/5`; B.2 retains `22.1/18432122` only in the run observation; partial-source, apply-admission, processor-projection, and checker-isolation/trial/lineage guards pass;
+- JSON diagnostic failures: the first wrapper passed decoded characters to an octet-only helper and stopped on a non-ASCII value; the second forced every observation into a nested telemetry object even though B.2 intentionally uses direct observation fields; the third guessed `processor_results` where the owned B.4 schema uses `processors`. All three are zero-credit verifier errors. The corrected character-aware, schema-literal wrapper produced the result above;
+- navigation correction: the initial REVISE-entry condition named an extra `SELF-CHECK` transition inconsistent with the Owner Marching Orders shared `REVISE -> DONE` contract and this live human route. It was corrected under `REVISE` before terminal work; no artifact, disposition, gate result, or omission record changed;
+- controlled-vocabulary gate: the exact original case-insensitive substring matcher over Constitution/pipeline/shell reproduces `163` matching lines / `205` occurrences and the recorded per-token partition; the report remains separately identified by its hash. The current checkpoint delta before this evidence append had `29` added lines and zero controlled-token, prohibited-name, URL, task-inventory, or fence hits;
+- cut-round boundary: all four submitted artifacts contain `0` R17 mentions and `0` R18 mentions. This absence is not lens coverage; it corroborates only that no cut-round artifact assertion was introduced. No packet, finding, grade, pass state, convergence credit, or substitute lens evidence exists here for either round;
+- exact artifacts: Constitution `2009/187151/2d3828110ae9d525003a19ee5340141a1f347be44be275520fe4c8253be789fe`; pipeline `204/19387/6a15a6ac957bfe3f700acc383313c8945770578b19a1f549bd41816169a0bfb1`; shell `6645/457434/158679c21172682e33c0e30ca6c670bf079602394170d5478000e5e3b8032315`; report `405/66729/06faddd7deef40524056b86ea192c85a5f0822cc3f5a7768b3d27a991922f602`;
+- sorted four-artifact manifest: `24327520e55a7324f69f12244d7ea05a6d0f9997da68fd19c111659740c60292`;
+- file health: all five owned files are strict UTF-8 with terminal LF; CR, trailing-whitespace, and conflict-marker counts `0`; fences balanced at `20/0/60/0/4`; scoped diff health passes;
+- path/control: branch `main`; `HEAD=origin/main=6e6771819b4463d11b9d69dce71ef3d23e847da7`; only this checkpoint differs among writable paths; staged paths `0`; pre-evidence checkpoint `733` lines / `141463` bytes / `4beb4d76f6956768b7c1ec691ef831e374a2f2e992d16a692cc21f02db34af80`;
+- repair decision: artifact corrections `0`. Exact identity plus fresh disposition, contract-home, schema, pending-source, loss-guard, controlled-vocabulary, clean-room, formatting, and scope checks establish no authorized defect. The human's review-count reduction is not used in this decision;
+- unavailable decisions: morning ratification of the R17/R18 omission; the informational §34.4/§34.9 dependency choice; and recorded D1/D2/D3 or other pending human choices remain unresolved. State-only closure neither decides nor strengthens them;
+- action result: no artifact edit, external action, reviewer/round route, commit, push, fetch, staging, publication, purchase, contact, measurement, comparison execution, or out-of-scope write occurred;
+- next transition: after reproducing this state append's integrity and final manifest, persist `REVISE -> DONE/HANDOFF` before final external hash reporting.
+
+### DONE/HANDOFF scope-reduction closure — 2026-07-16T02:07:48+02:00
+
+- transition: `REVISE -> DONE/HANDOFF`, persisted before final read-only disk identity reporting;
+- evidence that exists: exact R13/R14/R15 disposition tables and loss guards; the R51 zero-allegation/non-finding record and informational human-ratification question; exact four-artifact hashes; report traceability; owner-contract homes; five decoded generated examples; pending-source registry/slot proof; controlled-vocabulary, clean-room, hygiene, scope, and manifest gates;
+- evidence that does not exist: no R17 packet, applied lens, finding, grade, pass state, coverage claim, convergence credit, or review-derived artifact premise; the same absence applies independently to R18. Neither omission is represented as a successful review or as evidence that its intended lens was covered elsewhere;
+- closure authority: the live human reduced overnight execution to an approximate-20 accepted-review target and reported a bounded landing of `22` while preserving the `12`-accepted-C1 floor. That instruction authorizes stopping with disclosed omissions; it does not validate an artifact, premise, grade, lens, or convergence claim;
+- closure basis: the mandatory hardening pass independently found artifact repairs `0` against the evidence that actually exists. G1 can close because the human removed R17/R18 from overnight scope, not because those rounds passed or because their missing evidence was inferred;
+- exact frozen artifacts: Constitution `2009/187151/2d3828110ae9d525003a19ee5340141a1f347be44be275520fe4c8253be789fe`; pipeline `204/19387/6a15a6ac957bfe3f700acc383313c8945770578b19a1f549bd41816169a0bfb1`; shell `6645/457434/158679c21172682e33c0e30ca6c670bf079602394170d5478000e5e3b8032315`; report `405/66729/06faddd7deef40524056b86ea192c85a5f0822cc3f5a7768b3d27a991922f602`;
+- exact sorted manifest: `24327520e55a7324f69f12244d7ea05a6d0f9997da68fd19c111659740c60292`;
+- pre-transition checkpoint: `753` lines / `146630` bytes / `c36a62b22d14e925ce4b10727d0474d9c68bb7eb6504bdc3a0b02717320a7b1c`;
+- unresolved ratifications: morning acceptance/disclosure of both omitted rounds, the informational §34.4/§34.9 dependency question, and all recorded pending human identity/serialization choices remain unresolved;
+- disclosure boundary: `MORNING_REPORT` must identify R17 and R18 as unreviewed omissions and obtain or record the human disposition. G1 has not written, routed, or prefilled that out-of-scope artifact;
+- final action boundary: only this checkpoint changed. No substantive artifact, round/convergence document, root ledger, orchestration state, other-owner file, canonical input, source, or external system changed; no review/round was routed;
+- terminal work: compute the post-transition checkpoint identity and reverify phase, path, hygiene, delta, artifact, and manifest facts read-only, then stop idle.
+
 ## R14 replacement-owner intake — persisted before artifact edits
 
 - replacement authority: the human routed G1 replacement ownership and root-verified this process as `gpt-5.6-sol`, reasoning effort `ultra`, live service tier `priority`, fast mode. This identifies the replacement process; it does not establish any campaign or finding premise.
@@ -704,3 +767,12 @@ ceac345d4d580efc6edee81fb7052fc0ffd3ebc97df97b3c24e271ddf8a6a8b3  constitution/S
 - remaining unresolved inputs: R2-N7 (`ALIEN_ARTIFACT.md`) and R2-N8 (`PROJECT_OVERVIEW.md`) remain `SOURCE-UNAVAILABLE`; all G2 choices remain proposed until human ratification.
 - submission result: the original suite and the bounded R13 successor suite pass. Current totals are 9/9 canonical hashes, 554/554 source headings, 142 accounted exact-line exceptions, 17 ledger mappings, 40 pending SpecCard slots with zero bodies, five validated JSON examples with common identity envelopes, five passing R13 regressions, and the unchanged 160-line Rule 13 disposition.
 - next transition condition: none within this turn. The replacement owner stops at `SUBMIT-FOR-REVIEW`; `R14` remains unassigned and only a newly routed packet may authorize another `REVISE` transition.
+
+## Root post-handoff accounting receipt — `2026-07-16T09:44:30+02:00`
+
+`generated-by: root orchestrator`; `inputs: live human target reduction, pushed R62 qualification at 241e63f8465537ed4bc2e204e5814fb84700e208, gauntlet/ROUND_LOG.md, gauntlet/CONVERGENCE_REPORT.md, this checkpoint`; `status: PROPOSED`; `evidence-status: provisional-pending-substrate`.
+
+- This receipt does not reopen or replace G1's persisted owner FSM, dispositions, artifacts, or terminal handoff. Pre-receipt checkpoint identity was 769 newline-terminated lines / 149,894 bytes / `00fbad864166c7acc4ad2219db155fb9714fced730ff8a06eb7a21a36ad34625`.
+- The controlling later accounting is 22 accepted filings overall / 12 against the C1 delta plan, reached only after the transcript-qualified R62 filing. The human's later instruction was an approximate-20 accepted target, not a separate requirement to reach 22. Earlier G1 statements describing a reported or bounded 22/12 landing are chronology-bound control records; they neither forecast nor validate the later R62 chain.
+- R17 and R18 remain unexecuted `UNREVIEWED-OMISSION` rows with no packet, lens application, finding, grade, pass state, coverage, or convergence credit. The later R62 filing does not substitute for either lens or change that disclosure requirement.
+- G1's four-artifact manifest remains `24327520e55a7324f69f12244d7ea05a6d0f9997da68fd19c111659740c60292`; no G1 artifact byte changed in this post-handoff pass. Morning reporting must preserve the omissions, unresolved D1/D2/D3 and other ratification gates, source-unavailable boundaries, and Convergence `NOT ESTABLISHED`.
