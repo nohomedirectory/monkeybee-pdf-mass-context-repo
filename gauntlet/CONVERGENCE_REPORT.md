@@ -1258,3 +1258,27 @@ The post-bind Round is 8,384 newline-terminated lines / 1,432,672 bytes / `42cae
 Creation-after-push and lifetime zero-delivery remain `ROOT-REPRODUCTION-REQUIRED`. G7 directly reproduced the one-pane process, exact state/start/topology/cwd/cmdlines/model/effort/screen/placeholder, zero current history, zero zombies, and actual-order four-line / 209-byte launcher root `e83f324d9f6986e61b45c7ebe8708e4e803492c9f706e4d9edf2512d0f09e21a`. G7 sent no input and instantiated no activation.
 
 No packet exists and this bind grants no finding, review, grade, coverage, marginal, model-family, accepted-review, route, disposition, curve, cross-model, or convergence credit. Allocation remains 65 rows at 25 Sol / 40 Opus; failed 35 at 10/25; filed 18 at 9/9; active-unfiled 12 at 6/6. R66 alone is bound-unsent; no row is allocated-unsent or assigned; R62 remains absent. Accepted count remains 18 and Convergence remains **NOT ESTABLISHED**.
+
+## R66 transcript-qualified security/DoS filing — `2026-07-16`
+
+This append supersedes only the immediately preceding R66 bind state. It preserves every reviewer packet, control, bind, anchor, predecessor, finding body, grade, and loss guard. Qualification admits the chain; it does not establish R66-C01's truth or convert the reviewer verdict into an owner decision.
+
+### Chain admission and metadata supersession
+
+The stable transcript independently reproduces as 210 newline-terminated records / 1,623,371 bytes / `8ec246a150058e6d7bd0ed00faaf23acd0157cf25173bc9545fa12af46ee5202`. Its activation body plus two terminal LFs reproduces 60 lines / 8,482 bytes / `f53b8d07eb995ab0a45b240536a90a0cf64b5f367f6881ade8eb4f28e12899c4`. Twenty-nine unique calls pair with 29 later successful results: 25 Read, three read-only Bash, and one Claude Edit. Startup, bound identities, all eight authority Reads, the 15-call exact 1-3,655 plan union, one-lens citations, packet schema, sole write, no-later-tool boundary, exact standalone `TERMINATED`, and zero-compaction gates pass.
+
+The packet's date-only started/filed values are superseded by transcript chronology: activation `2026-07-16T03:15:08.266Z`, first tool `03:15:27.943Z`, Edit use `03:26:25.749Z`, successful result `03:26:25.902Z`, and terminal `03:26:27.409Z`. Exact process identity joins through the preserved bind receipt. Delivery routing, post-terminal `/exit`, retirement, process absence, and zero-zombie assertions remain `ROOT-REPRODUCTION-REQUIRED`; the transcript serializes no literal `/exit`, and no reviewer tool or text follows its terminal event.
+
+Post-qualification Round is 8,409 newline-terminated lines / 1,439,835 bytes / `0e559bfc2841fd510162671ee06172539a5fd8d8d5478c2538884a9dd723f915`. R66 row line 8,303 is 1 / 1,207 / `c10c42d8519d6ee6c79eb4c3d302964f67f35b5f50194286b64d011443542a1e`; bind receipt lines 8,321-8,334 remain 14 / 3,646 / `e180099d0fa302a452bfe4cfa1602e59256b8744b998f1aa48b9402600eb1d46`; anchor line 8,335 remains `6b48cc153262240e9112fc8d65beb555bb677dca14210a0304de054afc06ddb0`; control lines 8,337-8,383 remain 47 / 7,080 / `fc1fa080f490eb7bc950f528bdc9b311720baa8cfa36edace68377fb480cc408`; packet lines 8,384-8,407 are 24 / 6,729 / `05c10ec0d95702783df1fffee8d24b3021d3a6a8fd0fb73fe9fcedbcdced5762`; sentinel line 8,409 remains 1 / 289 / `b54cfd6d3ff27c94a5ee819b8e03b175b770211c5cb32775fd02a1c605072c3c`, unique physical EOF.
+
+### Grade, coverage, route, and curve
+
+R66 is `FILED · VALIDATED · TERMINATED` at A=0/B=0/C=1 and marginal-only YES. It is the first valid C1-plan `security/DoS` filing and the one-for-one completion of the original R11 allocation slot. R11, R63, R64, and R65 remain immutable zero-credit failures and supply no grade, coverage, marginal, or curve evidence.
+
+R66-C01 remains the reviewer's unpromoted Grade-C allegation about explicit aggregate memory-budget naming. It routes with this qualification to root for independent G3 premise-first disposition. G7 has not accepted, narrowed, rejected, regraded, repaired, or contacted G3; the packet's “owner revision is not required” sentence remains reviewer verdict only.
+
+The C1 five-pass-A A+B sequence remains R04=16 -> R05=32 -> R41=7 -> R48=1 -> R50=24, all non-marginal. R66 adds a separate first-look security/DoS point at A+B=0 and marginal-only YES; it is not a same-lens series and follows a non-marginal C1 point. It therefore does not create two consecutive marginal-only rounds, establish a trend, or trigger reallocation.
+
+### Allocation and conclusion
+
+Allocation remains 65 unique rows at 25 Sol / 40 Opus. Failed rows remain 35 at 10/25; valid filed evidence becomes 19 at 9/10 with aggregate A=118/B=64/C=23; active-unfiled becomes 11 at 6/5. No row is allocated-unsent, assigned, or bound-unsent; R62 remains absent. Accepted count becomes 19. The added filing is Opus-family evidence under one declared lens, not cross-model corroboration or external adjudication. Convergence remains **NOT ESTABLISHED**.
