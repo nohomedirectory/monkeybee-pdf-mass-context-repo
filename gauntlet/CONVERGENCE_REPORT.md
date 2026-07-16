@@ -1282,3 +1282,11 @@ The C1 five-pass-A A+B sequence remains R04=16 -> R05=32 -> R41=7 -> R48=1 -> R5
 ### Allocation and conclusion
 
 Allocation remains 65 unique rows at 25 Sol / 40 Opus. Failed rows remain 35 at 10/25; valid filed evidence becomes 19 at 9/10 with aggregate A=118/B=64/C=23; active-unfiled becomes 11 at 6/5. No row is allocated-unsent, assigned, or bound-unsent; R62 remains absent. Accepted count becomes 19. The added filing is Opus-family evidence under one declared lens, not cross-model corroboration or external adjudication. Convergence remains **NOT ESTABLISHED**.
+
+## R12 zero-credit process bind and sealed control — `2026-07-16`
+
+R12 is `BOUND-UNSENT` for only `plans/CYCLE_1_DELTA_PLAN.md` at 3,655 newline-terminated lines / 531,951 bytes / `9778e1b4d95ddaae52b6ca75abe593dc2b09d63676fd3546f4b431c81c5655fa`, sole precommitted compound lens `claim vocabulary and de-slopification`, and exact `gpt-5.6-sol` / effort `ultra` / live `fast` / priority service. Its process receipt and concise sealed reviewer control now precede the preserved generic physical-EOF sentinel in Round; G7's terminal manifest seals their actual coordinates and roots.
+
+Current read-only inspection reproduced session `monkeybee-pdf-mass-context-repo--r12`, pane `%94` index 1, shell/model 3363622/3363862, exact boot/start/state/topology/cwd/argv, live model/effort/mode, current retained-history and screen roots, actual-order launcher root, zero model children, and zero host zombies. Reservation creation/order and lifetime zero-delivery interpretation remain `ROOT-REPRODUCTION-REQUIRED`; root must freshly reattest immediately before any later activation.
+
+This bind creates no packet, review, finding, grade, coverage, marginal result, model-family point, accepted-review change, route, disposition, curve, cross-model, or convergence credit. Allocation remains 65 rows at 25 Sol / 40 Opus; failed 35 at 10/25; filed 19 at 9/10 with A=118/B=64/C=23; active-unfiled 11 at 6/5; R12 is the sole bound-unsent row; R62 remains absent. Accepted count remains 19 and Convergence remains **NOT ESTABLISHED**.
