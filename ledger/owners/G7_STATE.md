@@ -8533,3 +8533,94 @@ Transition persisted: `SUBMIT-FOR-REVIEW -> REVISE`. Mandatory REVISE must apply
 Transition persisted: `REVISE -> DONE/HANDOFF`.
 
 **G7 R65 bind-only FSM state: `DONE/HANDOFF` (fail-closed launcher-set mismatch; R65 remains `ALLOCATED-UNSENT`; no bind, activation, packet, or credit).**
+
+## G7 R65 reconciled bind-only owner FSM — fresh task after pushed failure receipt (2026-07-16)
+
+### INGEST — entered and crash-safe
+
+- This is a new FSM after pushed commit `ca34703ddf6dc1e8cc197ee12ae5c794ee944ab6`; the prior fail-closed launcher-premise receipt remains immutable history. Required path is exactly `INGEST -> DRAFT -> SELF-CHECK -> SUBMIT-FOR-REVIEW -> REVISE -> DONE/HANDOFF`. Current persisted state is `INGEST`; no work is yet attributed to `DRAFT`.
+- `AGENTS.md` was read through physical EOF as the first task action. The full `running-the-gauntlet-on-your-rust-port` skill was reread through EOF in four bounded chunks. The shared/G7 owner orders, full reviewer protocol, Overnight Goal, Index, Charter, Work Order, and Audit Findings Ledger were reread as the bounded authority chain. Only hostile identity, negative-evidence, and fail-closed disciplines apply; the skill's implementation, benchmark, external, dispatch, and Beads workflows remain excluded.
+- Pushed base independently reproduces branch `main`, HEAD/local `origin/main` both `ca34703ddf6dc1e8cc197ee12ae5c794ee944ab6`, empty index, and no pre-task diff in the three owned paths.
+- Pushed whole identities reproduce: Round 8,283 newline-terminated lines / 1,413,632 bytes / `96afb85d1d6fc5f3fda91ebab6a7c0131acc5894123cfea70e4a8e5dbdcad0a6`; Convergence 1,232 / 183,210 / `3d4c0075acbb468485ddc52d228ab41b5be008cfde44e1202ccc0a79b292cb56`; pre-FSM G7_STATE 8,535 / 1,766,876 / `89f8be5926ab5928300f6b43483d83281e62e1213ec04710c173658af4c193ff`; submitted plan 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`.
+- Protected R65 slices reproduce: row line 8,164 is 1 / 625 / `f9059d6312823208ec28e867769cc95e74db8cd328a41c5a9dad50dcc0977049` and `ALLOCATED-UNSENT`; construction lines 8,166-8,181 are 16 / 1,574 / `ffbc4aa9bbf2e0ea62e9d6a7602549f4f74ef856a3cc2b0474096e6ba9281a07`; anchor line 8,182 is 1 / 155 / `61664019d51314fa18c9e8360f50d6cd3637feeeb375b859cce51fbb4f51372a`; control lines 8,184-8,282 are 99 / 13,815 / `85ad0a1c20a8a14f569b227fcd5f71242a5e06c99caba4379ca50cdad3223f77`; sentinel line 8,283 is 1 / 289 / `b54cfd6d3ff27c94a5ee819b8e03b175b770211c5cb32775fd02a1c605072c3c`, unique physical EOF.
+- Writable scope is exactly `gauntlet/ROUND_LOG.md`, `gauntlet/CONVERGENCE_REPORT.md`, and `ledger/owners/G7_STATE.md`, with structured `apply_patch` as the sole write mechanism. No stage, commit, push, fetch, branch, stash, deletion, reservation, activation, delivery, reviewer contact, packet, or credit is authorized. Live process-visible facts and allocation remain to be independently reproduced in INGEST; creation/delivery/UI history stays `ROOT-REPRODUCTION-REQUIRED` where not directly observable.
+
+**G7 R65 reconciled bind-only FSM state: `INGEST` (base/construction/authority admitted; process-visible and allocation gates pending).**
+
+### INGEST — reconciled process and allocation gates
+
+- Target-bounded read-only inspection sent no input and contacted no reviewer. Tmux directly reproduces exact session `monkeybee-pdf-mass-context-repo--r65`, pane `%168`, index 1, shell PID 602787, `pane_dead=0`, `history_size=0`, and exact lowercase cwd `/home/joseph/ntm_dev/monkeybee-pdf-mass-context-repo`.
+- The escaped untouched screen snapshot directly reproduces 33 newline-terminated lines / 4,350 bytes / `711c1c85eea5e21f55fc7d14b886f326f7fd82bb83445b678080cfb268851451`, visibly showing Opus 4.8 with `xhigh` effort, Claude Max, the lowercase repository path, and exact placeholder `Try "write a test for <filepath>"`.
+- `/proc` directly reproduces boot ID `7349fb94-6725-4e24-8a56-f8313aeac869`; shell/model states `S`/`S`; start ticks 756872458 / 756872487; parentage tmux-server 1540496 -> shell 602787 -> model 603010; shell's sole child 603010; no model child; zero host zombies; and exact cwd for both processes.
+- Shell NUL cmdline directly reproduces 6 bytes / `70458f7ab64acaa2f17d502161ce831a64212cf7493447837f259e696b0f6cf1`, exact `-bash` plus NUL. Model NUL cmdline directly reproduces 101 bytes / `eacb15c51bf7bfedcbb3654c33e61703b44f23b69f75d963766a8f5abd084258`, exact argv `/home/joseph/.local/bin/claude`, `--dangerously-skip-permissions`, `--model`, `claude-opus-4-8`, `--effort`, `xhigh`.
+- The selected environment directly reproduces, in actual order, the supplied four lines: `CLAUDE_CODE_HOOKS=...`, `NTM_SPAWN_ORDER=1`, `NTM_SPAWN_BATCH_ID=spawn-20260716-041108-25e738d8`, and `NTM_SPAWN_TOTAL=1`; identity is 4 newline-terminated lines / 209 bytes / `8207f2b7b943e95c8e498547a8b1283690a0b6ada739209a06af94c4b46743c1`. The generic Bash PreToolUse hook is present; this process is never described as hook-free. The former 1-line / 123-byte selection remains only immutable failed-task history.
+- Creation timestamp and post-construction creation order; root's post-failure-push reattestation; spawn/delivery history; and root non-contact are `ROOT-REPRODUCTION-REQUIRED`. Current pane history, welcome bytes, placeholder, process identities, and environment are directly reproduced but do not by themselves prove the entire delivery-history proposition.
+- Mechanical allocation reproduction is 64 unique rows at 25 Sol / 39 Opus; failed 34 at 10/24; filed 18 at 9/9; active-unfiled 12 at 6/6; R65 alone allocated-unsent; assigned=0; bound-unsent=0; R62 absent; accepted count 18; physical R65 packet-heading count zero; unique sentinel at physical EOF; Convergence `NOT ESTABLISHED`.
+- No INGEST mismatch remains. The admissible candidate may change only the R65 row token, insert one process receipt immediately before the byte-identical anchor, append one zero-credit Convergence receipt, and append this owner FSM.
+
+Transition persisted: `INGEST -> DRAFT`.
+
+**G7 R65 reconciled bind-only FSM state: `DRAFT` (all admission gates reproduce; bounded bind candidate construction pending).**
+
+### DRAFT — bounded bind candidate
+
+- **ADOPT:** bind the exact current pushed construction and submitted-plan root to the reconciled reservation manifest, sole lens `security/DoS`, exact `claude-opus-4-8` / `xhigh`, and zero-credit status. Direct observations and `ROOT-REPRODUCTION-REQUIRED` premises remain explicitly separated.
+- **NARROW:** the welcome snapshot, zero tmux history, and unchanged placeholder are direct current observations; the creation timestamp, creation-after-construction ordering, post-failure-push root reattestation, and absence of any campaign delivery remain root-only premises. No direct observation is used to strengthen the latter proposition.
+- **REJECT:** the former one-line launcher selection as current evidence. The Round receipt will name the reconciled 4-line / 209-byte / `8207f2b7b943e95c8e498547a8b1283690a0b6ada739209a06af94c4b46743c1` actual-order selection and state that the generic Bash hook is present.
+- Planned Round mutation is exactly one row-token replacement plus one 11-line process-bind receipt immediately before the byte-identical anchor. The projected R65 row is 1 newline-terminated line / 621 bytes / `b66f4a07b21e2aadd6e6df1ece35d91f4c2f8fb054f5a12c6d4ea44eda067658`. With the 11-line insertion, projected coordinates are anchor line 8,193; control lines 8,195-8,293; sentinel line 8,294 and physical EOF. The construction coordinates before the insertion remain fixed.
+- The receipt will bind: current pushed commit/Round/plan; root-only sequence and delivery premises; direct session/pane/PID/boot/start/state/parent/cwd/child/zombie facts; exact cmdline identities; welcome identity and visible model/effort/placeholder; exact reconciled launcher order/root and non-hook-free disclosure; governing zero-input/reattest boundary; unchanged allocation and zero credit.
+- Planned Convergence mutation is one append-only zero-credit bind receipt. It will preserve `NOT ESTABLISHED`, accepted count 18, zero packet, unchanged failed/filed/active totals, and R65 as the sole `BOUND-UNSENT` row. It will not grant lens coverage or any review/convergence evidence.
+- No control, anchor, sentinel, construction, predecessor, packet, canonical input, or out-of-scope byte may change. No activation or reviewer input is instantiated.
+
+Transition persisted: `DRAFT -> SELF-CHECK`. Candidate text and coordinate projection are frozen pending hostile checks; no Round or Convergence mutation has yet occurred.
+
+**G7 R65 reconciled bind-only FSM state: `SELF-CHECK` (candidate frozen; hostile pre-write validation pending).**
+
+### SELF-CHECK — hostile pre-write result
+
+- Current-process rerun independently reproduces the exact pane/session/PID/liveness/history/cwd state, 33-line welcome root, boot ID, `S`/`S` states, start ticks, parentage, sole-child topology, cmdline roots, and zero zombies. The actual-order launcher selection remains 4 lines / 209 bytes / `8207f2b7b943e95c8e498547a8b1283690a0b6ada739209a06af94c4b46743c1` and visibly includes the generic Bash hook plus all three spawn variables.
+- Root-only ordering and delivery claims remain root-only; direct current observations are not promoted into proof of historical absence. Exact model `claude-opus-4-8`, effort `xhigh`, lowercase cwd, placeholder, and welcome identity reproduce without drift.
+- Branch/base parity, empty index, G7-only current diff, owned-path `git diff --check`, UTF-8/LF/final-LF, zero carriage returns, and zero trailing whitespace pass. Round and Convergence remain pushed-base byte-identical before the authorized mutation.
+- Allocation remains 64 unique rows at 25 Sol / 39 Opus; failed 34 at 10/24; filed 18 at 9/9; active-unfiled 12 at 6/6; R65 sole allocated-unsent; assigned/bound-unsent zero; R62 absent; accepted count 18. R65 packet count is zero; the R65 anchor and generic sentinel are each unique; the sentinel remains physical EOF; Convergence remains `NOT ESTABLISHED`.
+- The planned 11-line insertion correctly shifts anchor/control/sentinel by 11 without moving the row or construction. The planned row is a sole-token change. No authority-width, process freshness, post-construction sequence, launcher order, hook disclosure, model/effort, cwd/start/topology/zombie, welcome/placeholder/provenance, row/receipt/anchor/control/sentinel, allocation, packet, prefix, scope, formatting, claim-vocabulary, clean-room, measurement, implementation, external-action, or zero-credit defect is found.
+- Mandatory REVISE remains required even if the fresh submission audit finds no defect; it will apply the authorized candidate and perform a post-write hardening reread rather than bypassing the state.
+
+Transition persisted: `SELF-CHECK -> SUBMIT-FOR-REVIEW`.
+
+**G7 R65 reconciled bind-only FSM state: `SUBMIT-FOR-REVIEW` (fresh owner-side disk audit pending; no reviewer contact).**
+
+### SUBMIT-FOR-REVIEW — fresh owner-side audit
+
+- Independently reread every fresh FSM byte, the exact R65 row/construction/anchor/control/sentinel boundary, and the Convergence tail. A third narrow process snapshot still reproduces the exact pane metadata and reconciled launcher identity. No reviewer process received input or contact.
+- The audit accepts the sole row-token change, the one 11-line Round process receipt before the anchor, the one append-only Convergence receipt, and the G7 FSM append. It rejects any control, anchor, sentinel, predecessor, packet, canonical, or out-of-scope change.
+- Root-only creation/order/delivery assertions remain provenance-bounded. The direct process identity does not overclaim historical delivery evidence. The launcher text and root are exact and disclose the generic hook; the former one-line selection remains failed history.
+- No stale process, model/effort, cwd/start/topology/zombie, welcome/placeholder, post-push-order attribution, launcher-order, row/coordinate, allocation, packet, protection, formatting, policy-vocabulary, clean-room, measurement, implementation, external-action, or zero-credit defect survived the audit.
+
+Transition persisted: `SUBMIT-FOR-REVIEW -> REVISE`. Mandatory REVISE must apply the three authorized documentary mutations, reread every actual changed byte, and rerun all dependent terminal gates.
+
+**G7 R65 reconciled bind-only FSM state: `REVISE` (authorized bind mutation and post-write hardening pending).**
+
+### REVISE — applied bytes, mandatory hardening, and terminal validation
+
+- REVISE applied exactly three operational mutations with structured `apply_patch`: the unique R65 row token, one 11-line Round receipt immediately before the preserved anchor, and one 8-line Convergence append including its separator. No other path or byte was written, created, deleted, staged, committed, pushed, fetched, branched, stashed, reserved, activated, or delivered.
+- Actual Round is 8,294 newline-terminated lines / 1,416,459 bytes / `b7341b5b21b1393b4b6c1a1501261c7a3e421600d620bae55e6ecca6b2d5d1e8`. Actual Convergence is 1,240 / 184,536 / `574a56e45a423e99c506e5075b7a1c81b2d28585d8302fca547955d2e45801cc`. Submitted plan remains 3,655 / 531,012 / `db0bbb1df5bb317d3bd2cdf313708fa8a10af8bd6da5a3635e96473a2465ed59`.
+- Final Round slices are: R65 row line 8,164, 1 / 621 / `b66f4a07b21e2aadd6e6df1ece35d91f4c2f8fb054f5a12c6d4ea44eda067658`; preserved construction lines 8,166-8,181, 16 / 1,574 / `ffbc4aa9bbf2e0ea62e9d6a7602549f4f74ef856a3cc2b0474096e6ba9281a07`; process receipt lines 8,182-8,192, 11 / 2,831 / `fcb5ed950e1c0113a07a5f6e9dcd0c98ad66ea33646c75d0d0722d56e7f964d0`; preserved anchor line 8,193, 1 / 155 / `61664019d51314fa18c9e8360f50d6cd3637feeeb375b859cce51fbb4f51372a`; preserved control lines 8,195-8,293, 99 / 13,815 / `85ad0a1c20a8a14f569b227fcd5f71242a5e06c99caba4379ca50cdad3223f77`; preserved sentinel line 8,294, 1 / 289 / `b54cfd6d3ff27c94a5ee819b8e03b175b770211c5cb32775fd02a1c605072c3c`, unique physical EOF.
+- Convergence prefix lines 1-1,232 remain byte-identical at `3d4c0075acbb468485ddc52d228ab41b5be008cfde44e1202ccc0a79b292cb56`. Appended block lines 1,233-1,240 are 8 / 1,326 / `de3618829e2aade7667d96cbcf430ebdb77e8901168c2b2f982922020de6c7fb`; the receipt excluding its separator is lines 1,234-1,240, 7 / 1,325 / `19c9c2b36acb79fe737979c4fb9648db9bc44582b836d40fd1b7ee15535a8a14`.
+- Protection comparisons against `HEAD` pass byte-for-byte: Round lines 1-8,163 root `230542f08d5d3fab3c8bc803d2d5a32daf25bc1936d8f384509f281dd5734aed`; lines 8,165-8,181 root `444aafc11a322670d7f43a6cc05417a77d02c49903ebc412ca2f7d53b29337db`; shifted anchor-through-sentinel root `6cf06acc67f00eda297548dbf404eefa5ef8e6b55ce410fbd14171ceb1dff4de`; pre-FSM G7 prefix lines 1-8,535 root `89f8be5926ab5928300f6b43483d83281e62e1213ec04710c173658af4c193ff`.
+- Allocation is 64 unique rows at 25 Sol / 39 Opus; failed 34 at 10/24; filed 18 at 9/9; active-unfiled 12 at 6/6. R65 alone is `BOUND-UNSENT`; allocated-unsent=0; assigned=0; R62 absent; accepted count 18; R65 packet count zero; Convergence remains `NOT ESTABLISHED`.
+- Terminal scope and policy gates pass: exact three-path diff; empty index; owned-path `git diff --check`; UTF-8/LF/final-LF; zero carriage returns or trailing whitespace; one R65 receipt, one R65 anchor, one physical-EOF sentinel; no claim-vocabulary or URL leakage in fresh operational bytes; no clean-room source, semantic body, measurement, comparison, implementation, Beads, or external action.
+- Mandatory post-write reread covered the changed row, all 11 Round receipt lines, the unchanged shifted anchor/control/sentinel, all 8 Convergence append lines, and the entire fresh G7 suffix. The process still reproduces the exact welcome and launcher roots, shell/model identities, `S`/`S` states, shell child count 1, model child count 0, and zero zombies. Root-only historical premises remain root-only.
+- Immediately before this terminal receipt, G7_STATE was 8,601 / 1,779,093 / `685c46f6473e7a85fc49ebbe434f8dc2ea5e843f1ec973e4812fa96a9c9e8b49`; its fresh pre-terminal suffix was 66 / 12,217 / `0c2e1fb3a7814acc84fddfae5d691955275c9e0611ff69f0f62140e4b241cffb`. This self-appending file does not assert its post-receipt whole hash; root and the terminal owner response must reproduce the final identity from disk.
+- No reviewer was contacted. This bind creates no activation, packet, finding, review, grade, coverage, marginal, route, disposition, model-family, accepted-review, curve, cross-model, or convergence credit.
+
+### Root-only pushed-bind, immediate reattestation, and one-shot activation recipe
+
+1. Reproduce the final whole/slice identities above; rerun exact three-path scope, cached-empty, diff-check, formatting, allocation, zero-packet, unique-anchor/sentinel, prefix-protection, and `NOT ESTABLISHED` gates. Preserve all concurrent out-of-scope work.
+2. Stage exactly `gauntlet/ROUND_LOG.md`, `gauntlet/CONVERGENCE_REPORT.md`, and `ledger/owners/G7_STATE.md`; inspect the cached three-path set and cached diff; commit once on `main`; push without force. Reproduce new HEAD/local `origin/main` parity and verify all three paths are clean against the pushed bind.
+3. Immediately before activation, freshly reattest the same reservation: session/pane/index/PIDs; boot/start/states/parentage/child counts/zombies; both cwd values; both NUL cmdline identities; `pane_dead=0`; `history_size=0`; 33-line welcome root and exact placeholder; actual-order 4-line / 209-byte launcher root including the generic hook and spawn values; and zero campaign delivery. Any drift fails closed.
+4. Only after pushed-bind parity and that reattestation may root instantiate one detached activation whose exact identity/process preamble is followed by the byte-identical sealed control at current lines 8,195-8,293, bound to the preserved anchor root and sentinel root. Deliver it once to pane `%168` only; no other target or delivery is permitted.
+5. Retire the process after terminal output. A later stable transcript requires a separate G7 qualification FSM before any packet or credit can be admitted.
+
+Transition persisted: `REVISE -> DONE/HANDOFF`.
+
+**G7 R65 reconciled bind-only FSM state: `DONE/HANDOFF` (R65 sole `BOUND-UNSENT`; pushed-bind validation and root-only activation remain; zero packet or credit).**
